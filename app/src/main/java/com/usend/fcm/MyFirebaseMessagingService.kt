@@ -1,0 +1,238 @@
+/*
+ * The MIT License (MIT)
+ *
+ * Copyright (c) 2019 https://www.spaceotechnologies.com
+ *
+ * Permissions is hereby granted, free of charge, to any person obtaining a copy of this software and associated
+ * documentation files (the "Software"), to deal in the Software without restriction, including without
+ * limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the
+ * Software, and to permit persons to whom the Software is furnished to do so, subject to the following
+ * conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all copies or substantial portions
+ * of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+ * INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+ * PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+ * LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT
+ * OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+ * OTHER DEALINGS IN THE SOFTWARE.
+ *
+ */
+
+package com.usend.fcm
+
+import android.content.Intent
+import android.util.Log
+import com.google.firebase.messaging.FirebaseMessagingService
+import com.google.firebase.messaging.RemoteMessage
+import com.google.gson.Gson
+import com.usend.extensions.nullSafe
+import com.usend.models.NotificationExtraModel
+import com.usend.utils.*
+import com.usend.utils.PreferenceHelper.customPrefs
+import com.usend.utils.PreferenceHelper.set
+import com.usend.views.MainActivity
+import com.usend.views.home.OrderDetailsActivity
+import org.greenrobot.eventbus.EventBus
+
+class MyFirebaseMessagingService : FirebaseMessagingService() {
+
+    override fun onNewToken(token: String) {
+        super.onNewToken(token)
+
+        JLog.d(TAG, "FirebaseMessagingService: Token $token")
+        val prefs = customPrefs()
+        prefs[PREF_FCM_TOKEN] = token
+    }
+
+    override fun onMessageReceived(remoteMessage: RemoteMessage) {
+
+        Log.d(TAG, "FROM : " + remoteMessage.from)
+
+        val mRemoteMessage = remoteMessage.data
+
+        //Verify if the message contains data
+        if (remoteMessage.data.isNotEmpty()) {
+            Log.d(TAG, "Message data : " + remoteMessage.data)
+        }
+
+        if (remoteMessage.notification != null)
+        {
+            JLog.d(TAG, "Message payload : " + remoteMessage.notification)
+        }
+        //Verify if the message contains notification
+
+
+        val title =
+            if (mRemoteMessage.containsKey(NOTIFICATION_TITLE)) mRemoteMessage[NOTIFICATION_TITLE]!! else ""
+        val message =
+            if (mRemoteMessage.containsKey(NOTIFICATION_MSG)) mRemoteMessage[NOTIFICATION_MSG]!! else ""
+        val type = mRemoteMessage[NOTIFICATION_TYPE].nullSafe()
+        val extra =
+            if (mRemoteMessage.containsKey(NOTIFICATION_EXTRA)) mRemoteMessage[NOTIFICATION_EXTRA]!! else ""
+        val id =
+            if (mRemoteMessage.containsKey(NOTIFICATION_ID)) mRemoteMessage[NOTIFICATION_ID]!! else ""
+
+        var notificationExtraModel = NotificationExtraModel()
+        if (extra.isNotEmpty()) {
+            notificationExtraModel = Gson().fromJson(extra, NotificationExtraModel::class.java)
+        }
+
+        EventBus.getDefault().post(NewNotificationEvent(type = type, status = notificationExtraModel.status))
+
+        when (type) {
+
+            PACKAGE_CREATED_BY_ADMIN -> {
+
+                val intent: Intent = Intent(this, MainActivity::class.java)
+                    .putExtra(NOTIFICATION_ID, id.toInt())
+                    .putExtra(PACKAGE_ID, notificationExtraModel.id)
+                    .putExtra(EXTRA_FROM_TYPE, TYPE_NOTIFICATION_ACTIVITY)
+
+                //sendNotification(remoteMessage.notification!!.body)
+                NotificationUtils.generateNotification(
+                    this@MyFirebaseMessagingService,
+                    title,
+                    message,
+                    intent
+                )
+
+            }
+            ORDER_CREATED -> {
+
+                val intent: Intent = Intent(this, OrderDetailsActivity::class.java)
+                    .putExtra(NOTIFICATION_ID, id.toInt())
+                    .putExtra(ORDER_ID, notificationExtraModel.id)
+                    .putExtra(EXTRA_FROM_TYPE, TYPE_NOTIFICATION_ACTIVITY)
+
+                NotificationUtils.generateNotification(
+                    this@MyFirebaseMessagingService,
+                    title,
+                    message,
+                    intent
+                )
+            }
+            ORDER_ACCEPTED -> {
+
+                val intent: Intent = Intent(this, OrderDetailsActivity::class.java)
+                    .putExtra(NOTIFICATION_ID, id.toInt())
+                    .putExtra(ORDER_ID, notificationExtraModel.id)
+                    .putExtra(EXTRA_FROM_TYPE, TYPE_NOTIFICATION_ACTIVITY)
+
+                NotificationUtils.generateNotification(
+                    this@MyFirebaseMessagingService,
+                    title,
+                    message,
+                    intent
+                )
+            }
+            ORDER_LABEL_CREATED -> {
+
+                val intent: Intent = Intent(this, OrderDetailsActivity::class.java)
+                    .putExtra(NOTIFICATION_ID, id.toInt())
+                    .putExtra(ORDER_ID, notificationExtraModel.id)
+                    .putExtra(EXTRA_FROM_TYPE, TYPE_NOTIFICATION_ACTIVITY)
+
+                NotificationUtils.generateNotification(
+                    this@MyFirebaseMessagingService,
+                    title,
+                    message,
+                    intent
+                )
+            }
+
+            AUTO_SHIP_ORDER_CREATE -> {
+
+                val intent: Intent = Intent(this, OrderDetailsActivity::class.java)
+                    .putExtra(NOTIFICATION_ID, id.toInt())
+                    .putExtra(ORDER_ID, notificationExtraModel.id)
+                    .putExtra(EXTRA_FROM_TYPE, TYPE_NOTIFICATION_ACTIVITY)
+
+                NotificationUtils.generateNotification(
+                    this@MyFirebaseMessagingService,
+                    title,
+                    message,
+                    intent
+                )
+            }
+
+            USPS_STATUS_UPDATE -> {
+
+                val intent: Intent = Intent(this, MainActivity::class.java)
+                    .putExtra(NOTIFICATION_ID, id.toInt())
+                    .putExtra(FROM, FROM_NOTIFICATION)
+                    .putExtra(EXTRA_FROM_TYPE, TYPE_NOTIFICATION_ACTIVITY)
+
+                NotificationUtils.generateNotification(
+                    this@MyFirebaseMessagingService,
+                    title,
+                    message,
+                    intent
+                )
+            }
+            CONCIERGE_STATUS_UPDATED_BY_ADMIN -> {
+
+                val intent: Intent = Intent(this, MainActivity::class.java)
+                    .putExtra(NOTIFICATION_ID, id.toInt())
+                    .putExtra(FROM, FROM_CONCIERGE)
+                    .putExtra(EXTRA_FROM_TYPE, TYPE_NOTIFICATION_ACTIVITY)
+
+                NotificationUtils.generateNotification(
+                    this@MyFirebaseMessagingService,
+                    title,
+                    message,
+                    intent
+                )
+            }
+
+            CONCIERGE_NOTE_UPDATE->{
+                val intent: Intent = Intent(this, MainActivity::class.java)
+                    .putExtra(NOTIFICATION_ID, id.toInt())
+                    .putExtra(FROM, FROM_CONCIERGE)
+                    .putExtra(EXTRA_FROM_TYPE, TYPE_NOTIFICATION_ACTIVITY)
+
+                NotificationUtils.generateNotification(
+                    this@MyFirebaseMessagingService,
+                    title,
+                    message,
+                    intent
+                )
+            }
+
+            CONCIERGE_QUOTE_GENERATED -> {
+
+                val intent: Intent = Intent(this, MainActivity::class.java)
+                    .putExtra(NOTIFICATION_ID, id.toInt())
+                    .putExtra(FROM, FROM_CONCIERGE)
+                    .putExtra(EXTRA_FROM_TYPE, TYPE_NOTIFICATION_ACTIVITY)
+
+                NotificationUtils.generateNotification(
+                    this@MyFirebaseMessagingService,
+                    title,
+                    message,
+                    intent
+                )
+            }
+            else -> {
+
+                val intent: Intent = Intent(this, MainActivity::class.java)
+                    .putExtra(NOTIFICATION_ID, id.toInt())
+                    .putExtra(EXTRA_FROM_TYPE, TYPE_NOTIFICATION_ACTIVITY)
+
+                NotificationUtils.generateNotification(
+                    this@MyFirebaseMessagingService,
+                    title,
+                    message,
+                    intent
+                )
+            }
+        }
+    }
+
+    companion object {
+        private var TAG = MyFirebaseMessagingService::class.java.simpleName
+    }
+
+}

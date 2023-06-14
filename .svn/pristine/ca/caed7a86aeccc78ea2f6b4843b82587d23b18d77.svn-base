@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+                 
+                            
+                                                                 
+
+                 
+                           
+                                                                
+
+           
+
+    <LinearLayout
+        style="@style/match"
+        android:orientation="vertical" android:tag="layout/activity_package_detail_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <include
+            android:id="@+id/toolbarPackageDetail"
+            layout="@layout/app_toolbar" />
+
+            <ScrollView style="@style/styleScrollbar">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    style="@style/match"
+                    android:background="@color/colorWhite"
+                    tools:context=".views.home.PackageDetailActivity">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imgPackage"
+                        android:layout_width="@dimen/dimen_70dp"
+                        android:layout_height="@dimen/dimen_70dp"
+                        android:layout_marginStart="@dimen/dimen_20dp"
+                        android:layout_marginTop="@dimen/dimen_15dp"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ic_package_place_holder"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtPackaeNumberTitle"
+                        style="@style/CommonText.Style.16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_marginStart="@dimen/dimen_15dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:singleLine="true"
+                        android:text="@string/lbl_package_num"
+                        android:textSize="@dimen/dimen_14sp"
+                        app:layout_constraintBottom_toTopOf="@id/txtPackageNumber"
+                        app:layout_constraintStart_toEndOf="@id/imgPackage"
+                        app:layout_constraintTop_toTopOf="@id/imgPackage" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtPackageNumber"
+                        style="@style/CommonText.Style.16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_marginStart="@dimen/dimen_15dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:singleLine="true"
+                        android:text="#PKG1236"
+                        android:textColor="@color/color154A99"
+                        app:layout_constraintBottom_toBottomOf="@id/imgPackage"
+                        app:layout_constraintStart_toEndOf="@id/imgPackage"
+                        app:layout_constraintTop_toBottomOf="@id/txtPackaeNumberTitle" />
+
+                    <LinearLayout
+                        style="@style/matchWrap"
+                        android:layout_marginTop="@dimen/dimen_24dp"
+                        android:orientation="vertical"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/imgPackage">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen_1dp"
+                            android:background="@color/color1A2D2D2D" />
+
+                        <RelativeLayout
+                            style="@style/matchWrap"
+                            android:layout_marginStart="@dimen/dimen_20dp"
+                            android:layout_marginEnd="@dimen/dimen_20dp"
+                            android:paddingTop="@dimen/dimen_15dp"
+                            android:paddingBottom="@dimen/dimen_15dp">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtDaysRemainingTitle"
+                                style="@style/CommonText.Style.14sp"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:text="@string/lbl_days_remaining" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtDaysRemaining"
+                                style="@style/CommonText.Style.16sp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_toEndOf="@id/txtDaysRemainingTitle"
+                                android:gravity="end"
+                                android:text="15"
+                                android:textColor="@color/color154A99" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen_1dp"
+                            android:layout_marginStart="@dimen/dimen_20dp"
+                            android:layout_marginEnd="@dimen/dimen_20dp"
+                            android:background="@color/color1A2D2D2D" />
+
+                        <RelativeLayout
+                            style="@style/matchWrap"
+                            android:layout_marginStart="@dimen/dimen_20dp"
+                            android:layout_marginEnd="@dimen/dimen_20dp"
+                            android:paddingTop="@dimen/dimen_15dp"
+                            android:paddingBottom="@dimen/dimen_15dp">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtReceivedDateTitle"
+                                style="@style/CommonText.Style.14sp"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:text="@string/lbl_received_date" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtReceivedDate"
+                                style="@style/CommonText.Style.16sp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_toEndOf="@id/txtReceivedDateTitle"
+                                android:gravity="end"
+                                android:text="18-03-2020"
+                                android:textColor="@color/color2D2D2D" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen_1dp"
+                            android:layout_marginStart="@dimen/dimen_20dp"
+                            android:layout_marginEnd="@dimen/dimen_20dp"
+                            android:background="@color/color1A2D2D2D" />
+
+                        <RelativeLayout
+                            style="@style/matchWrap"
+                            android:layout_marginStart="@dimen/dimen_20dp"
+                            android:layout_marginEnd="@dimen/dimen_20dp"
+                            android:paddingTop="@dimen/dimen_15dp"
+                            android:paddingBottom="@dimen/dimen_15dp">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtDimensionsTitle"
+                                style="@style/CommonText.Style.14sp"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:text="@string/lbl_dimensions" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtDimensions"
+                                style="@style/CommonText.Style.16sp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_toEndOf="@id/txtDimensionsTitle"
+                                android:gravity="end"
+                                android:text="L-12 W-15 H-20"
+                                android:textColor="@color/color2D2D2D" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen_1dp"
+                            android:layout_marginStart="@dimen/dimen_20dp"
+                            android:layout_marginEnd="@dimen/dimen_20dp"
+                            android:background="@color/color1A2D2D2D" />
+
+                        <RelativeLayout
+                            style="@style/matchWrap"
+                            android:layout_marginStart="@dimen/dimen_20dp"
+                            android:layout_marginEnd="@dimen/dimen_20dp"
+                            android:paddingTop="@dimen/dimen_15dp"
+                            android:paddingBottom="@dimen/dimen_15dp">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtWeightTitle"
+                                style="@style/CommonText.Style.14sp"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:text="@string/lbl_weight" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtWeight"
+                                style="@style/CommonText.Style.16sp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_toEndOf="@id/txtWeightTitle"
+                                android:gravity="end"
+                                android:text="12 Kg"
+                                android:textColor="@color/color2D2D2D" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen_1dp"
+                            android:layout_marginStart="@dimen/dimen_20dp"
+                            android:layout_marginEnd="@dimen/dimen_20dp"
+                            android:background="@color/color1A2D2D2D" />
+
+                        <RelativeLayout
+                            style="@style/matchWrap"
+                            android:layout_marginStart="@dimen/dimen_20dp"
+                            android:layout_marginEnd="@dimen/dimen_20dp"
+                            android:paddingTop="@dimen/dimen_15dp"
+                            android:paddingBottom="@dimen/dimen_15dp">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtPackageTypeTitle"
+                                style="@style/CommonText.Style.14sp"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:text="@string/lbl_package_type" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtPackageType"
+                                style="@style/CommonText.Style.16sp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_toEndOf="@id/txtPackageTypeTitle"
+                                android:gravity="end"
+                                android:text="Package"
+                                android:textColor="@color/color2D2D2D" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen_1dp"
+                            android:layout_marginStart="@dimen/dimen_20dp"
+                            android:layout_marginEnd="@dimen/dimen_20dp"
+                            android:background="@color/color1A2D2D2D" />
+
+                        <RelativeLayout
+                            style="@style/matchWrap"
+                            android:layout_marginStart="@dimen/dimen_20dp"
+                            android:layout_marginEnd="@dimen/dimen_20dp"
+                            android:paddingTop="@dimen/dimen_15dp"
+                            android:paddingBottom="@dimen/dimen_15dp">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtFromTitle"
+                                style="@style/CommonText.Style.14sp"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:text="@string/lbl_from" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtFrom"
+                                style="@style/CommonText.Style.16sp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:layout_toEndOf="@id/txtFromTitle"
+                                android:gravity="end"
+                                android:text="Amazon"
+                                android:textColor="@color/color2D2D2D" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen_1dp"
+                            android:layout_marginStart="@dimen/dimen_20dp"
+                            android:layout_marginEnd="@dimen/dimen_20dp"
+                            android:background="@color/color1A2D2D2D" />
+
+                        <RelativeLayout
+                            style="@style/matchWrap"
+                            android:layout_marginStart="@dimen/dimen_20dp"
+                            android:layout_marginEnd="@dimen/dimen_20dp"
+                            android:paddingTop="@dimen/dimen_15dp"
+                            android:paddingBottom="@dimen/dimen_15dp">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtSplitPackage"
+                                style="@style/CommonText.Style.14sp"
+                                android:layout_alignParentStart="true"
+                                android:textColor="@color/color2D2D2D"
+                                android:layout_centerVertical="true"
+                                android:text="@string/lbl_do_you_want_to_split_package" />
+
+                            <androidx.appcompat.widget.SwitchCompat
+                                android:id="@+id/switchSplitPackage"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="?selectableItemBackground"
+                                android:includeFontPadding="false"
+                                app:switchPadding="@dimen/dimen_0dp"
+                                app:showText="false"
+                                app:track="@null"
+                                android:thumb="@null"
+                                android:button="@drawable/switch_selector"
+                                android:checked="false"
+                                android:layout_alignParentEnd="true"/>
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llSplitPackage"
+                            style="@style/wrap"
+                            android:tag="binding_1"                         
+                            android:layout_marginTop="@dimen/dimen_15dp"
+                            android:layout_marginStart="@dimen/dimen_20dp"
+                            android:orientation="vertical">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtSplitPackageInto"
+                                style="@style/CommonText.Style.14sp"
+                                android:layout_alignParentStart="true"
+                                android:textColor="@color/color2D2D2D"
+                                android:layout_centerVertical="true"
+                                android:text="@string/lbl_split_package_into" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:layout_marginTop="@dimen/dimen_20dp"
+                                android:background="@drawable/bg_5_radius_split_package"
+                                android:orientation="horizontal">
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/txtMinus"
+                                    android:layout_width="@dimen/dimen_45dp"
+                                    android:layout_height="@dimen/dimen_35dp"
+                                    android:text="—"
+                                    android:includeFontPadding="false"
+                                    android:tag="binding_2"                              
+                                    android:gravity="center"
+                                    android:textColor="@color/color2D2D2D"
+                                    android:textSize="@dimen/dimen_16sp"
+                                    android:fontFamily="@font/poppins_semibold"/>
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/txtCount"
+                                    android:layout_width="@dimen/dimen_45dp"
+                                    android:height="@dimen/dimen_35dp"
+                                    android:gravity="center"
+                                    android:includeFontPadding="false"
+                                    android:layout_height="wrap_content"
+                                    android:tag="binding_3"                          
+                                    android:textSize="@dimen/dimen_20dp"
+                                    android:maxLength="2"
+                                    android:background="@color/color265A9E41"
+                                    android:fontFamily="@font/poppins_medium"/>
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/txtPlus"
+                                    android:layout_width="@dimen/dimen_45dp"
+                                    android:layout_height="@dimen/dimen_35dp"
+                                    android:text="＋"
+                                    android:includeFontPadding="false"
+                                    android:tag="binding_4"                             
+                                    android:gravity="center"
+                                    android:textSize="@dimen/dimen_16sp"
+                                    android:textColor="@color/color2D2D2D"
+                                    android:fontFamily="@font/poppins_semibold"/>
+
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <com.google.android.material.button.MaterialButton
+                            android:id="@+id/btnCreateShipment"
+                            style="@style/MaterialButton.CornerRadius"
+                            android:tag="binding_5"                                                                              
+                            android:layout_width="match_parent"
+                                                                                           
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginTop="@dimen/dimen_30dp"
+                            android:layout_marginStart="@dimen/dimen_20dp"
+                            android:layout_marginEnd="@dimen/dimen_20dp"
+                            android:layout_marginBottom="@dimen/dimen_20dp"/>
+
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </ScrollView>
+
+    </LinearLayout>
+
+         

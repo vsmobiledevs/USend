@@ -1,0 +1,116 @@
+package com.usend.base
+
+import android.os.Bundle
+import android.util.Log
+import androidx.databinding.ViewDataBinding
+import androidx.lifecycle.*
+import com.usend.R
+import com.usend.comman.ViewModelProviderFactory
+import com.usend.comman.Resource
+import com.usend.extensions.checkInternetConnected
+import com.usend.extensions.nullSafe
+import com.usend.extensions.showToast
+import com.usend.repository.UserRepository
+import com.usend.utils.CommonUtils
+import com.usend.utils.NOTIFICATION_ID
+import kotlin.reflect.KClass
+
+
+abstract class ViewModelActivity<T, V> : BaseBindingActivity<T>() where T : ViewDataBinding, V : BaseViewModel {
+
+    abstract val modelClass: KClass<V>
+    private val TAG = ViewModelActivity::class.java.simpleName
+    val viewModel by lazy {
+        ViewModelProvider(this, ViewModelProviderFactory(this.application)).get(modelClass.java)
+
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+        if (intent.hasExtra(NOTIFICATION_ID)) {
+            val nId = intent.getIntExtra(NOTIFICATION_ID, 0)
+            callReadNotificationApi(nId)
+        }
+    }
+
+    override fun initView() {
+
+        binding.lifecycleOwner = this
+
+        addObserver()
+
+        mStatus.observe(this) { response ->
+            when (response) {
+                is Resource.Error<*> -> {
+
+                    Log.e(TAG, "Message: ${response.data}")
+
+                    showToast(response.message.toString())
+                }
+                is Resource.ReadNotificationSuccess<*> -> {
+
+                    Log.e(TAG, "Message: ${response.data}")
+                }
+                is Resource.UnAuthorisedRequest<*> -> {
+                    showTokenExpiredDialog(resources.getString(R.string.lbl_session_expired_msg))
+                }
+                is Resource.Success<*> -> {
+
+
+                }
+                is Resource.Loading<*> -> {
+
+                    response.isLoadingShow.let {
+                        if (it as Boolean) {
+                            showProgressDialog(this)
+                        } else {
+                            hideProgressDialog()
+                        }
+                    }
+                }
+                is Resource.NoInternetError<*> -> {
+                    CommonUtils.showOkDialog(this, message = resources.getString(response.id!!))
+                }
+                is Resource.ValidationError<*> -> {
+                    showToast(resources.getString(response.id.nullSafe()))
+                }
+            }
+        }
+    }
+
+    private val mStatus: MediatorLiveData<Any> by lazy {
+        MediatorLiveData<Any>()
+    }
+
+    private val repo = UserRepository
+    private fun callReadNotificationApi(id: Int) {
+        when {
+            !checkInternetConnected() -> mStatus.value =
+                Resource.NoInternetError<Int>(R.string.default_internet_message)
+            else -> {
+                mStatus.addSource(repo.readNotification(authToken = viewModel.getAuthKey(), id = id))
+                {
+                    if (it is Resource.ReadNotificationSuccess<*>)
+                    mStatus.value = it
+                }
+
+            }
+        }
+    }
+
+
+
+
+    fun getNotificationCount(): MutableLiveData<Any> {
+
+        return repo.getNotificationList(authToken = viewModel.getAuthKey(), isLoading = false)
+    }
+
+    /**
+     *  Add your observer here
+     *
+     *  here no need to remove observer because it will manage by android lifecycle
+     */
+    open fun addObserver() {}
+}

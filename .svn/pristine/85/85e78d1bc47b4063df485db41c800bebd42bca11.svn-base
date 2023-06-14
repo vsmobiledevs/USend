@@ -1,0 +1,96 @@
+package com.usend.viewmodels
+
+import android.app.Application
+import android.content.Context
+import androidx.lifecycle.MediatorLiveData
+import androidx.lifecycle.MutableLiveData
+import com.usend.R
+import com.usend.comman.Resource
+import com.usend.base.BaseViewModel
+import com.usend.extensions.callApi
+import com.usend.extensions.checkInternetConnected
+import com.usend.repository.ApiServices
+import com.usend.repository.UserRepository
+
+class MyProfileViewModel(var myApplication: Application, private var repository: UserRepository) :
+    BaseViewModel(myApplication) {
+
+    val mContext: Context = myApplication.applicationContext
+
+    val status: MediatorLiveData<Any> by lazy {
+        MediatorLiveData<Any>()
+    }
+
+    val unitSystem by lazy { MutableLiveData<String>("Kg/Cm") }
+
+    fun getProfileData() {
+
+        when {
+            !mContext.checkInternetConnected() -> status.value =
+                Resource.NoInternetError<Int>(R.string.default_internet_message)
+            else -> {
+                status.addSource(repository.getProfileData(getAuthKey())) {
+                    if (it is Resource.Success<*>) {
+                        //can save for further use
+
+                    }
+                    status.value = it
+                }
+            }
+        }
+    }
+
+    fun changeUnitSystem() {
+
+        when {
+            !mContext.checkInternetConnected() -> status.value =
+                Resource.NoInternetError<Int>(R.string.default_internet_message)
+            else -> {
+
+                var newVal = ""
+                when (unitSystem.value) {
+                    "kg/cm" -> {
+                        newVal = "lbs/inch"
+                    }
+                    "lbs/inch" -> {
+                        newVal = "kg/cm"
+                    }
+                }
+                status.addSource(repository.changeUnitSystem(getAuthKey(), newVal)) {
+                    if (it is Resource.ChangeUnitSuccess<*>) {
+                        //can save for further use
+
+                    }
+                    status.value = it
+                }
+            }
+        }
+    }
+
+    fun logout() {
+
+        when {
+            !mContext.checkInternetConnected() -> status.value =
+                Resource.NoInternetError<Int>(R.string.default_internet_message)
+            else -> {
+                status.addSource(repository.logout(getAuthKey())) {
+                    if (it is Resource.LogoutSuccess<*>) {
+                        //can save for further use
+
+                    }
+                    status.value = it
+                }
+            }
+        }
+    }
+
+    fun updateAutoShipToggle(isAutoShip:Boolean) {
+        myApplication.callApi(
+            ApiServices.getAutoShipmentApiService().updateAutoShipToggle(
+                authorization = getAuthKey(),
+                isAutoShip = isAutoShip
+            ), liveData = status,
+            showLoading = true
+        )
+    }
+}

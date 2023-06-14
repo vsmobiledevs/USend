@@ -1,0 +1,348 @@
+package com.usend.databinding;
+import com.usend.R;
+import com.usend.BR;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import android.view.View;
+@SuppressWarnings("unchecked")
+public class ActivityChangePasswordBindingImpl extends ActivityChangePasswordBinding  {
+
+    @Nullable
+    private static final androidx.databinding.ViewDataBinding.IncludedLayouts sIncludes;
+    @Nullable
+    private static final android.util.SparseIntArray sViewsWithIds;
+    static {
+        sIncludes = null;
+        sViewsWithIds = new android.util.SparseIntArray();
+        sViewsWithIds.put(R.id.toolbarChangePassword, 4);
+        sViewsWithIds.put(R.id.txtPasswordTitle, 5);
+        sViewsWithIds.put(R.id.tiPassword, 6);
+        sViewsWithIds.put(R.id.txtNewPasswordTitle, 7);
+        sViewsWithIds.put(R.id.tiNewPassword, 8);
+        sViewsWithIds.put(R.id.txtConfirmPasswordTitle, 9);
+        sViewsWithIds.put(R.id.tiConfirmPassword, 10);
+        sViewsWithIds.put(R.id.btnChange, 11);
+    }
+    // views
+    @NonNull
+    private final android.widget.LinearLayout mboundView0;
+    // variables
+    // values
+    // listeners
+    // Inverse Binding Event Handlers
+    private androidx.databinding.InverseBindingListener edtConfirmPasswordandroidTextAttrChanged = new androidx.databinding.InverseBindingListener() {
+        @Override
+        public void onChange() {
+            // Inverse of viewModel.confirmPassword.getValue()
+            //         is viewModel.confirmPassword.setValue((java.lang.String) callbackArg_0)
+            java.lang.String callbackArg_0 = androidx.databinding.adapters.TextViewBindingAdapter.getTextString(edtConfirmPassword);
+            // localize variables for thread safety
+            // viewModel.confirmPassword != null
+            boolean viewModelConfirmPasswordJavaLangObjectNull = false;
+            // viewModel.confirmPassword
+            androidx.lifecycle.MediatorLiveData<java.lang.String> viewModelConfirmPassword = null;
+            // viewModel
+            com.usend.viewmodels.ChangePasswordViewModel viewModel = mViewModel;
+            // viewModel != null
+            boolean viewModelJavaLangObjectNull = false;
+            // viewModel.confirmPassword.getValue()
+            java.lang.String viewModelConfirmPasswordGetValue = null;
+
+
+
+            viewModelJavaLangObjectNull = (viewModel) != (null);
+            if (viewModelJavaLangObjectNull) {
+
+
+                viewModelConfirmPassword = viewModel.getConfirmPassword();
+
+                viewModelConfirmPasswordJavaLangObjectNull = (viewModelConfirmPassword) != (null);
+                if (viewModelConfirmPasswordJavaLangObjectNull) {
+
+
+
+
+                    viewModelConfirmPassword.setValue(((java.lang.String) (callbackArg_0)));
+                }
+            }
+        }
+    };
+    private androidx.databinding.InverseBindingListener edtNewPasswordandroidTextAttrChanged = new androidx.databinding.InverseBindingListener() {
+        @Override
+        public void onChange() {
+            // Inverse of viewModel.newPassword.getValue()
+            //         is viewModel.newPassword.setValue((java.lang.String) callbackArg_0)
+            java.lang.String callbackArg_0 = androidx.databinding.adapters.TextViewBindingAdapter.getTextString(edtNewPassword);
+            // localize variables for thread safety
+            // viewModel.newPassword
+            androidx.lifecycle.MediatorLiveData<java.lang.String> viewModelNewPassword = null;
+            // viewModel.newPassword.getValue()
+            java.lang.String viewModelNewPasswordGetValue = null;
+            // viewModel
+            com.usend.viewmodels.ChangePasswordViewModel viewModel = mViewModel;
+            // viewModel.newPassword != null
+            boolean viewModelNewPasswordJavaLangObjectNull = false;
+            // viewModel != null
+            boolean viewModelJavaLangObjectNull = false;
+
+
+
+            viewModelJavaLangObjectNull = (viewModel) != (null);
+            if (viewModelJavaLangObjectNull) {
+
+
+                viewModelNewPassword = viewModel.getNewPassword();
+
+                viewModelNewPasswordJavaLangObjectNull = (viewModelNewPassword) != (null);
+                if (viewModelNewPasswordJavaLangObjectNull) {
+
+
+
+
+                    viewModelNewPassword.setValue(((java.lang.String) (callbackArg_0)));
+                }
+            }
+        }
+    };
+    private androidx.databinding.InverseBindingListener edtPasswordandroidTextAttrChanged = new androidx.databinding.InverseBindingListener() {
+        @Override
+        public void onChange() {
+            // Inverse of viewModel.currentPassword.getValue()
+            //         is viewModel.currentPassword.setValue((java.lang.String) callbackArg_0)
+            java.lang.String callbackArg_0 = androidx.databinding.adapters.TextViewBindingAdapter.getTextString(edtPassword);
+            // localize variables for thread safety
+            // viewModel.currentPassword
+            androidx.lifecycle.MediatorLiveData<java.lang.String> viewModelCurrentPassword = null;
+            // viewModel.currentPassword.getValue()
+            java.lang.String viewModelCurrentPasswordGetValue = null;
+            // viewModel.currentPassword != null
+            boolean viewModelCurrentPasswordJavaLangObjectNull = false;
+            // viewModel
+            com.usend.viewmodels.ChangePasswordViewModel viewModel = mViewModel;
+            // viewModel != null
+            boolean viewModelJavaLangObjectNull = false;
+
+
+
+            viewModelJavaLangObjectNull = (viewModel) != (null);
+            if (viewModelJavaLangObjectNull) {
+
+
+                viewModelCurrentPassword = viewModel.getCurrentPassword();
+
+                viewModelCurrentPasswordJavaLangObjectNull = (viewModelCurrentPassword) != (null);
+                if (viewModelCurrentPasswordJavaLangObjectNull) {
+
+
+
+
+                    viewModelCurrentPassword.setValue(((java.lang.String) (callbackArg_0)));
+                }
+            }
+        }
+    };
+
+    public ActivityChangePasswordBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 12, sIncludes, sViewsWithIds));
+    }
+    private ActivityChangePasswordBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
+        super(bindingComponent, root, 3
+            , (com.google.android.material.button.MaterialButton) bindings[11]
+            , (androidx.appcompat.widget.AppCompatEditText) bindings[3]
+            , (androidx.appcompat.widget.AppCompatEditText) bindings[2]
+            , (androidx.appcompat.widget.AppCompatEditText) bindings[1]
+            , (com.google.android.material.textfield.TextInputLayout) bindings[10]
+            , (com.google.android.material.textfield.TextInputLayout) bindings[8]
+            , (com.google.android.material.textfield.TextInputLayout) bindings[6]
+            , (android.view.View) bindings[4]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[9]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[7]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[5]
+            );
+        this.edtConfirmPassword.setTag(null);
+        this.edtNewPassword.setTag(null);
+        this.edtPassword.setTag(null);
+        this.mboundView0 = (android.widget.LinearLayout) bindings[0];
+        this.mboundView0.setTag(null);
+        setRootTag(root);
+        // listeners
+        invalidateAll();
+    }
+
+    @Override
+    public void invalidateAll() {
+        synchronized(this) {
+                mDirtyFlags = 0x10L;
+        }
+        requestRebind();
+    }
+
+    @Override
+    public boolean hasPendingBindings() {
+        synchronized(this) {
+            if (mDirtyFlags != 0) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    @Override
+    public boolean setVariable(int variableId, @Nullable Object variable)  {
+        boolean variableSet = true;
+        if (BR.viewModel == variableId) {
+            setViewModel((com.usend.viewmodels.ChangePasswordViewModel) variable);
+        }
+        else {
+            variableSet = false;
+        }
+            return variableSet;
+    }
+
+    public void setViewModel(@Nullable com.usend.viewmodels.ChangePasswordViewModel ViewModel) {
+        this.mViewModel = ViewModel;
+        synchronized(this) {
+            mDirtyFlags |= 0x8L;
+        }
+        notifyPropertyChanged(BR.viewModel);
+        super.requestRebind();
+    }
+
+    @Override
+    protected boolean onFieldChange(int localFieldId, Object object, int fieldId) {
+        switch (localFieldId) {
+            case 0 :
+                return onChangeViewModelConfirmPassword((androidx.lifecycle.MediatorLiveData<java.lang.String>) object, fieldId);
+            case 1 :
+                return onChangeViewModelCurrentPassword((androidx.lifecycle.MediatorLiveData<java.lang.String>) object, fieldId);
+            case 2 :
+                return onChangeViewModelNewPassword((androidx.lifecycle.MediatorLiveData<java.lang.String>) object, fieldId);
+        }
+        return false;
+    }
+    private boolean onChangeViewModelConfirmPassword(androidx.lifecycle.MediatorLiveData<java.lang.String> ViewModelConfirmPassword, int fieldId) {
+        if (fieldId == BR._all) {
+            synchronized(this) {
+                    mDirtyFlags |= 0x1L;
+            }
+            return true;
+        }
+        return false;
+    }
+    private boolean onChangeViewModelCurrentPassword(androidx.lifecycle.MediatorLiveData<java.lang.String> ViewModelCurrentPassword, int fieldId) {
+        if (fieldId == BR._all) {
+            synchronized(this) {
+                    mDirtyFlags |= 0x2L;
+            }
+            return true;
+        }
+        return false;
+    }
+    private boolean onChangeViewModelNewPassword(androidx.lifecycle.MediatorLiveData<java.lang.String> ViewModelNewPassword, int fieldId) {
+        if (fieldId == BR._all) {
+            synchronized(this) {
+                    mDirtyFlags |= 0x4L;
+            }
+            return true;
+        }
+        return false;
+    }
+
+    @Override
+    protected void executeBindings() {
+        long dirtyFlags = 0;
+        synchronized(this) {
+            dirtyFlags = mDirtyFlags;
+            mDirtyFlags = 0;
+        }
+        java.lang.String viewModelNewPasswordGetValue = null;
+        androidx.lifecycle.MediatorLiveData<java.lang.String> viewModelConfirmPassword = null;
+        androidx.lifecycle.MediatorLiveData<java.lang.String> viewModelCurrentPassword = null;
+        java.lang.String viewModelCurrentPasswordGetValue = null;
+        androidx.lifecycle.MediatorLiveData<java.lang.String> viewModelNewPassword = null;
+        java.lang.String viewModelConfirmPasswordGetValue = null;
+        com.usend.viewmodels.ChangePasswordViewModel viewModel = mViewModel;
+
+        if ((dirtyFlags & 0x1fL) != 0) {
+
+
+            if ((dirtyFlags & 0x19L) != 0) {
+
+                    if (viewModel != null) {
+                        // read viewModel.confirmPassword
+                        viewModelConfirmPassword = viewModel.getConfirmPassword();
+                    }
+                    updateLiveDataRegistration(0, viewModelConfirmPassword);
+
+
+                    if (viewModelConfirmPassword != null) {
+                        // read viewModel.confirmPassword.getValue()
+                        viewModelConfirmPasswordGetValue = viewModelConfirmPassword.getValue();
+                    }
+            }
+            if ((dirtyFlags & 0x1aL) != 0) {
+
+                    if (viewModel != null) {
+                        // read viewModel.currentPassword
+                        viewModelCurrentPassword = viewModel.getCurrentPassword();
+                    }
+                    updateLiveDataRegistration(1, viewModelCurrentPassword);
+
+
+                    if (viewModelCurrentPassword != null) {
+                        // read viewModel.currentPassword.getValue()
+                        viewModelCurrentPasswordGetValue = viewModelCurrentPassword.getValue();
+                    }
+            }
+            if ((dirtyFlags & 0x1cL) != 0) {
+
+                    if (viewModel != null) {
+                        // read viewModel.newPassword
+                        viewModelNewPassword = viewModel.getNewPassword();
+                    }
+                    updateLiveDataRegistration(2, viewModelNewPassword);
+
+
+                    if (viewModelNewPassword != null) {
+                        // read viewModel.newPassword.getValue()
+                        viewModelNewPasswordGetValue = viewModelNewPassword.getValue();
+                    }
+            }
+        }
+        // batch finished
+        if ((dirtyFlags & 0x19L) != 0) {
+            // api target 1
+
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.edtConfirmPassword, viewModelConfirmPasswordGetValue);
+        }
+        if ((dirtyFlags & 0x10L) != 0) {
+            // api target 1
+
+            androidx.databinding.adapters.TextViewBindingAdapter.setTextWatcher(this.edtConfirmPassword, (androidx.databinding.adapters.TextViewBindingAdapter.BeforeTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.OnTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.AfterTextChanged)null, edtConfirmPasswordandroidTextAttrChanged);
+            androidx.databinding.adapters.TextViewBindingAdapter.setTextWatcher(this.edtNewPassword, (androidx.databinding.adapters.TextViewBindingAdapter.BeforeTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.OnTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.AfterTextChanged)null, edtNewPasswordandroidTextAttrChanged);
+            androidx.databinding.adapters.TextViewBindingAdapter.setTextWatcher(this.edtPassword, (androidx.databinding.adapters.TextViewBindingAdapter.BeforeTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.OnTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.AfterTextChanged)null, edtPasswordandroidTextAttrChanged);
+        }
+        if ((dirtyFlags & 0x1cL) != 0) {
+            // api target 1
+
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.edtNewPassword, viewModelNewPasswordGetValue);
+        }
+        if ((dirtyFlags & 0x1aL) != 0) {
+            // api target 1
+
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.edtPassword, viewModelCurrentPasswordGetValue);
+        }
+    }
+    // Listener Stub Implementations
+    // callback impls
+    // dirty flag
+    private  long mDirtyFlags = 0xffffffffffffffffL;
+    /* flag mapping
+        flag 0 (0x1L): viewModel.confirmPassword
+        flag 1 (0x2L): viewModel.currentPassword
+        flag 2 (0x3L): viewModel.newPassword
+        flag 3 (0x4L): viewModel
+        flag 4 (0x5L): null
+    flag mapping end*/
+    //end
+}

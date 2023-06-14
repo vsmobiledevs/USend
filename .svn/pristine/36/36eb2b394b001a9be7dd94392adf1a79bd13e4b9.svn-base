@@ -1,0 +1,294 @@
+[
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_mailbox.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\fragment_mailbox.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_concierge.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\fragment_concierge.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\dialog_update_mobile.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\dialog_update_mobile.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_auto_ship_methods.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\activity_auto_ship_methods.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\row_extra_services_item.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\row_extra_services_item.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_package_detail.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\activity_package_detail.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_payment_successful.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\activity_payment_successful.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_concierge_for_guest.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\fragment_concierge_for_guest.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_intro.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\activity_intro.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\row_package_details.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\row_package_details.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_edit_profile.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\activity_edit_profile.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_create_new_req.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\activity_create_new_req.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\row_prohibited_item.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\row_prohibited_item.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_sign_in.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\activity_sign_in.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\row_shipping_method_filter_item.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\row_shipping_method_filter_item.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_my_profile.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\fragment_my_profile.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_saved_payment_methods.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\activity_saved_payment_methods.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_shipping_method.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\activity_shipping_method.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\bottomsheet_shippingmethod_filter.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\bottomsheet_shippingmethod_filter.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_region_selection.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\activity_region_selection.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_saved_cards.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\activity_saved_cards.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_forgot_password.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\activity_forgot_password.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_concierge_item_detail.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\activity_concierge_item_detail.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\row_auto_shipping_method_item.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\row_auto_shipping_method_item.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_order_history.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\fragment_order_history.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\view_loading_progressbar.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\view_loading_progressbar.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_splash.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_shipping_details.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\activity_shipping_details.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_concierge_for_guest.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\activity_concierge_for_guest.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_add_new_address.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\activity_add_new_address.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\row_shipping_address_item.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\row_shipping_address_item.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\row_item_region_selection.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\row_item_region_selection.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_notification.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\activity_notification.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\row_select_saved_card_item.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\row_select_saved_card_item.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_square_up.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\activity_square_up.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\item_add_new_address.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\item_add_new_address.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\custom_bottom_tab_item.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\custom_bottom_tab_item.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\dialog_common.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\dialog_common.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\row_shipping_method_item.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\row_shipping_method_item.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_u_s_p_s_verification.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\activity_u_s_p_s_verification.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\row_saved_payment_methods_item.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\row_saved_payment_methods_item.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_otp_verification.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\activity_otp_verification.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\row_mailbox_item.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\row_mailbox_item.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_sign_up.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\activity_sign_up.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_verification_status.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\activity_verification_status.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_auth.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\fragment_auth.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_authentication.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\activity_authentication.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\row_saved_card_item.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\row_saved_card_item.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_shipping_calculator.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\fragment_shipping_calculator.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\row_ship_to_address_item.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\row_ship_to_address_item.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\dialog_split_package.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\dialog_split_package.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_payment_method.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\activity_payment_method.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\view_footer_loading.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\view_footer_loading.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_payment_info.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\activity_payment_info.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_auto_ship.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\activity_auto_ship.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_shipping_address.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\activity_shipping_address.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_ship_to_address.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\activity_ship_to_address.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_my_profile_for_guest.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\fragment_my_profile_for_guest.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_add_card.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\activity_add_card.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_billing_address.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\activity_billing_address.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_select_saved_card.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\activity_select_saved_card.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_prohibited_items.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\activity_prohibited_items.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_change_password.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\activity_change_password.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_order_details.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\activity_order_details.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_shipping_cost.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\activity_shipping_cost.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\view_empty_item.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\view_empty_item.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\row_order_history_item.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\row_order_history_item.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_web_view.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\activity_web_view.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_contact_us.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\activity_contact_us.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\row_concierge_item.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\row_concierge_item.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\dialog_image_preview.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\dialog_image_preview.xml"
+    },
+    {
+        "merged": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\row_item_noti.xml",
+        "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\layout\\row_item_noti.xml"
+    }
+]

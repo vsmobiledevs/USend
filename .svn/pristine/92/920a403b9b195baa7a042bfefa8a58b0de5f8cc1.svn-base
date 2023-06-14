@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.usend.viewmodels.MailboxViewModel" />
+
+        <variable
+            name="frag"
+            type="com.usend.views.home.MailboxFragment" />
+
+        <variable
+            name="adapter"
+            type="com.usend.adapter.MailboxPackagesItemAdapter" />
+
+        <variable
+            name="isEmpty"
+            type="Boolean" />
+
+    </data>
+
+    <RelativeLayout
+        style="@style/match"
+        android:background="@color/colorWhite"
+        tools:context=".views.home.MailboxFragment">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvAddress"
+            style="@style/MaterialCardStyle"
+            android:layout_marginStart="@dimen/dimen_20dp"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:layout_marginEnd="@dimen/dimen_20dp"
+            app:contentPaddingBottom="@dimen/dimen_5dp"
+            app:contentPaddingTop="@dimen/dimen_5dp">
+
+            <LinearLayout
+                android:id="@+id/llAddress"
+                style="@style/matchWrap"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/dimen_15dp"
+                    android:layout_height="@dimen/dimen_20dp"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/ic_map_pin" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtMailBoxNo"
+                    style="@style/CommonText.Style.14sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="@dimen/dimen_10dp"
+                    android:singleLine="false"
+                    android:text="" />
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipePackages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ll_buttons"
+            android:layout_below="@id/cvAddress">
+
+            <LinearLayout style="@style/match">
+
+                <LinearLayout
+                    android:id="@+id/llMain"
+                    style="@style/match"
+                    android:orientation="vertical"
+                    android:visibility="@{!isEmpty}">
+
+                    <com.google.android.material.card.MaterialCardView
+                        style="@style/MaterialCardStyle"
+                        android:layout_marginStart="@dimen/dimen_20dp"
+                        android:layout_marginTop="@dimen/dimen_10dp"
+                        android:layout_marginEnd="@dimen/dimen_20dp"
+                        app:contentPaddingBottom="@dimen/dimen_5dp"
+                        app:contentPaddingTop="@dimen/dimen_5dp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout style="@style/matchWrap">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/imgPackageInMailbox"
+                                android:layout_width="@dimen/dimen_15dp"
+                                android:layout_height="@dimen/dimen_15dp"
+                                android:layout_gravity="start|center_vertical"
+                                android:layout_marginStart="@dimen/dimen_15dp"
+                                android:src="@drawable/ic_package_inmailbox"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                style="@style/CommonText.Style.16sp"
+                                android:layout_width="wrap_content"
+                                android:layout_marginStart="@dimen/dimen_10dp"
+                                android:fontFamily="@font/poppins_medium"
+                                android:text="@string/lbl_packages_in_mailbox"
+                                android:textColor="@color/color2D2D2D"
+                                android:textSize="@dimen/dimen_14sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toEndOf="@id/imgPackageInMailbox"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtTotalPackages"
+                                style="@style/CommonText.Style.16sp"
+                                android:layout_width="wrap_content"
+                                android:layout_marginEnd="@dimen/dimen_15dp"
+                                android:fontFamily="@font/poppins_medium"
+                                android:text="0"
+                                android:textColor="@color/color2D2D2D"
+                                android:textSize="@dimen/dimen_14sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <RelativeLayout style="@style/matchWrap">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtPackagesTitle"
+                            style="@style/CommonText.Style.16sp"
+                            android:layout_width="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="@dimen/dimen_20dp"
+                            android:layout_marginTop="@dimen/dimen_10dp"
+                            android:layout_marginEnd="@dimen/dimen_15dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="@string/lbl_packages"
+                            android:textSize="@dimen/dimen_14sp" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtSelect"
+                            style="@style/CommonText.Style.16sp"
+                            android:layout_width="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="@dimen/dimen_20dp"
+                            android:layout_marginEnd="@dimen/dimen_15dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:onClick="@{(view) -> frag.onSelectClick()}"
+                            android:paddingStart="@dimen/dimen_5dp"
+                            android:paddingTop="@dimen/dimen_10dp"
+                            android:paddingEnd="@dimen/dimen_5dp"
+                            android:paddingBottom="@dimen/dimen_10dp"
+                            android:text="@{viewModel.isSelectMode ? @string/lbl_select_all : @string/lbl_select}"
+                            android:textColor="@color/color154A99"
+                            android:textSize="@dimen/dimen_14sp"
+                            android:visibility="gone"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtSelectCancel"
+                            style="@style/CommonText.Style.16sp"
+                            android:layout_width="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="@dimen/dimen_20dp"
+                            android:layout_marginEnd="@dimen/dimen_15dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:onClick="@{(view) -> frag.onSelectCancelClick()}"
+                            android:paddingStart="@dimen/dimen_5dp"
+                            android:paddingTop="@dimen/dimen_10dp"
+                            android:paddingEnd="@dimen/dimen_5dp"
+                            android:paddingBottom="@dimen/dimen_10dp"
+                            android:text="@{viewModel.isSelectMode ? @string/lbl_cancel : @string/lbl_select}"
+                            android:textColor="@color/color154A99"
+                            android:textSize="@dimen/dimen_14sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                    </RelativeLayout>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvPackages"
+                        style="@style/styleRecyclerView"
+                        app:adapter="@{adapter}"
+                        tools:itemCount="5"
+                        android:clipToPadding="false"
+                        android:paddingBottom="@dimen/dimen_120dp"
+                        tools:listitem="@layout/row_mailbox_item" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/match"
+                    android:layout_centerInParent="true"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="@{isEmpty}">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/dimen_100dp"
+                        android:layout_height="@dimen/dimen_100dp"
+                        android:src="@drawable/ic_no_mailbox_package" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/CommonText.Style.SemiBold.16sp"
+                        android:layout_marginTop="@dimen/dimen_20dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/lbl_no_packages_found" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCreateShipment"
+                style="@style/MaterialButton.CornerRadius"
+                android:layout_width="match_parent"
+
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                android:layout_marginBottom="@dimen/dimen_10dp"
+                android:onClick="@{(view)-> frag.onCreateShipmentClick()}"
+                android:text="@string/lbl_create_shipment"
+                android:visibility="@{viewModel.isSelectMode}" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSendToTrash"
+                style="@style/MaterialButton.CornerRadius"
+                android:backgroundTint="@color/colorRed"
+                android:layout_width="match_parent"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                android:layout_marginBottom="@dimen/dimen_10dp"
+                android:onClick="@{(view)-> frag.onSentToTrash()}"
+                android:text="@string/lbl_trash_shipment"
+                android:visibility="@{viewModel.isSelectMode}" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</layout>

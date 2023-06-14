@@ -1,0 +1,317 @@
+package com.usend.base;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 4, 0}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000<\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0000\n\u0002\u0010\u000e\n\u0002\b\r\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b6\u0018\u00002\u00020\u0001:\n\u0007\b\t\n\u000b\f\r\u000e\u000f\u0010B\u000f\b\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004R\u0011\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0005\u0010\u0006\u0082\u0001\n\u0011\u0012\u0013\u0014\u0015\u0016\u0017\u0018\u0019\u001a\u00a8\u0006\u001b"}, d2 = {"Lcom/usend/base/Permissions;", "", "value", "", "(Ljava/lang/String;)V", "getValue", "()Ljava/lang/String;", "Calendar", "CallLog", "Camera", "Contacts", "Location", "Microphone", "Phone", "Sensors", "Sms", "Storage", "Lcom/usend/base/Permissions$Camera;", "Lcom/usend/base/Permissions$Microphone;", "Lcom/usend/base/Permissions$Sensors;", "Lcom/usend/base/Permissions$Storage;", "Lcom/usend/base/Permissions$Calendar;", "Lcom/usend/base/Permissions$Location;", "Lcom/usend/base/Permissions$CallLog;", "Lcom/usend/base/Permissions$Sms;", "Lcom/usend/base/Permissions$Contacts;", "Lcom/usend/base/Permissions$Phone;", "app_debug"})
+public abstract class Permissions {
+    @org.jetbrains.annotations.NotNull()
+    private final java.lang.String value = null;
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getValue() {
+        return null;
+    }
+    
+    private Permissions(java.lang.String value) {
+        super();
+    }
+    
+    @kotlin.Metadata(mv = {1, 4, 0}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u00c6\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002\u00a8\u0006\u0003"}, d2 = {"Lcom/usend/base/Permissions$Camera;", "Lcom/usend/base/Permissions;", "()V", "app_debug"})
+    public static final class Camera extends com.usend.base.Permissions {
+        public static final com.usend.base.Permissions.Camera INSTANCE = null;
+        
+        private Camera() {
+            super(null);
+        }
+    }
+    
+    @kotlin.Metadata(mv = {1, 4, 0}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u00c6\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002\u00a8\u0006\u0003"}, d2 = {"Lcom/usend/base/Permissions$Microphone;", "Lcom/usend/base/Permissions;", "()V", "app_debug"})
+    public static final class Microphone extends com.usend.base.Permissions {
+        public static final com.usend.base.Permissions.Microphone INSTANCE = null;
+        
+        private Microphone() {
+            super(null);
+        }
+    }
+    
+    @kotlin.Metadata(mv = {1, 4, 0}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u00c6\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002\u00a8\u0006\u0003"}, d2 = {"Lcom/usend/base/Permissions$Sensors;", "Lcom/usend/base/Permissions;", "()V", "app_debug"})
+    public static final class Sensors extends com.usend.base.Permissions {
+        public static final com.usend.base.Permissions.Sensors INSTANCE = null;
+        
+        private Sensors() {
+            super(null);
+        }
+    }
+    
+    @kotlin.Metadata(mv = {1, 4, 0}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\u001c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b6\u0018\u00002\u00020\u0001:\u0002\u0005\u0006B\u000f\b\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004\u0082\u0001\u0002\u0007\b\u00a8\u0006\t"}, d2 = {"Lcom/usend/base/Permissions$Storage;", "Lcom/usend/base/Permissions;", "value", "", "(Ljava/lang/String;)V", "ReadExternal", "WriteExternal", "Lcom/usend/base/Permissions$Storage$ReadExternal;", "Lcom/usend/base/Permissions$Storage$WriteExternal;", "app_debug"})
+    public static abstract class Storage extends com.usend.base.Permissions {
+        
+        private Storage(java.lang.String value) {
+            super(null);
+        }
+        
+        @kotlin.Metadata(mv = {1, 4, 0}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u00c6\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002\u00a8\u0006\u0003"}, d2 = {"Lcom/usend/base/Permissions$Storage$ReadExternal;", "Lcom/usend/base/Permissions$Storage;", "()V", "app_debug"})
+        public static final class ReadExternal extends com.usend.base.Permissions.Storage {
+            public static final com.usend.base.Permissions.Storage.ReadExternal INSTANCE = null;
+            
+            private ReadExternal() {
+                super(null);
+            }
+        }
+        
+        @kotlin.Metadata(mv = {1, 4, 0}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u00c6\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002\u00a8\u0006\u0003"}, d2 = {"Lcom/usend/base/Permissions$Storage$WriteExternal;", "Lcom/usend/base/Permissions$Storage;", "()V", "app_debug"})
+        public static final class WriteExternal extends com.usend.base.Permissions.Storage {
+            public static final com.usend.base.Permissions.Storage.WriteExternal INSTANCE = null;
+            
+            private WriteExternal() {
+                super(null);
+            }
+        }
+    }
+    
+    @kotlin.Metadata(mv = {1, 4, 0}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\u001c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b6\u0018\u00002\u00020\u0001:\u0002\u0005\u0006B\u000f\b\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004\u0082\u0001\u0002\u0007\b\u00a8\u0006\t"}, d2 = {"Lcom/usend/base/Permissions$Calendar;", "Lcom/usend/base/Permissions;", "value", "", "(Ljava/lang/String;)V", "Read", "Write", "Lcom/usend/base/Permissions$Calendar$Read;", "Lcom/usend/base/Permissions$Calendar$Write;", "app_debug"})
+    public static abstract class Calendar extends com.usend.base.Permissions {
+        
+        private Calendar(java.lang.String value) {
+            super(null);
+        }
+        
+        @kotlin.Metadata(mv = {1, 4, 0}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u00c6\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002\u00a8\u0006\u0003"}, d2 = {"Lcom/usend/base/Permissions$Calendar$Read;", "Lcom/usend/base/Permissions$Calendar;", "()V", "app_debug"})
+        public static final class Read extends com.usend.base.Permissions.Calendar {
+            public static final com.usend.base.Permissions.Calendar.Read INSTANCE = null;
+            
+            private Read() {
+                super(null);
+            }
+        }
+        
+        @kotlin.Metadata(mv = {1, 4, 0}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u00c6\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002\u00a8\u0006\u0003"}, d2 = {"Lcom/usend/base/Permissions$Calendar$Write;", "Lcom/usend/base/Permissions$Calendar;", "()V", "app_debug"})
+        public static final class Write extends com.usend.base.Permissions.Calendar {
+            public static final com.usend.base.Permissions.Calendar.Write INSTANCE = null;
+            
+            private Write() {
+                super(null);
+            }
+        }
+    }
+    
+    @kotlin.Metadata(mv = {1, 4, 0}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\u001c\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b6\u0018\u00002\u00020\u0001:\u0002\u0005\u0006B\u000f\b\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004\u0082\u0001\u0002\u0007\b\u00a8\u0006\t"}, d2 = {"Lcom/usend/base/Permissions$Location;", "Lcom/usend/base/Permissions;", "value", "", "(Ljava/lang/String;)V", "Coarse", "Fine", "Lcom/usend/base/Permissions$Location$Fine;", "Lcom/usend/base/Permissions$Location$Coarse;", "app_debug"})
+    public static abstract class Location extends com.usend.base.Permissions {
+        
+        private Location(java.lang.String value) {
+            super(null);
+        }
+        
+        @kotlin.Metadata(mv = {1, 4, 0}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u00c6\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002\u00a8\u0006\u0003"}, d2 = {"Lcom/usend/base/Permissions$Location$Fine;", "Lcom/usend/base/Permissions$Location;", "()V", "app_debug"})
+        public static final class Fine extends com.usend.base.Permissions.Location {
+            public static final com.usend.base.Permissions.Location.Fine INSTANCE = null;
+            
+            private Fine() {
+                super(null);
+            }
+        }
+        
+        @kotlin.Metadata(mv = {1, 4, 0}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u00c6\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002\u00a8\u0006\u0003"}, d2 = {"Lcom/usend/base/Permissions$Location$Coarse;", "Lcom/usend/base/Permissions$Location;", "()V", "app_debug"})
+        public static final class Coarse extends com.usend.base.Permissions.Location {
+            public static final com.usend.base.Permissions.Location.Coarse INSTANCE = null;
+            
+            private Coarse() {
+                super(null);
+            }
+        }
+    }
+    
+    @kotlin.Metadata(mv = {1, 4, 0}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000 \n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b6\u0018\u00002\u00020\u0001:\u0003\u0005\u0006\u0007B\u000f\b\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004\u0082\u0001\u0003\b\t\n\u00a8\u0006\u000b"}, d2 = {"Lcom/usend/base/Permissions$CallLog;", "Lcom/usend/base/Permissions;", "value", "", "(Ljava/lang/String;)V", "ProcessOutgoing", "Read", "Write", "Lcom/usend/base/Permissions$CallLog$Read;", "Lcom/usend/base/Permissions$CallLog$Write;", "Lcom/usend/base/Permissions$CallLog$ProcessOutgoing;", "app_debug"})
+    public static abstract class CallLog extends com.usend.base.Permissions {
+        
+        private CallLog(java.lang.String value) {
+            super(null);
+        }
+        
+        @kotlin.Metadata(mv = {1, 4, 0}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u00c6\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002\u00a8\u0006\u0003"}, d2 = {"Lcom/usend/base/Permissions$CallLog$Read;", "Lcom/usend/base/Permissions$CallLog;", "()V", "app_debug"})
+        public static final class Read extends com.usend.base.Permissions.CallLog {
+            public static final com.usend.base.Permissions.CallLog.Read INSTANCE = null;
+            
+            private Read() {
+                super(null);
+            }
+        }
+        
+        @kotlin.Metadata(mv = {1, 4, 0}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u00c6\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002\u00a8\u0006\u0003"}, d2 = {"Lcom/usend/base/Permissions$CallLog$Write;", "Lcom/usend/base/Permissions$CallLog;", "()V", "app_debug"})
+        public static final class Write extends com.usend.base.Permissions.CallLog {
+            public static final com.usend.base.Permissions.CallLog.Write INSTANCE = null;
+            
+            private Write() {
+                super(null);
+            }
+        }
+        
+        @kotlin.Metadata(mv = {1, 4, 0}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u00c6\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002\u00a8\u0006\u0003"}, d2 = {"Lcom/usend/base/Permissions$CallLog$ProcessOutgoing;", "Lcom/usend/base/Permissions$CallLog;", "()V", "app_debug"})
+        public static final class ProcessOutgoing extends com.usend.base.Permissions.CallLog {
+            public static final com.usend.base.Permissions.CallLog.ProcessOutgoing INSTANCE = null;
+            
+            private ProcessOutgoing() {
+                super(null);
+            }
+        }
+    }
+    
+    @kotlin.Metadata(mv = {1, 4, 0}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000(\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b6\u0018\u00002\u00020\u0001:\u0005\u0005\u0006\u0007\b\tB\u000f\b\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004\u0082\u0001\u0005\n\u000b\f\r\u000e\u00a8\u0006\u000f"}, d2 = {"Lcom/usend/base/Permissions$Sms;", "Lcom/usend/base/Permissions;", "value", "", "(Ljava/lang/String;)V", "Read", "Receive", "ReceiveMms", "ReceiveWapPush", "Send", "Lcom/usend/base/Permissions$Sms$Send;", "Lcom/usend/base/Permissions$Sms$Receive;", "Lcom/usend/base/Permissions$Sms$Read;", "Lcom/usend/base/Permissions$Sms$ReceiveWapPush;", "Lcom/usend/base/Permissions$Sms$ReceiveMms;", "app_debug"})
+    public static abstract class Sms extends com.usend.base.Permissions {
+        
+        private Sms(java.lang.String value) {
+            super(null);
+        }
+        
+        @kotlin.Metadata(mv = {1, 4, 0}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u00c6\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002\u00a8\u0006\u0003"}, d2 = {"Lcom/usend/base/Permissions$Sms$Send;", "Lcom/usend/base/Permissions$Sms;", "()V", "app_debug"})
+        public static final class Send extends com.usend.base.Permissions.Sms {
+            public static final com.usend.base.Permissions.Sms.Send INSTANCE = null;
+            
+            private Send() {
+                super(null);
+            }
+        }
+        
+        @kotlin.Metadata(mv = {1, 4, 0}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u00c6\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002\u00a8\u0006\u0003"}, d2 = {"Lcom/usend/base/Permissions$Sms$Receive;", "Lcom/usend/base/Permissions$Sms;", "()V", "app_debug"})
+        public static final class Receive extends com.usend.base.Permissions.Sms {
+            public static final com.usend.base.Permissions.Sms.Receive INSTANCE = null;
+            
+            private Receive() {
+                super(null);
+            }
+        }
+        
+        @kotlin.Metadata(mv = {1, 4, 0}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u00c6\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002\u00a8\u0006\u0003"}, d2 = {"Lcom/usend/base/Permissions$Sms$Read;", "Lcom/usend/base/Permissions$Sms;", "()V", "app_debug"})
+        public static final class Read extends com.usend.base.Permissions.Sms {
+            public static final com.usend.base.Permissions.Sms.Read INSTANCE = null;
+            
+            private Read() {
+                super(null);
+            }
+        }
+        
+        @kotlin.Metadata(mv = {1, 4, 0}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u00c6\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002\u00a8\u0006\u0003"}, d2 = {"Lcom/usend/base/Permissions$Sms$ReceiveWapPush;", "Lcom/usend/base/Permissions$Sms;", "()V", "app_debug"})
+        public static final class ReceiveWapPush extends com.usend.base.Permissions.Sms {
+            public static final com.usend.base.Permissions.Sms.ReceiveWapPush INSTANCE = null;
+            
+            private ReceiveWapPush() {
+                super(null);
+            }
+        }
+        
+        @kotlin.Metadata(mv = {1, 4, 0}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u00c6\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002\u00a8\u0006\u0003"}, d2 = {"Lcom/usend/base/Permissions$Sms$ReceiveMms;", "Lcom/usend/base/Permissions$Sms;", "()V", "app_debug"})
+        public static final class ReceiveMms extends com.usend.base.Permissions.Sms {
+            public static final com.usend.base.Permissions.Sms.ReceiveMms INSTANCE = null;
+            
+            private ReceiveMms() {
+                super(null);
+            }
+        }
+    }
+    
+    @kotlin.Metadata(mv = {1, 4, 0}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000 \n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b6\u0018\u00002\u00020\u0001:\u0003\u0005\u0006\u0007B\u000f\b\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004\u0082\u0001\u0003\b\t\n\u00a8\u0006\u000b"}, d2 = {"Lcom/usend/base/Permissions$Contacts;", "Lcom/usend/base/Permissions;", "value", "", "(Ljava/lang/String;)V", "GetAccounts", "Read", "Write", "Lcom/usend/base/Permissions$Contacts$Read;", "Lcom/usend/base/Permissions$Contacts$Write;", "Lcom/usend/base/Permissions$Contacts$GetAccounts;", "app_debug"})
+    public static abstract class Contacts extends com.usend.base.Permissions {
+        
+        private Contacts(java.lang.String value) {
+            super(null);
+        }
+        
+        @kotlin.Metadata(mv = {1, 4, 0}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u00c6\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002\u00a8\u0006\u0003"}, d2 = {"Lcom/usend/base/Permissions$Contacts$Read;", "Lcom/usend/base/Permissions$Contacts;", "()V", "app_debug"})
+        public static final class Read extends com.usend.base.Permissions.Contacts {
+            public static final com.usend.base.Permissions.Contacts.Read INSTANCE = null;
+            
+            private Read() {
+                super(null);
+            }
+        }
+        
+        @kotlin.Metadata(mv = {1, 4, 0}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u00c6\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002\u00a8\u0006\u0003"}, d2 = {"Lcom/usend/base/Permissions$Contacts$Write;", "Lcom/usend/base/Permissions$Contacts;", "()V", "app_debug"})
+        public static final class Write extends com.usend.base.Permissions.Contacts {
+            public static final com.usend.base.Permissions.Contacts.Write INSTANCE = null;
+            
+            private Write() {
+                super(null);
+            }
+        }
+        
+        @kotlin.Metadata(mv = {1, 4, 0}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u00c6\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002\u00a8\u0006\u0003"}, d2 = {"Lcom/usend/base/Permissions$Contacts$GetAccounts;", "Lcom/usend/base/Permissions$Contacts;", "()V", "app_debug"})
+        public static final class GetAccounts extends com.usend.base.Permissions.Contacts {
+            public static final com.usend.base.Permissions.Contacts.GetAccounts INSTANCE = null;
+            
+            private GetAccounts() {
+                super(null);
+            }
+        }
+    }
+    
+    @kotlin.Metadata(mv = {1, 4, 0}, bv = {1, 0, 3}, k = 1, d1 = {"\u00000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\b\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\b6\u0018\u00002\u00020\u0001:\u0007\u0005\u0006\u0007\b\t\n\u000bB\u000f\b\u0002\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u00a2\u0006\u0002\u0010\u0004\u0082\u0001\u0007\f\r\u000e\u000f\u0010\u0011\u0012\u00a8\u0006\u0013"}, d2 = {"Lcom/usend/base/Permissions$Phone;", "Lcom/usend/base/Permissions;", "value", "", "(Ljava/lang/String;)V", "AcceptHandover", "AddVoiceMail", "Answer", "Call", "ReadNumbers", "ReadState", "UseSip", "Lcom/usend/base/Permissions$Phone$ReadState;", "Lcom/usend/base/Permissions$Phone$ReadNumbers;", "Lcom/usend/base/Permissions$Phone$Call;", "Lcom/usend/base/Permissions$Phone$Answer;", "Lcom/usend/base/Permissions$Phone$AddVoiceMail;", "Lcom/usend/base/Permissions$Phone$UseSip;", "Lcom/usend/base/Permissions$Phone$AcceptHandover;", "app_debug"})
+    public static abstract class Phone extends com.usend.base.Permissions {
+        
+        private Phone(java.lang.String value) {
+            super(null);
+        }
+        
+        @kotlin.Metadata(mv = {1, 4, 0}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u00c6\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002\u00a8\u0006\u0003"}, d2 = {"Lcom/usend/base/Permissions$Phone$ReadState;", "Lcom/usend/base/Permissions$Phone;", "()V", "app_debug"})
+        public static final class ReadState extends com.usend.base.Permissions.Phone {
+            public static final com.usend.base.Permissions.Phone.ReadState INSTANCE = null;
+            
+            private ReadState() {
+                super(null);
+            }
+        }
+        
+        @kotlin.Metadata(mv = {1, 4, 0}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u00c6\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002\u00a8\u0006\u0003"}, d2 = {"Lcom/usend/base/Permissions$Phone$ReadNumbers;", "Lcom/usend/base/Permissions$Phone;", "()V", "app_debug"})
+        public static final class ReadNumbers extends com.usend.base.Permissions.Phone {
+            public static final com.usend.base.Permissions.Phone.ReadNumbers INSTANCE = null;
+            
+            private ReadNumbers() {
+                super(null);
+            }
+        }
+        
+        @kotlin.Metadata(mv = {1, 4, 0}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u00c6\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002\u00a8\u0006\u0003"}, d2 = {"Lcom/usend/base/Permissions$Phone$Call;", "Lcom/usend/base/Permissions$Phone;", "()V", "app_debug"})
+        public static final class Call extends com.usend.base.Permissions.Phone {
+            public static final com.usend.base.Permissions.Phone.Call INSTANCE = null;
+            
+            private Call() {
+                super(null);
+            }
+        }
+        
+        @kotlin.Metadata(mv = {1, 4, 0}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u00c6\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002\u00a8\u0006\u0003"}, d2 = {"Lcom/usend/base/Permissions$Phone$Answer;", "Lcom/usend/base/Permissions$Phone;", "()V", "app_debug"})
+        public static final class Answer extends com.usend.base.Permissions.Phone {
+            public static final com.usend.base.Permissions.Phone.Answer INSTANCE = null;
+            
+            private Answer() {
+                super(null);
+            }
+        }
+        
+        @kotlin.Metadata(mv = {1, 4, 0}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u00c6\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002\u00a8\u0006\u0003"}, d2 = {"Lcom/usend/base/Permissions$Phone$AddVoiceMail;", "Lcom/usend/base/Permissions$Phone;", "()V", "app_debug"})
+        public static final class AddVoiceMail extends com.usend.base.Permissions.Phone {
+            public static final com.usend.base.Permissions.Phone.AddVoiceMail INSTANCE = null;
+            
+            private AddVoiceMail() {
+                super(null);
+            }
+        }
+        
+        @kotlin.Metadata(mv = {1, 4, 0}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u00c6\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002\u00a8\u0006\u0003"}, d2 = {"Lcom/usend/base/Permissions$Phone$UseSip;", "Lcom/usend/base/Permissions$Phone;", "()V", "app_debug"})
+        public static final class UseSip extends com.usend.base.Permissions.Phone {
+            public static final com.usend.base.Permissions.Phone.UseSip INSTANCE = null;
+            
+            private UseSip() {
+                super(null);
+            }
+        }
+        
+        @kotlin.Metadata(mv = {1, 4, 0}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\b\u00c6\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002\u00a8\u0006\u0003"}, d2 = {"Lcom/usend/base/Permissions$Phone$AcceptHandover;", "Lcom/usend/base/Permissions$Phone;", "()V", "app_debug"})
+        public static final class AcceptHandover extends com.usend.base.Permissions.Phone {
+            public static final com.usend.base.Permissions.Phone.AcceptHandover INSTANCE = null;
+            
+            private AcceptHandover() {
+                super(null);
+            }
+        }
+    }
+}

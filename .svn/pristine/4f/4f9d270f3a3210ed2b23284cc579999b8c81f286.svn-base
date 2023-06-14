@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                        
+
+    
+
+           
+
+    <LinearLayout
+        android:id="@+id/llMain"
+        style="@style/matchWrap"
+        android:layout_marginStart="@dimen/dimen_20dp"
+        android:layout_marginEnd="@dimen/dimen_20dp"
+        android:background="@drawable/bg_10_radius_white_back"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/dimen_20dp"
+        android:paddingTop="@dimen/dimen_30dp"
+        android:paddingEnd="@dimen/dimen_20dp" android:tag="layout/dialog_split_package_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtTitle"
+            style="@style/CommonText.Style.16sp"
+            android:gravity="center"
+            android:text="@string/lbl_do_you_want_to_split_packages"
+            android:textColor="@color/color2D2D2D" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtMsg"
+            style="@style/CommonText.Style.14sp"
+            android:layout_marginTop="@dimen/dimen_18dp"
+            android:fontFamily="@font/poppins_light"
+            android:gravity="center"
+            android:lineSpacingExtra="@dimen/dimen_7dp"
+            android:singleLine="false"
+            android:text="@string/lbl_split_charges"
+            android:textColor="@color/color404355"
+            android:textSize="@dimen/dimen_14sp" />
+
+        <LinearLayout
+            style="@style/matchWrap"
+            android:weightSum="2"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:layout_marginBottom="@dimen/dimen_24dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAccept"
+                android:layout_weight="1"
+                android:textAllCaps="true"
+                style="@style/MaterialButton.CornerRadius"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/lbl_accept" />
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/MaterialButton.Round.Border"
+                android:id="@+id/btnCancel"
+                android:layout_weight="1"
+                android:textAllCaps="true"
+                android:textColor="@color/color404355"
+                android:layout_marginStart="@dimen/dimen_12dp"
+                app:strokeColor="@color/color404355"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/lbl_cancel"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+         

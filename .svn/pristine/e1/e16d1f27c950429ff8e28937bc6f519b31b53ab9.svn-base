@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="isSeleted"
+            type="Boolean" />
+
+    </data>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtFilterItem"
+        style="@style/wrap"
+        android:text="FeddEx"
+        android:gravity="center"
+        android:layout_marginEnd="@dimen/dimen_15dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="@dimen/dimen_12sp"
+        android:includeFontPadding="false"
+        android:textColor="@{isSeleted ? @color/colorWhite : @color/color802D2D2D}"
+        android:background="@{isSeleted ? @drawable/bg_full_curve_border_selected : @drawable/bg_full_curve_border}"
+        android:paddingStart="@dimen/dimen_20dp"
+        android:paddingEnd="@dimen/dimen_20dp"
+        android:paddingTop="@dimen/dimen_5dp"
+        android:paddingBottom="@dimen/dimen_5dp"/>
+
+
+</layout>

@@ -1,0 +1,84 @@
+package com.usend.extensions;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 6, 0}, k = 2, d1 = {"\u0000T\n\u0000\n\u0002\u0010\u000b\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u0002\n\u0002\b\u0006\n\u0002\u0010\u0000\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\u001a\n\u0010\u0000\u001a\u00020\u0001*\u00020\u0002\u001a\u0012\u0010\u0003\u001a\u00020\u0004*\u00020\u00052\u0006\u0010\u0006\u001a\u00020\u0004\u001a\n\u0010\u0007\u001a\u00020\u0004*\u00020\u0005\u001a\n\u0010\b\u001a\u00020\u0004*\u00020\u0005\u001a\n\u0010\t\u001a\u00020\u0001*\u00020\u0005\u001a\n\u0010\n\u001a\u00020\u000b*\u00020\u0005\u001a\n\u0010\f\u001a\u00020\u0004*\u00020\u0002\u001a\u0014\u0010\r\u001a\u00020\u0001*\u00020\u00022\b\b\u0002\u0010\u000e\u001a\u00020\u0001\u001a\n\u0010\u000f\u001a\u00020\u0001*\u00020\u0002\u001a7\u0010\u0010\u001a\u00020\u000b\"\n\b\u0000\u0010\u0011\u0018\u0001*\u00020\u0012*\u00020\u00022\u0019\b\n\u0010\u0013\u001a\u0013\u0012\u0004\u0012\u00020\u0015\u0012\u0004\u0012\u00020\u000b0\u0014\u00a2\u0006\u0002\b\u0016H\u0086\b\u00f8\u0001\u0000\u001a\n\u0010\u0017\u001a\u00020\u0018*\u00020\u0002\u001a\u001c\u0010\u0019\u001a\u00020\u000b*\u00020\u00022\u0006\u0010\u001a\u001a\u00020\u001b2\b\b\u0002\u0010\u001c\u001a\u00020\u0004\u001a\u0012\u0010\u001d\u001a\u00020\u000b*\u00020\u00052\u0006\u0010\u001e\u001a\u00020\u001f\u001a\u001c\u0010 \u001a\u00020\u000b*\u00020\u00022\u0006\u0010\u001a\u001a\u00020\u001b2\b\b\u0002\u0010\u001c\u001a\u00020\u0004\u001a,\u0010!\u001a\u00020\u000b*\u00020\u00022\f\u0010\"\u001a\b\u0012\u0004\u0012\u00020\u000b0#2\f\u0010$\u001a\b\u0012\u0004\u0012\u00020\u000b0#H\u0086\b\u00f8\u0001\u0000\u0082\u0002\u0007\n\u0005\b\u009920\u0001\u00a8\u0006%"}, d2 = {"checkInternetConnected", "", "Landroid/content/Context;", "color", "", "Landroid/app/Activity;", "resource", "getHeight", "getStatusBarHeight", "hasNavBar", "hideSoftKeyboard", "", "isEdgeToEdgeEnabled", "isInternetConnected", "isShowDialog", "isNightMode", "launchActivity", "T", "", "init", "Lkotlin/Function1;", "Landroid/content/Intent;", "Lkotlin/ExtensionFunctionType;", "layoutInflater", "Landroid/view/LayoutInflater;", "showLongToast", "message", "", "duration", "showSoftKeyboard", "mView", "Landroid/view/View;", "showToast", "withNetwork", "block", "Lkotlin/Function0;", "blockError", "app_debug"})
+public final class ContextExtensionsKt {
+    
+    public static final int getStatusBarHeight(@org.jetbrains.annotations.NotNull()
+    android.app.Activity $this$getStatusBarHeight) {
+        return 0;
+    }
+    
+    public static final boolean checkInternetConnected(@org.jetbrains.annotations.NotNull()
+    android.content.Context $this$checkInternetConnected) {
+        return false;
+    }
+    
+    public static final boolean isInternetConnected(@org.jetbrains.annotations.NotNull()
+    android.content.Context $this$isInternetConnected, boolean isShowDialog) {
+        return false;
+    }
+    
+    /**
+     * Check internet connection.
+     */
+    public static final void withNetwork(@org.jetbrains.annotations.NotNull()
+    android.content.Context $this$withNetwork, @org.jetbrains.annotations.NotNull()
+    kotlin.jvm.functions.Function0<kotlin.Unit> block, @org.jetbrains.annotations.NotNull()
+    kotlin.jvm.functions.Function0<kotlin.Unit> blockError) {
+    }
+    
+    /**
+     * Show Toast
+     */
+    public static final void showToast(@org.jetbrains.annotations.NotNull()
+    android.content.Context $this$showToast, @org.jetbrains.annotations.NotNull()
+    java.lang.String message, int duration) {
+    }
+    
+    public static final void showLongToast(@org.jetbrains.annotations.NotNull()
+    android.content.Context $this$showLongToast, @org.jetbrains.annotations.NotNull()
+    java.lang.String message, int duration) {
+    }
+    
+    public static final void hideSoftKeyboard(@org.jetbrains.annotations.NotNull()
+    android.app.Activity $this$hideSoftKeyboard) {
+    }
+    
+    public static final void showSoftKeyboard(@org.jetbrains.annotations.NotNull()
+    android.app.Activity $this$showSoftKeyboard, @org.jetbrains.annotations.NotNull()
+    android.view.View mView) {
+    }
+    
+    public static final int color(@org.jetbrains.annotations.NotNull()
+    android.app.Activity $this$color, int resource) {
+        return 0;
+    }
+    
+    public static final boolean isNightMode(@org.jetbrains.annotations.NotNull()
+    android.content.Context $this$isNightMode) {
+        return false;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public static final android.view.LayoutInflater layoutInflater(@org.jetbrains.annotations.NotNull()
+    android.content.Context $this$layoutInflater) {
+        return null;
+    }
+    
+    public static final int getHeight(@org.jetbrains.annotations.NotNull()
+    android.app.Activity $this$getHeight) {
+        return 0;
+    }
+    
+    public static final boolean hasNavBar(@org.jetbrains.annotations.NotNull()
+    android.app.Activity $this$hasNavBar) {
+        return false;
+    }
+    
+    public static final int isEdgeToEdgeEnabled(@org.jetbrains.annotations.NotNull()
+    android.content.Context $this$isEdgeToEdgeEnabled) {
+        return 0;
+    }
+}

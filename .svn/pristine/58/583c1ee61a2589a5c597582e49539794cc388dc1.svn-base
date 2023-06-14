@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.android.datatransport:transport-api:2.2.1@aar">
+    <CLASSES>
+      <root url="file://E:/Sonu g3/SDK/caches/transforms-2/files-2.1/ebc6efc9c48661138ec463d151132c29/jetified-transport-api-2.2.1/res" />
+      <root url="jar://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/3fd0081c58ed5cdc15e4f5fd9f2d3dd0/jetified-transport-api-2.2.1/jars/classes.jar!/" />
+      <root url="file://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/3fd0081c58ed5cdc15e4f5fd9f2d3dd0/jetified-transport-api-2.2.1/AndroidManifest.xml" />
+      <root url="file://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/3fd0081c58ed5cdc15e4f5fd9f2d3dd0/jetified-transport-api-2.2.1/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://E:/Sonu g3/SDK/caches/modules-2/files-2.1/com.google.android.datatransport/transport-api/2.2.1/44ab63fd6744b961c97d388fef15c888f99b561a/transport-api-2.2.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

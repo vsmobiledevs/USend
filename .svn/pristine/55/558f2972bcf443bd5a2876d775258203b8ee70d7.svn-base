@@ -1,0 +1,43 @@
+package com.usend.binder;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 6, 0}, k = 2, d1 = {"\u0000,\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\b\u0003\n\u0002\u0010\t\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0002\b\u0003\u001a\u0017\u0010\u0005\u001a\u0004\u0018\u00010\u00062\u0006\u0010\u0007\u001a\u00020\bH\u0007\u00a2\u0006\u0002\u0010\t\u001a\u0017\u0010\n\u001a\u0004\u0018\u00010\u00062\u0006\u0010\u0007\u001a\u00020\bH\u0007\u00a2\u0006\u0002\u0010\t\u001a\u0014\u0010\u000b\u001a\u00020\f*\u00020\r2\u0006\u0010\u000b\u001a\u00020\u000eH\u0007\u001a\u0014\u0010\u000f\u001a\u00020\f*\u00020\r2\u0006\u0010\u000f\u001a\u00020\u000eH\u0007\u001a\u0014\u0010\u0010\u001a\u00020\f*\u00020\r2\u0006\u0010\u000f\u001a\u00020\u000eH\u0007\"\u001d\u0010\u0000\u001a\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00020\u0001\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0003\u0010\u0004\u00a8\u0006\u0011"}, d2 = {"imageMap", "Ljava/util/HashMap;", "", "getImageMap", "()Ljava/util/HashMap;", "getDate", "", "textView", "Landroidx/appcompat/widget/AppCompatTextView;", "(Landroidx/appcompat/widget/AppCompatTextView;)Ljava/lang/Long;", "getTime", "isGone", "", "Landroid/view/View;", "", "isVisible", "visibility", "app_debug"})
+public final class CommanBinderKt {
+    @org.jetbrains.annotations.NotNull()
+    private static final java.util.HashMap<java.lang.String, java.lang.String> imageMap = null;
+    
+    @androidx.databinding.BindingAdapter(value = {"android:visibility"})
+    public static final void visibility(@org.jetbrains.annotations.NotNull()
+    android.view.View $this$visibility, boolean isVisible) {
+    }
+    
+    @androidx.databinding.BindingAdapter(value = {"isGone"})
+    public static final void isGone(@org.jetbrains.annotations.NotNull()
+    android.view.View $this$isGone, boolean isGone) {
+    }
+    
+    @androidx.databinding.BindingAdapter(value = {"isVisible"})
+    public static final void isVisible(@org.jetbrains.annotations.NotNull()
+    android.view.View $this$isVisible, boolean isVisible) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public static final java.util.HashMap<java.lang.String, java.lang.String> getImageMap() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    @androidx.databinding.InverseBindingAdapter(attribute = "date")
+    public static final java.lang.Long getDate(@org.jetbrains.annotations.NotNull()
+    androidx.appcompat.widget.AppCompatTextView textView) {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    @androidx.databinding.InverseBindingAdapter(attribute = "time")
+    public static final java.lang.Long getTime(@org.jetbrains.annotations.NotNull()
+    androidx.appcompat.widget.AppCompatTextView textView) {
+        return null;
+    }
+}

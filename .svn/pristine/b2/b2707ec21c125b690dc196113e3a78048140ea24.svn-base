@@ -1,0 +1,43 @@
+package com.usend.adapter
+
+import android.view.View
+import androidx.databinding.ViewDataBinding
+import com.base.network.model.CarrierList
+import com.usend.R
+import com.usend.base.BaseListAdapter
+import com.usend.databinding.RowItemRegionSelectionBinding
+import com.usend.databinding.RowMailboxItemBinding
+import com.usend.databinding.RowShippingMethodFilterItemBinding
+import com.usend.models.MailboxItemModel
+import com.usend.models.ShippingMethodFiterItemModel
+import com.usend.utils.LONG_CLICK
+import com.usend.utils.SHORT_CLICK
+
+class ShippingMethodFilterItemAdapter(private val items: ArrayList<CarrierList>, val callback : (Int) -> Unit) : BaseListAdapter(items) {
+
+    override fun getItemViewType(position: Int) = R.layout.row_shipping_method_filter_item
+
+    private var preSelected : RowShippingMethodFilterItemBinding? = null
+
+    override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
+
+        if(holder.binding is RowShippingMethodFilterItemBinding)
+        {
+            holder.binding.txtFilterItem.text = items[position].name
+
+            if(position == 0)
+            {
+                holder.binding.isSeleted = true
+                preSelected = holder.binding
+            }
+
+            holder.itemView.setOnClickListener {
+
+                preSelected?.isSeleted = false
+                holder.binding.isSeleted = true
+                preSelected = holder.binding
+                callback(holder.adapterPosition)
+            }
+        }
+    }
+}

@@ -1,0 +1,227 @@
+package com.usend.databinding;
+import com.usend.R;
+import com.usend.BR;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import android.view.View;
+@SuppressWarnings("unchecked")
+public class ActivityPaymentMethodBindingImpl extends ActivityPaymentMethodBinding  {
+
+    @Nullable
+    private static final androidx.databinding.ViewDataBinding.IncludedLayouts sIncludes;
+    @Nullable
+    private static final android.util.SparseIntArray sViewsWithIds;
+    static {
+        sIncludes = null;
+        sViewsWithIds = new android.util.SparseIntArray();
+        sViewsWithIds.put(R.id.toolbarPaymentMethod, 5);
+        sViewsWithIds.put(R.id.llTop, 6);
+        sViewsWithIds.put(R.id.cvCreditCard, 7);
+        sViewsWithIds.put(R.id.imgPaymentMethod, 8);
+        sViewsWithIds.put(R.id.cvApplePay, 9);
+        sViewsWithIds.put(R.id.imgApplePay, 10);
+        sViewsWithIds.put(R.id.cvGooglePay, 11);
+        sViewsWithIds.put(R.id.imgGoolgePay, 12);
+        sViewsWithIds.put(R.id.cvPaypal, 13);
+        sViewsWithIds.put(R.id.imgPaypal, 14);
+        sViewsWithIds.put(R.id.btnNext, 15);
+    }
+    // views
+    @NonNull
+    private final android.widget.LinearLayout mboundView0;
+    @NonNull
+    private final androidx.appcompat.widget.AppCompatRadioButton mboundView1;
+    @NonNull
+    private final androidx.appcompat.widget.AppCompatRadioButton mboundView2;
+    @NonNull
+    private final androidx.appcompat.widget.AppCompatRadioButton mboundView3;
+    @NonNull
+    private final androidx.appcompat.widget.AppCompatRadioButton mboundView4;
+    // variables
+    // values
+    // listeners
+    // Inverse Binding Event Handlers
+
+    public ActivityPaymentMethodBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 16, sIncludes, sViewsWithIds));
+    }
+    private ActivityPaymentMethodBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
+        super(bindingComponent, root, 0
+            , (com.google.android.material.button.MaterialButton) bindings[15]
+            , (com.google.android.material.card.MaterialCardView) bindings[9]
+            , (com.google.android.material.card.MaterialCardView) bindings[7]
+            , (com.google.android.material.card.MaterialCardView) bindings[11]
+            , (com.google.android.material.card.MaterialCardView) bindings[13]
+            , (androidx.appcompat.widget.AppCompatImageView) bindings[10]
+            , (androidx.appcompat.widget.AppCompatImageView) bindings[12]
+            , (androidx.appcompat.widget.AppCompatImageView) bindings[8]
+            , (androidx.appcompat.widget.AppCompatImageView) bindings[14]
+            , (android.widget.LinearLayout) bindings[6]
+            , (android.view.View) bindings[5]
+            );
+        this.mboundView0 = (android.widget.LinearLayout) bindings[0];
+        this.mboundView0.setTag(null);
+        this.mboundView1 = (androidx.appcompat.widget.AppCompatRadioButton) bindings[1];
+        this.mboundView1.setTag(null);
+        this.mboundView2 = (androidx.appcompat.widget.AppCompatRadioButton) bindings[2];
+        this.mboundView2.setTag(null);
+        this.mboundView3 = (androidx.appcompat.widget.AppCompatRadioButton) bindings[3];
+        this.mboundView3.setTag(null);
+        this.mboundView4 = (androidx.appcompat.widget.AppCompatRadioButton) bindings[4];
+        this.mboundView4.setTag(null);
+        setRootTag(root);
+        // listeners
+        invalidateAll();
+    }
+
+    @Override
+    public void invalidateAll() {
+        synchronized(this) {
+                mDirtyFlags = 0x2L;
+        }
+        requestRebind();
+    }
+
+    @Override
+    public boolean hasPendingBindings() {
+        synchronized(this) {
+            if (mDirtyFlags != 0) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    @Override
+    public boolean setVariable(int variableId, @Nullable Object variable)  {
+        boolean variableSet = true;
+        if (BR.selectedValue == variableId) {
+            setSelectedValue((java.lang.Integer) variable);
+        }
+        else {
+            variableSet = false;
+        }
+            return variableSet;
+    }
+
+    public void setSelectedValue(@Nullable java.lang.Integer SelectedValue) {
+        this.mSelectedValue = SelectedValue;
+        synchronized(this) {
+            mDirtyFlags |= 0x1L;
+        }
+        notifyPropertyChanged(BR.selectedValue);
+        super.requestRebind();
+    }
+
+    @Override
+    protected boolean onFieldChange(int localFieldId, Object object, int fieldId) {
+        switch (localFieldId) {
+        }
+        return false;
+    }
+
+    @Override
+    protected void executeBindings() {
+        long dirtyFlags = 0;
+        synchronized(this) {
+            dirtyFlags = mDirtyFlags;
+            mDirtyFlags = 0;
+        }
+        int androidxDatabindingViewDataBindingSafeUnboxSelectedValue = 0;
+        boolean selectedValueInt1BooleanTrueBooleanFalse = false;
+        boolean selectedValueInt3BooleanTrueBooleanFalse = false;
+        boolean selectedValueInt1 = false;
+        boolean selectedValueInt3 = false;
+        java.lang.Integer selectedValue = mSelectedValue;
+        boolean selectedValueInt0 = false;
+        boolean selectedValueInt0BooleanTrueBooleanFalse = false;
+        boolean selectedValueInt2 = false;
+        boolean selectedValueInt2BooleanTrueBooleanFalse = false;
+
+        if ((dirtyFlags & 0x3L) != 0) {
+
+
+
+                // read androidx.databinding.ViewDataBinding.safeUnbox(selectedValue)
+                androidxDatabindingViewDataBindingSafeUnboxSelectedValue = androidx.databinding.ViewDataBinding.safeUnbox(selectedValue);
+
+
+                // read androidx.databinding.ViewDataBinding.safeUnbox(selectedValue) == 1
+                selectedValueInt1 = (androidxDatabindingViewDataBindingSafeUnboxSelectedValue) == (1);
+                // read androidx.databinding.ViewDataBinding.safeUnbox(selectedValue) == 3
+                selectedValueInt3 = (androidxDatabindingViewDataBindingSafeUnboxSelectedValue) == (3);
+                // read androidx.databinding.ViewDataBinding.safeUnbox(selectedValue) == 0
+                selectedValueInt0 = (androidxDatabindingViewDataBindingSafeUnboxSelectedValue) == (0);
+                // read androidx.databinding.ViewDataBinding.safeUnbox(selectedValue) == 2
+                selectedValueInt2 = (androidxDatabindingViewDataBindingSafeUnboxSelectedValue) == (2);
+            if((dirtyFlags & 0x3L) != 0) {
+                if(selectedValueInt1) {
+                        dirtyFlags |= 0x8L;
+                }
+                else {
+                        dirtyFlags |= 0x4L;
+                }
+            }
+            if((dirtyFlags & 0x3L) != 0) {
+                if(selectedValueInt3) {
+                        dirtyFlags |= 0x20L;
+                }
+                else {
+                        dirtyFlags |= 0x10L;
+                }
+            }
+            if((dirtyFlags & 0x3L) != 0) {
+                if(selectedValueInt0) {
+                        dirtyFlags |= 0x80L;
+                }
+                else {
+                        dirtyFlags |= 0x40L;
+                }
+            }
+            if((dirtyFlags & 0x3L) != 0) {
+                if(selectedValueInt2) {
+                        dirtyFlags |= 0x200L;
+                }
+                else {
+                        dirtyFlags |= 0x100L;
+                }
+            }
+
+
+                // read androidx.databinding.ViewDataBinding.safeUnbox(selectedValue) == 1 ? true : false
+                selectedValueInt1BooleanTrueBooleanFalse = ((selectedValueInt1) ? (true) : (false));
+                // read androidx.databinding.ViewDataBinding.safeUnbox(selectedValue) == 3 ? true : false
+                selectedValueInt3BooleanTrueBooleanFalse = ((selectedValueInt3) ? (true) : (false));
+                // read androidx.databinding.ViewDataBinding.safeUnbox(selectedValue) == 0 ? true : false
+                selectedValueInt0BooleanTrueBooleanFalse = ((selectedValueInt0) ? (true) : (false));
+                // read androidx.databinding.ViewDataBinding.safeUnbox(selectedValue) == 2 ? true : false
+                selectedValueInt2BooleanTrueBooleanFalse = ((selectedValueInt2) ? (true) : (false));
+        }
+        // batch finished
+        if ((dirtyFlags & 0x3L) != 0) {
+            // api target 1
+
+            androidx.databinding.adapters.CompoundButtonBindingAdapter.setChecked(this.mboundView1, selectedValueInt0BooleanTrueBooleanFalse);
+            androidx.databinding.adapters.CompoundButtonBindingAdapter.setChecked(this.mboundView2, selectedValueInt1BooleanTrueBooleanFalse);
+            androidx.databinding.adapters.CompoundButtonBindingAdapter.setChecked(this.mboundView3, selectedValueInt2BooleanTrueBooleanFalse);
+            androidx.databinding.adapters.CompoundButtonBindingAdapter.setChecked(this.mboundView4, selectedValueInt3BooleanTrueBooleanFalse);
+        }
+    }
+    // Listener Stub Implementations
+    // callback impls
+    // dirty flag
+    private  long mDirtyFlags = 0xffffffffffffffffL;
+    /* flag mapping
+        flag 0 (0x1L): selectedValue
+        flag 1 (0x2L): null
+        flag 2 (0x3L): androidx.databinding.ViewDataBinding.safeUnbox(selectedValue) == 1 ? true : false
+        flag 3 (0x4L): androidx.databinding.ViewDataBinding.safeUnbox(selectedValue) == 1 ? true : false
+        flag 4 (0x5L): androidx.databinding.ViewDataBinding.safeUnbox(selectedValue) == 3 ? true : false
+        flag 5 (0x6L): androidx.databinding.ViewDataBinding.safeUnbox(selectedValue) == 3 ? true : false
+        flag 6 (0x7L): androidx.databinding.ViewDataBinding.safeUnbox(selectedValue) == 0 ? true : false
+        flag 7 (0x8L): androidx.databinding.ViewDataBinding.safeUnbox(selectedValue) == 0 ? true : false
+        flag 8 (0x9L): androidx.databinding.ViewDataBinding.safeUnbox(selectedValue) == 2 ? true : false
+        flag 9 (0xaL): androidx.databinding.ViewDataBinding.safeUnbox(selectedValue) == 2 ? true : false
+    flag mapping end*/
+    //end
+}

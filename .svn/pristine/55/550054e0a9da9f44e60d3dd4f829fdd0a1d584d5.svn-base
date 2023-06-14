@@ -1,0 +1,6 @@
+package com.usend.models
+
+data class ExtraServiceModel (var title : String, var isSelected : Boolean, var mPrice : String)
+{
+
+}

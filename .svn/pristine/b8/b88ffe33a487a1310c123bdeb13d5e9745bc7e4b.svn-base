@@ -1,0 +1,400 @@
+package com.usend.views.home
+
+import android.annotation.SuppressLint
+import android.app.Activity
+import android.content.Context
+import android.content.Intent
+import android.util.Log
+import androidx.lifecycle.Observer
+import com.base.network.BuildConfig
+import com.base.network.model.*
+import com.usend.R
+import com.usend.adapter.SavedCardsItemAdapter
+import com.usend.base.ViewModelActivity
+import com.usend.comman.Resource
+import com.usend.databinding.ActivitySavedCardsBinding
+import com.usend.extensions.nullSafe
+import com.usend.extensions.showToast
+import com.usend.utils.*
+import com.usend.utils.CommonUtils.showAffirmationDialog
+import com.usend.utils.CommonUtils.showAffirmationErrorDialog
+import com.usend.viewmodels.SavedCardsViewModel
+import kotlinx.android.synthetic.main.app_toolbar.*
+import sqip.Callback
+import sqip.CardEntry.DEFAULT_CARD_ENTRY_REQUEST_CODE
+import sqip.CardEntry.handleActivityResult
+import sqip.CardEntry.startCardEntryActivity
+import sqip.CardEntryActivityResult
+import java.util.*
+import kotlin.reflect.KClass
+
+
+open class SavedCardsActivity(
+    override val modelClass: KClass<SavedCardsViewModel> = SavedCardsViewModel::class,
+    override val layoutId: Int = R.layout.activity_saved_cards
+) : ViewModelActivity<ActivitySavedCardsBinding, SavedCardsViewModel>() {
+    private var arrayList = arrayListOf<CardList>()
+    private val TAG = SavedCardsActivity::class.java.simpleName
+    private var mPos: Int? = null
+    private var mType: String? = null
+    private var cardId: String? = null
+    var autoShipmentResponseData: AutoShipmentResponseData? = null
+
+
+    override fun initView() {
+        super.initView()
+
+
+        initToolbar(
+            toolbar = toolbar,
+            title = resources.getString(R.string.lbl_saved_payment_methods)
+        )
+
+        binding.rvSavedCards.addItemDecoration(
+            ItemOffsetDecoration(
+                resources.getDimensionPixelOffset(R.dimen.dimen_10dp), "top", pos = 1
+            )
+        )
+
+    }
+
+
+    fun SquareupPayment() {
+
+        startCardEntryActivity(
+            this, true,
+            DEFAULT_CARD_ENTRY_REQUEST_CODE)
+    }
+    private fun listCardData() {
+
+        val squareUpToken: String
+        if (BuildConfig.DEBUG) {
+            squareUpToken = SQUARE_UP_TOKEN
+        } else {
+            squareUpToken = SQUARE_UP_TOKEN
+        }
+        val customerId = PreferenceHelper.getUserObject().customerId
+        if (customerId != null) {
+            viewModel.ListCardApiS(squareUpToken, customerId)
+            viewModel.autoShipmentDetails()
+        }
+    }
+
+    override fun initControls() {
+        super.initControls()
+        listCardData()
+        if (autoShipmentResponseData == null) {
+
+        } else {
+            autoShipmentResponseData?.let {
+                setShipmentData(it)
+            }
+        }
+
+    }
+
+    override fun addObserver() {
+        viewModel.status.observe(this, mObserver)
+
+    }
+
+
+    @SuppressLint("NotifyDataSetChanged")
+    private val mObserver = Observer<Any> { response ->
+
+
+        when (response) {
+            is Resource.AddSquareupCard<*> -> {
+                response.data as SquareUpCardList
+                val first = CardList()
+                arrayList.clear()
+                arrayList.add(first)
+                if (arrayList != null) {
+                    if (response.data.cards!=null) {
+                        arrayList.addAll(response.data.cards)
+                    }
+                    binding.adapter = SavedCardsItemAdapter(arrayList) { mPosition, type ->
+                        mType = type
+                        mPos = mPosition
+                        when (type) {
+                            ADD -> {
+                                SquareupPayment()
+                            }
+                            DELETE -> {
+                                if(cardId==arrayList.get(mPosition!!).id!!)
+                                {
+                                    showAffirmationDialog(
+                                        title = resources.getString(R.string.lbl_card_delete_msg),
+                                        btnText = resources.getString(R.string.lbl_okay))
+                                    {
+                                        //finish()
+                                    }
+                                }
+                                else
+                                {
+                                viewModel.delete(arrayList.get(mPosition!!).id!!)
+                                arrayList.removeAt(mPosition)
+                                binding.adapter?.notifyItemRemoved(mPosition)
+                                }
+                            }
+                            EDIT -> {
+                                Log.e("tag", "msg"+cardId)
+                                if(cardId==arrayList.get(mPosition!!).id!!)
+                                {
+                                    showAffirmationDialog(
+                                        title = resources.getString(R.string.lbl_card_update_msg),
+                                        btnText = resources.getString(R.string.lbl_okay)
+                                    )
+                                    {
+                                    }
+                                }
+                                else
+                                {
+                                    SquareupPayment()
+                                }
+
+                            }
+                        }
+                    }
+                    binding.adapter?.notifyDataSetChanged()
+                }
+
+
+            }
+            is Resource.SquareupError<*> ->
+            {
+                response.data as SquareupErrorResponse
+                showAffirmationErrorDialog(
+                    title = resources.getString(R.string.square_error_message)+
+                            "\n\n "+"1.  "+response.data.errors.get(0).category+
+                    "\n"+"2.  "+response.data.errors.get(0).code
+                            +"\n"+"3.  "+response.data.errors.get(0).detail+
+                            "\n"+"4.  "+response.data.errors.get(0).field,
+                    btnText = resources.getString(R.string.lbl_okay)
+                )
+                {
+
+                }
+            }
+            is Resource.Loading<*> -> {
+
+                response.isLoadingShow.let {
+                    if (it as Boolean) {
+
+                        showProgressDialog(this)
+
+                    } else {
+                        hideProgressDialog()
+                    }
+                }
+            }
+            is Resource.Error<*> -> {
+                JLog.e(TAG, "Message: ${response.data}")
+                showToast(response.message.toString())
+            }
+            is Resource.SuccessWithData<*> -> {
+                hideProgressDialog()
+                if (response.data is AutoShipmentResponse) {
+                    if ((response.data.responseCode ?: 0) == SUCCESS) {
+
+                        if (response.model is Int && response.model == 1) {
+
+                            showAffirmationDialog(
+                                title = response.data.responseMessage.toString(),
+                                btnText = resources.getString(R.string.lbl_okay)
+                            )
+                            {
+                                finish()
+                            }
+
+                        } else {
+                            response.data.responseData?.let {
+                                setShipmentData(it)
+                            }
+                        }
+                    }
+                }
+            }
+
+
+
+            is Resource.DeleteSquareupCard<*> -> {
+
+                showAffirmationDialog(
+                    title = resources.getString(R.string.msg_card_deleted_sucessfully),
+                    btnText = resources.getString(R.string.lbl_okay)
+                )
+                {
+                    val intent = Intent()
+                    intent.putExtra(POSITION, mPos)
+                    intent.putExtra(TYPE, EDIT_CARD)
+                    setResult(RESULT_OK, intent)
+                    //finish()
+                }
+            }
+            is Resource.UpdateSquareupCard<*> -> {
+                response.data as SquareupCreateResponse
+                arrayList.add(response.data.card!!)
+                binding.adapter?.notifyDataSetChanged()
+                arrayList.removeAt(mPos!!)
+                binding.adapter?.notifyItemRemoved(mPos!!)
+
+                showAffirmationDialog(
+                    title = resources.getString(R.string.msg_card_updated_sucessfully),
+                    btnText = resources.getString(R.string.lbl_okay)
+                )
+                {
+                    val intent = Intent()
+                    intent.putExtra(POSITION, mPos)
+                    intent.putExtra(TYPE, DELETE_CARD)
+                    setResult(RESULT_OK, intent)
+
+                }
+            }
+            is Resource.AddUsendCard<*> -> {
+                response.data as SquareupCreateResponse
+                if(response.data.card!=null)
+                {
+                arrayList.add(response.data.card!!)
+                Log.e("res", "Message: ${arrayList.size}")
+                binding.adapter?.notifyDataSetChanged()
+                showAffirmationDialog(
+                    title = resources.getString(R.string.msg_card_added_sucessfully),
+                    btnText = resources.getString(R.string.lbl_okay)
+                )
+                {
+                    val intent = Intent()
+                    intent.putExtra(POSITION, mPos)
+                    intent.putExtra(TYPE, ADD_CARD)
+                    setResult(RESULT_OK, intent)
+                }
+
+            }}
+
+            is Resource.NoInternetError<*> -> {
+                // use if you wanna show dialog or snackbar
+                CommonUtils.showOkDialog(this, message = resources.getString(response.id!!))
+            }
+            is Resource.ValidationError<*> -> {
+                showToast(resources.getString(response.id.nullSafe()))
+            }
+            is Resource.UnAuthorisedRequest<*> -> {
+                showTokenExpiredDialog(resources.getString(R.string.lbl_session_expired_msg))
+            }
+
+
+        }
+
+
+    }
+    private fun setShipmentData(autoShipmentResponseData: AutoShipmentResponseData) {
+        this.autoShipmentResponseData = autoShipmentResponseData
+        val cardModel = autoShipmentResponseData.cardDetail
+        setCardData(cardModel)
+    }
+    private fun setCardData(cardDetail: Card?) {
+       cardId = cardDetail?.cardId ?: ""
+
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (resultCode == Activity.RESULT_OK) {
+
+            handleActivityResult(data,
+                object : Callback<CardEntryActivityResult> {
+                    override fun onResult(result: CardEntryActivityResult) {
+                        val uuid = UUID.randomUUID().toString()
+                        val cardHolderName = PreferenceHelper.getUserObject().firstName + " " + PreferenceHelper.getUserObject().lastName
+                        val customerId = PreferenceHelper.getUserObject().customerId
+                        if (result.isSuccess()) {
+                            val card = result.getSuccessValue()
+                            val cards = CreateCard.Cards(
+                                cardHolderName,
+                                customerId,
+                                card.card.expirationMonth,
+                                card.card.expirationYear
+                            )
+                            val createCard = CreateCard(uuid, card.nonce, cards)
+                            val squareUpToken: String
+                            if (BuildConfig.DEBUG) {
+                                squareUpToken = SQUARE_UP_TOKEN
+                            } else {
+                                squareUpToken = SQUARE_UP_TOKEN
+                            }
+                            if (mType == ADD) {
+                                viewModel.addCardApiS(squareUpToken, createCard, mType!!)
+
+                            } else {
+                                viewModel.addCardApiS(
+                                    squareUpToken,
+                                    createCard,
+                                    arrayList.get(mPos!!).id!!
+                                )
+                            }
+
+
+                        } else if (result.isCanceled()) {
+                            /* JLog.e(TAG, "Message: ${result.data}")*/
+                            showToast("Canceled")
+                        }
+                    }
+                })
+
+            var pos = -1
+            var type = 0
+            if (data != null) {
+                if (data.hasExtra(POSITION)) {
+                    pos = data.getIntExtra(POSITION, 0)
+                    type = data.getIntExtra(TYPE, 0)
+                }
+            }
+
+            when (requestCode) {
+
+                EDIT_CARD -> {
+
+                    if (type == EDIT_CARD) {
+
+                        val card: UpdateCard? = data?.getParcelableExtra(CARD)
+
+                        arrayList[pos] = CardList(
+//                            cardId = card?.cardId,
+//                            brand = card?.brand,
+//                            cardHolderName = card?.cardHolderName,
+//                            expiryMonth = card?.expiryMonth,
+//                            expiryYear = card?.expiryYear,
+//                            last4 = card?.last4
+                        )
+
+                        binding.adapter?.notifyItemChanged(pos)
+                    } else if (type == DELETE_CARD) {
+                        Log.e("tag","cardId:--"+cardId.toString())
+                        arrayList.removeAt(pos)
+
+                        binding.adapter?.notifyItemRemoved(pos)
+                    }
+                }
+            }
+        }
+    }
+
+    /* override fun onRestoreInstanceState(savedInstanceState: Bundle) {
+         super.onRestoreInstanceState(savedInstanceState)
+         if (binding.adapter != null) {
+             binding.adapter.restoreStates(savedInstanceState);
+         }
+     }*/
+
+    override fun onResume() {
+        binding.adapter?.notifyDataSetChanged()
+        super.onResume()
+    }
+
+
+    companion object {
+        fun newIntent(context: Context, intent: Intent) {
+            context.startActivity(intent)
+        }
+    }
+}

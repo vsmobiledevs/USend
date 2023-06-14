@@ -1,0 +1,17 @@
+package com.usend.app.common;
+
+import java.lang.System;
+
+/**
+ * Created by Amit Patoliya on 13/8/18.
+ */
+@kotlin.Metadata(mv = {1, 4, 0}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\b\u0006\b\u0086\u0001\u0018\u00002\b\u0012\u0004\u0012\u00020\u00000\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002j\u0002\b\u0003j\u0002\b\u0004j\u0002\b\u0005j\u0002\b\u0006\u00a8\u0006\u0007"}, d2 = {"Lcom/usend/app/common/PageIdentity;", "", "(Ljava/lang/String;I)V", "TERMS_CONDITIONS", "PRIVACY_POLICY", "FAQ", "ABOUT_US", "app_debug"})
+public enum PageIdentity {
+    /*public static final*/ TERMS_CONDITIONS /* = new TERMS_CONDITIONS() */,
+    /*public static final*/ PRIVACY_POLICY /* = new PRIVACY_POLICY() */,
+    /*public static final*/ FAQ /* = new FAQ() */,
+    /*public static final*/ ABOUT_US /* = new ABOUT_US() */;
+    
+    PageIdentity() {
+    }
+}

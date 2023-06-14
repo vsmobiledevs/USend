@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                  
+                                                        
+
+    
+
+                 
+                          
+                                                               
+
+                 
+                          
+                             
+
+           
+
+    <LinearLayout
+        style="@style/match"
+        android:background="@color/colorWhite"
+        android:orientation="vertical" android:tag="layout/activity_notification_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <include
+            android:id="@+id/toolbarNoti"
+            layout="@layout/app_toolbar" />
+
+        <ScrollView
+            style="@style/styleScrollbar"
+            android:tag="binding_1"         
+            android:background="@color/colorWhite">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvNoti"
+                android:tag="binding_2" 
+                style="@style/styleRecyclerView"/>
+
+        </ScrollView>
+
+        <LinearLayout
+            style="@style/match"
+            android:orientation="vertical"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:tag="binding_3"        >
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/dimen_100dp"
+                android:layout_height="@dimen/dimen_100dp"
+                android:src="@drawable/ic_no_hostory_image"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/CommonText.Style.SemiBold.16sp"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:text="@string/lbl_no_notification_found"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+         

@@ -1,0 +1,139 @@
+package com.usend.databinding;
+import com.usend.R;
+import com.usend.BR;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import android.view.View;
+@SuppressWarnings("unchecked")
+public class RowShippingMethodFilterItemBindingImpl extends RowShippingMethodFilterItemBinding  {
+
+    @Nullable
+    private static final androidx.databinding.ViewDataBinding.IncludedLayouts sIncludes;
+    @Nullable
+    private static final android.util.SparseIntArray sViewsWithIds;
+    static {
+        sIncludes = null;
+        sViewsWithIds = null;
+    }
+    // views
+    // variables
+    // values
+    // listeners
+    // Inverse Binding Event Handlers
+
+    public RowShippingMethodFilterItemBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 1, sIncludes, sViewsWithIds));
+    }
+    private RowShippingMethodFilterItemBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
+        super(bindingComponent, root, 0
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[0]
+            );
+        this.txtFilterItem.setTag(null);
+        setRootTag(root);
+        // listeners
+        invalidateAll();
+    }
+
+    @Override
+    public void invalidateAll() {
+        synchronized(this) {
+                mDirtyFlags = 0x2L;
+        }
+        requestRebind();
+    }
+
+    @Override
+    public boolean hasPendingBindings() {
+        synchronized(this) {
+            if (mDirtyFlags != 0) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    @Override
+    public boolean setVariable(int variableId, @Nullable Object variable)  {
+        boolean variableSet = true;
+        if (BR.isSeleted == variableId) {
+            setIsSeleted((java.lang.Boolean) variable);
+        }
+        else {
+            variableSet = false;
+        }
+            return variableSet;
+    }
+
+    public void setIsSeleted(@Nullable java.lang.Boolean IsSeleted) {
+        this.mIsSeleted = IsSeleted;
+        synchronized(this) {
+            mDirtyFlags |= 0x1L;
+        }
+        notifyPropertyChanged(BR.isSeleted);
+        super.requestRebind();
+    }
+
+    @Override
+    protected boolean onFieldChange(int localFieldId, Object object, int fieldId) {
+        switch (localFieldId) {
+        }
+        return false;
+    }
+
+    @Override
+    protected void executeBindings() {
+        long dirtyFlags = 0;
+        synchronized(this) {
+            dirtyFlags = mDirtyFlags;
+            mDirtyFlags = 0;
+        }
+        java.lang.Boolean isSeleted = mIsSeleted;
+        android.graphics.drawable.Drawable isSeletedTxtFilterItemAndroidDrawableBgFullCurveBorderSelectedTxtFilterItemAndroidDrawableBgFullCurveBorder = null;
+        boolean androidxDatabindingViewDataBindingSafeUnboxIsSeleted = false;
+        int isSeletedTxtFilterItemAndroidColorColorWhiteTxtFilterItemAndroidColorColor802D2D2D = 0;
+
+        if ((dirtyFlags & 0x3L) != 0) {
+
+
+
+                // read androidx.databinding.ViewDataBinding.safeUnbox(isSeleted)
+                androidxDatabindingViewDataBindingSafeUnboxIsSeleted = androidx.databinding.ViewDataBinding.safeUnbox(isSeleted);
+            if((dirtyFlags & 0x3L) != 0) {
+                if(androidxDatabindingViewDataBindingSafeUnboxIsSeleted) {
+                        dirtyFlags |= 0x8L;
+                        dirtyFlags |= 0x20L;
+                }
+                else {
+                        dirtyFlags |= 0x4L;
+                        dirtyFlags |= 0x10L;
+                }
+            }
+
+
+                // read androidx.databinding.ViewDataBinding.safeUnbox(isSeleted) ? @android:drawable/bg_full_curve_border_selected : @android:drawable/bg_full_curve_border
+                isSeletedTxtFilterItemAndroidDrawableBgFullCurveBorderSelectedTxtFilterItemAndroidDrawableBgFullCurveBorder = ((androidxDatabindingViewDataBindingSafeUnboxIsSeleted) ? (androidx.appcompat.content.res.AppCompatResources.getDrawable(txtFilterItem.getContext(), R.drawable.bg_full_curve_border_selected)) : (androidx.appcompat.content.res.AppCompatResources.getDrawable(txtFilterItem.getContext(), R.drawable.bg_full_curve_border)));
+                // read androidx.databinding.ViewDataBinding.safeUnbox(isSeleted) ? @android:color/colorWhite : @android:color/color802D2D2D
+                isSeletedTxtFilterItemAndroidColorColorWhiteTxtFilterItemAndroidColorColor802D2D2D = ((androidxDatabindingViewDataBindingSafeUnboxIsSeleted) ? (getColorFromResource(txtFilterItem, R.color.colorWhite)) : (getColorFromResource(txtFilterItem, R.color.color802D2D2D)));
+        }
+        // batch finished
+        if ((dirtyFlags & 0x3L) != 0) {
+            // api target 1
+
+            this.txtFilterItem.setTextColor(isSeletedTxtFilterItemAndroidColorColorWhiteTxtFilterItemAndroidColorColor802D2D2D);
+            androidx.databinding.adapters.ViewBindingAdapter.setBackground(this.txtFilterItem, isSeletedTxtFilterItemAndroidDrawableBgFullCurveBorderSelectedTxtFilterItemAndroidDrawableBgFullCurveBorder);
+        }
+    }
+    // Listener Stub Implementations
+    // callback impls
+    // dirty flag
+    private  long mDirtyFlags = 0xffffffffffffffffL;
+    /* flag mapping
+        flag 0 (0x1L): isSeleted
+        flag 1 (0x2L): null
+        flag 2 (0x3L): androidx.databinding.ViewDataBinding.safeUnbox(isSeleted) ? @android:drawable/bg_full_curve_border_selected : @android:drawable/bg_full_curve_border
+        flag 3 (0x4L): androidx.databinding.ViewDataBinding.safeUnbox(isSeleted) ? @android:drawable/bg_full_curve_border_selected : @android:drawable/bg_full_curve_border
+        flag 4 (0x5L): androidx.databinding.ViewDataBinding.safeUnbox(isSeleted) ? @android:color/colorWhite : @android:color/color802D2D2D
+        flag 5 (0x6L): androidx.databinding.ViewDataBinding.safeUnbox(isSeleted) ? @android:color/colorWhite : @android:color/color802D2D2D
+    flag mapping end*/
+    //end
+}

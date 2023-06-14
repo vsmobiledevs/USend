@@ -1,0 +1,327 @@
+package com.usend.views.home
+
+import android.app.Activity
+import android.content.Intent
+import android.util.Log
+import androidx.lifecycle.Observer
+import com.base.network.model.*
+import com.usend.R
+import com.usend.base.ViewModelFragment
+import com.usend.comman.Resource
+import com.usend.databinding.FragmentShippingCalculatorBinding
+import com.usend.extensions.nullSafe
+import com.usend.extensions.showToast
+import com.usend.models.ShippingCalculatorModel
+import com.usend.utils.*
+import com.usend.viewmodels.CalculatorViewModel
+import com.usend.views.userauth.RegionSelectionActivity
+import kotlin.math.roundToLong
+
+class ShippingCalculatorFragment(
+    override val modelClass: Class<CalculatorViewModel> = CalculatorViewModel::class.java,
+    override val layoutId: Int = R.layout.fragment_shipping_calculator
+) : ViewModelFragment<FragmentShippingCalculatorBinding, CalculatorViewModel>() {
+
+    private val TAG = ShippingCalculatorFragment::class.java.simpleName
+    private var arrayListShippingMethods = arrayListOf<GetRatesList>()
+    private var arrayList = arrayListOf<CarrierList>()
+    private var countryList = arrayListOf<CountryList>()
+    private val changeKg = 2.2046226218 //this is the change between kg and lbs, 1kg = this amount of lbs
+    private val changeCm = 2.54
+    private var currentValueLkg: Double?=null
+    private var currentValueWkg: Double?=null
+    private var currentValueHkg: Double?=null
+    private var currentValue:Double?=null
+
+    override fun initControls() {
+
+        binding.viewModel = viewModel
+        binding.frag = this
+        viewModel.getCountryList()
+        //viewModel.getShippingList()
+        Log.e("tag", viewModel.weight.toString())
+
+        binding.llWeight.setOnClickListener {
+            if (binding.edtWeight.text.toString().trim().isNotEmpty()) {
+                currentValue = binding.edtWeight.text.toString().toDouble()
+            }
+            if (binding.edtWidth.text.toString().trim().isNotEmpty()) {
+                currentValueWkg = binding.edtWidth.text.toString().toDouble()
+
+            }
+            if (binding.edtLength.text.toString().trim().isNotEmpty()) {
+                currentValueLkg = binding.edtLength.text.toString().toDouble()
+            }
+            if (binding.edtHeight.text.toString().trim().isNotEmpty()) {
+                currentValueHkg = binding.edtHeight.text.toString().toDouble()
+            }
+
+
+            when (viewModel.weightSelected.value) {
+                "lbs" -> {
+                    viewModel.weightSelected.value = "kg"
+                    viewModel.dimensonSelected.value = "cm"
+                    if (currentValue != null) {
+                        val weightValue=(currentValue!! /changeKg)
+                        if((weightValue % 1) > 0.9998)
+                        {
+                            binding.edtWeight.setText((weightValue.roundToLong()).toString())
+
+                        }
+                        else {
+                            binding.edtWeight.setText((currentValue!! / changeKg).toString())
+                        }
+
+                    }
+                    if (currentValueLkg != null) {
+                        binding.edtLength.setText((currentValueLkg!! * changeCm).toString())
+                    }
+                    if (currentValueWkg != null) {
+                        binding.edtWidth.setText((currentValueWkg!! * changeCm).toString())
+                    }
+                    if (currentValueHkg != null) {
+                        binding.edtHeight.setText((currentValueHkg!! * changeCm).toString())
+                    }
+
+
+                }
+                "kg" -> {
+                    if (currentValue != null) {
+
+                        val approxValue = (currentValue!! * changeKg)
+                        if((approxValue % 1) > 0.5)
+                        {
+                            val approxValue1 = approxValue.roundToLong()
+                            binding.edtWeight.setText(approxValue1.toString())
+                        }
+                        else
+                        {
+                        binding.edtWeight.setText(approxValue.toString())
+                        }
+                    }
+                    if (currentValueLkg != null) {
+                        binding.edtLength.setText((currentValueLkg!! / changeCm).toString())
+                    }
+                    if (currentValueWkg != null) {
+                        binding.edtWidth.setText((currentValueWkg!! / changeCm).toString())
+
+                    }
+                    if (currentValueHkg != null) {
+                        binding.edtHeight.setText((currentValueHkg!! / changeCm).toString())
+                    }
+
+
+                    viewModel.weightSelected.value = "lbs"
+                    viewModel.dimensonSelected.value = "inch"
+                }
+            }
+        }
+
+        binding.llDimensions.setOnClickListener {
+            if (binding.edtWidth.text.toString().trim().isNotEmpty())
+            {
+                currentValueWkg= binding.edtWidth.text.toString().toDouble()
+            }
+               if( binding.edtLength.text.toString().trim().isNotEmpty())
+               {
+                   currentValueLkg= binding.edtLength.text.toString().toDouble()
+               }
+                   if(binding.edtHeight.text.toString().trim().isNotEmpty())
+                   {
+                       currentValueHkg= binding.edtHeight.text.toString().toDouble()
+                   }
+                       if(binding.edtWeight.text.toString().trim().isNotEmpty())
+                       {
+                           currentValue =binding.edtWeight.text.toString().toDouble()
+
+                       }
+
+            when (viewModel.dimensonSelected.value) {
+                "inch" -> {
+                    viewModel.weightSelected.value = "kg"
+                    viewModel.dimensonSelected.value = "cm"
+                    if (currentValueLkg!=null)
+                    {
+                        binding.edtLength.setText((currentValueLkg!! *changeCm).toString())
+                    }
+                    if(currentValueWkg!=null)
+                    {
+                        binding.edtWidth.setText((currentValueWkg!! *changeCm).toString())
+                    }
+                    if(currentValueHkg!=null)
+                    {
+                        binding.edtHeight.setText((currentValueHkg!! *changeCm).toString())
+                    }
+                    if(currentValue!=null)
+                    {
+                        val weightValue=(currentValue!! /changeKg)
+                        if((weightValue % 1) > 0.9998)
+                        {
+                            binding.edtWeight.setText((weightValue.roundToLong()).toString())
+
+                        }
+                        else {
+                            binding.edtWeight.setText((currentValue!! / changeKg).toString())
+                        }
+                       // binding.edtWeight.setText((currentValue!! /changeKg).toString())
+                    }
+
+
+                }
+                "cm" -> {
+                    if (currentValueLkg!=null) {
+                        binding.edtLength.setText((currentValueLkg!! /changeCm).toString())
+                    }
+                        if(currentValueWkg!=null) {
+                            binding.edtWidth.setText((currentValueWkg!! /changeCm).toString())
+                        }
+                            if(currentValueHkg!=null) {
+                                binding.edtHeight.setText((currentValueHkg!! /changeCm).toString())
+                            }
+                                if(currentValue!=null)
+                                {
+                                    val approxValue = (currentValue!! * changeKg)
+                                    if((approxValue % 1) > 0.5)
+                                    {
+                                        val approxValue1 = approxValue.roundToLong()
+                                        binding.edtWeight.setText(approxValue1.toString())
+                                    }
+                                    else
+                                    {
+                                        binding.edtWeight.setText(approxValue.toString())
+                                    }
+
+
+
+                                }
+                     viewModel.weightSelected.value = "lbs"
+                     viewModel.dimensonSelected.value = "inch"
+                            }
+
+                    }
+
+
+                }
+            }
+
+
+    fun onShippingCountryClick() {
+
+        val arrayList = arrayListOf<String>()
+
+        countryList.forEachIndexed { _, countryList ->
+
+            arrayList.add(countryList.name.nullSafe())
+        }
+
+        val intent = Intent(requireActivity(), RegionSelectionActivity::class.java)
+            .putExtra(EXTRA_DATA, CODE_COUNTRY)
+            .putExtra(TITLE, resources.getString(R.string.lbl_country))
+            .putStringArrayListExtra(LIST,arrayList)
+        startActivityForResult(intent, CODE_COUNTRY)
+    }
+
+
+    fun onGetQuoteClick() {
+        viewModel.getQuote(
+            priceFilter = HIGH_TO_LOW,
+            carrierCode = "",
+        )
+    }
+
+    override fun addObserver() {
+        viewModel.status.observe(this, mObserver)
+    }
+
+    private val mObserver = Observer<Any> { response ->
+        when (response) {
+            is Resource.Error<*> -> {
+
+                JLog.e(TAG, "Message: ${response.data}")
+                showToast(requireActivity(), response.message.toString())
+            }
+            is Resource.Success<*> -> {
+
+                response.data as ListshippingCalculatorRates
+
+                arrayListShippingMethods.clear()
+                arrayList.clear()
+
+                arrayListShippingMethods.addAll(response.data.responseData?.shippingCalculatorRates!!)
+                arrayList.add(CarrierList(code = "", name = resources.getString(R.string.lbl_all)))
+                arrayList.addAll(response.data.responseData?.carrierList!!)
+                ShippingCostActivity.newIntent(requireActivity(), Intent(requireActivity(), ShippingCostActivity::class.java)
+                    .putExtra(EXTRA_DATA, arrayListShippingMethods)
+                    .putExtra(CARRIER_LIST, arrayList)
+                    .putExtra(SHIPPING_CAL_MODEL, ShippingCalculatorModel(countryCodeId = viewModel.countryCodeId.value!!, city = viewModel.city.value!!,
+                        weight = viewModel.weight.value!!, weight_unit = viewModel.weightSelected.value!!,
+                        height = viewModel.height.value!!, length = viewModel.length.value!!, width = viewModel.width.value!!,
+                        dimensionUnit = viewModel.dimensonSelected.value!!, zipcode = viewModel.zipCode.value!!)))
+
+            }
+            is Resource.GetCountryListSucess<*>  -> {
+
+                response.data as GetCountryResponse
+
+                countryList.addAll(response.data.responseData?.country!!)
+
+            }
+
+
+            is Resource.GetCarrierListSucess<*>  -> {
+
+                response.data as ShippingListResponse
+
+                arrayList.addAll(response.data.responseData?.carrier_list!!)
+
+            }
+            is Resource.Loading<*> -> {
+
+                response.isLoadingShow.let {
+                    if (it as Boolean) {
+                        showProgressDialog(requireActivity())
+                    } else {
+                        hideProgressDialog()
+                    }
+                }
+            }
+            is Resource.NoInternetError<*> -> {
+                CommonUtils.showOkDialog(requireActivity(), message = resources.getString(response.id!!))
+            }
+            is Resource.ValidationError<*> -> {
+                showToast(requireActivity(), resources.getString(response.id.nullSafe()))
+            }
+            is Resource.ItemsNotFound<*> -> {
+                showToast(requireActivity(),response.message.toString())
+            }
+            is Resource.UnAuthorisedRequest<*> -> {
+                showTokenExpiredDialog(resources.getString(R.string.lbl_session_expired_msg))
+            }
+        }
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (resultCode == Activity.RESULT_OK) {
+            val selected_item = data?.getStringExtra(SELECTED_DATA)
+
+            when (requestCode) {
+                CODE_COUNTRY -> {
+                    binding.edtShippingCountry.setText(selected_item)
+                    val country = countryList.find { it.name == selected_item }
+                    viewModel.countryCodeId.value = country?.id!!
+                }
+            }
+        }
+    }
+
+    override fun onResume() {
+        super.onResume()
+       /* binding.edtHeight.setText("")
+        binding.edtWeight.setText("")
+        binding.edtWidth.setText("")
+        binding.edtLength.setText("")
+        binding.edtCity.setText("")
+        binding.edtZipCode.setText("")*/
+    }
+}

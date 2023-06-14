@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.android.datatransport:transport-runtime:2.2.4@aar">
+    <CLASSES>
+      <root url="file://E:/Sonu g3/SDK/caches/transforms-2/files-2.1/449268d2cdd05b57004694eff535bc29/jetified-transport-runtime-2.2.4/res" />
+      <root url="file://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/f0f0dd3fec26aab3078b4ee9f7e9686d/jetified-transport-runtime-2.2.4/AndroidManifest.xml" />
+      <root url="jar://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/f0f0dd3fec26aab3078b4ee9f7e9686d/jetified-transport-runtime-2.2.4/jars/classes.jar!/" />
+      <root url="file://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/f0f0dd3fec26aab3078b4ee9f7e9686d/jetified-transport-runtime-2.2.4/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://E:/Sonu g3/SDK/caches/modules-2/files-2.1/com.google.android.datatransport/transport-runtime/2.2.4/44ab63fd6744b961c97d388fef15c888f99b561a/transport-runtime-2.2.4-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

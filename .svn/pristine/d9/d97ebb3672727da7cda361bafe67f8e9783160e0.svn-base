@@ -1,0 +1,11 @@
+package com.usend.models
+
+import com.base.network.model.CardList
+import com.base.network.model.CardXX
+
+data class SelectCardItemModel(
+    var model: CardXX? = null,
+    var isSelected: Boolean? = null
+) {
+
+}

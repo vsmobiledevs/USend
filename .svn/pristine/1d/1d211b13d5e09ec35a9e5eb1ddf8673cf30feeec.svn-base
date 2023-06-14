@@ -1,0 +1,18 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.room:room-runtime:2.1.0@aar">
+    <ANNOTATIONS>
+      <root url="jar://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/3b8661e80ac00fa02651ff2d590a2c41/room-runtime-2.1.0/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="file://E:/Sonu g3/SDK/caches/transforms-2/files-2.1/89a6e682193028ccc607af03f91455d4/room-runtime-2.1.0/res" />
+      <root url="jar://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/3b8661e80ac00fa02651ff2d590a2c41/room-runtime-2.1.0/jars/classes.jar!/" />
+      <root url="file://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/3b8661e80ac00fa02651ff2d590a2c41/room-runtime-2.1.0/res" />
+      <root url="jar://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/3b8661e80ac00fa02651ff2d590a2c41/room-runtime-2.1.0/jars/libs/room-common-java8-2.1.0.jar!/" />
+      <root url="file://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/3b8661e80ac00fa02651ff2d590a2c41/room-runtime-2.1.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://E:/Sonu g3/SDK/caches/modules-2/files-2.1/androidx.room/room-runtime/2.1.0/d8abe9eb51ecfe12017cbd78b8602361e804eac8/room-runtime-2.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

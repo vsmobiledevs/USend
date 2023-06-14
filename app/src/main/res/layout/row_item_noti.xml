@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="isRead"
+            type="Boolean" />
+
+    </data>
+
+    <com.chauthai.swipereveallayout.SwipeRevealLayout
+        android:id="@+id/swipe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:dragEdge="right"
+        app:mode="same_level">
+
+        <FrameLayout
+            android:id="@+id/flDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                style="@style/wrap"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgDelete"
+                    android:layout_width="@dimen/dimen_20dp"
+                    android:layout_height="@dimen/dimen_24dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:src="@drawable/ic_delete_card" />
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/flFront"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardMain"
+                style="@style/MaterialCardStyle"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                android:clickable="false"
+
+                android:layout_marginBottom="@dimen/dimen_10dp">
+
+                <LinearLayout
+                    style="@style/matchWrap"
+                    android:orientation="horizontal">
+
+                    <View
+                        android:layout_width="@dimen/dimen_5dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/bg_left_bottom_left_top_curve_back"
+                        android:backgroundTint="@{isRead ? @color/color5A9E41 : @color/color154A99}" />
+
+                    <LinearLayout
+                        style="@style/matchWrap"
+                        android:layout_marginStart="@dimen/dimen_15dp"
+                        android:layout_marginTop="@dimen/dimen_10dp"
+                        android:layout_marginBottom="@dimen/dimen_10dp"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtNoti"
+                            style="@style/CommonText.Style.14sp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:singleLine="false"
+                            android:text="@string/lbl_reminder"
+                            android:textColor="@color/color2D2D2D" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtDate"
+                            style="@style/CommonText.Style.14sp"
+                            android:layout_gravity="end"
+                            android:layout_marginTop="@dimen/dimen_5dp"
+                            android:layout_marginEnd="@dimen/dimen_10dp"
+                            android:fontFamily="@font/poppins_regular"
+                            android:singleLine="false"
+                            android:text="@string/lbl_9_45_am"
+                            android:textColor="@color/color979797"
+                            android:textSize="@dimen/dimen_11sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </FrameLayout>
+
+    </com.chauthai.swipereveallayout.SwipeRevealLayout>
+
+</layout>

@@ -1,0 +1,8 @@
+package com.usend.models
+
+import com.base.network.model.CarrierList
+
+data class ShippingMethodFiterItemModel (var item : CarrierList, var isSelected : Boolean)
+{
+
+}

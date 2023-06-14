@@ -1,0 +1,337 @@
+package com.usend.views.home
+
+import android.content.Context
+import android.content.Intent
+import android.view.View
+import android.widget.Toast
+import androidx.lifecycle.Observer
+import com.base.network.model.GetAdditionalServiceChargeResponse
+import com.base.network.model.ServiceChargeList
+import com.base.network.model.ShippingDetailsResponse
+import com.usend.R
+import com.usend.adapter.ExtraServicesItemAdapter
+import com.usend.base.ViewModelActivity
+import com.usend.comman.Resource
+import com.usend.databinding.ActivityShippingDetailsBinding
+import com.usend.extensions.loadImageUrl
+import com.usend.extensions.nullSafe
+import com.usend.extensions.showToast
+import com.usend.utils.*
+import com.usend.viewmodels.ShippingDetailViewModel
+import kotlinx.android.synthetic.main.app_toolbar.*
+
+import kotlin.reflect.KClass
+
+
+class ShippingDetailsActivity(
+    override val modelClass: KClass<ShippingDetailViewModel> = ShippingDetailViewModel::class,
+    override val layoutId: Int = R.layout.activity_shipping_details
+) : ViewModelActivity<ActivityShippingDetailsBinding, ShippingDetailViewModel>() {
+
+    private val TAG = ShippingDetailsActivity::class.java.simpleName
+    private var selectedServices = arrayListOf<Int>()
+    private var arrayListAdditionalServices = arrayListOf<ServiceChargeList>()
+
+    private var listPackageIds = arrayListOf<String>()
+    private var address_id: Int? = null
+    private var serviceName: String? = null
+    private var serviceCode: String? = null
+    private var carrierCode: String? = null
+    private var shippingCost: Double? = null
+    private var shippingDetails : ShippingDetailsResponse? = null
+    private var additional_charges = 0.0
+
+    override fun getDataFromIntent() {
+        super.getDataFromIntent()
+
+        if(intent.hasExtra(ADDRESS_ID))
+        {
+            address_id = intent.getIntExtra(ADDRESS_ID, 0)
+            listPackageIds = intent.getStringArrayListExtra(PACKAGE_IDs)!!
+            serviceName = intent.getStringExtra(SERVICE_NAME)
+            serviceCode = intent.getStringExtra(SERVICE_CODE)
+            carrierCode = intent.getStringExtra(CARRIER_CODE)
+            shippingCost = intent.getDoubleExtra(SHIPPING_COST, 0.0)
+        }
+
+    }
+
+    override fun initView() {
+        super.initView()
+
+        viewModel.getShippingDetails(
+            address_id!!,
+            listPackageIds.joinToString(separator = ","),
+            serviceName!!,
+            shippingCost!!,
+            serviceCode!!,
+            carrierCode!!
+        )
+
+        initToolbar(toolbar = toolbar, title = resources.getString(R.string.lbl_shipping_details))
+        binding.activity = this
+
+        binding.adapter = ExtraServicesItemAdapter(arrayListAdditionalServices){
+
+            if(selectedServices.contains(arrayListAdditionalServices[it].id))
+            {
+                selectedServices.remove(arrayListAdditionalServices[it].id.nullSafe())
+                additional_charges -= arrayListAdditionalServices[it].price!!.toDouble()
+            }
+            else {
+                selectedServices.add(arrayListAdditionalServices[it].id.nullSafe())
+                additional_charges += arrayListAdditionalServices[it].price!!.toDouble()
+            }
+
+            binding.txtAdditionalFees.text = "$" + String.format(
+                "%.2f",
+                (additional_charges + shippingDetails?.responseData?.invoiceDetails?.additionalFees!!.toDouble())
+            )
+            binding.txtTotalCharges.text =  "$" + String.format(
+                "%.2f",
+                shippingDetails?.responseData?.invoiceDetails?.totalCharges!!.toDouble() + additional_charges
+            )
+        }
+    }
+
+    fun onShippingMethodChangeClick()
+    {
+        onBackPressed()
+    }
+
+    fun onShippingAddressChangeClick()
+    {
+        val intent = Intent(this, ShipToAddressActivity::class.java)
+        intent.putExtra(FROM, FROM_SHIPPINGDETAIL)
+        startActivityForResult(intent, CODE_ADDRESS)
+    }
+
+    override fun initControls() {
+        super.initControls()
+
+        binding.btnNext.setOnClickListener {
+
+            val note = binding.edtNotes.text.toString()
+            val declared_value = binding.edtDeclaredValues.text.toString()
+            val content_package = binding.edtContentOfPackage.text.toString()
+
+            if(shippingDetails?.responseData?.shippingAddress?.countryCodeId != 198)
+            {
+                when {
+                    declared_value.isNullOrEmpty() -> {
+                        showToast(resources.getString(R.string.msg_please_enter_declared_value))
+                    }
+                    content_package.isNullOrEmpty() -> {
+                        showToast(resources.getString(R.string.msg_please_enter_desc_of_item))
+                    }
+                    else -> {
+                        SavedPaymentMethodsActivity.newIntent(this, Intent(this, SavedPaymentMethodsActivity::class.java)
+                            .putExtra(FROM, FROM_SHIPPINGDETAIL)
+                            .putExtra(ADDRESS_ID, address_id)
+                            .putStringArrayListExtra(PACKAGE_IDs, listPackageIds)
+                            .putExtra(SHIPPING_COST, shippingCost)
+                            .putExtra(SHIPPING_DETAILS, shippingDetails)
+                            .putExtra(SELETED_SERVICES, selectedServices)
+                            .putExtra(NOTE, binding.edtNotes.text.toString())
+                            .putExtra(DECLARED_VALUES, binding.edtDeclaredValues.text.toString())
+                            .putExtra(CONTENT_OF_PACKAGE, binding.edtContentOfPackage.text.toString()))
+                    }
+                }
+            }
+            else
+            {
+               /* CardEntry.startCardEntryActivity(
+                    this, true,
+                    DEFAULT_CARD_ENTRY_REQUEST_CODE
+                )*/
+
+                SavedPaymentMethodsActivity.newIntent(this, Intent(this, SavedPaymentMethodsActivity::class.java)
+                    .putExtra(FROM, FROM_SHIPPINGDETAIL)
+                    .putExtra(ADDRESS_ID, address_id)
+                    .putStringArrayListExtra(PACKAGE_IDs, listPackageIds)
+                    .putExtra(SHIPPING_COST, shippingCost)
+                    .putExtra(SHIPPING_DETAILS, shippingDetails)
+                    .putExtra(SELETED_SERVICES, selectedServices)
+                    .putExtra(NOTE, binding.edtNotes.text.toString())
+                    .putExtra(DECLARED_VALUES, binding.edtDeclaredValues.text.toString())
+                    .putExtra(CONTENT_OF_PACKAGE, binding.edtContentOfPackage.text.toString()))
+            }
+        }
+    }
+
+    override fun addObserver() {
+        viewModel.status.observe(this, mObserver)
+    }
+
+    private val mObserver = Observer<Any> { response ->
+        when (response) {
+            is Resource.Error<*> -> {
+
+                JLog.e(TAG, "Message: ${response.data}")
+                showToast(response.message.toString())
+            }
+            is Resource.AdditionalServicesSucess<*> -> {
+
+                response.data as GetAdditionalServiceChargeResponse
+
+                arrayListAdditionalServices.addAll(response.data?.responseData?.additionalServices!!)
+
+                binding.adapter?.notifyDataSetChanged()
+            }
+            is Resource.Success<*> -> {
+
+                response.data as ShippingDetailsResponse
+
+                viewModel.getAdditionalServices()
+                shippingDetails = response.data
+
+                if(shippingDetails?.responseData?.shippingAddress?.countryCodeId != 198)
+                {
+                    binding.llCustoms.visibility = View.VISIBLE
+                }
+
+                binding.txtConsolidatedFees.text = CommonUtils.convertToPriceFormat(
+                    shippingDetails?.responseData?.invoiceDetails?.consolidatedFees?.toDouble() ?: 0.0
+                )
+                /*if (response.data?.responseData?.shippingAddress?.street2.isNullOrEmpty()) {
+                    binding.txtAddress.text =
+                        response.data?.responseData?.shippingAddress?.street1 + ",\n" +
+                                response.data?.responseData?.shippingAddress?.city + ", " +
+                                response.data?.responseData?.shippingAddress?.state + ", " +
+                                response.data?.responseData?.shippingAddress?.country + " - " +
+                                response.data?.responseData?.shippingAddress?.postalCode
+
+                } else {
+                    binding.txtAddress.text =
+                        response.data?.responseData?.shippingAddress?.street1 + ",\n" +
+                                response.data?.responseData?.shippingAddress?.street2 + ",\n" +
+                                response.data?.responseData?.shippingAddress?.city + ", " +
+                                response.data?.responseData?.shippingAddress?.state + ", " +
+                                response.data?.responseData?.shippingAddress?.country + " - " +
+                                response.data?.responseData?.shippingAddress?.postalCode
+                }*/
+
+                var address = ""
+
+                address = response.data?.responseData?.shippingAddress?.street1 + ",\n"
+
+                if(response.data.responseData?.shippingAddress?.street2!!.isNotEmpty())
+                {
+                    address = address + response.data?.responseData?.shippingAddress?.street2 + ",\n"
+                }
+                if(response.data?.responseData?.shippingAddress?.city!!.isNotEmpty())
+                {
+                    address = address + response.data?.responseData?.shippingAddress?.city + ", "
+                }
+                if(response.data?.responseData?.shippingAddress?.state!!.isNotEmpty())
+                {
+                    address = address + response.data?.responseData?.shippingAddress?.state + ", "
+                }
+                if(response.data?.responseData?.shippingAddress?.country!!.isNotEmpty())
+                {
+                    address += response.data?.responseData?.shippingAddress?.country
+                }
+                if(response.data?.responseData?.shippingAddress?.postalCode!!.isNotEmpty())
+                {
+                    address = address + " - " + response.data?.responseData?.shippingAddress?.postalCode
+                }
+
+                binding.txtAddress.text = address
+
+                binding.txtShippingMethodName.text =
+                    response.data?.responseData?.shippingMethod?.serviceName
+                binding.txtShippingCharges.text = "$" + String.format(
+                    "%.2f",
+                    response.data?.responseData?.shippingMethod?.shipmentCost?.toDouble()
+                )
+                binding.txtAvailability.text =
+                    response.data?.responseData?.shippingMethod?.deliveryTime.toString()
+                binding.txtCarrierFees.text = "$" + String.format(
+                    "%.2f",
+                    response.data?.responseData?.invoiceDetails?.carrierFees?.toDouble()
+                )
+                /*binding.txtProcessFees.text = "$" + String.format(
+                    "%.2f",
+                    response.data?.responseData?.invoiceDetails?.processFees?.toDouble()
+                )*/
+                binding.txtAdditionalFees.text = "$" + String.format(
+                    "%.2f",
+                    response.data?.responseData?.invoiceDetails?.additionalFees?.toDouble()
+                )
+                binding.txtTotalCharges.text = "$" + String.format(
+                    "%.2f",
+                    response.data?.responseData?.invoiceDetails?.totalCharges?.toDouble()
+                )
+
+                 binding.imgShipping.loadImageUrl(this, response.data?.responseData?.shippingMethod?.image!!, cornerRadius = CommonUtils.dpToPx(this, 20),
+                    placeholder = R.drawable.ic_package_place_holder, errorPlaceholder = R.drawable.ic_package_place_holder){
+
+                }
+
+            }
+            is Resource.CreateOrderSucess<*> -> {
+
+                PaymentSuccessfulActivity.newIntent(
+                    this, Intent(
+                        this,
+                        PaymentSuccessfulActivity::class.java
+                    )
+                )
+                finishAffinity()
+            }
+            is Resource.Loading<*> -> {
+
+                response.isLoadingShow.let {
+                    if (it as Boolean) {
+                        showProgressDialog(this)
+                    } else {
+                        hideProgressDialog()
+                    }
+                }
+            }
+
+            is Resource.NoInternetError<*> -> {
+                // use if you wanna show dialog or snackbar
+                CommonUtils.showOkDialog(this, message = resources.getString(response.id!!))
+            }
+            is Resource.ValidationError<*> -> {
+                showToast(resources.getString(response.id.nullSafe()))
+            }
+            is Resource.UnAuthorisedRequest<*> -> {
+                showTokenExpiredDialog(resources.getString(R.string.lbl_session_expired_msg))
+            }
+        }
+    }
+
+   /* override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+
+        handleActivityResult(data, callback = object : Callback<CardEntryActivityResult> {
+
+            override fun onResult(result: CardEntryActivityResult) {
+                if (result.isSuccess()) {
+                    val cardResult: CardDetails = result.getSuccessValue()
+                    val card = cardResult.card
+                    val nonce = cardResult.nonce
+
+                    viewModel.createOrder(address_id = address_id!!, package_ids = listPackageIds.joinToString(","),
+                        amount_paid = shippingDetails?.responseData?.invoiceDetails?.totalCharges.toString()!!, additional_fee = shippingDetails?.responseData?.invoiceDetails?.additionalFees.toString(),
+                        shipping_amount = shippingDetails?.responseData?.shippingMethod?.shipmentCost.toString()!!, carrier_code = shippingDetails?.responseData?.shippingMethod?.carrierCode!!,
+                        request_shipping_service = shippingDetails?.responseData?.shippingMethod?.serviceName!!, service_code = shippingDetails?.responseData?.shippingMethod?.serviceCode!!,
+                        additionalChargeId = selectedServices.joinToString(","), source_id = nonce, notes = binding.edtNotes.text.toString(), declared_value = binding.edtDeclaredValues.text.toString(),
+                        content_of_package = binding.edtContentOfPackage.text.toString())
+
+
+                } else if (result.isCanceled()) {
+                    showToast(message = "Cancelled")
+                }
+            }
+        })
+    }*/
+
+    companion object {
+        fun newIntent(context: Context, intent: Intent) {
+            context.startActivity(intent)
+        }
+    }
+}

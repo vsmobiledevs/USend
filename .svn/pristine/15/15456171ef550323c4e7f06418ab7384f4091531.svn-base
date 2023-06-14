@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+           
+
+    <LinearLayout
+        android:id="@+id/llMainDialog"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dimen_20dp"
+        android:layout_marginEnd="@dimen/dimen_20dp"
+        android:background="@drawable/bg_10_radius_white_back"
+        android:padding="@dimen/dimen_20dp" android:tag="layout/dialog_update_mobile_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/CommonText.Style.14sp"
+            android:gravity="start"
+            android:layout_gravity="start"
+            android:textColor="@color/color2D2D2D"
+            android:text="@string/lbl_enter_phone_number_here"
+            android:textSize="@dimen/dimen_16sp" />
+
+        <LinearLayout
+            style="@style/matchWrap"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dimen_20dp">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtCountryCode"
+                style="@style/inputField.16sp"
+                android:layout_width="@dimen/dimen_60dp"
+                android:paddingStart="@dimen/dimen_0dp"
+                android:paddingEnd="@dimen/dimen_0dp"
+                android:focusable="false"
+                android:gravity="center"
+                android:hint="+91"
+                android:enabled="false"
+                android:inputType="number"
+                android:textAlignment="center"
+                app:layout_constraintEnd_toStartOf="@id/edtPhone"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtPhoneNumberTitle" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtPhone"
+                style="@style/inputField.16sp"
+                android:layout_width="match_parent"
+                android:layout_marginStart="@dimen/dimen_15dp"
+                android:hint="@string/lbl_enter_phone_number"
+                android:inputType="number"
+                android:imeOptions="actionDone"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toEndOf="@id/edtCountryCode"
+                app:layout_constraintTop_toBottomOf="@id/txtPhoneNumberTitle" />
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            style="@style/MaterialButton.CornerRadius"
+            android:id="@+id/btnUpdate"
+            android:layout_marginTop="@dimen/dimen_30dp"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/lbl_update" />
+
+    </LinearLayout>
+         

@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.asynclayoutinflater:asynclayoutinflater:1.0.0@aar">
+    <CLASSES>
+      <root url="file://E:/Sonu g3/SDK/caches/transforms-2/files-2.1/65701d44002e4ded5d85b29adbd097c1/asynclayoutinflater-1.0.0/res" />
+      <root url="file://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/87d87da9ca39cc0cd25079741747bae2/asynclayoutinflater-1.0.0/res" />
+      <root url="file://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/87d87da9ca39cc0cd25079741747bae2/asynclayoutinflater-1.0.0/AndroidManifest.xml" />
+      <root url="jar://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/87d87da9ca39cc0cd25079741747bae2/asynclayoutinflater-1.0.0/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://E:/Sonu g3/SDK/caches/modules-2/files-2.1/androidx.asynclayoutinflater/asynclayoutinflater/1.0.0/ac4d50701fce5c88dcc514f58e695cd32f05134c/asynclayoutinflater-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

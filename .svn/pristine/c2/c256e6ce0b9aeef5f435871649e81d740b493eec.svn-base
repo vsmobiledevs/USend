@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+                 
+                         
+                             
+
+                                          
+
+           
+
+    <LinearLayout
+        style="@style/match"
+        android:orientation="vertical" android:tag="layout/activity_verification_status_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <include
+            android:id="@+id/toolbarVerification"
+            layout="@layout/app_toolbar" />
+
+        <ScrollView style="@style/styleScrollbar">
+
+            <RelativeLayout
+                style="@style/match"
+                android:background="@color/colorWhite"
+                tools:context=".views.home.VerificationStatusActivity">
+
+                <LinearLayout
+                    style="@style/matchWrap"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/dimen_120dp"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imgVerificationStatus"
+                        android:layout_width="@dimen/dimen_250dp"
+                        android:layout_height="@dimen/dimen_220dp"
+                        app:layout_constraintBottom_toTopOf="@id/txtVerificationStatus"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_chainStyle="packed" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtVerificationStatus"
+                        style="@style/CommonText.Style.SemiBold.16sp"
+                        android:layout_marginTop="@dimen/dimen_25dp"
+                        android:text="@string/lbl_verification_pending"
+                        android:textColor="@color/color2D2D2D"
+                        android:textSize="@dimen/dimen_18sp"
+                        app:layout_constraintBottom_toTopOf="@id/txtVerificationDesc"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/imgVerificationStatus"
+                        app:layout_constraintVertical_chainStyle="packed" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtVerificationDesc"
+                        style="@style/CommonText.Style.16sp"
+                        android:layout_marginTop="@dimen/dimen_10dp"
+                        android:text="@string/lbl_please_wait_for_verification"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/txtVerificationStatus"
+                        app:layout_constraintVertical_chainStyle="packed" />
+
+                </LinearLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnOkay"
+                    style="@style/MaterialButton.CornerRadius"
+                    android:layout_alignParentBottom="true"
+                    android:text="@string/lbl_okay"
+                    android:layout_width="match_parent"
+                    android:tag="binding_1"                                       
+                    android:layout_marginTop="@dimen/dimen_50dp"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:layout_marginBottom="@dimen/dimen_20dp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnUpdateDocs"
+                    style="@style/MaterialButton.Round.Border"
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:layout_above="@id/btnContactAdmin"
+                    android:text="@string/lbl_update_document"
+                    android:tag="binding_2"                                       
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnContactAdmin"
+                    style="@style/MaterialButton.CornerRadius"
+                    android:layout_alignParentBottom="true"
+                    android:text="@string/lbl_contact_admin"
+                    android:layout_width="match_parent"
+                    android:tag="binding_3"                                       
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:layout_marginBottom="@dimen/dimen_20dp" />
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+         

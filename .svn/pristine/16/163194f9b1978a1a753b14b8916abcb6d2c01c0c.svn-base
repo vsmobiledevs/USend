@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.amplifyframework:aws-auth-cognito:1.1.2@aar">
+    <CLASSES>
+      <root url="file://C:/Dependency/caches/transforms-2/files-2.1/e4ed6df9bc11ba81854c7a382e304349/jetified-aws-auth-cognito-1.1.2/AndroidManifest.xml" />
+      <root url="jar://C:/Dependency/caches/transforms-2/files-2.1/e4ed6df9bc11ba81854c7a382e304349/jetified-aws-auth-cognito-1.1.2/jars/classes.jar!/" />
+      <root url="file://C:/Dependency/caches/transforms-2/files-2.1/e4ed6df9bc11ba81854c7a382e304349/jetified-aws-auth-cognito-1.1.2/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://C:/Dependency/caches/modules-2/files-2.1/com.amplifyframework/aws-auth-cognito/1.1.2/d13fd6b5ee47d45c62c80fb8d04ed73008065a9d/aws-auth-cognito-1.1.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

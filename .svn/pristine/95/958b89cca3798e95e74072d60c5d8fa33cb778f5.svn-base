@@ -1,0 +1,44 @@
+package com.usend.database;
+
+import java.lang.System;
+
+/**
+ * Created by Vires Purohit
+ * Space-O Technologies
+ * on 30/4/18.
+ */
+@kotlin.Metadata(mv = {1, 6, 0}, k = 1, d1 = {"\u00004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0005\n\u0002\u0010\b\n\u0002\b\u0002\u0018\u00002\u00020\u0001B\u0015\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0002\u0010\u0006J\u000e\u0010\t\u001a\u00020\n2\u0006\u0010\u0004\u001a\u00020\u0005J\b\u0010\u000b\u001a\u00020\fH\u0016J\u0010\u0010\r\u001a\u00020\n2\u0006\u0010\u0004\u001a\u00020\u0005H\u0002J\u0010\u0010\u000e\u001a\u00020\f2\u0006\u0010\u000f\u001a\u00020\bH\u0016J \u0010\u0010\u001a\u00020\f2\u0006\u0010\u000f\u001a\u00020\b2\u0006\u0010\u0011\u001a\u00020\u00122\u0006\u0010\u0013\u001a\u00020\u0012H\u0016R\u000e\u0010\u0002\u001a\u00020\u0003X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u0007\u001a\u0004\u0018\u00010\bX\u0082\u000e\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u0014"}, d2 = {"Lcom/usend/database/Databasehelper;", "Landroid/database/sqlite/SQLiteOpenHelper;", "myContext", "Landroid/content/Context;", "DB_PATH", "", "(Landroid/content/Context;Ljava/lang/String;)V", "myDataBase", "Landroid/database/sqlite/SQLiteDatabase;", "checkDataBase", "", "close", "", "createDataBase", "onCreate", "arg0", "onUpgrade", "arg1", "", "arg2", "app_debug"})
+public final class Databasehelper extends android.database.sqlite.SQLiteOpenHelper {
+    private final android.content.Context myContext = null;
+    private android.database.sqlite.SQLiteDatabase myDataBase;
+    
+    public Databasehelper(@org.jetbrains.annotations.NotNull()
+    android.content.Context myContext, @org.jetbrains.annotations.NotNull()
+    java.lang.String DB_PATH) {
+        super(null, null, null, 0);
+    }
+    
+    private final boolean createDataBase(java.lang.String DB_PATH) {
+        return false;
+    }
+    
+    public final boolean checkDataBase(@org.jetbrains.annotations.NotNull()
+    java.lang.String DB_PATH) {
+        return false;
+    }
+    
+    @kotlin.jvm.Synchronized()
+    @java.lang.Override()
+    public synchronized void close() {
+    }
+    
+    @java.lang.Override()
+    public void onCreate(@org.jetbrains.annotations.NotNull()
+    android.database.sqlite.SQLiteDatabase arg0) {
+    }
+    
+    @java.lang.Override()
+    public void onUpgrade(@org.jetbrains.annotations.NotNull()
+    android.database.sqlite.SQLiteDatabase arg0, int arg1, int arg2) {
+    }
+}

@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.lifecycle:lifecycle-process:2.1.0@aar">
+    <CLASSES>
+      <root url="file://E:/Sonu g3/SDK/caches/transforms-2/files-2.1/c8254e7c186a662e2078c519c72b0a7b/jetified-lifecycle-process-2.1.0/res" />
+      <root url="file://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/f096fc35f12dcb8ea90816dcbd8ed6f5/jetified-lifecycle-process-2.1.0/AndroidManifest.xml" />
+      <root url="jar://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/f096fc35f12dcb8ea90816dcbd8ed6f5/jetified-lifecycle-process-2.1.0/jars/classes.jar!/" />
+      <root url="file://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/f096fc35f12dcb8ea90816dcbd8ed6f5/jetified-lifecycle-process-2.1.0/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://E:/Sonu g3/SDK/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-process/2.1.0/a3ddd1911f2911de0d6d090f83e0f3441d398f6e/lifecycle-process-2.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,278 @@
+package com.usend.views.home
+
+import android.annotation.SuppressLint
+import android.app.Activity
+import android.content.Context
+import android.content.Intent
+import android.view.View
+import androidx.lifecycle.Observer
+import com.base.network.model.*
+import com.usend.R
+import com.usend.adapter.ShipToAddressItemAdapter
+import com.usend.base.BaseActivity
+import com.usend.base.ViewModelActivity
+import com.usend.comman.Resource
+import com.usend.databinding.ActivityShipToAddressBinding
+import com.usend.extensions.nullSafe
+import com.usend.extensions.showToast
+import com.usend.models.SelectShipAddressModel
+import com.usend.utils.*
+import com.usend.viewmodels.ShipToAddressViewModel
+import kotlinx.android.synthetic.main.app_toolbar.*
+import kotlin.reflect.KClass
+
+class ShipToAddressActivity(
+    override val modelClass: KClass<ShipToAddressViewModel> = ShipToAddressViewModel::class,
+    override val layoutId: Int = R.layout.activity_ship_to_address
+) : ViewModelActivity<ActivityShipToAddressBinding, ShipToAddressViewModel>() {
+
+    private var arrayList = arrayListOf<SelectShipAddressModel>()
+    private var arrayListShip = arrayListOf<CarrierList>()
+    private var selectedPosition: Int = 1
+
+    private var from: String? = null
+    private var listPackageIds = arrayListOf<String>()
+
+    private var addressId: Int? = null
+    private var autoShipmentServiceId: Int? = null
+    private var cardId: Int? = null
+
+    override fun getDataFromIntent() {
+        super.getDataFromIntent()
+
+        if (intent.hasExtra(FROM)) {
+            from = intent.getStringExtra(FROM)
+        }
+
+        if (intent.hasExtra(ADDRESS_ID)) {
+            addressId = intent.getIntExtra(ADDRESS_ID, 0)
+        }
+        if (intent.hasExtra(SERVICE_NAME)) {
+            autoShipmentServiceId = intent.getIntExtra(SERVICE_NAME, 0)
+        }
+
+        if (intent.hasExtra(CARD_ID)) {
+            cardId = intent.getIntExtra(CARD_ID, 0)
+        }
+
+        if (intent.hasExtra(PACKAGE_IDs)) {
+            listPackageIds = intent.getStringArrayListExtra(PACKAGE_IDs)!!
+        }
+    }
+
+    override fun initView() {
+        super.initView()
+
+        initToolbar(toolbar = toolbar, title = resources.getString(R.string.lbl_ship_to_address))
+        binding.activity = this
+
+        viewModel.getShipToAddressList()
+        viewModel.getShippingList()
+
+        arrayList.clear()
+        arrayList.add(SelectShipAddressModel(AddressList(), false))
+
+        binding.rvShipAddresses.addItemDecoration(
+            ItemOffsetDecoration(
+                resources.getDimensionPixelOffset(R.dimen.dimen_10dp),
+                "top",
+                pos = 1
+            )
+        )
+
+        binding.adapter =
+            ShipToAddressItemAdapter(arrayList, this::onItemClick, (from != UPDATE_AUTO_SHIPMENT))
+
+        if (from == UPDATE_AUTO_SHIPMENT) {
+            binding.btnNext.text = getString(R.string.lbl_update)
+            binding.btnNext.visibility = View.GONE
+        }
+    }
+
+    @SuppressLint("NotifyDataSetChanged")
+    fun onItemClick(position: Int) {
+        if (position != 0) {
+            if ((from != UPDATE_AUTO_SHIPMENT)) {
+                selectedPosition = position
+                arrayList.forEachIndexed { index, _ ->
+                    arrayList[index].isSelected = index == position
+                }
+                binding.adapter?.notifyDataSetChanged()
+            } else {
+                if (arrayList.size > 1) {
+                    if (selectedPosition < arrayList.size) {
+                        selectedPosition = position
+                        val newIntent = Intent()
+                        newIntent.putExtra(ADDRESS_MODEL, arrayList[selectedPosition].model)
+                        setResult(RESULT_OK, newIntent)
+                        finish()
+                    }
+                } else {
+                    showToast(this, resources.getString(R.string.msg_plz_shipping_address))
+                }
+            }
+        } else {
+            val intent = Intent(this, AddNewAddressActivity::class.java)
+            intent.putExtra(FROM, ADD)
+            startActivityForResult(intent, ADD_ADDRESS)
+        }
+    }
+
+
+
+    fun onNextClick() {
+        if (from == FROM_PACKAGEDETAIL) {
+
+            if (arrayList.size > 1) {
+                ShippingMethodActivity.newIntent(
+                    this, Intent(this, ShippingMethodActivity::class.java)
+                        .putExtra(FROM, FROM_SHIP_TO_ADDRESS)
+                        .putExtra(CARRIER_LIST, arrayListShip)
+                        .putStringArrayListExtra(PACKAGE_IDs, listPackageIds)
+                        .putExtra(ADDRESS_ID, arrayList[selectedPosition].model.id)
+                        .putExtra(ZIP_CODE, arrayList[selectedPosition].model.postalCode)
+                )
+            } else {
+                showToast(this, resources.getString(R.string.msg_plz_shipping_address))
+            }
+        } else if (from == FROM_AUTO_SHIPMENT) {
+            if (arrayList.size > 1) {
+                val intent = Intent(this@ShipToAddressActivity, AutoShipMethodsActivity::class.java)
+                intent.putExtra(FROM, from)
+
+                intent.putExtra(ADDRESS_ID, arrayList[selectedPosition].model.id)
+                intent.putExtra(COUNTRY_CODE_ID, arrayList[selectedPosition].model.countryCodeId)
+                (this@ShipToAddressActivity as BaseActivity).startActivityForResult(intent) { _ ->
+                    setResult(RESULT_OK)
+                    finish()
+                }
+                /*AutoShipMethodsActivity.newIntent(
+                    this, Intent(this, AutoShipMethodsActivity::class.java)
+                        .putExtra(FROM, from)
+                        .putExtra(ADDRESS_ID, arrayList[selectedPosition].model?.id)
+                )*/
+            } else {
+                showToast(this, resources.getString(R.string.msg_plz_shipping_address))
+            }
+        }
+    }
+
+    override fun addObserver() {
+        viewModel.status.observe(this, mObserver)
+    }
+
+    @SuppressLint("NotifyDataSetChanged")
+    private val mObserver = Observer<Any> { response ->
+        when (response) {
+            is Resource.Error<*> -> {
+                JLog.e(Companion.TAG, "Message: ${response.data}")
+                showToast(response.message.toString())
+            }
+
+            is Resource.SuccessWithData<*> -> {
+                if (response.data is AutoShipmentResponse) {
+                    if ((response.data.responseCode ?: 0) == SUCCESS) {
+                        response.data.responseMessage?.let { showToast(it) }
+                        val newIntent = Intent()
+                        newIntent.putExtra(SHIPMENT_MODEL, response.data.responseData)
+                        setResult(RESULT_OK, newIntent)
+                        finish()
+                    } else {
+                        response.data.responseMessage?.let { showToast(it) }
+                    }
+                }
+            }
+
+            is Resource.Success<*> -> {
+                if (response.data as ListAddressResponse!=null)
+                {
+
+                    response.data as ListAddressResponse
+                    var isAdded = false
+                    response.data.responseData?.addresses?.forEachIndexed { index, addressList ->
+
+                        if (from == UPDATE_AUTO_SHIPMENT) {
+                            if (addressList.id == addressId) {
+                                isAdded = true
+                            }
+                            arrayList.add(
+                                SelectShipAddressModel(
+                                    addressList,
+                                    addressList.id == addressId
+                                )
+                            )
+                        } else {
+                            arrayList.add(SelectShipAddressModel(addressList, index == 0))
+                        }
+                    }
+                    if (!isAdded && ((response.data.responseData?.addresses?.size
+                            ?: 0) != 0) && from == UPDATE_AUTO_SHIPMENT
+                    ) {
+                        arrayList[1].isSelected = true
+                    }
+                    binding.adapter?.notifyDataSetChanged()
+
+                }
+                else
+                {
+
+                }
+            }
+
+            is Resource.GetCarrierListSucess<*>  -> {
+
+                response.data as ShippingListResponse
+                arrayListShip.add(CarrierList(code = "", name = resources.getString(R.string.lbl_all)))
+                arrayListShip.addAll(response.data.responseData.carrier_list)
+
+            }
+            is Resource.Loading<*> -> {
+
+                response.isLoadingShow.let {
+                    if (it as Boolean) {
+                        showProgressDialog(this)
+                    } else {
+                        hideProgressDialog()
+                    }
+                }
+            }
+            is Resource.NoInternetError<*> -> {
+
+                // use if you wanna show dialog or snackbar
+                CommonUtils.showOkDialog(this, message = resources.getString(response.id!!))
+            }
+            is Resource.ValidationError<*> -> {
+                showToast(resources.getString(response.id.nullSafe()))
+            }
+            is Resource.UnAuthorisedRequest<*> -> {
+                showTokenExpiredDialog(resources.getString(R.string.lbl_session_expired_msg))
+            }
+        }
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        if (resultCode == Activity.RESULT_OK) {
+
+            val address: AddressList? = data?.getParcelableExtra(ADDRESS)
+
+            when (requestCode) {
+
+                ADD_ADDRESS -> {
+
+                    arrayList.add(1, SelectShipAddressModel(address!!, arrayList.size == 1))
+
+                    binding.adapter?.notifyItemInserted(1)
+                }
+            }
+        }
+    }
+
+    companion object {
+        fun newIntent(context: Context, intent: Intent) {
+            context.startActivity(intent)
+        }
+
+        private val TAG = ShipToAddressActivity::class.java.simpleName
+    }
+}

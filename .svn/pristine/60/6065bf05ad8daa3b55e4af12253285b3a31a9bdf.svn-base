@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+                 
+                            
+                                                                 
+
+                 
+                           
+                                                                
+
+           
+
+    <LinearLayout
+        style="@style/match"
+        android:orientation="vertical"
+        tools:context=".views.home.AddNewAddressActivity" android:tag="layout/activity_add_new_address_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <include
+            android:id="@+id/toolbarAddNewAddress"
+            layout="@layout/app_toolbar" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:background="@color/color1A2D2D2D" />
+
+        <ScrollView style="@style/styleScrollbar">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                style="@style/match"
+                android:background="@color/colorWhite">
+
+                <LinearLayout
+                    android:id="@+id/llSameAsBillingAddress"
+                    style="@style/matchWrap"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.appcompat.widget.AppCompatCheckBox
+                        android:id="@+id/cbSameAsBilling"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkbox_selector"
+                        android:tag="binding_1"                        
+                        android:clickable="false"
+                        android:enabled="false"
+                        android:gravity="center_vertical"
+                        android:visibility="visible" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="center_vertical"
+                        android:includeFontPadding="false"
+                        android:paddingStart="@dimen/dimen_12dp"
+                        android:paddingTop="@dimen/dimen_15dp"
+                        android:paddingBottom="@dimen/dimen_15dp"
+                        android:text="@string/lbl_same_as_billing_address"
+                        android:textColor="@color/color2D2D2D"
+                        android:textSize="@dimen/dimen_14sp" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1dp"
+                    android:background="@color/color1A2D2D2D"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/llSameAsBillingAddress" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtLabelTitle"
+                    style="@style/inputField.Title.14sp"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_15dp"
+                    android:text="@string/lbl_label"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/view1" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtLabel"
+                    style="@style/inputField.16sp"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:hint="@string/lbl_enter_label"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapWords"
+                    android:tag="binding_2"           
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txtLabelTitle" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtReceiverNameTitle"
+                    style="@style/inputField.Title.14sp"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_15dp"
+                    android:text="@string/lbl_receiver_name"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/edtLabel" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtReceiverName"
+                    style="@style/inputField.16sp"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:hint="@string/lbl_enter_receiver_name"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapWords"
+                    android:tag="binding_3"                  
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txtReceiverNameTitle" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtAddressLine"
+                    style="@style/inputField.Title.14sp"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_15dp"
+                    android:text="@string/lbl_address"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/edtReceiverName" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtAddressLine1"
+                    style="@style/inputField.16sp"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:hint="@string/lbl_address_line_1"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapWords"
+                    android:maxLength="50"
+                    android:tag="binding_4"                  
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txtAddressLine" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtAddressLine2"
+                    style="@style/inputField.16sp"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:hint="@string/lbl_address_line_2"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapWords"
+                    android:maxLength="50"
+                    android:tag="binding_5"                  
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/edtAddressLine1" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtCountryTitle"
+                    style="@style/inputField.Title.14sp"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_15dp"
+                    android:text="@string/lbl_country"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/edtAddressLine2" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtCountry"
+                    style="@style/inputField.16sp"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:drawableEnd="@drawable/ic_drop_down_arrow"
+                    android:focusable="false"
+                    android:hint="@string/lbl_select"
+                    android:inputType="textCapSentences"
+                    android:tag="binding_6"                                
+                    android:paddingEnd="@dimen/dimen_20dp"
+                                                        
+                    app:layout_constraintEnd_toStartOf="@id/edtZipCode"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txtCountryTitle" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtZipCodeTitle"
+                    style="@style/inputField.Title.14sp"
+                    android:layout_marginTop="@dimen/dimen_15dp"
+                    android:text="@string/lbl_zipcode"
+                    app:layout_constraintStart_toStartOf="@id/edtZipCode"
+                    app:layout_constraintTop_toBottomOf="@id/edtAddressLine2" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtZipCode"
+                    style="@style/inputField.16sp"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_marginStart="@dimen/dimen_15dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:hint="@string/lbl_enter_zipcode"
+                    android:inputType="text"
+                    android:tag="binding_7"             
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintStart_toEndOf="@+id/edtCountry"
+                    app:layout_constraintTop_toBottomOf="@id/txtZipCodeTitle" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtCityTitle"
+                    style="@style/inputField.Title.14sp"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_15dp"
+                    android:text="@string/lbl_city"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/edtCountry" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtCity"
+                    style="@style/inputField.16sp"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:hint="@string/lbl_enter_city"
+                    android:inputType="textCapWords"
+                    android:tag="binding_8"          
+                    app:layout_constraintEnd_toStartOf="@id/edtState"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txtCityTitle" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtStateTitle"
+                    style="@style/inputField.Title.14sp"
+                    android:layout_marginTop="@dimen/dimen_15dp"
+                    android:text="@string/lbl_state"
+                    app:layout_constraintStart_toStartOf="@id/edtState"
+                    app:layout_constraintTop_toBottomOf="@id/edtZipCode" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtState"
+                    style="@style/inputField.16sp"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:hint="@string/lbl_enter_state"
+                    android:inputType="textCapWords"
+                    android:tag="binding_9"           
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintStart_toEndOf="@id/edtCity"
+                    app:layout_constraintTop_toBottomOf="@id/txtStateTitle" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtPhoneNumberTitle"
+                    style="@style/inputField.Title.14sp"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_15dp"
+                    android:text="@string/lbl_phone_number"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/edtState" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtCountryCode"
+                    style="@style/inputField.16sp"
+                    android:layout_width="@dimen/dimen_60dp"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:gravity="center"
+                    android:hint="+999"
+                    android:inputType="number"
+                    android:tag="binding_10"                                      
+                    android:paddingStart="@dimen/dimen_0dp"
+                    android:paddingEnd="@dimen/dimen_0dp"
+                                                            
+                    android:textAlignment="center"
+                    app:layout_constraintEnd_toStartOf="@id/edtPhone"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txtPhoneNumberTitle" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtPhone"
+                    style="@style/inputField.16sp"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_marginStart="@dimen/dimen_15dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:hint="@string/lbl_enter_phone_number"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:tag="binding_11"                
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintStart_toEndOf="@id/edtCountryCode"
+                    app:layout_constraintTop_toBottomOf="@id/txtPhoneNumberTitle" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnAdd"
+                    style="@style/MaterialButton.CornerRadius"
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_30dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:layout_marginBottom="@dimen/dimen_20dp"
+                    android:tag="binding_12"                            
+                    android:text="@string/lbl_add"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/edtPhone"
+                    app:layout_constraintBottom_toTopOf="@id/btnDelete"
+                    app:layout_constraintVertical_bias="1" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnDelete"
+                    style="@style/MaterialButton.CornerRadius"
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:layout_marginBottom="@dimen/dimen_30dp"
+                    android:backgroundTint="@color/colorRed"
+                    android:tag="binding_13"                               
+                    android:text="@string/lbl_delete"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/btnAdd"
+                    app:layout_constraintVertical_bias="1" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+         

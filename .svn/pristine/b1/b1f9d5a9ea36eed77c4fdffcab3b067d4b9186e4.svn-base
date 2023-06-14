@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+           
+
+    <LinearLayout
+        style="@style/match"
+        android:orientation="vertical" android:tag="layout/activity_auto_ship_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <include
+            android:id="@+id/toolbarContactUs"
+            layout="@layout/app_toolbar" />
+
+        <ScrollView style="@style/styleScrollbar">
+
+            <RelativeLayout style="@style/match">
+
+                <ProgressBar
+                    android:id="@+id/progress_shipment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true" />
+
+                <Button
+                    android:id="@+id/btn_try_again"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/lbl_try_again"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/ll_auto_shipment_details"
+                    style="@style/match"
+                    android:background="@android:color/white"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    tools:context=".views.home.AutoShipActivity">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/card_address"
+                        style="@style/MaterialCardStyle"
+                        android:layout_marginStart="@dimen/dimen_20dp"
+                        android:layout_marginTop="@dimen/dimen_25dp"
+                        android:layout_marginEnd="@dimen/dimen_20dp"
+                        app:cardElevation="@dimen/dimen_10dp">
+
+                        <LinearLayout
+                            style="@style/matchWrap"
+                            android:orientation="vertical">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtPreferredAddressTitle"
+                                style="@style/CommonText.Style.14sp"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/dimen_15dp"
+                                android:layout_marginTop="@dimen/dimen_10dp"
+                                android:text="@string/lbl_preferred_address"
+                                android:textColor="@color/color802D2D2D" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtLabel"
+                                style="@style/CommonText.Style.SemiBold.16sp"
+                                android:layout_marginStart="@dimen/dimen_15dp"
+                                android:layout_marginTop="@dimen/dimen_10dp"
+                                android:focusable="false"
+                                android:gravity="start"
+                                android:textColor="@color/color2D2D2D" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtReceiverName"
+                                style="@style/CommonText.Style.SemiBold.16sp"
+                                android:layout_marginStart="@dimen/dimen_15dp"
+                                android:focusable="false"
+                                android:gravity="start"
+                                android:textColor="@color/color80000000" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtPreferredAddress"
+                                style="@style/CommonText.Style.16sp"
+                                android:layout_below="@+id/txt"
+                                android:layout_alignParentStart="true"
+                                android:layout_marginStart="@dimen/dimen_15dp"
+                                android:layout_marginEnd="@dimen/dimen_15dp"
+                                android:layout_marginBottom="@dimen/dimen_10dp"
+                                android:focusable="false"
+                                android:fontFamily="@font/poppins_medium"
+                                android:gravity="start"
+                                android:textColor="@color/color80000000" />
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/card_ship_method"
+                        style="@style/MaterialCardStyle"
+                        android:layout_marginStart="@dimen/dimen_20dp"
+                        android:layout_marginTop="@dimen/dimen_15dp"
+                        android:layout_marginEnd="@dimen/dimen_20dp"
+                        app:cardElevation="@dimen/dimen_10dp">
+
+                        <LinearLayout
+                            style="@style/matchWrap"
+                            android:orientation="vertical">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtPreferredShippingMethodTitle"
+                                style="@style/CommonText.Style.14sp"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/dimen_15dp"
+                                android:layout_marginTop="@dimen/dimen_10dp"
+                                android:text="@string/lbl_preferred_shipping_method"
+                                android:textColor="@color/color802D2D2D" />
+
+                            <LinearLayout
+                                style="@style/matchWrap"
+                                android:layout_marginTop="@dimen/dimen_10dp"
+                                android:orientation="horizontal">
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/imgShipping"
+                                    android:layout_width="@dimen/dimen_70dp"
+                                    android:layout_height="@dimen/dimen_70dp"
+                                    android:layout_marginStart="@dimen/dimen_15dp"
+                                    android:layout_marginBottom="@dimen/dimen_10dp"
+                                    android:background="@drawable/bg_curve_border_10_radius"
+                                    android:paddingStart="@dimen/dimen_7dp"
+                                    android:paddingEnd="@dimen/dimen_7dp"
+                                    android:src="@drawable/ic_fed_ex" />
+
+                                <LinearLayout
+                                    android:orientation="vertical"
+                                    android:layout_marginStart="@dimen/dimen_15dp"
+                                    android:layout_marginEnd="@dimen/dimen_15dp"
+                                    android:layout_marginBottom="@dimen/dimen_10dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        android:id="@+id/txtPreferredShippingMethod"
+                                        style="@style/CommonText.Style.16sp"
+                                        android:layout_below="@+id/txt"
+                                        android:layout_alignParentStart="true"
+                                        android:focusable="false"
+                                        android:fontFamily="@font/poppins_medium"
+                                        android:gravity="start"
+                                        android:text="FedEx International"
+                                        android:textColor="@color/color2D2D2D" />
+
+                                    <androidx.appcompat.widget.AppCompatTextView
+                                        android:id="@+id/txtCarrierName"
+                                        style="@style/inputField.Title.14sp"
+                                        android:fontFamily="@font/poppins_medium"
+                                        android:textSize="@dimen/dimen_12sp"
+                                        android:visibility="visible"
+                                        app:layout_constraintStart_toEndOf="@id/imgShipping"
+                                        app:layout_constraintTop_toBottomOf="@id/txtShippingMethodName"
+                                        app:layout_constraintVertical_chainStyle="spread_inside" />
+                                </LinearLayout>
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/card_payment"
+                        style="@style/MaterialCardStyle"
+                        android:layout_marginStart="@dimen/dimen_20dp"
+                        android:layout_marginTop="@dimen/dimen_25dp"
+                        android:layout_marginEnd="@dimen/dimen_20dp"
+                        app:cardElevation="@dimen/dimen_10dp">
+
+                        <LinearLayout
+                            style="@style/matchWrap"
+                            android:orientation="vertical">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtPreferredPaymentMethodTitle"
+                                style="@style/CommonText.Style.14sp"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/dimen_15dp"
+                                android:layout_marginTop="@dimen/dimen_10dp"
+                                android:text="@string/lbl_preferred_payment_method"
+                                android:textColor="@color/color802D2D2D" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtTitle"
+                                style="@style/CommonText.Style.14sp"
+                                android:layout_marginStart="@dimen/dimen_15dp"
+                                android:layout_marginTop="@dimen/dimen_10dp"
+                                android:layout_marginEnd="@dimen/dimen_15dp"
+                                android:focusable="false"
+                                android:fontFamily="@font/poppins_bold"
+                                android:text="Mastercard"
+                                android:textColor="@color/color2D2D2D"
+                                android:visibility="visible"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtCardNumber"
+                                style="@style/CommonText.Style.14sp"
+                                android:layout_marginStart="@dimen/dimen_15dp"
+                                android:layout_marginTop="@dimen/dimen_5dp"
+                                android:layout_marginEnd="@dimen/dimen_15dp"
+                                android:focusable="false"
+                                android:text="XXXX-XXXX-XXXX-1235"
+                                android:textColor="@color/color2D2D2D"
+                                android:textSize="@dimen/dimen_14sp"
+                                app:fontFamily="@font/poppins_semibold"
+                                app:layout_constraintStart_toEndOf="@id/imgCardType"
+                                app:layout_constraintTop_toBottomOf="@id/txtTitle"
+                                tools:text="XXXX-XXXX-XXXX-1235" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtExpDate"
+                                style="@style/CommonText.Style.14sp"
+                                android:layout_marginStart="@dimen/dimen_15dp"
+                                android:layout_marginTop="@dimen/dimen_5dp"
+                                android:layout_marginEnd="@dimen/dimen_15dp"
+                                android:layout_marginBottom="@dimen/dimen_10dp"
+                                android:focusable="false"
+                                android:text="02 Feb 2025"
+                                android:textColor="@color/color2D2D2D"
+                                android:textSize="@dimen/dimen_14sp"
+                                app:fontFamily="@font/poppins_medium"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintStart_toEndOf="@id/imgCardType"
+                                app:layout_constraintTop_toBottomOf="@id/txtCardNumber" />
+
+                        </LinearLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnUpdate"
+                    style="@style/MaterialButton.CornerRadius"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:layout_marginBottom="@dimen/dimen_20dp"
+                    android:text="@string/lbl_update" />
+            </RelativeLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+         

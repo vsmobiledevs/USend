@@ -1,0 +1,235 @@
+/*
+ * The MIT License (MIT)
+ *
+ * Copyright (c) 2019 https://www.spaceotechnologies.com
+ *
+ * Permissions is hereby granted, free of charge, to any person obtaining a copy of this software and associated
+ * documentation files (the "Software"), to deal in the Software without restriction, including without
+ * limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the
+ * Software, and to permit persons to whom the Software is furnished to do so, subject to the following
+ * conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all copies or substantial portions
+ * of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+ * INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+ * PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+ * LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT
+ * OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+ * OTHER DEALINGS IN THE SOFTWARE.
+ *
+ */
+
+package com.usend.utils
+
+import com.base.network.model.CardXX
+
+const val RECOMMENDED_FEDEX_INTERNATIONAL_PRIO_SERVICE_CODE = "fedex_international_priority"
+const val RECOMMENDED_DHL_EXPRESS_WORLDWIDE_SERVICE_CODE = "express_worldwide"
+const val RECOMMENDED_DHL_FEDEX_PRIO_OVERNIGHT_SERVICE_CODE = "fedex_priority_overnight"
+const val RECOMMENDED_DHL_FEDEX_2_DAY_SERVICE_CODE = "fedex_2day"
+
+const val RECOMMENDED_DHL_EXPRESS_WORLDWIDE_NAME = "EXPRESS WORLDWIDE"
+const val RECOMMENDED_FEDEX_INTERNATIONAL_PRIO_NAME = "FedEx International Priority®"
+
+const val USA_COUNTRY_ID = 198
+
+const val RC_SIGN_IN = 1256
+const val SUCCESS = 200
+const val UNAUTHORISED = 404
+const val NOT_FOUND = 204
+const val INVALIDTOKEN = 404
+const val PREF_FCM_TOKEN = "pref_fcm_token"
+const val deviceType = "1"
+const val AUTH_KEY = "auth_key"
+const val IS_SUBSCRIPTION = "is_subscription"
+const val USER_ID = "user_id"
+const val PAGE_IDENTITY = "page_identity"
+const val FACEBOOK_TAG = "facebook"
+const val GOOGLE_TAG = "google"
+const val USER_TAG = "user"
+const val PLAN_TYPE = "planType"
+const val MONTH_VALUE = "MONTH"
+const val YEAR_VALUE = "YEAR"
+const val PREMIMUM = "premimum"
+const val DB_NAME = "DMG_273_v1.0.sqlite"
+const val FIRST_COPY_VERSION = 1
+
+const val NO_INTERNET = "No internet connection"
+
+const val DATEFORMAT_yyyy_MM_dd = "yyyy-MM-dd"
+const val DATEFORMAT_dd_MM_yyyy = "dd-MM-yyyy"
+const val DATEFORMAT_dd_MMM_yyyy = "dd MMM, yyyy"
+const val DATEFORMAT_yyyy_MM_dd_HH_mm_ss = "yyyy-MM-dd HH:mm:ss"
+
+/* Request Code */
+const val REQ_CODE_LOCATION_SETTING = 101
+const val REQ_CODE_PDF_INTENT = 101
+const val REQ_CODE_FOR_CONFIRMATION = 102
+const val SOCKET_CONNECT = 106
+const val SOCKET_DISCONNECT = 108
+
+
+/******* RecyclerView Constant ******/
+const val VIEW_TYPE_HEADER = 1
+const val VIEW_TYPE_ITEM = 2
+const val VIEW_TYPE_FOOTER = 3
+const val VIEW_TYPE_EMPTY = 4
+const val VIEW_TYPE_LOADING = 5
+
+const val SQUARE_UP_TOKEN="Bearer EAAAEHlVR-FbCQpiPfljVEqrhYs-TPZMHmy9XsxqTMP093rVsqZXm8kw3bM24Qd2"
+//Intent Code
+
+const val CODE_COUNTRY = 201
+const val CODE_STATE = 202
+const val CODE_CITY = 203
+const val CODE_ADDRESS = 204
+const val ADD_ADDRESS = 10
+const val ADD_CARD = 80
+const val EDIT_CARD = 90
+const val DELETE_CARD = 110
+const val EDIT_ADDRESS = 20
+const val DELETE_ADDRESS = 70
+const val CREATE_CONCIERGE = 30
+const val REQ_USPS_VERIFICATION = 40
+const val REQ_UPDATE_USPS_VERIFICATION = 50
+const val REF_NOTIFICATION = 60
+const val STRIPE_CODE = 50000
+
+//Callback Constants
+const val EDIT = "edit"
+const val PACKAGE_IDs = "package_ids"
+const val PACKAGE_ID = "package_id"
+const val ADDRESS_ID = "address_id"
+const val  ADDITIONAL_CHARGES=" additional_charges"
+const val COUNTRY_CODE_ID = "country_code_id"
+const val SERVICE_NAME = "service_name"
+const val SHIPMENT_MODEL = "shipment_model"
+const val ADDRESS_MODEL = "address_model"
+const val SHIPMENT_DETAILS_MODEL = "shipment_details_model"
+const val PAYMENT_MODEL = "payment_model"
+const val CARD_ID = "card_id"
+const val SHIPPING_COST = "shipping_cost"
+const val SELETED_SERVICES = "selected_services"
+const val CONTENT_OF_PACKAGE = "content_of_package"
+const val DECLARED_VALUES = "declared_values"
+const val NOTE = "note"
+const val SHIPPING_DETAILS = "shipping_details"
+const val SERVICE_CODE = "service_code"
+const val CARRIER_CODE = "carrier_code"
+const val ORDER_ID = "order_id"
+const val ZIP_CODE = "zip_code"
+const val DELETE = "delete"
+const val ADD = "add"
+const val NORMAL = "normal"
+const val PAY = "pay"
+const val SELECTION = "selection"
+const val EXTRA_FROM_TYPE = "from_type"
+const val SERVER_ERROR = "Oops..!, Server error, our technical team is working"
+const val TYPE_PUSH = "push"
+const val TYPE = "type"
+const val TYPE_NOTIFICATION_ACTIVITY = "type_notification_activity"
+
+const val EXTRA_DATA = "extra_data"
+
+const val COUNTRY_LIST = "country_list"
+const val LIST = "list"
+const val STATE_LIST = "country_list"
+const val POSITION = "position"
+const val USER_DATA = "user_data"
+const val TITLE = "title"
+const val SLUG = "slug"
+const val ADDRESS = "address"
+const val CARD = "card"
+const val CardXX = "card"
+const val SELECTED_DATA = "selected_data"
+const val FROM = "from"
+const val AMOUNT = "amount"
+const val AMOUNT_MONTHLY="14.99"
+const val AMOUNT_YEARLY="150"
+const val AUTO_SHIPMENT_DETAILS = "auto_shipment_details"
+const val FROM_SHIPPINGDETAIL = "fromShippingDetail"
+const val FROM_PACKAGEDETAIL = "fromPackageDetail"
+const val FROM_AUTO_SHIPMENT = "fromAutoShipment"
+const val UPDATE_AUTO_SHIPMENT = "update_auto_shipment"
+const val FROM_SHIP_TO_ADDRESS = "fromShipToAddress"
+const val FROM_CALCULATOR = "fromCalculator"
+const val FROM_PAYMENT = "fromPayment"
+const val FROM_CONCIERGE_PURCHASE = "fromConciergePurchase"
+const val FROM_NOTIFICATION = "fromNotification"
+const val FROM_CONCIERGE = "fromConcierge"
+const val FROM_SUBSCRITION = "fromSubscrition"
+const val FROM_LOGOUT = "logout"
+const val FORMAT = "%02d:%02d"
+const val SUBSCRITION="fromSubscrition"
+
+const val AMAZONE_BUCKET = "usendapp131421-dev"
+
+// App Preference Const
+const val IS_LOGIN = "is_login"
+const val PLAN_ID = "planID"
+
+/****** App Extra Const *****/
+const val YES = "Yes"
+const val NO = "No"
+const val SHORT_CLICK = "short_click"
+const val LONG_CLICK = "long_click"
+
+const val TABLE_USER_BEAN = "user_beans"
+const val CONCIERGE = "Concierge/"
+const val USPS_VERIFICATION = "USPSVerification/"
+const val PUBLIC = "public/"
+const val PRODUCT_IMAGE = "product_image"
+const val JPG= ".jpg"
+const val PDF= ".pdf"
+const val LOG_TAG = "fieldCamp_log_tag"
+const val NOT_APPLIED = "not_applied"
+const val VERIFICATION_PENDING = "verification_pending"
+const val VERIFICATION_REJECTED = "verification_rejected"
+const val VERIFICATION_COMPLETED = "verification_completed"
+
+//Notification types
+const val NOTIFICATION_TITLE = "title"
+const val NOTIFICATION_BODY = "body"
+const val NOTIFICATION_MSG = "message"
+const val NOTIFICATION_TYPE = "notification_type"
+const val NOTIFICATION_EXTRA = "extra"
+const val NOTIFICATION_ID = "notification_id"
+const val USPS_STATUS_UPDATE = "usps_status_update"
+const val ORDER_CREATED = "order_created"
+const val ORDER_ACCEPTED = "order_accept_by_admin"
+const val CONCIERGE_NOTE_UPDATE = "concierge_note_update"
+const val ORDER_LABEL_CREATED = "order_label_created_by_admin"
+const val SPLIT_PACKAGE = "split_package"
+const val PACKAGE_CREATED_BY_ADMIN = "package_created_by_admin"
+const val CONCIERGE_STATUS_UPDATED_BY_ADMIN = "concierge_status_updated_by_admin"
+const val CONCIERGE_QUOTE_GENERATED = "concierge_quote_generated"
+const val AUTO_SHIP_ORDER_CREATE = "auto_ship_order_create"
+const val SUBSCRIPTION_MONTHLY = "3XJ43CSMHPTZZSW3V4YGJLP3"
+const val SUBSCRIPTION_YEARLY = "KRNUWFDQ2ANZ4BW7Q34JRCEI"
+const val LOCATIONID = "LCTEHY1MV219C"
+
+// Concierge Status Code
+const val HIGH_TO_LOW = "high_to_low"
+const val LOW_TO_HIGH = "low_to_high"
+const val SUBMITTED = "Submitted"
+const val PROCESSING = "Processing"
+const val PENDING_PAYMENT = "Pending Payment"
+const val PURCHASED = "Purchased"
+const val NOT_AVAILABLE = "Not available"
+const val SHIPPING_CAL_MODEL = "shipping_cal_model"
+const val CARRIER_LIST = "carrier_list"
+const val USPS_DOWNLOAD = "https://about.usps.com/forms/ps1583.pdf"
+const val PROHIBITED_ITEMS_URL = "https://dev7.spaceo.in/usend_frontend/prohibited_items"
+const val UNITED_STATES_CODE = 198
+const val PENDING = "pending"
+const val AWAITING_SHIPMENT = "awaiting_shipment"
+const val SHIPPED = "shipped"
+const val UPS = "https://wwwapps.ups.com/WebTracking/processRequest?HTMLVersion=5.0&Requester=NES&AgreeToTermsAndConditions=yes&loc=en_US&tracknum={Tracking number}"
+const val FED_EX = "https://www.fedex.com/apps/fedextrack/?action=track&language=english&tracknumbers={tracking nunmer}"
+const val DHL = "https://www.dhl.com/en/express/tracking.html?AWB={tracking number}&brand=DHL"
+//const val STRIPE_TOKEN = "pk_test_51HhqKMLwUVbzE11uPFgQBzH2KUmIpYH1YiUKIsnT6CT0hmQusRefv8BMbl3TM8nhhFtVnSqQ3vO1LCtnavL6eBzX00LYRkjRdb"
+const val STRIPE_TOKEN = "pk_live_51HhqKMLwUVbzE11ukIaaKmQ24dw83y3Ld3t2YO8mmh4cYR3YvoX26KXbRX7jFj4l2lfzcQiePPad9gzwxzgtg60l006BotmmNq"
+
+const val USEND_SUB_KEY = "usend_concierge_subscription"

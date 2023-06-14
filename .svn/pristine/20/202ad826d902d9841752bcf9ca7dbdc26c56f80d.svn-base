@@ -1,0 +1,14 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<!-- AMIT CHANGED : 23 oct 2018 -->
+3<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+4    package="com.base.network"
+5    android:versionCode="1"
+6    android:versionName="1.0" >
+7
+8    <uses-sdk
+9        android:minSdkVersion="16"
+9-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\network\src\main\AndroidManifest.xml
+10        android:targetSdkVersion="28" />
+10-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\network\src\main\AndroidManifest.xml
+11
+12</manifest>

@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.arch.core:core-runtime:2.1.0@aar">
+    <CLASSES>
+      <root url="file://E:/Sonu g3/SDK/caches/transforms-2/files-2.1/8d68f96bc1492aea8c567bc5649e75e1/core-runtime-2.1.0/res" />
+      <root url="file://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/58bd34b90cf3a6acb6b67409e2286092/core-runtime-2.1.0/res" />
+      <root url="jar://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/58bd34b90cf3a6acb6b67409e2286092/core-runtime-2.1.0/jars/classes.jar!/" />
+      <root url="file://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/58bd34b90cf3a6acb6b67409e2286092/core-runtime-2.1.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://E:/Sonu g3/SDK/caches/modules-2/files-2.1/androidx.arch.core/core-runtime/2.1.0/f19886651c9946b39f83d8c184fd0e2ce9f43c16/core-runtime-2.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

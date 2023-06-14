@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        style="@style/MaterialCardStyle"
+        android:layout_marginStart="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/dimen_3dp"
+        android:layout_marginEnd="@dimen/dimen_20dp"
+        android:layout_marginBottom="@dimen/dimen_12dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            style="@style/matchWrap"
+            android:padding="@dimen/dimen_15dp">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgShipping"
+                android:layout_width="@dimen/dimen_70dp"
+                android:layout_height="@dimen/dimen_70dp"
+                android:background="@drawable/bg_curve_border_10_radius"
+                android:paddingStart="@dimen/dimen_7dp"
+                android:paddingEnd="@dimen/dimen_7dp"
+                android:src="@drawable/ic_fed_ex"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtShippingMethodName"
+                style="@style/inputField.Title.14sp"
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/dimen_10dp"
+                android:ellipsize="marquee"
+                android:text="@string/lbl_fedex"
+                app:layout_constraintBottom_toTopOf="@id/txtTimeToShipped"
+                app:layout_constraintEnd_toStartOf="@id/txtShippingCharges"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toEndOf="@id/imgShipping"
+                app:layout_constraintTop_toTopOf="@id/imgShipping"
+                app:layout_constraintVertical_chainStyle="spread_inside" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtTimeToShipped"
+                style="@style/inputField.Title.14sp"
+                android:layout_marginStart="@dimen/dimen_10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/lbl_bussiness"
+                android:textSize="@dimen/dimen_12sp"
+                android:visibility="visible"
+                app:layout_constraintBottom_toTopOf="@id/txtAvailability"
+                app:layout_constraintStart_toEndOf="@id/imgShipping"
+                app:layout_constraintTop_toBottomOf="@id/txtShippingMethodName"
+                app:layout_constraintVertical_chainStyle="spread_inside" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtAvailability"
+                style="@style/inputField.Title.14sp"
+                android:layout_width="0dp"
+                android:layout_marginStart="@dimen/dimen_10dp"
+                android:drawableStart="@drawable/ic_map_pin"
+                android:drawablePadding="@dimen/dimen_6dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/lbl_available"
+                android:textColor="@color/color802D2D2D"
+                android:textSize="@dimen/dimen_12sp"
+                android:paddingTop="@dimen/dimen_5dp"
+                app:layout_constraintBottom_toBottomOf="@id/imgShipping"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toEndOf="@id/imgShipping"
+                app:layout_constraintTop_toBottomOf="@id/txtTimeToShipped"
+                app:layout_constraintVertical_chainStyle="spread_inside" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtRecommanded"
+                style="@style/inputField.Title.14sp"
+                android:drawableStart="@drawable/ic_baseline_star_24"
+                android:drawablePadding="@dimen/dimen_2dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/lbl_recommended"
+                android:textColor="@color/color802D2D2D"
+                android:textSize="@dimen/dimen_12sp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1"
+                app:layout_constraintStart_toEndOf="@id/txtAvailability"
+                app:layout_constraintTop_toTopOf="@id/txtAvailability" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtShippingCharges"
+                style="@style/inputField.Title.14sp"
+                android:text="@string/lbl_amount"
+                android:textColor="@color/color154A99"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1"
+                app:layout_constraintStart_toEndOf="@id/txtShippingMethodName"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</layout>

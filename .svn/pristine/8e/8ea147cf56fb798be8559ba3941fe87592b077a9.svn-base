@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.android.billingclient:billing:3.0.0@aar">
+    <CLASSES>
+      <root url="file://E:/Sonu g3/SDK/caches/transforms-2/files-2.1/549959ed51cb06db18c54871d8f08707/jetified-billing-3.0.0/res" />
+      <root url="file://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/1763c0724b87ccc5cadc1fa229265983/jetified-billing-3.0.0/AndroidManifest.xml" />
+      <root url="jar://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/1763c0724b87ccc5cadc1fa229265983/jetified-billing-3.0.0/jars/classes.jar!/" />
+      <root url="file://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/1763c0724b87ccc5cadc1fa229265983/jetified-billing-3.0.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://E:/Sonu g3/SDK/caches/modules-2/files-2.1/com.android.billingclient/billing/3.0.0/613d95d5420956f5b8e8d2567dee0845153b828/billing-3.0.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.firebase:firebase-iid-interop:17.0.0@aar">
+    <CLASSES>
+      <root url="file://E:/Sonu g3/SDK/caches/transforms-2/files-2.1/333218332f5288487a6695ebbac2b33b/jetified-firebase-iid-interop-17.0.0/res" />
+      <root url="jar://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/c4475655972e825236de87e7d26f85e2/jetified-firebase-iid-interop-17.0.0/jars/classes.jar!/" />
+      <root url="file://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/c4475655972e825236de87e7d26f85e2/jetified-firebase-iid-interop-17.0.0/res" />
+      <root url="file://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/c4475655972e825236de87e7d26f85e2/jetified-firebase-iid-interop-17.0.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,60 @@
+package com.usend.views.home;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 6, 0}, k = 1, d1 = {"\u0000T\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0006\u0018\u00002\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00030\u0001B\u001f\u0012\u000e\b\u0002\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00030\u0005\u0012\b\b\u0002\u0010\u0006\u001a\u00020\u0007\u00a2\u0006\u0002\u0010\bJ\b\u0010\u001a\u001a\u00020\u001bH\u0016J\b\u0010\u001c\u001a\u00020\u001bH\u0015J\u0006\u0010\u001d\u001a\u00020\u001bJ\b\u0010\u001e\u001a\u00020\u001bH\u0007J\b\u0010\u001f\u001a\u00020\u001bH\u0007J\u0006\u0010 \u001a\u00020\u001bR\u0016\u0010\t\u001a\n \u000b*\u0004\u0018\u00010\n0\nX\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u0014\u0010\f\u001a\b\u0012\u0004\u0012\u00020\u000e0\rX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u000f\u001a\b\u0012\u0004\u0012\u00020\u00100\rX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0014\u0010\u0006\u001a\u00020\u0007X\u0094\u0004\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0011\u0010\u0012R\u0016\u0010\u0013\u001a\b\u0012\u0004\u0012\u00020\u00150\u00148\u0002X\u0083\u0004\u00a2\u0006\u0002\n\u0000R\u001a\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00030\u0005X\u0096\u0004\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0016\u0010\u0017R\u0010\u0010\u0018\u001a\u0004\u0018\u00010\u0019X\u0082\u000e\u00a2\u0006\u0002\n\u0000\u00a8\u0006!"}, d2 = {"Lcom/usend/views/home/MailboxFragment;", "Lcom/usend/base/ViewModelFragment;", "Lcom/usend/databinding/FragmentMailboxBinding;", "Lcom/usend/viewmodels/MailboxViewModel;", "modelClass", "Ljava/lang/Class;", "layoutId", "", "(Ljava/lang/Class;I)V", "TAG", "", "kotlin.jvm.PlatformType", "arrayList", "Ljava/util/ArrayList;", "Lcom/usend/models/MailboxItemModel;", "arrayListPackageItems", "Lcom/base/network/model/PackageList;", "getLayoutId", "()I", "mObserver", "Landroidx/lifecycle/Observer;", "", "getModelClass", "()Ljava/lang/Class;", "user", "Lcom/base/network/model/User;", "addObserver", "", "initControls", "onCreateShipmentClick", "onSelectCancelClick", "onSelectClick", "onSentToTrash", "app_debug"})
+public final class MailboxFragment extends com.usend.base.ViewModelFragment<com.usend.databinding.FragmentMailboxBinding, com.usend.viewmodels.MailboxViewModel> {
+    @org.jetbrains.annotations.NotNull()
+    private final java.lang.Class<com.usend.viewmodels.MailboxViewModel> modelClass = null;
+    private final int layoutId = 0;
+    private final java.lang.String TAG = null;
+    private java.util.ArrayList<com.usend.models.MailboxItemModel> arrayList;
+    private java.util.ArrayList<com.base.network.model.PackageList> arrayListPackageItems;
+    private com.base.network.model.User user;
+    @android.annotation.SuppressLint(value = {"NotifyDataSetChanged"})
+    private final androidx.lifecycle.Observer<java.lang.Object> mObserver = null;
+    private java.util.HashMap _$_findViewCache;
+    
+    public MailboxFragment() {
+        super();
+    }
+    
+    public MailboxFragment(@org.jetbrains.annotations.NotNull()
+    java.lang.Class<com.usend.viewmodels.MailboxViewModel> modelClass, int layoutId) {
+        super();
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    @java.lang.Override()
+    public java.lang.Class<com.usend.viewmodels.MailboxViewModel> getModelClass() {
+        return null;
+    }
+    
+    @java.lang.Override()
+    protected int getLayoutId() {
+        return 0;
+    }
+    
+    @android.annotation.SuppressLint(value = {"NotifyDataSetChanged"})
+    @java.lang.Override()
+    protected void initControls() {
+    }
+    
+    public final void onSentToTrash() {
+    }
+    
+    public final void onCreateShipmentClick() {
+    }
+    
+    @android.annotation.SuppressLint(value = {"NotifyDataSetChanged"})
+    public final void onSelectClick() {
+    }
+    
+    @android.annotation.SuppressLint(value = {"NotifyDataSetChanged"})
+    public final void onSelectCancelClick() {
+    }
+    
+    @java.lang.Override()
+    public void addObserver() {
+    }
+}

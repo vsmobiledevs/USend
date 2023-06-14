@@ -1,0 +1,44 @@
+package com.usend.adapter
+
+import android.view.View
+import com.base.network.model.GetRatesList
+import com.usend.R
+import com.usend.base.BaseListAdapter
+import com.usend.databinding.RowShippingMethodItemBinding
+import com.usend.extensions.loadImageUrl
+import com.usend.models.ShippingMethodModel
+import com.usend.utils.CommonUtils
+
+class ShippingMethodItemAdapter(private val items: ArrayList<GetRatesList>, val callback : (Int) -> Unit) : BaseListAdapter(items) {
+
+    override fun getItemViewType(position: Int) = R.layout.row_shipping_method_item
+
+    override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
+
+        if(holder.binding is RowShippingMethodItemBinding) {
+
+            holder.binding.txtShippingMethodName.text = items[position].serviceName
+            holder.binding.txtShippingCharges.text = "$" + String.format("%.2f", items[position].shipmentCost?.toDouble())
+            holder.binding.txtTimeToShipped.text = items[position].deliveryTime
+            holder.binding.txtAvailability.text = "Available"
+
+            if(items[position].serviceCode.equals("fedex_international_priority") ||
+                items[position].serviceCode.equals("express_worldwide") ||
+                items[position].serviceCode.equals("fedex_priority_overnight") ||
+                items[position].serviceCode.equals("fedex_2day")){
+                holder.binding.txtRecommanded.visibility = View.VISIBLE
+            }else{
+                holder.binding.txtRecommanded.visibility = View.GONE
+            }
+            holder.binding.imgShipping.loadImageUrl(holder.itemView.context, items[position].image!!, cornerRadius = CommonUtils.dpToPx(holder.itemView.context, 20),
+                placeholder = R.drawable.ic_package_place_holder, errorPlaceholder = R.drawable.ic_package_place_holder)
+            {
+
+            }
+
+            holder.itemView.setOnClickListener {
+                callback(holder.adapterPosition)
+            }
+        }
+    }
+}

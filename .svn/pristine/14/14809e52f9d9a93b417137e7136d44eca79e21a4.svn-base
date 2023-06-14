@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.tbruyelle:rxpermissions:0.10.2@aar">
+    <CLASSES>
+      <root url="file://E:/Sonu g3/SDK/caches/transforms-2/files-2.1/e81b683de271ff87c76f02be682f86d4/jetified-rxpermissions-0.10.2/res" />
+      <root url="jar://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/3d1262d361f6b5503f65ba0563bf87bd/jetified-rxpermissions-0.10.2/jars/classes.jar!/" />
+      <root url="file://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/3d1262d361f6b5503f65ba0563bf87bd/jetified-rxpermissions-0.10.2/res" />
+      <root url="file://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/3d1262d361f6b5503f65ba0563bf87bd/jetified-rxpermissions-0.10.2/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

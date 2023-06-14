@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvPackage"
+        style="@style/MaterialCardStyle"
+        android:layout_marginStart="@dimen/dimen_20dp"
+        android:layout_marginEnd="@dimen/dimen_20dp"
+        android:layout_marginBottom="@dimen/dimen_15dp"
+        app:cardUseCompatPadding="false">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_15dp"
+                android:layout_marginEnd="@dimen/dimen_15dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginBottom="@dimen/dimen_10dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtOrderNumberTitle"
+                    style="@style/CommonText.Style.SemiBold.16sp"
+                    android:layout_width="wrap_content"
+                    android:singleLine="true"
+                    android:text="@string/lbl_order_number_"
+                    android:textColor="@color/color2D2D2D"
+                    android:textSize="@dimen/dimen_14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtPackageID"
+                    style="@style/CommonText.Style.SemiBold.16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_5dp"
+                    android:gravity="center"
+                    android:text="@string/pkg1236"
+                    android:textAlignment="center"
+                    android:textColor="@color/color154A99"
+                    android:textSize="@dimen/dimen_14sp"
+                    app:layout_constraintStart_toEndOf="@id/txtOrderNumberTitle"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1dp"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:background="@color/color1A2D2D2D"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txtOrderNumberTitle" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtStatusTitle"
+                    style="@style/CommonText.Style.SemiBold.16sp"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:singleLine="true"
+                    android:text="@string/lbl_status"
+                    android:textSize="@dimen/dimen_13sp"
+                    app:layout_constraintEnd_toStartOf="@id/txtProcessedOnTitle"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/view" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtStatus"
+                    style="@style/CommonText.Style.SemiBold.16sp"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_marginTop="@dimen/dimen_1dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:singleLine="true"
+                    android:text=""
+                    android:textColor="@color/color2D2D2D"
+                    android:textSize="@dimen/dimen_13sp"
+                    app:layout_constraintEnd_toStartOf="@id/txtProcessedOn"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txtStatusTitle" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtProcessedOnTitle"
+                    style="@style/CommonText.Style.SemiBold.16sp"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:singleLine="true"
+                    android:text="@string/lbl_processed_on"
+                    android:textSize="@dimen/dimen_13sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/txtStatusTitle"
+                    app:layout_constraintTop_toBottomOf="@id/view" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtProcessedOn"
+                    style="@style/CommonText.Style.SemiBold.16sp"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_marginTop="@dimen/dimen_1dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:singleLine="true"
+                    android:textColor="@color/color2D2D2D"
+                    android:textSize="@dimen/dimen_13sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toEndOf="@id/txtStatus"
+                    app:layout_constraintTop_toBottomOf="@id/txtProcessedOnTitle" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtTotalCostTitle"
+                    style="@style/CommonText.Style.SemiBold.16sp"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:singleLine="true"
+                    android:text="@string/lbl_total_cost"
+                    android:textSize="@dimen/dimen_13sp"
+                    app:layout_constraintEnd_toStartOf="@id/txtProcessedOnTitle"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txtStatus" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtTotalCost"
+                    style="@style/CommonText.Style.SemiBold.16sp"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_marginTop="@dimen/dimen_1dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:singleLine="true"
+                    android:text="@string/lbl_amount"
+                    android:textColor="@color/color2D2D2D"
+                    android:textSize="@dimen/dimen_13sp"
+                    app:layout_constraintEnd_toStartOf="@id/txtTrackingNumber"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txtTotalCostTitle" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtTrackingNumberTitle"
+                    style="@style/CommonText.Style.SemiBold.16sp"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:singleLine="true"
+                    android:text="@string/lbl_tracking_number"
+                    android:textSize="@dimen/dimen_13sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/txtStatusTitle"
+                    app:layout_constraintTop_toBottomOf="@id/txtProcessedOn" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtTrackingNumber"
+                    style="@style/CommonText.Style.SemiBold.16sp"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_marginTop="@dimen/dimen_1dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:singleLine="true"
+                    android:textColor="@color/color154A99"
+                    android:textSize="@dimen/dimen_13sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toEndOf="@id/txtTotalCost"
+                    app:layout_constraintTop_toBottomOf="@id/txtTrackingNumberTitle" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtDimensionsTitle"
+                    style="@style/CommonText.Style.SemiBold.16sp"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:singleLine="true"
+                    android:text="@string/lbl_dimensions"
+                    android:textSize="@dimen/dimen_13sp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toStartOf="@id/txtWeightTitle"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txtTotalCost" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtDimensions"
+                    style="@style/CommonText.Style.SemiBold.16sp"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_marginTop="@dimen/dimen_1dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:singleLine="true"
+                    android:text="@string/hipon"
+                    android:visibility="gone"
+                    android:textColor="@color/color2D2D2D"
+                    android:textSize="@dimen/dimen_13sp"
+                    app:layout_constraintEnd_toStartOf="@id/txtWeight"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txtDimensionsTitle" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtWeightTitle"
+                    style="@style/CommonText.Style.SemiBold.16sp"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:singleLine="true"
+                    android:text="@string/lbl_weight"
+                    android:textSize="@dimen/dimen_13sp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/txtDimensionsTitle"
+                    app:layout_constraintTop_toBottomOf="@id/txtTrackingNumber" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtWeight"
+                    style="@style/CommonText.Style.SemiBold.16sp"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_marginTop="@dimen/dimen_1dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:singleLine="true"
+                    android:text="@string/hipon"
+                    android:visibility="gone"
+                    android:textColor="@color/color2D2D2D"
+                    android:textSize="@dimen/dimen_13sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toEndOf="@id/txtDimensions"
+                    app:layout_constraintTop_toBottomOf="@id/txtWeightTitle" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/dimen_120dp"
+            android:layout_height="@dimen/dimen_120dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="-20dp"
+            android:layout_marginBottom="-35dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_box_mailbox" />
+
+    </com.google.android.material.card.MaterialCardView>
+
+</layout>

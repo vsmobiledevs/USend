@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.usend.viewmodels.AddCardViewModel" />
+
+    </data>
+
+    <LinearLayout
+        style="@style/match"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbarBillingAddress"
+            layout="@layout/app_toolbar" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            style="@style/match"
+            android:background="@color/colorWhite"
+            tools:context=".views.home.AddCardActivity">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtCardNumberTitle"
+                style="@style/inputField.Title.14sp"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_15dp"
+                android:text="@string/lbl_card_number"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtCardNumber"
+                style="@style/inputField.16sp"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                android:hint="1234 5678 1234 5678"
+                android:inputType="phone"
+                android:maxLength="19"
+                android:imeOptions="actionNext"
+                android:text="@={viewModel.cardNumber}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtCardNumberTitle" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtCardName"
+                style="@style/inputField.Title.14sp"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_15dp"
+                android:text="@string/lbl_card_holder_name"
+                android:visibility="gone"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edtCardNumber" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtCardName"
+                style="@style/inputField.16sp"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                android:hint="@string/lbl_card_holder_name"
+                android:inputType="text"
+                android:visibility="gone"
+                android:imeOptions="actionNext"
+                android:text="@={viewModel.cardName}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtCardName" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtMonthTitle"
+                style="@style/inputField.Title.14sp"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_15dp"
+                android:text="@string/lbl_month"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edtCardName" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtMonth"
+                style="@style/inputField.16sp"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:hint="00"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="2"
+                android:text="@={viewModel.month}"
+                app:layout_constraintEnd_toStartOf="@id/edtYear"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtMonthTitle" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtYearTitle"
+                style="@style/inputField.Title.14sp"
+                android:layout_marginTop="@dimen/dimen_15dp"
+                android:text="@string/lbl_year"
+                app:layout_constraintStart_toStartOf="@id/edtYear"
+                app:layout_constraintTop_toBottomOf="@id/edtCardName" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtYear"
+                style="@style/inputField.16sp"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_marginStart="@dimen/dimen_15dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                android:hint="20"
+                android:inputType="number"
+                android:maxLength="2"
+                android:imeOptions="actionNext"
+                android:text="@={viewModel.year}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toEndOf="@+id/edtMonth"
+                app:layout_constraintTop_toBottomOf="@id/txtYearTitle" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtCVVTitle"
+                style="@style/inputField.Title.14sp"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_15dp"
+                android:text="@string/lbl_cvv"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edtMonth" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtCVV"
+                style="@style/inputField.16sp"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                android:hint="@string/lbl_enter_CVV"
+                android:inputType="number"
+                android:maxLength="4"
+                android:imeOptions="actionDone"
+                android:text="@={viewModel.cvv}"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtCVVTitle" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSave"
+                style="@style/MaterialButton.CornerRadius"
+                android:layout_width="match_parent"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_30dp"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                android:layout_marginBottom="@dimen/dimen_20dp"
+                android:text="@string/lbl_add"
+                app:layout_constraintBottom_toTopOf="@+id/btnDelete"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edtCVV"
+                app:layout_constraintVertical_bias="1" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDelete"
+                style="@style/MaterialButton.CornerRadius"
+                android:layout_width="match_parent"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                android:layout_marginBottom="@dimen/dimen_30dp"
+                android:backgroundTint="@color/colorRed"
+                android:text="@string/lbl_delete"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintVertical_bias="1" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</layout>

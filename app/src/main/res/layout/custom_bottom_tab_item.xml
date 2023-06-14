@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/wrap">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgTab"
+            android:layout_width="@dimen/dimen_40dp"
+            android:layout_height="@dimen/dimen_40dp"
+            android:src="@drawable/mailbox_button_selector"
+            android:scaleType="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtTabTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_mailbox"
+            android:fontFamily="@font/poppins_semibold"
+            android:textSize="@dimen/dimen_10sp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:includeFontPadding="false"
+            android:textColor="@color/bottomtab_text_color_selector"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imgTab" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

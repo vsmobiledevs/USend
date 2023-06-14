@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+           
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/matchWrap"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:layout_marginBottom="@dimen/dimen_15dp"
+        android:layout_marginStart="@dimen/dimen_10dp"
+        android:layout_marginEnd="@dimen/dimen_10dp" android:tag="layout/row_prohibited_item_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgProhibitedItem"
+            android:layout_width="@dimen/dimen_100dp"
+            android:layout_height="@dimen/dimen_100dp"
+            android:src="@drawable/ic_alcohol"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtProhibitedItem"
+            style="@style/CommonText.Style.14sp"
+            android:textSize="@dimen/dimen_12sp"
+            android:textColor="@color/color2D2D2D"
+            tools:text="Alcohol"
+            android:singleLine="false"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:layout_marginTop="@dimen/dimen_12dp"
+            app:layout_constraintStart_toStartOf="@id/imgProhibitedItem"
+            app:layout_constraintEnd_toEndOf="@id/imgProhibitedItem"
+            app:layout_constraintTop_toBottomOf="@id/imgProhibitedItem"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+         

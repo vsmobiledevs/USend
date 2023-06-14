@@ -1,0 +1,39 @@
+package com.usend.viewmodels
+import android.app.Application
+import android.content.Context
+import androidx.lifecycle.MediatorLiveData
+import androidx.lifecycle.MutableLiveData
+import com.usend.R
+import com.usend.comman.Resource
+import com.usend.repository.UserRepository
+import com.usend.base.BaseViewModel
+import com.usend.extensions.checkInternetConnected
+
+class HomeViewModel(application: Application, private var repository: UserRepository):
+    BaseViewModel(application) {
+
+    val mContext: Context = application.applicationContext
+
+    val status: MediatorLiveData<Any> by lazy {
+        MediatorLiveData<Any>()
+    }
+
+    val isSelectMode by lazy { MutableLiveData<Boolean>(false)}
+
+    fun getProfileData() {
+
+        when {
+            !mContext.checkInternetConnected() -> status.value =
+                Resource.NoInternetError<Int>(R.string.default_internet_message)
+            else -> {
+                status.addSource(repository.getProfileData(getAuthKey())) {
+                    if (it is Resource.Success<*>) {
+                        //can save for further use
+
+                    }
+                    status.value = it
+                }
+            }
+        }
+    }
+}

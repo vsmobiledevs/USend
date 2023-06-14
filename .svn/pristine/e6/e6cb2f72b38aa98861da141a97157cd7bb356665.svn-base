@@ -1,0 +1,629 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                        
+
+    
+
+                 
+                            
+                                                             
+           
+
+    <ScrollView style="@style/styleScrollbar" android:tag="layout/fragment_my_profile_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <LinearLayout
+            style="@style/match"
+            android:background="@color/colorWhite"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtName"
+                style="@style/CommonText.Style.16sp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen_15dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="John Doe"
+                android:textColor="@color/color154A99"
+                android:textSize="@dimen/dimen_22dp" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cvAddress"
+                style="@style/MaterialCardStyle"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_5dp"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                app:contentPaddingBottom="@dimen/dimen_5dp"
+                app:contentPaddingTop="@dimen/dimen_5dp">
+
+                <LinearLayout
+                    style="@style/matchWrap"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginStart="@dimen/dimen_30dp"
+                    android:layout_marginEnd="@dimen/dimen_30dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/dimen_15dp"
+                        android:layout_height="@dimen/dimen_20dp"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/ic_map_pin" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtMailBoxNo"
+                        style="@style/CommonText.Style.14sp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginStart="@dimen/dimen_10dp"
+                        android:singleLine="false"
+                        android:text="" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:background="@color/colorE7EBEE" />
+
+            <LinearLayout
+                style="@style/matchWrap"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <LinearLayout
+                    android:id="@+id/llMembership"
+                    style="@style/wrap"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/CommonText.Style.14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_18dp"
+                        android:text="@string/lbl_membership"
+                        android:textSize="@dimen/dimen_12sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtMembershipStatus"
+                        style="@style/CommonText.Style.16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:layout_marginBottom="@dimen/dimen_18dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="@string/lbl_free"
+                        android:textColor="@color/color154A99" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/dimen_1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorE7EBEE" />
+
+                <LinearLayout
+                    android:id="@+id/llUSPS"
+                    style="@style/wrap"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="gone">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/CommonText.Style.14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_18dp"
+                        android:text="@string/lbl_usps_verification"
+                        android:textSize="@dimen/dimen_12sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtStatus"
+                        style="@style/CommonText.Style.16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:layout_marginBottom="@dimen/dimen_18dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="-"
+                        android:textColor="@color/color154A99" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/dimen_1dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorE7EBEE" />
+
+                <LinearLayout
+                    android:id="@+id/llAutoShip"
+                    style="@style/wrap"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/CommonText.Style.14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_18dp"
+                        android:text="@string/lbl_auto_shipment"
+                        android:textSize="@dimen/dimen_12sp" />
+
+
+                    <androidx.appcompat.widget.SwitchCompat
+                        android:id="@+id/switchAutoShip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="@dimen/dimen_5dp"
+                        android:layout_marginEnd="@dimen/dimen_5dp"
+                        android:background="?selectableItemBackground"
+                        android:button="@drawable/switch_selector"
+                        android:checked="false"
+                        android:includeFontPadding="false"
+                        android:thumb="@null"
+                        app:showText="false"
+                        app:switchPadding="@dimen/dimen_0dp"
+                        app:track="@null" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:background="@color/colorE7EBEE" />
+
+            <!-- <View
+                 android:layout_width="match_parent"
+                 android:layout_height="@dimen/dimen_1dp"
+                 android:layout_marginStart="@dimen/dimen_20dp"
+                 android:layout_marginEnd="@dimen/dimen_20dp"
+                 android:visibility="visible"
+                 android:background="@color/colorE7EBEE" />
+
+
+             <LinearLayout
+                 android:id="@+id/llAutoShip"
+                 style="@style/matchWrap"
+                 android:layout_marginStart="@dimen/dimen_20dp"
+                 android:layout_marginEnd="@dimen/dimen_20dp"
+                 android:background="?attr/selectableItemBackground"
+                 android:orientation="horizontal">
+
+                 <androidx.appcompat.widget.AppCompatImageView
+                     android:layout_width="@dimen/dimen_20dp"
+                     android:layout_height="@dimen/dimen_20dp"
+                     android:layout_gravity="center_vertical"
+                     android:scaleType="fitCenter"
+                     android:src="@drawable/ic_usps_verification" />
+
+                 <androidx.appcompat.widget.AppCompatTextView
+                     style="@style/CommonText.Style.16sp"
+                     android:layout_width="0dp"
+                     android:layout_weight="1"
+                     android:layout_marginStart="@dimen/dimen_20dp"
+                     android:layout_marginEnd="@dimen/dimen_20dp"
+                     android:paddingTop="@dimen/dimen_18dp"
+                     android:paddingBottom="@dimen/dimen_18dp"
+                     android:text="@string/lbl_auto_shipment"
+                     android:textColor="@color/color2D2D2D" />
+
+                 <androidx.appcompat.widget.SwitchCompat
+                     android:id="@+id/switchAutoShip"
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                     android:background="?selectableItemBackground"
+                     android:includeFontPadding="false"
+                     app:switchPadding="@dimen/dimen_0dp"
+                     app:showText="false"
+                     app:track="@null"
+                     android:thumb="@null"
+                     android:button="@drawable/switch_selector"
+                     android:checked="false"
+                     />
+
+             </LinearLayout>-->
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                android:background="@color/colorE7EBEE"
+                android:visibility="visible" />
+
+            <LinearLayout
+                android:id="@+id/llEditProfile"
+                style="@style/matchWrap"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                android:background="?attr/selectableItemBackground"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/dimen_20dp"
+                    android:layout_height="@dimen/dimen_20dp"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_user" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/CommonText.Style.16sp"
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:paddingTop="@dimen/dimen_18dp"
+                    android:paddingBottom="@dimen/dimen_18dp"
+                    android:text="@string/lbl_edit_profile"
+                    android:textColor="@color/color2D2D2D" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                android:background="@color/colorE7EBEE" />
+
+            <LinearLayout
+                android:id="@+id/llChangePassword"
+                style="@style/matchWrap"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                android:background="?attr/selectableItemBackground"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/dimen_20dp"
+                    android:layout_height="@dimen/dimen_20dp"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_password" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/CommonText.Style.16sp"
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:paddingTop="@dimen/dimen_18dp"
+                    android:paddingBottom="@dimen/dimen_18dp"
+                    android:text="@string/lbl_change_password"
+                    android:textColor="@color/color2D2D2D" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                android:background="@color/colorE7EBEE" />
+
+            <LinearLayout
+                android:id="@+id/llShippingAddress"
+                style="@style/matchWrap"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                android:background="?attr/selectableItemBackground"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/dimen_20dp"
+                    android:layout_height="@dimen/dimen_20dp"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_map_pin_profile" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/CommonText.Style.16sp"
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:paddingTop="@dimen/dimen_18dp"
+                    android:paddingBottom="17.55dp"
+                    android:text="@string/lbl_shipping_address"
+                    android:textColor="@color/color2D2D2D" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                android:background="@color/colorE7EBEE" />
+
+            <LinearLayout
+                android:id="@+id/llPaymentMethods"
+                style="@style/matchWrap"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                android:background="?attr/selectableItemBackground"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/dimen_20dp"
+                    android:layout_height="@dimen/dimen_20dp"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_credit_card_profile" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/CommonText.Style.16sp"
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:paddingTop="@dimen/dimen_18dp"
+                    android:paddingBottom="@dimen/dimen_18dp"
+                    android:text="@string/lbl_payment_methods"
+                    android:textColor="@color/color2D2D2D" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                android:background="@color/colorE7EBEE" />
+
+            <LinearLayout
+                style="@style/matchWrap"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/dimen_20dp"
+                    android:layout_height="@dimen/dimen_20dp"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_unit_system" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/CommonText.Style.16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:paddingTop="@dimen/dimen_18dp"
+                    android:paddingBottom="@dimen/dimen_18dp"
+                    android:text="@string/lbl_unit_system"
+                    android:textColor="@color/color2D2D2D" />
+
+                <LinearLayout
+                    android:id="@+id/llUnitSystem"
+                    style="@style/wrap"
+                    android:layout_width="@dimen/dimen_170dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/dimen_30dp"
+                    android:background="@drawable/bg_curve_border_8_radius"
+                    android:weightSum="2"
+                    app:layout_constraintBottom_toBottomOf="@id/edtWeight"
+                    app:layout_constraintStart_toEndOf="@id/edtWeight"
+                    app:layout_constraintTop_toTopOf="@id/edtWeight">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/CommonText.Style.14sp"
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:tag="binding_1"                                                                           
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:gravity="center"
+                        android:padding="@dimen/dimen_10dp"
+                        android:text="@string/lbl_kg_cm"
+                                                                                                                              />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/CommonText.Style.14sp"
+                        android:layout_width="@dimen/dimen_0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:tag="binding_2"                                                                              
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:gravity="center"
+                        android:padding="@dimen/dimen_10dp"
+                        android:text="@string/lbl_lbs_inch"
+                                                                                                                                 />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                android:background="@color/colorE7EBEE" />
+
+            <LinearLayout
+                android:id="@+id/llUSPSVerification"
+                style="@style/matchWrap"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                android:clickable="false"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <RelativeLayout
+                    android:layout_width="@dimen/dimen_20dp"
+                    android:layout_height="@dimen/dimen_22dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/dimen_20dp">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/dimen_16dp"
+                        android:layout_height="@dimen/dimen_20dp"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_usps_verification" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentEnd="true"
+                        android:src="@drawable/ic_red_dot" />
+
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtUSPSStatus"
+                    style="@style/CommonText.Style.16sp"
+                    android:layout_width="match_parent"
+                    android:paddingTop="@dimen/dimen_18dp"
+                    android:paddingBottom="@dimen/dimen_18dp"
+                    android:text="@string/lbl_usps_verification"
+                    android:textColor="@color/color2D2D2D" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                android:background="@color/colorE7EBEE" />
+
+            <LinearLayout
+                android:id="@+id/llProhibitedItems"
+                style="@style/matchWrap"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                android:background="?attr/selectableItemBackground"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/dimen_20dp"
+                    android:layout_height="@dimen/dimen_20dp"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_prohibited_icon" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/CommonText.Style.16sp"
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:paddingTop="@dimen/dimen_18dp"
+                    android:paddingBottom="@dimen/dimen_18dp"
+                    android:text="@string/lbl_prohibited_item"
+                    android:textColor="@color/color2D2D2D" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                android:background="@color/colorE7EBEE" />
+
+            <LinearLayout
+                android:id="@+id/llTandC"
+                style="@style/matchWrap"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/dimen_20dp"
+                    android:layout_height="@dimen/dimen_20dp"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_t_and_c_icon" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/CommonText.Style.16sp"
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:paddingTop="@dimen/dimen_18dp"
+                    android:paddingBottom="@dimen/dimen_18dp"
+                    android:text="@string/lbl_t_and_c"
+                    android:textColor="@color/color2D2D2D" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                android:background="@color/colorE7EBEE" />
+
+            <LinearLayout
+                android:id="@+id/llContactUs"
+                style="@style/matchWrap"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                android:background="?attr/selectableItemBackground"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/dimen_20dp"
+                    android:layout_height="@dimen/dimen_20dp"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_contact_us_profile" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/CommonText.Style.16sp"
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:paddingTop="@dimen/dimen_18dp"
+                    android:paddingBottom="@dimen/dimen_18dp"
+                    android:text="@string/lbl_contact_us"
+                    android:textColor="@color/color2D2D2D" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                android:background="@color/colorE7EBEE" />
+
+            <LinearLayout
+                android:id="@+id/llLogout"
+                style="@style/matchWrap"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/dimen_20dp"
+                    android:layout_height="@dimen/dimen_20dp"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_logout" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/CommonText.Style.16sp"
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:paddingTop="@dimen/dimen_18dp"
+                    android:paddingBottom="@dimen/dimen_18dp"
+                    android:text="@string/lbl_logout"
+                    android:textColor="@color/color2D2D2D" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+         

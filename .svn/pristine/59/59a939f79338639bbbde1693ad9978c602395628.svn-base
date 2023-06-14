@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.versionedparcelable:versionedparcelable:1.1.1@aar">
+    <CLASSES>
+      <root url="file://E:/Sonu g3/SDK/caches/transforms-2/files-2.1/bc33b492dd7dd723fe9bc9ad7ee2249c/versionedparcelable-1.1.1/res" />
+      <root url="file://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/41dbcb7a6a1b49c9e8f26a35f3570046/versionedparcelable-1.1.1/AndroidManifest.xml" />
+      <root url="file://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/41dbcb7a6a1b49c9e8f26a35f3570046/versionedparcelable-1.1.1/res" />
+      <root url="jar://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/41dbcb7a6a1b49c9e8f26a35f3570046/versionedparcelable-1.1.1/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://E:/Sonu g3/SDK/caches/modules-2/files-2.1/androidx.versionedparcelable/versionedparcelable/1.1.1/d9085927216387af679d18b6f472bc0fc5c7cc81/versionedparcelable-1.1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

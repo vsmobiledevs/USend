@@ -1,0 +1,63 @@
+package com.usend.viewmodels
+
+import android.app.Application
+import android.content.Context
+import androidx.lifecycle.MediatorLiveData
+import androidx.lifecycle.MutableLiveData
+import com.usend.R
+import com.usend.comman.Resource
+import com.usend.base.BaseViewModel
+import com.usend.extensions.checkInternetConnected
+import com.usend.repository.UserRepository
+
+class PackageDetailViewModel(application: Application, private var repository: UserRepository) :
+    BaseViewModel(application) {
+
+    val mContext: Context = application.applicationContext
+
+    val status: MediatorLiveData<Any> by lazy {
+        MediatorLiveData<Any>()
+    }
+
+    val isSplitPackage: MutableLiveData<Boolean> by lazy {
+        MutableLiveData<Boolean>(false)
+    }
+
+    val splitCount : MutableLiveData<Int> by lazy {
+        MutableLiveData<Int>(2)
+    }
+
+    fun getPackageDetailsApi(id : Int) {
+
+        when{
+            !mContext.checkInternetConnected() -> status.value = Resource.NoInternetError<Int>(R.string.default_internet_message)
+            else ->
+            {
+                status.addSource(repository.getPackageDetails(getAuthKey(), id)) {
+                    if (it is Resource.Success<*>) {
+                        //can save for further use
+
+                    }
+                    status.value = it
+                }
+            }
+        }
+    }
+
+    fun splitPackage(id : Int, count : Int) {
+
+        when{
+            !mContext.checkInternetConnected() -> status.value = Resource.NoInternetError<Int>(R.string.default_internet_message)
+            else ->
+            {
+                status.addSource(repository.splitPackage(getAuthKey(), id, count)) {
+                    if (it is Resource.Success<*>) {
+                        //can save for further use
+
+                    }
+                    status.value = it
+                }
+            }
+        }
+    }
+}

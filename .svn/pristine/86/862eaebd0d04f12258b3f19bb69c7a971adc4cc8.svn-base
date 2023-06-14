@@ -1,0 +1,183 @@
+package com.usend.views.home
+import android.annotation.SuppressLint
+import android.content.Intent
+import android.view.View
+import androidx.lifecycle.Observer
+import com.base.network.model.PlanCancelresponse
+import com.base.network.model.SquareupErrorResponse
+import com.base.network.model.SubscriptionResponse
+import com.usend.R
+import com.usend.base.ViewModelFragment
+import com.usend.comman.Resource
+import com.usend.databinding.FragmentConciergeForSubscriptionBinding
+import com.usend.extensions.showToast
+import com.usend.utils.*
+import com.usend.utils.CommonUtils.showAffirmationDialog
+import com.usend.viewmodels.ConciergeViewModel
+import com.usend.views.ConciergeForGuestActivity
+
+
+class ConciergeFragmentForSubscription(
+    override val modelClass: Class<ConciergeViewModel> = ConciergeViewModel::class.java,
+    override val layoutId: Int = R.layout.fragment_concierge_for_subscription): ViewModelFragment<FragmentConciergeForSubscriptionBinding, ConciergeViewModel>()
+{
+    private var webID:String?=null
+
+
+    override fun initControls() {
+        val args = arguments
+         webID= args?.getString(IS_SUBSCRIPTION )
+       // Log.e("tag",webID.toString())
+        if (webID!=null)
+        {
+            //(activity as MainActivity).bottomTab.getTabAt(3)?.select()
+            binding.cvMain.visibility= View.GONE
+            viewModel.subscriptionRetrive(webID!!)
+        }
+
+
+        binding.txtUpgradePlan.setOnClickListener {
+            SavedPaymentMethodsActivity.newIntent(requireActivity(), Intent(requireActivity(), SavedPaymentMethodsActivity::class.java)
+                .putExtra(FROM, FROM_SUBSCRITION)
+                .putExtra(PLAN_TYPE, YEAR_VALUE)
+                .putExtra(PLAN_ID, SUBSCRIPTION_YEARLY)
+                .putExtra(AMOUNT, AMOUNT_YEARLY))
+
+        }
+        binding.txtcancel.setOnClickListener {
+            requireActivity().showAffirmationDialog(
+                title = resources.getString(R.string.msg_cancel_plan),
+                btnText = resources.getString(R.string.lbl_yes),
+                btnNegativeText = resources.getString(R.string.lbl_no),
+                isCancelable = true
+            ) {
+                viewModel.subscriptionCancel(webID!!)
+            }
+
+
+        }
+
+        binding.txtClick.setOnClickListener {
+            ConciergeForGuestActivity.newIntent(
+                requireActivity(), Intent(requireActivity(), ConciergeForGuestActivity::class.java)
+            )
+
+        }
+        binding.txtClickBack.setOnClickListener {
+            ConciergeForGuestActivity.newIntent(
+                requireActivity(), Intent(requireActivity(), ConciergeForGuestActivity::class.java)
+            )
+
+        }
+    }
+    override fun addObserver() {
+        viewModel.status.observe(this, mObserver)
+    }
+
+    @SuppressLint("SetTextI18n")
+    private val mObserver = Observer<Any> { response ->
+        when (response) {
+            is Resource.Error<*> -> {
+
+                JLog.e("tag", "Message: ${response.data}")
+                showToast(requireActivity(), response.message.toString())
+            }
+            is Resource.Success<*> -> {
+
+                response.data as SubscriptionResponse
+                val id=response.data.subscription.plan_id
+                val canceldate=response.data.subscription.canceled_date
+
+
+                if (canceldate!=null)
+                {
+                    binding.cvCancel.visibility= View.VISIBLE
+                    binding.cvMain.visibility= View.GONE
+                if (id == SUBSCRIPTION_YEARLY) {
+                    binding.txtBackMsg.text =
+                        resources.getString(R.string.lbl_expired_y_subscription) + " " + response.data.subscription.canceled_date + "\n" + resources.getString(
+                            R.string.lbl_back_upgrade
+                        )
+                }
+                else
+                {
+                    binding.txtBackMsg.text =
+                        resources.getString(R.string.lbl_expired_subscription) + " " + response.data.subscription.canceled_date + "\n" + resources.getString(
+                            R.string.lbl_back_upgrade
+                        )
+                }
+
+
+            }
+                else
+                {
+                    if (id == SUBSCRIPTION_YEARLY) {
+                        binding.cvRetrive.visibility= View.VISIBLE
+                        binding.txtmonthly.text=  resources.getString(R.string.lbl_yearly_premimum_msg)
+                        binding.txtmonthStart.text=  resources.getString(R.string.lbl_premimum_month_start)+ ""+response.data.subscription.start_date
+                        binding.txtmonthPrice.text=resources.getString(R.string.lbl_premimum_billing_yearly)
+                        binding.txtUpgradePlan.visibility=View.GONE
+                        binding.txtUpgradeMsg.visibility=View.GONE
+                    }
+                    else
+                    {
+                        binding.txtmonthStart.text=  resources.getString(R.string.lbl_premimum_month_start)+response.data.subscription.start_date
+                        binding.cvRetrive.visibility= View.VISIBLE
+                    }
+
+                }
+            }
+            is Resource. SuccessCancel<*> -> {
+                response.data as PlanCancelresponse
+                val id=response.data.subscription.plan_id
+                requireActivity().showAffirmationDialog(
+                    title = resources.getString(R.string.lbl_subscription_cancelresponse),
+                    btnText = resources.getString(R.string.lbl_okay)
+                )
+                {
+                    binding.cvRetrive.visibility = View.GONE
+                    binding.cvCancel.visibility = View.VISIBLE
+                    binding.cvMain.visibility = View.GONE
+                    if (id == SUBSCRIPTION_YEARLY) {
+                        binding.txtBackMsg.text =
+                            resources.getString(R.string.lbl_expired_y_subscription) + " " + response.data.subscription.canceled_date + "\n" + resources.getString(
+                                R.string.lbl_back_upgrade
+                            )
+                    }
+                    else
+                    {
+                        binding.txtBackMsg.text =
+                            resources.getString(R.string.lbl_expired_subscription) + " " + response.data.subscription.canceled_date + "\n" + resources.getString(
+                                R.string.lbl_back_upgrade
+                            )
+                    }
+                }
+
+            }
+            is Resource.SquareupError<*> ->
+            {
+                response.data as SquareupErrorResponse
+                requireActivity().showAffirmationDialog(
+                    title = response.data.errors[0].detail,
+                    btnText = resources.getString(R.string.lbl_okay)
+                )
+                {
+
+                }
+            }
+
+            is Resource.Loading<*> -> {
+
+                response.isLoadingShow.let {
+                    if (it as Boolean) {
+
+                        showProgressDialog(requireContext())
+
+                    } else {
+                        hideProgressDialog()
+                    }
+                }
+            }
+        }
+    }
+}

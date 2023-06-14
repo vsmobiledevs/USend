@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0@aar">
+    <CLASSES>
+      <root url="file://E:/Sonu g3/SDK/caches/transforms-2/files-2.1/af414bbb67f4208bcb8ed18b19b276c9/jetified-lifecycle-viewmodel-ktx-2.2.0/res" />
+      <root url="file://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/b5759a178e1339ebec3f76b030414bf9/jetified-lifecycle-viewmodel-ktx-2.2.0/AndroidManifest.xml" />
+      <root url="file://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/b5759a178e1339ebec3f76b030414bf9/jetified-lifecycle-viewmodel-ktx-2.2.0/res" />
+      <root url="jar://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/b5759a178e1339ebec3f76b030414bf9/jetified-lifecycle-viewmodel-ktx-2.2.0/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://E:/Sonu g3/SDK/caches/modules-2/files-2.1/androidx.lifecycle/lifecycle-viewmodel-ktx/2.2.0/3bc5992b0bb49e2d7ce92d34c45e54e1795cc03b/lifecycle-viewmodel-ktx-2.2.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View" />
+
+        <variable
+            name="signUpActivity"
+            type="com.usend.views.userauth.SignUpActivity" />
+
+        <variable
+            name="viewModel"
+            type="com.usend.viewmodels.SignUpViewModel" />
+
+    </data>
+
+    <LinearLayout
+        style="@style/match"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbarSignUp"
+            layout="@layout/app_toolbar" />
+
+        <ScrollView style="@style/styleScrollbar">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                style="@style/match"
+                android:background="@color/colorWhite"
+                tools:context=".views.userauth.SignUpActivity">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtSignUpTitle"
+                    style="@style/Activity.Title.Text.32sp"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:text="@string/lbl_sign_up"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/dimen_54dp"
+                    android:layout_height="@dimen/dimen_54dp"
+                    android:layout_marginEnd="@dimen/dimen_10dp"
+                    android:src="@drawable/ic_sign_progress1"
+                    app:layout_constraintBottom_toBottomOf="@id/txtSignUpTitle"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1"
+                    app:layout_constraintStart_toEndOf="@id/txtSignUpTitle"
+                    app:layout_constraintTop_toTopOf="@id/txtSignUpTitle" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtEmailTitle"
+                    style="@style/inputField.Title.14sp"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_25dp"
+                    android:text="@string/lbl_email"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txtSignUpTitle" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtEmail"
+                    style="@style/inputField.16sp"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:hint="@string/lbl_enter_your_email"
+                    android:imeOptions="actionNext"
+                    android:inputType="textEmailAddress"
+                    android:text="@={viewModel.email}"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txtEmailTitle" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtFirstNameTitle"
+                    style="@style/inputField.Title.14sp"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_15dp"
+                    android:text="@string/lbl_first_name"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/edtEmail" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtFirstName"
+                    style="@style/inputField.16sp"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:hint="@string/lbl_enter_your_first_name"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapWords"
+                    android:text="@={viewModel.firstName}"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txtFirstNameTitle" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtLastNameTitle"
+                    style="@style/inputField.Title.14sp"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_15dp"
+                    android:text="@string/lbl_last_name"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/edtFirstName" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtLastName"
+                    style="@style/inputField.16sp"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:hint="@string/lbl_enter_your_last_name"
+                    android:imeOptions="actionNext"
+                    android:inputType="textCapWords"
+                    android:text="@={viewModel.lastName}"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txtLastNameTitle" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtPasswordTitle"
+                    style="@style/inputField.Title.14sp"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_15dp"
+                    android:text="@string/lbl_password"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/edtLastName" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tiPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    app:hintEnabled="false"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txtPasswordTitle"
+                    app:boxBackgroundMode="none"
+                    app:passwordToggleDrawable="@drawable/password_visibility_selector"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/color2D2D2D">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edtPassword"
+                        style="@style/inputField.16sp"
+                        android:hint="@string/lbl_enter_your_password"
+                        android:imeOptions="actionNext"
+                        android:inputType="textPassword"
+                        android:paddingEnd="@dimen/dimen_15dp"
+                        android:text="@={viewModel.password}"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/txtPasswordTitle" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtRePasswordTitle"
+                    style="@style/inputField.Title.14sp"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_15dp"
+                    android:text="@string/lbl_re_password"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tiPassword" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/tiRePassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    app:hintEnabled="false"
+                    app:boxBackgroundMode="none"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txtRePasswordTitle"
+                    app:passwordToggleDrawable="@drawable/password_visibility_selector"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/color2D2D2D">
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edtRePassword"
+                        style="@style/inputField.16sp"
+                        android:hint="@string/lbl_enter_your_password"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPassword"
+                        android:paddingEnd="@dimen/dimen_15dp"
+                        android:text="@={viewModel.re_password}" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/cbSignUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_50dp"
+                    android:button="@drawable/checkbox_selector"
+                    android:checked="@={viewModel.cbTermsAndPolicy}"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tiRePassword" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtTandC"
+                    style="@style/CommonText.Style.16sp"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_marginStart="@dimen/dimen_15dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="start"
+                    android:text="@string/lbl_i_agree_to_T_and_c"
+                    android:textColor="@color/color802D2D2D"
+                    android:textSize="@dimen/dimen_14sp"
+                    app:fontFamily="@font/poppins_regular"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toEndOf="@id/cbSignUp"
+                    app:layout_constraintTop_toTopOf="@id/cbSignUp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnSignIn"
+                    style="@style/MaterialButton.CornerRadius"
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_30dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:onClick="@{(view)-> signUpActivity.onNextClick()}"
+                    android:text="@string/lbl_next"
+                    app:layout_constraintBottom_toTopOf="@id/txtAlreadyHaveAccount"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txtTandC"
+                    app:layout_constraintVertical_bias="1" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtAlreadyHaveAccount"
+                    style="@style/CommonText.Style.16sp"
+                    android:layout_marginStart="@dimen/dimen_10dp"
+                    android:layout_marginTop="@dimen/dimen_30dp"
+                    android:layout_marginBottom="@dimen/dimen_20dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="start"
+                    android:onClick="@{(view)->signUpActivity.onSignInClick()}"
+                    android:text="@string/lbl_already_have_an_account_sign_in"
+                    android:textColor="@color/color2D2D2D"
+                    app:fontFamily="@font/poppins_regular"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/btnSignIn"
+                    app:layout_constraintVertical_bias="1"
+                    app:layout_goneMarginBottom="@dimen/dimen_20dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+    </LinearLayout>
+</layout>

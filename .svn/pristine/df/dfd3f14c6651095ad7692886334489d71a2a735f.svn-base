@@ -1,0 +1,9 @@
+package com.usend.models
+
+import com.base.network.model.CardList
+import com.base.network.model.CardXX
+
+data class SavedCardsModel (var card : CardXX, var isSelected : Boolean)
+{
+
+}

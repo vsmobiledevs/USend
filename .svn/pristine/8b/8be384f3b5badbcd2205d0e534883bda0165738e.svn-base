@@ -1,0 +1,137 @@
+package com.usend.adapter
+
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.annotation.LayoutRes
+import androidx.recyclerview.widget.RecyclerView
+import com.usend.R
+import com.usend.utils.VIEW_TYPE_EMPTY
+import com.usend.utils.VIEW_TYPE_FOOTER
+import com.usend.utils.VIEW_TYPE_ITEM
+import kotlinx.android.synthetic.main.view_empty_item.view.*
+
+
+abstract class BaseRecyclerViewAdapter(private val listItems: MutableList<*>, private var nextLoad: (() -> Unit)? = null, var totalRecord: Int = 0) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
+
+    private var currentPage: Int = 1
+    private var isLoading = false
+
+    // abstract fun getItemViewHolder(): RecyclerView.ViewHolder
+    @LayoutRes
+    abstract fun getRowLayout(): Int
+
+    // val selectedItems = HashMap<Int, GamesMasterResponseFields>()
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
+        return when (viewType) {
+            VIEW_TYPE_FOOTER -> {
+                val footerView = LayoutInflater.from(parent.context).inflate(R.layout.view_footer_loading, parent, false)
+                FooterViewHolder(footerView)
+            }
+            VIEW_TYPE_EMPTY -> {
+                val emptyView = LayoutInflater.from(parent.context).inflate(R.layout.view_empty_item, parent, false)
+                EmptyViewHolder(emptyView)
+            }
+            else -> ItemViewHolder(LayoutInflater.from(parent.context).inflate(getRowLayout(), parent, false))
+        }
+    }
+
+    override fun getItemViewType(position: Int): Int {
+
+        return if (!isLoading && totalRecord > position && position == listItems.size)
+            VIEW_TYPE_FOOTER
+        /* else if (isLoading)
+            VIEW_LOADING*/
+        else {
+            //return VIEW_ITEM
+            return if (listItems.isNotEmpty()) VIEW_TYPE_ITEM else VIEW_TYPE_EMPTY
+        }
+    }
+
+    override fun getItemCount(): Int {
+        return if (listItems.isNotEmpty()) {
+            if (totalRecord > listItems.size)
+                listItems.size + 1 // To Display footer view
+            else
+                listItems.size
+        } else
+            1 // To display Empty View
+    }
+    /*override fun getItemCount(): Int {
+        return 1
+    }*/
+
+    override fun onBindViewHolder(viewHolder: RecyclerView.ViewHolder, position: Int) {
+        //holder.bind(listItems[position])
+
+        when (getMyItemViewType(position)) {
+            VIEW_TYPE_ITEM -> {
+                val holder = viewHolder as ItemViewHolder
+            }
+            VIEW_TYPE_EMPTY -> {
+                val holder = viewHolder as EmptyViewHolder
+                holder.bind()
+            }
+            VIEW_TYPE_FOOTER -> {
+                if (!isLoading)
+                    nextLoad?.invoke()
+            }
+        }
+    }
+
+    private fun getMyItemViewType(position: Int): Int {
+
+        return if (totalRecord > position && position == listItems.size)
+            VIEW_TYPE_FOOTER
+        /* else if (isLoading)
+            VIEW_LOADING*/
+        else {
+            //return VIEW_ITEM
+            return if (listItems.isNotEmpty()) VIEW_TYPE_ITEM else VIEW_TYPE_EMPTY
+        }
+    }
+
+
+    /**
+     * Update total records
+     */
+    fun updateTotalRecord(totalRecord: Int) {
+        this.totalRecord = totalRecord
+    }
+
+    /**
+     *  Called when load complete so increment page count
+     */
+    fun loadComplete() {
+        updateLoadingState(false)
+        ++currentPage
+    }
+
+    /**
+     *  update loading state
+     */
+    fun updateLoadingState(isLoading: Boolean) {
+        this.isLoading = isLoading
+    }
+
+    /**
+     *  Get current page
+     */
+    fun getCurrentPage() = currentPage
+
+    open fun onItemViewHolderInit(viewHolder: ItemViewHolder, itemView: View) = Unit
+
+    inner class ItemViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        init {
+            onItemViewHolderInit(this, itemView)
+        }
+    }
+
+    inner class FooterViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView)
+    inner class EmptyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        fun bind(noRecordMessage: String = itemView.context.getString(R.string.msg_no_records)) = with(itemView) {
+            //txtNoRecordMessage.setTextColor(ContextCompat.getColor(itemView.context, R.color.colorGray3))
+            txtNoRecordMessage.text = if (noRecordMessage.isEmpty()) context.getString(R.string.msg_no_records) else noRecordMessage
+        }
+    }
+}

@@ -1,0 +1,202 @@
+package com.usend.databinding;
+import com.usend.R;
+import com.usend.BR;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import android.view.View;
+@SuppressWarnings("unchecked")
+public class ActivityOrderDetailsBindingImpl extends ActivityOrderDetailsBinding  {
+
+    @Nullable
+    private static final androidx.databinding.ViewDataBinding.IncludedLayouts sIncludes;
+    @Nullable
+    private static final android.util.SparseIntArray sViewsWithIds;
+    static {
+        sIncludes = null;
+        sViewsWithIds = new android.util.SparseIntArray();
+        sViewsWithIds.put(R.id.toolbarOrderDetail, 2);
+        sViewsWithIds.put(R.id.txtOrderNumberTitle, 3);
+        sViewsWithIds.put(R.id.txtTrackingNumberTitle, 4);
+        sViewsWithIds.put(R.id.txtOrderNumber, 5);
+        sViewsWithIds.put(R.id.txtTrackingNumber, 6);
+        sViewsWithIds.put(R.id.txtStatusTitle, 7);
+        sViewsWithIds.put(R.id.txtStatus, 8);
+        sViewsWithIds.put(R.id.txtProcessedOnTitle, 9);
+        sViewsWithIds.put(R.id.txtProcessedOn, 10);
+        sViewsWithIds.put(R.id.txtShippingCostTitle, 11);
+        sViewsWithIds.put(R.id.txtShippingCost, 12);
+        sViewsWithIds.put(R.id.txtCarrierUsedTitle, 13);
+        sViewsWithIds.put(R.id.txtCarrierUsed, 14);
+        sViewsWithIds.put(R.id.txtDimensionsTitle, 15);
+        sViewsWithIds.put(R.id.txtDimensions, 16);
+        sViewsWithIds.put(R.id.txtWeightTitle, 17);
+        sViewsWithIds.put(R.id.txtWeight, 18);
+        sViewsWithIds.put(R.id.txtServiceTypeTitle, 19);
+        sViewsWithIds.put(R.id.txtServiceType, 20);
+        sViewsWithIds.put(R.id.txtEstDeliveryDateTitle, 21);
+        sViewsWithIds.put(R.id.txtEstDeliveryDate, 22);
+        sViewsWithIds.put(R.id.txtInvoiceDetailsTitle, 23);
+        sViewsWithIds.put(R.id.txtCarrierFeesTitle, 24);
+        sViewsWithIds.put(R.id.txtCarrierFees, 25);
+        sViewsWithIds.put(R.id.txtProcessFessTitle, 26);
+        sViewsWithIds.put(R.id.txtProcessFees, 27);
+        sViewsWithIds.put(R.id.txtConsolidatedFeesTitle, 28);
+        sViewsWithIds.put(R.id.txtConsolidatedFees, 29);
+        sViewsWithIds.put(R.id.txtAdditionalFeesTitle, 30);
+        sViewsWithIds.put(R.id.txtAdditionalFees, 31);
+        sViewsWithIds.put(R.id.txtTotalChargesTitle, 32);
+        sViewsWithIds.put(R.id.txtTotalCharges, 33);
+        sViewsWithIds.put(R.id.txtDeliveryAddressTitle, 34);
+        sViewsWithIds.put(R.id.txtDeliveryAddress, 35);
+        sViewsWithIds.put(R.id.llCustoms, 36);
+        sViewsWithIds.put(R.id.ll_declared_value, 37);
+        sViewsWithIds.put(R.id.txtDeclaredValuesTitle, 38);
+        sViewsWithIds.put(R.id.txtDeclaredValues, 39);
+        sViewsWithIds.put(R.id.ll_desc_of_item, 40);
+        sViewsWithIds.put(R.id.txtDescOfItem, 41);
+        sViewsWithIds.put(R.id.txtContentofPackage, 42);
+        sViewsWithIds.put(R.id.txtNotesTitle, 43);
+        sViewsWithIds.put(R.id.txtSpecialNotes, 44);
+        sViewsWithIds.put(R.id.txtPackageDetails, 45);
+    }
+    // views
+    @NonNull
+    private final android.widget.LinearLayout mboundView0;
+    // variables
+    // values
+    // listeners
+    // Inverse Binding Event Handlers
+
+    public ActivityOrderDetailsBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 46, sIncludes, sViewsWithIds));
+    }
+    private ActivityOrderDetailsBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
+        super(bindingComponent, root, 0
+            , (android.widget.LinearLayout) bindings[36]
+            , (android.widget.LinearLayout) bindings[37]
+            , (android.widget.LinearLayout) bindings[40]
+            , (androidx.recyclerview.widget.RecyclerView) bindings[1]
+            , (android.view.View) bindings[2]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[31]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[30]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[25]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[24]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[14]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[13]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[29]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[28]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[42]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[39]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[38]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[35]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[34]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[41]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[16]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[15]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[22]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[21]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[23]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[43]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[5]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[3]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[45]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[27]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[26]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[10]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[9]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[20]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[19]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[12]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[11]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[44]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[8]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[7]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[33]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[32]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[6]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[4]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[18]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[17]
+            );
+        this.mboundView0 = (android.widget.LinearLayout) bindings[0];
+        this.mboundView0.setTag(null);
+        this.rvPackageDetails.setTag(null);
+        setRootTag(root);
+        // listeners
+        invalidateAll();
+    }
+
+    @Override
+    public void invalidateAll() {
+        synchronized(this) {
+                mDirtyFlags = 0x2L;
+        }
+        requestRebind();
+    }
+
+    @Override
+    public boolean hasPendingBindings() {
+        synchronized(this) {
+            if (mDirtyFlags != 0) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    @Override
+    public boolean setVariable(int variableId, @Nullable Object variable)  {
+        boolean variableSet = true;
+        if (BR.adapter == variableId) {
+            setAdapter((com.usend.adapter.PackageListItemAdapter) variable);
+        }
+        else {
+            variableSet = false;
+        }
+            return variableSet;
+    }
+
+    public void setAdapter(@Nullable com.usend.adapter.PackageListItemAdapter Adapter) {
+        this.mAdapter = Adapter;
+        synchronized(this) {
+            mDirtyFlags |= 0x1L;
+        }
+        notifyPropertyChanged(BR.adapter);
+        super.requestRebind();
+    }
+
+    @Override
+    protected boolean onFieldChange(int localFieldId, Object object, int fieldId) {
+        switch (localFieldId) {
+        }
+        return false;
+    }
+
+    @Override
+    protected void executeBindings() {
+        long dirtyFlags = 0;
+        synchronized(this) {
+            dirtyFlags = mDirtyFlags;
+            mDirtyFlags = 0;
+        }
+        com.usend.adapter.PackageListItemAdapter adapter = mAdapter;
+
+        if ((dirtyFlags & 0x3L) != 0) {
+        }
+        // batch finished
+        if ((dirtyFlags & 0x3L) != 0) {
+            // api target 1
+
+            this.rvPackageDetails.setAdapter(adapter);
+        }
+    }
+    // Listener Stub Implementations
+    // callback impls
+    // dirty flag
+    private  long mDirtyFlags = 0xffffffffffffffffL;
+    /* flag mapping
+        flag 0 (0x1L): adapter
+        flag 1 (0x2L): null
+    flag mapping end*/
+    //end
+}

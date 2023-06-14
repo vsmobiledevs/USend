@@ -1,0 +1,50 @@
+package com.usend.viewmodels
+import android.app.Application
+import android.content.Context
+import androidx.lifecycle.MediatorLiveData
+import com.usend.R
+import com.usend.comman.Resource
+import com.usend.base.BaseViewModel
+import com.usend.extensions.checkInternetConnected
+import com.usend.extensions.nullSafe
+import com.usend.repository.UserRepository
+import com.usend.utils.CommonUtils
+
+class ChangePasswordViewModel(application: Application, private var repository: UserRepository):
+    BaseViewModel(application) {
+
+    val mContext: Context = application.applicationContext
+
+    val status: MediatorLiveData<Any> by lazy {
+        MediatorLiveData<Any>()
+    }
+
+    val currentPassword by lazy { MediatorLiveData<String>() }
+    val newPassword by lazy { MediatorLiveData<String>() }
+    val confirmPassword by lazy { MediatorLiveData<String>() }
+
+    fun change() {
+        when {
+            !mContext.checkInternetConnected() -> status.value =
+                Resource.NoInternetError<Int>(R.string.default_internet_message)
+            currentPassword.value.isNullOrEmpty() -> status.value =
+                Resource.ValidationError<Int>(R.string.msg_please_enter_current_password)
+            newPassword.value.isNullOrEmpty() -> status.value =
+                Resource.ValidationError<Int>(R.string.msg_please_enter_new_password)
+            !CommonUtils.isValidPassword(newPassword.value!!) -> status.value = Resource.ValidationError<Int>(R.string.msg_password_strength)
+            currentPassword.value == newPassword.value -> status.value = Resource.ValidationError<Int>(R.string.msg_current_and_new_passwords_same)
+            confirmPassword.value.isNullOrEmpty() -> status.value =
+                Resource.ValidationError<String>(R.string.msg_please_enter_condfirm_password)
+            newPassword.value != confirmPassword.value -> status.value = Resource.ValidationError<Int>(R.string.msg_password_and_confirm_password_does_not_match)
+            else -> {
+                status.addSource(repository.changePassword(authToken = getAuthKey(), currentPassword = currentPassword.value.nullSafe(), newPassword = newPassword.value.nullSafe())) {
+                    if (it is Resource.Success<*>) {
+                        //can save for further use
+
+                    }
+                    status.value = it
+                }
+            }
+        }
+    }
+}

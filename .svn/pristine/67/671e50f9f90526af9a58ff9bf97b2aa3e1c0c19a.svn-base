@@ -1,0 +1,89 @@
+object GradleDependencies {
+
+    object Versions {
+        val kotlin_version = "1.4.10"
+        val android_plugin_version = "3.5.0"
+        //        val support_lib = "27.0.2"
+        val room_version = "2.1.0"
+    }
+
+    val classpath_kotlin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Versions.kotlin_version}"
+    val classpath_gradle_tool = "com.android.tools.build:gradle:4.0.0"
+    val google_service = "com.google.gms:google-services:4.3.3"
+    val google_gson = "com.google.code.gson:gson:2.8.6"
+
+    val kotlin_stdlib = "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${Versions.kotlin_version}"
+    val appcompact = "androidx.appcompat:appcompat:1.1.0"
+
+    val ktx_core = "androidx.core:core-ktx:1.6.0"
+    val constraint_layout = "com.android.support.constraint:constraint-layout:o1.1.2"
+
+    val material = "com.google.android.material:material:1.0.0"
+    val coroutines = "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.1.1"//coroutines
+
+    val preferences = "androidx.preference:preference-ktx:1.1.0"// Preference
+
+    //Image picker
+    const val rxpaparazzo = "com.github.miguelbcr:RxPaparazzo:0.6.1-2.x"
+
+    // Room
+    val room_runtime = "androidx.room:room-runtime:${Versions.room_version}"
+    val kapt_room_complier = "androidx.room:room-compiler:${Versions.room_version}"
+
+    val legacy_support = "androidx.legacy:legacy-support-v4:1.0.0"
+    val vector_drawable = "androidx.vectordrawable:vectordrawable:1.1.0"
+
+    // FCM
+    val fcm = "com.google.firebase:firebase-messaging:20.1.0" //FCM
+
+    // Architecture Components
+    val lifecycle = "androidx.lifecycle:lifecycle-extensions:2.1.0"//Lifecycle
+
+    val recyclerview = "androidx.recyclerview:recyclerview:1.0.0"
+    val card_view = "androidx.cardview:cardview:1.0.0"
+
+    // Networking
+    val retrofit_version = "2.6.0"
+    val retrofit = "com.squareup.retrofit2:retrofit:$retrofit_version"
+    val retrofit_rxjava_adapter = "com.squareup.retrofit2:adapter-rxjava2:$retrofit_version"
+    val retrofit_gson = "com.squareup.retrofit2:converter-gson:$retrofit_version"
+
+    //Rx
+    val rx_java = "io.reactivex.rxjava2:rxandroid:2.1.0"
+    val rx_java_rx_android = "io.reactivex.rxjava2:rxandroid:2.1.1"
+
+    // Paging
+    val paging = "androidx.paging:paging-runtime:2.1.0"
+
+    // CountryCode Picker
+    val ccp = "com.hbb20:ccp:2.3.5"
+
+    //otp view
+    val otp_view = "com.github.mukeshsolanki:android-otpview-pinview:2.0.0"
+    
+    // Swipe To Reveal Layout
+    val swipeToReveal = "com.chauthai.swipereveallayout:swipe-reveal-layout:1.4.1"
+
+    //Dots Indicator
+    val dots_indicator = "com.tbuonomo.andrui:viewpagerdotsindicator:3.0.3"
+
+    // Multidex support prior to Android 5.0
+    val multidex = "androidx.multidex:multidex:2.0.1"
+
+    val glide = "com.github.bumptech.glide:glide:4.10.0"
+    val glide_compiler = "com.github.bumptech.glide:compiler:4.10.0"
+
+    val junit = "junit:junit:4.12" // Unit testing
+    val junit_runner = "com.android.support.test:runner:1.2.0"
+    val espresso_core = "com.android.support.test.espresso:espresso-core:3.2.0"
+
+    val event_bus = "org.greenrobot:eventbus:3.1.1"
+
+    //Amazone S3 upload
+    val aws_sdk = "com.amazonaws:aws-android-sdk-s3:2.16.0"
+    val aws_cognito = "com.amazonaws:aws-android-sdk-cognito:2.16.0"
+    val aws_mobile_cliet = "com.amazonaws:aws-android-sdk-mobile-client:2.6.7@aar"
+    val aws_amplify_core = "com.amplifyframework:core:1.1.2"
+    val aws_amplify_cognito = "com.amplifyframework:aws-auth-cognito:1.1.2"
+    val aws_amplify_storage = "com.amplifyframework:aws-storage-s3:1.1.2"
+}

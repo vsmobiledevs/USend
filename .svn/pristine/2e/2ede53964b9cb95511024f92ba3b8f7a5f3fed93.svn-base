@@ -1,0 +1,240 @@
+package com.usend.views.home
+
+import android.annotation.SuppressLint
+import android.app.Dialog
+import android.content.Context
+import android.content.Intent
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
+import android.view.Gravity
+import android.view.WindowManager
+import androidx.appcompat.widget.AppCompatImageView
+import androidx.core.content.ContextCompat
+import androidx.lifecycle.Observer
+import com.base.network.model.PackageDetailResponse
+import com.base.network.model.PackageDetails
+import com.base.network.model.PackageList
+import com.google.android.material.button.MaterialButton
+import com.usend.R
+import com.usend.comman.Resource
+import com.usend.base.ViewModelActivity
+import com.usend.databinding.ActivityPackageDetailBinding
+import com.usend.extensions.loadImageUrl
+import com.usend.extensions.nullSafe
+import com.usend.extensions.showToast
+import com.usend.utils.*
+import com.usend.viewmodels.PackageDetailViewModel
+import com.usend.views.MainActivity
+import kotlinx.android.synthetic.main.app_toolbar.*
+import kotlin.reflect.KClass
+
+class PackageDetailActivity(
+    override val modelClass: KClass<PackageDetailViewModel> = PackageDetailViewModel::class,
+    override val layoutId: Int = R.layout.activity_package_detail
+) : ViewModelActivity<ActivityPackageDetailBinding, PackageDetailViewModel>() {
+
+    private var item : PackageList? = null
+    private var packageDetails : PackageDetails? = null
+    private var orderId : Int? = null
+
+    override fun getDataFromIntent() {
+        super.getDataFromIntent()
+
+        if(intent.hasExtra(EXTRA_FROM_TYPE))
+        {
+            if(intent.hasExtra(PACKAGE_ID))
+            {
+                orderId  = intent.getIntExtra(PACKAGE_ID,0)
+            }
+        }
+
+        if(intent.hasExtra(EXTRA_DATA))
+        {
+            item = intent.getParcelableExtra(EXTRA_DATA)
+            orderId  = item?.id
+        }
+    }
+
+    override fun initView() {
+        super.initView()
+
+        initToolbar(toolbar = toolbar, title = resources.getString(R.string.lbl_package_details))
+        binding.viewModel = viewModel
+        binding.activity = this
+
+        viewModel.getPackageDetailsApi(orderId !!)
+    }
+
+    override fun initControls() {
+        super.initControls()
+
+        binding.switchSplitPackage.setOnCheckedChangeListener { _, isChecked ->
+
+            viewModel.isSplitPackage.value = isChecked
+        }
+
+        binding.imgPackage.setOnClickListener {
+
+            imagePreview(packageDetails?.image!!)
+        }
+    }
+
+    fun onMinusClick() {
+        if (viewModel.splitCount.value != 2) {
+            viewModel.splitCount.value = viewModel.splitCount.value!! - 1
+        }
+    }
+
+    fun onPlusClick() {
+        viewModel.splitCount.value = viewModel.splitCount.value!! + 1
+    }
+
+    fun onCreateShipmentClick() {
+
+        if (viewModel.isSplitPackage.value!!) {
+            confirmationDialog(packageDetails?.id.nullSafe(), viewModel.splitCount.value.nullSafe())
+        } else {
+            ShipToAddressActivity.newIntent(
+                this, Intent(this, ShipToAddressActivity::class.java)
+                    .putExtra(FROM, FROM_PACKAGEDETAIL)
+                    .putStringArrayListExtra(PACKAGE_IDs, arrayListOf<String>(packageDetails?.id.toString()))
+            )
+        }
+    }
+
+    override fun addObserver() {
+        viewModel.status.observe(this, mObserver)
+    }
+
+    @SuppressLint("SetTextI18n")
+    private val mObserver = Observer<Any> { response ->
+        when (response) {
+            is Resource.Error<*> -> {
+
+                JLog.e(Companion.TAG, "Message: ${response.data}")
+                showToast(this,response.message.toString())
+            }
+            is Resource.ItemsNotFound<*> -> {
+
+            }
+            is Resource.Success<*> -> {
+
+                response.data as PackageDetailResponse
+
+                packageDetails = response.data.responseData?.packageDetails
+
+                binding.txtPackageNumber.text = response.data.responseData?.packageDetails?.packageNumber
+                binding.txtDaysRemaining.text = response.data.responseData?.packageDetails?.days.toString()
+                binding.txtReceivedDate.text = DateTimeUtil.getConvertedTime(DATEFORMAT_yyyy_MM_dd, DATEFORMAT_dd_MMM_yyyy, response.data.responseData?.packageDetails?.receivedAt.nullSafe())
+                binding.txtDimensions.text = response.data.responseData?.packageDetails?.dimensions + " " + response.data.responseData?.packageDetails?.dimensionsUnit
+                binding.txtWeight.text = response.data.responseData?.packageDetails?.weight.toString() + " " + response.data.responseData?.packageDetails?.weightUnit
+                binding.txtPackageType.text = response.data.responseData?.packageDetails?.packageType
+                binding.txtFrom.text = response.data.responseData?.packageDetails?.from
+
+                if(response.data.responseData?.packageDetails?.additionalFees!!.toDouble() > 0.0)
+                {
+                    binding.txtDaysRemaining.text = response.data.responseData?.packageDetails?.days.toString() + "($" + String.format("%.2f",  response.data.responseData?.packageDetails?.additionalFees!!.toDouble()) + ")"
+                    binding.txtDaysRemaining.setTextColor(ContextCompat.getColor(this, R.color.colorRed))
+                }
+
+                binding.imgPackage.loadImageUrl(this, response.data.responseData?.packageDetails?.image.nullSafe(), cornerRadius = CommonUtils.dpToPx(this, 10)){
+
+                }
+            }
+            is Resource.SplitSuccess<*> -> {
+
+                MainActivity.newIntent(this, Intent(this, MainActivity::class.java)
+                    .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                    .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
+                    .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+                    .addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP)
+                )
+                finish()
+            }
+
+            is Resource.Loading<*> -> {
+
+                response.isLoadingShow.let {
+                    if (it as Boolean) {
+                        showProgressDialog(this)
+                    } else {
+                        hideProgressDialog()
+                    }
+                }
+            }
+            is Resource.NoInternetError<*> -> {
+                CommonUtils.showOkDialog(this, message = resources.getString(response.id!!))
+            }
+            is Resource.ValidationError<*> -> {
+                showToast(resources.getString(response.id.nullSafe()))
+            }
+            is Resource.UnAuthorisedRequest<*> -> {
+                showTokenExpiredDialog(resources.getString(R.string.lbl_session_expired_msg))
+            }
+        }
+    }
+
+    private fun confirmationDialog(id : Int, count : Int)
+    {
+        val dialog = Dialog(this)
+        dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+        dialog.setContentView(R.layout.dialog_split_package)
+        dialog.window?.setLayout(
+            WindowManager.LayoutParams.MATCH_PARENT,
+            WindowManager.LayoutParams.WRAP_CONTENT
+        )
+        dialog.window?.setGravity(Gravity.CENTER)
+        dialog.setCancelable(true)
+        dialog.window?.setWindowAnimations(R.style.DialogAnimation)
+
+        val btnPositive: MaterialButton = dialog.findViewById(R.id.btnAccept)
+        val btnNegative: MaterialButton = dialog.findViewById(R.id.btnCancel)
+
+        btnPositive.setOnClickListener {
+            dialog.dismiss()
+
+            viewModel.splitPackage(id,count)
+        }
+
+        btnNegative.setOnClickListener {
+            dialog.dismiss()
+        }
+
+        dialog.show()
+    }
+
+    private fun imagePreview(url : String)
+    {
+        val dialog = Dialog(this)
+        dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+        dialog.setContentView(R.layout.dialog_image_preview)
+        dialog.window?.setLayout(
+            WindowManager.LayoutParams.MATCH_PARENT,
+            WindowManager.LayoutParams.WRAP_CONTENT
+        )
+        dialog.window?.setGravity(Gravity.CENTER)
+        dialog.setCancelable(true)
+        dialog.window?.setWindowAnimations(R.style.DialogAnimation)
+
+        val imgItem: AppCompatImageView = dialog.findViewById(R.id.imgItem)
+        val imgClose: AppCompatImageView = dialog.findViewById(R.id.imgClose)
+
+        imgItem.loadImageUrl(this,url, cornerRadius = CommonUtils.dpToPx(this, 1)){
+
+        }
+
+        imgClose.setOnClickListener {
+            dialog.dismiss()
+        }
+
+        dialog.show()
+    }
+
+    companion object {
+        fun newIntent(context: Context, intent: Intent) {
+            context.startActivity(intent)
+        }
+
+        private val TAG = PackageDetailActivity::class.java.simpleName
+    }
+}

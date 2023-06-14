@@ -1,0 +1,76 @@
+package com.usend.viewmodels
+import android.app.Application
+import android.content.Context
+import androidx.lifecycle.MediatorLiveData
+import com.usend.R
+import com.usend.base.BaseViewModel
+import com.usend.comman.Resource
+import com.usend.extensions.checkInternetConnected
+import com.usend.repository.UserRepository
+
+class NotificationViewModel(application: Application, private var repository: UserRepository):
+    BaseViewModel(application) {
+
+    val mContext: Context = application.applicationContext
+
+    val status: MediatorLiveData<Any> by lazy {
+        MediatorLiveData<Any>()
+    }
+
+
+    fun getNotificationList() {
+
+        when {
+            !mContext.checkInternetConnected() -> status.value =
+                Resource.NoInternetError<Int>(R.string.default_internet_message)
+            else -> {
+                status.addSource(
+                    repository.getNotificationList(authToken = getAuthKey(), isLoading = true)
+                ) {
+                    if (it is Resource.NotiListSuccess<*>) {
+                        //can save for further use
+                    }
+                    status.value = it
+                }
+            }
+        }
+    }
+
+    fun readNotification(id : Int)
+    {
+        when {
+            !mContext.checkInternetConnected() -> status.value = Resource
+                .NoInternetError<Int>(R.string.default_internet_message)
+            else -> {
+
+                status.addSource(repository.readNotification(authToken = getAuthKey(), id = id))
+                {
+                    if (it is Resource.ReadNotificationSuccess<*>) {
+
+
+                    }
+                    status.value = it
+                }
+            }
+        }
+    }
+
+    fun deleteNotification(id : Int, type : String)
+    {
+        when {
+            !mContext.checkInternetConnected() -> status.value = Resource
+                .NoInternetError<Int>(R.string.default_internet_message)
+            else -> {
+
+                status.addSource(repository.deleteNotification(authToken = getAuthKey(), id = id, type = type))
+                {
+                    if (it is Resource.DeleteNotificationSuccess<*>) {
+
+
+                    }
+                    status.value = it
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View"/>
+
+        <variable
+            name="viewModel"
+            type="com.usend.viewmodels.SignInViewModel" />
+
+        <variable
+            name="signInActivity"
+            type="com.usend.views.userauth.SignInActivity" />
+
+    </data>
+
+    <ScrollView style="@style/styleScrollbar">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            style="@style/match"
+            android:background="@color/colorWhite"
+            tools:context=".views.userauth.SignInActivity">
+
+            <include
+                android:id="@+id/toolbarSignIn"
+                layout="@layout/app_toolbar" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtWelCome"
+                style="@style/Activity.Title.Text.32sp"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:text="@string/lbl_wel_come"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/toolbarSignIn" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtEmailTitle"
+                style="@style/inputField.Title.14sp"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_60dp"
+                android:text="@string/lbl_email"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtWelCome" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtEmail"
+                style="@style/inputField.16sp"
+                android:hint="@string/lbl_enter_your_email"
+                android:inputType="textEmailAddress"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:imeOptions="actionNext"
+                android:text="@={viewModel.email}"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtEmailTitle"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtPasswordTitle"
+                style="@style/inputField.Title.14sp"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_15dp"
+                android:text="@string/lbl_password"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edtEmail" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/tiPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                app:hintEnabled="false"
+                app:boxBackgroundMode="none"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtPasswordTitle"
+                app:passwordToggleDrawable="@drawable/password_visibility_selector"
+                app:passwordToggleEnabled="true"
+                app:passwordToggleTint="@color/color2D2D2D">
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtPassword"
+                    style="@style/inputField.16sp"
+                    android:hint="@string/lbl_enter_your_password"
+                    android:inputType="textPassword"
+                    android:paddingEnd="@dimen/dimen_15dp"
+                    android:imeOptions="actionDone"
+                    android:text="@={viewModel.password}" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtForgotPass"
+                style="@style/CommonText.Style.16sp"
+                android:text="@string/lbl_forgot_password"
+                android:textColor="@color/color154A99"
+                android:fontFamily="@font/poppins_medium"
+                android:onClick="@{(view)-> signInActivity.onForgotPassClick()}"
+                android:padding="@dimen/dimen_5dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tiPassword"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSignIn"
+                style="@style/MaterialButton.CornerRadius"
+                android:text="@string/lbl_sign_in"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/dimen_50dp"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                android:layout_marginBottom="@dimen/dimen_20dp"
+                android:onClick="@{(view)-> signInActivity.onSignInClick()}"
+                app:layout_constraintTop_toBottomOf="@id/txtForgotPass"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtDontHaveAccount"
+                style="@style/CommonText.Style.16sp"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="start"
+                android:text="@string/lbl_dont_have_account_signup"
+                app:layout_constraintVertical_bias="1"
+                android:textColor="@color/color2D2D2D"
+                android:onClick="@{(view)-> signInActivity.onSignUpClick()}"
+                android:layout_marginStart="@dimen/dimen_10dp"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:layout_marginBottom="@dimen/dimen_20dp"
+                app:layout_constraintTop_toBottomOf="@id/btnSignIn"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</layout>

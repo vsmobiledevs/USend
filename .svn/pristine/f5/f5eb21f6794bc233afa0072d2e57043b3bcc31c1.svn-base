@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.preference:preference-ktx:1.1.0@aar">
+    <CLASSES>
+      <root url="file://E:/Sonu g3/SDK/caches/transforms-2/files-2.1/8c77bc6c206d057b79e107366e929393/jetified-preference-ktx-1.1.0/res" />
+      <root url="file://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/6bde79e6f89ce1a0b6493e0dba0e24f2/jetified-preference-ktx-1.1.0/res" />
+      <root url="file://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/6bde79e6f89ce1a0b6493e0dba0e24f2/jetified-preference-ktx-1.1.0/AndroidManifest.xml" />
+      <root url="jar://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/6bde79e6f89ce1a0b6493e0dba0e24f2/jetified-preference-ktx-1.1.0/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://E:/Sonu g3/SDK/caches/modules-2/files-2.1/androidx.preference/preference-ktx/1.1.0/1780f590aa4d008c891d307b358062f424e3535b/preference-ktx-1.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

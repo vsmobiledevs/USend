@@ -1,0 +1,243 @@
+package com.usend.databinding;
+import com.usend.R;
+import com.usend.BR;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import android.view.View;
+@SuppressWarnings("unchecked")
+public class FragmentMyProfileBindingImpl extends FragmentMyProfileBinding  {
+
+    @Nullable
+    private static final androidx.databinding.ViewDataBinding.IncludedLayouts sIncludes;
+    @Nullable
+    private static final android.util.SparseIntArray sViewsWithIds;
+    static {
+        sIncludes = null;
+        sViewsWithIds = new android.util.SparseIntArray();
+        sViewsWithIds.put(R.id.txtName, 3);
+        sViewsWithIds.put(R.id.cvAddress, 4);
+        sViewsWithIds.put(R.id.txtMailBoxNo, 5);
+        sViewsWithIds.put(R.id.llMembership, 6);
+        sViewsWithIds.put(R.id.txtMembershipStatus, 7);
+        sViewsWithIds.put(R.id.llUSPS, 8);
+        sViewsWithIds.put(R.id.txtStatus, 9);
+        sViewsWithIds.put(R.id.llAutoShip, 10);
+        sViewsWithIds.put(R.id.switchAutoShip, 11);
+        sViewsWithIds.put(R.id.llEditProfile, 12);
+        sViewsWithIds.put(R.id.llChangePassword, 13);
+        sViewsWithIds.put(R.id.llShippingAddress, 14);
+        sViewsWithIds.put(R.id.llPaymentMethods, 15);
+        sViewsWithIds.put(R.id.llUnitSystem, 16);
+        sViewsWithIds.put(R.id.llUSPSVerification, 17);
+        sViewsWithIds.put(R.id.txtUSPSStatus, 18);
+        sViewsWithIds.put(R.id.llProhibitedItems, 19);
+        sViewsWithIds.put(R.id.llTandC, 20);
+        sViewsWithIds.put(R.id.llContactUs, 21);
+        sViewsWithIds.put(R.id.llLogout, 22);
+    }
+    // views
+    @NonNull
+    private final android.widget.ScrollView mboundView0;
+    @NonNull
+    private final androidx.appcompat.widget.AppCompatTextView mboundView1;
+    @NonNull
+    private final androidx.appcompat.widget.AppCompatTextView mboundView2;
+    // variables
+    // values
+    // listeners
+    // Inverse Binding Event Handlers
+
+    public FragmentMyProfileBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 23, sIncludes, sViewsWithIds));
+    }
+    private FragmentMyProfileBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
+        super(bindingComponent, root, 1
+            , (com.google.android.material.card.MaterialCardView) bindings[4]
+            , (android.widget.LinearLayout) bindings[10]
+            , (android.widget.LinearLayout) bindings[13]
+            , (android.widget.LinearLayout) bindings[21]
+            , (android.widget.LinearLayout) bindings[12]
+            , (android.widget.LinearLayout) bindings[22]
+            , (android.widget.LinearLayout) bindings[6]
+            , (android.widget.LinearLayout) bindings[15]
+            , (android.widget.LinearLayout) bindings[19]
+            , (android.widget.LinearLayout) bindings[14]
+            , (android.widget.LinearLayout) bindings[20]
+            , (android.widget.LinearLayout) bindings[8]
+            , (android.widget.LinearLayout) bindings[17]
+            , (android.widget.LinearLayout) bindings[16]
+            , (androidx.appcompat.widget.SwitchCompat) bindings[11]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[5]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[7]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[3]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[9]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[18]
+            );
+        this.mboundView0 = (android.widget.ScrollView) bindings[0];
+        this.mboundView0.setTag(null);
+        this.mboundView1 = (androidx.appcompat.widget.AppCompatTextView) bindings[1];
+        this.mboundView1.setTag(null);
+        this.mboundView2 = (androidx.appcompat.widget.AppCompatTextView) bindings[2];
+        this.mboundView2.setTag(null);
+        setRootTag(root);
+        // listeners
+        invalidateAll();
+    }
+
+    @Override
+    public void invalidateAll() {
+        synchronized(this) {
+                mDirtyFlags = 0x4L;
+        }
+        requestRebind();
+    }
+
+    @Override
+    public boolean hasPendingBindings() {
+        synchronized(this) {
+            if (mDirtyFlags != 0) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    @Override
+    public boolean setVariable(int variableId, @Nullable Object variable)  {
+        boolean variableSet = true;
+        if (BR.viewModel == variableId) {
+            setViewModel((com.usend.viewmodels.MyProfileViewModel) variable);
+        }
+        else {
+            variableSet = false;
+        }
+            return variableSet;
+    }
+
+    public void setViewModel(@Nullable com.usend.viewmodels.MyProfileViewModel ViewModel) {
+        this.mViewModel = ViewModel;
+        synchronized(this) {
+            mDirtyFlags |= 0x2L;
+        }
+        notifyPropertyChanged(BR.viewModel);
+        super.requestRebind();
+    }
+
+    @Override
+    protected boolean onFieldChange(int localFieldId, Object object, int fieldId) {
+        switch (localFieldId) {
+            case 0 :
+                return onChangeViewModelUnitSystem((androidx.lifecycle.MutableLiveData<java.lang.String>) object, fieldId);
+        }
+        return false;
+    }
+    private boolean onChangeViewModelUnitSystem(androidx.lifecycle.MutableLiveData<java.lang.String> ViewModelUnitSystem, int fieldId) {
+        if (fieldId == BR._all) {
+            synchronized(this) {
+                    mDirtyFlags |= 0x1L;
+            }
+            return true;
+        }
+        return false;
+    }
+
+    @Override
+    protected void executeBindings() {
+        long dirtyFlags = 0;
+        synchronized(this) {
+            dirtyFlags = mDirtyFlags;
+            mDirtyFlags = 0;
+        }
+        int viewModelUnitSystemEqualsJavaLangStringLbsInchMboundView2AndroidColorColorWhiteMboundView2AndroidColorColor2D2D2D = 0;
+        android.graphics.drawable.Drawable viewModelUnitSystemEqualsJavaLangStringLbsInchMboundView2AndroidDrawableBg8RadiusSolidJavaLangObjectNull = null;
+        int viewModelUnitSystemEqualsJavaLangStringKgCmMboundView1AndroidColorColorWhiteMboundView1AndroidColorColor2D2D2D = 0;
+        boolean viewModelUnitSystemEqualsJavaLangStringLbsInch = false;
+        android.graphics.drawable.Drawable viewModelUnitSystemEqualsJavaLangStringKgCmMboundView1AndroidDrawableBg8RadiusSolidJavaLangObjectNull = null;
+        java.lang.String viewModelUnitSystemGetValue = null;
+        com.usend.viewmodels.MyProfileViewModel viewModel = mViewModel;
+        boolean viewModelUnitSystemEqualsJavaLangStringKgCm = false;
+        androidx.lifecycle.MutableLiveData<java.lang.String> viewModelUnitSystem = null;
+
+        if ((dirtyFlags & 0x7L) != 0) {
+
+
+
+                if (viewModel != null) {
+                    // read viewModel.unitSystem
+                    viewModelUnitSystem = viewModel.getUnitSystem();
+                }
+                updateLiveDataRegistration(0, viewModelUnitSystem);
+
+
+                if (viewModelUnitSystem != null) {
+                    // read viewModel.unitSystem.getValue()
+                    viewModelUnitSystemGetValue = viewModelUnitSystem.getValue();
+                }
+
+
+                if (viewModelUnitSystemGetValue != null) {
+                    // read viewModel.unitSystem.getValue().equals("lbs/inch")
+                    viewModelUnitSystemEqualsJavaLangStringLbsInch = viewModelUnitSystemGetValue.equals("lbs/inch");
+                    // read viewModel.unitSystem.getValue().equals("kg/cm")
+                    viewModelUnitSystemEqualsJavaLangStringKgCm = viewModelUnitSystemGetValue.equals("kg/cm");
+                }
+            if((dirtyFlags & 0x7L) != 0) {
+                if(viewModelUnitSystemEqualsJavaLangStringLbsInch) {
+                        dirtyFlags |= 0x10L;
+                        dirtyFlags |= 0x40L;
+                }
+                else {
+                        dirtyFlags |= 0x8L;
+                        dirtyFlags |= 0x20L;
+                }
+            }
+            if((dirtyFlags & 0x7L) != 0) {
+                if(viewModelUnitSystemEqualsJavaLangStringKgCm) {
+                        dirtyFlags |= 0x100L;
+                        dirtyFlags |= 0x400L;
+                }
+                else {
+                        dirtyFlags |= 0x80L;
+                        dirtyFlags |= 0x200L;
+                }
+            }
+
+
+                // read viewModel.unitSystem.getValue().equals("lbs/inch") ? @android:color/colorWhite : @android:color/color2D2D2D
+                viewModelUnitSystemEqualsJavaLangStringLbsInchMboundView2AndroidColorColorWhiteMboundView2AndroidColorColor2D2D2D = ((viewModelUnitSystemEqualsJavaLangStringLbsInch) ? (getColorFromResource(mboundView2, R.color.colorWhite)) : (getColorFromResource(mboundView2, R.color.color2D2D2D)));
+                // read viewModel.unitSystem.getValue().equals("lbs/inch") ? @android:drawable/bg_8_radius_solid : null
+                viewModelUnitSystemEqualsJavaLangStringLbsInchMboundView2AndroidDrawableBg8RadiusSolidJavaLangObjectNull = ((viewModelUnitSystemEqualsJavaLangStringLbsInch) ? (androidx.appcompat.content.res.AppCompatResources.getDrawable(mboundView2.getContext(), R.drawable.bg_8_radius_solid)) : (null));
+                // read viewModel.unitSystem.getValue().equals("kg/cm") ? @android:color/colorWhite : @android:color/color2D2D2D
+                viewModelUnitSystemEqualsJavaLangStringKgCmMboundView1AndroidColorColorWhiteMboundView1AndroidColorColor2D2D2D = ((viewModelUnitSystemEqualsJavaLangStringKgCm) ? (getColorFromResource(mboundView1, R.color.colorWhite)) : (getColorFromResource(mboundView1, R.color.color2D2D2D)));
+                // read viewModel.unitSystem.getValue().equals("kg/cm") ? @android:drawable/bg_8_radius_solid : null
+                viewModelUnitSystemEqualsJavaLangStringKgCmMboundView1AndroidDrawableBg8RadiusSolidJavaLangObjectNull = ((viewModelUnitSystemEqualsJavaLangStringKgCm) ? (androidx.appcompat.content.res.AppCompatResources.getDrawable(mboundView1.getContext(), R.drawable.bg_8_radius_solid)) : (null));
+        }
+        // batch finished
+        if ((dirtyFlags & 0x7L) != 0) {
+            // api target 1
+
+            androidx.databinding.adapters.ViewBindingAdapter.setBackground(this.mboundView1, viewModelUnitSystemEqualsJavaLangStringKgCmMboundView1AndroidDrawableBg8RadiusSolidJavaLangObjectNull);
+            this.mboundView1.setTextColor(viewModelUnitSystemEqualsJavaLangStringKgCmMboundView1AndroidColorColorWhiteMboundView1AndroidColorColor2D2D2D);
+            androidx.databinding.adapters.ViewBindingAdapter.setBackground(this.mboundView2, viewModelUnitSystemEqualsJavaLangStringLbsInchMboundView2AndroidDrawableBg8RadiusSolidJavaLangObjectNull);
+            this.mboundView2.setTextColor(viewModelUnitSystemEqualsJavaLangStringLbsInchMboundView2AndroidColorColorWhiteMboundView2AndroidColorColor2D2D2D);
+        }
+    }
+    // Listener Stub Implementations
+    // callback impls
+    // dirty flag
+    private  long mDirtyFlags = 0xffffffffffffffffL;
+    /* flag mapping
+        flag 0 (0x1L): viewModel.unitSystem
+        flag 1 (0x2L): viewModel
+        flag 2 (0x3L): null
+        flag 3 (0x4L): viewModel.unitSystem.getValue().equals("lbs/inch") ? @android:color/colorWhite : @android:color/color2D2D2D
+        flag 4 (0x5L): viewModel.unitSystem.getValue().equals("lbs/inch") ? @android:color/colorWhite : @android:color/color2D2D2D
+        flag 5 (0x6L): viewModel.unitSystem.getValue().equals("lbs/inch") ? @android:drawable/bg_8_radius_solid : null
+        flag 6 (0x7L): viewModel.unitSystem.getValue().equals("lbs/inch") ? @android:drawable/bg_8_radius_solid : null
+        flag 7 (0x8L): viewModel.unitSystem.getValue().equals("kg/cm") ? @android:color/colorWhite : @android:color/color2D2D2D
+        flag 8 (0x9L): viewModel.unitSystem.getValue().equals("kg/cm") ? @android:color/colorWhite : @android:color/color2D2D2D
+        flag 9 (0xaL): viewModel.unitSystem.getValue().equals("kg/cm") ? @android:drawable/bg_8_radius_solid : null
+        flag 10 (0xbL): viewModel.unitSystem.getValue().equals("kg/cm") ? @android:drawable/bg_8_radius_solid : null
+    flag mapping end*/
+    //end
+}

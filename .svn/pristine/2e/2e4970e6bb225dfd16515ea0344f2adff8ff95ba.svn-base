@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        style="@style/match"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <include android:id="@+id/toolbarWebView"
+            layout="@layout/app_toolbar"/>
+
+        <WebView
+            android:id="@+id/webView"
+            android:background="@color/colorWhite"
+            style="@style/styleScrollbar"
+            android:layout_marginStart="@dimen/dimen_20dp"
+            android:layout_marginEnd="@dimen/dimen_20dp"
+            android:layout_marginTop="@dimen/dimen_15dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    </LinearLayout>
+
+</layout>

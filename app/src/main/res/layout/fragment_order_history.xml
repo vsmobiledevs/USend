@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="adapter"
+            type="com.usend.adapter.OrderHistoryItemAdapter" />
+
+        <variable
+            name="isEmpty"
+            type="Boolean" />
+
+    </data>
+
+    <RelativeLayout style="@style/match">
+
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            android:id="@+id/swipeOrderHistory"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout style="@style/match">
+
+                <LinearLayout
+                    android:id="@+id/llmain"
+                    style="@style/matchWrap"
+                    android:background="@color/colorWhite"
+                    android:orientation="vertical"
+                    android:visibility="@{!isEmpty}"
+                    tools:context=".views.home.OrderHistoryFragment">
+
+                    <com.google.android.material.card.MaterialCardView
+                        style="@style/MaterialCardStyle"
+                        android:layout_marginStart="@dimen/dimen_20dp"
+                        android:layout_marginTop="@dimen/dimen_5dp"
+                        android:layout_marginEnd="@dimen/dimen_20dp"
+                        app:contentPaddingBottom="@dimen/dimen_5dp"
+                        app:contentPaddingTop="@dimen/dimen_5dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout style="@style/matchWrap">
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/imgPackageInMailbox"
+                                    android:layout_width="@dimen/dimen_15dp"
+                                    android:layout_height="@dimen/dimen_15dp"
+                                    android:layout_gravity="start|center_vertical"
+                                    android:layout_marginStart="@dimen/dimen_15dp"
+                                    android:src="@drawable/ic_package_inmailbox"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    style="@style/CommonText.Style.16sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_marginStart="@dimen/dimen_10dp"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:text="@string/lbl_orders_processed"
+                                    android:textColor="@color/color2D2D2D"
+                                    android:textSize="@dimen/dimen_14sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toEndOf="@id/imgPackageInMailbox"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/txtTotalPackages"
+                                    style="@style/CommonText.Style.16sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_marginEnd="@dimen/dimen_15dp"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:text="@string/lbl_0"
+                                    android:textColor="@color/color2D2D2D"
+                                    android:textSize="@dimen/dimen_14sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+                            <androidx.constraintlayout.widget.ConstraintLayout style="@style/matchWrap">
+
+                                <androidx.appcompat.widget.AppCompatImageView
+                                    android:id="@+id/imgPackageShippedInMailbox"
+                                    android:layout_width="@dimen/dimen_15dp"
+                                    android:layout_height="@dimen/dimen_15dp"
+                                    android:layout_gravity="start|center_vertical"
+                                    android:layout_marginStart="@dimen/dimen_15dp"
+                                    android:src="@drawable/ic_package_inmailbox"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    style="@style/CommonText.Style.16sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_marginStart="@dimen/dimen_10dp"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:text="@string/lbl_shipped_orders"
+                                    android:textColor="@color/color2D2D2D"
+                                    android:textSize="@dimen/dimen_14sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintStart_toEndOf="@id/imgPackageShippedInMailbox"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/txtTotalShippedPackages"
+                                    style="@style/CommonText.Style.16sp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_marginEnd="@dimen/dimen_15dp"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:text="@string/lbl_0"
+                                    android:textColor="@color/color2D2D2D"
+                                    android:textSize="@dimen/dimen_14sp"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+                        </LinearLayout>
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvOrderHistory"
+                        style="@style/styleRecyclerView"
+                        android:layout_marginTop="@dimen/dimen_10dp"
+                        app:adapter="@{adapter}"
+                        tools:itemCount="10"
+                        tools:listitem="@layout/row_order_history_item" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    style="@style/match"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:visibility="@{isEmpty}">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/dimen_100dp"
+                        android:layout_height="@dimen/dimen_100dp"
+                        android:src="@drawable/ic_no_hostory_image" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/CommonText.Style.SemiBold.16sp"
+                        android:layout_marginTop="@dimen/dimen_20dp"
+                        android:fontFamily="@font/poppins_regular"
+                        android:text="@string/lbl_no_order_history" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    </RelativeLayout>
+
+</layout>

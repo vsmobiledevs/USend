@@ -1,0 +1,252 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowDisablePreview">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowActivityTransitions">true</item>
+        <item name="android:statusBarColor">@color/colorWhite</item>
+    </style>
+
+    <style name="myActionButtonStyle" parent="Widget.AppCompat.ActionButton">
+        <item name="android:minWidth">@dimen/dimen_20dp</item>
+        <item name="android:maxWidth">@dimen/dimen_20dp</item>
+        <item name="android:maxHeight">@dimen/dimen_20dp</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:actionButtonStyle">@style/myActionButtonStyle</item>
+        <item name="actionButtonStyle">@style/myActionButtonStyle</item>
+    </style>
+
+    <style name="sqip.Theme.CardEntry" parent="sqip.Theme.BaseCardEntry">
+        <item name="windowActionBar">true</item>
+        <item name="android:windowBackground">@color/colorE7EBEE</item>
+        <item name="colorPrimaryDark">@color/colorWhite</item>
+        <item name="colorPrimary">@color/colorWhite</item>
+        <item name="buttonStyle">@style/CustomButton</item>
+        <item name="titleTextColor">@color/colorBlack</item>
+        <item name="android:title">@style/sqipActivityTitle</item>
+        <item name="android:textColorHint">@color/color979797</item>
+        <item name="android:fontFamily">Quicksand-Regular</item>
+
+        <item name="android:alertDialogTheme">@style/ThemeOverlay.AppCompat.Light</item>
+        <item name="android:homeAsUpIndicator">@drawable/ic_back</item>
+        <item name="actionBarStyle">@style/FlatActionBar</item>
+    </style>
+
+    <style name="FlatActionBar" parent="Widget.AppCompat.Light.ActionBar.Solid">
+    <item name="elevation">0dp</item>
+    </style>
+
+
+
+    <style name="sqipActivityTitle" parent="AppTheme.AppBarOverlay">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@color/colorBlack</item>
+        <item name="android:paddingLeft">@dimen/dimen_160dp</item>
+        <item name="marginHorizontal">@dimen/dimen_160dp</item>
+        <item name="android:title">@string/lbl_delete</item>
+        <item name="titleTextColor">@color/colorBlack</item>
+    </style>
+
+    <style name="CustomButton" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:textColor">@color/colorWhite</item>
+        <item name="android:background">@color/color509238</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textAllCaps">false</item>
+
+
+
+<!--        <item name="android:paddingLeft">@dimen/dimen_10dp</item>-->
+<!--        <item name="android:paddingRight">@dimen/dimen_10dp</item>-->
+<!--        <item name="android:paddingTop">@dimen/dimen_10dp</item>-->
+<!--        <item name="android:paddingBottom">@dimen/dimen_10dp</item>-->
+        <item name="android:minWidth">@dimen/dimen_10dp</item>
+        <item name="android:textSize">@dimen/dimen_16sp</item>
+    </style>
+
+
+
+    <style name="Cardt" parent="CustomButton">
+        <item name="android:background">@color/colorGreen</item>
+
+    </style>
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="matchWrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="match">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="wrapMatch">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="styleScrollbar" parent="match">
+        <item name="android:overScrollMode">never</item>
+        <item name="android:fadeEnabled">false</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:fillViewport">true</item>
+    </style>
+
+    <style name="styleRecyclerView" parent="matchWrap">
+        <item name="layoutManager">androidx.recyclerview.widget.LinearLayoutManager</item>
+        <item name="android:overScrollMode">always</item>
+    </style>
+
+    <!-- TextView Style-->
+    <style name="Text.large" parent="TextAppearance.AppCompat.Headline">
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="Text.semilarge" parent="TextAppearance.AppCompat.Headline">
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="Text.medium" parent="TextAppearance.AppCompat.Medium">
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="Text.normal" parent="TextAppearance.AppCompat.Body1">
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="Text.small" parent="TextAppearance.AppCompat.Small">
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="inputField.16sp" parent="matchWrap">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/color2D2D2D</item>
+        <item name="android:background">@drawable/bg_curve_border_8_radius</item>
+        <item name="android:textColorHint">@color/color802D2D2D</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">@dimen/dimen_16sp</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:gravity">center_vertical|start</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:maxLength">30</item>
+        <item name="android:paddingTop">@dimen/dimen_12dp</item>
+        <item name="android:paddingBottom">@dimen/dimen_12dp</item>
+        <item name="android:paddingStart">@dimen/dimen_15dp</item>
+        <item name="android:paddingEnd">@dimen/dimen_15dp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="inputField.Title.14sp" parent="wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/color2D2D2D</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">@dimen/dimen_14sp</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:gravity">center_vertical|start</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+    <style name="inputField.Title.13sp" parent="wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/color2D2D2D</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">@dimen/dimen_14sp</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:gravity">center_vertical|start</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="Activity.Title.Text.32sp" parent="wrap">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/color2E2E2E</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">@dimen/dimen_32sp</item>
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:gravity">center_vertical|start</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="CommonText.Style.16sp" parent="wrap">
+        <item name="android:textColor">@color/color802D2D2D</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">@dimen/dimen_16sp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="CommonText.Style.14sp" parent="wrap">
+        <item name="android:textColor">@color/color802D2D2D</item>
+        <item name="android:fontFamily">@font/poppins_medium</item>
+        <item name="android:textSize">@dimen/dimen_14sp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="CommonText.Style.SemiBold.16sp" parent="wrap">
+        <item name="android:textColor">@color/color802D2D2D</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:textSize">@dimen/dimen_16sp</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="MaterialCardStyle" parent="Widget.MaterialComponents.CardView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="cardCornerRadius">@dimen/dimen_10dp</item>
+        <item name="cardUseCompatPadding">false</item>
+        <item name="cardElevation">@dimen/dimen_5dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:fadingEdgeLength">@dimen/dimen_5dp</item>
+        <item name="android:foreground">?android:attr/selectableItemBackground</item>
+        <item name="android:background">@color/colorWhite</item>
+        <item name="rippleColor">@color/color5A9E41</item>
+    </style>
+
+    <style name="DialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/fade_in</item>
+        <item name="android:windowExitAnimation">@anim/fade_out</item>
+    </style>
+
+    <style name="CustomBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/CustomBottomSheetStyle</item>
+    </style>
+
+    <style name="CustomBottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bg_top_10_radius_white_back</item>
+    </style>
+
+    <style name="BottomTabTextStyle" parent="TextAppearance.AppCompat.Button">
+        <item name="android:textSize">@dimen/dimen_10sp</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:fontFamily">@font/poppins_semibold</item>
+        <item name="android:gravity">start</item>
+        <item name="tabTextColor">@color/color802D2D2D</item>
+    </style>
+
+</resources>

@@ -1,0 +1,330 @@
+package com.usend.views.home
+
+import android.annotation.SuppressLint
+import android.content.Context
+import android.content.Intent
+import android.view.View
+import androidx.lifecycle.Observer
+import com.base.network.model.*
+import com.usend.R
+import com.usend.base.ViewModelActivity
+import com.usend.comman.Resource
+import com.usend.databinding.ActivityAutoShipBinding
+import com.usend.extensions.loadImageUrl
+import com.usend.extensions.nullSafe
+import com.usend.extensions.showToast
+import com.usend.utils.*
+import com.usend.utils.CommonUtils.isRestrictedShipmentForUSA
+import com.usend.utils.CommonUtils.isUSA
+import com.usend.utils.CommonUtils.showAffirmationDialog
+import com.usend.utils.PreferenceHelper.set
+import com.usend.viewmodels.AutoShipViewModel
+import com.usend.views.MainActivity
+import kotlinx.android.synthetic.main.app_toolbar.*
+import kotlin.reflect.KClass
+
+class AutoShipActivity(
+    override val modelClass: KClass<AutoShipViewModel> = AutoShipViewModel::class,
+    override val layoutId: Int = R.layout.activity_auto_ship
+) : ViewModelActivity<ActivityAutoShipBinding, AutoShipViewModel>() {
+
+    private var autoShipmentResponseData: AutoShipmentResponseData? = null
+    private var newUpdatedCard: CardList? = null
+
+
+    override fun initView() {
+        super.initView()
+        initToolbar(toolbar = toolbar, title = resources.getString(R.string.lbl_auto_shipment))
+    }
+
+    override fun initControls() {
+        super.initControls()
+
+        if (intent.hasExtra(AUTO_SHIPMENT_DETAILS)) {
+            autoShipmentResponseData = intent.getParcelableExtra(AUTO_SHIPMENT_DETAILS)
+        }
+
+        binding.cardAddress.setOnClickListener {
+            val newIntent = Intent(this@AutoShipActivity, ShipToAddressActivity::class.java)
+            newIntent.putExtra(FROM, UPDATE_AUTO_SHIPMENT)
+            newIntent.putExtra(ADDRESS_ID, autoShipmentResponseData?.autoShipmentAddress?.id)
+            newIntent.putExtra(SERVICE_NAME, autoShipmentResponseData?.autoShipmentService?.id)
+            newIntent.putExtra(CARD_ID, autoShipmentResponseData?.cardDetail?.cardId)
+            startActivityForResult(newIntent) { data ->
+                data?.let { it1 -> refreshDetails(it1) }
+            }
+        }
+        binding.cardShipMethod.setOnClickListener {
+            val newIntent = Intent(this@AutoShipActivity, AutoShipMethodsActivity::class.java)
+            newIntent.putExtra(FROM, UPDATE_AUTO_SHIPMENT)
+            newIntent.putExtra(ADDRESS_ID, autoShipmentResponseData?.autoShipmentAddress?.id)
+            newIntent.putExtra(SERVICE_NAME, autoShipmentResponseData?.autoShipmentService?.id)
+            newIntent.putExtra(
+                COUNTRY_CODE_ID,
+                autoShipmentResponseData?.autoShipmentAddress?.countryCodeId
+            )
+            newIntent.putExtra(CARD_ID, autoShipmentResponseData?.cardDetail?.cardId)
+            startActivityForResult(newIntent) { data ->
+                data?.let { it1 -> refreshDetails(it1) }
+            }
+        }
+        binding.cardPayment.setOnClickListener {
+            val newIntent = Intent(this@AutoShipActivity, SelectSavedCardActivity::class.java)
+            newIntent.putExtra(FROM, UPDATE_AUTO_SHIPMENT)
+            newIntent.putExtra(ADDRESS_ID, autoShipmentResponseData?.autoShipmentAddress?.id)
+            newIntent.putExtra(SERVICE_NAME, autoShipmentResponseData?.autoShipmentService?.id)
+            newIntent.putExtra(CARD_ID, autoShipmentResponseData?.cardDetail?.cardId)
+            startActivityForResult(newIntent) { data ->
+                data?.let { it1 -> refreshDetails(it1) }
+            }
+        }
+
+        binding.btnUpdate.setOnClickListener {
+            val countryCode = autoShipmentResponseData?.autoShipmentAddress?.countryCodeId
+            val serviceName = autoShipmentResponseData?.autoShipmentService?.serviceName
+             if (countryCode.isUSA() && serviceName.isRestrictedShipmentForUSA()) {
+                CommonUtils.showOkDialog(
+                    this@AutoShipActivity,
+                    message = resources.getString(R.string.lbl_usa_shipment_error)
+                )
+                //showToast(getString(R.string.lbl_usa_shipment_error))
+            } else if (!countryCode.isUSA() && !serviceName.isRestrictedShipmentForUSA()) {
+                //Log.e("tag","el"+autoShipmentResponseData?.autoShipmentAddress?.countryCodeId+autoShipmentResponseData?.autoShipmentService?.serviceName)
+                CommonUtils.showOkDialog(
+                    this@AutoShipActivity,
+                    message = resources.getString(R.string.lbl_shipping_method_not_supported)
+                )
+                //showToast(getString(R.string.lbl_shipping_method_not_supported))
+            } else {
+                viewModel.updateAutoShipment(
+                    addressId = autoShipmentResponseData?.autoShipmentAddress?.id,
+                    autoShipmentServiceId = autoShipmentResponseData?.autoShipmentService?.id,
+                    paymentDetailId = autoShipmentResponseData?.cardDetail?.id
+                )
+            }
+        }
+
+        binding.btnTryAgain.setOnClickListener {
+            binding.btnTryAgain.visibility = View.GONE
+            viewModel.autoShipmentDetails()
+        }
+
+        if (autoShipmentResponseData == null) {
+            viewModel.autoShipmentDetails()
+        } else {
+            autoShipmentResponseData?.let {
+                setShipmentData(it)
+            }
+        }
+    }
+
+    private fun refreshDetails(data: Intent) {
+        when {
+            data.hasExtra(SHIPMENT_MODEL) -> {
+                val model =
+                    data.getParcelableExtra<AutoShipmentResponseData>(SHIPMENT_MODEL)
+                model?.let {
+                    setShipmentData(it)
+                }
+            }
+            data.hasExtra(ADDRESS_MODEL) -> {
+                val model =
+                    data.getParcelableExtra<AddressList>(ADDRESS_MODEL)
+                model?.let {
+                    autoShipmentResponseData?.autoShipmentAddress = it
+                    setAddressData(it)
+                }
+            }
+            data.hasExtra(SHIPMENT_DETAILS_MODEL) -> {
+                val model =
+                    data.getParcelableExtra<GetAutoshipmentServiceListData>(SHIPMENT_DETAILS_MODEL)
+                model?.let {
+                    autoShipmentResponseData?.autoShipmentService = it
+                    setShipmentServiceData(it)
+                }
+            }
+            data.hasExtra(PAYMENT_MODEL) -> {
+                val model = data.getParcelableExtra<CardList>(PAYMENT_MODEL)
+                model?.let {
+                    newUpdatedCard = it
+                    val card = Card(
+                        cardHolderName = it.cardholder_name,
+                        expiryMonth = it.exp_month,
+                        expiryYear = it.exp_year,
+                        id = it.id,
+                        last4 = it.last_4,
+                        brand = it.card_brand
+                    )
+                    autoShipmentResponseData?.cardDetail = card
+                    setCardData(card)
+                }
+            }
+        }
+    }
+
+    private fun setAddressData(addressModel: AddressList) {
+
+        var address: String
+
+        if (!addressModel.label.isNullOrEmpty()) {
+            binding.txtLabel.text = addressModel.label
+        } else {
+            binding.txtLabel.visibility = View.GONE
+        }
+
+        if (!addressModel.receiverName.isNullOrEmpty()) {
+            binding.txtReceiverName.text = addressModel.receiverName
+        } else {
+            binding.txtReceiverName.visibility = View.GONE
+        }
+
+        address = addressModel.street1 + ",\n"
+
+        if (!addressModel.street2.isNullOrEmpty()) {
+            address = address + addressModel.street2 + ",\n"
+        }
+        if (!addressModel.city.isNullOrEmpty()) {
+            address = address + addressModel.city + ", "
+        }
+        if (!addressModel.state.isNullOrEmpty()) {
+            address = address + addressModel.state + ", "
+        }
+        if (!addressModel.country.isNullOrEmpty()) {
+            address += addressModel.country
+        }
+        if (!addressModel.postalCode.isNullOrEmpty()) {
+            address = address + " - " + addressModel.postalCode
+        }
+
+        binding.txtPreferredAddress.text = address
+    }
+
+    private fun setShipmentServiceData(autoShipmentService: GetAutoshipmentServiceListData) {
+        binding.txtPreferredShippingMethod.text =
+            autoShipmentService.serviceName
+        autoShipmentService.carrierName
+        binding.imgShipping.loadImageUrl(
+            this@AutoShipActivity,
+            autoShipmentService.image ?: "",
+            cornerRadius = CommonUtils.dpToPx(this@AutoShipActivity, 20),
+            placeholder = R.drawable.ic_package_place_holder,
+            errorPlaceholder = R.drawable.ic_package_place_holder
+        )
+        {
+
+        }
+    }
+
+    @SuppressLint("SetTextI18n")
+    private fun setCardData(cardDetail: Card?) {
+        binding.txtTitle.text = cardDetail?.brand ?: ""
+        binding.txtCardNumber.text =
+            "**** **** **** " + (cardDetail?.last4 ?: "")
+        val expiryMonth = cardDetail?.expiryMonth ?: ""
+        val expiryYear = cardDetail?.expiryYear ?: ""
+        binding.txtExpDate.text = getString(R.string.lbl_expires) + " " +
+                DateTimeUtil.getConvertedTime(
+                    DateTimeUtil.MM,
+                    DateTimeUtil.MMM,
+                    expiryMonth.toString()
+                ) + " " + expiryYear.toString()
+    }
+
+    private fun setShipmentData(autoShipmentResponseData: AutoShipmentResponseData) {
+        this.autoShipmentResponseData = autoShipmentResponseData
+        binding.llAutoShipmentDetails.visibility = View.VISIBLE
+
+        // Set Address Card
+        val addressModel = autoShipmentResponseData.autoShipmentAddress
+        addressModel?.let { setAddressData(it) }
+
+        // Set Shipment Card
+        val shipmentModel = autoShipmentResponseData.autoShipmentService
+        shipmentModel?.let { setShipmentServiceData(it) }
+
+        // Set Payment Card
+        val cardModel = autoShipmentResponseData.cardDetail
+        setCardData(cardModel)
+    }
+
+    override fun addObserver() {
+        viewModel.status.observe(this, mObserver)
+    }
+
+    private val mObserver = Observer<Any> { response ->
+        when (response) {
+            is Resource.Error<*> -> {
+
+                JLog.e("AutoShipActivity", "Message: ${response.data}")
+                showToast(this@AutoShipActivity, response.message.toString())
+            }
+            is Resource.SuccessWithData<*> -> {
+                if (response.data is AutoShipmentResponse) {
+                    if ((response.data.responseCode ?: 0) == SUCCESS) {
+                        if (response.model is Int && response.model == 1) {
+
+                            showAffirmationDialog(
+                                title = response.data.responseMessage.toString(),
+                                btnText = resources.getString(R.string.lbl_okay)
+                            )
+                            {
+                                finish()
+                            }
+
+                        } else {
+                            response.data.responseData?.let {
+                                setShipmentData(it)
+                            }
+                        }
+                    } else {
+                        binding.btnTryAgain.visibility = View.VISIBLE
+                        showToast(this@AutoShipActivity, response.message.toString())
+                    }
+                }
+            }
+
+            is Resource.LogoutSuccess<*> -> {
+
+                prefs[IS_LOGIN] = false
+                MainActivity.newIntent(
+                    this@AutoShipActivity, Intent(this@AutoShipActivity, MainActivity::class.java)
+                        .putExtra(FROM, FROM_LOGOUT)
+                        .addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP)
+                        .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+                        .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
+                        .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                )
+            }
+            is Resource.Loading<*> -> {
+
+                setProgressStatus(response.isLoadingShow as Boolean)
+            }
+            is Resource.NoInternetError<*> -> {
+                binding.btnTryAgain.visibility = View.VISIBLE
+                CommonUtils.showOkDialog(
+                    this@AutoShipActivity,
+                    message = resources.getString(response.id!!)
+                )
+            }
+            is Resource.ValidationError<*> -> {
+                showToast(this@AutoShipActivity, resources.getString(response.id.nullSafe()))
+            }
+        }
+    }
+
+    private fun setProgressStatus(status: Boolean) {
+        if (status)
+            binding.progressShipment.visibility = View.VISIBLE
+        else
+            binding.progressShipment.visibility = View.GONE
+    }
+
+    companion object {
+        fun newIntent(context: Context, intent: Intent, model: AutoShipmentResponseData? = null) {
+            model?.let {
+                intent.putExtra(AUTO_SHIPMENT_DETAILS, model)
+            }
+            context.startActivity(intent)
+        }
+    }
+}

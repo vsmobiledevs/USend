@@ -1,0 +1,5 @@
+package com.base.network.model
+
+data class SourceXX(
+    val name: String
+)

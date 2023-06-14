@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.squareup.sdk.in-app-payments:card-entry:1.4.0@aar">
+    <CLASSES>
+      <root url="file://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/d0574490c239a26bbbe5ca4cc9fe539b/jetified-card-entry-1.4.0/AndroidManifest.xml" />
+      <root url="jar://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/d0574490c239a26bbbe5ca4cc9fe539b/jetified-card-entry-1.4.0/jars/classes.jar!/" />
+      <root url="file://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/d0574490c239a26bbbe5ca4cc9fe539b/jetified-card-entry-1.4.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://E:/Sonu g3/SDK/caches/modules-2/files-2.1/com.squareup.sdk.in-app-payments/card-entry/1.4.0/36020b5812f0626252e49ef11f90fd8296fbf1dd/card-entry-1.4.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://E:/Sonu g3/SDK/caches/modules-2/files-2.1/com.squareup.sdk.in-app-payments/card-entry/1.4.0/c2a2a6772165d8b56a308ca946c63ad9fe08fb00/card-entry-1.4.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

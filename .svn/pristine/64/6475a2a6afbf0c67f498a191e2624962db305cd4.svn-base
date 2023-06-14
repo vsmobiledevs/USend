@@ -1,0 +1,53 @@
+package com.dhaw.customer.utils;
+
+import java.lang.System;
+
+/**
+ * Created by Pritesh Vadhiya on 4/7/18.
+ * Spaceo Technologies
+ * priteshv.spaceo@gmail.com
+ */
+@kotlin.Metadata(mv = {1, 6, 0}, k = 1, d1 = {"\u00006\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0003\b\u00c6\u0002\u0018\u00002\u00020\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002J\u000e\u0010\b\u001a\u00020\u00042\u0006\u0010\t\u001a\u00020\nJ\u000e\u0010\u000b\u001a\u00020\f2\u0006\u0010\r\u001a\u00020\u000eJ\u0018\u0010\u000f\u001a\u00020\u00102\u0006\u0010\t\u001a\u00020\n2\u0006\u0010\u0011\u001a\u00020\u0004H\u0003J\u000e\u0010\u0012\u001a\u00020\u00102\u0006\u0010\t\u001a\u00020\nJ\u0016\u0010\u0013\u001a\u00020\u00102\u0006\u0010\t\u001a\u00020\u00142\u0006\u0010\u0011\u001a\u00020\u0004J\u0018\u0010\u0015\u001a\u00020\u00102\u0006\u0010\u0016\u001a\u00020\n2\u0006\u0010\u0011\u001a\u00020\u0004H\u0002R\u000e\u0010\u0003\u001a\u00020\u0004X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0004X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0004X\u0082T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\u0004X\u0086T\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u0017"}, d2 = {"Lcom/dhaw/customer/utils/LocaleManager;", "", "()V", "LANGUAGE_ARABIC", "", "LANGUAGE_ENGLISH", "LANGUAGE_KEY", "LANGUAGE_URDU", "getLanguage", "c", "Landroid/content/Context;", "getLocale", "Ljava/util/Locale;", "res", "Landroid/content/res/Resources;", "persistLanguage", "", "language", "setLocale", "setNewLocale", "Landroid/app/Activity;", "updateResources", "context", "app_debug"})
+public final class LocaleManager {
+    @org.jetbrains.annotations.NotNull()
+    public static final com.dhaw.customer.utils.LocaleManager INSTANCE = null;
+    @org.jetbrains.annotations.NotNull()
+    public static final java.lang.String LANGUAGE_ENGLISH = "en";
+    @org.jetbrains.annotations.NotNull()
+    public static final java.lang.String LANGUAGE_ARABIC = "ar";
+    @org.jetbrains.annotations.NotNull()
+    public static final java.lang.String LANGUAGE_URDU = "ur";
+    private static final java.lang.String LANGUAGE_KEY = "language_key";
+    
+    private LocaleManager() {
+        super();
+    }
+    
+    public final void setLocale(@org.jetbrains.annotations.NotNull()
+    android.content.Context c) {
+    }
+    
+    public final void setNewLocale(@org.jetbrains.annotations.NotNull()
+    android.app.Activity c, @org.jetbrains.annotations.NotNull()
+    java.lang.String language) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getLanguage(@org.jetbrains.annotations.NotNull()
+    android.content.Context c) {
+        return null;
+    }
+    
+    @android.annotation.SuppressLint(value = {"ApplySharedPref"})
+    private final void persistLanguage(android.content.Context c, java.lang.String language) {
+    }
+    
+    private final void updateResources(android.content.Context context, java.lang.String language) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.util.Locale getLocale(@org.jetbrains.annotations.NotNull()
+    android.content.res.Resources res) {
+        return null;
+    }
+}

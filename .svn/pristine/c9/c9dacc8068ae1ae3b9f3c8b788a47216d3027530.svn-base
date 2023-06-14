@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.miguelbcr:RxPaparazzo:0.6.1-2.x@aar">
+    <CLASSES>
+      <root url="file://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/8a85a8b473f5fb5f030bddc3b3614eb6/jetified-RxPaparazzo-0.6.1-2.x/res" />
+      <root url="file://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/8a85a8b473f5fb5f030bddc3b3614eb6/jetified-RxPaparazzo-0.6.1-2.x/AndroidManifest.xml" />
+      <root url="jar://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/8a85a8b473f5fb5f030bddc3b3614eb6/jetified-RxPaparazzo-0.6.1-2.x/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://E:/Sonu g3/SDK/caches/modules-2/files-2.1/com.github.miguelbcr/RxPaparazzo/0.6.1-2.x/d1df7fce182e279394a9fc14458a73bda0fbce66/RxPaparazzo-0.6.1-2.x-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://E:/Sonu g3/SDK/caches/modules-2/files-2.1/com.github.miguelbcr/RxPaparazzo/0.6.1-2.x/eb52e87d41763caa4b8a27c133be1daa46922bb8/RxPaparazzo-0.6.1-2.x-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

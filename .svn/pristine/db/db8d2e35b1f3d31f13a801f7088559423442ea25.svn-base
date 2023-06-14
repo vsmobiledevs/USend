@@ -1,0 +1,5 @@
+package com.base.network.model
+
+data class BillingAddressXX(
+    val postal_code: String
+)

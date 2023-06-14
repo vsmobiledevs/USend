@@ -1,0 +1,37 @@
+package com.usend.adapter;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 6, 0}, k = 1, d1 = {"\u00008\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010\b\n\u0002\u0010\u000e\n\u0002\u0010\u0002\n\u0002\b\b\n\u0002\u0018\u0002\n\u0000\u0018\u00002\u00020\u0001BA\u0012\u0016\u0010\u0002\u001a\u0012\u0012\u0004\u0012\u00020\u00040\u0003j\b\u0012\u0004\u0012\u00020\u0004`\u0005\u0012\b\b\u0002\u0010\u0006\u001a\u00020\u0007\u0012\u0018\u0010\b\u001a\u0014\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\f0\t\u00a2\u0006\u0002\u0010\rJ\u0010\u0010\u0011\u001a\u00020\n2\u0006\u0010\u0012\u001a\u00020\nH\u0016J\u0018\u0010\u0013\u001a\u00020\f2\u0006\u0010\u0014\u001a\u00020\u00152\u0006\u0010\u0012\u001a\u00020\nH\u0017R#\u0010\b\u001a\u0014\u0012\u0004\u0012\u00020\n\u0012\u0004\u0012\u00020\u000b\u0012\u0004\u0012\u00020\f0\t\u00a2\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\u000fR\u0011\u0010\u0006\u001a\u00020\u0007\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0006\u0010\u0010R\u001e\u0010\u0002\u001a\u0012\u0012\u0004\u0012\u00020\u00040\u0003j\b\u0012\u0004\u0012\u00020\u0004`\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u0016"}, d2 = {"Lcom/usend/adapter/SelectSavedCardsItemAdapter;", "Lcom/usend/base/BaseListAdapter;", "items", "Ljava/util/ArrayList;", "Lcom/usend/models/SelectCardItemModel;", "Lkotlin/collections/ArrayList;", "isCheckBoxVisible", "", "callback", "Lkotlin/Function2;", "", "", "", "(Ljava/util/ArrayList;ZLkotlin/jvm/functions/Function2;)V", "getCallback", "()Lkotlin/jvm/functions/Function2;", "()Z", "getItemViewType", "position", "onBindViewHolder", "holder", "Lcom/usend/base/BaseListAdapter$ItemViewHolder;", "app_debug"})
+public final class SelectSavedCardsItemAdapter extends com.usend.base.BaseListAdapter {
+    private final java.util.ArrayList<com.usend.models.SelectCardItemModel> items = null;
+    private final boolean isCheckBoxVisible = false;
+    @org.jetbrains.annotations.NotNull()
+    private final kotlin.jvm.functions.Function2<java.lang.Integer, java.lang.String, kotlin.Unit> callback = null;
+    
+    public SelectSavedCardsItemAdapter(@org.jetbrains.annotations.NotNull()
+    java.util.ArrayList<com.usend.models.SelectCardItemModel> items, boolean isCheckBoxVisible, @org.jetbrains.annotations.NotNull()
+    kotlin.jvm.functions.Function2<? super java.lang.Integer, ? super java.lang.String, kotlin.Unit> callback) {
+        super(null);
+    }
+    
+    public final boolean isCheckBoxVisible() {
+        return false;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final kotlin.jvm.functions.Function2<java.lang.Integer, java.lang.String, kotlin.Unit> getCallback() {
+        return null;
+    }
+    
+    @java.lang.Override()
+    public int getItemViewType(int position) {
+        return 0;
+    }
+    
+    @android.annotation.SuppressLint(value = {"SetTextI18n"})
+    @java.lang.Override()
+    public void onBindViewHolder(@org.jetbrains.annotations.NotNull()
+    com.usend.base.BaseListAdapter.ItemViewHolder holder, int position) {
+    }
+}

@@ -1,0 +1,9 @@
+package com.usend.models
+
+import android.os.Parcelable
+import kotlinx.android.parcel.Parcelize
+
+@Parcelize
+class NotificationExtraModel(val created_at : String = "",
+                             val id : Int = 0,
+                             val status : String = "") : Parcelable

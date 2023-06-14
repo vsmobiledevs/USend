@@ -1,0 +1,49 @@
+package com.usend.adapter
+
+import android.annotation.SuppressLint
+import android.graphics.Paint
+import androidx.core.content.ContextCompat
+import com.base.network.model.OrderListModel
+import com.usend.R
+import com.usend.base.BaseListAdapter
+import com.usend.databinding.RowOrderHistoryItemBinding
+import com.usend.extensions.nullSafe
+import com.usend.utils.*
+
+class OrderHistoryItemAdapter(
+    private val items: ArrayList<OrderListModel>,
+    val callback: (Int) -> Unit
+) : BaseListAdapter(items) {
+
+    override fun getItemViewType(position: Int) = R.layout.row_order_history_item
+
+    @SuppressLint("SetTextI18n")
+    override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
+
+        if (holder.binding is RowOrderHistoryItemBinding) {
+
+            holder.binding.txtTrackingNumber.paintFlags = holder.binding.txtTrackingNumber.paintFlags or Paint.UNDERLINE_TEXT_FLAG
+            holder.binding.txtPackageID.text = items[position].orderDetails?.orderNumber.toString()
+            holder.binding.txtProcessedOn.text = DateTimeUtil.getConvertedTime(DATEFORMAT_yyyy_MM_dd, DATEFORMAT_dd_MMM_yyyy, items[position].orderDetails?.processedOn.nullSafe())
+            holder.binding.txtTotalCost.text = "$" + items[position].invoiceDetails?.totalCharges.toString()
+            holder.binding.txtTrackingNumber.text = items[position].orderDetails?.trackingNumber.toString()
+            holder.binding.txtDimensions.text = items[position].packageDetails!![0].dimensions + " " +items[position].packageDetails!![0].dimensionsUnit
+            holder.binding.txtWeight.text = String.format("%.2f", items[position].packageDetails!![0].weight!!.toDouble()) + " " + items[position].packageDetails!![0].weightUnit
+
+            when (items[position].orderDetails?.orderStatus) {
+                PENDING, AWAITING_SHIPMENT -> {
+                    holder.binding.txtStatus.text = holder.itemView.context.resources.getString(R.string.lbl_processing)
+                    holder.binding.txtStatus.setTextColor(ContextCompat.getColor(holder.itemView.context, R.color.colorFF9500))
+                }
+                else -> {
+                    holder.binding.txtStatus.text =  holder.itemView.context.resources.getString(R.string.lbl_shipped)
+                    holder.binding.txtStatus.setTextColor(ContextCompat.getColor(holder.itemView.context, R.color.color5A9E41))
+                }
+            }
+            holder.itemView.setOnClickListener {
+
+                callback(holder.adapterPosition)
+            }
+        }
+    }
+}

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        style="@style/match"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbarUSPS"
+            layout="@layout/app_toolbar" />
+
+        <ScrollView style="@style/styleScrollbar">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                style="@style/match"
+                android:background="@color/colorWhite"
+                tools:context=".views.home.USPSVerificationActivity">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtUSPSTitle"
+                    style="@style/Activity.Title.Text.32sp"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:text="@string/lbl_usps_verification"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtUSPSDesc"
+                    style="@style/CommonText.Style.14sp"
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:singleLine="false"
+                    android:text="@string/lbl_usps_desc"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txtUSPSTitle" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtPassportImageTitle"
+                    style="@style/CommonText.Style.SemiBold.16sp"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_25dp"
+                    android:text="@string/lbl_passport_image"
+                    android:textColor="@color/color2D2D2D"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txtUSPSDesc" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgPassport"
+                    android:layout_width="@dimen/dimen_80dp"
+                    android:layout_height="@dimen/dimen_80dp"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_12dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_upload_image"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txtPassportImageTitle" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtDrivingLicenseTitle"
+                    style="@style/CommonText.Style.SemiBold.16sp"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_25dp"
+                    android:text="@string/lbl_driving_license"
+                    android:textColor="@color/color2D2D2D"
+                    android:textSize="@dimen/dimen_14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/imgPassport" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgDrivingLicense"
+                    android:layout_width="@dimen/dimen_80dp"
+                    android:layout_height="@dimen/dimen_80dp"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_12dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_upload_image"
+                    android:textSize="@dimen/dimen_14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txtDrivingLicenseTitle" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txt1583FormTitle"
+                    style="@style/CommonText.Style.SemiBold.16sp"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_25dp"
+                    android:text="@string/lbl_1583_form"
+                    android:textColor="@color/color2D2D2D"
+                    android:textSize="@dimen/dimen_14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/imgDrivingLicense" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/img1583Form"
+                    android:layout_width="@dimen/dimen_80dp"
+                    android:layout_height="@dimen/dimen_80dp"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_12dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_upload_image"
+                    android:textSize="@dimen/dimen_14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txt1583FormTitle" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtDontHaveForm"
+                    style="@style/CommonText.Style.SemiBold.16sp"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_50dp"
+                    android:text="@string/lbl_dont_have_1583_form"
+                    android:textColor="@color/color2D2D2D"
+                    android:textSize="@dimen/dimen_14sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/img1583Form" />
+
+                <LinearLayout
+                    android:id="@+id/llDownload"
+                    style="@style/wrap"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="@dimen/dimen_50dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:gravity="center_vertical"
+                    app:layout_constraintTop_toBottomOf="@id/img1583Form">
+                    
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:layout_width="@dimen/dimen_15dp"
+                        android:layout_height="@dimen/dimen_20dp"
+                        android:src="@drawable/ic_download"/>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/CommonText.Style.14sp"
+                        android:text="@string/lbl_download"
+                        android:layout_marginStart="@dimen/dimen_10dp"
+                        android:textColor="@color/color154A99" />
+
+                </LinearLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnSubmit"
+                    style="@style/MaterialButton.CornerRadius"
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_25dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:layout_marginBottom="@dimen/dimen_30dp"
+                    android:text="@string/lbl_submit"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txtDontHaveForm" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+</layout>

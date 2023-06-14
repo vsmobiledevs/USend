@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="adapter"
+            type="com.usend.adapter.SavedCardsItemAdapter" />
+
+    </data>
+
+    <LinearLayout
+        style="@style/match"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbarSavedCards"
+            layout="@layout/app_toolbar" />
+
+        <LinearLayout style="@style/match">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvSavedCards"
+                style="@style/styleRecyclerView"
+                android:layout_height="match_parent"
+                app:adapter="@{adapter}"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,46 @@
+package com.usend.viewmodels
+
+import android.app.Application
+import android.content.Context
+import androidx.lifecycle.MediatorLiveData
+import com.usend.base.BaseViewModel
+import com.usend.extensions.callApi
+import com.usend.repository.ApiServices
+
+class AutoShipViewModel(
+    var myApplication: Application
+) :
+    BaseViewModel(myApplication) {
+
+    val mContext: Context = myApplication.applicationContext
+
+    val status: MediatorLiveData<Any> by lazy {
+        MediatorLiveData<Any>()
+    }
+
+    fun autoShipmentDetails() {
+        myApplication.callApi(
+            ApiServices.getAutoShipmentApiService().autoShipmentDetails(
+                authorization = getAuthKey()
+            ), liveData = status,
+            showLoading = true
+        )
+    }
+
+    fun updateAutoShipment(
+        addressId: Int? = null,
+        autoShipmentServiceId: Int? = null,
+        paymentDetailId: Int? = null
+    ) {
+        myApplication.callApi(
+            ApiServices.getAutoShipmentApiService().updateAutoShipment(
+                authorization = getAuthKey(),
+                addressId = addressId,
+                autoShipmentServiceId = autoShipmentServiceId,
+                paymentDetailId = paymentDetailId
+            ), liveData = status,
+            showLoading = true,
+            model = 1
+        )
+    }
+}

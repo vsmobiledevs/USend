@@ -1,0 +1,639 @@
+package com.usend.databinding;
+import com.usend.R;
+import com.usend.BR;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import android.view.View;
+@SuppressWarnings("unchecked")
+public class ActivitySignUpBindingImpl extends ActivitySignUpBinding implements com.usend.generated.callback.OnClickListener.Listener {
+
+    @Nullable
+    private static final androidx.databinding.ViewDataBinding.IncludedLayouts sIncludes;
+    @Nullable
+    private static final android.util.SparseIntArray sViewsWithIds;
+    static {
+        sIncludes = null;
+        sViewsWithIds = new android.util.SparseIntArray();
+        sViewsWithIds.put(R.id.toolbarSignUp, 9);
+        sViewsWithIds.put(R.id.txtSignUpTitle, 10);
+        sViewsWithIds.put(R.id.txtEmailTitle, 11);
+        sViewsWithIds.put(R.id.txtFirstNameTitle, 12);
+        sViewsWithIds.put(R.id.txtLastNameTitle, 13);
+        sViewsWithIds.put(R.id.txtPasswordTitle, 14);
+        sViewsWithIds.put(R.id.tiPassword, 15);
+        sViewsWithIds.put(R.id.txtRePasswordTitle, 16);
+        sViewsWithIds.put(R.id.tiRePassword, 17);
+        sViewsWithIds.put(R.id.txtTandC, 18);
+    }
+    // views
+    @NonNull
+    private final android.widget.LinearLayout mboundView0;
+    // variables
+    @Nullable
+    private final android.view.View.OnClickListener mCallback35;
+    @Nullable
+    private final android.view.View.OnClickListener mCallback36;
+    // values
+    // listeners
+    // Inverse Binding Event Handlers
+    private androidx.databinding.InverseBindingListener cbSignUpandroidCheckedAttrChanged = new androidx.databinding.InverseBindingListener() {
+        @Override
+        public void onChange() {
+            // Inverse of viewModel.cbTermsAndPolicy.getValue()
+            //         is viewModel.cbTermsAndPolicy.setValue((java.lang.Boolean) callbackArg_0)
+            boolean callbackArg_0 = cbSignUp.isChecked();
+            // localize variables for thread safety
+            // viewModel.cbTermsAndPolicy != null
+            boolean viewModelCbTermsAndPolicyJavaLangObjectNull = false;
+            // viewModel.cbTermsAndPolicy
+            androidx.lifecycle.MediatorLiveData<java.lang.Boolean> viewModelCbTermsAndPolicy = null;
+            // viewModel.cbTermsAndPolicy.getValue()
+            java.lang.Boolean viewModelCbTermsAndPolicyGetValue = null;
+            // viewModel
+            com.usend.viewmodels.SignUpViewModel viewModel = mViewModel;
+            // viewModel != null
+            boolean viewModelJavaLangObjectNull = false;
+
+
+
+            viewModelJavaLangObjectNull = (viewModel) != (null);
+            if (viewModelJavaLangObjectNull) {
+
+
+                viewModelCbTermsAndPolicy = viewModel.getCbTermsAndPolicy();
+
+                viewModelCbTermsAndPolicyJavaLangObjectNull = (viewModelCbTermsAndPolicy) != (null);
+                if (viewModelCbTermsAndPolicyJavaLangObjectNull) {
+
+
+
+
+                    viewModelCbTermsAndPolicy.setValue(((java.lang.Boolean) (callbackArg_0)));
+                }
+            }
+        }
+    };
+    private androidx.databinding.InverseBindingListener edtEmailandroidTextAttrChanged = new androidx.databinding.InverseBindingListener() {
+        @Override
+        public void onChange() {
+            // Inverse of viewModel.email.getValue()
+            //         is viewModel.email.setValue((java.lang.String) callbackArg_0)
+            java.lang.String callbackArg_0 = androidx.databinding.adapters.TextViewBindingAdapter.getTextString(edtEmail);
+            // localize variables for thread safety
+            // viewModel.email.getValue()
+            java.lang.String viewModelEmailGetValue = null;
+            // viewModel.email
+            androidx.lifecycle.MediatorLiveData<java.lang.String> viewModelEmail = null;
+            // viewModel
+            com.usend.viewmodels.SignUpViewModel viewModel = mViewModel;
+            // viewModel != null
+            boolean viewModelJavaLangObjectNull = false;
+            // viewModel.email != null
+            boolean viewModelEmailJavaLangObjectNull = false;
+
+
+
+            viewModelJavaLangObjectNull = (viewModel) != (null);
+            if (viewModelJavaLangObjectNull) {
+
+
+                viewModelEmail = viewModel.getEmail();
+
+                viewModelEmailJavaLangObjectNull = (viewModelEmail) != (null);
+                if (viewModelEmailJavaLangObjectNull) {
+
+
+
+
+                    viewModelEmail.setValue(((java.lang.String) (callbackArg_0)));
+                }
+            }
+        }
+    };
+    private androidx.databinding.InverseBindingListener edtFirstNameandroidTextAttrChanged = new androidx.databinding.InverseBindingListener() {
+        @Override
+        public void onChange() {
+            // Inverse of viewModel.firstName.getValue()
+            //         is viewModel.firstName.setValue((java.lang.String) callbackArg_0)
+            java.lang.String callbackArg_0 = androidx.databinding.adapters.TextViewBindingAdapter.getTextString(edtFirstName);
+            // localize variables for thread safety
+            // viewModel.firstName
+            androidx.lifecycle.MediatorLiveData<java.lang.String> viewModelFirstName = null;
+            // viewModel.firstName != null
+            boolean viewModelFirstNameJavaLangObjectNull = false;
+            // viewModel.firstName.getValue()
+            java.lang.String viewModelFirstNameGetValue = null;
+            // viewModel
+            com.usend.viewmodels.SignUpViewModel viewModel = mViewModel;
+            // viewModel != null
+            boolean viewModelJavaLangObjectNull = false;
+
+
+
+            viewModelJavaLangObjectNull = (viewModel) != (null);
+            if (viewModelJavaLangObjectNull) {
+
+
+                viewModelFirstName = viewModel.getFirstName();
+
+                viewModelFirstNameJavaLangObjectNull = (viewModelFirstName) != (null);
+                if (viewModelFirstNameJavaLangObjectNull) {
+
+
+
+
+                    viewModelFirstName.setValue(((java.lang.String) (callbackArg_0)));
+                }
+            }
+        }
+    };
+    private androidx.databinding.InverseBindingListener edtLastNameandroidTextAttrChanged = new androidx.databinding.InverseBindingListener() {
+        @Override
+        public void onChange() {
+            // Inverse of viewModel.lastName.getValue()
+            //         is viewModel.lastName.setValue((java.lang.String) callbackArg_0)
+            java.lang.String callbackArg_0 = androidx.databinding.adapters.TextViewBindingAdapter.getTextString(edtLastName);
+            // localize variables for thread safety
+            // viewModel.lastName.getValue()
+            java.lang.String viewModelLastNameGetValue = null;
+            // viewModel.lastName != null
+            boolean viewModelLastNameJavaLangObjectNull = false;
+            // viewModel
+            com.usend.viewmodels.SignUpViewModel viewModel = mViewModel;
+            // viewModel.lastName
+            androidx.lifecycle.MediatorLiveData<java.lang.String> viewModelLastName = null;
+            // viewModel != null
+            boolean viewModelJavaLangObjectNull = false;
+
+
+
+            viewModelJavaLangObjectNull = (viewModel) != (null);
+            if (viewModelJavaLangObjectNull) {
+
+
+                viewModelLastName = viewModel.getLastName();
+
+                viewModelLastNameJavaLangObjectNull = (viewModelLastName) != (null);
+                if (viewModelLastNameJavaLangObjectNull) {
+
+
+
+
+                    viewModelLastName.setValue(((java.lang.String) (callbackArg_0)));
+                }
+            }
+        }
+    };
+    private androidx.databinding.InverseBindingListener edtPasswordandroidTextAttrChanged = new androidx.databinding.InverseBindingListener() {
+        @Override
+        public void onChange() {
+            // Inverse of viewModel.password.getValue()
+            //         is viewModel.password.setValue((java.lang.String) callbackArg_0)
+            java.lang.String callbackArg_0 = androidx.databinding.adapters.TextViewBindingAdapter.getTextString(edtPassword);
+            // localize variables for thread safety
+            // viewModel.password != null
+            boolean viewModelPasswordJavaLangObjectNull = false;
+            // viewModel.password.getValue()
+            java.lang.String viewModelPasswordGetValue = null;
+            // viewModel
+            com.usend.viewmodels.SignUpViewModel viewModel = mViewModel;
+            // viewModel.password
+            androidx.lifecycle.MediatorLiveData<java.lang.String> viewModelPassword = null;
+            // viewModel != null
+            boolean viewModelJavaLangObjectNull = false;
+
+
+
+            viewModelJavaLangObjectNull = (viewModel) != (null);
+            if (viewModelJavaLangObjectNull) {
+
+
+                viewModelPassword = viewModel.getPassword();
+
+                viewModelPasswordJavaLangObjectNull = (viewModelPassword) != (null);
+                if (viewModelPasswordJavaLangObjectNull) {
+
+
+
+
+                    viewModelPassword.setValue(((java.lang.String) (callbackArg_0)));
+                }
+            }
+        }
+    };
+    private androidx.databinding.InverseBindingListener edtRePasswordandroidTextAttrChanged = new androidx.databinding.InverseBindingListener() {
+        @Override
+        public void onChange() {
+            // Inverse of viewModel.re_password.getValue()
+            //         is viewModel.re_password.setValue((java.lang.String) callbackArg_0)
+            java.lang.String callbackArg_0 = androidx.databinding.adapters.TextViewBindingAdapter.getTextString(edtRePassword);
+            // localize variables for thread safety
+            // viewModel.re_password.getValue()
+            java.lang.String viewModelRePasswordGetValue = null;
+            // viewModel.re_password != null
+            boolean viewModelRePasswordJavaLangObjectNull = false;
+            // viewModel.re_password
+            androidx.lifecycle.MediatorLiveData<java.lang.String> viewModelRePassword = null;
+            // viewModel
+            com.usend.viewmodels.SignUpViewModel viewModel = mViewModel;
+            // viewModel != null
+            boolean viewModelJavaLangObjectNull = false;
+
+
+
+            viewModelJavaLangObjectNull = (viewModel) != (null);
+            if (viewModelJavaLangObjectNull) {
+
+
+                viewModelRePassword = viewModel.getRe_password();
+
+                viewModelRePasswordJavaLangObjectNull = (viewModelRePassword) != (null);
+                if (viewModelRePasswordJavaLangObjectNull) {
+
+
+
+
+                    viewModelRePassword.setValue(((java.lang.String) (callbackArg_0)));
+                }
+            }
+        }
+    };
+
+    public ActivitySignUpBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 19, sIncludes, sViewsWithIds));
+    }
+    private ActivitySignUpBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
+        super(bindingComponent, root, 6
+            , (com.google.android.material.button.MaterialButton) bindings[7]
+            , (androidx.appcompat.widget.AppCompatCheckBox) bindings[6]
+            , (androidx.appcompat.widget.AppCompatEditText) bindings[1]
+            , (androidx.appcompat.widget.AppCompatEditText) bindings[2]
+            , (androidx.appcompat.widget.AppCompatEditText) bindings[3]
+            , (androidx.appcompat.widget.AppCompatEditText) bindings[4]
+            , (androidx.appcompat.widget.AppCompatEditText) bindings[5]
+            , (com.google.android.material.textfield.TextInputLayout) bindings[15]
+            , (com.google.android.material.textfield.TextInputLayout) bindings[17]
+            , (android.view.View) bindings[9]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[8]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[11]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[12]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[13]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[14]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[16]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[10]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[18]
+            );
+        this.btnSignIn.setTag(null);
+        this.cbSignUp.setTag(null);
+        this.edtEmail.setTag(null);
+        this.edtFirstName.setTag(null);
+        this.edtLastName.setTag(null);
+        this.edtPassword.setTag(null);
+        this.edtRePassword.setTag(null);
+        this.mboundView0 = (android.widget.LinearLayout) bindings[0];
+        this.mboundView0.setTag(null);
+        this.txtAlreadyHaveAccount.setTag(null);
+        setRootTag(root);
+        // listeners
+        mCallback35 = new com.usend.generated.callback.OnClickListener(this, 1);
+        mCallback36 = new com.usend.generated.callback.OnClickListener(this, 2);
+        invalidateAll();
+    }
+
+    @Override
+    public void invalidateAll() {
+        synchronized(this) {
+                mDirtyFlags = 0x100L;
+        }
+        requestRebind();
+    }
+
+    @Override
+    public boolean hasPendingBindings() {
+        synchronized(this) {
+            if (mDirtyFlags != 0) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    @Override
+    public boolean setVariable(int variableId, @Nullable Object variable)  {
+        boolean variableSet = true;
+        if (BR.signUpActivity == variableId) {
+            setSignUpActivity((com.usend.views.userauth.SignUpActivity) variable);
+        }
+        else if (BR.viewModel == variableId) {
+            setViewModel((com.usend.viewmodels.SignUpViewModel) variable);
+        }
+        else {
+            variableSet = false;
+        }
+            return variableSet;
+    }
+
+    public void setSignUpActivity(@Nullable com.usend.views.userauth.SignUpActivity SignUpActivity) {
+        this.mSignUpActivity = SignUpActivity;
+        synchronized(this) {
+            mDirtyFlags |= 0x40L;
+        }
+        notifyPropertyChanged(BR.signUpActivity);
+        super.requestRebind();
+    }
+    public void setViewModel(@Nullable com.usend.viewmodels.SignUpViewModel ViewModel) {
+        this.mViewModel = ViewModel;
+        synchronized(this) {
+            mDirtyFlags |= 0x80L;
+        }
+        notifyPropertyChanged(BR.viewModel);
+        super.requestRebind();
+    }
+
+    @Override
+    protected boolean onFieldChange(int localFieldId, Object object, int fieldId) {
+        switch (localFieldId) {
+            case 0 :
+                return onChangeViewModelEmail((androidx.lifecycle.MediatorLiveData<java.lang.String>) object, fieldId);
+            case 1 :
+                return onChangeViewModelCbTermsAndPolicy((androidx.lifecycle.MediatorLiveData<java.lang.Boolean>) object, fieldId);
+            case 2 :
+                return onChangeViewModelRePassword((androidx.lifecycle.MediatorLiveData<java.lang.String>) object, fieldId);
+            case 3 :
+                return onChangeViewModelPassword((androidx.lifecycle.MediatorLiveData<java.lang.String>) object, fieldId);
+            case 4 :
+                return onChangeViewModelLastName((androidx.lifecycle.MediatorLiveData<java.lang.String>) object, fieldId);
+            case 5 :
+                return onChangeViewModelFirstName((androidx.lifecycle.MediatorLiveData<java.lang.String>) object, fieldId);
+        }
+        return false;
+    }
+    private boolean onChangeViewModelEmail(androidx.lifecycle.MediatorLiveData<java.lang.String> ViewModelEmail, int fieldId) {
+        if (fieldId == BR._all) {
+            synchronized(this) {
+                    mDirtyFlags |= 0x1L;
+            }
+            return true;
+        }
+        return false;
+    }
+    private boolean onChangeViewModelCbTermsAndPolicy(androidx.lifecycle.MediatorLiveData<java.lang.Boolean> ViewModelCbTermsAndPolicy, int fieldId) {
+        if (fieldId == BR._all) {
+            synchronized(this) {
+                    mDirtyFlags |= 0x2L;
+            }
+            return true;
+        }
+        return false;
+    }
+    private boolean onChangeViewModelRePassword(androidx.lifecycle.MediatorLiveData<java.lang.String> ViewModelRePassword, int fieldId) {
+        if (fieldId == BR._all) {
+            synchronized(this) {
+                    mDirtyFlags |= 0x4L;
+            }
+            return true;
+        }
+        return false;
+    }
+    private boolean onChangeViewModelPassword(androidx.lifecycle.MediatorLiveData<java.lang.String> ViewModelPassword, int fieldId) {
+        if (fieldId == BR._all) {
+            synchronized(this) {
+                    mDirtyFlags |= 0x8L;
+            }
+            return true;
+        }
+        return false;
+    }
+    private boolean onChangeViewModelLastName(androidx.lifecycle.MediatorLiveData<java.lang.String> ViewModelLastName, int fieldId) {
+        if (fieldId == BR._all) {
+            synchronized(this) {
+                    mDirtyFlags |= 0x10L;
+            }
+            return true;
+        }
+        return false;
+    }
+    private boolean onChangeViewModelFirstName(androidx.lifecycle.MediatorLiveData<java.lang.String> ViewModelFirstName, int fieldId) {
+        if (fieldId == BR._all) {
+            synchronized(this) {
+                    mDirtyFlags |= 0x20L;
+            }
+            return true;
+        }
+        return false;
+    }
+
+    @Override
+    protected void executeBindings() {
+        long dirtyFlags = 0;
+        synchronized(this) {
+            dirtyFlags = mDirtyFlags;
+            mDirtyFlags = 0;
+        }
+        java.lang.String viewModelEmailGetValue = null;
+        java.lang.String viewModelPasswordGetValue = null;
+        java.lang.Boolean viewModelCbTermsAndPolicyGetValue = null;
+        java.lang.String viewModelLastNameGetValue = null;
+        com.usend.views.userauth.SignUpActivity signUpActivity = mSignUpActivity;
+        java.lang.String viewModelRePasswordGetValue = null;
+        androidx.lifecycle.MediatorLiveData<java.lang.String> viewModelEmail = null;
+        androidx.lifecycle.MediatorLiveData<java.lang.Boolean> viewModelCbTermsAndPolicy = null;
+        androidx.lifecycle.MediatorLiveData<java.lang.String> viewModelRePassword = null;
+        java.lang.String viewModelFirstNameGetValue = null;
+        androidx.lifecycle.MediatorLiveData<java.lang.String> viewModelPassword = null;
+        boolean androidxDatabindingViewDataBindingSafeUnboxViewModelCbTermsAndPolicyGetValue = false;
+        androidx.lifecycle.MediatorLiveData<java.lang.String> viewModelLastName = null;
+        androidx.lifecycle.MediatorLiveData<java.lang.String> viewModelFirstName = null;
+        com.usend.viewmodels.SignUpViewModel viewModel = mViewModel;
+
+        if ((dirtyFlags & 0x1bfL) != 0) {
+
+
+            if ((dirtyFlags & 0x181L) != 0) {
+
+                    if (viewModel != null) {
+                        // read viewModel.email
+                        viewModelEmail = viewModel.getEmail();
+                    }
+                    updateLiveDataRegistration(0, viewModelEmail);
+
+
+                    if (viewModelEmail != null) {
+                        // read viewModel.email.getValue()
+                        viewModelEmailGetValue = viewModelEmail.getValue();
+                    }
+            }
+            if ((dirtyFlags & 0x182L) != 0) {
+
+                    if (viewModel != null) {
+                        // read viewModel.cbTermsAndPolicy
+                        viewModelCbTermsAndPolicy = viewModel.getCbTermsAndPolicy();
+                    }
+                    updateLiveDataRegistration(1, viewModelCbTermsAndPolicy);
+
+
+                    if (viewModelCbTermsAndPolicy != null) {
+                        // read viewModel.cbTermsAndPolicy.getValue()
+                        viewModelCbTermsAndPolicyGetValue = viewModelCbTermsAndPolicy.getValue();
+                    }
+
+
+                    // read androidx.databinding.ViewDataBinding.safeUnbox(viewModel.cbTermsAndPolicy.getValue())
+                    androidxDatabindingViewDataBindingSafeUnboxViewModelCbTermsAndPolicyGetValue = androidx.databinding.ViewDataBinding.safeUnbox(viewModelCbTermsAndPolicyGetValue);
+            }
+            if ((dirtyFlags & 0x184L) != 0) {
+
+                    if (viewModel != null) {
+                        // read viewModel.re_password
+                        viewModelRePassword = viewModel.getRe_password();
+                    }
+                    updateLiveDataRegistration(2, viewModelRePassword);
+
+
+                    if (viewModelRePassword != null) {
+                        // read viewModel.re_password.getValue()
+                        viewModelRePasswordGetValue = viewModelRePassword.getValue();
+                    }
+            }
+            if ((dirtyFlags & 0x188L) != 0) {
+
+                    if (viewModel != null) {
+                        // read viewModel.password
+                        viewModelPassword = viewModel.getPassword();
+                    }
+                    updateLiveDataRegistration(3, viewModelPassword);
+
+
+                    if (viewModelPassword != null) {
+                        // read viewModel.password.getValue()
+                        viewModelPasswordGetValue = viewModelPassword.getValue();
+                    }
+            }
+            if ((dirtyFlags & 0x190L) != 0) {
+
+                    if (viewModel != null) {
+                        // read viewModel.lastName
+                        viewModelLastName = viewModel.getLastName();
+                    }
+                    updateLiveDataRegistration(4, viewModelLastName);
+
+
+                    if (viewModelLastName != null) {
+                        // read viewModel.lastName.getValue()
+                        viewModelLastNameGetValue = viewModelLastName.getValue();
+                    }
+            }
+            if ((dirtyFlags & 0x1a0L) != 0) {
+
+                    if (viewModel != null) {
+                        // read viewModel.firstName
+                        viewModelFirstName = viewModel.getFirstName();
+                    }
+                    updateLiveDataRegistration(5, viewModelFirstName);
+
+
+                    if (viewModelFirstName != null) {
+                        // read viewModel.firstName.getValue()
+                        viewModelFirstNameGetValue = viewModelFirstName.getValue();
+                    }
+            }
+        }
+        // batch finished
+        if ((dirtyFlags & 0x100L) != 0) {
+            // api target 1
+
+            this.btnSignIn.setOnClickListener(mCallback35);
+            androidx.databinding.adapters.CompoundButtonBindingAdapter.setListeners(this.cbSignUp, (android.widget.CompoundButton.OnCheckedChangeListener)null, cbSignUpandroidCheckedAttrChanged);
+            androidx.databinding.adapters.TextViewBindingAdapter.setTextWatcher(this.edtEmail, (androidx.databinding.adapters.TextViewBindingAdapter.BeforeTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.OnTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.AfterTextChanged)null, edtEmailandroidTextAttrChanged);
+            androidx.databinding.adapters.TextViewBindingAdapter.setTextWatcher(this.edtFirstName, (androidx.databinding.adapters.TextViewBindingAdapter.BeforeTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.OnTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.AfterTextChanged)null, edtFirstNameandroidTextAttrChanged);
+            androidx.databinding.adapters.TextViewBindingAdapter.setTextWatcher(this.edtLastName, (androidx.databinding.adapters.TextViewBindingAdapter.BeforeTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.OnTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.AfterTextChanged)null, edtLastNameandroidTextAttrChanged);
+            androidx.databinding.adapters.TextViewBindingAdapter.setTextWatcher(this.edtPassword, (androidx.databinding.adapters.TextViewBindingAdapter.BeforeTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.OnTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.AfterTextChanged)null, edtPasswordandroidTextAttrChanged);
+            androidx.databinding.adapters.TextViewBindingAdapter.setTextWatcher(this.edtRePassword, (androidx.databinding.adapters.TextViewBindingAdapter.BeforeTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.OnTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.AfterTextChanged)null, edtRePasswordandroidTextAttrChanged);
+            this.txtAlreadyHaveAccount.setOnClickListener(mCallback36);
+        }
+        if ((dirtyFlags & 0x182L) != 0) {
+            // api target 1
+
+            androidx.databinding.adapters.CompoundButtonBindingAdapter.setChecked(this.cbSignUp, androidxDatabindingViewDataBindingSafeUnboxViewModelCbTermsAndPolicyGetValue);
+        }
+        if ((dirtyFlags & 0x181L) != 0) {
+            // api target 1
+
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.edtEmail, viewModelEmailGetValue);
+        }
+        if ((dirtyFlags & 0x1a0L) != 0) {
+            // api target 1
+
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.edtFirstName, viewModelFirstNameGetValue);
+        }
+        if ((dirtyFlags & 0x190L) != 0) {
+            // api target 1
+
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.edtLastName, viewModelLastNameGetValue);
+        }
+        if ((dirtyFlags & 0x188L) != 0) {
+            // api target 1
+
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.edtPassword, viewModelPasswordGetValue);
+        }
+        if ((dirtyFlags & 0x184L) != 0) {
+            // api target 1
+
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.edtRePassword, viewModelRePasswordGetValue);
+        }
+    }
+    // Listener Stub Implementations
+    // callback impls
+    public final void _internalCallbackOnClick(int sourceId , android.view.View callbackArg_0) {
+        switch(sourceId) {
+            case 1: {
+                // localize variables for thread safety
+                // signUpActivity != null
+                boolean signUpActivityJavaLangObjectNull = false;
+                // signUpActivity
+                com.usend.views.userauth.SignUpActivity signUpActivity = mSignUpActivity;
+
+
+
+                signUpActivityJavaLangObjectNull = (signUpActivity) != (null);
+                if (signUpActivityJavaLangObjectNull) {
+
+
+                    signUpActivity.onNextClick();
+                }
+                break;
+            }
+            case 2: {
+                // localize variables for thread safety
+                // signUpActivity != null
+                boolean signUpActivityJavaLangObjectNull = false;
+                // signUpActivity
+                com.usend.views.userauth.SignUpActivity signUpActivity = mSignUpActivity;
+
+
+
+                signUpActivityJavaLangObjectNull = (signUpActivity) != (null);
+                if (signUpActivityJavaLangObjectNull) {
+
+
+                    signUpActivity.onSignInClick();
+                }
+                break;
+            }
+        }
+    }
+    // dirty flag
+    private  long mDirtyFlags = 0xffffffffffffffffL;
+    /* flag mapping
+        flag 0 (0x1L): viewModel.email
+        flag 1 (0x2L): viewModel.cbTermsAndPolicy
+        flag 2 (0x3L): viewModel.re_password
+        flag 3 (0x4L): viewModel.password
+        flag 4 (0x5L): viewModel.lastName
+        flag 5 (0x6L): viewModel.firstName
+        flag 6 (0x7L): signUpActivity
+        flag 7 (0x8L): viewModel
+        flag 8 (0x9L): null
+    flag mapping end*/
+    //end
+}

@@ -1,0 +1,85 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v23\\values-v23.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\seemap\\Dependency\\TestingProject\\caches\\transforms-3\\f466b20e46050bd7c1985c0533ac4e5a\\transformed\\material-1.5.0\\res\\values-v23\\values-v23.xml",
+                    "from": {
+                        "startLines": "2,5,8,13,17,20,23,26,31,34,38",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,271,481,801,1038,1245,1452,1655,1987,2189,2454",
+                        "endLines": "4,7,12,16,19,22,25,30,33,37,41",
+                        "endColumns": "10,10,10,10,10,10,10,10,10,10,10",
+                        "endOffsets": "266,476,796,1033,1240,1447,1650,1982,2184,2449,2722"
+                    },
+                    "to": {
+                        "startLines": "67,70,73,78,82,85,88,91,96,99,103",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "4443,4659,4869,5189,5426,5633,5840,6043,6375,6577,6842",
+                        "endLines": "69,72,77,81,84,87,90,95,98,102,106",
+                        "endColumns": "10,10,10,10,10,10,10,10,10,10,10",
+                        "endOffsets": "4654,4864,5184,5421,5628,5835,6038,6370,6572,6837,7110"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\seemap\\Dependency\\TestingProject\\caches\\transforms-3\\d2dc4a02db0f9f39a8f6d2a8ed43441a\\transformed\\cardview-1.0.0\\res\\values-v23\\values-v23.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "4",
+                        "endColumns": "12",
+                        "endOffsets": "200"
+                    },
+                    "to": {
+                        "startLines": "64",
+                        "startColumns": "4",
+                        "startOffsets": "4293",
+                        "endLines": "66",
+                        "endColumns": "12",
+                        "endOffsets": "4438"
+                    }
+                },
+                {
+                    "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\values-v23\\styles.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "103",
+                        "endLines": "16",
+                        "endColumns": "12",
+                        "endOffsets": "867"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "15",
+                        "endColumns": "12",
+                        "endOffsets": "819"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\seemap\\Dependency\\TestingProject\\caches\\transforms-3\\680047c22fad7c16a8eea6a0e571fb1f\\transformed\\appcompat-1.4.1\\res\\values-v23\\values-v23.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,20,34,35,36,39,43,44,45,46",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,190,325,400,487,1371,2267,2386,2513,2735,2959,3074,3181,3294",
+                        "endLines": "2,3,4,5,19,33,34,35,38,42,43,44,45,49",
+                        "endColumns": "134,134,74,86,12,12,118,126,12,12,114,106,112,12",
+                        "endOffsets": "185,320,395,482,1366,2262,2381,2508,2730,2954,3069,3176,3289,3519"
+                    },
+                    "to": {
+                        "startLines": "16,17,18,19,20,34,48,49,50,53,57,58,59,60",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "824,959,1094,1169,1256,2140,3036,3155,3282,3504,3728,3843,3950,4063",
+                        "endLines": "16,17,18,19,33,47,48,49,52,56,57,58,59,63",
+                        "endColumns": "134,134,74,86,12,12,118,126,12,12,114,106,112,12",
+                        "endOffsets": "954,1089,1164,1251,2135,3031,3150,3277,3499,3723,3838,3945,4058,4288"
+                    }
+                }
+            ]
+        }
+    ]
+}

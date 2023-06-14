@@ -1,0 +1,149 @@
+package com.usend.databinding;
+import com.usend.R;
+import com.usend.BR;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import android.view.View;
+@SuppressWarnings("unchecked")
+public class RowItemNotiBindingImpl extends RowItemNotiBinding  {
+
+    @Nullable
+    private static final androidx.databinding.ViewDataBinding.IncludedLayouts sIncludes;
+    @Nullable
+    private static final android.util.SparseIntArray sViewsWithIds;
+    static {
+        sIncludes = null;
+        sViewsWithIds = new android.util.SparseIntArray();
+        sViewsWithIds.put(R.id.flDelete, 2);
+        sViewsWithIds.put(R.id.imgDelete, 3);
+        sViewsWithIds.put(R.id.flFront, 4);
+        sViewsWithIds.put(R.id.cardMain, 5);
+        sViewsWithIds.put(R.id.txtNoti, 6);
+        sViewsWithIds.put(R.id.txtDate, 7);
+    }
+    // views
+    @NonNull
+    private final android.view.View mboundView1;
+    // variables
+    // values
+    // listeners
+    // Inverse Binding Event Handlers
+
+    public RowItemNotiBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 8, sIncludes, sViewsWithIds));
+    }
+    private RowItemNotiBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
+        super(bindingComponent, root, 0
+            , (com.google.android.material.card.MaterialCardView) bindings[5]
+            , (android.widget.FrameLayout) bindings[2]
+            , (android.widget.FrameLayout) bindings[4]
+            , (androidx.appcompat.widget.AppCompatImageView) bindings[3]
+            , (com.chauthai.swipereveallayout.SwipeRevealLayout) bindings[0]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[7]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[6]
+            );
+        this.mboundView1 = (android.view.View) bindings[1];
+        this.mboundView1.setTag(null);
+        this.swipe.setTag(null);
+        setRootTag(root);
+        // listeners
+        invalidateAll();
+    }
+
+    @Override
+    public void invalidateAll() {
+        synchronized(this) {
+                mDirtyFlags = 0x2L;
+        }
+        requestRebind();
+    }
+
+    @Override
+    public boolean hasPendingBindings() {
+        synchronized(this) {
+            if (mDirtyFlags != 0) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    @Override
+    public boolean setVariable(int variableId, @Nullable Object variable)  {
+        boolean variableSet = true;
+        if (BR.isRead == variableId) {
+            setIsRead((java.lang.Boolean) variable);
+        }
+        else {
+            variableSet = false;
+        }
+            return variableSet;
+    }
+
+    public void setIsRead(@Nullable java.lang.Boolean IsRead) {
+        this.mIsRead = IsRead;
+        synchronized(this) {
+            mDirtyFlags |= 0x1L;
+        }
+        notifyPropertyChanged(BR.isRead);
+        super.requestRebind();
+    }
+
+    @Override
+    protected boolean onFieldChange(int localFieldId, Object object, int fieldId) {
+        switch (localFieldId) {
+        }
+        return false;
+    }
+
+    @Override
+    protected void executeBindings() {
+        long dirtyFlags = 0;
+        synchronized(this) {
+            dirtyFlags = mDirtyFlags;
+            mDirtyFlags = 0;
+        }
+        java.lang.Boolean isRead = mIsRead;
+        int isReadMboundView1AndroidColorColor5A9E41MboundView1AndroidColorColor154A99 = 0;
+        boolean androidxDatabindingViewDataBindingSafeUnboxIsRead = false;
+
+        if ((dirtyFlags & 0x3L) != 0) {
+
+
+
+                // read androidx.databinding.ViewDataBinding.safeUnbox(isRead)
+                androidxDatabindingViewDataBindingSafeUnboxIsRead = androidx.databinding.ViewDataBinding.safeUnbox(isRead);
+            if((dirtyFlags & 0x3L) != 0) {
+                if(androidxDatabindingViewDataBindingSafeUnboxIsRead) {
+                        dirtyFlags |= 0x8L;
+                }
+                else {
+                        dirtyFlags |= 0x4L;
+                }
+            }
+
+
+                // read androidx.databinding.ViewDataBinding.safeUnbox(isRead) ? @android:color/color5A9E41 : @android:color/color154A99
+                isReadMboundView1AndroidColorColor5A9E41MboundView1AndroidColorColor154A99 = ((androidxDatabindingViewDataBindingSafeUnboxIsRead) ? (getColorFromResource(mboundView1, R.color.color5A9E41)) : (getColorFromResource(mboundView1, R.color.color154A99)));
+        }
+        // batch finished
+        if ((dirtyFlags & 0x3L) != 0) {
+            // api target 21
+            if(getBuildSdkInt() >= 21) {
+
+                this.mboundView1.setBackgroundTintList(androidx.databinding.adapters.Converters.convertColorToColorStateList(isReadMboundView1AndroidColorColor5A9E41MboundView1AndroidColorColor154A99));
+            }
+        }
+    }
+    // Listener Stub Implementations
+    // callback impls
+    // dirty flag
+    private  long mDirtyFlags = 0xffffffffffffffffL;
+    /* flag mapping
+        flag 0 (0x1L): isRead
+        flag 1 (0x2L): null
+        flag 2 (0x3L): androidx.databinding.ViewDataBinding.safeUnbox(isRead) ? @android:color/color5A9E41 : @android:color/color154A99
+        flag 3 (0x4L): androidx.databinding.ViewDataBinding.safeUnbox(isRead) ? @android:color/color5A9E41 : @android:color/color154A99
+    flag mapping end*/
+    //end
+}

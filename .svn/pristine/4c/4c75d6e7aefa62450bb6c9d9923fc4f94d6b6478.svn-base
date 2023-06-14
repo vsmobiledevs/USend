@@ -1,0 +1,114 @@
+package com.usend.viewmodels
+
+import android.app.Activity
+import android.app.Application
+import android.content.Context
+import androidx.lifecycle.MediatorLiveData
+import com.amplifyframework.core.Amplify
+import com.usend.R
+import com.usend.comman.Resource
+import com.usend.repository.UserRepository
+import com.usend.base.BaseViewModel
+import com.usend.extensions.checkInternetConnected
+import com.usend.extensions.showToast
+import com.usend.utils.AWSUploadMultipleTask
+import com.usend.utils.CONCIERGE
+import com.usend.utils.JLog
+import com.usend.utils.PUBLIC
+import java.io.File
+
+class CreateReqViewModel(
+    application: Application,
+    private var repository: UserRepository
+) :
+    BaseViewModel(application) {
+
+    val mContext: Context = application.applicationContext
+
+    val status: MediatorLiveData<Any> by lazy {
+        MediatorLiveData<Any>()
+    }
+
+    private var awsMultiImageUpload : AWSUploadMultipleTask? = null
+
+    val productImage by lazy { MediatorLiveData<String>() }
+    val productName by lazy { MediatorLiveData<String>() }
+    val websiteLink by lazy { MediatorLiveData<String>() }
+    val cost by lazy { MediatorLiveData<String>() }
+    val desc by lazy { MediatorLiveData<String>() }
+    val cbTerms by lazy { MediatorLiveData<Boolean>() }
+    val mFile by lazy { MediatorLiveData<File>() }
+    var activityContext : Activity? = null
+
+    fun submit() {
+
+        when {
+            !mContext.checkInternetConnected() -> status.value =
+                Resource.NoInternetError<Int>(R.string.default_internet_message)
+            productImage.value.isNullOrEmpty() || mFile.value == null -> status.value =
+                Resource.ValidationError<Int>(R.string.msg_plz_select_product_image)
+            productName.value.isNullOrEmpty() -> status.value =
+                Resource.ValidationError<Int>(R.string.msg_enter_product_name)
+            websiteLink.value.isNullOrEmpty() -> status.value =
+                Resource.ValidationError<Int>(R.string.msg_enter_website_link)
+            cost.value.isNullOrEmpty() -> status.value =
+                Resource.ValidationError<Int>(R.string.msg_enter_cost)
+            desc.value.isNullOrEmpty() -> status.value =
+                Resource.ValidationError<Int>(R.string.msg_enter_desc)
+            /*cbTerms.value == null || !cbTerms.value!! -> status.value = Resource.ValidationError<Int>(R.string.msg_autho_charge)*/
+            else -> {
+
+                status.value = Resource.Loading<Boolean>(true)
+                uploadToAmazone()
+            }
+        }
+    }
+
+    fun createConciergeReq(
+        desc: String,
+        cost: Float,
+        productName : String,
+        webSiteLink : String,
+        productImage : String
+    ) {
+        when {
+            !mContext.checkInternetConnected() -> status.value =
+                Resource.NoInternetError<Int>(R.string.default_internet_message)
+            else -> {
+                status.addSource(
+                    repository.createConciergeReq(
+                        authToken = getAuthKey(),
+                        productName = productName,
+                        webSiteLink = webSiteLink,
+                        cost = cost,
+                        desc = desc,
+                        productImage = productImage
+                    )
+                ) {
+
+                    if(it is Resource.Success<*>) {
+                        //can save for further use
+
+                    }
+
+                    status.value = it
+                }
+            }
+        }
+    }
+
+    private fun uploadToAmazone() {
+
+        Amplify.Storage.uploadFile("${CONCIERGE}${productImage.value!!}", mFile.value!!,
+            { _ ->
+                status.value = Resource.Loading<Boolean>(false)
+                createConciergeReq(desc = desc.value!!, cost = cost.value!!.toFloat(), webSiteLink = websiteLink.value!!, productName = productName.value!!, productImage = PUBLIC + CONCIERGE + productImage.value!!)
+            },
+            { error ->
+                status.value = Resource.Loading<Boolean>(false)
+                JLog.e("AWS Upload Error","$error")
+                showToast(mContext, error.localizedMessage)
+            })
+
+    }
+}

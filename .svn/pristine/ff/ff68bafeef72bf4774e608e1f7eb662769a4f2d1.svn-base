@@ -1,0 +1,3 @@
+package com.usend.fcm
+
+class NewNotificationEvent(var type : String, var status : String)

@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.amplifyframework:aws-storage-s3:1.1.2@aar">
+    <CLASSES>
+      <root url="file://E:/Sonu g3/SDK/caches/transforms-2/files-2.1/6be078fa6ed0edcabf2b2918aa70e0f5/jetified-aws-storage-s3-1.1.2/res" />
+      <root url="file://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/9c22076d7384b9c3df017af75dd99d89/jetified-aws-storage-s3-1.1.2/AndroidManifest.xml" />
+      <root url="jar://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/9c22076d7384b9c3df017af75dd99d89/jetified-aws-storage-s3-1.1.2/jars/classes.jar!/" />
+      <root url="file://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/9c22076d7384b9c3df017af75dd99d89/jetified-aws-storage-s3-1.1.2/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://E:/Sonu g3/SDK/caches/modules-2/files-2.1/com.amplifyframework/aws-storage-s3/1.1.2/241b3bb5a6322cd2135d2917087380b70503589/aws-storage-s3-1.1.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

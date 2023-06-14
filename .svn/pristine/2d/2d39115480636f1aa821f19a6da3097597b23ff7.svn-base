@@ -1,0 +1,170 @@
+package com.usend.databinding;
+import com.usend.R;
+import com.usend.BR;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import android.view.View;
+@SuppressWarnings("unchecked")
+public class ActivityVerificationStatusBindingImpl extends ActivityVerificationStatusBinding  {
+
+    @Nullable
+    private static final androidx.databinding.ViewDataBinding.IncludedLayouts sIncludes;
+    @Nullable
+    private static final android.util.SparseIntArray sViewsWithIds;
+    static {
+        sIncludes = null;
+        sViewsWithIds = new android.util.SparseIntArray();
+        sViewsWithIds.put(R.id.toolbarVerification, 4);
+        sViewsWithIds.put(R.id.imgVerificationStatus, 5);
+        sViewsWithIds.put(R.id.txtVerificationStatus, 6);
+        sViewsWithIds.put(R.id.txtVerificationDesc, 7);
+    }
+    // views
+    @NonNull
+    private final android.widget.LinearLayout mboundView0;
+    // variables
+    // values
+    // listeners
+    // Inverse Binding Event Handlers
+
+    public ActivityVerificationStatusBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 8, sIncludes, sViewsWithIds));
+    }
+    private ActivityVerificationStatusBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
+        super(bindingComponent, root, 0
+            , (com.google.android.material.button.MaterialButton) bindings[3]
+            , (com.google.android.material.button.MaterialButton) bindings[1]
+            , (com.google.android.material.button.MaterialButton) bindings[2]
+            , (androidx.appcompat.widget.AppCompatImageView) bindings[5]
+            , (android.view.View) bindings[4]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[7]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[6]
+            );
+        this.btnContactAdmin.setTag(null);
+        this.btnOkay.setTag(null);
+        this.btnUpdateDocs.setTag(null);
+        this.mboundView0 = (android.widget.LinearLayout) bindings[0];
+        this.mboundView0.setTag(null);
+        setRootTag(root);
+        // listeners
+        invalidateAll();
+    }
+
+    @Override
+    public void invalidateAll() {
+        synchronized(this) {
+                mDirtyFlags = 0x2L;
+        }
+        requestRebind();
+    }
+
+    @Override
+    public boolean hasPendingBindings() {
+        synchronized(this) {
+            if (mDirtyFlags != 0) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    @Override
+    public boolean setVariable(int variableId, @Nullable Object variable)  {
+        boolean variableSet = true;
+        if (BR.status == variableId) {
+            setStatus((java.lang.Integer) variable);
+        }
+        else {
+            variableSet = false;
+        }
+            return variableSet;
+    }
+
+    public void setStatus(@Nullable java.lang.Integer Status) {
+        this.mStatus = Status;
+        synchronized(this) {
+            mDirtyFlags |= 0x1L;
+        }
+        notifyPropertyChanged(BR.status);
+        super.requestRebind();
+    }
+
+    @Override
+    protected boolean onFieldChange(int localFieldId, Object object, int fieldId) {
+        switch (localFieldId) {
+        }
+        return false;
+    }
+
+    @Override
+    protected void executeBindings() {
+        long dirtyFlags = 0;
+        synchronized(this) {
+            dirtyFlags = mDirtyFlags;
+            mDirtyFlags = 0;
+        }
+        int statusInt1ViewVISIBLEViewGONE = 0;
+        java.lang.Integer status = mStatus;
+        boolean statusInt1 = false;
+        boolean statusInt2 = false;
+        int statusInt2ViewVISIBLEViewGONE = 0;
+        int androidxDatabindingViewDataBindingSafeUnboxStatus = 0;
+
+        if ((dirtyFlags & 0x3L) != 0) {
+
+
+
+                // read androidx.databinding.ViewDataBinding.safeUnbox(status)
+                androidxDatabindingViewDataBindingSafeUnboxStatus = androidx.databinding.ViewDataBinding.safeUnbox(status);
+
+
+                // read androidx.databinding.ViewDataBinding.safeUnbox(status) == 1
+                statusInt1 = (androidxDatabindingViewDataBindingSafeUnboxStatus) == (1);
+                // read androidx.databinding.ViewDataBinding.safeUnbox(status) == 2
+                statusInt2 = (androidxDatabindingViewDataBindingSafeUnboxStatus) == (2);
+            if((dirtyFlags & 0x3L) != 0) {
+                if(statusInt1) {
+                        dirtyFlags |= 0x8L;
+                }
+                else {
+                        dirtyFlags |= 0x4L;
+                }
+            }
+            if((dirtyFlags & 0x3L) != 0) {
+                if(statusInt2) {
+                        dirtyFlags |= 0x20L;
+                }
+                else {
+                        dirtyFlags |= 0x10L;
+                }
+            }
+
+
+                // read androidx.databinding.ViewDataBinding.safeUnbox(status) == 1 ? View.VISIBLE : View.GONE
+                statusInt1ViewVISIBLEViewGONE = ((statusInt1) ? (android.view.View.VISIBLE) : (android.view.View.GONE));
+                // read androidx.databinding.ViewDataBinding.safeUnbox(status) == 2 ? View.VISIBLE : View.GONE
+                statusInt2ViewVISIBLEViewGONE = ((statusInt2) ? (android.view.View.VISIBLE) : (android.view.View.GONE));
+        }
+        // batch finished
+        if ((dirtyFlags & 0x3L) != 0) {
+            // api target 1
+
+            this.btnContactAdmin.setVisibility(statusInt1ViewVISIBLEViewGONE);
+            this.btnOkay.setVisibility(statusInt2ViewVISIBLEViewGONE);
+            this.btnUpdateDocs.setVisibility(statusInt1ViewVISIBLEViewGONE);
+        }
+    }
+    // Listener Stub Implementations
+    // callback impls
+    // dirty flag
+    private  long mDirtyFlags = 0xffffffffffffffffL;
+    /* flag mapping
+        flag 0 (0x1L): status
+        flag 1 (0x2L): null
+        flag 2 (0x3L): androidx.databinding.ViewDataBinding.safeUnbox(status) == 1 ? View.VISIBLE : View.GONE
+        flag 3 (0x4L): androidx.databinding.ViewDataBinding.safeUnbox(status) == 1 ? View.VISIBLE : View.GONE
+        flag 4 (0x5L): androidx.databinding.ViewDataBinding.safeUnbox(status) == 2 ? View.VISIBLE : View.GONE
+        flag 5 (0x6L): androidx.databinding.ViewDataBinding.safeUnbox(status) == 2 ? View.VISIBLE : View.GONE
+    flag mapping end*/
+    //end
+}

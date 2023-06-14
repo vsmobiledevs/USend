@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#5A9E41</color>
+    <color name="colorPrimaryDark">#5A9E41</color>
+    <color name="colorAccent">#5A9E41</color>
+
+    <color name="color101010">#101010</color>
+    <color name="color5A9E41">#5A9E41</color>
+    <color name="colorRed">#ff0000</color>
+    <color name="color509238">#509238</color>
+    <color name="color265A9E41">#265A9E41</color>
+    <color name="colorFF9500">#FF9500</color>
+    <color name="color2D2D2D">#2D2D2D</color>
+    <color name="colorCC2D2D2D">#CC2D2D2D</color>
+    <color name="color2E2E2E">#2E2E2E</color>
+    <color name="color154A99">#154A99</color>
+    <color name="color94A2AB">#94A2AB</color>
+    <color name="color979797">#979797</color>
+    <color name="color616161">#616161</color>
+    <color name="colorEEBB2E">#EEBB2E</color>
+    <color name="colorE82D2D">#E82D2D</color>
+    <color name="color404355">#404355</color>
+    <color name="color1A707070">#1A707070</color>
+    <color name="color802D2D2D">#802D2D2D</color>
+    <color name="color80000000">#80000000</color>
+    <color name="color4D2D2D2D">#4D2D2D2D</color>
+    <color name="color1A2D2D2D">#1A2D2D2D</color>
+    <color name="colorC7D9F8">#C7D9F8</color>
+    <color name="color5D627526">#5D627526</color>
+    <color name="colorF2F7FF">#F2F7FF</color>
+    <color name="colorE7EBEE">#E7EBEE</color>
+    <color name="colorACB7D2">#acb7d2</color>
+    <color name="colorFFD800">#FFD800</color>
+    <color name="colorTrans">#00000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorLink">#436ead</color>
+    <color name="colorGreen">#3CA33C</color>
+
+    <color name="colorGray">#818181</color>
+    <color name="colorGray1">#D3D3D3</color>
+    <color name="colorGray2">#F2F2F2</color>
+    <color name="colorGray3">#AAAAAA</color>
+    <color name="sqip_default_grey">#AAAAAA</color>
+
+    <color name="colorGreen1">#50D3C1</color>
+
+    <color name="colorFacebook">#3B5999</color>
+    <color name="colorGoogle">#DC4A38</color>
+    <color name="colorTwitter">#55ACEE</color>
+
+
+</resources>

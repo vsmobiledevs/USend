@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.fragment:fragment-ktx:1.2.5@aar">
+    <CLASSES>
+      <root url="file://E:/Sonu g3/SDK/caches/transforms-2/files-2.1/d69de95054163242adeeeba034b48777/jetified-fragment-ktx-1.2.5/res" />
+      <root url="file://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/b75e42240934b5685e71797ae2be990f/jetified-fragment-ktx-1.2.5/AndroidManifest.xml" />
+      <root url="file://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/b75e42240934b5685e71797ae2be990f/jetified-fragment-ktx-1.2.5/res" />
+      <root url="jar://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/b75e42240934b5685e71797ae2be990f/jetified-fragment-ktx-1.2.5/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://E:/Sonu g3/SDK/caches/modules-2/files-2.1/androidx.fragment/fragment-ktx/1.2.5/1ffa885329ceba2ceb2bea1253d2ca32a0c95fa7/fragment-ktx-1.2.5-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

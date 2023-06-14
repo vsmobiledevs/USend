@@ -1,0 +1,45 @@
+package com.usend;
+
+public class BR {
+  public static final int _all = 0;
+
+  public static final int activity = 1;
+
+  public static final int adapter = 2;
+
+  public static final int authFrag = 3;
+
+  public static final int billingActivity = 4;
+
+  public static final int frag = 5;
+
+  public static final int introActivity = 6;
+
+  public static final int isEmpty = 7;
+
+  public static final int isRead = 8;
+
+  public static final int isSelectMode = 9;
+
+  public static final int isSelected = 10;
+
+  public static final int isSeleted = 11;
+
+  public static final int isSplit = 12;
+
+  public static final int paymentActivity = 13;
+
+  public static final int selectedValue = 14;
+
+  public static final int signInActivity = 15;
+
+  public static final int signUpActivity = 16;
+
+  public static final int status = 17;
+
+  public static final int viewModel = 18;
+
+  public static final int viewmodel = 19;
+
+  public static final int visibility = 20;
+}

@@ -1,0 +1,1039 @@
+package com.usend.databinding;
+import com.usend.R;
+import com.usend.BR;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import android.view.View;
+@SuppressWarnings("unchecked")
+public class ActivityEditProfileBindingImpl extends ActivityEditProfileBinding implements com.usend.generated.callback.OnClickListener.Listener {
+
+    @Nullable
+    private static final androidx.databinding.ViewDataBinding.IncludedLayouts sIncludes;
+    @Nullable
+    private static final android.util.SparseIntArray sViewsWithIds;
+    static {
+        sIncludes = null;
+        sViewsWithIds = new android.util.SparseIntArray();
+        sViewsWithIds.put(R.id.toolbarEditProfile, 13);
+        sViewsWithIds.put(R.id.txtEmailTitle, 14);
+        sViewsWithIds.put(R.id.txtFirstNameTitle, 15);
+        sViewsWithIds.put(R.id.txtLastNameTitle, 16);
+        sViewsWithIds.put(R.id.txtAddressLine, 17);
+        sViewsWithIds.put(R.id.txtCityTitle, 18);
+        sViewsWithIds.put(R.id.txtStateTitle, 19);
+        sViewsWithIds.put(R.id.txtCountryTitle, 20);
+        sViewsWithIds.put(R.id.txtZipCodeTitle, 21);
+        sViewsWithIds.put(R.id.txtPhoneNumberTitle, 22);
+    }
+    // views
+    @NonNull
+    private final android.widget.LinearLayout mboundView0;
+    // variables
+    @Nullable
+    private final android.view.View.OnClickListener mCallback32;
+    @Nullable
+    private final android.view.View.OnClickListener mCallback31;
+    @Nullable
+    private final android.view.View.OnClickListener mCallback33;
+    @Nullable
+    private final android.view.View.OnClickListener mCallback34;
+    // values
+    // listeners
+    // Inverse Binding Event Handlers
+    private androidx.databinding.InverseBindingListener edtAddressLine1androidTextAttrChanged = new androidx.databinding.InverseBindingListener() {
+        @Override
+        public void onChange() {
+            // Inverse of viewModel.addressLine1.getValue()
+            //         is viewModel.addressLine1.setValue((java.lang.String) callbackArg_0)
+            java.lang.String callbackArg_0 = androidx.databinding.adapters.TextViewBindingAdapter.getTextString(edtAddressLine1);
+            // localize variables for thread safety
+            // viewModel.addressLine1
+            androidx.lifecycle.MediatorLiveData<java.lang.String> viewModelAddressLine1 = null;
+            // viewModel.addressLine1.getValue()
+            java.lang.String viewModelAddressLine1GetValue = null;
+            // viewModel.addressLine1 != null
+            boolean viewModelAddressLine1JavaLangObjectNull = false;
+            // viewModel
+            com.usend.viewmodels.EditProfileViewModel viewModel = mViewModel;
+            // viewModel != null
+            boolean viewModelJavaLangObjectNull = false;
+
+
+
+            viewModelJavaLangObjectNull = (viewModel) != (null);
+            if (viewModelJavaLangObjectNull) {
+
+
+                viewModelAddressLine1 = viewModel.getAddressLine1();
+
+                viewModelAddressLine1JavaLangObjectNull = (viewModelAddressLine1) != (null);
+                if (viewModelAddressLine1JavaLangObjectNull) {
+
+
+
+
+                    viewModelAddressLine1.setValue(((java.lang.String) (callbackArg_0)));
+                }
+            }
+        }
+    };
+    private androidx.databinding.InverseBindingListener edtAddressLine2androidTextAttrChanged = new androidx.databinding.InverseBindingListener() {
+        @Override
+        public void onChange() {
+            // Inverse of viewModel.addressLine2.getValue()
+            //         is viewModel.addressLine2.setValue((java.lang.String) callbackArg_0)
+            java.lang.String callbackArg_0 = androidx.databinding.adapters.TextViewBindingAdapter.getTextString(edtAddressLine2);
+            // localize variables for thread safety
+            // viewModel.addressLine2
+            androidx.lifecycle.MediatorLiveData<java.lang.String> viewModelAddressLine2 = null;
+            // viewModel.addressLine2 != null
+            boolean viewModelAddressLine2JavaLangObjectNull = false;
+            // viewModel.addressLine2.getValue()
+            java.lang.String viewModelAddressLine2GetValue = null;
+            // viewModel
+            com.usend.viewmodels.EditProfileViewModel viewModel = mViewModel;
+            // viewModel != null
+            boolean viewModelJavaLangObjectNull = false;
+
+
+
+            viewModelJavaLangObjectNull = (viewModel) != (null);
+            if (viewModelJavaLangObjectNull) {
+
+
+                viewModelAddressLine2 = viewModel.getAddressLine2();
+
+                viewModelAddressLine2JavaLangObjectNull = (viewModelAddressLine2) != (null);
+                if (viewModelAddressLine2JavaLangObjectNull) {
+
+
+
+
+                    viewModelAddressLine2.setValue(((java.lang.String) (callbackArg_0)));
+                }
+            }
+        }
+    };
+    private androidx.databinding.InverseBindingListener edtCityandroidTextAttrChanged = new androidx.databinding.InverseBindingListener() {
+        @Override
+        public void onChange() {
+            // Inverse of viewModel.city.getValue()
+            //         is viewModel.city.setValue((java.lang.String) callbackArg_0)
+            java.lang.String callbackArg_0 = androidx.databinding.adapters.TextViewBindingAdapter.getTextString(edtCity);
+            // localize variables for thread safety
+            // viewModel.city != null
+            boolean viewModelCityJavaLangObjectNull = false;
+            // viewModel
+            com.usend.viewmodels.EditProfileViewModel viewModel = mViewModel;
+            // viewModel.city.getValue()
+            java.lang.String viewModelCityGetValue = null;
+            // viewModel != null
+            boolean viewModelJavaLangObjectNull = false;
+            // viewModel.city
+            androidx.lifecycle.MediatorLiveData<java.lang.String> viewModelCity = null;
+
+
+
+            viewModelJavaLangObjectNull = (viewModel) != (null);
+            if (viewModelJavaLangObjectNull) {
+
+
+                viewModelCity = viewModel.getCity();
+
+                viewModelCityJavaLangObjectNull = (viewModelCity) != (null);
+                if (viewModelCityJavaLangObjectNull) {
+
+
+
+
+                    viewModelCity.setValue(((java.lang.String) (callbackArg_0)));
+                }
+            }
+        }
+    };
+    private androidx.databinding.InverseBindingListener edtCountryandroidTextAttrChanged = new androidx.databinding.InverseBindingListener() {
+        @Override
+        public void onChange() {
+            // Inverse of viewModel.country.getValue()
+            //         is viewModel.country.setValue((java.lang.String) callbackArg_0)
+            java.lang.String callbackArg_0 = androidx.databinding.adapters.TextViewBindingAdapter.getTextString(edtCountry);
+            // localize variables for thread safety
+            // viewModel.country.getValue()
+            java.lang.String viewModelCountryGetValue = null;
+            // viewModel.country
+            androidx.lifecycle.MediatorLiveData<java.lang.String> viewModelCountry = null;
+            // viewModel
+            com.usend.viewmodels.EditProfileViewModel viewModel = mViewModel;
+            // viewModel != null
+            boolean viewModelJavaLangObjectNull = false;
+            // viewModel.country != null
+            boolean viewModelCountryJavaLangObjectNull = false;
+
+
+
+            viewModelJavaLangObjectNull = (viewModel) != (null);
+            if (viewModelJavaLangObjectNull) {
+
+
+                viewModelCountry = viewModel.getCountry();
+
+                viewModelCountryJavaLangObjectNull = (viewModelCountry) != (null);
+                if (viewModelCountryJavaLangObjectNull) {
+
+
+
+
+                    viewModelCountry.setValue(((java.lang.String) (callbackArg_0)));
+                }
+            }
+        }
+    };
+    private androidx.databinding.InverseBindingListener edtCountryCodeandroidTextAttrChanged = new androidx.databinding.InverseBindingListener() {
+        @Override
+        public void onChange() {
+            // Inverse of viewModel.countryCode.getValue()
+            //         is viewModel.countryCode.setValue((java.lang.String) callbackArg_0)
+            java.lang.String callbackArg_0 = androidx.databinding.adapters.TextViewBindingAdapter.getTextString(edtCountryCode);
+            // localize variables for thread safety
+            // viewModel.countryCode
+            androidx.lifecycle.MediatorLiveData<java.lang.String> viewModelCountryCode = null;
+            // viewModel
+            com.usend.viewmodels.EditProfileViewModel viewModel = mViewModel;
+            // viewModel != null
+            boolean viewModelJavaLangObjectNull = false;
+            // viewModel.countryCode.getValue()
+            java.lang.String viewModelCountryCodeGetValue = null;
+            // viewModel.countryCode != null
+            boolean viewModelCountryCodeJavaLangObjectNull = false;
+
+
+
+            viewModelJavaLangObjectNull = (viewModel) != (null);
+            if (viewModelJavaLangObjectNull) {
+
+
+                viewModelCountryCode = viewModel.getCountryCode();
+
+                viewModelCountryCodeJavaLangObjectNull = (viewModelCountryCode) != (null);
+                if (viewModelCountryCodeJavaLangObjectNull) {
+
+
+
+
+                    viewModelCountryCode.setValue(((java.lang.String) (callbackArg_0)));
+                }
+            }
+        }
+    };
+    private androidx.databinding.InverseBindingListener edtEmailandroidTextAttrChanged = new androidx.databinding.InverseBindingListener() {
+        @Override
+        public void onChange() {
+            // Inverse of viewModel.email.getValue()
+            //         is viewModel.email.setValue((java.lang.String) callbackArg_0)
+            java.lang.String callbackArg_0 = androidx.databinding.adapters.TextViewBindingAdapter.getTextString(edtEmail);
+            // localize variables for thread safety
+            // viewModel.email.getValue()
+            java.lang.String viewModelEmailGetValue = null;
+            // viewModel.email
+            androidx.lifecycle.MediatorLiveData<java.lang.String> viewModelEmail = null;
+            // viewModel
+            com.usend.viewmodels.EditProfileViewModel viewModel = mViewModel;
+            // viewModel != null
+            boolean viewModelJavaLangObjectNull = false;
+            // viewModel.email != null
+            boolean viewModelEmailJavaLangObjectNull = false;
+
+
+
+            viewModelJavaLangObjectNull = (viewModel) != (null);
+            if (viewModelJavaLangObjectNull) {
+
+
+                viewModelEmail = viewModel.getEmail();
+
+                viewModelEmailJavaLangObjectNull = (viewModelEmail) != (null);
+                if (viewModelEmailJavaLangObjectNull) {
+
+
+
+
+                    viewModelEmail.setValue(((java.lang.String) (callbackArg_0)));
+                }
+            }
+        }
+    };
+    private androidx.databinding.InverseBindingListener edtFirstNameandroidTextAttrChanged = new androidx.databinding.InverseBindingListener() {
+        @Override
+        public void onChange() {
+            // Inverse of viewModel.firstName.getValue()
+            //         is viewModel.firstName.setValue((java.lang.String) callbackArg_0)
+            java.lang.String callbackArg_0 = androidx.databinding.adapters.TextViewBindingAdapter.getTextString(edtFirstName);
+            // localize variables for thread safety
+            // viewModel.firstName
+            androidx.lifecycle.MediatorLiveData<java.lang.String> viewModelFirstName = null;
+            // viewModel.firstName != null
+            boolean viewModelFirstNameJavaLangObjectNull = false;
+            // viewModel.firstName.getValue()
+            java.lang.String viewModelFirstNameGetValue = null;
+            // viewModel
+            com.usend.viewmodels.EditProfileViewModel viewModel = mViewModel;
+            // viewModel != null
+            boolean viewModelJavaLangObjectNull = false;
+
+
+
+            viewModelJavaLangObjectNull = (viewModel) != (null);
+            if (viewModelJavaLangObjectNull) {
+
+
+                viewModelFirstName = viewModel.getFirstName();
+
+                viewModelFirstNameJavaLangObjectNull = (viewModelFirstName) != (null);
+                if (viewModelFirstNameJavaLangObjectNull) {
+
+
+
+
+                    viewModelFirstName.setValue(((java.lang.String) (callbackArg_0)));
+                }
+            }
+        }
+    };
+    private androidx.databinding.InverseBindingListener edtLastNameandroidTextAttrChanged = new androidx.databinding.InverseBindingListener() {
+        @Override
+        public void onChange() {
+            // Inverse of viewModel.lastName.getValue()
+            //         is viewModel.lastName.setValue((java.lang.String) callbackArg_0)
+            java.lang.String callbackArg_0 = androidx.databinding.adapters.TextViewBindingAdapter.getTextString(edtLastName);
+            // localize variables for thread safety
+            // viewModel.lastName.getValue()
+            java.lang.String viewModelLastNameGetValue = null;
+            // viewModel.lastName != null
+            boolean viewModelLastNameJavaLangObjectNull = false;
+            // viewModel
+            com.usend.viewmodels.EditProfileViewModel viewModel = mViewModel;
+            // viewModel.lastName
+            androidx.lifecycle.MediatorLiveData<java.lang.String> viewModelLastName = null;
+            // viewModel != null
+            boolean viewModelJavaLangObjectNull = false;
+
+
+
+            viewModelJavaLangObjectNull = (viewModel) != (null);
+            if (viewModelJavaLangObjectNull) {
+
+
+                viewModelLastName = viewModel.getLastName();
+
+                viewModelLastNameJavaLangObjectNull = (viewModelLastName) != (null);
+                if (viewModelLastNameJavaLangObjectNull) {
+
+
+
+
+                    viewModelLastName.setValue(((java.lang.String) (callbackArg_0)));
+                }
+            }
+        }
+    };
+    private androidx.databinding.InverseBindingListener edtPhoneandroidTextAttrChanged = new androidx.databinding.InverseBindingListener() {
+        @Override
+        public void onChange() {
+            // Inverse of viewModel.phoneNumber.getValue()
+            //         is viewModel.phoneNumber.setValue((java.lang.String) callbackArg_0)
+            java.lang.String callbackArg_0 = androidx.databinding.adapters.TextViewBindingAdapter.getTextString(edtPhone);
+            // localize variables for thread safety
+            // viewModel.phoneNumber
+            androidx.lifecycle.MediatorLiveData<java.lang.String> viewModelPhoneNumber = null;
+            // viewModel.phoneNumber != null
+            boolean viewModelPhoneNumberJavaLangObjectNull = false;
+            // viewModel
+            com.usend.viewmodels.EditProfileViewModel viewModel = mViewModel;
+            // viewModel.phoneNumber.getValue()
+            java.lang.String viewModelPhoneNumberGetValue = null;
+            // viewModel != null
+            boolean viewModelJavaLangObjectNull = false;
+
+
+
+            viewModelJavaLangObjectNull = (viewModel) != (null);
+            if (viewModelJavaLangObjectNull) {
+
+
+                viewModelPhoneNumber = viewModel.getPhoneNumber();
+
+                viewModelPhoneNumberJavaLangObjectNull = (viewModelPhoneNumber) != (null);
+                if (viewModelPhoneNumberJavaLangObjectNull) {
+
+
+
+
+                    viewModelPhoneNumber.setValue(((java.lang.String) (callbackArg_0)));
+                }
+            }
+        }
+    };
+    private androidx.databinding.InverseBindingListener edtStateandroidTextAttrChanged = new androidx.databinding.InverseBindingListener() {
+        @Override
+        public void onChange() {
+            // Inverse of viewModel.state.getValue()
+            //         is viewModel.state.setValue((java.lang.String) callbackArg_0)
+            java.lang.String callbackArg_0 = androidx.databinding.adapters.TextViewBindingAdapter.getTextString(edtState);
+            // localize variables for thread safety
+            // viewModel.state
+            androidx.lifecycle.MediatorLiveData<java.lang.String> viewModelState = null;
+            // viewModel
+            com.usend.viewmodels.EditProfileViewModel viewModel = mViewModel;
+            // viewModel.state.getValue()
+            java.lang.String viewModelStateGetValue = null;
+            // viewModel != null
+            boolean viewModelJavaLangObjectNull = false;
+            // viewModel.state != null
+            boolean viewModelStateJavaLangObjectNull = false;
+
+
+
+            viewModelJavaLangObjectNull = (viewModel) != (null);
+            if (viewModelJavaLangObjectNull) {
+
+
+                viewModelState = viewModel.getState();
+
+                viewModelStateJavaLangObjectNull = (viewModelState) != (null);
+                if (viewModelStateJavaLangObjectNull) {
+
+
+
+
+                    viewModelState.setValue(((java.lang.String) (callbackArg_0)));
+                }
+            }
+        }
+    };
+    private androidx.databinding.InverseBindingListener edtZipCodeandroidTextAttrChanged = new androidx.databinding.InverseBindingListener() {
+        @Override
+        public void onChange() {
+            // Inverse of viewModel.zipcode.getValue()
+            //         is viewModel.zipcode.setValue((java.lang.String) callbackArg_0)
+            java.lang.String callbackArg_0 = androidx.databinding.adapters.TextViewBindingAdapter.getTextString(edtZipCode);
+            // localize variables for thread safety
+            // viewModel.zipcode != null
+            boolean viewModelZipcodeJavaLangObjectNull = false;
+            // viewModel.zipcode.getValue()
+            java.lang.String viewModelZipcodeGetValue = null;
+            // viewModel
+            com.usend.viewmodels.EditProfileViewModel viewModel = mViewModel;
+            // viewModel != null
+            boolean viewModelJavaLangObjectNull = false;
+            // viewModel.zipcode
+            androidx.lifecycle.MediatorLiveData<java.lang.String> viewModelZipcode = null;
+
+
+
+            viewModelJavaLangObjectNull = (viewModel) != (null);
+            if (viewModelJavaLangObjectNull) {
+
+
+                viewModelZipcode = viewModel.getZipcode();
+
+                viewModelZipcodeJavaLangObjectNull = (viewModelZipcode) != (null);
+                if (viewModelZipcodeJavaLangObjectNull) {
+
+
+
+
+                    viewModelZipcode.setValue(((java.lang.String) (callbackArg_0)));
+                }
+            }
+        }
+    };
+
+    public ActivityEditProfileBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 23, sIncludes, sViewsWithIds));
+    }
+    private ActivityEditProfileBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
+        super(bindingComponent, root, 11
+            , (com.google.android.material.button.MaterialButton) bindings[12]
+            , (androidx.appcompat.widget.AppCompatEditText) bindings[4]
+            , (androidx.appcompat.widget.AppCompatEditText) bindings[5]
+            , (androidx.appcompat.widget.AppCompatEditText) bindings[6]
+            , (androidx.appcompat.widget.AppCompatEditText) bindings[8]
+            , (androidx.appcompat.widget.AppCompatEditText) bindings[10]
+            , (androidx.appcompat.widget.AppCompatEditText) bindings[1]
+            , (androidx.appcompat.widget.AppCompatEditText) bindings[2]
+            , (androidx.appcompat.widget.AppCompatEditText) bindings[3]
+            , (androidx.appcompat.widget.AppCompatEditText) bindings[11]
+            , (androidx.appcompat.widget.AppCompatEditText) bindings[7]
+            , (androidx.appcompat.widget.AppCompatEditText) bindings[9]
+            , (android.view.View) bindings[13]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[17]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[18]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[20]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[14]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[15]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[16]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[22]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[19]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[21]
+            );
+        this.btnNext.setTag(null);
+        this.edtAddressLine1.setTag(null);
+        this.edtAddressLine2.setTag(null);
+        this.edtCity.setTag(null);
+        this.edtCountry.setTag(null);
+        this.edtCountryCode.setTag(null);
+        this.edtEmail.setTag(null);
+        this.edtFirstName.setTag(null);
+        this.edtLastName.setTag(null);
+        this.edtPhone.setTag(null);
+        this.edtState.setTag(null);
+        this.edtZipCode.setTag(null);
+        this.mboundView0 = (android.widget.LinearLayout) bindings[0];
+        this.mboundView0.setTag(null);
+        setRootTag(root);
+        // listeners
+        mCallback32 = new com.usend.generated.callback.OnClickListener(this, 2);
+        mCallback31 = new com.usend.generated.callback.OnClickListener(this, 1);
+        mCallback33 = new com.usend.generated.callback.OnClickListener(this, 3);
+        mCallback34 = new com.usend.generated.callback.OnClickListener(this, 4);
+        invalidateAll();
+    }
+
+    @Override
+    public void invalidateAll() {
+        synchronized(this) {
+                mDirtyFlags = 0x2000L;
+        }
+        requestRebind();
+    }
+
+    @Override
+    public boolean hasPendingBindings() {
+        synchronized(this) {
+            if (mDirtyFlags != 0) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    @Override
+    public boolean setVariable(int variableId, @Nullable Object variable)  {
+        boolean variableSet = true;
+        if (BR.activity == variableId) {
+            setActivity((com.usend.views.home.EditProfileActivity) variable);
+        }
+        else if (BR.viewModel == variableId) {
+            setViewModel((com.usend.viewmodels.EditProfileViewModel) variable);
+        }
+        else {
+            variableSet = false;
+        }
+            return variableSet;
+    }
+
+    public void setActivity(@Nullable com.usend.views.home.EditProfileActivity Activity) {
+        this.mActivity = Activity;
+        synchronized(this) {
+            mDirtyFlags |= 0x800L;
+        }
+        notifyPropertyChanged(BR.activity);
+        super.requestRebind();
+    }
+    public void setViewModel(@Nullable com.usend.viewmodels.EditProfileViewModel ViewModel) {
+        this.mViewModel = ViewModel;
+        synchronized(this) {
+            mDirtyFlags |= 0x1000L;
+        }
+        notifyPropertyChanged(BR.viewModel);
+        super.requestRebind();
+    }
+
+    @Override
+    protected boolean onFieldChange(int localFieldId, Object object, int fieldId) {
+        switch (localFieldId) {
+            case 0 :
+                return onChangeViewModelAddressLine1((androidx.lifecycle.MediatorLiveData<java.lang.String>) object, fieldId);
+            case 1 :
+                return onChangeViewModelState((androidx.lifecycle.MediatorLiveData<java.lang.String>) object, fieldId);
+            case 2 :
+                return onChangeViewModelPhoneNumber((androidx.lifecycle.MediatorLiveData<java.lang.String>) object, fieldId);
+            case 3 :
+                return onChangeViewModelCountryCode((androidx.lifecycle.MediatorLiveData<java.lang.String>) object, fieldId);
+            case 4 :
+                return onChangeViewModelZipcode((androidx.lifecycle.MediatorLiveData<java.lang.String>) object, fieldId);
+            case 5 :
+                return onChangeViewModelEmail((androidx.lifecycle.MediatorLiveData<java.lang.String>) object, fieldId);
+            case 6 :
+                return onChangeViewModelLastName((androidx.lifecycle.MediatorLiveData<java.lang.String>) object, fieldId);
+            case 7 :
+                return onChangeViewModelAddressLine2((androidx.lifecycle.MediatorLiveData<java.lang.String>) object, fieldId);
+            case 8 :
+                return onChangeViewModelFirstName((androidx.lifecycle.MediatorLiveData<java.lang.String>) object, fieldId);
+            case 9 :
+                return onChangeViewModelCountry((androidx.lifecycle.MediatorLiveData<java.lang.String>) object, fieldId);
+            case 10 :
+                return onChangeViewModelCity((androidx.lifecycle.MediatorLiveData<java.lang.String>) object, fieldId);
+        }
+        return false;
+    }
+    private boolean onChangeViewModelAddressLine1(androidx.lifecycle.MediatorLiveData<java.lang.String> ViewModelAddressLine1, int fieldId) {
+        if (fieldId == BR._all) {
+            synchronized(this) {
+                    mDirtyFlags |= 0x1L;
+            }
+            return true;
+        }
+        return false;
+    }
+    private boolean onChangeViewModelState(androidx.lifecycle.MediatorLiveData<java.lang.String> ViewModelState, int fieldId) {
+        if (fieldId == BR._all) {
+            synchronized(this) {
+                    mDirtyFlags |= 0x2L;
+            }
+            return true;
+        }
+        return false;
+    }
+    private boolean onChangeViewModelPhoneNumber(androidx.lifecycle.MediatorLiveData<java.lang.String> ViewModelPhoneNumber, int fieldId) {
+        if (fieldId == BR._all) {
+            synchronized(this) {
+                    mDirtyFlags |= 0x4L;
+            }
+            return true;
+        }
+        return false;
+    }
+    private boolean onChangeViewModelCountryCode(androidx.lifecycle.MediatorLiveData<java.lang.String> ViewModelCountryCode, int fieldId) {
+        if (fieldId == BR._all) {
+            synchronized(this) {
+                    mDirtyFlags |= 0x8L;
+            }
+            return true;
+        }
+        return false;
+    }
+    private boolean onChangeViewModelZipcode(androidx.lifecycle.MediatorLiveData<java.lang.String> ViewModelZipcode, int fieldId) {
+        if (fieldId == BR._all) {
+            synchronized(this) {
+                    mDirtyFlags |= 0x10L;
+            }
+            return true;
+        }
+        return false;
+    }
+    private boolean onChangeViewModelEmail(androidx.lifecycle.MediatorLiveData<java.lang.String> ViewModelEmail, int fieldId) {
+        if (fieldId == BR._all) {
+            synchronized(this) {
+                    mDirtyFlags |= 0x20L;
+            }
+            return true;
+        }
+        return false;
+    }
+    private boolean onChangeViewModelLastName(androidx.lifecycle.MediatorLiveData<java.lang.String> ViewModelLastName, int fieldId) {
+        if (fieldId == BR._all) {
+            synchronized(this) {
+                    mDirtyFlags |= 0x40L;
+            }
+            return true;
+        }
+        return false;
+    }
+    private boolean onChangeViewModelAddressLine2(androidx.lifecycle.MediatorLiveData<java.lang.String> ViewModelAddressLine2, int fieldId) {
+        if (fieldId == BR._all) {
+            synchronized(this) {
+                    mDirtyFlags |= 0x80L;
+            }
+            return true;
+        }
+        return false;
+    }
+    private boolean onChangeViewModelFirstName(androidx.lifecycle.MediatorLiveData<java.lang.String> ViewModelFirstName, int fieldId) {
+        if (fieldId == BR._all) {
+            synchronized(this) {
+                    mDirtyFlags |= 0x100L;
+            }
+            return true;
+        }
+        return false;
+    }
+    private boolean onChangeViewModelCountry(androidx.lifecycle.MediatorLiveData<java.lang.String> ViewModelCountry, int fieldId) {
+        if (fieldId == BR._all) {
+            synchronized(this) {
+                    mDirtyFlags |= 0x200L;
+            }
+            return true;
+        }
+        return false;
+    }
+    private boolean onChangeViewModelCity(androidx.lifecycle.MediatorLiveData<java.lang.String> ViewModelCity, int fieldId) {
+        if (fieldId == BR._all) {
+            synchronized(this) {
+                    mDirtyFlags |= 0x400L;
+            }
+            return true;
+        }
+        return false;
+    }
+
+    @Override
+    protected void executeBindings() {
+        long dirtyFlags = 0;
+        synchronized(this) {
+            dirtyFlags = mDirtyFlags;
+            mDirtyFlags = 0;
+        }
+        java.lang.String viewModelEmailGetValue = null;
+        java.lang.String viewModelStateGetValue = null;
+        java.lang.String viewModelCityGetValue = null;
+        androidx.lifecycle.MediatorLiveData<java.lang.String> viewModelAddressLine1 = null;
+        androidx.lifecycle.MediatorLiveData<java.lang.String> viewModelState = null;
+        androidx.lifecycle.MediatorLiveData<java.lang.String> viewModelPhoneNumber = null;
+        androidx.lifecycle.MediatorLiveData<java.lang.String> viewModelCountryCode = null;
+        java.lang.String viewModelLastNameGetValue = null;
+        androidx.lifecycle.MediatorLiveData<java.lang.String> viewModelZipcode = null;
+        androidx.lifecycle.MediatorLiveData<java.lang.String> viewModelEmail = null;
+        java.lang.String viewModelZipcodeGetValue = null;
+        java.lang.String viewModelCountryCodeGetValue = null;
+        java.lang.String viewModelFirstNameGetValue = null;
+        com.usend.views.home.EditProfileActivity activity = mActivity;
+        java.lang.String viewModelCountryGetValue = null;
+        androidx.lifecycle.MediatorLiveData<java.lang.String> viewModelLastName = null;
+        java.lang.String viewModelAddressLine1GetValue = null;
+        androidx.lifecycle.MediatorLiveData<java.lang.String> viewModelAddressLine2 = null;
+        androidx.lifecycle.MediatorLiveData<java.lang.String> viewModelFirstName = null;
+        androidx.lifecycle.MediatorLiveData<java.lang.String> viewModelCountry = null;
+        java.lang.String viewModelPhoneNumberGetValue = null;
+        androidx.lifecycle.MediatorLiveData<java.lang.String> viewModelCity = null;
+        java.lang.String viewModelAddressLine2GetValue = null;
+        com.usend.viewmodels.EditProfileViewModel viewModel = mViewModel;
+
+        if ((dirtyFlags & 0x37ffL) != 0) {
+
+
+            if ((dirtyFlags & 0x3001L) != 0) {
+
+                    if (viewModel != null) {
+                        // read viewModel.addressLine1
+                        viewModelAddressLine1 = viewModel.getAddressLine1();
+                    }
+                    updateLiveDataRegistration(0, viewModelAddressLine1);
+
+
+                    if (viewModelAddressLine1 != null) {
+                        // read viewModel.addressLine1.getValue()
+                        viewModelAddressLine1GetValue = viewModelAddressLine1.getValue();
+                    }
+            }
+            if ((dirtyFlags & 0x3002L) != 0) {
+
+                    if (viewModel != null) {
+                        // read viewModel.state
+                        viewModelState = viewModel.getState();
+                    }
+                    updateLiveDataRegistration(1, viewModelState);
+
+
+                    if (viewModelState != null) {
+                        // read viewModel.state.getValue()
+                        viewModelStateGetValue = viewModelState.getValue();
+                    }
+            }
+            if ((dirtyFlags & 0x3004L) != 0) {
+
+                    if (viewModel != null) {
+                        // read viewModel.phoneNumber
+                        viewModelPhoneNumber = viewModel.getPhoneNumber();
+                    }
+                    updateLiveDataRegistration(2, viewModelPhoneNumber);
+
+
+                    if (viewModelPhoneNumber != null) {
+                        // read viewModel.phoneNumber.getValue()
+                        viewModelPhoneNumberGetValue = viewModelPhoneNumber.getValue();
+                    }
+            }
+            if ((dirtyFlags & 0x3008L) != 0) {
+
+                    if (viewModel != null) {
+                        // read viewModel.countryCode
+                        viewModelCountryCode = viewModel.getCountryCode();
+                    }
+                    updateLiveDataRegistration(3, viewModelCountryCode);
+
+
+                    if (viewModelCountryCode != null) {
+                        // read viewModel.countryCode.getValue()
+                        viewModelCountryCodeGetValue = viewModelCountryCode.getValue();
+                    }
+            }
+            if ((dirtyFlags & 0x3010L) != 0) {
+
+                    if (viewModel != null) {
+                        // read viewModel.zipcode
+                        viewModelZipcode = viewModel.getZipcode();
+                    }
+                    updateLiveDataRegistration(4, viewModelZipcode);
+
+
+                    if (viewModelZipcode != null) {
+                        // read viewModel.zipcode.getValue()
+                        viewModelZipcodeGetValue = viewModelZipcode.getValue();
+                    }
+            }
+            if ((dirtyFlags & 0x3020L) != 0) {
+
+                    if (viewModel != null) {
+                        // read viewModel.email
+                        viewModelEmail = viewModel.getEmail();
+                    }
+                    updateLiveDataRegistration(5, viewModelEmail);
+
+
+                    if (viewModelEmail != null) {
+                        // read viewModel.email.getValue()
+                        viewModelEmailGetValue = viewModelEmail.getValue();
+                    }
+            }
+            if ((dirtyFlags & 0x3040L) != 0) {
+
+                    if (viewModel != null) {
+                        // read viewModel.lastName
+                        viewModelLastName = viewModel.getLastName();
+                    }
+                    updateLiveDataRegistration(6, viewModelLastName);
+
+
+                    if (viewModelLastName != null) {
+                        // read viewModel.lastName.getValue()
+                        viewModelLastNameGetValue = viewModelLastName.getValue();
+                    }
+            }
+            if ((dirtyFlags & 0x3080L) != 0) {
+
+                    if (viewModel != null) {
+                        // read viewModel.addressLine2
+                        viewModelAddressLine2 = viewModel.getAddressLine2();
+                    }
+                    updateLiveDataRegistration(7, viewModelAddressLine2);
+
+
+                    if (viewModelAddressLine2 != null) {
+                        // read viewModel.addressLine2.getValue()
+                        viewModelAddressLine2GetValue = viewModelAddressLine2.getValue();
+                    }
+            }
+            if ((dirtyFlags & 0x3100L) != 0) {
+
+                    if (viewModel != null) {
+                        // read viewModel.firstName
+                        viewModelFirstName = viewModel.getFirstName();
+                    }
+                    updateLiveDataRegistration(8, viewModelFirstName);
+
+
+                    if (viewModelFirstName != null) {
+                        // read viewModel.firstName.getValue()
+                        viewModelFirstNameGetValue = viewModelFirstName.getValue();
+                    }
+            }
+            if ((dirtyFlags & 0x3200L) != 0) {
+
+                    if (viewModel != null) {
+                        // read viewModel.country
+                        viewModelCountry = viewModel.getCountry();
+                    }
+                    updateLiveDataRegistration(9, viewModelCountry);
+
+
+                    if (viewModelCountry != null) {
+                        // read viewModel.country.getValue()
+                        viewModelCountryGetValue = viewModelCountry.getValue();
+                    }
+            }
+            if ((dirtyFlags & 0x3400L) != 0) {
+
+                    if (viewModel != null) {
+                        // read viewModel.city
+                        viewModelCity = viewModel.getCity();
+                    }
+                    updateLiveDataRegistration(10, viewModelCity);
+
+
+                    if (viewModelCity != null) {
+                        // read viewModel.city.getValue()
+                        viewModelCityGetValue = viewModelCity.getValue();
+                    }
+            }
+        }
+        // batch finished
+        if ((dirtyFlags & 0x2000L) != 0) {
+            // api target 1
+
+            this.btnNext.setOnClickListener(mCallback34);
+            androidx.databinding.adapters.TextViewBindingAdapter.setTextWatcher(this.edtAddressLine1, (androidx.databinding.adapters.TextViewBindingAdapter.BeforeTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.OnTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.AfterTextChanged)null, edtAddressLine1androidTextAttrChanged);
+            androidx.databinding.adapters.TextViewBindingAdapter.setTextWatcher(this.edtAddressLine2, (androidx.databinding.adapters.TextViewBindingAdapter.BeforeTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.OnTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.AfterTextChanged)null, edtAddressLine2androidTextAttrChanged);
+            androidx.databinding.adapters.TextViewBindingAdapter.setTextWatcher(this.edtCity, (androidx.databinding.adapters.TextViewBindingAdapter.BeforeTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.OnTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.AfterTextChanged)null, edtCityandroidTextAttrChanged);
+            this.edtCountry.setOnClickListener(mCallback32);
+            androidx.databinding.adapters.TextViewBindingAdapter.setTextWatcher(this.edtCountry, (androidx.databinding.adapters.TextViewBindingAdapter.BeforeTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.OnTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.AfterTextChanged)null, edtCountryandroidTextAttrChanged);
+            this.edtCountryCode.setOnClickListener(mCallback33);
+            androidx.databinding.adapters.TextViewBindingAdapter.setTextWatcher(this.edtCountryCode, (androidx.databinding.adapters.TextViewBindingAdapter.BeforeTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.OnTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.AfterTextChanged)null, edtCountryCodeandroidTextAttrChanged);
+            androidx.databinding.adapters.TextViewBindingAdapter.setTextWatcher(this.edtEmail, (androidx.databinding.adapters.TextViewBindingAdapter.BeforeTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.OnTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.AfterTextChanged)null, edtEmailandroidTextAttrChanged);
+            androidx.databinding.adapters.TextViewBindingAdapter.setTextWatcher(this.edtFirstName, (androidx.databinding.adapters.TextViewBindingAdapter.BeforeTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.OnTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.AfterTextChanged)null, edtFirstNameandroidTextAttrChanged);
+            androidx.databinding.adapters.TextViewBindingAdapter.setTextWatcher(this.edtLastName, (androidx.databinding.adapters.TextViewBindingAdapter.BeforeTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.OnTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.AfterTextChanged)null, edtLastNameandroidTextAttrChanged);
+            androidx.databinding.adapters.TextViewBindingAdapter.setTextWatcher(this.edtPhone, (androidx.databinding.adapters.TextViewBindingAdapter.BeforeTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.OnTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.AfterTextChanged)null, edtPhoneandroidTextAttrChanged);
+            this.edtState.setOnClickListener(mCallback31);
+            androidx.databinding.adapters.TextViewBindingAdapter.setTextWatcher(this.edtState, (androidx.databinding.adapters.TextViewBindingAdapter.BeforeTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.OnTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.AfterTextChanged)null, edtStateandroidTextAttrChanged);
+            androidx.databinding.adapters.TextViewBindingAdapter.setTextWatcher(this.edtZipCode, (androidx.databinding.adapters.TextViewBindingAdapter.BeforeTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.OnTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.AfterTextChanged)null, edtZipCodeandroidTextAttrChanged);
+        }
+        if ((dirtyFlags & 0x3001L) != 0) {
+            // api target 1
+
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.edtAddressLine1, viewModelAddressLine1GetValue);
+        }
+        if ((dirtyFlags & 0x3080L) != 0) {
+            // api target 1
+
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.edtAddressLine2, viewModelAddressLine2GetValue);
+        }
+        if ((dirtyFlags & 0x3400L) != 0) {
+            // api target 1
+
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.edtCity, viewModelCityGetValue);
+        }
+        if ((dirtyFlags & 0x3200L) != 0) {
+            // api target 1
+
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.edtCountry, viewModelCountryGetValue);
+        }
+        if ((dirtyFlags & 0x3008L) != 0) {
+            // api target 1
+
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.edtCountryCode, viewModelCountryCodeGetValue);
+        }
+        if ((dirtyFlags & 0x3020L) != 0) {
+            // api target 1
+
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.edtEmail, viewModelEmailGetValue);
+        }
+        if ((dirtyFlags & 0x3100L) != 0) {
+            // api target 1
+
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.edtFirstName, viewModelFirstNameGetValue);
+        }
+        if ((dirtyFlags & 0x3040L) != 0) {
+            // api target 1
+
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.edtLastName, viewModelLastNameGetValue);
+        }
+        if ((dirtyFlags & 0x3004L) != 0) {
+            // api target 1
+
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.edtPhone, viewModelPhoneNumberGetValue);
+        }
+        if ((dirtyFlags & 0x3002L) != 0) {
+            // api target 1
+
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.edtState, viewModelStateGetValue);
+        }
+        if ((dirtyFlags & 0x3010L) != 0) {
+            // api target 1
+
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.edtZipCode, viewModelZipcodeGetValue);
+        }
+    }
+    // Listener Stub Implementations
+    // callback impls
+    public final void _internalCallbackOnClick(int sourceId , android.view.View callbackArg_0) {
+        switch(sourceId) {
+            case 2: {
+                // localize variables for thread safety
+                // activity != null
+                boolean activityJavaLangObjectNull = false;
+                // activity
+                com.usend.views.home.EditProfileActivity activity = mActivity;
+
+
+
+                activityJavaLangObjectNull = (activity) != (null);
+                if (activityJavaLangObjectNull) {
+
+
+                    activity.onCountryClick();
+                }
+                break;
+            }
+            case 1: {
+                // localize variables for thread safety
+                // activity != null
+                boolean activityJavaLangObjectNull = false;
+                // activity
+                com.usend.views.home.EditProfileActivity activity = mActivity;
+
+
+
+                activityJavaLangObjectNull = (activity) != (null);
+                if (activityJavaLangObjectNull) {
+
+
+                    activity.onStateClick();
+                }
+                break;
+            }
+            case 3: {
+                // localize variables for thread safety
+                // activity != null
+                boolean activityJavaLangObjectNull = false;
+                // activity
+                com.usend.views.home.EditProfileActivity activity = mActivity;
+
+
+
+                activityJavaLangObjectNull = (activity) != (null);
+                if (activityJavaLangObjectNull) {
+
+
+                    activity.openCountryCodePicker();
+                }
+                break;
+            }
+            case 4: {
+                // localize variables for thread safety
+                // activity != null
+                boolean activityJavaLangObjectNull = false;
+                // activity
+                com.usend.views.home.EditProfileActivity activity = mActivity;
+
+
+
+                activityJavaLangObjectNull = (activity) != (null);
+                if (activityJavaLangObjectNull) {
+
+
+                    activity.update();
+                }
+                break;
+            }
+        }
+    }
+    // dirty flag
+    private  long mDirtyFlags = 0xffffffffffffffffL;
+    /* flag mapping
+        flag 0 (0x1L): viewModel.addressLine1
+        flag 1 (0x2L): viewModel.state
+        flag 2 (0x3L): viewModel.phoneNumber
+        flag 3 (0x4L): viewModel.countryCode
+        flag 4 (0x5L): viewModel.zipcode
+        flag 5 (0x6L): viewModel.email
+        flag 6 (0x7L): viewModel.lastName
+        flag 7 (0x8L): viewModel.addressLine2
+        flag 8 (0x9L): viewModel.firstName
+        flag 9 (0xaL): viewModel.country
+        flag 10 (0xbL): viewModel.city
+        flag 11 (0xcL): activity
+        flag 12 (0xdL): viewModel
+        flag 13 (0xeL): null
+    flag mapping end*/
+    //end
+}

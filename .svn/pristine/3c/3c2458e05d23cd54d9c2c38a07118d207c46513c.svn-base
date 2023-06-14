@@ -1,0 +1,750 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.usend"
+4    android:versionCode="11"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:6:5-67
+11-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:6:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:7:5-79
+12-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:7:22-76
+13    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+13-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:8:5-80
+13-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:8:22-77
+14    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+14-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:9:5-11:40
+14-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:10:9-65
+15    <uses-permission android:name="android.permission.CAMERA" />
+15-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:12:5-65
+15-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:12:22-62
+16
+17    <uses-feature
+17-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:14:5-16:36
+18        android:name="android.hardware.camera.any"
+18-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:15:9-51
+19        android:required="false" />
+19-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:16:9-33
+20    <uses-feature
+20-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:17:5-19:36
+21        android:name="android.hardware.camera.autofocus"
+21-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:18:9-57
+22        android:required="false" />
+22-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:19:9-33
+23
+24    <uses-permission android:name="com.android.vending.BILLING" />
+24-->[com.android.billingclient:billing:3.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\ce3c015ea2c54c9a93588023cddb3157\transformed\jetified-billing-3.0.0\AndroidManifest.xml:10:5-67
+24-->[com.android.billingclient:billing:3.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\ce3c015ea2c54c9a93588023cddb3157\transformed\jetified-billing-3.0.0\AndroidManifest.xml:10:22-64
+25    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+25-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\c8523ce5abfb46664a8b5c076e67d2a2\transformed\jetified-firebase-iid-20.0.2\AndroidManifest.xml:24:5-68
+25-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\c8523ce5abfb46664a8b5c076e67d2a2\transformed\jetified-firebase-iid-20.0.2\AndroidManifest.xml:24:22-65
+26    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+26-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\c8523ce5abfb46664a8b5c076e67d2a2\transformed\jetified-firebase-iid-20.0.2\AndroidManifest.xml:26:5-82
+26-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\c8523ce5abfb46664a8b5c076e67d2a2\transformed\jetified-firebase-iid-20.0.2\AndroidManifest.xml:26:22-79
+27    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+27-->[com.google.android.gms:play-services-measurement-api:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\a9beb7abc78fd1dd2b3d64f87011ded0\transformed\jetified-play-services-measurement-api-20.1.1\AndroidManifest.xml:25:5-79
+27-->[com.google.android.gms:play-services-measurement-api:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\a9beb7abc78fd1dd2b3d64f87011ded0\transformed\jetified-play-services-measurement-api-20.1.1\AndroidManifest.xml:25:22-76
+28    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+28-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\37a5283cf89f58af88783ad373f71705\transformed\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:26:5-110
+28-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\37a5283cf89f58af88783ad373f71705\transformed\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:26:22-107
+29
+30    <application
+30-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:21:5-215:19
+31        android:name="com.usend.base.MyBaseApp"
+31-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:22:9-39
+32        android:allowBackup="false"
+32-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:23:9-36
+33        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+33-->[androidx.core:core:1.7.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\9c4e22e42005bcb3e83637a8ddcdd4ea\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+34        android:debuggable="true"
+35        android:icon="@mipmap/app_icon"
+35-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:24:9-40
+36        android:label="@string/app_name"
+36-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:25:9-41
+37        android:networkSecurityConfig="@xml/network_security_config"
+37-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:26:9-69
+38        android:requestLegacyExternalStorage="true"
+38-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:27:9-52
+39        android:roundIcon="@mipmap/app_icon_round"
+39-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:28:9-51
+40        android:supportsRtl="true"
+40-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:29:9-35
+41        android:testOnly="true"
+42        android:theme="@style/AppTheme" >
+42-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:30:9-40
+43        <activity
+43-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:32:9-34:40
+44            android:name="com.usend.views.home.SquareUpActivity"
+44-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:33:13-56
+45            android:exported="false" />
+45-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:34:13-37
+46        <activity android:name="com.usend.views.ConciergeForGuestActivity" />
+46-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:35:9-69
+46-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:35:19-66
+47        <activity android:name="com.usend.views.home.SelectSavedCardActivity" />
+47-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:36:9-72
+47-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:36:19-69
+48        <activity android:name="com.usend.views.home.AutoShipMethodsActivity" />
+48-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:37:9-72
+48-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:37:19-69
+49        <activity android:name="com.usend.views.home.AutoShipActivity" />
+49-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:38:9-65
+49-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:38:19-62
+50        <activity
+50-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:39:9-42:55
+51            android:name="com.usend.views.home.ShippingCostActivity"
+51-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:40:13-60
+52            android:screenOrientation="user"
+52-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:41:13-45
+53            android:windowSoftInputMode="adjustPan" />
+53-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:42:13-52
+54        <activity
+54-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:43:9-46:55
+55            android:name="com.usend.views.userauth.OtpVerificationActivity"
+55-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:44:13-67
+56            android:screenOrientation="user"
+56-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:45:13-45
+57            android:windowSoftInputMode="adjustPan" />
+57-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:46:13-52
+58        <activity
+58-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:47:9-50:55
+59            android:name="com.usend.views.home.ChangePasswordActivity"
+59-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:48:13-62
+60            android:screenOrientation="user"
+60-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:49:13-45
+61            android:windowSoftInputMode="adjustPan" />
+61-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:50:13-52
+62        <activity
+62-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:51:9-54:55
+63            android:name="com.usend.views.home.NotificationActivity"
+63-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:52:13-60
+64            android:screenOrientation="user"
+64-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:53:13-45
+65            android:windowSoftInputMode="adjustPan" />
+65-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:54:13-52
+66        <activity
+66-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:55:9-58:55
+67            android:name="com.usend.views.home.WebViewActivity"
+67-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:56:13-55
+68            android:screenOrientation="user"
+68-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:57:13-45
+69            android:windowSoftInputMode="adjustPan" />
+69-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:58:13-52
+70        <activity
+70-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:59:9-62:55
+71            android:name="com.usend.views.home.SavedCardsActivity"
+71-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:60:13-58
+72            android:screenOrientation="user"
+72-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:61:13-45
+73            android:windowSoftInputMode="adjustPan" />
+73-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:62:13-52
+74        <activity
+74-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:63:9-66:55
+75            android:name="com.usend.views.home.ShippingAddressActivity"
+75-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:64:13-63
+76            android:screenOrientation="user"
+76-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:65:13-45
+77            android:windowSoftInputMode="adjustPan" />
+77-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:66:13-52
+78        <activity
+78-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:67:9-70:55
+79            android:name="com.usend.views.home.VerificationStatusActivity"
+79-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:68:13-66
+80            android:screenOrientation="user"
+80-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:69:13-45
+81            android:windowSoftInputMode="adjustPan" />
+81-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:70:13-52
+82        <activity
+82-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:71:9-74:55
+83            android:name="com.usend.views.home.USPSVerificationActivity"
+83-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:72:13-64
+84            android:screenOrientation="user"
+84-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:73:13-45
+85            android:windowSoftInputMode="adjustPan" />
+85-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:74:13-52
+86        <activity
+86-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:75:9-78:55
+87            android:name="com.usend.views.home.ProhibitedItemsActivity"
+87-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:76:13-63
+88            android:screenOrientation="user"
+88-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:77:13-45
+89            android:windowSoftInputMode="adjustPan" />
+89-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:78:13-52
+90        <activity
+90-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:79:9-82:55
+91            android:name="com.usend.views.home.ContactUsActivity"
+91-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:80:13-57
+92            android:screenOrientation="user"
+92-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:81:13-45
+93            android:windowSoftInputMode="adjustPan" />
+93-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:82:13-52
+94        <activity
+94-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:83:9-86:55
+95            android:name="com.usend.views.home.EditProfileActivity"
+95-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:84:13-59
+96            android:screenOrientation="user"
+96-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:85:13-45
+97            android:windowSoftInputMode="adjustPan" />
+97-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:86:13-52
+98        <activity
+98-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:87:9-90:55
+99            android:name="com.usend.views.home.CreateNewReqActivity"
+99-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:88:13-60
+100            android:screenOrientation="user"
+100-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:89:13-45
+101            android:windowSoftInputMode="adjustPan" />
+101-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:90:13-52
+102        <activity
+102-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:91:9-94:55
+103            android:name="com.usend.views.home.ConciergeItemDetailActivity"
+103-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:92:13-67
+104            android:screenOrientation="user"
+104-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:93:13-45
+105            android:windowSoftInputMode="adjustPan" />
+105-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:94:13-52
+106        <activity
+106-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:95:9-98:55
+107            android:name="com.usend.views.home.OrderDetailsActivity"
+107-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:96:13-60
+108            android:screenOrientation="user"
+108-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:97:13-45
+109            android:windowSoftInputMode="adjustPan" />
+109-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:98:13-52
+110        <activity
+110-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:99:9-102:55
+111            android:name="com.usend.views.home.PaymentSuccessfulActivity"
+111-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:100:13-65
+112            android:screenOrientation="user"
+112-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:101:13-45
+113            android:windowSoftInputMode="adjustPan" />
+113-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:102:13-52
+114        <activity
+114-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:103:9-106:55
+115            android:name="com.usend.views.home.SavedPaymentMethodsActivity"
+115-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:104:13-67
+116            android:screenOrientation="user"
+116-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:105:13-45
+117            android:windowSoftInputMode="adjustPan" />
+117-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:106:13-52
+118        <activity
+118-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:107:9-110:55
+119            android:name="com.usend.views.home.AddCardActivity"
+119-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:108:13-55
+120            android:screenOrientation="user"
+120-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:109:13-45
+121            android:windowSoftInputMode="adjustPan" />
+121-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:110:13-52
+122        <activity
+122-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:111:9-114:55
+123            android:name="com.usend.views.home.PaymentMethodActivity"
+123-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:112:13-61
+124            android:screenOrientation="user"
+124-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:113:13-45
+125            android:windowSoftInputMode="adjustPan" />
+125-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:114:13-52
+126        <activity
+126-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:115:9-118:55
+127            android:name="com.usend.views.home.ShippingDetailsActivity"
+127-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:116:13-63
+128            android:screenOrientation="user"
+128-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:117:13-45
+129            android:windowSoftInputMode="adjustPan" />
+129-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:118:13-52
+130        <activity
+130-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:119:9-122:55
+131            android:name="com.usend.views.home.ShippingMethodActivity"
+131-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:120:13-62
+132            android:screenOrientation="user"
+132-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:121:13-45
+133            android:windowSoftInputMode="adjustPan" />
+133-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:122:13-52
+134        <activity
+134-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:123:9-126:55
+135            android:name="com.usend.views.home.AddNewAddressActivity"
+135-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:124:13-61
+136            android:screenOrientation="user"
+136-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:125:13-45
+137            android:windowSoftInputMode="adjustPan" />
+137-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:126:13-52
+138        <activity
+138-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:127:9-130:55
+139            android:name="com.usend.views.home.ShipToAddressActivity"
+139-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:128:13-61
+140            android:screenOrientation="user"
+140-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:129:13-45
+141            android:windowSoftInputMode="adjustPan" />
+141-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:130:13-52
+142        <activity
+142-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:131:9-134:55
+143            android:name="com.usend.views.home.PackageDetailActivity"
+143-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:132:13-61
+144            android:screenOrientation="user"
+144-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:133:13-45
+145            android:windowSoftInputMode="adjustPan" />
+145-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:134:13-52
+146        <activity
+146-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:135:9-138:55
+147            android:name="com.usend.views.userauth.ForgotPasswordActivity"
+147-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:136:13-66
+148            android:screenOrientation="user"
+148-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:137:13-45
+149            android:windowSoftInputMode="adjustPan" />
+149-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:138:13-52
+150        <activity
+150-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:139:9-142:55
+151            android:name="com.usend.views.userauth.RegionSelectionActivity"
+151-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:140:13-67
+152            android:screenOrientation="user"
+152-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:141:13-45
+153            android:windowSoftInputMode="adjustPan" />
+153-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:142:13-52
+154        <activity
+154-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:143:9-146:55
+155            android:name="com.usend.views.userauth.PaymentInfoActivity"
+155-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:144:13-63
+156            android:screenOrientation="user"
+156-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:145:13-45
+157            android:windowSoftInputMode="adjustPan" />
+157-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:146:13-52
+158        <activity
+158-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:147:9-150:55
+159            android:name="com.usend.views.userauth.BillingAddressActivity"
+159-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:148:13-66
+160            android:screenOrientation="user"
+160-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:149:13-45
+161            android:windowSoftInputMode="adjustPan" />
+161-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:150:13-52
+162        <activity
+162-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:151:9-154:58
+163            android:name="com.usend.views.userauth.SignUpActivity"
+163-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:152:13-58
+164            android:screenOrientation="user"
+164-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:153:13-45
+165            android:windowSoftInputMode="adjustResize" />
+165-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:154:13-55
+166        <activity
+166-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:155:9-158:55
+167            android:name="com.usend.views.userauth.SignInActivity"
+167-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:156:13-58
+168            android:screenOrientation="user"
+168-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:157:13-45
+169            android:windowSoftInputMode="adjustPan" />
+169-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:158:13-52
+170        <activity
+170-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:159:9-162:55
+171            android:name="com.usend.views.MainActivity"
+171-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:160:13-47
+172            android:screenOrientation="user"
+172-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:161:13-45
+173            android:windowSoftInputMode="adjustPan" />
+173-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:162:13-52
+174        <activity
+174-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:163:9-166:55
+175            android:name="com.usend.views.userauth.IntroActivity"
+175-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:164:13-57
+176            android:screenOrientation="user"
+176-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:165:13-45
+177            android:windowSoftInputMode="adjustPan" />
+177-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:166:13-52
+178        <activity
+178-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:167:9-177:20
+179            android:name="com.usend.views.SplashActivity"
+179-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:168:13-49
+180            android:exported="true"
+180-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:169:13-36
+181            android:screenOrientation="user"
+181-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:170:13-45
+182            android:windowSoftInputMode="stateAlwaysHidden" >
+182-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:171:13-60
+183            <intent-filter>
+183-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:172:13-176:29
+184                <action android:name="android.intent.action.MAIN" />
+184-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:173:17-69
+184-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:173:25-66
+185
+186                <category android:name="android.intent.category.LAUNCHER" />
+186-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:175:17-77
+186-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:175:27-74
+187            </intent-filter>
+188        </activity> <!-- Firbase Messaging service to get token -->
+189        <service
+189-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:178:9-184:19
+190            android:name="com.usend.fcm.MyFirebaseMessagingService"
+190-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:179:13-59
+191            android:exported="false" >
+191-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:180:13-37
+192            <intent-filter>
+192-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:181:13-183:29
+193                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+193-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:182:17-78
+193-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:182:25-75
+194            </intent-filter>
+195        </service>
+196
+197        <provider
+197-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:186:9-194:20
+198            android:name="androidx.core.content.FileProvider"
+198-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:187:13-62
+199            android:authorities="com.usend.file_provider"
+199-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:188:13-58
+200            android:exported="false"
+200-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:189:13-37
+201            android:grantUriPermissions="true" >
+201-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:190:13-47
+202            <meta-data
+202-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:191:13-193:63
+203                android:name="android.support.FILE_PROVIDER_PATHS"
+203-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:192:17-67
+204                android:resource="@xml/file_provider_paths" />
+204-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:193:17-60
+205        </provider>
+206        <!--
+207        Set custom default icon. This is used when no icon is set for incoming notification messages.
+208        See README(https://goo.gl/l4GJaQ) for more.
+209        -->
+210        <meta-data
+210-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:199:9-201:68
+211            android:name="com.google.firebase.messaging.default_notification_icon"
+211-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:200:13-83
+212            android:resource="@drawable/ic_stat_ic_notification" />
+212-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:201:13-65
+213        <!--
+214        Set color used with incoming notification messages. This is used when no color is set for the incoming
+215        notification message. See README(https://goo.gl/6BKBk7) for more.
+216        -->
+217        <meta-data
+217-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:206:9-208:69
+218            android:name="sqip.SQUARE_APPLICATION_ID"
+218-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:207:13-54
+219            android:value="sandbox-sq0idb-xHVlRlfCe7O16bxA5bP-bg" />
+219-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:208:13-66
+220        <meta-data
+220-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:209:9-211:69
+221            android:name="com.google.android.gms.version"
+221-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:210:13-58
+222            android:value="@integer/google_play_services_version" />
+222-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:211:13-66
+223        <meta-data
+223-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:212:9-214:53
+224            android:name="com.google.firebase.messaging.default_notification_color"
+224-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:213:13-84
+225            android:resource="@color/colorAccent" />
+225-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:214:13-50
+226
+227        <activity
+227-->[com.stripe:stripe-android:16.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f3806ba53c5e4df8e0e7f0fbfde275ee\transformed\jetified-stripe-android-16.0.1\AndroidManifest.xml:12:9-14:57
+228            android:name="com.stripe.android.view.AddPaymentMethodActivity"
+228-->[com.stripe:stripe-android:16.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f3806ba53c5e4df8e0e7f0fbfde275ee\transformed\jetified-stripe-android-16.0.1\AndroidManifest.xml:13:13-76
+229            android:theme="@style/StripeDefaultTheme" />
+229-->[com.stripe:stripe-android:16.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f3806ba53c5e4df8e0e7f0fbfde275ee\transformed\jetified-stripe-android-16.0.1\AndroidManifest.xml:14:13-54
+230        <activity
+230-->[com.stripe:stripe-android:16.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f3806ba53c5e4df8e0e7f0fbfde275ee\transformed\jetified-stripe-android-16.0.1\AndroidManifest.xml:15:9-17:57
+231            android:name="com.stripe.android.view.PaymentMethodsActivity"
+231-->[com.stripe:stripe-android:16.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f3806ba53c5e4df8e0e7f0fbfde275ee\transformed\jetified-stripe-android-16.0.1\AndroidManifest.xml:16:13-74
+232            android:theme="@style/StripeDefaultTheme" />
+232-->[com.stripe:stripe-android:16.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f3806ba53c5e4df8e0e7f0fbfde275ee\transformed\jetified-stripe-android-16.0.1\AndroidManifest.xml:17:13-54
+233        <activity
+233-->[com.stripe:stripe-android:16.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f3806ba53c5e4df8e0e7f0fbfde275ee\transformed\jetified-stripe-android-16.0.1\AndroidManifest.xml:18:9-20:57
+234            android:name="com.stripe.android.view.PaymentFlowActivity"
+234-->[com.stripe:stripe-android:16.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f3806ba53c5e4df8e0e7f0fbfde275ee\transformed\jetified-stripe-android-16.0.1\AndroidManifest.xml:19:13-71
+235            android:theme="@style/StripeDefaultTheme" />
+235-->[com.stripe:stripe-android:16.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f3806ba53c5e4df8e0e7f0fbfde275ee\transformed\jetified-stripe-android-16.0.1\AndroidManifest.xml:20:13-54
+236        <activity
+236-->[com.stripe:stripe-android:16.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f3806ba53c5e4df8e0e7f0fbfde275ee\transformed\jetified-stripe-android-16.0.1\AndroidManifest.xml:21:9-24:58
+237            android:name="com.stripe.android.view.PaymentAuthWebViewActivity"
+237-->[com.stripe:stripe-android:16.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f3806ba53c5e4df8e0e7f0fbfde275ee\transformed\jetified-stripe-android-16.0.1\AndroidManifest.xml:22:13-78
+238            android:theme="@style/StripeDefaultTheme"
+238-->[com.stripe:stripe-android:16.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f3806ba53c5e4df8e0e7f0fbfde275ee\transformed\jetified-stripe-android-16.0.1\AndroidManifest.xml:23:13-54
+239            android:windowSoftInputMode="adjustResize" />
+239-->[com.stripe:stripe-android:16.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f3806ba53c5e4df8e0e7f0fbfde275ee\transformed\jetified-stripe-android-16.0.1\AndroidManifest.xml:24:13-55
+240        <activity
+240-->[com.stripe:stripe-android:16.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f3806ba53c5e4df8e0e7f0fbfde275ee\transformed\jetified-stripe-android-16.0.1\AndroidManifest.xml:25:9-27:57
+241            android:name="com.stripe.android.view.PaymentRelayActivity"
+241-->[com.stripe:stripe-android:16.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f3806ba53c5e4df8e0e7f0fbfde275ee\transformed\jetified-stripe-android-16.0.1\AndroidManifest.xml:26:13-72
+242            android:theme="@style/StripeDefaultTheme" />
+242-->[com.stripe:stripe-android:16.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f3806ba53c5e4df8e0e7f0fbfde275ee\transformed\jetified-stripe-android-16.0.1\AndroidManifest.xml:27:13-54
+243        <activity
+243-->[com.stripe:stripe-android:16.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f3806ba53c5e4df8e0e7f0fbfde275ee\transformed\jetified-stripe-android-16.0.1\AndroidManifest.xml:28:9-30:57
+244            android:name="com.stripe.android.view.Stripe3ds2CompletionActivity"
+244-->[com.stripe:stripe-android:16.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f3806ba53c5e4df8e0e7f0fbfde275ee\transformed\jetified-stripe-android-16.0.1\AndroidManifest.xml:29:13-80
+245            android:theme="@style/StripeDefaultTheme" />
+245-->[com.stripe:stripe-android:16.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f3806ba53c5e4df8e0e7f0fbfde275ee\transformed\jetified-stripe-android-16.0.1\AndroidManifest.xml:30:13-54
+246        <activity
+246-->[com.stripe:stripe-android:16.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f3806ba53c5e4df8e0e7f0fbfde275ee\transformed\jetified-stripe-android-16.0.1\AndroidManifest.xml:31:9-33:69
+247            android:name="com.stripe.android.paymentsheet.PaymentSheetActivity"
+247-->[com.stripe:stripe-android:16.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f3806ba53c5e4df8e0e7f0fbfde275ee\transformed\jetified-stripe-android-16.0.1\AndroidManifest.xml:32:13-80
+248            android:theme="@style/StripePaymentSheetDefaultTheme" />
+248-->[com.stripe:stripe-android:16.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f3806ba53c5e4df8e0e7f0fbfde275ee\transformed\jetified-stripe-android-16.0.1\AndroidManifest.xml:33:13-66
+249        <activity
+249-->[com.squareup.sdk.in-app-payments:card-entry:1.4.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\979b44967fcb4549ffa1b210c3737091\transformed\jetified-card-entry-1.4.0\AndroidManifest.xml:10:9-14:20
+250            android:name="sqip.internal.CardEntryActivity"
+250-->[com.squareup.sdk.in-app-payments:card-entry:1.4.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\979b44967fcb4549ffa1b210c3737091\transformed\jetified-card-entry-1.4.0\AndroidManifest.xml:11:13-59
+251            android:theme="@style/sqip.Theme.CardEntry"
+251-->[com.squareup.sdk.in-app-payments:card-entry:1.4.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\979b44967fcb4549ffa1b210c3737091\transformed\jetified-card-entry-1.4.0\AndroidManifest.xml:12:13-56
+252            android:windowSoftInputMode="adjustResize" >
+252-->[com.squareup.sdk.in-app-payments:card-entry:1.4.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\979b44967fcb4549ffa1b210c3737091\transformed\jetified-card-entry-1.4.0\AndroidManifest.xml:13:13-55
+253        </activity>
+254        <activity
+254-->[com.stripe:stripe-3ds2-android:4.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\d7de162a1bf1b0b5aa355543f07c0c5f\transformed\jetified-stripe-3ds2-android-4.1.0\AndroidManifest.xml:12:9-14:54
+255            android:name="com.stripe.android.stripe3ds2.views.ChallengeActivity"
+255-->[com.stripe:stripe-3ds2-android:4.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\d7de162a1bf1b0b5aa355543f07c0c5f\transformed\jetified-stripe-3ds2-android-4.1.0\AndroidManifest.xml:13:13-81
+256            android:theme="@style/Stripe3DS2Theme" />
+256-->[com.stripe:stripe-3ds2-android:4.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\d7de162a1bf1b0b5aa355543f07c0c5f\transformed\jetified-stripe-3ds2-android-4.1.0\AndroidManifest.xml:14:13-51
+257        <activity
+257-->[com.stripe:stripe-3ds2-android:4.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\d7de162a1bf1b0b5aa355543f07c0c5f\transformed\jetified-stripe-3ds2-android-4.1.0\AndroidManifest.xml:15:9-17:54
+258            android:name="com.stripe.android.stripe3ds2.views.ChallengeProgressActivity"
+258-->[com.stripe:stripe-3ds2-android:4.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\d7de162a1bf1b0b5aa355543f07c0c5f\transformed\jetified-stripe-3ds2-android-4.1.0\AndroidManifest.xml:16:13-89
+259            android:theme="@style/Stripe3DS2Theme" />
+259-->[com.stripe:stripe-3ds2-android:4.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\d7de162a1bf1b0b5aa355543f07c0c5f\transformed\jetified-stripe-3ds2-android-4.1.0\AndroidManifest.xml:17:13-51
+260
+261        <service
+261-->[com.amplifyframework:aws-storage-s3:1.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\94a1a3284ada9fd0fafc1da8ad815c31\transformed\jetified-aws-storage-s3-1.1.2\AndroidManifest.xml:28:9-30:38
+262            android:name="com.amazonaws.mobileconnectors.s3.transferutility.TransferService"
+262-->[com.amplifyframework:aws-storage-s3:1.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\94a1a3284ada9fd0fafc1da8ad815c31\transformed\jetified-aws-storage-s3-1.1.2\AndroidManifest.xml:29:13-93
+263            android:enabled="true" />
+263-->[com.amplifyframework:aws-storage-s3:1.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\94a1a3284ada9fd0fafc1da8ad815c31\transformed\jetified-aws-storage-s3-1.1.2\AndroidManifest.xml:30:13-35
+264
+265        <activity
+265-->[com.github.miguelbcr:RxPaparazzo:0.6.1-2.x] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\07f925e258fd0138b967b2a602cb6b5b\transformed\jetified-RxPaparazzo-0.6.1-2.x\AndroidManifest.xml:18:9-20:72
+266            android:name="com.yalantis.ucrop.UCropActivity"
+266-->[com.github.miguelbcr:RxPaparazzo:0.6.1-2.x] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\07f925e258fd0138b967b2a602cb6b5b\transformed\jetified-RxPaparazzo-0.6.1-2.x\AndroidManifest.xml:19:13-60
+267            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+267-->[com.github.miguelbcr:RxPaparazzo:0.6.1-2.x] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\07f925e258fd0138b967b2a602cb6b5b\transformed\jetified-RxPaparazzo-0.6.1-2.x\AndroidManifest.xml:20:13-69
+268
+269        <service
+269-->[androidx.room:room-runtime:2.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f844f564f64dda59c52ee833fe089957\transformed\room-runtime-2.1.0\AndroidManifest.xml:25:9-27:40
+270            android:name="androidx.room.MultiInstanceInvalidationService"
+270-->[androidx.room:room-runtime:2.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f844f564f64dda59c52ee833fe089957\transformed\room-runtime-2.1.0\AndroidManifest.xml:26:13-74
+271            android:exported="false" />
+271-->[androidx.room:room-runtime:2.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f844f564f64dda59c52ee833fe089957\transformed\room-runtime-2.1.0\AndroidManifest.xml:27:13-37
+272
+273        <provider
+273-->[com.squareup.sdk.in-app-payments:nonce-api:1.4.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\d440eb4c452a752e19f6eb576be33180\transformed\jetified-nonce-api-1.4.0\AndroidManifest.xml:10:9-13:40
+274            android:name="sqip.internal.ContextCaptureContentProvider"
+274-->[com.squareup.sdk.in-app-payments:nonce-api:1.4.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\d440eb4c452a752e19f6eb576be33180\transformed\jetified-nonce-api-1.4.0\AndroidManifest.xml:11:13-71
+275            android:authorities="com.usend.sqip"
+275-->[com.squareup.sdk.in-app-payments:nonce-api:1.4.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\d440eb4c452a752e19f6eb576be33180\transformed\jetified-nonce-api-1.4.0\AndroidManifest.xml:12:13-56
+276            android:exported="false" />
+276-->[com.squareup.sdk.in-app-payments:nonce-api:1.4.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\d440eb4c452a752e19f6eb576be33180\transformed\jetified-nonce-api-1.4.0\AndroidManifest.xml:13:13-37
+277        <!--
+278             FirebaseMessagingService performs security checks at runtime,
+279             but set to not exported to explicitly avoid allowing another app to call it.
+280        -->
+281        <service
+281-->[com.google.firebase:firebase-messaging:20.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\1fa9a4264af207cdaf123d3dd881289b\transformed\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:28:9-34:19
+282            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+282-->[com.google.firebase:firebase-messaging:20.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\1fa9a4264af207cdaf123d3dd881289b\transformed\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:29:13-82
+283            android:exported="false" >
+283-->[com.google.firebase:firebase-messaging:20.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\1fa9a4264af207cdaf123d3dd881289b\transformed\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:30:13-37
+284            <intent-filter android:priority="-500" >
+284-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:181:13-183:29
+285                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+285-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:182:17-78
+285-->D:\EliteUSAFashion-SCMS\app\src\main\AndroidManifest.xml:182:25-75
+286            </intent-filter>
+287        </service>
+288        <service
+288-->[com.google.firebase:firebase-messaging:20.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\1fa9a4264af207cdaf123d3dd881289b\transformed\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:35:9-41:19
+289            android:name="com.google.firebase.components.ComponentDiscoveryService"
+289-->[com.google.firebase:firebase-messaging:20.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\1fa9a4264af207cdaf123d3dd881289b\transformed\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:36:13-84
+290            android:directBootAware="true"
+290-->[com.google.firebase:firebase-common:20.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\1204bbffb2ce2b471fd28f9a00d72835\transformed\jetified-firebase-common-20.1.0\AndroidManifest.xml:35:13-43
+291            android:exported="false" >
+291-->[com.google.firebase:firebase-messaging:20.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\1fa9a4264af207cdaf123d3dd881289b\transformed\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:37:13-37
+292            <meta-data
+292-->[com.google.firebase:firebase-messaging:20.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\1fa9a4264af207cdaf123d3dd881289b\transformed\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:38:13-40:85
+293                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+293-->[com.google.firebase:firebase-messaging:20.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\1fa9a4264af207cdaf123d3dd881289b\transformed\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:39:17-119
+294                android:value="com.google.firebase.components.ComponentRegistrar" />
+294-->[com.google.firebase:firebase-messaging:20.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\1fa9a4264af207cdaf123d3dd881289b\transformed\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:40:17-82
+295            <meta-data
+295-->[com.google.firebase:firebase-crashlytics:18.2.9] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\b1b0d58c971f281f4385f0c2f2db85c0\transformed\jetified-firebase-crashlytics-18.2.9\AndroidManifest.xml:18:13-20:85
+296                android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
+296-->[com.google.firebase:firebase-crashlytics:18.2.9] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\b1b0d58c971f281f4385f0c2f2db85c0\transformed\jetified-firebase-crashlytics-18.2.9\AndroidManifest.xml:19:17-115
+297                android:value="com.google.firebase.components.ComponentRegistrar" />
+297-->[com.google.firebase:firebase-crashlytics:18.2.9] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\b1b0d58c971f281f4385f0c2f2db85c0\transformed\jetified-firebase-crashlytics-18.2.9\AndroidManifest.xml:20:17-82
+298            <meta-data
+298-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\c8523ce5abfb46664a8b5c076e67d2a2\transformed\jetified-firebase-iid-20.0.2\AndroidManifest.xml:32:13-34:85
+299                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+299-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\c8523ce5abfb46664a8b5c076e67d2a2\transformed\jetified-firebase-iid-20.0.2\AndroidManifest.xml:33:17-96
+300                android:value="com.google.firebase.components.ComponentRegistrar" />
+300-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\c8523ce5abfb46664a8b5c076e67d2a2\transformed\jetified-firebase-iid-20.0.2\AndroidManifest.xml:34:17-82
+301            <meta-data
+301-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\fcb56d3992183e4db803751b5ef15a4b\transformed\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:28:13-30:85
+302                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+302-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\fcb56d3992183e4db803751b5ef15a4b\transformed\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:29:17-115
+303                android:value="com.google.firebase.components.ComponentRegistrar" />
+303-->[com.google.firebase:firebase-datatransport:17.0.3] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\fcb56d3992183e4db803751b5ef15a4b\transformed\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:30:17-82
+304            <meta-data
+304-->[com.google.android.gms:play-services-measurement-api:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\a9beb7abc78fd1dd2b3d64f87011ded0\transformed\jetified-play-services-measurement-api-20.1.1\AndroidManifest.xml:31:13-33:85
+305                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+305-->[com.google.android.gms:play-services-measurement-api:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\a9beb7abc78fd1dd2b3d64f87011ded0\transformed\jetified-play-services-measurement-api-20.1.1\AndroidManifest.xml:32:17-139
+306                android:value="com.google.firebase.components.ComponentRegistrar" />
+306-->[com.google.android.gms:play-services-measurement-api:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\a9beb7abc78fd1dd2b3d64f87011ded0\transformed\jetified-play-services-measurement-api-20.1.1\AndroidManifest.xml:33:17-82
+307            <meta-data
+307-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\7e85c68396c4dec5933c571e677e4b3a\transformed\jetified-firebase-installations-17.0.1\AndroidManifest.xml:18:13-20:85
+308                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+308-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\7e85c68396c4dec5933c571e677e4b3a\transformed\jetified-firebase-installations-17.0.1\AndroidManifest.xml:19:17-127
+309                android:value="com.google.firebase.components.ComponentRegistrar" />
+309-->[com.google.firebase:firebase-installations:17.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\7e85c68396c4dec5933c571e677e4b3a\transformed\jetified-firebase-installations-17.0.1\AndroidManifest.xml:20:17-82
+310        </service>
+311
+312        <uses-library
+312-->[com.amazonaws:aws-android-sdk-core:2.17.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\bc07fc5e9ed6a8a25a861fa8fbcb3fa0\transformed\jetified-aws-android-sdk-core-2.17.1\AndroidManifest.xml:12:9-14:40
+313            android:name="org.apache.http.legacy"
+313-->[com.amazonaws:aws-android-sdk-core:2.17.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\bc07fc5e9ed6a8a25a861fa8fbcb3fa0\transformed\jetified-aws-android-sdk-core-2.17.1\AndroidManifest.xml:13:13-50
+314            android:required="false" />
+314-->[com.amazonaws:aws-android-sdk-core:2.17.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\bc07fc5e9ed6a8a25a861fa8fbcb3fa0\transformed\jetified-aws-android-sdk-core-2.17.1\AndroidManifest.xml:14:13-37
+315
+316        <meta-data
+316-->[com.android.billingclient:billing:3.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\ce3c015ea2c54c9a93588023cddb3157\transformed\jetified-billing-3.0.0\AndroidManifest.xml:13:9-15:37
+317            android:name="com.google.android.play.billingclient.version"
+317-->[com.android.billingclient:billing:3.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\ce3c015ea2c54c9a93588023cddb3157\transformed\jetified-billing-3.0.0\AndroidManifest.xml:14:13-73
+318            android:value="3.0.0" />
+318-->[com.android.billingclient:billing:3.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\ce3c015ea2c54c9a93588023cddb3157\transformed\jetified-billing-3.0.0\AndroidManifest.xml:15:13-34
+319
+320        <activity
+320-->[com.android.billingclient:billing:3.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\ce3c015ea2c54c9a93588023cddb3157\transformed\jetified-billing-3.0.0\AndroidManifest.xml:17:9-20:75
+321            android:name="com.android.billingclient.api.ProxyBillingActivity"
+321-->[com.android.billingclient:billing:3.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\ce3c015ea2c54c9a93588023cddb3157\transformed\jetified-billing-3.0.0\AndroidManifest.xml:18:13-78
+322            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+322-->[com.android.billingclient:billing:3.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\ce3c015ea2c54c9a93588023cddb3157\transformed\jetified-billing-3.0.0\AndroidManifest.xml:19:13-96
+323            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+323-->[com.android.billingclient:billing:3.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\ce3c015ea2c54c9a93588023cddb3157\transformed\jetified-billing-3.0.0\AndroidManifest.xml:20:13-72
+324        <activity
+324-->[com.github.VictorAlbertos:RxActivityResult:0.4.5-2.x] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\12aeae6015e4f0871d609561c1bf37bf\transformed\jetified-RxActivityResult-0.4.5-2.x\AndroidManifest.xml:12:9-15:56
+325            android:name="rx_activity_result2.HolderActivity"
+325-->[com.github.VictorAlbertos:RxActivityResult:0.4.5-2.x] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\12aeae6015e4f0871d609561c1bf37bf\transformed\jetified-RxActivityResult-0.4.5-2.x\AndroidManifest.xml:13:13-62
+326            android:configChanges="orientation|keyboardHidden|screenSize"
+326-->[com.github.VictorAlbertos:RxActivityResult:0.4.5-2.x] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\12aeae6015e4f0871d609561c1bf37bf\transformed\jetified-RxActivityResult-0.4.5-2.x\AndroidManifest.xml:14:13-74
+327            android:theme="@style/Theme.Transparent" />
+327-->[com.github.VictorAlbertos:RxActivityResult:0.4.5-2.x] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\12aeae6015e4f0871d609561c1bf37bf\transformed\jetified-RxActivityResult-0.4.5-2.x\AndroidManifest.xml:15:13-53
+328
+329        <receiver
+329-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\c8523ce5abfb46664a8b5c076e67d2a2\transformed\jetified-firebase-iid-20.0.2\AndroidManifest.xml:37:9-44:20
+330            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+330-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\c8523ce5abfb46664a8b5c076e67d2a2\transformed\jetified-firebase-iid-20.0.2\AndroidManifest.xml:38:13-78
+331            android:exported="true"
+331-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\c8523ce5abfb46664a8b5c076e67d2a2\transformed\jetified-firebase-iid-20.0.2\AndroidManifest.xml:39:13-36
+332            android:permission="com.google.android.c2dm.permission.SEND" >
+332-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\c8523ce5abfb46664a8b5c076e67d2a2\transformed\jetified-firebase-iid-20.0.2\AndroidManifest.xml:40:13-73
+333            <intent-filter>
+333-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\c8523ce5abfb46664a8b5c076e67d2a2\transformed\jetified-firebase-iid-20.0.2\AndroidManifest.xml:41:13-43:29
+334                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+334-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\c8523ce5abfb46664a8b5c076e67d2a2\transformed\jetified-firebase-iid-20.0.2\AndroidManifest.xml:42:17-81
+334-->[com.google.firebase:firebase-iid:20.0.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\c8523ce5abfb46664a8b5c076e67d2a2\transformed\jetified-firebase-iid-20.0.2\AndroidManifest.xml:42:25-78
+335            </intent-filter>
+336        </receiver>
+337
+338        <provider
+338-->[com.google.firebase:firebase-common:20.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\1204bbffb2ce2b471fd28f9a00d72835\transformed\jetified-firebase-common-20.1.0\AndroidManifest.xml:26:9-31:39
+339            android:name="com.google.firebase.provider.FirebaseInitProvider"
+339-->[com.google.firebase:firebase-common:20.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\1204bbffb2ce2b471fd28f9a00d72835\transformed\jetified-firebase-common-20.1.0\AndroidManifest.xml:27:13-77
+340            android:authorities="com.usend.firebaseinitprovider"
+340-->[com.google.firebase:firebase-common:20.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\1204bbffb2ce2b471fd28f9a00d72835\transformed\jetified-firebase-common-20.1.0\AndroidManifest.xml:28:13-72
+341            android:directBootAware="true"
+341-->[com.google.firebase:firebase-common:20.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\1204bbffb2ce2b471fd28f9a00d72835\transformed\jetified-firebase-common-20.1.0\AndroidManifest.xml:29:13-43
+342            android:exported="false"
+342-->[com.google.firebase:firebase-common:20.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\1204bbffb2ce2b471fd28f9a00d72835\transformed\jetified-firebase-common-20.1.0\AndroidManifest.xml:30:13-37
+343            android:initOrder="100" />
+343-->[com.google.firebase:firebase-common:20.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\1204bbffb2ce2b471fd28f9a00d72835\transformed\jetified-firebase-common-20.1.0\AndroidManifest.xml:31:13-36
+344
+345        <activity
+345-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\426be32c99678b453b96dfd5f51d5a4c\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+346            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+346-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\426be32c99678b453b96dfd5f51d5a4c\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+347            android:exported="false"
+347-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\426be32c99678b453b96dfd5f51d5a4c\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+348            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+348-->[com.google.android.gms:play-services-base:17.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\426be32c99678b453b96dfd5f51d5a4c\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+349
+350        <receiver
+350-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\37a5283cf89f58af88783ad373f71705\transformed\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:29:9-33:20
+351            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+351-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\37a5283cf89f58af88783ad373f71705\transformed\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:30:13-85
+352            android:enabled="true"
+352-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\37a5283cf89f58af88783ad373f71705\transformed\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:31:13-35
+353            android:exported="false" >
+353-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\37a5283cf89f58af88783ad373f71705\transformed\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:32:13-37
+354        </receiver>
+355
+356        <service
+356-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\37a5283cf89f58af88783ad373f71705\transformed\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:35:9-38:40
+357            android:name="com.google.android.gms.measurement.AppMeasurementService"
+357-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\37a5283cf89f58af88783ad373f71705\transformed\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:36:13-84
+358            android:enabled="true"
+358-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\37a5283cf89f58af88783ad373f71705\transformed\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:37:13-35
+359            android:exported="false" />
+359-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\37a5283cf89f58af88783ad373f71705\transformed\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:38:13-37
+360        <service
+360-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\37a5283cf89f58af88783ad373f71705\transformed\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:39:9-43:72
+361            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+361-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\37a5283cf89f58af88783ad373f71705\transformed\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:40:13-87
+362            android:enabled="true"
+362-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\37a5283cf89f58af88783ad373f71705\transformed\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:41:13-35
+363            android:exported="false"
+363-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\37a5283cf89f58af88783ad373f71705\transformed\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:42:13-37
+364            android:permission="android.permission.BIND_JOB_SERVICE" />
+364-->[com.google.android.gms:play-services-measurement:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\37a5283cf89f58af88783ad373f71705\transformed\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:43:13-69
+365
+366        <provider
+366-->[androidx.emoji2:emoji2:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\3ba251be7074ff7289811e8b60079fa7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+367            android:name="androidx.startup.InitializationProvider"
+367-->[androidx.emoji2:emoji2:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\3ba251be7074ff7289811e8b60079fa7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+368            android:authorities="com.usend.androidx-startup"
+368-->[androidx.emoji2:emoji2:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\3ba251be7074ff7289811e8b60079fa7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+369            android:exported="false" >
+369-->[androidx.emoji2:emoji2:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\3ba251be7074ff7289811e8b60079fa7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+370            <meta-data
+370-->[androidx.emoji2:emoji2:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\3ba251be7074ff7289811e8b60079fa7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+371                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+371-->[androidx.emoji2:emoji2:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\3ba251be7074ff7289811e8b60079fa7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+372                android:value="androidx.startup" />
+372-->[androidx.emoji2:emoji2:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\3ba251be7074ff7289811e8b60079fa7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+373            <meta-data
+373-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\638236642757fd8cec76cc5b44636eb4\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+374                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+374-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\638236642757fd8cec76cc5b44636eb4\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+375                android:value="androidx.startup" />
+375-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\638236642757fd8cec76cc5b44636eb4\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+376        </provider>
+377
+378        <service
+378-->[com.google.android.datatransport:transport-backend-cct:3.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\0a1f3b0bb48de590daaf1d19fded9112\transformed\jetified-transport-backend-cct-3.1.2\AndroidManifest.xml:29:9-35:19
+379            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+379-->[com.google.android.datatransport:transport-backend-cct:3.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\0a1f3b0bb48de590daaf1d19fded9112\transformed\jetified-transport-backend-cct-3.1.2\AndroidManifest.xml:30:13-103
+380            android:exported="false" >
+380-->[com.google.android.datatransport:transport-backend-cct:3.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\0a1f3b0bb48de590daaf1d19fded9112\transformed\jetified-transport-backend-cct-3.1.2\AndroidManifest.xml:31:13-37
+381            <meta-data
+381-->[com.google.android.datatransport:transport-backend-cct:3.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\0a1f3b0bb48de590daaf1d19fded9112\transformed\jetified-transport-backend-cct-3.1.2\AndroidManifest.xml:32:13-34:39
+382                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+382-->[com.google.android.datatransport:transport-backend-cct:3.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\0a1f3b0bb48de590daaf1d19fded9112\transformed\jetified-transport-backend-cct-3.1.2\AndroidManifest.xml:33:17-94
+383                android:value="cct" />
+383-->[com.google.android.datatransport:transport-backend-cct:3.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\0a1f3b0bb48de590daaf1d19fded9112\transformed\jetified-transport-backend-cct-3.1.2\AndroidManifest.xml:34:17-36
+384        </service>
+385        <service
+385-->[com.google.android.datatransport:transport-runtime:3.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\8b0abcac592c8d3efd2db3e8774d2ad7\transformed\jetified-transport-runtime-3.1.2\AndroidManifest.xml:26:9-30:19
+386            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+386-->[com.google.android.datatransport:transport-runtime:3.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\8b0abcac592c8d3efd2db3e8774d2ad7\transformed\jetified-transport-runtime-3.1.2\AndroidManifest.xml:27:13-117
+387            android:exported="false"
+387-->[com.google.android.datatransport:transport-runtime:3.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\8b0abcac592c8d3efd2db3e8774d2ad7\transformed\jetified-transport-runtime-3.1.2\AndroidManifest.xml:28:13-37
+388            android:permission="android.permission.BIND_JOB_SERVICE" >
+388-->[com.google.android.datatransport:transport-runtime:3.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\8b0abcac592c8d3efd2db3e8774d2ad7\transformed\jetified-transport-runtime-3.1.2\AndroidManifest.xml:29:13-69
+389        </service>
+390
+391        <receiver
+391-->[com.google.android.datatransport:transport-runtime:3.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\8b0abcac592c8d3efd2db3e8774d2ad7\transformed\jetified-transport-runtime-3.1.2\AndroidManifest.xml:32:9-34:40
+392            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+392-->[com.google.android.datatransport:transport-runtime:3.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\8b0abcac592c8d3efd2db3e8774d2ad7\transformed\jetified-transport-runtime-3.1.2\AndroidManifest.xml:33:13-132
+393            android:exported="false" />
+393-->[com.google.android.datatransport:transport-runtime:3.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\8b0abcac592c8d3efd2db3e8774d2ad7\transformed\jetified-transport-runtime-3.1.2\AndroidManifest.xml:34:13-37
+394    </application>
+395
+396</manifest>

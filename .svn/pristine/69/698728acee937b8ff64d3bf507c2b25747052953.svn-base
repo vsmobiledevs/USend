@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.amazonaws:aws-android-sdk-kms:2.17.1@aar">
+    <CLASSES>
+      <root url="file://C:/Dependency/caches/transforms-2/files-2.1/a9a30fc708aa757e190f588d7aef908e/jetified-aws-android-sdk-kms-2.17.1/AndroidManifest.xml" />
+      <root url="jar://C:/Dependency/caches/transforms-2/files-2.1/a9a30fc708aa757e190f588d7aef908e/jetified-aws-android-sdk-kms-2.17.1/jars/classes.jar!/" />
+      <root url="file://C:/Dependency/caches/transforms-2/files-2.1/a9a30fc708aa757e190f588d7aef908e/jetified-aws-android-sdk-kms-2.17.1/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://C:/Dependency/caches/modules-2/files-2.1/com.amazonaws/aws-android-sdk-kms/2.17.1/8e89df98860e5a1a21db35d6b684ef041b559db3/aws-android-sdk-kms-2.17.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

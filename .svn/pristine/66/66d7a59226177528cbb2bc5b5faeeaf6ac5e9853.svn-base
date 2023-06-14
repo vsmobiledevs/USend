@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+           
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/match"
+        tools:context=".views.home.PaymentSuccessfulActivity" android:tag="layout/activity_payment_successful_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgPaymentSuccess"
+            android:layout_width="@dimen/dimen_100dp"
+            android:layout_height="@dimen/dimen_108dp"
+            android:src="@drawable/ic_payment_success"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/txtPaymentSuccessful"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtPaymentSuccessful"
+            style="@style/CommonText.Style.SemiBold.16sp"
+            android:layout_width="@dimen/dimen_0dp"
+            android:gravity="center"
+            android:textSize="@dimen/dimen_18sp"
+            android:text="@string/lbl_payment_successful"
+            android:textColor="@color/color2D2D2D"
+            android:layout_marginStart="@dimen/dimen_30dp"
+            android:layout_marginEnd="@dimen/dimen_30dp"
+            android:layout_marginTop="@dimen/dimen_30dp"
+            app:layout_constraintTop_toBottomOf="@id/imgPaymentSuccess"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:layout_constraintBottom_toTopOf="@id/txtPaymentSuccessDesc"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtPaymentSuccessDesc"
+            style="@style/CommonText.Style.14sp"
+            android:layout_marginTop="@dimen/dimen_15dp"
+            android:layout_width="@dimen/dimen_0dp"
+            android:text="@string/lbl_suceess_message"
+            android:singleLine="false"
+            android:layout_marginStart="@dimen/dimen_30dp"
+            android:layout_marginEnd="@dimen/dimen_30dp"
+            android:gravity="center"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/txtPaymentSuccessful"
+            app:layout_constraintBottom_toTopOf="@id/btnOkay"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnOkay"
+            style="@style/MaterialButton.CornerRadius"
+            android:layout_width="match_parent"
+            android:layout_marginStart="@dimen/dimen_20dp"
+            android:layout_marginTop="@dimen/dimen_30dp"
+            android:layout_marginEnd="@dimen/dimen_20dp"
+            android:layout_marginBottom="@dimen/dimen_20dp"
+            android:text="@string/lbl_okay"
+            app:layout_constraintVertical_bias="1"
+            app:layout_constraintVertical_chainStyle="spread"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+         

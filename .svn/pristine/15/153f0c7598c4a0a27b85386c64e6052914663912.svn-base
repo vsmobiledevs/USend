@@ -1,0 +1,249 @@
+package com.usend.views.home
+
+import android.content.Context
+import android.content.Intent
+import android.view.View
+import androidx.lifecycle.Observer
+import com.base.network.model.AutoShipmentResponse
+import com.base.network.model.GetAutoshipmentServiceList
+import com.base.network.model.GetAutoshipmentServiceListData
+import com.usend.R
+import com.usend.adapter.AutoShippingMethodItemAdapter
+import com.usend.base.BaseActivity
+import com.usend.base.ViewModelActivity
+import com.usend.comman.Resource
+import com.usend.databinding.ActivityAutoShipMethodsBinding
+import com.usend.extensions.nullSafe
+import com.usend.extensions.showToast
+import com.usend.models.SelectAutoShipAddressModel
+import com.usend.utils.*
+import com.usend.utils.CommonUtils.dpToPx
+import com.usend.utils.CommonUtils.isRestrictedShipmentForUSA
+import com.usend.utils.CommonUtils.isUSA
+import com.usend.viewmodels.ShippingMethodViewModel
+import kotlinx.android.synthetic.main.app_toolbar.*
+import kotlin.reflect.KClass
+
+class AutoShipMethodsActivity(
+    override val modelClass: KClass<ShippingMethodViewModel> = ShippingMethodViewModel::class,
+    override val layoutId: Int = R.layout.activity_auto_ship_methods
+) : ViewModelActivity<ActivityAutoShipMethodsBinding, ShippingMethodViewModel>() {
+
+    private var arrayList = arrayListOf<SelectAutoShipAddressModel>()
+
+    private var address_id: Int? = null
+    private var countryCodeId = -1
+    private var selectedPosition: Int = 0
+
+    private val TAG = AutoShipMethodsActivity::class.java.simpleName
+
+    private var from: String? = null
+    private var autoShipmentServiceId: Int? = null
+    private var cardId: Int? = null
+
+    override fun getDataFromIntent() {
+        super.getDataFromIntent()
+
+        if (intent.hasExtra(ADDRESS_ID)) {
+            address_id = intent.getIntExtra(ADDRESS_ID, 0)
+        }
+
+        if (intent.hasExtra(COUNTRY_CODE_ID)) {
+            countryCodeId = intent.getIntExtra(COUNTRY_CODE_ID, -1)
+        }
+
+        if (intent.hasExtra(FROM)) {
+            from = intent.getStringExtra(FROM)
+        }
+
+        if (intent.hasExtra(SERVICE_NAME)) {
+            autoShipmentServiceId = intent.getIntExtra(SERVICE_NAME, 0)
+        }
+
+        if (intent.hasExtra(CARD_ID)) {
+            cardId = intent.getIntExtra(CARD_ID, 0)
+        }
+    }
+
+    override fun initView() {
+        super.initView()
+
+        viewModel.autoShipServices()
+
+        initToolbar(
+            toolbar = toolbar,
+            title = resources.getString(R.string.lbl_shipping_method)
+        )
+
+        arrayList.clear()
+
+        binding.adapter = AutoShippingMethodItemAdapter(
+            arrayList,
+            isCheckBoxVisible = (from != UPDATE_AUTO_SHIPMENT)
+        ) {
+            if ((from != UPDATE_AUTO_SHIPMENT)) {
+                selectedPosition = it
+                arrayList.forEachIndexed { index, _ ->
+                    arrayList[index].isSelected = index == it
+                }
+                binding.adapter?.notifyDataSetChanged()
+            } else {
+                selectedPosition = it
+                val newIntent = Intent()
+                newIntent.putExtra(SHIPMENT_DETAILS_MODEL, arrayList[selectedPosition].model)
+                setResult(RESULT_OK, newIntent)
+                finish()
+            }
+        }
+
+        binding.btnNext.setOnClickListener {
+            if (from == UPDATE_AUTO_SHIPMENT) {
+
+                //viewModel.updateAutoShipment(autoShipmentServiceId = arrayList[selectedPosition].model.id)
+            } else {
+                if (arrayList.size > 0) {
+                    val intent =
+                        Intent(this@AutoShipMethodsActivity, SelectSavedCardActivity::class.java)
+                    intent.putExtra(FROM, "from")
+                    intent.putExtra(ADDRESS_ID, address_id)
+                    intent.putExtra(SERVICE_NAME, arrayList[selectedPosition].model.id)
+                    (this@AutoShipMethodsActivity as BaseActivity).startActivityForResult(intent) { data ->
+                        setResult(RESULT_OK)
+                        finish()
+                    }
+                    /*SelectSavedCardActivity.newIntent(
+                    this@AutoShipMethodsActivity,
+                    Intent(this, SelectSavedCardActivity::class.java)
+                        .putExtra(FROM, "from")
+                        .putExtra(ADDRESS_ID, address_id)
+                        .putExtra(SERVICE_NAME, arrayList[selectedPosition].model.id)
+                )*/
+                } else {
+                    showToast(this, resources.getString(R.string.msg_plz_shipping_method))
+                }
+            }
+        }
+
+        if (from == UPDATE_AUTO_SHIPMENT) {
+            binding.btnNext.text = getString(R.string.lbl_update)
+            binding.btnNext.visibility = View.GONE
+            binding.rvShippingMethod.setPadding(0, 0, 0, dpToPx(this, 20))
+        } else {
+            binding.rvShippingMethod.setPadding(0, 0, 0, dpToPx(this, 80))
+        }
+    }
+
+    override fun addObserver() {
+        viewModel.status.observe(this, mObserver)
+    }
+
+    private val mObserver = Observer<Any> { response ->
+        when (response) {
+            is Resource.Error<*> -> {
+                JLog.e(TAG, "Message: ${response.data}")
+                showToast(response.message.toString())
+                binding.isEmpty = true
+                arrayList.clear()
+                binding.adapter?.notifyDataSetChanged()
+            }
+            is Resource.SuccessWithData<*> -> {
+                hideProgressDialog()
+                if (response.data is AutoShipmentResponse) {
+                    if ((response.data.responseCode ?: 0).equals(SUCCESS)) {
+                        response.data?.responseMessage?.let { showToast(it) }
+                        val newIntent = Intent()
+                        newIntent.putExtra(SHIPMENT_MODEL, response.data?.responseData)
+                        setResult(RESULT_OK, newIntent)
+                        finish()
+                    } else {
+                        response.data?.responseMessage?.let { showToast(it) }
+                    }
+
+                } else if (response.data is GetAutoshipmentServiceList) {
+                    var isAdded = false
+                    if (response.data.responseCode.equals(SUCCESS)) {
+
+                        response.data?.responseData?.serviceList?.forEachIndexed { index, addressList ->
+                            if (from == UPDATE_AUTO_SHIPMENT) {
+                                if (addressList.id == autoShipmentServiceId) {
+                                    isAdded = true
+                                }
+                                filterShippingMethod(addressList, addressList.id == autoShipmentServiceId)
+                            } else {
+                                filterShippingMethod(addressList, index == 0)
+                            }
+                        }
+
+                        binding.isEmpty = arrayList.size == 0
+                    } else {
+                        showToast(response.data.responseMessage)
+                        binding.isEmpty = true
+                        arrayList.clear()
+                        binding.adapter?.notifyDataSetChanged()
+                    }
+                    if (!isAdded && ((response.data?.responseData?.serviceList?.size
+                            ?: 0) != 0) && from == UPDATE_AUTO_SHIPMENT
+                    ) {
+                        arrayList?.first()?.isSelected = true
+                    }
+                    binding.adapter?.notifyDataSetChanged()
+                }
+            }
+            is Resource.Loading<*> -> {
+
+                response.isLoadingShow.let {
+                    if (it as Boolean) {
+                        showProgressDialog(this)
+                    } else {
+                        hideProgressDialog()
+                    }
+                }
+            }
+            is Resource.NoInternetError<*> -> {
+
+                // use if you wanna show dialog or snackbar
+                CommonUtils.showOkDialog(this, message = resources.getString(response.id!!))
+            }
+            is Resource.ValidationError<*> -> {
+                showToast(resources.getString(response.id.nullSafe()))
+            }
+            is Resource.ItemsNotFound<*> -> {
+                showToast(response.message.toString())
+                binding.isEmpty = true
+                arrayList.clear()
+                binding.adapter?.notifyDataSetChanged()
+            }
+            is Resource.UnAuthorisedRequest<*> -> {
+                showTokenExpiredDialog(resources.getString(R.string.lbl_session_expired_msg))
+            }
+        }
+    }
+
+    private fun filterShippingMethod(addressList: GetAutoshipmentServiceListData, isSelected: Boolean) {
+        if (countryCodeId.isUSA()) {
+            if (!addressList.serviceName.isRestrictedShipmentForUSA()) {
+                arrayList.add(
+                    SelectAutoShipAddressModel(
+                        addressList,
+                        isSelected
+                    )
+                )
+            }
+        } else {
+            if (addressList.serviceName.isRestrictedShipmentForUSA()) {
+                arrayList.add(
+                    SelectAutoShipAddressModel(
+                        addressList,
+                        isSelected
+                    )
+                )
+            }
+        }
+    }
+
+    companion object {
+        fun newIntent(context: Context, intent: Intent) {
+            context.startActivity(intent)
+        }
+    }
+}

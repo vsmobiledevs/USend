@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.android.gms:play-services-tasks:17.0.0@aar">
+    <CLASSES>
+      <root url="file://E:/Sonu g3/SDK/caches/transforms-2/files-2.1/434d1770c2ef23112be96ceb91ec039e/jetified-play-services-tasks-17.0.0/res" />
+      <root url="jar://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/6c64363856c5f5563dd3f1c7e6df6b8b/jetified-play-services-tasks-17.0.0/jars/classes.jar!/" />
+      <root url="file://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/6c64363856c5f5563dd3f1c7e6df6b8b/jetified-play-services-tasks-17.0.0/AndroidManifest.xml" />
+      <root url="file://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/6c64363856c5f5563dd3f1c7e6df6b8b/jetified-play-services-tasks-17.0.0/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

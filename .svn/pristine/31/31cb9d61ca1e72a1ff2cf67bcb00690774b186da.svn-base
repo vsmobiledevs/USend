@@ -1,0 +1,164 @@
+package com.usend.databinding;
+import com.usend.R;
+import com.usend.BR;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import android.view.View;
+@SuppressWarnings("unchecked")
+public class ActivityShippingMethodBindingImpl extends ActivityShippingMethodBinding  {
+
+    @Nullable
+    private static final androidx.databinding.ViewDataBinding.IncludedLayouts sIncludes;
+    @Nullable
+    private static final android.util.SparseIntArray sViewsWithIds;
+    static {
+        sIncludes = new androidx.databinding.ViewDataBinding.IncludedLayouts(11);
+        sIncludes.setIncludes(1, 
+            new String[] {"shimmer_placeholder_layout", "shimmer_placeholder_layout", "shimmer_placeholder_layout", "shimmer_placeholder_layout"},
+            new int[] {3, 4, 5, 6},
+            new int[] {com.usend.R.layout.shimmer_placeholder_layout,
+                com.usend.R.layout.shimmer_placeholder_layout,
+                com.usend.R.layout.shimmer_placeholder_layout,
+                com.usend.R.layout.shimmer_placeholder_layout});
+        sViewsWithIds = new android.util.SparseIntArray();
+        sViewsWithIds.put(R.id.toolbarShippingMethod, 2);
+        sViewsWithIds.put(R.id.rvShippingMethodFilter, 7);
+        sViewsWithIds.put(R.id.simmer_layout, 8);
+        sViewsWithIds.put(R.id.rvShippingMethod, 9);
+        sViewsWithIds.put(R.id.linhideNodata, 10);
+    }
+    // views
+    @NonNull
+    private final android.widget.LinearLayout mboundView0;
+    @NonNull
+    private final android.widget.LinearLayout mboundView1;
+    @Nullable
+    private final com.usend.databinding.ShimmerPlaceholderLayoutBinding mboundView11;
+    @Nullable
+    private final com.usend.databinding.ShimmerPlaceholderLayoutBinding mboundView12;
+    @Nullable
+    private final com.usend.databinding.ShimmerPlaceholderLayoutBinding mboundView13;
+    @Nullable
+    private final com.usend.databinding.ShimmerPlaceholderLayoutBinding mboundView14;
+    // variables
+    // values
+    // listeners
+    // Inverse Binding Event Handlers
+
+    public ActivityShippingMethodBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 11, sIncludes, sViewsWithIds));
+    }
+    private ActivityShippingMethodBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
+        super(bindingComponent, root, 0
+            , (android.widget.LinearLayout) bindings[10]
+            , (androidx.recyclerview.widget.RecyclerView) bindings[9]
+            , (androidx.recyclerview.widget.RecyclerView) bindings[7]
+            , (com.facebook.shimmer.ShimmerFrameLayout) bindings[8]
+            , (android.view.View) bindings[2]
+            );
+        this.mboundView0 = (android.widget.LinearLayout) bindings[0];
+        this.mboundView0.setTag(null);
+        this.mboundView1 = (android.widget.LinearLayout) bindings[1];
+        this.mboundView1.setTag(null);
+        this.mboundView11 = (com.usend.databinding.ShimmerPlaceholderLayoutBinding) bindings[3];
+        setContainedBinding(this.mboundView11);
+        this.mboundView12 = (com.usend.databinding.ShimmerPlaceholderLayoutBinding) bindings[4];
+        setContainedBinding(this.mboundView12);
+        this.mboundView13 = (com.usend.databinding.ShimmerPlaceholderLayoutBinding) bindings[5];
+        setContainedBinding(this.mboundView13);
+        this.mboundView14 = (com.usend.databinding.ShimmerPlaceholderLayoutBinding) bindings[6];
+        setContainedBinding(this.mboundView14);
+        setRootTag(root);
+        // listeners
+        invalidateAll();
+    }
+
+    @Override
+    public void invalidateAll() {
+        synchronized(this) {
+                mDirtyFlags = 0x2L;
+        }
+        mboundView11.invalidateAll();
+        mboundView12.invalidateAll();
+        mboundView13.invalidateAll();
+        mboundView14.invalidateAll();
+        requestRebind();
+    }
+
+    @Override
+    public boolean hasPendingBindings() {
+        synchronized(this) {
+            if (mDirtyFlags != 0) {
+                return true;
+            }
+        }
+        if (mboundView11.hasPendingBindings()) {
+            return true;
+        }
+        if (mboundView12.hasPendingBindings()) {
+            return true;
+        }
+        if (mboundView13.hasPendingBindings()) {
+            return true;
+        }
+        if (mboundView14.hasPendingBindings()) {
+            return true;
+        }
+        return false;
+    }
+
+    @Override
+    public boolean setVariable(int variableId, @Nullable Object variable)  {
+        boolean variableSet = true;
+        if (BR.isEmpty == variableId) {
+            setIsEmpty((java.lang.Boolean) variable);
+        }
+        else {
+            variableSet = false;
+        }
+            return variableSet;
+    }
+
+    public void setIsEmpty(@Nullable java.lang.Boolean IsEmpty) {
+        this.mIsEmpty = IsEmpty;
+    }
+
+    @Override
+    public void setLifecycleOwner(@Nullable androidx.lifecycle.LifecycleOwner lifecycleOwner) {
+        super.setLifecycleOwner(lifecycleOwner);
+        mboundView11.setLifecycleOwner(lifecycleOwner);
+        mboundView12.setLifecycleOwner(lifecycleOwner);
+        mboundView13.setLifecycleOwner(lifecycleOwner);
+        mboundView14.setLifecycleOwner(lifecycleOwner);
+    }
+
+    @Override
+    protected boolean onFieldChange(int localFieldId, Object object, int fieldId) {
+        switch (localFieldId) {
+        }
+        return false;
+    }
+
+    @Override
+    protected void executeBindings() {
+        long dirtyFlags = 0;
+        synchronized(this) {
+            dirtyFlags = mDirtyFlags;
+            mDirtyFlags = 0;
+        }
+        // batch finished
+        executeBindingsOn(mboundView11);
+        executeBindingsOn(mboundView12);
+        executeBindingsOn(mboundView13);
+        executeBindingsOn(mboundView14);
+    }
+    // Listener Stub Implementations
+    // callback impls
+    // dirty flag
+    private  long mDirtyFlags = 0xffffffffffffffffL;
+    /* flag mapping
+        flag 0 (0x1L): isEmpty
+        flag 1 (0x2L): null
+    flag mapping end*/
+    //end
+}

@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: artifacts:imagepickerviewkt-1.0.3:unspecified@jar">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/imagepickerviewkt-1.0.3/build/.transforms/e010b583434b0211cc614111bba2aa19/jetified-imagepickerviewkt-1.0.3/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/imagepickerviewkt-1.0.3/build/.transforms/e010b583434b0211cc614111bba2aa19/jetified-imagepickerviewkt-1.0.3/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/imagepickerviewkt-1.0.3/build/.transforms/e010b583434b0211cc614111bba2aa19/jetified-imagepickerviewkt-1.0.3/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

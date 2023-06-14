@@ -1,0 +1,181 @@
+package com.usend.databinding;
+import com.usend.R;
+import com.usend.BR;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import android.view.View;
+@SuppressWarnings("unchecked")
+public class ActivityOtpVerificationBindingImpl extends ActivityOtpVerificationBinding  {
+
+    @Nullable
+    private static final androidx.databinding.ViewDataBinding.IncludedLayouts sIncludes;
+    @Nullable
+    private static final android.util.SparseIntArray sViewsWithIds;
+    static {
+        sIncludes = null;
+        sViewsWithIds = new android.util.SparseIntArray();
+        sViewsWithIds.put(R.id.toolbarOtpVerify, 3);
+        sViewsWithIds.put(R.id.txtSignUpTitle, 4);
+        sViewsWithIds.put(R.id.txtOtpDesc, 5);
+        sViewsWithIds.put(R.id.txtMobileNo, 6);
+        sViewsWithIds.put(R.id.llOtp, 7);
+        sViewsWithIds.put(R.id.otpView, 8);
+        sViewsWithIds.put(R.id.btnNext, 9);
+    }
+    // views
+    @NonNull
+    private final android.widget.LinearLayout mboundView0;
+    // variables
+    // values
+    // listeners
+    // Inverse Binding Event Handlers
+
+    public ActivityOtpVerificationBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 10, sIncludes, sViewsWithIds));
+    }
+    private ActivityOtpVerificationBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
+        super(bindingComponent, root, 1
+            , (com.google.android.material.button.MaterialButton) bindings[9]
+            , (android.widget.LinearLayout) bindings[7]
+            , (com.mukesh.OtpView) bindings[8]
+            , (android.view.View) bindings[3]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[6]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[5]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[2]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[4]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[1]
+            );
+        this.mboundView0 = (android.widget.LinearLayout) bindings[0];
+        this.mboundView0.setTag(null);
+        this.txtResend.setTag(null);
+        this.txtTimer.setTag(null);
+        setRootTag(root);
+        // listeners
+        invalidateAll();
+    }
+
+    @Override
+    public void invalidateAll() {
+        synchronized(this) {
+                mDirtyFlags = 0x8L;
+        }
+        requestRebind();
+    }
+
+    @Override
+    public boolean hasPendingBindings() {
+        synchronized(this) {
+            if (mDirtyFlags != 0) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    @Override
+    public boolean setVariable(int variableId, @Nullable Object variable)  {
+        boolean variableSet = true;
+        if (BR.activity == variableId) {
+            setActivity((com.usend.views.userauth.OtpVerificationActivity) variable);
+        }
+        else if (BR.viewModel == variableId) {
+            setViewModel((com.usend.viewmodels.OtpVerificationViewModel) variable);
+        }
+        else {
+            variableSet = false;
+        }
+            return variableSet;
+    }
+
+    public void setActivity(@Nullable com.usend.views.userauth.OtpVerificationActivity Activity) {
+        this.mActivity = Activity;
+    }
+    public void setViewModel(@Nullable com.usend.viewmodels.OtpVerificationViewModel ViewModel) {
+        this.mViewModel = ViewModel;
+        synchronized(this) {
+            mDirtyFlags |= 0x4L;
+        }
+        notifyPropertyChanged(BR.viewModel);
+        super.requestRebind();
+    }
+
+    @Override
+    protected boolean onFieldChange(int localFieldId, Object object, int fieldId) {
+        switch (localFieldId) {
+            case 0 :
+                return onChangeViewModelIsTimer((androidx.lifecycle.MediatorLiveData<java.lang.Boolean>) object, fieldId);
+        }
+        return false;
+    }
+    private boolean onChangeViewModelIsTimer(androidx.lifecycle.MediatorLiveData<java.lang.Boolean> ViewModelIsTimer, int fieldId) {
+        if (fieldId == BR._all) {
+            synchronized(this) {
+                    mDirtyFlags |= 0x1L;
+            }
+            return true;
+        }
+        return false;
+    }
+
+    @Override
+    protected void executeBindings() {
+        long dirtyFlags = 0;
+        synchronized(this) {
+            dirtyFlags = mDirtyFlags;
+            mDirtyFlags = 0;
+        }
+        java.lang.Boolean viewModelIsTimerGetValue = null;
+        boolean androidxDatabindingViewDataBindingSafeUnboxViewModelIsTimer = false;
+        boolean viewModelIsTimer = false;
+        com.usend.viewmodels.OtpVerificationViewModel viewModel = mViewModel;
+        androidx.lifecycle.MediatorLiveData<java.lang.Boolean> ViewModelIsTimer1 = null;
+        boolean androidxDatabindingViewDataBindingSafeUnboxViewModelIsTimerGetValue = false;
+
+        if ((dirtyFlags & 0xdL) != 0) {
+
+
+
+                if (viewModel != null) {
+                    // read viewModel.isTimer
+                    ViewModelIsTimer1 = viewModel.isTimer();
+                }
+                updateLiveDataRegistration(0, ViewModelIsTimer1);
+
+
+                if (ViewModelIsTimer1 != null) {
+                    // read viewModel.isTimer.getValue()
+                    viewModelIsTimerGetValue = ViewModelIsTimer1.getValue();
+                }
+
+
+                // read androidx.databinding.ViewDataBinding.safeUnbox(viewModel.isTimer.getValue())
+                androidxDatabindingViewDataBindingSafeUnboxViewModelIsTimerGetValue = androidx.databinding.ViewDataBinding.safeUnbox(viewModelIsTimerGetValue);
+
+
+                // read !androidx.databinding.ViewDataBinding.safeUnbox(viewModel.isTimer.getValue())
+                viewModelIsTimer = !androidxDatabindingViewDataBindingSafeUnboxViewModelIsTimerGetValue;
+
+
+                // read androidx.databinding.ViewDataBinding.safeUnbox(!androidx.databinding.ViewDataBinding.safeUnbox(viewModel.isTimer.getValue()))
+                androidxDatabindingViewDataBindingSafeUnboxViewModelIsTimer = androidx.databinding.ViewDataBinding.safeUnbox(viewModelIsTimer);
+        }
+        // batch finished
+        if ((dirtyFlags & 0xdL) != 0) {
+            // api target 1
+
+            com.usend.binder.CommanBinderKt.visibility(this.txtResend, androidxDatabindingViewDataBindingSafeUnboxViewModelIsTimer);
+            com.usend.binder.CommanBinderKt.visibility(this.txtTimer, androidxDatabindingViewDataBindingSafeUnboxViewModelIsTimerGetValue);
+        }
+    }
+    // Listener Stub Implementations
+    // callback impls
+    // dirty flag
+    private  long mDirtyFlags = 0xffffffffffffffffL;
+    /* flag mapping
+        flag 0 (0x1L): viewModel.isTimer
+        flag 1 (0x2L): activity
+        flag 2 (0x3L): viewModel
+        flag 3 (0x4L): null
+    flag mapping end*/
+    //end
+}

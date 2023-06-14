@@ -1,0 +1,43 @@
+package com.usend.adapter
+
+import android.view.View
+import com.base.network.model.GetRatesList
+import com.usend.R
+import com.usend.base.BaseListAdapter
+import com.usend.databinding.RowShippingMethodItemBinding
+import com.usend.extensions.loadImageUrl
+import com.usend.utils.*
+
+class ShippingMethodItemAdapter(private val items: ArrayList<GetRatesList>, val callback : (Int) -> Unit) : BaseListAdapter(items) {
+
+    override fun getItemViewType(position: Int) = R.layout.row_shipping_method_item
+
+    override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
+
+        if(holder.binding is RowShippingMethodItemBinding) {
+
+            holder.binding.txtShippingMethodName.text = items[position].serviceName
+            holder.binding.txtShippingCharges.text = "$" + String.format("%.2f", items[position].shipmentCost?.toDouble())
+            holder.binding.txtTimeToShipped.text = items[position].deliveryTime
+            holder.binding.txtAvailability.text = "Available"
+
+            if(items[position].serviceCode.equals(RECOMMENDED_FEDEX_INTERNATIONAL_PRIO_SERVICE_CODE) ||
+                items[position].serviceCode.equals(RECOMMENDED_DHL_EXPRESS_WORLDWIDE_SERVICE_CODE) ||
+                items[position].serviceCode.equals(RECOMMENDED_DHL_FEDEX_PRIO_OVERNIGHT_SERVICE_CODE) ||
+                items[position].serviceCode.equals(RECOMMENDED_DHL_FEDEX_2_DAY_SERVICE_CODE)){
+                holder.binding.txtRecommanded.visibility = View.VISIBLE
+            }else{
+                holder.binding.txtRecommanded.visibility = View.GONE
+            }
+            holder.binding.imgShipping.loadImageUrl(holder.itemView.context, items[position].image!!, cornerRadius = CommonUtils.dpToPx(holder.itemView.context, 20),
+                placeholder = R.drawable.ic_package_place_holder, errorPlaceholder = R.drawable.ic_package_place_holder)
+            {
+
+            }
+
+            holder.itemView.setOnClickListener {
+                callback(holder.adapterPosition)
+            }
+        }
+    }
+}

@@ -1,0 +1,18 @@
+package com.base.network.model
+
+data class CardX(
+    val billing_address: BillingAddress,
+    val bin: String,
+    val card_brand: String,
+    val card_type: String,
+    val created_at: String,
+    val customer_id: String,
+    val enabled: Boolean,
+    val exp_month: Int,
+    val exp_year: Int,
+    val fingerprint: String,
+    val id: String,
+    val last_4: String,
+    val merchant_id: String,
+    val prepaid_type: String
+)

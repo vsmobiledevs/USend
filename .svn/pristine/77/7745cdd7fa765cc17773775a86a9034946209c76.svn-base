@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.databinding:databinding-runtime:4.0.0@aar">
+    <CLASSES>
+      <root url="jar://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/cc2deb72fd15ab008f503df69a1f9e4c/databinding-runtime-4.0.0/jars/classes.jar!/" />
+      <root url="file://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/cc2deb72fd15ab008f503df69a1f9e4c/databinding-runtime-4.0.0/res" />
+      <root url="file://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/cc2deb72fd15ab008f503df69a1f9e4c/databinding-runtime-4.0.0/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://E:/Sonu g3/SDK/caches/modules-2/files-2.1/androidx.databinding/databinding-runtime/4.0.0/7b8e12198da0c017ea59bc969823a5afea391e6d/databinding-runtime-4.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

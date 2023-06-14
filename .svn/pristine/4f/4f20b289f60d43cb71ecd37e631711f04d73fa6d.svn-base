@@ -1,0 +1,119 @@
+/*
+ * The MIT License (MIT)
+ *
+ * Copyright (c) 2019 https://www.spaceotechnologies.com
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated
+ * documentation files (the "Software"), to deal in the Software without restriction, including without
+ * limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the
+ * Software, and to permit persons to whom the Software is furnished to do so, subject to the following
+ * conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all copies or substantial portions
+ * of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+ * INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+ * PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+ * LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT
+ * OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+ * OTHER DEALINGS IN THE SOFTWARE.
+ *
+ */
+
+package com.usend.database
+
+import android.content.Context
+import android.database.sqlite.SQLiteDatabase
+import android.database.sqlite.SQLiteException
+import android.database.sqlite.SQLiteOpenHelper
+import android.util.Log
+import com.usend.utils.DB_NAME
+import com.usend.utils.FIRST_COPY_VERSION
+import java.io.File
+import java.io.FileOutputStream
+import java.io.IOException
+
+/**
+ * Created by Vires Purohit
+Space-O Technologies
+on 30/4/18.
+ */
+
+/*
+The follow initialization uses the concept of
+the secondary constructor
+as the extended class SqliteOpenHelper
+class requires argumented constructor to get initialized
+ */
+class Databasehelper
+constructor(private val myContext: Context, DB_PATH: String) :
+    SQLiteOpenHelper(myContext, DB_NAME, null, FIRST_COPY_VERSION) {
+    private var myDataBase: SQLiteDatabase? = null
+
+    init {
+        createDataBase(DB_PATH)
+    }
+
+    private fun createDataBase(DB_PATH: String): Boolean {
+        val dbExist = checkDataBase(DB_PATH)
+        myDataBase = null
+        if (dbExist) {
+            Log.e("DB", "Exist")
+        } else {
+            Log.e("DB", "Not Exist")
+            myDataBase = this.readableDatabase
+            myDataBase!!.close()
+            try {
+                val myInput = myContext.assets.open(DB_NAME)
+                val outFileName = DB_PATH + DB_NAME
+                val myOutput = FileOutputStream(outFileName)
+                val buffer = ByteArray(1024)
+                var length: Int
+
+                while (run {
+                        length = myInput.read(buffer, 0, 1024)
+                        length
+                    } > 0) {
+                    myOutput.write(buffer, 0, length)
+                }
+
+                myOutput.flush()
+                myOutput.close()
+                myInput.close()
+            } catch (e: IOException) {
+                e.printStackTrace()
+                //  throw Error("Error copying database")
+            }
+        }
+        return dbExist
+    }
+
+    fun checkDataBase(DB_PATH: String): Boolean {
+        var checkDB: SQLiteDatabase? = null
+        try {
+
+            val myPath = DB_PATH + DB_NAME
+            val file = File(myPath)
+            if (file.exists() && !file.isDirectory)
+                checkDB = SQLiteDatabase.openDatabase(myPath, null, SQLiteDatabase.OPEN_READWRITE)
+        } catch (e: SQLiteException) {
+            e.printStackTrace()
+        }
+        checkDB?.close()
+        return checkDB != null
+    }
+
+    @Synchronized
+    override fun close() {
+        if (myDataBase != null)
+            myDataBase!!.close()
+        super.close()
+    }
+
+    override fun onCreate(arg0: SQLiteDatabase) {
+    }
+
+    override fun onUpgrade(arg0: SQLiteDatabase, arg1: Int, arg2: Int) {
+    }
+}

@@ -1,0 +1,970 @@
+package com.usend;
+
+import android.util.SparseArray;
+import android.util.SparseIntArray;
+import android.view.View;
+import androidx.databinding.DataBinderMapper;
+import androidx.databinding.DataBindingComponent;
+import androidx.databinding.ViewDataBinding;
+import com.usend.databinding.ActivityAddCardBindingImpl;
+import com.usend.databinding.ActivityAddNewAddressBindingImpl;
+import com.usend.databinding.ActivityAuthenticationBindingImpl;
+import com.usend.databinding.ActivityAutoShipBindingImpl;
+import com.usend.databinding.ActivityAutoShipMethodsBindingImpl;
+import com.usend.databinding.ActivityBillingAddressBindingImpl;
+import com.usend.databinding.ActivityChangePasswordBindingImpl;
+import com.usend.databinding.ActivityConciergeForGuestBindingImpl;
+import com.usend.databinding.ActivityConciergeItemDetailBindingImpl;
+import com.usend.databinding.ActivityContactUsBindingImpl;
+import com.usend.databinding.ActivityCreateNewReqBindingImpl;
+import com.usend.databinding.ActivityEditProfileBindingImpl;
+import com.usend.databinding.ActivityForgotPasswordBindingImpl;
+import com.usend.databinding.ActivityIntroBindingImpl;
+import com.usend.databinding.ActivityMainBindingImpl;
+import com.usend.databinding.ActivityNotificationBindingImpl;
+import com.usend.databinding.ActivityOrderDetailsBindingImpl;
+import com.usend.databinding.ActivityOtpVerificationBindingImpl;
+import com.usend.databinding.ActivityPackageDetailBindingImpl;
+import com.usend.databinding.ActivityPaymentInfoBindingImpl;
+import com.usend.databinding.ActivityPaymentMethodBindingImpl;
+import com.usend.databinding.ActivityPaymentSuccessfulBindingImpl;
+import com.usend.databinding.ActivityProhibitedItemsBindingImpl;
+import com.usend.databinding.ActivityRegionSelectionBindingImpl;
+import com.usend.databinding.ActivitySavedCardsBindingImpl;
+import com.usend.databinding.ActivitySavedPaymentMethodsBindingImpl;
+import com.usend.databinding.ActivitySelectSavedCardBindingImpl;
+import com.usend.databinding.ActivityShipToAddressBindingImpl;
+import com.usend.databinding.ActivityShippingAddressBindingImpl;
+import com.usend.databinding.ActivityShippingCostBindingImpl;
+import com.usend.databinding.ActivityShippingDetailsBindingImpl;
+import com.usend.databinding.ActivityShippingMethodBindingImpl;
+import com.usend.databinding.ActivitySignInBindingImpl;
+import com.usend.databinding.ActivitySignUpBindingImpl;
+import com.usend.databinding.ActivitySplashBindingImpl;
+import com.usend.databinding.ActivitySquareUpBindingImpl;
+import com.usend.databinding.ActivityUSPSVerificationBindingImpl;
+import com.usend.databinding.ActivityVerificationStatusBindingImpl;
+import com.usend.databinding.ActivityWebViewBindingImpl;
+import com.usend.databinding.BottomsheetShippingmethodFilterBindingImpl;
+import com.usend.databinding.CommanErrorBindingImpl;
+import com.usend.databinding.CustomBottomTabItemBindingImpl;
+import com.usend.databinding.DialogCommonBindingImpl;
+import com.usend.databinding.DialogImagePreviewBindingImpl;
+import com.usend.databinding.DialogSplitPackageBindingImpl;
+import com.usend.databinding.DialogUpdateMobileBindingImpl;
+import com.usend.databinding.FragmentAuthBindingImpl;
+import com.usend.databinding.FragmentConciergeBindingImpl;
+import com.usend.databinding.FragmentConciergeForGuestBindingImpl;
+import com.usend.databinding.FragmentConciergeForSubscriptionBindingImpl;
+import com.usend.databinding.FragmentMailboxBindingImpl;
+import com.usend.databinding.FragmentMyProfileBindingImpl;
+import com.usend.databinding.FragmentMyProfileForGuestBindingImpl;
+import com.usend.databinding.FragmentOrderHistoryBindingImpl;
+import com.usend.databinding.FragmentShippingCalculatorBindingImpl;
+import com.usend.databinding.ItemAddNewAddressBindingImpl;
+import com.usend.databinding.RowAutoShippingMethodItemBindingImpl;
+import com.usend.databinding.RowConciergeItemBindingImpl;
+import com.usend.databinding.RowExtraServicesItemBindingImpl;
+import com.usend.databinding.RowItemNotiBindingImpl;
+import com.usend.databinding.RowItemRegionSelectionBindingImpl;
+import com.usend.databinding.RowMailboxItemBindingImpl;
+import com.usend.databinding.RowOrderHistoryItemBindingImpl;
+import com.usend.databinding.RowPackageDetailsBindingImpl;
+import com.usend.databinding.RowProhibitedItemBindingImpl;
+import com.usend.databinding.RowSavedCardItemBindingImpl;
+import com.usend.databinding.RowSavedPaymentMethodsItemBindingImpl;
+import com.usend.databinding.RowSelectSavedCardItemBindingImpl;
+import com.usend.databinding.RowShipToAddressItemBindingImpl;
+import com.usend.databinding.RowShippingAddressItemBindingImpl;
+import com.usend.databinding.RowShippingMethodFilterItemBindingImpl;
+import com.usend.databinding.RowShippingMethodItemBindingImpl;
+import com.usend.databinding.ShimmerPlaceholderLayoutBindingImpl;
+import com.usend.databinding.ViewEmptyItemBindingImpl;
+import com.usend.databinding.ViewFooterLoadingBindingImpl;
+import com.usend.databinding.ViewLoadingProgressbarBindingImpl;
+import java.lang.IllegalArgumentException;
+import java.lang.Integer;
+import java.lang.Object;
+import java.lang.Override;
+import java.lang.RuntimeException;
+import java.lang.String;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+
+public class DataBinderMapperImpl extends DataBinderMapper {
+  private static final int LAYOUT_ACTIVITYADDCARD = 1;
+
+  private static final int LAYOUT_ACTIVITYADDNEWADDRESS = 2;
+
+  private static final int LAYOUT_ACTIVITYAUTHENTICATION = 3;
+
+  private static final int LAYOUT_ACTIVITYAUTOSHIP = 4;
+
+  private static final int LAYOUT_ACTIVITYAUTOSHIPMETHODS = 5;
+
+  private static final int LAYOUT_ACTIVITYBILLINGADDRESS = 6;
+
+  private static final int LAYOUT_ACTIVITYCHANGEPASSWORD = 7;
+
+  private static final int LAYOUT_ACTIVITYCONCIERGEFORGUEST = 8;
+
+  private static final int LAYOUT_ACTIVITYCONCIERGEITEMDETAIL = 9;
+
+  private static final int LAYOUT_ACTIVITYCONTACTUS = 10;
+
+  private static final int LAYOUT_ACTIVITYCREATENEWREQ = 11;
+
+  private static final int LAYOUT_ACTIVITYEDITPROFILE = 12;
+
+  private static final int LAYOUT_ACTIVITYFORGOTPASSWORD = 13;
+
+  private static final int LAYOUT_ACTIVITYINTRO = 14;
+
+  private static final int LAYOUT_ACTIVITYMAIN = 15;
+
+  private static final int LAYOUT_ACTIVITYNOTIFICATION = 16;
+
+  private static final int LAYOUT_ACTIVITYORDERDETAILS = 17;
+
+  private static final int LAYOUT_ACTIVITYOTPVERIFICATION = 18;
+
+  private static final int LAYOUT_ACTIVITYPACKAGEDETAIL = 19;
+
+  private static final int LAYOUT_ACTIVITYPAYMENTINFO = 20;
+
+  private static final int LAYOUT_ACTIVITYPAYMENTMETHOD = 21;
+
+  private static final int LAYOUT_ACTIVITYPAYMENTSUCCESSFUL = 22;
+
+  private static final int LAYOUT_ACTIVITYPROHIBITEDITEMS = 23;
+
+  private static final int LAYOUT_ACTIVITYREGIONSELECTION = 24;
+
+  private static final int LAYOUT_ACTIVITYSAVEDCARDS = 25;
+
+  private static final int LAYOUT_ACTIVITYSAVEDPAYMENTMETHODS = 26;
+
+  private static final int LAYOUT_ACTIVITYSELECTSAVEDCARD = 27;
+
+  private static final int LAYOUT_ACTIVITYSHIPTOADDRESS = 28;
+
+  private static final int LAYOUT_ACTIVITYSHIPPINGADDRESS = 29;
+
+  private static final int LAYOUT_ACTIVITYSHIPPINGCOST = 30;
+
+  private static final int LAYOUT_ACTIVITYSHIPPINGDETAILS = 31;
+
+  private static final int LAYOUT_ACTIVITYSHIPPINGMETHOD = 32;
+
+  private static final int LAYOUT_ACTIVITYSIGNIN = 33;
+
+  private static final int LAYOUT_ACTIVITYSIGNUP = 34;
+
+  private static final int LAYOUT_ACTIVITYSPLASH = 35;
+
+  private static final int LAYOUT_ACTIVITYSQUAREUP = 36;
+
+  private static final int LAYOUT_ACTIVITYUSPSVERIFICATION = 37;
+
+  private static final int LAYOUT_ACTIVITYVERIFICATIONSTATUS = 38;
+
+  private static final int LAYOUT_ACTIVITYWEBVIEW = 39;
+
+  private static final int LAYOUT_BOTTOMSHEETSHIPPINGMETHODFILTER = 40;
+
+  private static final int LAYOUT_COMMANERROR = 41;
+
+  private static final int LAYOUT_CUSTOMBOTTOMTABITEM = 42;
+
+  private static final int LAYOUT_DIALOGCOMMON = 43;
+
+  private static final int LAYOUT_DIALOGIMAGEPREVIEW = 44;
+
+  private static final int LAYOUT_DIALOGSPLITPACKAGE = 45;
+
+  private static final int LAYOUT_DIALOGUPDATEMOBILE = 46;
+
+  private static final int LAYOUT_FRAGMENTAUTH = 47;
+
+  private static final int LAYOUT_FRAGMENTCONCIERGE = 48;
+
+  private static final int LAYOUT_FRAGMENTCONCIERGEFORGUEST = 49;
+
+  private static final int LAYOUT_FRAGMENTCONCIERGEFORSUBSCRIPTION = 50;
+
+  private static final int LAYOUT_FRAGMENTMAILBOX = 51;
+
+  private static final int LAYOUT_FRAGMENTMYPROFILE = 52;
+
+  private static final int LAYOUT_FRAGMENTMYPROFILEFORGUEST = 53;
+
+  private static final int LAYOUT_FRAGMENTORDERHISTORY = 54;
+
+  private static final int LAYOUT_FRAGMENTSHIPPINGCALCULATOR = 55;
+
+  private static final int LAYOUT_ITEMADDNEWADDRESS = 56;
+
+  private static final int LAYOUT_ROWAUTOSHIPPINGMETHODITEM = 57;
+
+  private static final int LAYOUT_ROWCONCIERGEITEM = 58;
+
+  private static final int LAYOUT_ROWEXTRASERVICESITEM = 59;
+
+  private static final int LAYOUT_ROWITEMNOTI = 60;
+
+  private static final int LAYOUT_ROWITEMREGIONSELECTION = 61;
+
+  private static final int LAYOUT_ROWMAILBOXITEM = 62;
+
+  private static final int LAYOUT_ROWORDERHISTORYITEM = 63;
+
+  private static final int LAYOUT_ROWPACKAGEDETAILS = 64;
+
+  private static final int LAYOUT_ROWPROHIBITEDITEM = 65;
+
+  private static final int LAYOUT_ROWSAVEDCARDITEM = 66;
+
+  private static final int LAYOUT_ROWSAVEDPAYMENTMETHODSITEM = 67;
+
+  private static final int LAYOUT_ROWSELECTSAVEDCARDITEM = 68;
+
+  private static final int LAYOUT_ROWSHIPTOADDRESSITEM = 69;
+
+  private static final int LAYOUT_ROWSHIPPINGADDRESSITEM = 70;
+
+  private static final int LAYOUT_ROWSHIPPINGMETHODFILTERITEM = 71;
+
+  private static final int LAYOUT_ROWSHIPPINGMETHODITEM = 72;
+
+  private static final int LAYOUT_SHIMMERPLACEHOLDERLAYOUT = 73;
+
+  private static final int LAYOUT_VIEWEMPTYITEM = 74;
+
+  private static final int LAYOUT_VIEWFOOTERLOADING = 75;
+
+  private static final int LAYOUT_VIEWLOADINGPROGRESSBAR = 76;
+
+  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(76);
+
+  static {
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.activity_add_card, LAYOUT_ACTIVITYADDCARD);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.activity_add_new_address, LAYOUT_ACTIVITYADDNEWADDRESS);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.activity_authentication, LAYOUT_ACTIVITYAUTHENTICATION);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.activity_auto_ship, LAYOUT_ACTIVITYAUTOSHIP);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.activity_auto_ship_methods, LAYOUT_ACTIVITYAUTOSHIPMETHODS);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.activity_billing_address, LAYOUT_ACTIVITYBILLINGADDRESS);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.activity_change_password, LAYOUT_ACTIVITYCHANGEPASSWORD);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.activity_concierge_for_guest, LAYOUT_ACTIVITYCONCIERGEFORGUEST);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.activity_concierge_item_detail, LAYOUT_ACTIVITYCONCIERGEITEMDETAIL);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.activity_contact_us, LAYOUT_ACTIVITYCONTACTUS);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.activity_create_new_req, LAYOUT_ACTIVITYCREATENEWREQ);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.activity_edit_profile, LAYOUT_ACTIVITYEDITPROFILE);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.activity_forgot_password, LAYOUT_ACTIVITYFORGOTPASSWORD);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.activity_intro, LAYOUT_ACTIVITYINTRO);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.activity_main, LAYOUT_ACTIVITYMAIN);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.activity_notification, LAYOUT_ACTIVITYNOTIFICATION);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.activity_order_details, LAYOUT_ACTIVITYORDERDETAILS);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.activity_otp_verification, LAYOUT_ACTIVITYOTPVERIFICATION);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.activity_package_detail, LAYOUT_ACTIVITYPACKAGEDETAIL);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.activity_payment_info, LAYOUT_ACTIVITYPAYMENTINFO);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.activity_payment_method, LAYOUT_ACTIVITYPAYMENTMETHOD);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.activity_payment_successful, LAYOUT_ACTIVITYPAYMENTSUCCESSFUL);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.activity_prohibited_items, LAYOUT_ACTIVITYPROHIBITEDITEMS);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.activity_region_selection, LAYOUT_ACTIVITYREGIONSELECTION);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.activity_saved_cards, LAYOUT_ACTIVITYSAVEDCARDS);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.activity_saved_payment_methods, LAYOUT_ACTIVITYSAVEDPAYMENTMETHODS);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.activity_select_saved_card, LAYOUT_ACTIVITYSELECTSAVEDCARD);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.activity_ship_to_address, LAYOUT_ACTIVITYSHIPTOADDRESS);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.activity_shipping_address, LAYOUT_ACTIVITYSHIPPINGADDRESS);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.activity_shipping_cost, LAYOUT_ACTIVITYSHIPPINGCOST);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.activity_shipping_details, LAYOUT_ACTIVITYSHIPPINGDETAILS);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.activity_shipping_method, LAYOUT_ACTIVITYSHIPPINGMETHOD);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.activity_sign_in, LAYOUT_ACTIVITYSIGNIN);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.activity_sign_up, LAYOUT_ACTIVITYSIGNUP);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.activity_splash, LAYOUT_ACTIVITYSPLASH);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.activity_square_up, LAYOUT_ACTIVITYSQUAREUP);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.activity_u_s_p_s_verification, LAYOUT_ACTIVITYUSPSVERIFICATION);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.activity_verification_status, LAYOUT_ACTIVITYVERIFICATIONSTATUS);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.activity_web_view, LAYOUT_ACTIVITYWEBVIEW);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.bottomsheet_shippingmethod_filter, LAYOUT_BOTTOMSHEETSHIPPINGMETHODFILTER);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.comman_error, LAYOUT_COMMANERROR);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.custom_bottom_tab_item, LAYOUT_CUSTOMBOTTOMTABITEM);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.dialog_common, LAYOUT_DIALOGCOMMON);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.dialog_image_preview, LAYOUT_DIALOGIMAGEPREVIEW);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.dialog_split_package, LAYOUT_DIALOGSPLITPACKAGE);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.dialog_update_mobile, LAYOUT_DIALOGUPDATEMOBILE);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.fragment_auth, LAYOUT_FRAGMENTAUTH);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.fragment_concierge, LAYOUT_FRAGMENTCONCIERGE);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.fragment_concierge_for_guest, LAYOUT_FRAGMENTCONCIERGEFORGUEST);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.fragment_concierge_for_subscription, LAYOUT_FRAGMENTCONCIERGEFORSUBSCRIPTION);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.fragment_mailbox, LAYOUT_FRAGMENTMAILBOX);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.fragment_my_profile, LAYOUT_FRAGMENTMYPROFILE);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.fragment_my_profile_for_guest, LAYOUT_FRAGMENTMYPROFILEFORGUEST);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.fragment_order_history, LAYOUT_FRAGMENTORDERHISTORY);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.fragment_shipping_calculator, LAYOUT_FRAGMENTSHIPPINGCALCULATOR);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.item_add_new_address, LAYOUT_ITEMADDNEWADDRESS);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.row_auto_shipping_method_item, LAYOUT_ROWAUTOSHIPPINGMETHODITEM);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.row_concierge_item, LAYOUT_ROWCONCIERGEITEM);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.row_extra_services_item, LAYOUT_ROWEXTRASERVICESITEM);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.row_item_noti, LAYOUT_ROWITEMNOTI);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.row_item_region_selection, LAYOUT_ROWITEMREGIONSELECTION);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.row_mailbox_item, LAYOUT_ROWMAILBOXITEM);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.row_order_history_item, LAYOUT_ROWORDERHISTORYITEM);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.row_package_details, LAYOUT_ROWPACKAGEDETAILS);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.row_prohibited_item, LAYOUT_ROWPROHIBITEDITEM);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.row_saved_card_item, LAYOUT_ROWSAVEDCARDITEM);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.row_saved_payment_methods_item, LAYOUT_ROWSAVEDPAYMENTMETHODSITEM);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.row_select_saved_card_item, LAYOUT_ROWSELECTSAVEDCARDITEM);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.row_ship_to_address_item, LAYOUT_ROWSHIPTOADDRESSITEM);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.row_shipping_address_item, LAYOUT_ROWSHIPPINGADDRESSITEM);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.row_shipping_method_filter_item, LAYOUT_ROWSHIPPINGMETHODFILTERITEM);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.row_shipping_method_item, LAYOUT_ROWSHIPPINGMETHODITEM);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.shimmer_placeholder_layout, LAYOUT_SHIMMERPLACEHOLDERLAYOUT);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.view_empty_item, LAYOUT_VIEWEMPTYITEM);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.view_footer_loading, LAYOUT_VIEWFOOTERLOADING);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.usend.R.layout.view_loading_progressbar, LAYOUT_VIEWLOADINGPROGRESSBAR);
+  }
+
+  private final ViewDataBinding internalGetViewDataBinding0(DataBindingComponent component,
+      View view, int internalId, Object tag) {
+    switch(internalId) {
+      case  LAYOUT_ACTIVITYADDCARD: {
+        if ("layout/activity_add_card_0".equals(tag)) {
+          return new ActivityAddCardBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for activity_add_card is invalid. Received: " + tag);
+      }
+      case  LAYOUT_ACTIVITYADDNEWADDRESS: {
+        if ("layout/activity_add_new_address_0".equals(tag)) {
+          return new ActivityAddNewAddressBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for activity_add_new_address is invalid. Received: " + tag);
+      }
+      case  LAYOUT_ACTIVITYAUTHENTICATION: {
+        if ("layout/activity_authentication_0".equals(tag)) {
+          return new ActivityAuthenticationBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for activity_authentication is invalid. Received: " + tag);
+      }
+      case  LAYOUT_ACTIVITYAUTOSHIP: {
+        if ("layout/activity_auto_ship_0".equals(tag)) {
+          return new ActivityAutoShipBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for activity_auto_ship is invalid. Received: " + tag);
+      }
+      case  LAYOUT_ACTIVITYAUTOSHIPMETHODS: {
+        if ("layout/activity_auto_ship_methods_0".equals(tag)) {
+          return new ActivityAutoShipMethodsBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for activity_auto_ship_methods is invalid. Received: " + tag);
+      }
+      case  LAYOUT_ACTIVITYBILLINGADDRESS: {
+        if ("layout/activity_billing_address_0".equals(tag)) {
+          return new ActivityBillingAddressBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for activity_billing_address is invalid. Received: " + tag);
+      }
+      case  LAYOUT_ACTIVITYCHANGEPASSWORD: {
+        if ("layout/activity_change_password_0".equals(tag)) {
+          return new ActivityChangePasswordBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for activity_change_password is invalid. Received: " + tag);
+      }
+      case  LAYOUT_ACTIVITYCONCIERGEFORGUEST: {
+        if ("layout/activity_concierge_for_guest_0".equals(tag)) {
+          return new ActivityConciergeForGuestBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for activity_concierge_for_guest is invalid. Received: " + tag);
+      }
+      case  LAYOUT_ACTIVITYCONCIERGEITEMDETAIL: {
+        if ("layout/activity_concierge_item_detail_0".equals(tag)) {
+          return new ActivityConciergeItemDetailBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for activity_concierge_item_detail is invalid. Received: " + tag);
+      }
+      case  LAYOUT_ACTIVITYCONTACTUS: {
+        if ("layout/activity_contact_us_0".equals(tag)) {
+          return new ActivityContactUsBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for activity_contact_us is invalid. Received: " + tag);
+      }
+      case  LAYOUT_ACTIVITYCREATENEWREQ: {
+        if ("layout/activity_create_new_req_0".equals(tag)) {
+          return new ActivityCreateNewReqBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for activity_create_new_req is invalid. Received: " + tag);
+      }
+      case  LAYOUT_ACTIVITYEDITPROFILE: {
+        if ("layout/activity_edit_profile_0".equals(tag)) {
+          return new ActivityEditProfileBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for activity_edit_profile is invalid. Received: " + tag);
+      }
+      case  LAYOUT_ACTIVITYFORGOTPASSWORD: {
+        if ("layout/activity_forgot_password_0".equals(tag)) {
+          return new ActivityForgotPasswordBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for activity_forgot_password is invalid. Received: " + tag);
+      }
+      case  LAYOUT_ACTIVITYINTRO: {
+        if ("layout/activity_intro_0".equals(tag)) {
+          return new ActivityIntroBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for activity_intro is invalid. Received: " + tag);
+      }
+      case  LAYOUT_ACTIVITYMAIN: {
+        if ("layout/activity_main_0".equals(tag)) {
+          return new ActivityMainBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for activity_main is invalid. Received: " + tag);
+      }
+      case  LAYOUT_ACTIVITYNOTIFICATION: {
+        if ("layout/activity_notification_0".equals(tag)) {
+          return new ActivityNotificationBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for activity_notification is invalid. Received: " + tag);
+      }
+      case  LAYOUT_ACTIVITYORDERDETAILS: {
+        if ("layout/activity_order_details_0".equals(tag)) {
+          return new ActivityOrderDetailsBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for activity_order_details is invalid. Received: " + tag);
+      }
+      case  LAYOUT_ACTIVITYOTPVERIFICATION: {
+        if ("layout/activity_otp_verification_0".equals(tag)) {
+          return new ActivityOtpVerificationBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for activity_otp_verification is invalid. Received: " + tag);
+      }
+      case  LAYOUT_ACTIVITYPACKAGEDETAIL: {
+        if ("layout/activity_package_detail_0".equals(tag)) {
+          return new ActivityPackageDetailBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for activity_package_detail is invalid. Received: " + tag);
+      }
+      case  LAYOUT_ACTIVITYPAYMENTINFO: {
+        if ("layout/activity_payment_info_0".equals(tag)) {
+          return new ActivityPaymentInfoBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for activity_payment_info is invalid. Received: " + tag);
+      }
+      case  LAYOUT_ACTIVITYPAYMENTMETHOD: {
+        if ("layout/activity_payment_method_0".equals(tag)) {
+          return new ActivityPaymentMethodBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for activity_payment_method is invalid. Received: " + tag);
+      }
+      case  LAYOUT_ACTIVITYPAYMENTSUCCESSFUL: {
+        if ("layout/activity_payment_successful_0".equals(tag)) {
+          return new ActivityPaymentSuccessfulBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for activity_payment_successful is invalid. Received: " + tag);
+      }
+      case  LAYOUT_ACTIVITYPROHIBITEDITEMS: {
+        if ("layout/activity_prohibited_items_0".equals(tag)) {
+          return new ActivityProhibitedItemsBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for activity_prohibited_items is invalid. Received: " + tag);
+      }
+      case  LAYOUT_ACTIVITYREGIONSELECTION: {
+        if ("layout/activity_region_selection_0".equals(tag)) {
+          return new ActivityRegionSelectionBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for activity_region_selection is invalid. Received: " + tag);
+      }
+      case  LAYOUT_ACTIVITYSAVEDCARDS: {
+        if ("layout/activity_saved_cards_0".equals(tag)) {
+          return new ActivitySavedCardsBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for activity_saved_cards is invalid. Received: " + tag);
+      }
+      case  LAYOUT_ACTIVITYSAVEDPAYMENTMETHODS: {
+        if ("layout/activity_saved_payment_methods_0".equals(tag)) {
+          return new ActivitySavedPaymentMethodsBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for activity_saved_payment_methods is invalid. Received: " + tag);
+      }
+      case  LAYOUT_ACTIVITYSELECTSAVEDCARD: {
+        if ("layout/activity_select_saved_card_0".equals(tag)) {
+          return new ActivitySelectSavedCardBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for activity_select_saved_card is invalid. Received: " + tag);
+      }
+      case  LAYOUT_ACTIVITYSHIPTOADDRESS: {
+        if ("layout/activity_ship_to_address_0".equals(tag)) {
+          return new ActivityShipToAddressBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for activity_ship_to_address is invalid. Received: " + tag);
+      }
+      case  LAYOUT_ACTIVITYSHIPPINGADDRESS: {
+        if ("layout/activity_shipping_address_0".equals(tag)) {
+          return new ActivityShippingAddressBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for activity_shipping_address is invalid. Received: " + tag);
+      }
+      case  LAYOUT_ACTIVITYSHIPPINGCOST: {
+        if ("layout/activity_shipping_cost_0".equals(tag)) {
+          return new ActivityShippingCostBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for activity_shipping_cost is invalid. Received: " + tag);
+      }
+      case  LAYOUT_ACTIVITYSHIPPINGDETAILS: {
+        if ("layout/activity_shipping_details_0".equals(tag)) {
+          return new ActivityShippingDetailsBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for activity_shipping_details is invalid. Received: " + tag);
+      }
+      case  LAYOUT_ACTIVITYSHIPPINGMETHOD: {
+        if ("layout/activity_shipping_method_0".equals(tag)) {
+          return new ActivityShippingMethodBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for activity_shipping_method is invalid. Received: " + tag);
+      }
+      case  LAYOUT_ACTIVITYSIGNIN: {
+        if ("layout/activity_sign_in_0".equals(tag)) {
+          return new ActivitySignInBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for activity_sign_in is invalid. Received: " + tag);
+      }
+      case  LAYOUT_ACTIVITYSIGNUP: {
+        if ("layout/activity_sign_up_0".equals(tag)) {
+          return new ActivitySignUpBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for activity_sign_up is invalid. Received: " + tag);
+      }
+      case  LAYOUT_ACTIVITYSPLASH: {
+        if ("layout/activity_splash_0".equals(tag)) {
+          return new ActivitySplashBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for activity_splash is invalid. Received: " + tag);
+      }
+      case  LAYOUT_ACTIVITYSQUAREUP: {
+        if ("layout/activity_square_up_0".equals(tag)) {
+          return new ActivitySquareUpBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for activity_square_up is invalid. Received: " + tag);
+      }
+      case  LAYOUT_ACTIVITYUSPSVERIFICATION: {
+        if ("layout/activity_u_s_p_s_verification_0".equals(tag)) {
+          return new ActivityUSPSVerificationBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for activity_u_s_p_s_verification is invalid. Received: " + tag);
+      }
+      case  LAYOUT_ACTIVITYVERIFICATIONSTATUS: {
+        if ("layout/activity_verification_status_0".equals(tag)) {
+          return new ActivityVerificationStatusBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for activity_verification_status is invalid. Received: " + tag);
+      }
+      case  LAYOUT_ACTIVITYWEBVIEW: {
+        if ("layout/activity_web_view_0".equals(tag)) {
+          return new ActivityWebViewBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for activity_web_view is invalid. Received: " + tag);
+      }
+      case  LAYOUT_BOTTOMSHEETSHIPPINGMETHODFILTER: {
+        if ("layout/bottomsheet_shippingmethod_filter_0".equals(tag)) {
+          return new BottomsheetShippingmethodFilterBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for bottomsheet_shippingmethod_filter is invalid. Received: " + tag);
+      }
+      case  LAYOUT_COMMANERROR: {
+        if ("layout/comman_error_0".equals(tag)) {
+          return new CommanErrorBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for comman_error is invalid. Received: " + tag);
+      }
+      case  LAYOUT_CUSTOMBOTTOMTABITEM: {
+        if ("layout/custom_bottom_tab_item_0".equals(tag)) {
+          return new CustomBottomTabItemBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for custom_bottom_tab_item is invalid. Received: " + tag);
+      }
+      case  LAYOUT_DIALOGCOMMON: {
+        if ("layout/dialog_common_0".equals(tag)) {
+          return new DialogCommonBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for dialog_common is invalid. Received: " + tag);
+      }
+      case  LAYOUT_DIALOGIMAGEPREVIEW: {
+        if ("layout/dialog_image_preview_0".equals(tag)) {
+          return new DialogImagePreviewBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for dialog_image_preview is invalid. Received: " + tag);
+      }
+      case  LAYOUT_DIALOGSPLITPACKAGE: {
+        if ("layout/dialog_split_package_0".equals(tag)) {
+          return new DialogSplitPackageBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for dialog_split_package is invalid. Received: " + tag);
+      }
+      case  LAYOUT_DIALOGUPDATEMOBILE: {
+        if ("layout/dialog_update_mobile_0".equals(tag)) {
+          return new DialogUpdateMobileBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for dialog_update_mobile is invalid. Received: " + tag);
+      }
+      case  LAYOUT_FRAGMENTAUTH: {
+        if ("layout/fragment_auth_0".equals(tag)) {
+          return new FragmentAuthBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for fragment_auth is invalid. Received: " + tag);
+      }
+      case  LAYOUT_FRAGMENTCONCIERGE: {
+        if ("layout/fragment_concierge_0".equals(tag)) {
+          return new FragmentConciergeBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for fragment_concierge is invalid. Received: " + tag);
+      }
+      case  LAYOUT_FRAGMENTCONCIERGEFORGUEST: {
+        if ("layout/fragment_concierge_for_guest_0".equals(tag)) {
+          return new FragmentConciergeForGuestBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for fragment_concierge_for_guest is invalid. Received: " + tag);
+      }
+      case  LAYOUT_FRAGMENTCONCIERGEFORSUBSCRIPTION: {
+        if ("layout/fragment_concierge_for_subscription_0".equals(tag)) {
+          return new FragmentConciergeForSubscriptionBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for fragment_concierge_for_subscription is invalid. Received: " + tag);
+      }
+    }
+    return null;
+  }
+
+  private final ViewDataBinding internalGetViewDataBinding1(DataBindingComponent component,
+      View view, int internalId, Object tag) {
+    switch(internalId) {
+      case  LAYOUT_FRAGMENTMAILBOX: {
+        if ("layout/fragment_mailbox_0".equals(tag)) {
+          return new FragmentMailboxBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for fragment_mailbox is invalid. Received: " + tag);
+      }
+      case  LAYOUT_FRAGMENTMYPROFILE: {
+        if ("layout/fragment_my_profile_0".equals(tag)) {
+          return new FragmentMyProfileBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for fragment_my_profile is invalid. Received: " + tag);
+      }
+      case  LAYOUT_FRAGMENTMYPROFILEFORGUEST: {
+        if ("layout/fragment_my_profile_for_guest_0".equals(tag)) {
+          return new FragmentMyProfileForGuestBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for fragment_my_profile_for_guest is invalid. Received: " + tag);
+      }
+      case  LAYOUT_FRAGMENTORDERHISTORY: {
+        if ("layout/fragment_order_history_0".equals(tag)) {
+          return new FragmentOrderHistoryBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for fragment_order_history is invalid. Received: " + tag);
+      }
+      case  LAYOUT_FRAGMENTSHIPPINGCALCULATOR: {
+        if ("layout/fragment_shipping_calculator_0".equals(tag)) {
+          return new FragmentShippingCalculatorBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for fragment_shipping_calculator is invalid. Received: " + tag);
+      }
+      case  LAYOUT_ITEMADDNEWADDRESS: {
+        if ("layout/item_add_new_address_0".equals(tag)) {
+          return new ItemAddNewAddressBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for item_add_new_address is invalid. Received: " + tag);
+      }
+      case  LAYOUT_ROWAUTOSHIPPINGMETHODITEM: {
+        if ("layout/row_auto_shipping_method_item_0".equals(tag)) {
+          return new RowAutoShippingMethodItemBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for row_auto_shipping_method_item is invalid. Received: " + tag);
+      }
+      case  LAYOUT_ROWCONCIERGEITEM: {
+        if ("layout/row_concierge_item_0".equals(tag)) {
+          return new RowConciergeItemBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for row_concierge_item is invalid. Received: " + tag);
+      }
+      case  LAYOUT_ROWEXTRASERVICESITEM: {
+        if ("layout/row_extra_services_item_0".equals(tag)) {
+          return new RowExtraServicesItemBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for row_extra_services_item is invalid. Received: " + tag);
+      }
+      case  LAYOUT_ROWITEMNOTI: {
+        if ("layout/row_item_noti_0".equals(tag)) {
+          return new RowItemNotiBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for row_item_noti is invalid. Received: " + tag);
+      }
+      case  LAYOUT_ROWITEMREGIONSELECTION: {
+        if ("layout/row_item_region_selection_0".equals(tag)) {
+          return new RowItemRegionSelectionBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for row_item_region_selection is invalid. Received: " + tag);
+      }
+      case  LAYOUT_ROWMAILBOXITEM: {
+        if ("layout/row_mailbox_item_0".equals(tag)) {
+          return new RowMailboxItemBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for row_mailbox_item is invalid. Received: " + tag);
+      }
+      case  LAYOUT_ROWORDERHISTORYITEM: {
+        if ("layout/row_order_history_item_0".equals(tag)) {
+          return new RowOrderHistoryItemBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for row_order_history_item is invalid. Received: " + tag);
+      }
+      case  LAYOUT_ROWPACKAGEDETAILS: {
+        if ("layout/row_package_details_0".equals(tag)) {
+          return new RowPackageDetailsBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for row_package_details is invalid. Received: " + tag);
+      }
+      case  LAYOUT_ROWPROHIBITEDITEM: {
+        if ("layout/row_prohibited_item_0".equals(tag)) {
+          return new RowProhibitedItemBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for row_prohibited_item is invalid. Received: " + tag);
+      }
+      case  LAYOUT_ROWSAVEDCARDITEM: {
+        if ("layout/row_saved_card_item_0".equals(tag)) {
+          return new RowSavedCardItemBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for row_saved_card_item is invalid. Received: " + tag);
+      }
+      case  LAYOUT_ROWSAVEDPAYMENTMETHODSITEM: {
+        if ("layout/row_saved_payment_methods_item_0".equals(tag)) {
+          return new RowSavedPaymentMethodsItemBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for row_saved_payment_methods_item is invalid. Received: " + tag);
+      }
+      case  LAYOUT_ROWSELECTSAVEDCARDITEM: {
+        if ("layout/row_select_saved_card_item_0".equals(tag)) {
+          return new RowSelectSavedCardItemBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for row_select_saved_card_item is invalid. Received: " + tag);
+      }
+      case  LAYOUT_ROWSHIPTOADDRESSITEM: {
+        if ("layout/row_ship_to_address_item_0".equals(tag)) {
+          return new RowShipToAddressItemBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for row_ship_to_address_item is invalid. Received: " + tag);
+      }
+      case  LAYOUT_ROWSHIPPINGADDRESSITEM: {
+        if ("layout/row_shipping_address_item_0".equals(tag)) {
+          return new RowShippingAddressItemBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for row_shipping_address_item is invalid. Received: " + tag);
+      }
+      case  LAYOUT_ROWSHIPPINGMETHODFILTERITEM: {
+        if ("layout/row_shipping_method_filter_item_0".equals(tag)) {
+          return new RowShippingMethodFilterItemBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for row_shipping_method_filter_item is invalid. Received: " + tag);
+      }
+      case  LAYOUT_ROWSHIPPINGMETHODITEM: {
+        if ("layout/row_shipping_method_item_0".equals(tag)) {
+          return new RowShippingMethodItemBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for row_shipping_method_item is invalid. Received: " + tag);
+      }
+      case  LAYOUT_SHIMMERPLACEHOLDERLAYOUT: {
+        if ("layout/shimmer_placeholder_layout_0".equals(tag)) {
+          return new ShimmerPlaceholderLayoutBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for shimmer_placeholder_layout is invalid. Received: " + tag);
+      }
+      case  LAYOUT_VIEWEMPTYITEM: {
+        if ("layout/view_empty_item_0".equals(tag)) {
+          return new ViewEmptyItemBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for view_empty_item is invalid. Received: " + tag);
+      }
+      case  LAYOUT_VIEWFOOTERLOADING: {
+        if ("layout/view_footer_loading_0".equals(tag)) {
+          return new ViewFooterLoadingBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for view_footer_loading is invalid. Received: " + tag);
+      }
+      case  LAYOUT_VIEWLOADINGPROGRESSBAR: {
+        if ("layout/view_loading_progressbar_0".equals(tag)) {
+          return new ViewLoadingProgressbarBindingImpl(component, view);
+        }
+        throw new IllegalArgumentException("The tag for view_loading_progressbar is invalid. Received: " + tag);
+      }
+    }
+    return null;
+  }
+
+  @Override
+  public ViewDataBinding getDataBinder(DataBindingComponent component, View view, int layoutId) {
+    int localizedLayoutId = INTERNAL_LAYOUT_ID_LOOKUP.get(layoutId);
+    if(localizedLayoutId > 0) {
+      final Object tag = view.getTag();
+      if(tag == null) {
+        throw new RuntimeException("view must have a tag");
+      }
+      // find which method will have it. -1 is necessary becausefirst id starts with 1;
+      int methodIndex = (localizedLayoutId - 1) / 50;
+      switch(methodIndex) {
+        case 0: {
+          return internalGetViewDataBinding0(component, view, localizedLayoutId, tag);
+        }
+        case 1: {
+          return internalGetViewDataBinding1(component, view, localizedLayoutId, tag);
+        }
+      }
+    }
+    return null;
+  }
+
+  @Override
+  public ViewDataBinding getDataBinder(DataBindingComponent component, View[] views, int layoutId) {
+    if(views == null || views.length == 0) {
+      return null;
+    }
+    int localizedLayoutId = INTERNAL_LAYOUT_ID_LOOKUP.get(layoutId);
+    if(localizedLayoutId > 0) {
+      final Object tag = views[0].getTag();
+      if(tag == null) {
+        throw new RuntimeException("view must have a tag");
+      }
+      switch(localizedLayoutId) {
+      }
+    }
+    return null;
+  }
+
+  @Override
+  public int getLayoutId(String tag) {
+    if (tag == null) {
+      return 0;
+    }
+    Integer tmpVal = InnerLayoutIdLookup.sKeys.get(tag);
+    return tmpVal == null ? 0 : tmpVal;
+  }
+
+  @Override
+  public String convertBrIdToString(int localId) {
+    String tmpVal = InnerBrLookup.sKeys.get(localId);
+    return tmpVal;
+  }
+
+  @Override
+  public List<DataBinderMapper> collectDependencies() {
+    ArrayList<DataBinderMapper> result = new ArrayList<DataBinderMapper>(1);
+    result.add(new androidx.databinding.library.baseAdapters.DataBinderMapperImpl());
+    return result;
+  }
+
+  private static class InnerBrLookup {
+    static final SparseArray<String> sKeys = new SparseArray<String>(21);
+
+    static {
+      sKeys.put(0, "_all");
+      sKeys.put(1, "activity");
+      sKeys.put(2, "adapter");
+      sKeys.put(3, "authFrag");
+      sKeys.put(4, "billingActivity");
+      sKeys.put(5, "frag");
+      sKeys.put(6, "introActivity");
+      sKeys.put(7, "isEmpty");
+      sKeys.put(8, "isRead");
+      sKeys.put(9, "isSelectMode");
+      sKeys.put(10, "isSelected");
+      sKeys.put(11, "isSeleted");
+      sKeys.put(12, "isSplit");
+      sKeys.put(13, "paymentActivity");
+      sKeys.put(14, "selectedValue");
+      sKeys.put(15, "signInActivity");
+      sKeys.put(16, "signUpActivity");
+      sKeys.put(17, "status");
+      sKeys.put(18, "viewModel");
+      sKeys.put(19, "viewmodel");
+      sKeys.put(20, "visibility");
+    }
+  }
+
+  private static class InnerLayoutIdLookup {
+    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(76);
+
+    static {
+      sKeys.put("layout/activity_add_card_0", com.usend.R.layout.activity_add_card);
+      sKeys.put("layout/activity_add_new_address_0", com.usend.R.layout.activity_add_new_address);
+      sKeys.put("layout/activity_authentication_0", com.usend.R.layout.activity_authentication);
+      sKeys.put("layout/activity_auto_ship_0", com.usend.R.layout.activity_auto_ship);
+      sKeys.put("layout/activity_auto_ship_methods_0", com.usend.R.layout.activity_auto_ship_methods);
+      sKeys.put("layout/activity_billing_address_0", com.usend.R.layout.activity_billing_address);
+      sKeys.put("layout/activity_change_password_0", com.usend.R.layout.activity_change_password);
+      sKeys.put("layout/activity_concierge_for_guest_0", com.usend.R.layout.activity_concierge_for_guest);
+      sKeys.put("layout/activity_concierge_item_detail_0", com.usend.R.layout.activity_concierge_item_detail);
+      sKeys.put("layout/activity_contact_us_0", com.usend.R.layout.activity_contact_us);
+      sKeys.put("layout/activity_create_new_req_0", com.usend.R.layout.activity_create_new_req);
+      sKeys.put("layout/activity_edit_profile_0", com.usend.R.layout.activity_edit_profile);
+      sKeys.put("layout/activity_forgot_password_0", com.usend.R.layout.activity_forgot_password);
+      sKeys.put("layout/activity_intro_0", com.usend.R.layout.activity_intro);
+      sKeys.put("layout/activity_main_0", com.usend.R.layout.activity_main);
+      sKeys.put("layout/activity_notification_0", com.usend.R.layout.activity_notification);
+      sKeys.put("layout/activity_order_details_0", com.usend.R.layout.activity_order_details);
+      sKeys.put("layout/activity_otp_verification_0", com.usend.R.layout.activity_otp_verification);
+      sKeys.put("layout/activity_package_detail_0", com.usend.R.layout.activity_package_detail);
+      sKeys.put("layout/activity_payment_info_0", com.usend.R.layout.activity_payment_info);
+      sKeys.put("layout/activity_payment_method_0", com.usend.R.layout.activity_payment_method);
+      sKeys.put("layout/activity_payment_successful_0", com.usend.R.layout.activity_payment_successful);
+      sKeys.put("layout/activity_prohibited_items_0", com.usend.R.layout.activity_prohibited_items);
+      sKeys.put("layout/activity_region_selection_0", com.usend.R.layout.activity_region_selection);
+      sKeys.put("layout/activity_saved_cards_0", com.usend.R.layout.activity_saved_cards);
+      sKeys.put("layout/activity_saved_payment_methods_0", com.usend.R.layout.activity_saved_payment_methods);
+      sKeys.put("layout/activity_select_saved_card_0", com.usend.R.layout.activity_select_saved_card);
+      sKeys.put("layout/activity_ship_to_address_0", com.usend.R.layout.activity_ship_to_address);
+      sKeys.put("layout/activity_shipping_address_0", com.usend.R.layout.activity_shipping_address);
+      sKeys.put("layout/activity_shipping_cost_0", com.usend.R.layout.activity_shipping_cost);
+      sKeys.put("layout/activity_shipping_details_0", com.usend.R.layout.activity_shipping_details);
+      sKeys.put("layout/activity_shipping_method_0", com.usend.R.layout.activity_shipping_method);
+      sKeys.put("layout/activity_sign_in_0", com.usend.R.layout.activity_sign_in);
+      sKeys.put("layout/activity_sign_up_0", com.usend.R.layout.activity_sign_up);
+      sKeys.put("layout/activity_splash_0", com.usend.R.layout.activity_splash);
+      sKeys.put("layout/activity_square_up_0", com.usend.R.layout.activity_square_up);
+      sKeys.put("layout/activity_u_s_p_s_verification_0", com.usend.R.layout.activity_u_s_p_s_verification);
+      sKeys.put("layout/activity_verification_status_0", com.usend.R.layout.activity_verification_status);
+      sKeys.put("layout/activity_web_view_0", com.usend.R.layout.activity_web_view);
+      sKeys.put("layout/bottomsheet_shippingmethod_filter_0", com.usend.R.layout.bottomsheet_shippingmethod_filter);
+      sKeys.put("layout/comman_error_0", com.usend.R.layout.comman_error);
+      sKeys.put("layout/custom_bottom_tab_item_0", com.usend.R.layout.custom_bottom_tab_item);
+      sKeys.put("layout/dialog_common_0", com.usend.R.layout.dialog_common);
+      sKeys.put("layout/dialog_image_preview_0", com.usend.R.layout.dialog_image_preview);
+      sKeys.put("layout/dialog_split_package_0", com.usend.R.layout.dialog_split_package);
+      sKeys.put("layout/dialog_update_mobile_0", com.usend.R.layout.dialog_update_mobile);
+      sKeys.put("layout/fragment_auth_0", com.usend.R.layout.fragment_auth);
+      sKeys.put("layout/fragment_concierge_0", com.usend.R.layout.fragment_concierge);
+      sKeys.put("layout/fragment_concierge_for_guest_0", com.usend.R.layout.fragment_concierge_for_guest);
+      sKeys.put("layout/fragment_concierge_for_subscription_0", com.usend.R.layout.fragment_concierge_for_subscription);
+      sKeys.put("layout/fragment_mailbox_0", com.usend.R.layout.fragment_mailbox);
+      sKeys.put("layout/fragment_my_profile_0", com.usend.R.layout.fragment_my_profile);
+      sKeys.put("layout/fragment_my_profile_for_guest_0", com.usend.R.layout.fragment_my_profile_for_guest);
+      sKeys.put("layout/fragment_order_history_0", com.usend.R.layout.fragment_order_history);
+      sKeys.put("layout/fragment_shipping_calculator_0", com.usend.R.layout.fragment_shipping_calculator);
+      sKeys.put("layout/item_add_new_address_0", com.usend.R.layout.item_add_new_address);
+      sKeys.put("layout/row_auto_shipping_method_item_0", com.usend.R.layout.row_auto_shipping_method_item);
+      sKeys.put("layout/row_concierge_item_0", com.usend.R.layout.row_concierge_item);
+      sKeys.put("layout/row_extra_services_item_0", com.usend.R.layout.row_extra_services_item);
+      sKeys.put("layout/row_item_noti_0", com.usend.R.layout.row_item_noti);
+      sKeys.put("layout/row_item_region_selection_0", com.usend.R.layout.row_item_region_selection);
+      sKeys.put("layout/row_mailbox_item_0", com.usend.R.layout.row_mailbox_item);
+      sKeys.put("layout/row_order_history_item_0", com.usend.R.layout.row_order_history_item);
+      sKeys.put("layout/row_package_details_0", com.usend.R.layout.row_package_details);
+      sKeys.put("layout/row_prohibited_item_0", com.usend.R.layout.row_prohibited_item);
+      sKeys.put("layout/row_saved_card_item_0", com.usend.R.layout.row_saved_card_item);
+      sKeys.put("layout/row_saved_payment_methods_item_0", com.usend.R.layout.row_saved_payment_methods_item);
+      sKeys.put("layout/row_select_saved_card_item_0", com.usend.R.layout.row_select_saved_card_item);
+      sKeys.put("layout/row_ship_to_address_item_0", com.usend.R.layout.row_ship_to_address_item);
+      sKeys.put("layout/row_shipping_address_item_0", com.usend.R.layout.row_shipping_address_item);
+      sKeys.put("layout/row_shipping_method_filter_item_0", com.usend.R.layout.row_shipping_method_filter_item);
+      sKeys.put("layout/row_shipping_method_item_0", com.usend.R.layout.row_shipping_method_item);
+      sKeys.put("layout/shimmer_placeholder_layout_0", com.usend.R.layout.shimmer_placeholder_layout);
+      sKeys.put("layout/view_empty_item_0", com.usend.R.layout.view_empty_item);
+      sKeys.put("layout/view_footer_loading_0", com.usend.R.layout.view_footer_loading);
+      sKeys.put("layout/view_loading_progressbar_0", com.usend.R.layout.view_loading_progressbar);
+    }
+  }
+}

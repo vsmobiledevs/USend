@@ -1,0 +1,121 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+
+android {
+    compileSdkVersion 31
+    defaultConfig {
+        applicationId "com.usend"
+        minSdkVersion 21
+        targetSdkVersion 31
+        versionCode 11
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        configSign {
+            keyAlias "u-send"
+            keyPassword "U-Send"
+            storeFile file("../keystore/u-send.jks")
+            storePassword "U-Send"
+        }
+    }
+
+    buildTypes {
+        debug {
+            debuggable true
+            buildConfigField "String", "BASE_URL", LocalBaseUrl
+        }
+        release {
+            buildConfigField "String", "BASE_URL", LiveBaseUrl
+            minifyEnabled true
+            debuggable false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.configSign
+        }
+        staging {
+            debuggable true
+            initWith(buildTypes.release)
+            buildConfigField "String", "BASE_URL", StagingBaseUrl
+        }
+    }
+
+
+    buildFeatures {
+        dataBinding true
+    }
+
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+   /* configurations.all {
+        resolutionStrategy {
+            force 'androidx.core:core:1.6.0'
+            force 'androidx.core:core-ktx:1.6.0'
+        }
+    }*/
+}
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation GradleDependencies.kotlin_stdlib
+    implementation GradleDependencies.appcompact
+    implementation GradleDependencies.ktx_core
+    implementation GradleDependencies.constraint_layout
+    implementation GradleDependencies.material //material design
+    implementation GradleDependencies.lifecycle
+    implementation GradleDependencies.coroutines
+    implementation GradleDependencies.preferences
+    implementation GradleDependencies.room_runtime //room
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    implementation 'com.google.android.material:material:1.6.0'
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0-alpha03'
+    kapt GradleDependencies.kapt_room_complier
+    implementation GradleDependencies.legacy_support
+    implementation GradleDependencies.vector_drawable
+
+    implementation GradleDependencies.rx_java
+    implementation GradleDependencies.glide
+    implementation GradleDependencies.legacy_support
+    kapt GradleDependencies.glide_compiler
+    implementation GradleDependencies.fcm // FCM
+    testImplementation GradleDependencies.junit
+    implementation GradleDependencies.aws_amplify_cognito
+    implementation GradleDependencies.aws_amplify_storage
+    androidTestImplementation GradleDependencies.junit_runner
+    androidTestImplementation GradleDependencies.espresso_core
+    //Multidex support prior to Android 5.0
+    implementation GradleDependencies.multidex
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.5.0'
+    implementation 'com.squareup.okhttp3:okhttp:4.5.0'
+    implementation project(path: ':network') // swagger libs
+    implementation project(path: ':customprogressdialog-1.0.2')
+    implementation project(path: ':imagepickerviewkt-1.0.3')
+    implementation GradleDependencies.google_gson
+    implementation GradleDependencies.dots_indicator
+    implementation GradleDependencies.ccp
+    implementation GradleDependencies.otp_view
+    implementation GradleDependencies.event_bus
+    implementation GradleDependencies.swipeToReveal
+    implementation 'com.google.firebase:firebase-core:21.0.0'
+    implementation 'com.google.firebase:firebase-crashlytics:18.2.10'
+    implementation 'com.squareup.sdk.in-app-payments:card-entry:1.4.0'
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'com.android.billingclient:billing:4.1.0'
+
+
+}
+apply plugin: 'com.google.gms.google-services'  // Google Play services Gradle plugin
+apply plugin: 'com.google.firebase.crashlytics'

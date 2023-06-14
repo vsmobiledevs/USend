@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: artifacts:customprogressdialog-1.0.2:unspecified">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/customprogressdialog-1.0.2/build/.transforms/5926534dc788d15578f64f6220c44e23/jetified-customprogressdialog-1.0.2/AndroidManifest.xml" />
+      <root url="jar://$PROJECT_DIR$/customprogressdialog-1.0.2/build/.transforms/5926534dc788d15578f64f6220c44e23/jetified-customprogressdialog-1.0.2/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/customprogressdialog-1.0.2/build/.transforms/5926534dc788d15578f64f6220c44e23/jetified-customprogressdialog-1.0.2/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

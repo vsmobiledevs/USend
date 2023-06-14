@@ -1,0 +1,96 @@
+package com.usend.adapter
+
+import com.base.network.model.AddressList
+import com.chauthai.swipereveallayout.ViewBinderHelper
+import com.usend.R
+import com.usend.base.BaseListAdapter
+import com.usend.databinding.ItemAddNewAddressBinding
+import com.usend.databinding.RowShippingAddressItemBinding
+import com.usend.utils.ADD
+import com.usend.utils.CommonUtils.showAffirmationDialog
+import com.usend.utils.DELETE
+import com.usend.utils.EDIT
+import com.usend.utils.NORMAL
+
+class ShippingAddressItemAdapter(
+    private val items: ArrayList<AddressList>,
+    val callback: (Int, String) -> Unit
+) : BaseListAdapter(items) {
+
+    private var viewBindHelper = ViewBinderHelper()
+
+    override fun getItemViewType(position: Int): Int {
+
+        return if (position == 0)
+            R.layout.item_add_new_address
+        else {
+
+            R.layout.row_shipping_address_item
+        }
+    }
+
+    override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
+
+        if (holder.binding is RowShippingAddressItemBinding) {
+
+            viewBindHelper.bind(holder.binding.swipe, position.toString())
+            viewBindHelper.setOpenOnlyOne(true)
+            viewBindHelper.lockSwipe(position.toString())
+
+            holder.binding.txtLabel.text = "${items[position].label}"
+            holder.binding.txtReceiverName.text = "${items[position].receiverName}"
+
+            var address: String
+
+            address = items[position].street1 + ",\n"
+
+            if(items[position].street2!!.isNotEmpty())
+            {
+                address = address + items[position].street2 + ",\n"
+            }
+            if(items[position].city!!.isNotEmpty())
+            {
+                address = address + items[position].city + ", "
+            }
+            if(items[position].state!!.isNotEmpty())
+            {
+                address = address + items[position].state + ", "
+            }
+            if(items[position].country!!.isNotEmpty())
+            {
+                address += items[position].country
+            }
+            if(items[position].postalCode!!.isNotEmpty())
+            {
+                address = address + " - " + items[position].postalCode
+            }
+
+            holder.binding.txtAddress.text = address
+
+            holder.binding.imgEdit.setOnClickListener {
+
+                viewBindHelper.closeLayout(position.toString())
+                callback(holder.adapterPosition, EDIT)
+            }
+
+            holder.binding.imgDelete.setOnClickListener {
+
+                holder.itemView.context.showAffirmationDialog(title = holder.itemView.context.resources.getString(R.string.msg_are_you_sure_), btnText = holder.itemView.context.resources.getString(R.string.lbl_yes), btnNegativeText = holder.itemView.context.resources.getString(R.string.lbl_no))
+                {
+
+                    viewBindHelper.closeLayout(position.toString())
+                    callback(holder.adapterPosition, DELETE)
+                }
+            }
+
+            holder.binding.flFront.setOnClickListener {
+                callback(holder.adapterPosition, NORMAL)
+            }
+
+        } else if (holder.binding is ItemAddNewAddressBinding) {
+            holder.itemView.setOnClickListener {
+                callback(holder.adapterPosition, ADD)
+            }
+        }
+    }
+}

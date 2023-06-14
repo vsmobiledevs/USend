@@ -1,0 +1,895 @@
+package com.usend.databinding;
+import com.usend.R;
+import com.usend.BR;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import android.view.View;
+@SuppressWarnings("unchecked")
+public class FragmentShippingCalculatorBindingImpl extends FragmentShippingCalculatorBinding implements com.usend.generated.callback.OnClickListener.Listener {
+
+    @Nullable
+    private static final androidx.databinding.ViewDataBinding.IncludedLayouts sIncludes;
+    @Nullable
+    private static final android.util.SparseIntArray sViewsWithIds;
+    static {
+        sIncludes = null;
+        sViewsWithIds = new android.util.SparseIntArray();
+        sViewsWithIds.put(R.id.txtShippingCountryTitle, 13);
+        sViewsWithIds.put(R.id.txtCityTitle, 14);
+        sViewsWithIds.put(R.id.txtZipCodeTitle, 15);
+        sViewsWithIds.put(R.id.txtWeightTitle, 16);
+        sViewsWithIds.put(R.id.llWeight, 17);
+        sViewsWithIds.put(R.id.txtLengthTitle, 18);
+        sViewsWithIds.put(R.id.txtWidthTitle, 19);
+        sViewsWithIds.put(R.id.txtHeightTitle, 20);
+        sViewsWithIds.put(R.id.llDimensions, 21);
+    }
+    // views
+    @NonNull
+    private final android.widget.ScrollView mboundView0;
+    @NonNull
+    private final androidx.appcompat.widget.AppCompatTextView mboundView10;
+    @NonNull
+    private final androidx.appcompat.widget.AppCompatTextView mboundView11;
+    @NonNull
+    private final androidx.appcompat.widget.AppCompatTextView mboundView5;
+    @NonNull
+    private final androidx.appcompat.widget.AppCompatTextView mboundView6;
+    // variables
+    @Nullable
+    private final android.view.View.OnClickListener mCallback11;
+    @Nullable
+    private final android.view.View.OnClickListener mCallback10;
+    // values
+    // listeners
+    // Inverse Binding Event Handlers
+    private androidx.databinding.InverseBindingListener edtCityandroidTextAttrChanged = new androidx.databinding.InverseBindingListener() {
+        @Override
+        public void onChange() {
+            // Inverse of viewModel.city.getValue()
+            //         is viewModel.city.setValue((java.lang.String) callbackArg_0)
+            java.lang.String callbackArg_0 = androidx.databinding.adapters.TextViewBindingAdapter.getTextString(edtCity);
+            // localize variables for thread safety
+            // viewModel.city != null
+            boolean viewModelCityJavaLangObjectNull = false;
+            // viewModel
+            com.usend.viewmodels.CalculatorViewModel viewModel = mViewModel;
+            // viewModel.city.getValue()
+            java.lang.String viewModelCityGetValue = null;
+            // viewModel != null
+            boolean viewModelJavaLangObjectNull = false;
+            // viewModel.city
+            androidx.lifecycle.MutableLiveData<java.lang.String> viewModelCity = null;
+
+
+
+            viewModelJavaLangObjectNull = (viewModel) != (null);
+            if (viewModelJavaLangObjectNull) {
+
+
+                viewModelCity = viewModel.getCity();
+
+                viewModelCityJavaLangObjectNull = (viewModelCity) != (null);
+                if (viewModelCityJavaLangObjectNull) {
+
+
+
+
+                    viewModelCity.setValue(((java.lang.String) (callbackArg_0)));
+                }
+            }
+        }
+    };
+    private androidx.databinding.InverseBindingListener edtHeightandroidTextAttrChanged = new androidx.databinding.InverseBindingListener() {
+        @Override
+        public void onChange() {
+            // Inverse of viewModel.height.getValue()
+            //         is viewModel.height.setValue((java.lang.String) callbackArg_0)
+            java.lang.String callbackArg_0 = androidx.databinding.adapters.TextViewBindingAdapter.getTextString(edtHeight);
+            // localize variables for thread safety
+            // viewModel.height != null
+            boolean viewModelHeightJavaLangObjectNull = false;
+            // viewModel
+            com.usend.viewmodels.CalculatorViewModel viewModel = mViewModel;
+            // viewModel.height
+            androidx.lifecycle.MutableLiveData<java.lang.String> viewModelHeight = null;
+            // viewModel != null
+            boolean viewModelJavaLangObjectNull = false;
+            // viewModel.height.getValue()
+            java.lang.String viewModelHeightGetValue = null;
+
+
+
+            viewModelJavaLangObjectNull = (viewModel) != (null);
+            if (viewModelJavaLangObjectNull) {
+
+
+                viewModelHeight = viewModel.getHeight();
+
+                viewModelHeightJavaLangObjectNull = (viewModelHeight) != (null);
+                if (viewModelHeightJavaLangObjectNull) {
+
+
+
+
+                    viewModelHeight.setValue(((java.lang.String) (callbackArg_0)));
+                }
+            }
+        }
+    };
+    private androidx.databinding.InverseBindingListener edtLengthandroidTextAttrChanged = new androidx.databinding.InverseBindingListener() {
+        @Override
+        public void onChange() {
+            // Inverse of viewModel.length.getValue()
+            //         is viewModel.length.setValue((java.lang.String) callbackArg_0)
+            java.lang.String callbackArg_0 = androidx.databinding.adapters.TextViewBindingAdapter.getTextString(edtLength);
+            // localize variables for thread safety
+            // viewModel.length
+            androidx.lifecycle.MutableLiveData<java.lang.String> viewModelLength = null;
+            // viewModel
+            com.usend.viewmodels.CalculatorViewModel viewModel = mViewModel;
+            // viewModel != null
+            boolean viewModelJavaLangObjectNull = false;
+            // viewModel.length.getValue()
+            java.lang.String viewModelLengthGetValue = null;
+            // viewModel.length != null
+            boolean viewModelLengthJavaLangObjectNull = false;
+
+
+
+            viewModelJavaLangObjectNull = (viewModel) != (null);
+            if (viewModelJavaLangObjectNull) {
+
+
+                viewModelLength = viewModel.getLength();
+
+                viewModelLengthJavaLangObjectNull = (viewModelLength) != (null);
+                if (viewModelLengthJavaLangObjectNull) {
+
+
+
+
+                    viewModelLength.setValue(((java.lang.String) (callbackArg_0)));
+                }
+            }
+        }
+    };
+    private androidx.databinding.InverseBindingListener edtShippingCountryandroidTextAttrChanged = new androidx.databinding.InverseBindingListener() {
+        @Override
+        public void onChange() {
+            // Inverse of viewModel.shippingCountry.getValue()
+            //         is viewModel.shippingCountry.setValue((java.lang.String) callbackArg_0)
+            java.lang.String callbackArg_0 = androidx.databinding.adapters.TextViewBindingAdapter.getTextString(edtShippingCountry);
+            // localize variables for thread safety
+            // viewModel.shippingCountry
+            androidx.lifecycle.MutableLiveData<java.lang.String> viewModelShippingCountry = null;
+            // viewModel.shippingCountry != null
+            boolean viewModelShippingCountryJavaLangObjectNull = false;
+            // viewModel
+            com.usend.viewmodels.CalculatorViewModel viewModel = mViewModel;
+            // viewModel != null
+            boolean viewModelJavaLangObjectNull = false;
+            // viewModel.shippingCountry.getValue()
+            java.lang.String viewModelShippingCountryGetValue = null;
+
+
+
+            viewModelJavaLangObjectNull = (viewModel) != (null);
+            if (viewModelJavaLangObjectNull) {
+
+
+                viewModelShippingCountry = viewModel.getShippingCountry();
+
+                viewModelShippingCountryJavaLangObjectNull = (viewModelShippingCountry) != (null);
+                if (viewModelShippingCountryJavaLangObjectNull) {
+
+
+
+
+                    viewModelShippingCountry.setValue(((java.lang.String) (callbackArg_0)));
+                }
+            }
+        }
+    };
+    private androidx.databinding.InverseBindingListener edtWeightandroidTextAttrChanged = new androidx.databinding.InverseBindingListener() {
+        @Override
+        public void onChange() {
+            // Inverse of viewModel.weight.getValue()
+            //         is viewModel.weight.setValue((java.lang.String) callbackArg_0)
+            java.lang.String callbackArg_0 = androidx.databinding.adapters.TextViewBindingAdapter.getTextString(edtWeight);
+            // localize variables for thread safety
+            // viewModel.weight.getValue()
+            java.lang.String viewModelWeightGetValue = null;
+            // viewModel
+            com.usend.viewmodels.CalculatorViewModel viewModel = mViewModel;
+            // viewModel.weight
+            androidx.lifecycle.MutableLiveData<java.lang.String> viewModelWeight = null;
+            // viewModel != null
+            boolean viewModelJavaLangObjectNull = false;
+            // viewModel.weight != null
+            boolean viewModelWeightJavaLangObjectNull = false;
+
+
+
+            viewModelJavaLangObjectNull = (viewModel) != (null);
+            if (viewModelJavaLangObjectNull) {
+
+
+                viewModelWeight = viewModel.getWeight();
+
+                viewModelWeightJavaLangObjectNull = (viewModelWeight) != (null);
+                if (viewModelWeightJavaLangObjectNull) {
+
+
+
+
+                    viewModelWeight.setValue(((java.lang.String) (callbackArg_0)));
+                }
+            }
+        }
+    };
+    private androidx.databinding.InverseBindingListener edtWidthandroidTextAttrChanged = new androidx.databinding.InverseBindingListener() {
+        @Override
+        public void onChange() {
+            // Inverse of viewModel.width.getValue()
+            //         is viewModel.width.setValue((java.lang.String) callbackArg_0)
+            java.lang.String callbackArg_0 = androidx.databinding.adapters.TextViewBindingAdapter.getTextString(edtWidth);
+            // localize variables for thread safety
+            // viewModel.width != null
+            boolean viewModelWidthJavaLangObjectNull = false;
+            // viewModel
+            com.usend.viewmodels.CalculatorViewModel viewModel = mViewModel;
+            // viewModel.width
+            androidx.lifecycle.MutableLiveData<java.lang.String> viewModelWidth = null;
+            // viewModel != null
+            boolean viewModelJavaLangObjectNull = false;
+            // viewModel.width.getValue()
+            java.lang.String viewModelWidthGetValue = null;
+
+
+
+            viewModelJavaLangObjectNull = (viewModel) != (null);
+            if (viewModelJavaLangObjectNull) {
+
+
+                viewModelWidth = viewModel.getWidth();
+
+                viewModelWidthJavaLangObjectNull = (viewModelWidth) != (null);
+                if (viewModelWidthJavaLangObjectNull) {
+
+
+
+
+                    viewModelWidth.setValue(((java.lang.String) (callbackArg_0)));
+                }
+            }
+        }
+    };
+    private androidx.databinding.InverseBindingListener edtZipCodeandroidTextAttrChanged = new androidx.databinding.InverseBindingListener() {
+        @Override
+        public void onChange() {
+            // Inverse of viewModel.zipCode.getValue()
+            //         is viewModel.zipCode.setValue((java.lang.String) callbackArg_0)
+            java.lang.String callbackArg_0 = androidx.databinding.adapters.TextViewBindingAdapter.getTextString(edtZipCode);
+            // localize variables for thread safety
+            // viewModel.zipCode.getValue()
+            java.lang.String viewModelZipCodeGetValue = null;
+            // viewModel.zipCode
+            androidx.lifecycle.MutableLiveData<java.lang.String> viewModelZipCode = null;
+            // viewModel
+            com.usend.viewmodels.CalculatorViewModel viewModel = mViewModel;
+            // viewModel != null
+            boolean viewModelJavaLangObjectNull = false;
+            // viewModel.zipCode != null
+            boolean viewModelZipCodeJavaLangObjectNull = false;
+
+
+
+            viewModelJavaLangObjectNull = (viewModel) != (null);
+            if (viewModelJavaLangObjectNull) {
+
+
+                viewModelZipCode = viewModel.getZipCode();
+
+                viewModelZipCodeJavaLangObjectNull = (viewModelZipCode) != (null);
+                if (viewModelZipCodeJavaLangObjectNull) {
+
+
+
+
+                    viewModelZipCode.setValue(((java.lang.String) (callbackArg_0)));
+                }
+            }
+        }
+    };
+
+    public FragmentShippingCalculatorBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 22, sIncludes, sViewsWithIds));
+    }
+    private FragmentShippingCalculatorBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
+        super(bindingComponent, root, 9
+            , (com.google.android.material.button.MaterialButton) bindings[12]
+            , (androidx.appcompat.widget.AppCompatEditText) bindings[2]
+            , (androidx.appcompat.widget.AppCompatEditText) bindings[9]
+            , (androidx.appcompat.widget.AppCompatEditText) bindings[7]
+            , (androidx.appcompat.widget.AppCompatEditText) bindings[1]
+            , (androidx.appcompat.widget.AppCompatEditText) bindings[4]
+            , (androidx.appcompat.widget.AppCompatEditText) bindings[8]
+            , (androidx.appcompat.widget.AppCompatEditText) bindings[3]
+            , (android.widget.LinearLayout) bindings[21]
+            , (android.widget.LinearLayout) bindings[17]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[14]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[20]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[18]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[13]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[16]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[19]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[15]
+            );
+        this.btnNext.setTag(null);
+        this.edtCity.setTag(null);
+        this.edtHeight.setTag(null);
+        this.edtLength.setTag(null);
+        this.edtShippingCountry.setTag(null);
+        this.edtWeight.setTag(null);
+        this.edtWidth.setTag(null);
+        this.edtZipCode.setTag(null);
+        this.mboundView0 = (android.widget.ScrollView) bindings[0];
+        this.mboundView0.setTag(null);
+        this.mboundView10 = (androidx.appcompat.widget.AppCompatTextView) bindings[10];
+        this.mboundView10.setTag(null);
+        this.mboundView11 = (androidx.appcompat.widget.AppCompatTextView) bindings[11];
+        this.mboundView11.setTag(null);
+        this.mboundView5 = (androidx.appcompat.widget.AppCompatTextView) bindings[5];
+        this.mboundView5.setTag(null);
+        this.mboundView6 = (androidx.appcompat.widget.AppCompatTextView) bindings[6];
+        this.mboundView6.setTag(null);
+        setRootTag(root);
+        // listeners
+        mCallback11 = new com.usend.generated.callback.OnClickListener(this, 2);
+        mCallback10 = new com.usend.generated.callback.OnClickListener(this, 1);
+        invalidateAll();
+    }
+
+    @Override
+    public void invalidateAll() {
+        synchronized(this) {
+                mDirtyFlags = 0x800L;
+        }
+        requestRebind();
+    }
+
+    @Override
+    public boolean hasPendingBindings() {
+        synchronized(this) {
+            if (mDirtyFlags != 0) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    @Override
+    public boolean setVariable(int variableId, @Nullable Object variable)  {
+        boolean variableSet = true;
+        if (BR.frag == variableId) {
+            setFrag((com.usend.views.home.ShippingCalculatorFragment) variable);
+        }
+        else if (BR.viewModel == variableId) {
+            setViewModel((com.usend.viewmodels.CalculatorViewModel) variable);
+        }
+        else {
+            variableSet = false;
+        }
+            return variableSet;
+    }
+
+    public void setFrag(@Nullable com.usend.views.home.ShippingCalculatorFragment Frag) {
+        this.mFrag = Frag;
+        synchronized(this) {
+            mDirtyFlags |= 0x200L;
+        }
+        notifyPropertyChanged(BR.frag);
+        super.requestRebind();
+    }
+    public void setViewModel(@Nullable com.usend.viewmodels.CalculatorViewModel ViewModel) {
+        this.mViewModel = ViewModel;
+        synchronized(this) {
+            mDirtyFlags |= 0x400L;
+        }
+        notifyPropertyChanged(BR.viewModel);
+        super.requestRebind();
+    }
+
+    @Override
+    protected boolean onFieldChange(int localFieldId, Object object, int fieldId) {
+        switch (localFieldId) {
+            case 0 :
+                return onChangeViewModelWidth((androidx.lifecycle.MutableLiveData<java.lang.String>) object, fieldId);
+            case 1 :
+                return onChangeViewModelWeightSelected((androidx.lifecycle.MutableLiveData<java.lang.String>) object, fieldId);
+            case 2 :
+                return onChangeViewModelLength((androidx.lifecycle.MutableLiveData<java.lang.String>) object, fieldId);
+            case 3 :
+                return onChangeViewModelZipCode((androidx.lifecycle.MutableLiveData<java.lang.String>) object, fieldId);
+            case 4 :
+                return onChangeViewModelWeight((androidx.lifecycle.MutableLiveData<java.lang.String>) object, fieldId);
+            case 5 :
+                return onChangeViewModelHeight((androidx.lifecycle.MutableLiveData<java.lang.String>) object, fieldId);
+            case 6 :
+                return onChangeViewModelCity((androidx.lifecycle.MutableLiveData<java.lang.String>) object, fieldId);
+            case 7 :
+                return onChangeViewModelShippingCountry((androidx.lifecycle.MutableLiveData<java.lang.String>) object, fieldId);
+            case 8 :
+                return onChangeViewModelDimensonSelected((androidx.lifecycle.MutableLiveData<java.lang.String>) object, fieldId);
+        }
+        return false;
+    }
+    private boolean onChangeViewModelWidth(androidx.lifecycle.MutableLiveData<java.lang.String> ViewModelWidth, int fieldId) {
+        if (fieldId == BR._all) {
+            synchronized(this) {
+                    mDirtyFlags |= 0x1L;
+            }
+            return true;
+        }
+        return false;
+    }
+    private boolean onChangeViewModelWeightSelected(androidx.lifecycle.MutableLiveData<java.lang.String> ViewModelWeightSelected, int fieldId) {
+        if (fieldId == BR._all) {
+            synchronized(this) {
+                    mDirtyFlags |= 0x2L;
+            }
+            return true;
+        }
+        return false;
+    }
+    private boolean onChangeViewModelLength(androidx.lifecycle.MutableLiveData<java.lang.String> ViewModelLength, int fieldId) {
+        if (fieldId == BR._all) {
+            synchronized(this) {
+                    mDirtyFlags |= 0x4L;
+            }
+            return true;
+        }
+        return false;
+    }
+    private boolean onChangeViewModelZipCode(androidx.lifecycle.MutableLiveData<java.lang.String> ViewModelZipCode, int fieldId) {
+        if (fieldId == BR._all) {
+            synchronized(this) {
+                    mDirtyFlags |= 0x8L;
+            }
+            return true;
+        }
+        return false;
+    }
+    private boolean onChangeViewModelWeight(androidx.lifecycle.MutableLiveData<java.lang.String> ViewModelWeight, int fieldId) {
+        if (fieldId == BR._all) {
+            synchronized(this) {
+                    mDirtyFlags |= 0x10L;
+            }
+            return true;
+        }
+        return false;
+    }
+    private boolean onChangeViewModelHeight(androidx.lifecycle.MutableLiveData<java.lang.String> ViewModelHeight, int fieldId) {
+        if (fieldId == BR._all) {
+            synchronized(this) {
+                    mDirtyFlags |= 0x20L;
+            }
+            return true;
+        }
+        return false;
+    }
+    private boolean onChangeViewModelCity(androidx.lifecycle.MutableLiveData<java.lang.String> ViewModelCity, int fieldId) {
+        if (fieldId == BR._all) {
+            synchronized(this) {
+                    mDirtyFlags |= 0x40L;
+            }
+            return true;
+        }
+        return false;
+    }
+    private boolean onChangeViewModelShippingCountry(androidx.lifecycle.MutableLiveData<java.lang.String> ViewModelShippingCountry, int fieldId) {
+        if (fieldId == BR._all) {
+            synchronized(this) {
+                    mDirtyFlags |= 0x80L;
+            }
+            return true;
+        }
+        return false;
+    }
+    private boolean onChangeViewModelDimensonSelected(androidx.lifecycle.MutableLiveData<java.lang.String> ViewModelDimensonSelected, int fieldId) {
+        if (fieldId == BR._all) {
+            synchronized(this) {
+                    mDirtyFlags |= 0x100L;
+            }
+            return true;
+        }
+        return false;
+    }
+
+    @Override
+    protected void executeBindings() {
+        long dirtyFlags = 0;
+        synchronized(this) {
+            dirtyFlags = mDirtyFlags;
+            mDirtyFlags = 0;
+        }
+        androidx.lifecycle.MutableLiveData<java.lang.String> viewModelWidth = null;
+        java.lang.String viewModelCityGetValue = null;
+        java.lang.String viewModelLengthGetValue = null;
+        int viewModelWeightSelectedEqualsJavaLangStringKgMboundView6AndroidColorColorWhiteMboundView6AndroidColorColor2D2D2D = 0;
+        androidx.lifecycle.MutableLiveData<java.lang.String> viewModelWeightSelected = null;
+        android.graphics.drawable.Drawable viewModelDimensonSelectedEqualsJavaLangStringInchMboundView10AndroidDrawableBg8RadiusSolidJavaLangObjectNull = null;
+        java.lang.String viewModelWeightGetValue = null;
+        boolean viewModelDimensonSelectedEqualsJavaLangStringInch = false;
+        java.lang.String viewModelWidthGetValue = null;
+        java.lang.String viewModelHeightGetValue = null;
+        boolean viewModelWeightSelectedEqualsJavaLangStringKg = false;
+        com.usend.views.home.ShippingCalculatorFragment frag = mFrag;
+        android.graphics.drawable.Drawable viewModelWeightSelectedEqualsJavaLangStringKgMboundView6AndroidDrawableBg8RadiusSolidJavaLangObjectNull = null;
+        java.lang.String viewModelZipCodeGetValue = null;
+        androidx.lifecycle.MutableLiveData<java.lang.String> viewModelLength = null;
+        androidx.lifecycle.MutableLiveData<java.lang.String> viewModelZipCode = null;
+        java.lang.String viewModelWeightSelectedGetValue = null;
+        int viewModelDimensonSelectedEqualsJavaLangStringCmMboundView11AndroidColorColorWhiteMboundView11AndroidColorColor2D2D2D = 0;
+        java.lang.String viewModelShippingCountryGetValue = null;
+        android.graphics.drawable.Drawable viewModelWeightSelectedEqualsJavaLangStringLbsMboundView5AndroidDrawableBg8RadiusSolidJavaLangObjectNull = null;
+        androidx.lifecycle.MutableLiveData<java.lang.String> viewModelWeight = null;
+        androidx.lifecycle.MutableLiveData<java.lang.String> viewModelHeight = null;
+        boolean viewModelWeightSelectedEqualsJavaLangStringLbs = false;
+        boolean viewModelDimensonSelectedEqualsJavaLangStringCm = false;
+        int viewModelWeightSelectedEqualsJavaLangStringLbsMboundView5AndroidColorColorWhiteMboundView5AndroidColorColor2D2D2D = 0;
+        java.lang.String viewModelDimensonSelectedGetValue = null;
+        androidx.lifecycle.MutableLiveData<java.lang.String> viewModelCity = null;
+        androidx.lifecycle.MutableLiveData<java.lang.String> viewModelShippingCountry = null;
+        android.graphics.drawable.Drawable viewModelDimensonSelectedEqualsJavaLangStringCmMboundView11AndroidDrawableBg8RadiusSolidJavaLangObjectNull = null;
+        androidx.lifecycle.MutableLiveData<java.lang.String> viewModelDimensonSelected = null;
+        int viewModelDimensonSelectedEqualsJavaLangStringInchMboundView10AndroidColorColorWhiteMboundView10AndroidColorColor2D2D2D = 0;
+        com.usend.viewmodels.CalculatorViewModel viewModel = mViewModel;
+
+        if ((dirtyFlags & 0xdffL) != 0) {
+
+
+            if ((dirtyFlags & 0xc01L) != 0) {
+
+                    if (viewModel != null) {
+                        // read viewModel.width
+                        viewModelWidth = viewModel.getWidth();
+                    }
+                    updateLiveDataRegistration(0, viewModelWidth);
+
+
+                    if (viewModelWidth != null) {
+                        // read viewModel.width.getValue()
+                        viewModelWidthGetValue = viewModelWidth.getValue();
+                    }
+            }
+            if ((dirtyFlags & 0xc02L) != 0) {
+
+                    if (viewModel != null) {
+                        // read viewModel.weightSelected
+                        viewModelWeightSelected = viewModel.getWeightSelected();
+                    }
+                    updateLiveDataRegistration(1, viewModelWeightSelected);
+
+
+                    if (viewModelWeightSelected != null) {
+                        // read viewModel.weightSelected.getValue()
+                        viewModelWeightSelectedGetValue = viewModelWeightSelected.getValue();
+                    }
+
+
+                    if (viewModelWeightSelectedGetValue != null) {
+                        // read viewModel.weightSelected.getValue().equals("kg")
+                        viewModelWeightSelectedEqualsJavaLangStringKg = viewModelWeightSelectedGetValue.equals("kg");
+                        // read viewModel.weightSelected.getValue().equals("lbs")
+                        viewModelWeightSelectedEqualsJavaLangStringLbs = viewModelWeightSelectedGetValue.equals("lbs");
+                    }
+                if((dirtyFlags & 0xc02L) != 0) {
+                    if(viewModelWeightSelectedEqualsJavaLangStringKg) {
+                            dirtyFlags |= 0x2000L;
+                            dirtyFlags |= 0x20000L;
+                    }
+                    else {
+                            dirtyFlags |= 0x1000L;
+                            dirtyFlags |= 0x10000L;
+                    }
+                }
+                if((dirtyFlags & 0xc02L) != 0) {
+                    if(viewModelWeightSelectedEqualsJavaLangStringLbs) {
+                            dirtyFlags |= 0x200000L;
+                            dirtyFlags |= 0x800000L;
+                    }
+                    else {
+                            dirtyFlags |= 0x100000L;
+                            dirtyFlags |= 0x400000L;
+                    }
+                }
+
+
+                    // read viewModel.weightSelected.getValue().equals("kg") ? @android:color/colorWhite : @android:color/color2D2D2D
+                    viewModelWeightSelectedEqualsJavaLangStringKgMboundView6AndroidColorColorWhiteMboundView6AndroidColorColor2D2D2D = ((viewModelWeightSelectedEqualsJavaLangStringKg) ? (getColorFromResource(mboundView6, R.color.colorWhite)) : (getColorFromResource(mboundView6, R.color.color2D2D2D)));
+                    // read viewModel.weightSelected.getValue().equals("kg") ? @android:drawable/bg_8_radius_solid : null
+                    viewModelWeightSelectedEqualsJavaLangStringKgMboundView6AndroidDrawableBg8RadiusSolidJavaLangObjectNull = ((viewModelWeightSelectedEqualsJavaLangStringKg) ? (androidx.appcompat.content.res.AppCompatResources.getDrawable(mboundView6.getContext(), R.drawable.bg_8_radius_solid)) : (null));
+                    // read viewModel.weightSelected.getValue().equals("lbs") ? @android:drawable/bg_8_radius_solid : null
+                    viewModelWeightSelectedEqualsJavaLangStringLbsMboundView5AndroidDrawableBg8RadiusSolidJavaLangObjectNull = ((viewModelWeightSelectedEqualsJavaLangStringLbs) ? (androidx.appcompat.content.res.AppCompatResources.getDrawable(mboundView5.getContext(), R.drawable.bg_8_radius_solid)) : (null));
+                    // read viewModel.weightSelected.getValue().equals("lbs") ? @android:color/colorWhite : @android:color/color2D2D2D
+                    viewModelWeightSelectedEqualsJavaLangStringLbsMboundView5AndroidColorColorWhiteMboundView5AndroidColorColor2D2D2D = ((viewModelWeightSelectedEqualsJavaLangStringLbs) ? (getColorFromResource(mboundView5, R.color.colorWhite)) : (getColorFromResource(mboundView5, R.color.color2D2D2D)));
+            }
+            if ((dirtyFlags & 0xc04L) != 0) {
+
+                    if (viewModel != null) {
+                        // read viewModel.length
+                        viewModelLength = viewModel.getLength();
+                    }
+                    updateLiveDataRegistration(2, viewModelLength);
+
+
+                    if (viewModelLength != null) {
+                        // read viewModel.length.getValue()
+                        viewModelLengthGetValue = viewModelLength.getValue();
+                    }
+            }
+            if ((dirtyFlags & 0xc08L) != 0) {
+
+                    if (viewModel != null) {
+                        // read viewModel.zipCode
+                        viewModelZipCode = viewModel.getZipCode();
+                    }
+                    updateLiveDataRegistration(3, viewModelZipCode);
+
+
+                    if (viewModelZipCode != null) {
+                        // read viewModel.zipCode.getValue()
+                        viewModelZipCodeGetValue = viewModelZipCode.getValue();
+                    }
+            }
+            if ((dirtyFlags & 0xc10L) != 0) {
+
+                    if (viewModel != null) {
+                        // read viewModel.weight
+                        viewModelWeight = viewModel.getWeight();
+                    }
+                    updateLiveDataRegistration(4, viewModelWeight);
+
+
+                    if (viewModelWeight != null) {
+                        // read viewModel.weight.getValue()
+                        viewModelWeightGetValue = viewModelWeight.getValue();
+                    }
+            }
+            if ((dirtyFlags & 0xc20L) != 0) {
+
+                    if (viewModel != null) {
+                        // read viewModel.height
+                        viewModelHeight = viewModel.getHeight();
+                    }
+                    updateLiveDataRegistration(5, viewModelHeight);
+
+
+                    if (viewModelHeight != null) {
+                        // read viewModel.height.getValue()
+                        viewModelHeightGetValue = viewModelHeight.getValue();
+                    }
+            }
+            if ((dirtyFlags & 0xc40L) != 0) {
+
+                    if (viewModel != null) {
+                        // read viewModel.city
+                        viewModelCity = viewModel.getCity();
+                    }
+                    updateLiveDataRegistration(6, viewModelCity);
+
+
+                    if (viewModelCity != null) {
+                        // read viewModel.city.getValue()
+                        viewModelCityGetValue = viewModelCity.getValue();
+                    }
+            }
+            if ((dirtyFlags & 0xc80L) != 0) {
+
+                    if (viewModel != null) {
+                        // read viewModel.shippingCountry
+                        viewModelShippingCountry = viewModel.getShippingCountry();
+                    }
+                    updateLiveDataRegistration(7, viewModelShippingCountry);
+
+
+                    if (viewModelShippingCountry != null) {
+                        // read viewModel.shippingCountry.getValue()
+                        viewModelShippingCountryGetValue = viewModelShippingCountry.getValue();
+                    }
+            }
+            if ((dirtyFlags & 0xd00L) != 0) {
+
+                    if (viewModel != null) {
+                        // read viewModel.dimensonSelected
+                        viewModelDimensonSelected = viewModel.getDimensonSelected();
+                    }
+                    updateLiveDataRegistration(8, viewModelDimensonSelected);
+
+
+                    if (viewModelDimensonSelected != null) {
+                        // read viewModel.dimensonSelected.getValue()
+                        viewModelDimensonSelectedGetValue = viewModelDimensonSelected.getValue();
+                    }
+
+
+                    if (viewModelDimensonSelectedGetValue != null) {
+                        // read viewModel.dimensonSelected.getValue().equals("inch")
+                        viewModelDimensonSelectedEqualsJavaLangStringInch = viewModelDimensonSelectedGetValue.equals("inch");
+                        // read viewModel.dimensonSelected.getValue().equals("cm")
+                        viewModelDimensonSelectedEqualsJavaLangStringCm = viewModelDimensonSelectedGetValue.equals("cm");
+                    }
+                if((dirtyFlags & 0xd00L) != 0) {
+                    if(viewModelDimensonSelectedEqualsJavaLangStringInch) {
+                            dirtyFlags |= 0x8000L;
+                            dirtyFlags |= 0x8000000L;
+                    }
+                    else {
+                            dirtyFlags |= 0x4000L;
+                            dirtyFlags |= 0x4000000L;
+                    }
+                }
+                if((dirtyFlags & 0xd00L) != 0) {
+                    if(viewModelDimensonSelectedEqualsJavaLangStringCm) {
+                            dirtyFlags |= 0x80000L;
+                            dirtyFlags |= 0x2000000L;
+                    }
+                    else {
+                            dirtyFlags |= 0x40000L;
+                            dirtyFlags |= 0x1000000L;
+                    }
+                }
+
+
+                    // read viewModel.dimensonSelected.getValue().equals("inch") ? @android:drawable/bg_8_radius_solid : null
+                    viewModelDimensonSelectedEqualsJavaLangStringInchMboundView10AndroidDrawableBg8RadiusSolidJavaLangObjectNull = ((viewModelDimensonSelectedEqualsJavaLangStringInch) ? (androidx.appcompat.content.res.AppCompatResources.getDrawable(mboundView10.getContext(), R.drawable.bg_8_radius_solid)) : (null));
+                    // read viewModel.dimensonSelected.getValue().equals("inch") ? @android:color/colorWhite : @android:color/color2D2D2D
+                    viewModelDimensonSelectedEqualsJavaLangStringInchMboundView10AndroidColorColorWhiteMboundView10AndroidColorColor2D2D2D = ((viewModelDimensonSelectedEqualsJavaLangStringInch) ? (getColorFromResource(mboundView10, R.color.colorWhite)) : (getColorFromResource(mboundView10, R.color.color2D2D2D)));
+                    // read viewModel.dimensonSelected.getValue().equals("cm") ? @android:color/colorWhite : @android:color/color2D2D2D
+                    viewModelDimensonSelectedEqualsJavaLangStringCmMboundView11AndroidColorColorWhiteMboundView11AndroidColorColor2D2D2D = ((viewModelDimensonSelectedEqualsJavaLangStringCm) ? (getColorFromResource(mboundView11, R.color.colorWhite)) : (getColorFromResource(mboundView11, R.color.color2D2D2D)));
+                    // read viewModel.dimensonSelected.getValue().equals("cm") ? @android:drawable/bg_8_radius_solid : null
+                    viewModelDimensonSelectedEqualsJavaLangStringCmMboundView11AndroidDrawableBg8RadiusSolidJavaLangObjectNull = ((viewModelDimensonSelectedEqualsJavaLangStringCm) ? (androidx.appcompat.content.res.AppCompatResources.getDrawable(mboundView11.getContext(), R.drawable.bg_8_radius_solid)) : (null));
+            }
+        }
+        // batch finished
+        if ((dirtyFlags & 0x800L) != 0) {
+            // api target 1
+
+            this.btnNext.setOnClickListener(mCallback11);
+            androidx.databinding.adapters.TextViewBindingAdapter.setTextWatcher(this.edtCity, (androidx.databinding.adapters.TextViewBindingAdapter.BeforeTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.OnTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.AfterTextChanged)null, edtCityandroidTextAttrChanged);
+            androidx.databinding.adapters.TextViewBindingAdapter.setTextWatcher(this.edtHeight, (androidx.databinding.adapters.TextViewBindingAdapter.BeforeTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.OnTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.AfterTextChanged)null, edtHeightandroidTextAttrChanged);
+            androidx.databinding.adapters.TextViewBindingAdapter.setTextWatcher(this.edtLength, (androidx.databinding.adapters.TextViewBindingAdapter.BeforeTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.OnTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.AfterTextChanged)null, edtLengthandroidTextAttrChanged);
+            this.edtShippingCountry.setOnClickListener(mCallback10);
+            androidx.databinding.adapters.TextViewBindingAdapter.setTextWatcher(this.edtShippingCountry, (androidx.databinding.adapters.TextViewBindingAdapter.BeforeTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.OnTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.AfterTextChanged)null, edtShippingCountryandroidTextAttrChanged);
+            androidx.databinding.adapters.TextViewBindingAdapter.setTextWatcher(this.edtWeight, (androidx.databinding.adapters.TextViewBindingAdapter.BeforeTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.OnTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.AfterTextChanged)null, edtWeightandroidTextAttrChanged);
+            androidx.databinding.adapters.TextViewBindingAdapter.setTextWatcher(this.edtWidth, (androidx.databinding.adapters.TextViewBindingAdapter.BeforeTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.OnTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.AfterTextChanged)null, edtWidthandroidTextAttrChanged);
+            androidx.databinding.adapters.TextViewBindingAdapter.setTextWatcher(this.edtZipCode, (androidx.databinding.adapters.TextViewBindingAdapter.BeforeTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.OnTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.AfterTextChanged)null, edtZipCodeandroidTextAttrChanged);
+        }
+        if ((dirtyFlags & 0xc40L) != 0) {
+            // api target 1
+
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.edtCity, viewModelCityGetValue);
+        }
+        if ((dirtyFlags & 0xc20L) != 0) {
+            // api target 1
+
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.edtHeight, viewModelHeightGetValue);
+        }
+        if ((dirtyFlags & 0xc04L) != 0) {
+            // api target 1
+
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.edtLength, viewModelLengthGetValue);
+        }
+        if ((dirtyFlags & 0xc80L) != 0) {
+            // api target 1
+
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.edtShippingCountry, viewModelShippingCountryGetValue);
+        }
+        if ((dirtyFlags & 0xc10L) != 0) {
+            // api target 1
+
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.edtWeight, viewModelWeightGetValue);
+        }
+        if ((dirtyFlags & 0xc01L) != 0) {
+            // api target 1
+
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.edtWidth, viewModelWidthGetValue);
+        }
+        if ((dirtyFlags & 0xc08L) != 0) {
+            // api target 1
+
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.edtZipCode, viewModelZipCodeGetValue);
+        }
+        if ((dirtyFlags & 0xd00L) != 0) {
+            // api target 1
+
+            androidx.databinding.adapters.ViewBindingAdapter.setBackground(this.mboundView10, viewModelDimensonSelectedEqualsJavaLangStringInchMboundView10AndroidDrawableBg8RadiusSolidJavaLangObjectNull);
+            this.mboundView10.setTextColor(viewModelDimensonSelectedEqualsJavaLangStringInchMboundView10AndroidColorColorWhiteMboundView10AndroidColorColor2D2D2D);
+            androidx.databinding.adapters.ViewBindingAdapter.setBackground(this.mboundView11, viewModelDimensonSelectedEqualsJavaLangStringCmMboundView11AndroidDrawableBg8RadiusSolidJavaLangObjectNull);
+            this.mboundView11.setTextColor(viewModelDimensonSelectedEqualsJavaLangStringCmMboundView11AndroidColorColorWhiteMboundView11AndroidColorColor2D2D2D);
+        }
+        if ((dirtyFlags & 0xc02L) != 0) {
+            // api target 1
+
+            androidx.databinding.adapters.ViewBindingAdapter.setBackground(this.mboundView5, viewModelWeightSelectedEqualsJavaLangStringLbsMboundView5AndroidDrawableBg8RadiusSolidJavaLangObjectNull);
+            this.mboundView5.setTextColor(viewModelWeightSelectedEqualsJavaLangStringLbsMboundView5AndroidColorColorWhiteMboundView5AndroidColorColor2D2D2D);
+            androidx.databinding.adapters.ViewBindingAdapter.setBackground(this.mboundView6, viewModelWeightSelectedEqualsJavaLangStringKgMboundView6AndroidDrawableBg8RadiusSolidJavaLangObjectNull);
+            this.mboundView6.setTextColor(viewModelWeightSelectedEqualsJavaLangStringKgMboundView6AndroidColorColorWhiteMboundView6AndroidColorColor2D2D2D);
+        }
+    }
+    // Listener Stub Implementations
+    // callback impls
+    public final void _internalCallbackOnClick(int sourceId , android.view.View callbackArg_0) {
+        switch(sourceId) {
+            case 2: {
+                // localize variables for thread safety
+                // frag
+                com.usend.views.home.ShippingCalculatorFragment frag = mFrag;
+                // frag != null
+                boolean fragJavaLangObjectNull = false;
+
+
+
+                fragJavaLangObjectNull = (frag) != (null);
+                if (fragJavaLangObjectNull) {
+
+
+                    frag.onGetQuoteClick();
+                }
+                break;
+            }
+            case 1: {
+                // localize variables for thread safety
+                // frag
+                com.usend.views.home.ShippingCalculatorFragment frag = mFrag;
+                // frag != null
+                boolean fragJavaLangObjectNull = false;
+
+
+
+                fragJavaLangObjectNull = (frag) != (null);
+                if (fragJavaLangObjectNull) {
+
+
+                    frag.onShippingCountryClick();
+                }
+                break;
+            }
+        }
+    }
+    // dirty flag
+    private  long mDirtyFlags = 0xffffffffffffffffL;
+    /* flag mapping
+        flag 0 (0x1L): viewModel.width
+        flag 1 (0x2L): viewModel.weightSelected
+        flag 2 (0x3L): viewModel.length
+        flag 3 (0x4L): viewModel.zipCode
+        flag 4 (0x5L): viewModel.weight
+        flag 5 (0x6L): viewModel.height
+        flag 6 (0x7L): viewModel.city
+        flag 7 (0x8L): viewModel.shippingCountry
+        flag 8 (0x9L): viewModel.dimensonSelected
+        flag 9 (0xaL): frag
+        flag 10 (0xbL): viewModel
+        flag 11 (0xcL): null
+        flag 12 (0xdL): viewModel.weightSelected.getValue().equals("kg") ? @android:color/colorWhite : @android:color/color2D2D2D
+        flag 13 (0xeL): viewModel.weightSelected.getValue().equals("kg") ? @android:color/colorWhite : @android:color/color2D2D2D
+        flag 14 (0xfL): viewModel.dimensonSelected.getValue().equals("inch") ? @android:drawable/bg_8_radius_solid : null
+        flag 15 (0x10L): viewModel.dimensonSelected.getValue().equals("inch") ? @android:drawable/bg_8_radius_solid : null
+        flag 16 (0x11L): viewModel.weightSelected.getValue().equals("kg") ? @android:drawable/bg_8_radius_solid : null
+        flag 17 (0x12L): viewModel.weightSelected.getValue().equals("kg") ? @android:drawable/bg_8_radius_solid : null
+        flag 18 (0x13L): viewModel.dimensonSelected.getValue().equals("cm") ? @android:color/colorWhite : @android:color/color2D2D2D
+        flag 19 (0x14L): viewModel.dimensonSelected.getValue().equals("cm") ? @android:color/colorWhite : @android:color/color2D2D2D
+        flag 20 (0x15L): viewModel.weightSelected.getValue().equals("lbs") ? @android:drawable/bg_8_radius_solid : null
+        flag 21 (0x16L): viewModel.weightSelected.getValue().equals("lbs") ? @android:drawable/bg_8_radius_solid : null
+        flag 22 (0x17L): viewModel.weightSelected.getValue().equals("lbs") ? @android:color/colorWhite : @android:color/color2D2D2D
+        flag 23 (0x18L): viewModel.weightSelected.getValue().equals("lbs") ? @android:color/colorWhite : @android:color/color2D2D2D
+        flag 24 (0x19L): viewModel.dimensonSelected.getValue().equals("cm") ? @android:drawable/bg_8_radius_solid : null
+        flag 25 (0x1aL): viewModel.dimensonSelected.getValue().equals("cm") ? @android:drawable/bg_8_radius_solid : null
+        flag 26 (0x1bL): viewModel.dimensonSelected.getValue().equals("inch") ? @android:color/colorWhite : @android:color/color2D2D2D
+        flag 27 (0x1cL): viewModel.dimensonSelected.getValue().equals("inch") ? @android:color/colorWhite : @android:color/color2D2D2D
+    flag mapping end*/
+    //end
+}

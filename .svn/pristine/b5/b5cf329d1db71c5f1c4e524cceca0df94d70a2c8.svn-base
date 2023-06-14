@@ -1,0 +1,181 @@
+package com.usend.extensions
+
+import android.app.Activity
+import android.content.Context
+import android.content.Intent
+import android.content.res.Configuration
+import android.graphics.Point
+import android.net.ConnectivityManager
+import android.net.NetworkCapabilities
+import android.os.Build
+import android.view.Display
+import android.view.View
+import android.view.inputmethod.InputMethodManager
+import android.widget.Toast
+import androidx.core.content.ContextCompat
+import com.usend.R
+import com.usend.utils.CommonUtils
+
+
+fun Activity.getStatusBarHeight(): Int {
+    var result = 0
+    val resourceId = resources.getIdentifier("status_bar_height", "dimen", "android")
+    if (resourceId > 0) {
+        result = resources.getDimensionPixelSize(resourceId)
+    }
+    return result
+}
+
+
+fun Context.checkInternetConnected(): Boolean {
+    var isConnected = false
+    val cm = getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager?
+    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+        cm?.run {
+            cm.getNetworkCapabilities(cm.activeNetwork)?.run {
+                isConnected = when {
+                    hasTransport(NetworkCapabilities.TRANSPORT_WIFI) -> true
+                    hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR) -> true
+                    hasTransport(NetworkCapabilities.TRANSPORT_ETHERNET) -> true
+                    else -> false
+                }
+            }
+        }
+    } else {
+        cm?.run {
+            @Suppress("DEPRECATION")
+            cm.activeNetworkInfo?.run {
+                if (type == ConnectivityManager.TYPE_WIFI) {
+                    isConnected = true
+                } else if (type == ConnectivityManager.TYPE_MOBILE) {
+                    isConnected = true
+                }
+            }
+        }
+    }
+    return isConnected
+}
+
+
+fun Context.isInternetConnected(isShowDialog: Boolean = false): Boolean {
+    var isConnected = false
+    val cm = getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager?
+    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+        cm?.run {
+            cm.getNetworkCapabilities(cm.activeNetwork)?.run {
+                isConnected = when {
+                    hasTransport(NetworkCapabilities.TRANSPORT_WIFI) -> true
+                    hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR) -> true
+                    hasTransport(NetworkCapabilities.TRANSPORT_ETHERNET) -> true
+                    else -> false
+                }
+            }
+        }
+    } else {
+        cm?.run {
+            @Suppress("DEPRECATION")
+            cm.activeNetworkInfo?.run {
+                if (type == ConnectivityManager.TYPE_WIFI) {
+                    isConnected = true
+                } else if (type == ConnectivityManager.TYPE_MOBILE) {
+                    isConnected = true
+                }
+            }
+        }
+    }
+    if (!isConnected && isShowDialog) {
+        CommonUtils.showOkDialog(
+            this, getString(R.string.app_name),
+            getString(R.string.default_internet_message)
+        )
+
+    }
+    return isConnected
+}
+
+/*
+* Start Activity from Activity
+* */
+inline fun <reified T : Any> Context.launchActivity(
+        noinline init: Intent.() -> Unit = {}) {
+    val intent = newIntent<T>(this)
+    intent.init()
+    startActivity(intent)
+}
+
+/**
+ * Check internet connection.
+ * */
+inline fun Context.withNetwork(block: () -> Unit, blockError: () -> Unit) {
+    val connectivityManager = this
+            .getSystemService(Context.CONNECTIVITY_SERVICE) as? ConnectivityManager
+    connectivityManager?.let { it ->
+        val netInfo = it.activeNetworkInfo
+        netInfo?.let {
+            if (netInfo.isConnected)
+                block()
+            else
+                blockError()
+        }
+    }
+}
+
+/**
+ *  Show Toast
+ */
+fun Context.showToast(message: String, duration: Int = Toast.LENGTH_SHORT) {
+    Toast.makeText(this, message, duration).apply { show() }
+}
+
+fun Context.showLongToast(message: String, duration: Int = Toast.LENGTH_LONG) {
+    Toast.makeText(this, message, duration).apply { show() }
+}
+
+
+fun Activity.hideSoftKeyboard() {
+    val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+    imm.hideSoftInputFromWindow(currentFocus?.windowToken, 0)
+}
+
+fun Activity.showSoftKeyboard(mView: View) {
+    val imm = getSystemService(Context.INPUT_METHOD_SERVICE) as InputMethodManager
+    imm.toggleSoftInputFromWindow(
+        mView.applicationWindowToken,
+        InputMethodManager.SHOW_FORCED,
+        0
+    )
+
+}
+
+fun Activity.color(resource: Int) = ContextCompat.getColor(this, resource)
+
+fun Context.isNightMode() = resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK == Configuration.UI_MODE_NIGHT_YES
+
+fun Context.layoutInflater() = (this as Activity).layoutInflater
+
+fun Activity.getHeight() : Int
+{
+    val display: Display = this.windowManager.defaultDisplay
+    val size = Point()
+    display.getSize(size);
+
+    return size.y
+
+}
+
+fun Activity.hasNavBar(): Boolean {
+    val id: Int = resources.getIdentifier("config_showNavigationBar", "bool", "android")
+    return id > 0 && resources.getBoolean(id)
+}
+
+fun Context.isEdgeToEdgeEnabled(): Int {
+    val resources = resources
+    val resourceId =
+        resources.getIdentifier("config_navBarInteractionMode", "integer", "android")
+    return if (resourceId > 0) {
+        resources.getInteger(resourceId)
+    } else 0
+}
+
+
+

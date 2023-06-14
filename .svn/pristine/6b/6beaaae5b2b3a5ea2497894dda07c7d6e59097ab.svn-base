@@ -1,0 +1,28 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v27\\values-v27.xml",
+            "map": [
+                {
+                    "source": "D:\\EliteUSAFashion-SCMS-UpdatedCode\\app\\src\\main\\res\\values-v27\\styles.xml",
+                    "from": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "103",
+                        "endLines": "16",
+                        "endColumns": "12",
+                        "endOffsets": "945"
+                    },
+                    "to": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "15",
+                        "endColumns": "12",
+                        "endOffsets": "897"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,100 @@
+package com.usend.views.home;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 6, 0}, k = 1, d1 = {"\u0000l\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0002\u0018\u0000 02\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00030\u0001:\u00010B\u001f\u0012\u000e\b\u0002\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00030\u0005\u0012\b\b\u0002\u0010\u0006\u001a\u00020\u0007\u00a2\u0006\u0002\u0010\bJ\b\u0010\u001c\u001a\u00020\u001dH\u0016J\b\u0010\u001e\u001a\u00020\u001dH\u0014J\b\u0010\u001f\u001a\u00020\u001dH\u0014J\u0010\u0010 \u001a\u00020\u001d2\u0006\u0010!\u001a\u00020\"H\u0002J\u0010\u0010#\u001a\u00020\u001d2\u0006\u0010$\u001a\u00020%H\u0002J\u0012\u0010&\u001a\u00020\u001d2\b\u0010\'\u001a\u0004\u0018\u00010(H\u0002J\u000e\u0010)\u001a\u00020\u001d2\u0006\u0010*\u001a\u00020+J\u0010\u0010,\u001a\u00020\u001d2\u0006\u0010\t\u001a\u00020\nH\u0002J\u0010\u0010-\u001a\u00020\u001d2\u0006\u0010.\u001a\u00020/H\u0002R\u001c\u0010\t\u001a\u0004\u0018\u00010\nX\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u000b\u0010\f\"\u0004\b\r\u0010\u000eR\u0014\u0010\u0006\u001a\u00020\u0007X\u0094\u0004\u00a2\u0006\b\n\u0000\u001a\u0004\b\u000f\u0010\u0010R\u0014\u0010\u0011\u001a\b\u0012\u0004\u0012\u00020\u00130\u0012X\u0082\u0004\u00a2\u0006\u0002\n\u0000R\u001a\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00030\u0005X\u0096\u0004\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0014\u0010\u0015R\u001c\u0010\u0016\u001a\u0004\u0018\u00010\u0017X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0018\u0010\u0019\"\u0004\b\u001a\u0010\u001b\u00a8\u00061"}, d2 = {"Lcom/usend/views/home/AutoShipActivity;", "Lcom/usend/base/ViewModelActivity;", "Lcom/usend/databinding/ActivityAutoShipBinding;", "Lcom/usend/viewmodels/AutoShipViewModel;", "modelClass", "Lkotlin/reflect/KClass;", "layoutId", "", "(Lkotlin/reflect/KClass;I)V", "autoShipmentResponseData", "Lcom/base/network/model/AutoShipmentResponseData;", "getAutoShipmentResponseData", "()Lcom/base/network/model/AutoShipmentResponseData;", "setAutoShipmentResponseData", "(Lcom/base/network/model/AutoShipmentResponseData;)V", "getLayoutId", "()I", "mObserver", "Landroidx/lifecycle/Observer;", "", "getModelClass", "()Lkotlin/reflect/KClass;", "newUpdatedCard", "Lcom/base/network/model/CardXX;", "getNewUpdatedCard", "()Lcom/base/network/model/CardXX;", "setNewUpdatedCard", "(Lcom/base/network/model/CardXX;)V", "addObserver", "", "initControls", "initView", "refreshDetails", "data", "Landroid/content/Intent;", "setAddressData", "addressModel", "Lcom/base/network/model/AddressList;", "setCardData", "cardDetail", "Lcom/base/network/model/Card;", "setProgressStatus", "status", "", "setShipmentData", "setShipmentServiceData", "autoShipmentService", "Lcom/base/network/model/GetAutoshipmentServiceListData;", "Companion", "app_debug"})
+public final class AutoShipActivity extends com.usend.base.ViewModelActivity<com.usend.databinding.ActivityAutoShipBinding, com.usend.viewmodels.AutoShipViewModel> {
+    @org.jetbrains.annotations.NotNull()
+    private final kotlin.reflect.KClass<com.usend.viewmodels.AutoShipViewModel> modelClass = null;
+    private final int layoutId = 0;
+    @org.jetbrains.annotations.Nullable()
+    private com.base.network.model.AutoShipmentResponseData autoShipmentResponseData;
+    @org.jetbrains.annotations.Nullable()
+    private com.base.network.model.CardXX newUpdatedCard;
+    private final androidx.lifecycle.Observer<java.lang.Object> mObserver = null;
+    @org.jetbrains.annotations.NotNull()
+    public static final com.usend.views.home.AutoShipActivity.Companion Companion = null;
+    private java.util.HashMap _$_findViewCache;
+    
+    public AutoShipActivity() {
+        super();
+    }
+    
+    public AutoShipActivity(@org.jetbrains.annotations.NotNull()
+    kotlin.reflect.KClass<com.usend.viewmodels.AutoShipViewModel> modelClass, int layoutId) {
+        super();
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    @java.lang.Override()
+    public kotlin.reflect.KClass<com.usend.viewmodels.AutoShipViewModel> getModelClass() {
+        return null;
+    }
+    
+    @java.lang.Override()
+    protected int getLayoutId() {
+        return 0;
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final com.base.network.model.AutoShipmentResponseData getAutoShipmentResponseData() {
+        return null;
+    }
+    
+    public final void setAutoShipmentResponseData(@org.jetbrains.annotations.Nullable()
+    com.base.network.model.AutoShipmentResponseData p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final com.base.network.model.CardXX getNewUpdatedCard() {
+        return null;
+    }
+    
+    public final void setNewUpdatedCard(@org.jetbrains.annotations.Nullable()
+    com.base.network.model.CardXX p0) {
+    }
+    
+    @java.lang.Override()
+    protected void initView() {
+    }
+    
+    @java.lang.Override()
+    protected void initControls() {
+    }
+    
+    private final void refreshDetails(android.content.Intent data) {
+    }
+    
+    private final void setAddressData(com.base.network.model.AddressList addressModel) {
+    }
+    
+    private final void setShipmentServiceData(com.base.network.model.GetAutoshipmentServiceListData autoShipmentService) {
+    }
+    
+    private final void setCardData(com.base.network.model.Card cardDetail) {
+    }
+    
+    private final void setShipmentData(com.base.network.model.AutoShipmentResponseData autoShipmentResponseData) {
+    }
+    
+    @java.lang.Override()
+    public void addObserver() {
+    }
+    
+    public final void setProgressStatus(boolean status) {
+    }
+    
+    @kotlin.Metadata(mv = {1, 6, 0}, k = 1, d1 = {"\u0000$\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\b\u0086\u0003\u0018\u00002\u00020\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002J\"\u0010\u0003\u001a\u00020\u00042\u0006\u0010\u0005\u001a\u00020\u00062\u0006\u0010\u0007\u001a\u00020\b2\n\b\u0002\u0010\t\u001a\u0004\u0018\u00010\n\u00a8\u0006\u000b"}, d2 = {"Lcom/usend/views/home/AutoShipActivity$Companion;", "", "()V", "newIntent", "", "context", "Landroid/content/Context;", "intent", "Landroid/content/Intent;", "model", "Lcom/base/network/model/AutoShipmentResponseData;", "app_debug"})
+    public static final class Companion {
+        
+        private Companion() {
+            super();
+        }
+        
+        public final void newIntent(@org.jetbrains.annotations.NotNull()
+        android.content.Context context, @org.jetbrains.annotations.NotNull()
+        android.content.Intent intent, @org.jetbrains.annotations.Nullable()
+        com.base.network.model.AutoShipmentResponseData model) {
+        }
+    }
+}

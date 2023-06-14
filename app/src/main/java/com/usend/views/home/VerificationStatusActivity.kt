@@ -1,0 +1,94 @@
+package com.usend.views.home
+
+import android.app.Activity
+import android.content.Context
+import android.content.Intent
+import com.base.network.model.User
+import com.usend.R
+import com.usend.base.BaseViewModel
+import com.usend.base.ViewModelActivity
+import com.usend.databinding.ActivityVerificationStatusBinding
+import com.usend.utils.*
+import kotlinx.android.synthetic.main.app_toolbar.*
+import org.greenrobot.eventbus.EventBus
+import kotlin.reflect.KClass
+
+class VerificationStatusActivity(
+    override val modelClass: KClass<BaseViewModel> = BaseViewModel::class,
+    override val layoutId: Int = R.layout.activity_verification_status
+) : ViewModelActivity<ActivityVerificationStatusBinding, BaseViewModel>() {
+
+    private var user : User? = null
+
+    override fun initView() {
+        super.initView()
+
+        EventBus.getDefault().register(this)
+
+        user = PreferenceHelper.getUserObject()
+
+        initToolbar(toolbar = toolbar, title = resources.getString(R.string.lbl_verification))
+
+        when (user?.uspsStatus) {
+            VERIFICATION_PENDING -> {
+                binding.status = 0
+            }
+            VERIFICATION_REJECTED -> {
+                binding.status = 1
+            }
+            VERIFICATION_COMPLETED -> {
+                binding.status = 2
+            }
+        }
+
+        when (binding.status) {
+            0 -> {
+                binding.imgVerificationStatus.setImageResource(R.drawable.ic_verification_pending)
+                binding.txtVerificationStatus.text = resources.getString(R.string.lbl_verification_pending)
+                binding.txtVerificationDesc.text = resources.getString(R.string.lbl_please_wait_for_verification)
+            }
+            1 -> {
+                binding.imgVerificationStatus.setImageResource(R.drawable.ic_verification_rejected)
+                binding.txtVerificationStatus.text = resources.getString(R.string.lbl_verification_rejected)
+                binding.txtVerificationDesc.text = resources.getString(R.string.lbl_please_update_documents)
+            }
+            2 -> {
+                binding.imgVerificationStatus.setImageResource(R.drawable.ic_verification_completed)
+                binding.txtVerificationStatus.text = resources.getString(R.string.lbl_verification_completed)
+                binding.txtVerificationDesc.text = resources.getString(R.string.lbl_enjoy_your_service)
+            }
+        }
+
+        binding.btnUpdateDocs.setOnClickListener {
+
+            setResult(Activity.RESULT_OK)
+            finish()
+        }
+    }
+
+    override fun initControls() {
+        super.initControls()
+
+        binding.btnOkay.setOnClickListener {
+            onBackPressed()
+        }
+
+        binding.btnContactAdmin.setOnClickListener {
+
+            ContactUsActivity.newIntent(this, Intent(this, ContactUsActivity::class.java))
+        }
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+
+        EventBus.getDefault()
+            .unregister(this)
+    }
+
+    companion object {
+        fun newIntent(context: Context, intent: Intent) {
+            context.startActivity(intent)
+        }
+    }
+}

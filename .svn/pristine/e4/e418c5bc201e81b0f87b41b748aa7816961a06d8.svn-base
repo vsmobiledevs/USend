@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tvSpinnerTitle"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dimen_0dp"
+    android:background="@drawable/bg_curve_border_8_radius"
+    android:drawablePadding="@dimen/dimen_20dp"
+    android:paddingEnd="@dimen/dimen_20dp"
+    android:paddingStart="@dimen/dimen_15dp"
+    android:paddingTop="@dimen/dimen_12dp"
+    android:paddingBottom="@dimen/dimen_12dp"
+    android:maxLines="1"
+    android:fontFamily="@font/poppins_medium"
+    android:textColor="@color/color2D2D2D"
+    android:singleLine="true"
+    android:text="Select"
+    android:textAlignment="viewStart"
+    android:textSize="@dimen/dimen_16sp"
+    app:drawableEndCompat="@drawable/ic_drop_down_arrow"
+    tools:ignore="HardcodedText">
+
+</TextView>

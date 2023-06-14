@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="isEmpty"
+            type="Boolean" />
+
+    </data>
+
+    <LinearLayout
+        style="@style/match"
+        android:orientation="vertical"
+        tools:context=".views.home.ShippingCostActivity">
+
+        <include
+            android:id="@+id/toolbarShippingCost"
+            layout="@layout/app_toolbar" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            style="@style/match"
+            android:background="@color/colorWhite">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvShippingCostFilter"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0dp"
+                android:visibility="visible"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.facebook.shimmer.ShimmerFrameLayout
+                android:id="@+id/simmer_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rvShippingCostFilter"
+                tools:ignore="MissingConstraints">
+
+                <LinearLayout
+                    android:id="@+id/dynamic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+
+                <!-- <include layout="@layout/shimmer_placeholder_layout" />
+
+                 <include layout="@layout/shimmer_placeholder_layout" />
+
+                 <include layout="@layout/shimmer_placeholder_layout" />
+
+                 <include layout="@layout/shimmer_placeholder_layout" />
+
+                 <include layout="@layout/shimmer_placeholder_layout" />
+
+                 <include layout="@layout/shimmer_placeholder_layout" />-->
+
+                <!--  </LinearLayout>-->
+
+            </com.facebook.shimmer.ShimmerFrameLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvShippingCost"
+                style="@style/styleRecyclerView"
+                android:layout_height="@dimen/dimen_0dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/rvShippingCostFilter"
+                tools:itemCount="5"
+                tools:listitem="@layout/row_shipping_method_item" />
+
+            <LinearLayout
+                android:id="@+id/linhishide"
+                style="@style/matchWrap"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+                <!-- android:visibility="@{isEmpty}"-->
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/dimen_100dp"
+                    android:layout_height="@dimen/dimen_100dp"
+                    android:src="@drawable/ic_no_hostory_image" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/CommonText.Style.SemiBold.16sp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:fontFamily="@font/poppins_regular"
+                    android:text="@string/lbl_no_shipping_method_found" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.amazonaws:aws-android-sdk-cognitoauth:2.17.1@aar">
+    <CLASSES>
+      <root url="file://E:/Sonu g3/SDK/caches/transforms-2/files-2.1/f36510a6ab70aeb796fbcb08257a1010/jetified-aws-android-sdk-cognitoauth-2.17.1/res" />
+      <root url="jar://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/c105b1d29e33b3d3261815e967d6a787/jetified-aws-android-sdk-cognitoauth-2.17.1/jars/classes.jar!/" />
+      <root url="file://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/c105b1d29e33b3d3261815e967d6a787/jetified-aws-android-sdk-cognitoauth-2.17.1/AndroidManifest.xml" />
+      <root url="file://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/c105b1d29e33b3d3261815e967d6a787/jetified-aws-android-sdk-cognitoauth-2.17.1/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://E:/Sonu g3/SDK/caches/modules-2/files-2.1/com.amazonaws/aws-android-sdk-cognitoauth/2.17.1/8f6f43a4c49a090a3fe45fb88000cd5c69472a76/aws-android-sdk-cognitoauth-2.17.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,26 @@
+package com.base.network.model
+
+import android.os.Parcelable
+import kotlinx.android.parcel.Parcelize
+
+@Parcelize
+data class CardXX(
+    //val billing_address: BillingAddressX? = null,
+    val bin: String? = null,
+    val card_brand: String? = null,
+    val card_type: String? = null,
+    val cardholder_name: String? = null,
+    val created_at: String? = null,
+    val customer_id: String? = null,
+    val exp_month: Int? = null,
+    val exp_year: Int? = null,
+    val fingerprint: String? = null,
+    val id: String? = null,
+    val last_4: String? = null,
+    val merchant_id: String? = null,
+    val prepaid_type: String? = null,
+    val reference_id: String? = null,
+    val version: Int? = null
+
+
+):Parcelable

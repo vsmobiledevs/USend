@@ -1,0 +1,107 @@
+package com.usend.viewmodels
+import android.app.Application
+import android.content.Context
+import androidx.lifecycle.MediatorLiveData
+import androidx.lifecycle.MutableLiveData
+import com.usend.R
+import com.usend.comman.Resource
+import com.usend.base.BaseViewModel
+import com.usend.extensions.checkInternetConnected
+import com.usend.repository.UserRepository
+
+class CalculatorViewModel(application: Application, private var repository: UserRepository):
+    BaseViewModel(application){
+
+    val mContext: Context = application.applicationContext
+
+    val status : MediatorLiveData<Any> by lazy {
+        MediatorLiveData<Any>()
+    }
+
+    val shippingCountry by lazy { MutableLiveData<String>()}
+    val countryCodeId by lazy { MutableLiveData<Int>() }
+    val zipCode by lazy { MutableLiveData<String>() }
+    val city by lazy { MutableLiveData<String>() }
+    val weight by lazy { MutableLiveData("") }
+    val length by lazy { MutableLiveData<String>() }
+    val width by lazy { MutableLiveData<String>() }
+    val height by lazy { MutableLiveData<String>() }
+    val weightSelected by lazy { MutableLiveData<String>("lbs") }
+    val dimensonSelected by lazy { MutableLiveData<String>("inch") }
+
+    /* fun getQuote(priceFilter : String, carrierCode : String) {
+         when {
+             !mContext.checkInternetConnected() -> status.value =
+                 Resource.NoInternetError<Int>(R.string.default_internet_message)
+             shippingCountry.value.isNullOrEmpty() -> status.value =
+                 Resource.ValidationError<Int>(R.string.msg_please_select_shipping_country)
+             city.value.isNullOrEmpty() -> status.value =
+                 Resource.ValidationError<Int>(R.string.msg_please_select_shipping_city)
+             zipCode.value.isNullOrEmpty() -> status.value =
+                 Resource.ValidationError<Int>(R.string.msg_valid_zipcode)
+             weight.value.isNullOrEmpty() -> status.value =
+                 Resource.ValidationError<Int>(R.string.msg_please_enter_weight)
+             length.value.isNullOrEmpty() -> status.value = Resource.ValidationError<Int>(R.string.msg_please_enter_length)
+             width.value.isNullOrEmpty() -> status.value =
+                 Resource.ValidationError<Int>(R.string.msg_please_enter_width)
+             height.value.isNullOrEmpty() -> status.value =
+                 Resource.ValidationError<Int>(R.string.msg_please_enter_height)
+             else -> {
+                 status.addSource(repository.getShippingCalculator(
+                         countryCodeId = countryCodeId.value!!,
+                         city = city.value!!,
+                         weight = weight.value!!.toDouble(),
+                         weight_unit = weightSelected.value!!,
+                         height = height.value!!.toDouble(),
+                         length = length.value!!.toDouble(),
+                         width = width.value!!.toDouble(),
+                         zipCode = zipCode.value!!,
+                         dimensionUnit = dimensonSelected.value!!,
+                       price_filter = priceFilter,
+                     singleCarrierCode = arrayListOf()
+                     )
+                 ) {
+
+                     if (it is Resource.Success<*>) {
+
+                     }
+                     status.value = it
+                 }
+             }
+         }
+     }*/
+    fun getShippingList()
+    {
+        when {
+            !mContext.checkInternetConnected() -> status.value = Resource.NoInternetError<Int>(R.string.default_internet_message)
+            else -> {
+                status.addSource(repository.getShippingList()) {
+
+                    if (it is Resource.Success<*>) {
+                        //can save for further use
+
+                    }
+
+                    status.value = it
+                }
+            }
+        }
+    }
+
+    fun getCountryList() {
+
+        when {
+            !mContext.checkInternetConnected() -> status.value =
+                Resource.NoInternetError<Int>(R.string.default_internet_message)
+            else -> {
+                status.addSource(repository.getCountryList()) {
+
+                    if (it is Resource.GetCountryListSucess<*>) {
+
+                    }
+                    status.value = it
+                }
+            }
+        }
+    }
+}

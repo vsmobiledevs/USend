@@ -1,0 +1,21 @@
+package com.base.network.model
+
+
+
+data class Subscription(
+    val card_id: String,
+    val charged_through_date: String,
+    val created_at: String,
+    val customer_id: String,
+    val id: String,
+    val invoice_ids: List<String>,
+    val location_id: String,
+    val plan_id: String,
+    val price_override_money: PriceOverrideMoney,
+    val source: SourceX,
+    val start_date: String,
+    val status: String,
+    val timezone: String,
+    val canceled_date: String,
+    val version: Int
+)

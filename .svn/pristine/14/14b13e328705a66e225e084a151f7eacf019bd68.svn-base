@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.usend.viewmodels.CreateReqViewModel" />
+
+        <variable
+            name="activity"
+            type="com.usend.views.home.CreateNewReqActivity" />
+
+    </data>
+
+    <LinearLayout
+        style="@style/match"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/tootlbarCreateNewReq"
+            layout="@layout/app_toolbar" />
+
+        <ScrollView
+            style="@style/styleScrollbar"
+            android:background="@color/colorWhite">
+
+            <LinearLayout
+                style="@style/matchWrap"
+                android:layout_marginTop="@dimen/dimen_15dp"
+                android:orientation="vertical"
+                tools:context=".views.home.CreateNewReqActivity">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/CommonText.Style.14sp"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:text="@string/lbl_product_image"
+                    android:textColor="@color/color2D2D2D"
+                    app:fontFamily="@font/poppins_semibold" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imgProductImage"
+                    android:layout_width="@dimen/dimen_80dp"
+                    android:layout_height="@dimen/dimen_80dp"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_12dp"
+                    android:onClick="@{(view)-> activity.uploadProductImage()}"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_upload_image" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/CommonText.Style.14sp"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_15dp"
+                    android:text="@string/lbl_product_name"
+                    android:textColor="@color/color2D2D2D"
+                    app:fontFamily="@font/poppins_semibold" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    style="@style/inputField.16sp"
+                    android:inputType="text"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:hint="@string/lbl_enter_item_name"
+                    android:imeOptions="actionNext"
+                    android:text="@={viewModel.productName}" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/CommonText.Style.14sp"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_15dp"
+                    android:text="@string/lbl_website_link"
+                    android:textColor="@color/color2D2D2D"
+                    app:fontFamily="@font/poppins_semibold" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    style="@style/inputField.16sp"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:inputType="text"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:hint="@string/lbl_enter_website_link"
+                    android:imeOptions="actionNext"
+                    android:text="@={viewModel.websiteLink}" />
+
+                <RelativeLayout
+                    style="@style/matchWrap"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_15dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/CommonText.Style.14sp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/lbl_cost"
+                        android:textColor="@color/color2D2D2D"
+                        app:fontFamily="@font/poppins_semibold" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/CommonText.Style.14sp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone"
+                        android:text="@string/lbl_added_additional_fees"
+                        android:textSize="@dimen/dimen_12sp" />
+
+                </RelativeLayout>
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    style="@style/inputField.16sp"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:inputType="numberDecimal"
+                    android:hint="@string/lbl_enter_cost"
+                    android:imeOptions="actionNext"
+                    android:text="@={viewModel.cost}" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/CommonText.Style.14sp"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_15dp"
+                    android:text="@string/lbl_desc_size"
+                    android:textColor="@color/color2D2D2D"
+                    app:fontFamily="@font/poppins_semibold" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    style="@style/inputField.16sp"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:gravity="start"
+                    android:hint="@string/lbl_enter_your_text"
+                    android:minLines="3"
+                    android:maxLength="500"
+                    android:imeOptions="actionDone"
+                    android:singleLine="false"
+                    android:text="@={viewModel.desc}" />
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_15dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:button="@drawable/checkbox_selector"
+                    android:checked="@={viewModel.cbTerms}"
+                    android:fontFamily="@font/poppins_regular"
+                    android:gravity="start"
+                    android:includeFontPadding="false"
+                    android:paddingStart="@dimen/dimen_15dp"
+                    android:visibility="gone"
+                    android:text="@string/lbl_i_authorize"
+                    android:textColor="@color/color802D2D2D"
+                    android:textSize="@dimen/dimen_14sp" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnSubmit"
+                    style="@style/MaterialButton.CornerRadius"
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:layout_marginBottom="@dimen/dimen_30dp"
+                    android:onClick="@{(view)-> activity.onSubmitClick()}"
+                    android:text="@string/lbl_submit" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</layout>

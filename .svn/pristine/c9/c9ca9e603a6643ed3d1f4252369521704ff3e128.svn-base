@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: androidx.sqlite:sqlite-framework:2.0.1@aar">
+    <CLASSES>
+      <root url="file://E:/Sonu g3/SDK/caches/transforms-2/files-2.1/c967e5c435f53494bd35e836e4596b4a/sqlite-framework-2.0.1/res" />
+      <root url="file://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/2d4e9f0274e4df850d5e5822674fa698/sqlite-framework-2.0.1/res" />
+      <root url="file://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/2d4e9f0274e4df850d5e5822674fa698/sqlite-framework-2.0.1/AndroidManifest.xml" />
+      <root url="jar://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/2d4e9f0274e4df850d5e5822674fa698/sqlite-framework-2.0.1/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://E:/Sonu g3/SDK/caches/modules-2/files-2.1/androidx.sqlite/sqlite-framework/2.0.1/ebd864adb6e958f17da973aa9391d7865e305c5e/sqlite-framework-2.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

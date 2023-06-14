@@ -1,0 +1,46 @@
+
+
+ //create LoadMore object and pass RecyclerView Object inside constructor
+        lateinit var loadMore: LoadMore
+         loadMore.LoadMore(recyclerView)
+
+
+//set OnLoadMoreListener
+ loadMore.setOnLoadMoreListener(object : LoadMore.OnLoadMoreListener {
+            override fun onLoad(index: Int) {
+                //Show Dialog
+                //Api Call
+
+            }
+
+            override fun onLoadFinish() {
+                //Hide Dialog
+            }
+
+        })
+
+
+//Get Current Page Index
+        loadMore.getIndex()
+
+
+//Set Total number of Pages
+        loadMore.setTotalPage(5)
+
+
+//On Success Api Response
+        loadMore.complete()
+
+
+//On Failear in Api response
+        loadMore.error()
+
+
+//If you want to Reset Page Data (Start with first Page)
+        loadMore.resetLoading()
+
+
+//No more loading for remain pages
+        loadMore.finish()
+
+

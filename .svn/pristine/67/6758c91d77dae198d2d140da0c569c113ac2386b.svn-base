@@ -1,0 +1,450 @@
+/*
+ * The MIT License (MIT)
+ *
+ * Copyright (c) 2019 https://www.spaceotechnologies.com
+ *
+ * Permissions is hereby granted, free of charge, to any person obtaining a copy of this software and associated
+ * documentation files (the "Software"), to deal in the Software without restriction, including without
+ * limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the
+ * Software, and to permit persons to whom the Software is furnished to do so, subject to the following
+ * conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all copies or substantial portions
+ * of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
+ * INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR
+ * PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+ * LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT
+ * OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR
+ * OTHER DEALINGS IN THE SOFTWARE.
+ *
+ */
+
+package com.usend.utils
+
+import android.Manifest
+import android.app.Activity
+import android.app.Dialog
+import android.content.Context
+import android.content.Intent
+import android.content.pm.PackageManager
+import android.graphics.Color
+import android.graphics.drawable.ColorDrawable
+import android.net.Uri
+import android.os.Build
+import android.provider.Settings
+import android.telephony.TelephonyManager
+import android.util.DisplayMetrics
+import android.util.Log
+import android.view.*
+import android.widget.EditText
+import android.widget.LinearLayout
+import androidx.annotation.RequiresPermission
+import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.widget.AppCompatTextView
+import androidx.coordinatorlayout.widget.CoordinatorLayout
+import androidx.core.app.ActivityCompat
+import androidx.lifecycle.MutableLiveData
+import com.base.network.model.UsenCardDeleteResponse
+import com.google.android.material.button.MaterialButton
+import com.google.android.material.snackbar.Snackbar
+import com.usend.R
+import com.usend.comman.Resource
+import com.usend.extensions.error
+import com.usend.repository.UserRepository
+import retrofit2.Call
+import retrofit2.Response
+import java.net.NetworkInterface
+import java.util.*
+import java.util.regex.Pattern
+import kotlin.math.roundToInt
+
+
+object CommonUtils {
+
+    fun Int?.isUSA(): Boolean {
+        if (this == null) {
+            return false
+        } else if (this == USA_COUNTRY_ID) {
+            return true
+        }
+        return false
+    }
+
+
+    fun String?.isRestrictedShipmentForUSA(): Boolean {
+        if (this.equals(RECOMMENDED_DHL_EXPRESS_WORLDWIDE_NAME, ignoreCase = true)) {
+            return true
+        } else if (this.equals(RECOMMENDED_FEDEX_INTERNATIONAL_PRIO_NAME, ignoreCase = true)) {
+            return true
+        }
+        return false
+    }
+
+    fun convertToPriceFormat(numberToFormat: Double): String {
+        try {
+            if (numberToFormat.equals(0.0)) {
+                return "$$numberToFormat"
+            }
+            val formatedtNumber = String.format("%.2f", numberToFormat)
+            val newNumber =
+                java.text.NumberFormat.getNumberInstance().format(formatedtNumber?.toDouble())
+            return "$$newNumber"
+        } catch (e: Exception) {
+            JLog.e("convertToPriceFormat", e.stackTrace.toString())
+        }
+        return "$" + String.format("%.2f", numberToFormat)
+    }
+
+    fun showOkDialog(
+        context: Context,
+        title: String = context.getString(R.string.app_name),
+        message: String,
+        isFinish: Boolean = false
+    ) {
+        val alertDialog = AlertDialog.Builder(context)
+        alertDialog.setTitle(title)
+        alertDialog.setMessage(message)
+        alertDialog.setPositiveButton("Ok") { dialog, _ ->
+            if (isFinish) {
+                val activity = context as Activity
+                activity.finish()
+            } else {
+                dialog.dismiss()
+            }
+
+        }
+        alertDialog.show()
+    }
+
+    fun getAppVersion(context: Context): Int {
+        try {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P)
+                return context.packageManager.getPackageInfo(context.packageName, 0)
+                    .longVersionCode.toInt()
+            else
+                return context.packageManager.getPackageInfo(context.packageName, 0).versionCode
+
+        } catch (e: PackageManager.NameNotFoundException) {
+            // should never happen
+            throw RuntimeException("Could not get package name: $e")
+        }
+    }
+
+    fun getDeviceId(mContext: Context): String {
+        return Settings.Secure.getString(mContext.contentResolver, Settings.Secure.ANDROID_ID)
+    }
+
+    val deviceModel: String
+        get() {
+            val manufacturer = Build.MANUFACTURER
+            val model = Build.MODEL
+            return if (model.startsWith(manufacturer)) {
+                capitalize(model)
+            } else {
+                capitalize(manufacturer) + " " + model
+            }
+        }
+
+    private fun capitalize(deviceModel: String): String {
+        return deviceModel.substring(0, 1).toUpperCase(Locale.getDefault()) + deviceModel.substring(
+            1
+        )
+    }
+
+    val deviceOSVersion = Build.VERSION.SDK_INT.toString()
+
+
+    //--- get IMEI number of Device
+    @RequiresPermission(Manifest.permission.READ_PHONE_STATE)
+    fun getIMEINumber(mContext: Context): String? {
+        val telephonyManager =
+            mContext.getSystemService(Context.TELEPHONY_SERVICE) as TelephonyManager
+        return if (ActivityCompat.checkSelfPermission(
+                mContext,
+                Manifest.permission.READ_PHONE_STATE
+            ) != PackageManager.PERMISSION_GRANTED
+        ) {
+
+            null
+        } else {
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
+                telephonyManager.imei
+            } else {
+                telephonyManager.deviceId
+            }
+        }
+
+    }
+
+    //--- get ip address of mobile
+    val ipAddress: String?
+        @Throws(Exception::class)
+        get() {
+            val en = NetworkInterface.getNetworkInterfaces()
+            while (en.hasMoreElements()) {
+                val intf = en.nextElement()
+                val enumIpAddr = intf.inetAddresses
+                while (enumIpAddr.hasMoreElements()) {
+                    val inetAddress = enumIpAddr.nextElement()
+                    if (!inetAddress.isLoopbackAddress) {
+                        return inetAddress.hostAddress
+                    }
+                }
+            }
+            return null
+        }
+
+
+    fun showSettingsSnackBar(
+        rootLayout: CoordinatorLayout,
+        settingsText: String = "Settings",
+        message: String
+    ) {
+        val snackbar = Snackbar
+            .make(rootLayout, message, Snackbar.LENGTH_LONG)
+            .setAction("Settings") {
+                val intent = Intent()
+                intent.action = Settings.ACTION_APPLICATION_DETAILS_SETTINGS
+                val uri = Uri.fromParts("package", rootLayout.context.packageName, null)
+                intent.data = uri
+                rootLayout.context.startActivity(intent)
+            }
+        snackbar.show()
+    }
+
+
+    private fun showSettingsDialog(
+        mContext: Context,
+        settingsText: String? = "Settings",
+        cancelText: String? = "Cancel",
+        title: String,
+        message: String
+    ) {
+        val alertSettings = AlertDialog.Builder(mContext)
+        alertSettings.setTitle(title)
+        alertSettings.setMessage(message)
+        alertSettings.setPositiveButton("Settings") { _, _ ->
+            val intent = Intent()
+            intent.action = Settings.ACTION_APPLICATION_DETAILS_SETTINGS
+            val uri = Uri.fromParts("package", mContext.packageName, null)
+            intent.data = uri
+            mContext.startActivity(intent)
+        }
+        alertSettings.setNegativeButton("Cancel") { dialog, _ -> dialog.dismiss() }
+        alertSettings.show()
+    }
+
+    fun dpToPx(context: Context, dp: Int) = (dp * context.getPixelScaleFactor()).roundToInt()
+
+    fun pxToDp(context: Context, px: Int) = (px / context.getPixelScaleFactor()).roundToInt()
+
+    private fun Context.getPixelScaleFactor(): Float {
+        val displayMetrics = resources.displayMetrics
+        return displayMetrics.xdpi / DisplayMetrics.DENSITY_DEFAULT
+    }
+
+    fun showSnakbar(rootView: View, mMessage: String) =
+        Snackbar.make(rootView, mMessage, Snackbar.LENGTH_SHORT).show()
+
+    fun showLongSnakbar(rootView: View, mMessage: String) =
+        Snackbar.make(rootView, mMessage, Snackbar.LENGTH_LONG).show()
+
+    fun isValidEmail(editText: EditText): Boolean {
+        val pattern = Pattern.compile("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,4}$")
+        val matcher = pattern.matcher(editText.text.toString())
+        return matcher.matches()
+    }
+
+    private val PATTERN_SHORT = ".{6,}\$"
+
+    fun isValidPasswordPatternShort(password: String): Boolean {
+        password.let {
+            val passwordMatcher = Regex(PATTERN_SHORT)
+            return passwordMatcher.find(password) != null
+        }
+    }
+
+    fun isValidPassword(passwordhere: String): Boolean {
+        val specailCharPatten = Pattern.compile("[^a-z0-9]", Pattern.CASE_INSENSITIVE)
+        val numberPatten = Pattern.compile("[0-9]")
+        val UpperCasePatten = Pattern.compile("[A-Z]")
+        val lowerCasePatten = Pattern.compile("[a-z]")
+        var flag = true
+
+        if (passwordhere.length < 8 || passwordhere.length > 30) {
+            flag = false
+        } else if (!numberPatten.matcher(passwordhere).find()) {
+            flag = false
+        } /*else if (!specailCharPatten.matcher(passwordhere).find()) {
+            flag = false
+        }*/ else if (!UpperCasePatten.matcher(passwordhere).find()) {
+            flag = false
+        } else if (!lowerCasePatten.matcher(passwordhere).find()) {
+            flag = false
+        }
+        return flag
+    }
+
+
+
+    fun showOkCallBackDialog(
+        context: Context,
+        title: String = context.getString(R.string.app_name),
+        message: String?,
+        buttonText: String = context.resources.getString(R.string.lbl_OK),
+        callback: () -> Unit
+    ) {
+        if (null == message) return
+        val adb = AlertDialog.Builder(context)
+        adb.setTitle(title)
+        adb.setMessage(message)
+        adb.setCancelable(false)
+
+        adb.setPositiveButton(buttonText) { dialog, which ->
+            dialog.dismiss()
+            callback()
+        }
+        adb.show()
+    }
+
+    fun Context.showAffirmationDialog(
+        title: String = "",
+        msg: String = "",
+        btnText: String = resources.getString(R.string.lbl_OK),
+        isCancelable: Boolean = false,
+        btnNegativeText: String = "",
+        callback: (type: String) -> Unit
+    ) {
+
+        val dialog = Dialog(this)
+        dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+        dialog.setContentView(R.layout.dialog_common)
+        dialog.window?.setLayout(
+            WindowManager.LayoutParams.MATCH_PARENT,
+            WindowManager.LayoutParams.WRAP_CONTENT
+        )
+        dialog.window?.setGravity(Gravity.CENTER)
+        dialog.setCancelable(isCancelable)
+        dialog.window?.setWindowAnimations(R.style.DialogAnimation)
+
+        val txtTitle: AppCompatTextView = dialog.findViewById(R.id.txtTitle)
+        val txtMsg: AppCompatTextView = dialog.findViewById(R.id.txtMsg)
+        val btnPositive: MaterialButton = dialog.findViewById(R.id.btnPositive)
+        val btnNegative: MaterialButton = dialog.findViewById(R.id.btnNegative)
+        val llMain: LinearLayout = dialog.findViewById(R.id.llMain)
+
+        if (msg.isNullOrEmpty()) txtMsg.visibility = View.GONE else txtMsg.visibility = View.VISIBLE
+        if (title.isNullOrEmpty()) txtTitle.visibility = View.GONE else txtTitle.visibility =
+            View.VISIBLE
+        if (btnNegativeText.isNullOrEmpty()) btnNegative.visibility =
+            View.GONE else btnNegative.visibility = View.VISIBLE
+
+        txtTitle.text = title
+        txtMsg.text = msg
+        btnPositive.text = btnText
+
+        btnPositive.setOnClickListener {
+            dialog.dismiss()
+            callback(YES)
+        }
+
+        btnNegative.setOnClickListener {
+            dialog.dismiss()
+
+        }
+
+        dialog.show()
+    }
+    fun Context.showAffirmationErrorDialog(
+        title: String = "",
+        msg: String = "",
+        typeError:String="",
+        btnText: String = resources.getString(R.string.lbl_OK),
+        isCancelable: Boolean = false,
+        btnNegativeText: String = "",
+        callback: (type: String) -> Unit) {
+        val dialog = Dialog(this)
+        dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
+        dialog.setContentView(R.layout.comman_error)
+        dialog.window?.setLayout(
+            WindowManager.LayoutParams.MATCH_PARENT,
+            WindowManager.LayoutParams.WRAP_CONTENT
+        )
+        dialog.window?.setGravity(Gravity.START)
+        dialog.setCancelable(isCancelable)
+        dialog.window?.setWindowAnimations(R.style.DialogAnimation)
+
+        val txtTitle: AppCompatTextView = dialog.findViewById(R.id.txtTitle)
+        val txtMsg: AppCompatTextView = dialog.findViewById(R.id.txtMsg)
+        val btnPositive: MaterialButton = dialog.findViewById(R.id.btnPositive)
+        val btnNegative: MaterialButton = dialog.findViewById(R.id.btnNegative)
+        val txtErrorMsg:AppCompatTextView=dialog.findViewById(R.id.txtErrorMsg)
+
+        if (msg.isNullOrEmpty()) txtMsg.visibility = View.GONE else txtMsg.visibility = View.VISIBLE
+        if (title.isNullOrEmpty()) txtTitle.visibility = View.GONE else txtTitle.visibility =
+            View.VISIBLE
+        if (btnNegativeText.isNullOrEmpty()) btnNegative.visibility =
+            View.GONE else btnNegative.visibility = View.VISIBLE
+
+        txtTitle.text = title
+        txtMsg.text = msg
+        txtErrorMsg.text=typeError
+        btnPositive.text = btnText
+        val customerId = PreferenceHelper.getUserObject().customerId
+        logsUsenddata(ADD,msg,typeError,customerId!!)
+
+        btnPositive.setOnClickListener {
+            dialog.dismiss()
+            callback(YES)
+        }
+
+        btnNegative.setOnClickListener {
+            dialog.dismiss()
+
+        }
+
+        dialog.show()
+    }
+    fun logsUsenddata(request: String, response : String,typeOfRequest: String, userID : String): MutableLiveData<Any> {
+
+        val data = MutableLiveData<Any>()
+        val call = UserRepository.stripeCardApi.logsUsendCardMention(request, response,typeOfRequest,userID)
+        data.value = Resource.Loading<Boolean>(true)
+
+        call.enqueue(object : retrofit2.Callback<UsenCardDeleteResponse> {
+            override fun onResponse(call: Call<UsenCardDeleteResponse>,
+                                    response: Response<UsenCardDeleteResponse>
+            ) {
+                data.value = Resource.Loading<Boolean>(false)
+                try {
+                    if (response.isSuccessful) {
+                        val mBean: UsenCardDeleteResponse? = response.body()
+                        data.value = Resource.DeleteSquareupCard(mBean)
+                    } else {
+                        val mBean: UsenCardDeleteResponse? = response.body()
+                        data.value = Resource.Error<String>(mBean?.responseMessage!!)
+
+                    }
+
+                }
+                catch (e:Exception)
+                {
+                    Log.e("tag",e.error().toString())
+                }
+
+
+            }
+
+            override fun onFailure(call: Call<UsenCardDeleteResponse>, t: Throwable) {
+                t.printStackTrace()
+                data.value = Resource.Loading<Boolean>(false)
+                data.value = Resource.Error<String>(SERVER_ERROR)
+            }
+        })
+        return data
+    }
+
+
+}

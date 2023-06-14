@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+                 
+                            
+                                                              
+
+                 
+                       
+                                                                     
+
+           
+
+    <ScrollView style="@style/styleScrollbar" android:tag="layout/fragment_shipping_calculator_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            style="@style/match"
+            android:background="@color/colorWhite"
+            tools:context=".views.home.ShippingCalculatorFragment">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtShippingCountryTitle"
+                style="@style/inputField.Title.14sp"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_15dp"
+                android:text="@string/lbl_ship_to_country"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtShippingCountry"
+                style="@style/inputField.16sp"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                android:drawableEnd="@drawable/ic_drop_down_arrow"
+                android:focusable="false"
+                android:tag="binding_1"                                    
+                android:hint="@string/lbl_select_country_"
+                                                            
+                android:inputType="text"
+                android:paddingEnd="@dimen/dimen_20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtShippingCountryTitle" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtCityTitle"
+                style="@style/inputField.Title.14sp"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_15dp"
+                android:text="@string/lbl_city"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edtShippingCountry" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtCity"
+                style="@style/inputField.16sp"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                android:hint="@string/lbl_enter_city"
+                android:tag="binding_2"          
+                android:inputType="text"
+                android:paddingEnd="@dimen/dimen_20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtCityTitle" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtZipCodeTitle"
+                style="@style/inputField.Title.14sp"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_15dp"
+                android:text="@string/lbl_zipcode"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edtCity" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtZipCode"
+                style="@style/inputField.16sp"
+                android:layout_width="@dimen/dimen_0dp"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                android:hint="@string/lbl_enter_zipcode"
+                android:tag="binding_3"             
+                android:inputType="text"
+                android:paddingEnd="@dimen/dimen_20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtZipCodeTitle" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtWeightTitle"
+                style="@style/inputField.Title.14sp"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_15dp"
+                android:text="@string/lbl_weight"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edtZipCode" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtWeight"
+                style="@style/inputField.16sp"
+                android:layout_width="@dimen/dimen_60dp"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:gravity="center"
+                android:hint="0.0"
+                android:tag="binding_4"            
+                android:imeOptions="actionNext"
+                android:includeFontPadding="false"
+                android:inputType="numberDecimal"
+                android:maxLength="5"
+                android:paddingStart="@dimen/dimen_0dp"
+                android:paddingEnd="@dimen/dimen_0dp"
+                android:textAlignment="center"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtWeightTitle" />
+
+            <LinearLayout
+                android:id="@+id/llWeight"
+                style="@style/wrap"
+                android:layout_width="@dimen/dimen_100dp"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:background="@drawable/bg_curve_border_8_radius"
+                android:weightSum="2"
+                app:layout_constraintBottom_toBottomOf="@id/edtWeight"
+                app:layout_constraintStart_toEndOf="@id/edtWeight"
+                app:layout_constraintTop_toTopOf="@id/edtWeight">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/CommonText.Style.14sp"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:tag="binding_5"                                                                             
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="center"
+                    android:padding="@dimen/dimen_14dp"
+                    android:text="@string/lbl_lbs"
+                                                                                                                            />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/CommonText.Style.14sp"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:tag="binding_6"                                                                            
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="center"
+                    android:padding="@dimen/dimen_14dp"
+                    android:text="@string/lbl_kg"
+                                                                                                                           />
+
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtLengthTitle"
+                style="@style/inputField.Title.14sp"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_15dp"
+                android:text="@string/lbl_length"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/llWeight" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtLength"
+                style="@style/inputField.16sp"
+                android:layout_width="@dimen/dimen_60dp"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:gravity="center"
+                android:hint="0"
+                android:tag="binding_7"            
+                android:imeOptions="actionNext"
+                android:includeFontPadding="false"
+                android:inputType="numberDecimal"
+                android:maxLength="5"
+                android:paddingStart="@dimen/dimen_0dp"
+                android:paddingEnd="@dimen/dimen_0dp"
+                android:textAlignment="center"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtLengthTitle" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtWidthTitle"
+                style="@style/inputField.Title.14sp"
+                android:layout_marginTop="@dimen/dimen_15dp"
+                android:text="@string/lbl_width"
+                app:layout_constraintStart_toStartOf="@id/edtWidth"
+                app:layout_constraintTop_toBottomOf="@id/llWeight" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtWidth"
+                style="@style/inputField.16sp"
+                android:layout_width="@dimen/dimen_60dp"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:gravity="center"
+                android:hint="0"
+                android:tag="binding_8"           
+                android:imeOptions="actionNext"
+                android:includeFontPadding="false"
+                android:inputType="numberDecimal"
+                android:maxLength="5"
+                android:paddingStart="@dimen/dimen_0dp"
+                android:paddingEnd="@dimen/dimen_0dp"
+                android:textAlignment="center"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toEndOf="@id/edtLength"
+                app:layout_constraintTop_toBottomOf="@id/txtWidthTitle" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtHeightTitle"
+                style="@style/inputField.Title.14sp"
+                android:layout_marginTop="@dimen/dimen_15dp"
+                android:text="@string/lbl_height"
+                app:layout_constraintStart_toStartOf="@id/edtHeight"
+                app:layout_constraintTop_toBottomOf="@id/llWeight" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edtHeight"
+                style="@style/inputField.16sp"
+                android:layout_width="@dimen/dimen_60dp"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:gravity="center"
+                android:hint="0"
+                android:tag="binding_9"            
+                android:imeOptions="actionDone"
+                android:includeFontPadding="false"
+                android:inputType="numberDecimal"
+                android:maxLength="5"
+                android:paddingStart="@dimen/dimen_0dp"
+                android:paddingEnd="@dimen/dimen_0dp"
+                android:textAlignment="center"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toEndOf="@id/edtWidth"
+                app:layout_constraintTop_toBottomOf="@id/txtHeightTitle" />
+
+            <LinearLayout
+                android:id="@+id/llDimensions"
+                style="@style/wrap"
+                android:layout_width="@dimen/dimen_100dp"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:background="@drawable/bg_curve_border_8_radius"
+                android:weightSum="2"
+                app:layout_constraintBottom_toBottomOf="@id/edtHeight"
+                app:layout_constraintStart_toEndOf="@id/edtHeight"
+                app:layout_constraintTop_toTopOf="@id/edtHeight">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/CommonText.Style.14sp"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:tag="binding_10"                                                                               
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/dimen_14dp"
+                    android:paddingBottom="@dimen/dimen_14dp"
+                    android:text="@string/lbl_inch"
+                                                                                                                               />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/CommonText.Style.14sp"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:tag="binding_11"                                                                             
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:gravity="center"
+                    android:paddingTop="@dimen/dimen_14dp"
+                    android:paddingBottom="@dimen/dimen_14dp"
+                    android:text="@string/lbl_cm"
+                                                                                                                             />
+
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnNext"
+                style="@style/MaterialButton.CornerRadius"
+                android:layout_width="match_parent"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_50dp"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                android:layout_marginBottom="@dimen/dimen_30dp"
+                android:text="@string/lbl_get_quote"
+                app:layout_constraintVertical_bias="0"
+                android:tag="binding_12"                             
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edtLength"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+         

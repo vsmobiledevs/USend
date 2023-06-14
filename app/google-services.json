@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "849728448329",
+    "firebase_url": "https://usendapp-40c28.firebaseio.com",
+    "project_id": "usendapp-40c28",
+    "storage_bucket": "usendapp-40c28.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:849728448329:android:bbad801c1af5410e951c98",
+        "android_client_info": {
+          "package_name": "com.usend"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "849728448329-0k654q6t11trnn1d6emgvdio5tvfm9gv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCH0hW2jzNVaqn4Wxb2YW5Cjgo1H35njIs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "849728448329-0k654q6t11trnn1d6emgvdio5tvfm9gv.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "849728448329-tqa27jf8m747o88jgu4r7irq9fe7kfd8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.usend"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

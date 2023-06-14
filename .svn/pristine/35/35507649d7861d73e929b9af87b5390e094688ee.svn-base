@@ -1,0 +1,527 @@
+package com.usend.databinding;
+import com.usend.R;
+import com.usend.BR;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import android.view.View;
+@SuppressWarnings("unchecked")
+public class ActivityPaymentInfoBindingImpl extends ActivityPaymentInfoBinding implements com.usend.generated.callback.OnClickListener.Listener {
+
+    @Nullable
+    private static final androidx.databinding.ViewDataBinding.IncludedLayouts sIncludes;
+    @Nullable
+    private static final android.util.SparseIntArray sViewsWithIds;
+    static {
+        sIncludes = null;
+        sViewsWithIds = new android.util.SparseIntArray();
+        sViewsWithIds.put(R.id.toolbarBillingAddress, 7);
+        sViewsWithIds.put(R.id.txtPaymentInfoTitle, 8);
+        sViewsWithIds.put(R.id.txtCardNumberTitle, 9);
+        sViewsWithIds.put(R.id.txtCardName, 10);
+        sViewsWithIds.put(R.id.txtMonthTitle, 11);
+        sViewsWithIds.put(R.id.txtYearTitle, 12);
+        sViewsWithIds.put(R.id.txtCVVTitle, 13);
+    }
+    // views
+    @NonNull
+    private final android.widget.LinearLayout mboundView0;
+    // variables
+    @Nullable
+    private final android.view.View.OnClickListener mCallback25;
+    // values
+    // listeners
+    // Inverse Binding Event Handlers
+    private androidx.databinding.InverseBindingListener edtCVVandroidTextAttrChanged = new androidx.databinding.InverseBindingListener() {
+        @Override
+        public void onChange() {
+            // Inverse of viewModel.cvv.getValue()
+            //         is viewModel.cvv.setValue((java.lang.String) callbackArg_0)
+            java.lang.String callbackArg_0 = androidx.databinding.adapters.TextViewBindingAdapter.getTextString(edtCVV);
+            // localize variables for thread safety
+            // viewModel.cvv != null
+            boolean viewModelCvvJavaLangObjectNull = false;
+            // viewModel.cvv.getValue()
+            java.lang.String viewModelCvvGetValue = null;
+            // viewModel.cvv
+            androidx.lifecycle.MediatorLiveData<java.lang.String> viewModelCvv = null;
+            // viewModel
+            com.usend.viewmodels.PaymentInfoViewModel viewModel = mViewModel;
+            // viewModel != null
+            boolean viewModelJavaLangObjectNull = false;
+
+
+
+            viewModelJavaLangObjectNull = (viewModel) != (null);
+            if (viewModelJavaLangObjectNull) {
+
+
+                viewModelCvv = viewModel.getCvv();
+
+                viewModelCvvJavaLangObjectNull = (viewModelCvv) != (null);
+                if (viewModelCvvJavaLangObjectNull) {
+
+
+
+
+                    viewModelCvv.setValue(((java.lang.String) (callbackArg_0)));
+                }
+            }
+        }
+    };
+    private androidx.databinding.InverseBindingListener edtCardNameandroidTextAttrChanged = new androidx.databinding.InverseBindingListener() {
+        @Override
+        public void onChange() {
+            // Inverse of viewModel.cardName.getValue()
+            //         is viewModel.cardName.setValue((java.lang.String) callbackArg_0)
+            java.lang.String callbackArg_0 = androidx.databinding.adapters.TextViewBindingAdapter.getTextString(edtCardName);
+            // localize variables for thread safety
+            // viewModel.cardName != null
+            boolean viewModelCardNameJavaLangObjectNull = false;
+            // viewModel
+            com.usend.viewmodels.PaymentInfoViewModel viewModel = mViewModel;
+            // viewModel.cardName
+            androidx.lifecycle.MediatorLiveData<java.lang.String> viewModelCardName = null;
+            // viewModel != null
+            boolean viewModelJavaLangObjectNull = false;
+            // viewModel.cardName.getValue()
+            java.lang.String viewModelCardNameGetValue = null;
+
+
+
+            viewModelJavaLangObjectNull = (viewModel) != (null);
+            if (viewModelJavaLangObjectNull) {
+
+
+                viewModelCardName = viewModel.getCardName();
+
+                viewModelCardNameJavaLangObjectNull = (viewModelCardName) != (null);
+                if (viewModelCardNameJavaLangObjectNull) {
+
+
+
+
+                    viewModelCardName.setValue(((java.lang.String) (callbackArg_0)));
+                }
+            }
+        }
+    };
+    private androidx.databinding.InverseBindingListener edtCardNumberandroidTextAttrChanged = new androidx.databinding.InverseBindingListener() {
+        @Override
+        public void onChange() {
+            // Inverse of viewModel.cardNumber.getValue()
+            //         is viewModel.cardNumber.setValue((java.lang.String) callbackArg_0)
+            java.lang.String callbackArg_0 = androidx.databinding.adapters.TextViewBindingAdapter.getTextString(edtCardNumber);
+            // localize variables for thread safety
+            // viewModel.cardNumber.getValue()
+            java.lang.String viewModelCardNumberGetValue = null;
+            // viewModel.cardNumber
+            androidx.lifecycle.MediatorLiveData<java.lang.String> viewModelCardNumber = null;
+            // viewModel.cardNumber != null
+            boolean viewModelCardNumberJavaLangObjectNull = false;
+            // viewModel
+            com.usend.viewmodels.PaymentInfoViewModel viewModel = mViewModel;
+            // viewModel != null
+            boolean viewModelJavaLangObjectNull = false;
+
+
+
+            viewModelJavaLangObjectNull = (viewModel) != (null);
+            if (viewModelJavaLangObjectNull) {
+
+
+                viewModelCardNumber = viewModel.getCardNumber();
+
+                viewModelCardNumberJavaLangObjectNull = (viewModelCardNumber) != (null);
+                if (viewModelCardNumberJavaLangObjectNull) {
+
+
+
+
+                    viewModelCardNumber.setValue(((java.lang.String) (callbackArg_0)));
+                }
+            }
+        }
+    };
+    private androidx.databinding.InverseBindingListener edtMonthandroidTextAttrChanged = new androidx.databinding.InverseBindingListener() {
+        @Override
+        public void onChange() {
+            // Inverse of viewModel.month.getValue()
+            //         is viewModel.month.setValue((java.lang.String) callbackArg_0)
+            java.lang.String callbackArg_0 = androidx.databinding.adapters.TextViewBindingAdapter.getTextString(edtMonth);
+            // localize variables for thread safety
+            // viewModel.month
+            androidx.lifecycle.MediatorLiveData<java.lang.String> viewModelMonth = null;
+            // viewModel.month != null
+            boolean viewModelMonthJavaLangObjectNull = false;
+            // viewModel
+            com.usend.viewmodels.PaymentInfoViewModel viewModel = mViewModel;
+            // viewModel.month.getValue()
+            java.lang.String viewModelMonthGetValue = null;
+            // viewModel != null
+            boolean viewModelJavaLangObjectNull = false;
+
+
+
+            viewModelJavaLangObjectNull = (viewModel) != (null);
+            if (viewModelJavaLangObjectNull) {
+
+
+                viewModelMonth = viewModel.getMonth();
+
+                viewModelMonthJavaLangObjectNull = (viewModelMonth) != (null);
+                if (viewModelMonthJavaLangObjectNull) {
+
+
+
+
+                    viewModelMonth.setValue(((java.lang.String) (callbackArg_0)));
+                }
+            }
+        }
+    };
+    private androidx.databinding.InverseBindingListener edtYearandroidTextAttrChanged = new androidx.databinding.InverseBindingListener() {
+        @Override
+        public void onChange() {
+            // Inverse of viewModel.year.getValue()
+            //         is viewModel.year.setValue((java.lang.String) callbackArg_0)
+            java.lang.String callbackArg_0 = androidx.databinding.adapters.TextViewBindingAdapter.getTextString(edtYear);
+            // localize variables for thread safety
+            // viewModel.year.getValue()
+            java.lang.String viewModelYearGetValue = null;
+            // viewModel.year != null
+            boolean viewModelYearJavaLangObjectNull = false;
+            // viewModel.year
+            androidx.lifecycle.MediatorLiveData<java.lang.String> viewModelYear = null;
+            // viewModel
+            com.usend.viewmodels.PaymentInfoViewModel viewModel = mViewModel;
+            // viewModel != null
+            boolean viewModelJavaLangObjectNull = false;
+
+
+
+            viewModelJavaLangObjectNull = (viewModel) != (null);
+            if (viewModelJavaLangObjectNull) {
+
+
+                viewModelYear = viewModel.getYear();
+
+                viewModelYearJavaLangObjectNull = (viewModelYear) != (null);
+                if (viewModelYearJavaLangObjectNull) {
+
+
+
+
+                    viewModelYear.setValue(((java.lang.String) (callbackArg_0)));
+                }
+            }
+        }
+    };
+
+    public ActivityPaymentInfoBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 14, sIncludes, sViewsWithIds));
+    }
+    private ActivityPaymentInfoBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
+        super(bindingComponent, root, 5
+            , (com.google.android.material.button.MaterialButton) bindings[6]
+            , (androidx.appcompat.widget.AppCompatEditText) bindings[5]
+            , (androidx.appcompat.widget.AppCompatEditText) bindings[2]
+            , (androidx.appcompat.widget.AppCompatEditText) bindings[1]
+            , (androidx.appcompat.widget.AppCompatEditText) bindings[3]
+            , (androidx.appcompat.widget.AppCompatEditText) bindings[4]
+            , (android.view.View) bindings[7]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[13]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[10]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[9]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[11]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[8]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[12]
+            );
+        this.btnSubmit.setTag(null);
+        this.edtCVV.setTag(null);
+        this.edtCardName.setTag(null);
+        this.edtCardNumber.setTag(null);
+        this.edtMonth.setTag(null);
+        this.edtYear.setTag(null);
+        this.mboundView0 = (android.widget.LinearLayout) bindings[0];
+        this.mboundView0.setTag(null);
+        setRootTag(root);
+        // listeners
+        mCallback25 = new com.usend.generated.callback.OnClickListener(this, 1);
+        invalidateAll();
+    }
+
+    @Override
+    public void invalidateAll() {
+        synchronized(this) {
+                mDirtyFlags = 0x80L;
+        }
+        requestRebind();
+    }
+
+    @Override
+    public boolean hasPendingBindings() {
+        synchronized(this) {
+            if (mDirtyFlags != 0) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    @Override
+    public boolean setVariable(int variableId, @Nullable Object variable)  {
+        boolean variableSet = true;
+        if (BR.paymentActivity == variableId) {
+            setPaymentActivity((com.usend.views.userauth.PaymentInfoActivity) variable);
+        }
+        else if (BR.viewModel == variableId) {
+            setViewModel((com.usend.viewmodels.PaymentInfoViewModel) variable);
+        }
+        else {
+            variableSet = false;
+        }
+            return variableSet;
+    }
+
+    public void setPaymentActivity(@Nullable com.usend.views.userauth.PaymentInfoActivity PaymentActivity) {
+        this.mPaymentActivity = PaymentActivity;
+        synchronized(this) {
+            mDirtyFlags |= 0x20L;
+        }
+        notifyPropertyChanged(BR.paymentActivity);
+        super.requestRebind();
+    }
+    public void setViewModel(@Nullable com.usend.viewmodels.PaymentInfoViewModel ViewModel) {
+        this.mViewModel = ViewModel;
+        synchronized(this) {
+            mDirtyFlags |= 0x40L;
+        }
+        notifyPropertyChanged(BR.viewModel);
+        super.requestRebind();
+    }
+
+    @Override
+    protected boolean onFieldChange(int localFieldId, Object object, int fieldId) {
+        switch (localFieldId) {
+            case 0 :
+                return onChangeViewModelCvv((androidx.lifecycle.MediatorLiveData<java.lang.String>) object, fieldId);
+            case 1 :
+                return onChangeViewModelCardName((androidx.lifecycle.MediatorLiveData<java.lang.String>) object, fieldId);
+            case 2 :
+                return onChangeViewModelMonth((androidx.lifecycle.MediatorLiveData<java.lang.String>) object, fieldId);
+            case 3 :
+                return onChangeViewModelYear((androidx.lifecycle.MediatorLiveData<java.lang.String>) object, fieldId);
+            case 4 :
+                return onChangeViewModelCardNumber((androidx.lifecycle.MediatorLiveData<java.lang.String>) object, fieldId);
+        }
+        return false;
+    }
+    private boolean onChangeViewModelCvv(androidx.lifecycle.MediatorLiveData<java.lang.String> ViewModelCvv, int fieldId) {
+        if (fieldId == BR._all) {
+            synchronized(this) {
+                    mDirtyFlags |= 0x1L;
+            }
+            return true;
+        }
+        return false;
+    }
+    private boolean onChangeViewModelCardName(androidx.lifecycle.MediatorLiveData<java.lang.String> ViewModelCardName, int fieldId) {
+        if (fieldId == BR._all) {
+            synchronized(this) {
+                    mDirtyFlags |= 0x2L;
+            }
+            return true;
+        }
+        return false;
+    }
+    private boolean onChangeViewModelMonth(androidx.lifecycle.MediatorLiveData<java.lang.String> ViewModelMonth, int fieldId) {
+        if (fieldId == BR._all) {
+            synchronized(this) {
+                    mDirtyFlags |= 0x4L;
+            }
+            return true;
+        }
+        return false;
+    }
+    private boolean onChangeViewModelYear(androidx.lifecycle.MediatorLiveData<java.lang.String> ViewModelYear, int fieldId) {
+        if (fieldId == BR._all) {
+            synchronized(this) {
+                    mDirtyFlags |= 0x8L;
+            }
+            return true;
+        }
+        return false;
+    }
+    private boolean onChangeViewModelCardNumber(androidx.lifecycle.MediatorLiveData<java.lang.String> ViewModelCardNumber, int fieldId) {
+        if (fieldId == BR._all) {
+            synchronized(this) {
+                    mDirtyFlags |= 0x10L;
+            }
+            return true;
+        }
+        return false;
+    }
+
+    @Override
+    protected void executeBindings() {
+        long dirtyFlags = 0;
+        synchronized(this) {
+            dirtyFlags = mDirtyFlags;
+            mDirtyFlags = 0;
+        }
+        java.lang.String viewModelYearGetValue = null;
+        java.lang.String viewModelCardNumberGetValue = null;
+        androidx.lifecycle.MediatorLiveData<java.lang.String> viewModelCvv = null;
+        androidx.lifecycle.MediatorLiveData<java.lang.String> viewModelCardName = null;
+        java.lang.String viewModelCvvGetValue = null;
+        androidx.lifecycle.MediatorLiveData<java.lang.String> viewModelMonth = null;
+        androidx.lifecycle.MediatorLiveData<java.lang.String> viewModelYear = null;
+        androidx.lifecycle.MediatorLiveData<java.lang.String> viewModelCardNumber = null;
+        com.usend.views.userauth.PaymentInfoActivity paymentActivity = mPaymentActivity;
+        java.lang.String viewModelCardNameGetValue = null;
+        com.usend.viewmodels.PaymentInfoViewModel viewModel = mViewModel;
+        java.lang.String viewModelMonthGetValue = null;
+
+        if ((dirtyFlags & 0xdfL) != 0) {
+
+
+            if ((dirtyFlags & 0xc1L) != 0) {
+
+                    if (viewModel != null) {
+                        // read viewModel.cvv
+                        viewModelCvv = viewModel.getCvv();
+                    }
+                    updateLiveDataRegistration(0, viewModelCvv);
+
+
+                    if (viewModelCvv != null) {
+                        // read viewModel.cvv.getValue()
+                        viewModelCvvGetValue = viewModelCvv.getValue();
+                    }
+            }
+            if ((dirtyFlags & 0xc2L) != 0) {
+
+                    if (viewModel != null) {
+                        // read viewModel.cardName
+                        viewModelCardName = viewModel.getCardName();
+                    }
+                    updateLiveDataRegistration(1, viewModelCardName);
+
+
+                    if (viewModelCardName != null) {
+                        // read viewModel.cardName.getValue()
+                        viewModelCardNameGetValue = viewModelCardName.getValue();
+                    }
+            }
+            if ((dirtyFlags & 0xc4L) != 0) {
+
+                    if (viewModel != null) {
+                        // read viewModel.month
+                        viewModelMonth = viewModel.getMonth();
+                    }
+                    updateLiveDataRegistration(2, viewModelMonth);
+
+
+                    if (viewModelMonth != null) {
+                        // read viewModel.month.getValue()
+                        viewModelMonthGetValue = viewModelMonth.getValue();
+                    }
+            }
+            if ((dirtyFlags & 0xc8L) != 0) {
+
+                    if (viewModel != null) {
+                        // read viewModel.year
+                        viewModelYear = viewModel.getYear();
+                    }
+                    updateLiveDataRegistration(3, viewModelYear);
+
+
+                    if (viewModelYear != null) {
+                        // read viewModel.year.getValue()
+                        viewModelYearGetValue = viewModelYear.getValue();
+                    }
+            }
+            if ((dirtyFlags & 0xd0L) != 0) {
+
+                    if (viewModel != null) {
+                        // read viewModel.cardNumber
+                        viewModelCardNumber = viewModel.getCardNumber();
+                    }
+                    updateLiveDataRegistration(4, viewModelCardNumber);
+
+
+                    if (viewModelCardNumber != null) {
+                        // read viewModel.cardNumber.getValue()
+                        viewModelCardNumberGetValue = viewModelCardNumber.getValue();
+                    }
+            }
+        }
+        // batch finished
+        if ((dirtyFlags & 0x80L) != 0) {
+            // api target 1
+
+            this.btnSubmit.setOnClickListener(mCallback25);
+            androidx.databinding.adapters.TextViewBindingAdapter.setTextWatcher(this.edtCVV, (androidx.databinding.adapters.TextViewBindingAdapter.BeforeTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.OnTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.AfterTextChanged)null, edtCVVandroidTextAttrChanged);
+            androidx.databinding.adapters.TextViewBindingAdapter.setTextWatcher(this.edtCardName, (androidx.databinding.adapters.TextViewBindingAdapter.BeforeTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.OnTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.AfterTextChanged)null, edtCardNameandroidTextAttrChanged);
+            androidx.databinding.adapters.TextViewBindingAdapter.setTextWatcher(this.edtCardNumber, (androidx.databinding.adapters.TextViewBindingAdapter.BeforeTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.OnTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.AfterTextChanged)null, edtCardNumberandroidTextAttrChanged);
+            androidx.databinding.adapters.TextViewBindingAdapter.setTextWatcher(this.edtMonth, (androidx.databinding.adapters.TextViewBindingAdapter.BeforeTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.OnTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.AfterTextChanged)null, edtMonthandroidTextAttrChanged);
+            androidx.databinding.adapters.TextViewBindingAdapter.setTextWatcher(this.edtYear, (androidx.databinding.adapters.TextViewBindingAdapter.BeforeTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.OnTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.AfterTextChanged)null, edtYearandroidTextAttrChanged);
+        }
+        if ((dirtyFlags & 0xc1L) != 0) {
+            // api target 1
+
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.edtCVV, viewModelCvvGetValue);
+        }
+        if ((dirtyFlags & 0xc2L) != 0) {
+            // api target 1
+
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.edtCardName, viewModelCardNameGetValue);
+        }
+        if ((dirtyFlags & 0xd0L) != 0) {
+            // api target 1
+
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.edtCardNumber, viewModelCardNumberGetValue);
+        }
+        if ((dirtyFlags & 0xc4L) != 0) {
+            // api target 1
+
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.edtMonth, viewModelMonthGetValue);
+        }
+        if ((dirtyFlags & 0xc8L) != 0) {
+            // api target 1
+
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.edtYear, viewModelYearGetValue);
+        }
+    }
+    // Listener Stub Implementations
+    // callback impls
+    public final void _internalCallbackOnClick(int sourceId , android.view.View callbackArg_0) {
+        // localize variables for thread safety
+        // paymentActivity != null
+        boolean paymentActivityJavaLangObjectNull = false;
+        // paymentActivity
+        com.usend.views.userauth.PaymentInfoActivity paymentActivity = mPaymentActivity;
+
+
+
+        paymentActivityJavaLangObjectNull = (paymentActivity) != (null);
+        if (paymentActivityJavaLangObjectNull) {
+
+
+            paymentActivity.onSubmitClick();
+        }
+    }
+    // dirty flag
+    private  long mDirtyFlags = 0xffffffffffffffffL;
+    /* flag mapping
+        flag 0 (0x1L): viewModel.cvv
+        flag 1 (0x2L): viewModel.cardName
+        flag 2 (0x3L): viewModel.month
+        flag 3 (0x4L): viewModel.year
+        flag 4 (0x5L): viewModel.cardNumber
+        flag 5 (0x6L): paymentActivity
+        flag 6 (0x7L): viewModel
+        flag 7 (0x8L): null
+    flag mapping end*/
+    //end
+}

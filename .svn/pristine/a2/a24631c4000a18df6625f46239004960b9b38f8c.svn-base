@@ -1,0 +1,45 @@
+package com.usend.extensions;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 4, 0}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000@\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0003\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0002\u0018\u0000*\u0004\b\u0000\u0010\u00012\b\u0012\u0004\u0012\u0002H\u00010\u0002B\u0005\u00a2\u0006\u0002\u0010\u0003J\u001e\u0010\u0004\u001a\u00020\f2\f\u0010\u0018\u001a\b\u0012\u0004\u0012\u00028\u00000\u00192\u0006\u0010\u000b\u001a\u00020\nH\u0016J$\u0010\u0011\u001a\u00020\f2\f\u0010\u0018\u001a\b\u0012\u0004\u0012\u00028\u00000\u00192\f\u0010\u001a\u001a\b\u0012\u0004\u0012\u00028\u00000\u0013H\u0016RP\u0010\u0004\u001a8\u0012\u0015\u0012\u0013\u0018\u00010\u0006\u00a2\u0006\f\b\u0007\u0012\b\b\b\u0012\u0004\b\b(\t\u0012\u0015\u0012\u0013\u0018\u00010\n\u00a2\u0006\f\b\u0007\u0012\b\b\b\u0012\u0004\b\b(\u000b\u0012\u0004\u0012\u00020\f\u0018\u00010\u0005X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\r\u0010\u000e\"\u0004\b\u000f\u0010\u0010R.\u0010\u0011\u001a\u0016\u0012\n\u0012\b\u0012\u0004\u0012\u00028\u00000\u0013\u0012\u0004\u0012\u00020\f\u0018\u00010\u0012X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b\u0014\u0010\u0015\"\u0004\b\u0016\u0010\u0017\u00a8\u0006\u001b"}, d2 = {"Lcom/usend/extensions/CallBackKt;", "T", "Lretrofit2/Callback;", "()V", "onFailure", "Lkotlin/Function2;", "Lokhttp3/ResponseBody;", "Lkotlin/ParameterName;", "name", "body", "", "t", "", "getOnFailure", "()Lkotlin/jvm/functions/Function2;", "setOnFailure", "(Lkotlin/jvm/functions/Function2;)V", "onResponse", "Lkotlin/Function1;", "Lretrofit2/Response;", "getOnResponse", "()Lkotlin/jvm/functions/Function1;", "setOnResponse", "(Lkotlin/jvm/functions/Function1;)V", "call", "Lretrofit2/Call;", "response", "app_debug"})
+public final class CallBackKt<T extends java.lang.Object> implements retrofit2.Callback<T> {
+    @org.jetbrains.annotations.Nullable()
+    private kotlin.jvm.functions.Function1<? super retrofit2.Response<T>, kotlin.Unit> onResponse;
+    @org.jetbrains.annotations.Nullable()
+    private kotlin.jvm.functions.Function2<? super okhttp3.ResponseBody, ? super java.lang.Throwable, kotlin.Unit> onFailure;
+    
+    @org.jetbrains.annotations.Nullable()
+    public final kotlin.jvm.functions.Function1<retrofit2.Response<T>, kotlin.Unit> getOnResponse() {
+        return null;
+    }
+    
+    public final void setOnResponse(@org.jetbrains.annotations.Nullable()
+    kotlin.jvm.functions.Function1<? super retrofit2.Response<T>, kotlin.Unit> p0) {
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public final kotlin.jvm.functions.Function2<okhttp3.ResponseBody, java.lang.Throwable, kotlin.Unit> getOnFailure() {
+        return null;
+    }
+    
+    public final void setOnFailure(@org.jetbrains.annotations.Nullable()
+    kotlin.jvm.functions.Function2<? super okhttp3.ResponseBody, ? super java.lang.Throwable, kotlin.Unit> p0) {
+    }
+    
+    @java.lang.Override()
+    public void onFailure(@org.jetbrains.annotations.NotNull()
+    retrofit2.Call<T> call, @org.jetbrains.annotations.NotNull()
+    java.lang.Throwable t) {
+    }
+    
+    @java.lang.Override()
+    public void onResponse(@org.jetbrains.annotations.NotNull()
+    retrofit2.Call<T> call, @org.jetbrains.annotations.NotNull()
+    retrofit2.Response<T> response) {
+    }
+    
+    public CallBackKt() {
+        super();
+    }
+}

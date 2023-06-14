@@ -1,0 +1,73 @@
+package com.usend.viewmodels;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 4, 0}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000B\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000b\n\u0002\b\u0005\n\u0002\u0010\u000e\n\u0002\b\t\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0000\u0018\u00002\u00020\u0001B\u0015\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0002\u0010\u0006J\u0006\u0010&\u001a\u00020\'R!\u0010\u0007\u001a\b\u0012\u0004\u0012\u00020\t0\b8FX\u0086\u0084\u0002\u00a2\u0006\f\n\u0004\b\f\u0010\r\u001a\u0004\b\n\u0010\u000bR!\u0010\u000e\u001a\b\u0012\u0004\u0012\u00020\u000f0\b8FX\u0086\u0084\u0002\u00a2\u0006\f\n\u0004\b\u0011\u0010\r\u001a\u0004\b\u0010\u0010\u000bR!\u0010\u0012\u001a\b\u0012\u0004\u0012\u00020\u000f0\b8FX\u0086\u0084\u0002\u00a2\u0006\f\n\u0004\b\u0014\u0010\r\u001a\u0004\b\u0013\u0010\u000bR!\u0010\u0015\u001a\b\u0012\u0004\u0012\u00020\u000f0\b8FX\u0086\u0084\u0002\u00a2\u0006\f\n\u0004\b\u0017\u0010\r\u001a\u0004\b\u0016\u0010\u000bR\u0011\u0010\u0018\u001a\u00020\u0019\u00a2\u0006\b\n\u0000\u001a\u0004\b\u001a\u0010\u001bR!\u0010\u001c\u001a\b\u0012\u0004\u0012\u00020\u000f0\b8FX\u0086\u0084\u0002\u00a2\u0006\f\n\u0004\b\u001e\u0010\r\u001a\u0004\b\u001d\u0010\u000bR!\u0010\u001f\u001a\b\u0012\u0004\u0012\u00020\u000f0\b8FX\u0086\u0084\u0002\u00a2\u0006\f\n\u0004\b!\u0010\r\u001a\u0004\b \u0010\u000bR\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u000e\u00a2\u0006\u0002\n\u0000R!\u0010\"\u001a\b\u0012\u0004\u0012\u00020#0\b8FX\u0086\u0084\u0002\u00a2\u0006\f\n\u0004\b%\u0010\r\u001a\u0004\b$\u0010\u000b\u00a8\u0006("}, d2 = {"Lcom/usend/viewmodels/SignUpViewModel;", "Lcom/usend/base/BaseViewModel;", "application", "Landroid/app/Application;", "repository", "Lcom/usend/repository/AuthenticationRepository;", "(Landroid/app/Application;Lcom/usend/repository/AuthenticationRepository;)V", "cbTermsAndPolicy", "Landroidx/lifecycle/MediatorLiveData;", "", "getCbTermsAndPolicy", "()Landroidx/lifecycle/MediatorLiveData;", "cbTermsAndPolicy$delegate", "Lkotlin/Lazy;", "email", "", "getEmail", "email$delegate", "firstName", "getFirstName", "firstName$delegate", "lastName", "getLastName", "lastName$delegate", "mContext", "Landroid/content/Context;", "getMContext", "()Landroid/content/Context;", "password", "getPassword", "password$delegate", "re_password", "getRe_password", "re_password$delegate", "status", "", "getStatus", "status$delegate", "signUp", "", "app_debug"})
+public final class SignUpViewModel extends com.usend.base.BaseViewModel {
+    @org.jetbrains.annotations.NotNull()
+    private final android.content.Context mContext = null;
+    @org.jetbrains.annotations.NotNull()
+    private final kotlin.Lazy status$delegate = null;
+    @org.jetbrains.annotations.NotNull()
+    private final kotlin.Lazy email$delegate = null;
+    @org.jetbrains.annotations.NotNull()
+    private final kotlin.Lazy password$delegate = null;
+    @org.jetbrains.annotations.NotNull()
+    private final kotlin.Lazy re_password$delegate = null;
+    @org.jetbrains.annotations.NotNull()
+    private final kotlin.Lazy firstName$delegate = null;
+    @org.jetbrains.annotations.NotNull()
+    private final kotlin.Lazy lastName$delegate = null;
+    @org.jetbrains.annotations.NotNull()
+    private final kotlin.Lazy cbTermsAndPolicy$delegate = null;
+    private com.usend.repository.AuthenticationRepository repository;
+    
+    @org.jetbrains.annotations.NotNull()
+    public final android.content.Context getMContext() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final androidx.lifecycle.MediatorLiveData<java.lang.Object> getStatus() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final androidx.lifecycle.MediatorLiveData<java.lang.String> getEmail() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final androidx.lifecycle.MediatorLiveData<java.lang.String> getPassword() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final androidx.lifecycle.MediatorLiveData<java.lang.String> getRe_password() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final androidx.lifecycle.MediatorLiveData<java.lang.String> getFirstName() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final androidx.lifecycle.MediatorLiveData<java.lang.String> getLastName() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final androidx.lifecycle.MediatorLiveData<java.lang.Boolean> getCbTermsAndPolicy() {
+        return null;
+    }
+    
+    public final void signUp() {
+    }
+    
+    public SignUpViewModel(@org.jetbrains.annotations.NotNull()
+    android.app.Application application, @org.jetbrains.annotations.NotNull()
+    com.usend.repository.AuthenticationRepository repository) {
+        super(null);
+    }
+}

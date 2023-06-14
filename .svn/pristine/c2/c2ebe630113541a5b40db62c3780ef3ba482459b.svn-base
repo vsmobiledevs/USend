@@ -1,0 +1,151 @@
+package com.usend.utils;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 6, 0}, k = 1, d1 = {"\u0000V\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0002\n\u0002\u0010\u000e\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\r\n\u0002\u0010\b\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\t\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u000f\b\u00c6\u0002\u0018\u00002\u00020\u0001:\u0001@B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002J$\u0010\u000e\u001a\u0004\u0018\u00010\u00042\b\u0010\u000f\u001a\u0004\u0018\u00010\u00042\u0006\u0010\u0010\u001a\u00020\u00042\u0006\u0010\u0011\u001a\u00020\u0004H\u0002J\u001e\u0010\u0012\u001a\u00020\u00042\u0006\u0010\u0010\u001a\u00020\u00042\u0006\u0010\u0013\u001a\u00020\u00042\u0006\u0010\u0014\u001a\u00020\u0004J\u0006\u0010\u0015\u001a\u00020\u0004J\u0006\u0010\u0016\u001a\u00020\u0004J\u0006\u0010\u0017\u001a\u00020\u0004J\u001e\u0010\u0018\u001a\u00020\u00192\u0006\u0010\u001a\u001a\u00020\u001b2\u0006\u0010\u001c\u001a\u00020\u001b2\u0006\u0010\u001d\u001a\u00020\u001eJ\u001e\u0010\u0018\u001a\u00020\u00192\u0006\u0010\u001f\u001a\u00020 2\u0006\u0010!\u001a\u00020 2\u0006\u0010\u001d\u001a\u00020\u001eJ\u0018\u0010\"\u001a\u00020\u00042\u0006\u0010#\u001a\u00020 2\u0006\u0010$\u001a\u00020\u0004H\u0002J\u0010\u0010%\u001a\u00020\u001b2\u0006\u0010\u001f\u001a\u00020 H\u0002J\u0010\u0010&\u001a\u00020\'2\u0006\u0010\u0013\u001a\u00020\u0004H\u0002J\u0018\u0010(\u001a\u00020\u00042\u0006\u0010)\u001a\u00020*2\u0006\u0010\u0013\u001a\u00020\u0004H\u0002J\u0018\u0010(\u001a\u00020\u00042\u0006\u0010+\u001a\u00020\u001b2\u0006\u0010\u0013\u001a\u00020\u0004H\u0002J\u0018\u0010(\u001a\u00020\u00042\u0006\u0010,\u001a\u00020 2\u0006\u0010\u0013\u001a\u00020\u0004H\u0002J\u0006\u0010-\u001a\u00020\u0004J\u0018\u0010-\u001a\u00020 2\u0006\u0010\u0014\u001a\u00020\u00042\u0006\u0010\u0013\u001a\u00020\u0004H\u0002J\u001e\u0010.\u001a\u00020\u00042\u0006\u0010/\u001a\u0002002\u0006\u0010\u001a\u001a\u00020\u001b2\u0006\u0010\u001c\u001a\u00020\u001bJ\u0016\u00101\u001a\u0002022\u0006\u00103\u001a\u00020*2\u0006\u00104\u001a\u00020*J\u001c\u00101\u001a\u0002022\b\u00105\u001a\u0004\u0018\u00010\u001b2\b\u00106\u001a\u0004\u0018\u00010\u001bH\u0002J\u0018\u00101\u001a\u0002022\u0006\u0010\u001f\u001a\u00020 2\u0006\u0010!\u001a\u00020 H\u0002J!\u00107\u001a\u0002022\b\u00108\u001a\u0004\u0018\u00010 2\b\u00109\u001a\u0004\u0018\u00010 H\u0002\u00a2\u0006\u0002\u0010:J\u0010\u0010;\u001a\u0002022\u0006\u0010<\u001a\u00020 H\u0002J\u0010\u0010=\u001a\u0002022\u0006\u0010<\u001a\u00020 H\u0002J\u0016\u0010>\u001a\u00020\u00042\u0006\u0010?\u001a\u00020 2\u0006\u0010\u0013\u001a\u00020\u0004R\u000e\u0010\u0003\u001a\u00020\u0004X\u0082T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0005\u001a\u00020\u0004X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0006\u001a\u00020\u0004X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\u0007\u001a\u00020\u0004X\u0082T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\b\u001a\u00020\u0004X\u0086T\u00a2\u0006\u0002\n\u0000R\u000e\u0010\t\u001a\u00020\u0004X\u0086T\u00a2\u0006\u0002\n\u0000R\u0016\u0010\n\u001a\n \f*\u0004\u0018\u00010\u000b0\u000bX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u000e\u0010\r\u001a\u00020\u0004X\u0082T\u00a2\u0006\u0002\n\u0000\u00a8\u0006A"}, d2 = {"Lcom/usend/utils/DateTimeUtil;", "", "()V", "DATEFORMATE", "", "MM", "MMM", "TAG", "dd_MM_yyyy", "dd_MM_yyyy_hh_mm_a", "locale", "Ljava/util/Locale;", "kotlin.jvm.PlatformType", "timeZone", "convertDateFormat", "dateStr", "fromFormat", "toFormat", "getConvertedTime", "format", "dateString", "getCurrentMonth", "getCurrentTimeStamp", "getCurrentYear", "getDateDiff", "", "nowDate", "Ljava/util/Date;", "oldDate", "dateDiff", "Lcom/usend/utils/DateTimeUtil$DateTimeUnits;", "timeInMillis1", "", "timeInMillis2", "getDateTimeFlow", "timeInMillis", "dateFormat", "getDateTimeInMillis", "getFormat", "Ljava/text/SimpleDateFormat;", "getFormattedDate", "calToDate", "Ljava/util/Calendar;", "date", "timeInmillies", "getTimeInMillis", "getTimesAgoString", "context", "Landroid/content/Context;", "isSameDay", "", "cal1", "cal2", "date1", "date2", "isTimeStampIsPast", "time", "mLastTimeStamp", "(Ljava/lang/Long;Ljava/lang/Long;)Z", "isToday", "whenInMillis1", "isYesterday", "timeStamptoDate", "timestamp", "DateTimeUnits", "app_debug"})
+public final class DateTimeUtil {
+    @org.jetbrains.annotations.NotNull()
+    public static final com.usend.utils.DateTimeUtil INSTANCE = null;
+    private static final java.lang.String timeZone = "UTC";
+    private static java.util.Locale locale;
+    private static final java.lang.String TAG = "DateTimeUtils";
+    private static final java.lang.String DATEFORMATE = "yyyyMMddHHmmss";
+    @org.jetbrains.annotations.NotNull()
+    public static final java.lang.String dd_MM_yyyy = "dd/MM/yyyy";
+    @org.jetbrains.annotations.NotNull()
+    public static final java.lang.String dd_MM_yyyy_hh_mm_a = "dd-MM-yyyy hh:mm a";
+    @org.jetbrains.annotations.NotNull()
+    public static final java.lang.String MM = "MM";
+    @org.jetbrains.annotations.NotNull()
+    public static final java.lang.String MMM = "MMM";
+    
+    private DateTimeUtil() {
+        super();
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String timeStamptoDate(long timestamp, @org.jetbrains.annotations.NotNull()
+    java.lang.String format) {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getCurrentMonth() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getCurrentYear() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getTimeInMillis() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getConvertedTime(@org.jetbrains.annotations.NotNull()
+    java.lang.String fromFormat, @org.jetbrains.annotations.NotNull()
+    java.lang.String format, @org.jetbrains.annotations.NotNull()
+    java.lang.String dateString) {
+        return null;
+    }
+    
+    private final boolean isTimeStampIsPast(java.lang.Long time, java.lang.Long mLastTimeStamp) {
+        return false;
+    }
+    
+    private final java.lang.String getFormattedDate(long timeInmillies, java.lang.String format) {
+        return null;
+    }
+    
+    private final java.lang.String getFormattedDate(java.util.Calendar calToDate, java.lang.String format) {
+        return null;
+    }
+    
+    private final java.text.SimpleDateFormat getFormat(java.lang.String format) {
+        return null;
+    }
+    
+    private final java.lang.String getFormattedDate(java.util.Date date, java.lang.String format) {
+        return null;
+    }
+    
+    @kotlin.jvm.Throws(exceptionClasses = {java.lang.Exception.class})
+    private final java.lang.String convertDateFormat(java.lang.String dateStr, java.lang.String fromFormat, java.lang.String toFormat) throws java.lang.Exception {
+        return null;
+    }
+    
+    private final java.lang.String getDateTimeFlow(long timeInMillis, java.lang.String dateFormat) {
+        return null;
+    }
+    
+    private final java.util.Date getDateTimeInMillis(long timeInMillis1) {
+        return null;
+    }
+    
+    @kotlin.jvm.Throws(exceptionClasses = {java.lang.Exception.class})
+    private final long getTimeInMillis(java.lang.String dateString, java.lang.String format) throws java.lang.Exception {
+        return 0L;
+    }
+    
+    private final boolean isToday(long whenInMillis1) {
+        return false;
+    }
+    
+    private final boolean isYesterday(long whenInMillis1) {
+        return false;
+    }
+    
+    private final boolean isSameDay(java.util.Date date1, java.util.Date date2) {
+        return false;
+    }
+    
+    private final boolean isSameDay(long timeInMillis1, long timeInMillis2) {
+        return false;
+    }
+    
+    public final boolean isSameDay(@org.jetbrains.annotations.NotNull()
+    java.util.Calendar cal1, @org.jetbrains.annotations.NotNull()
+    java.util.Calendar cal2) {
+        return false;
+    }
+    
+    public final int getDateDiff(long timeInMillis1, long timeInMillis2, @org.jetbrains.annotations.NotNull()
+    com.usend.utils.DateTimeUtil.DateTimeUnits dateDiff) {
+        return 0;
+    }
+    
+    public final int getDateDiff(@org.jetbrains.annotations.NotNull()
+    java.util.Date nowDate, @org.jetbrains.annotations.NotNull()
+    java.util.Date oldDate, @org.jetbrains.annotations.NotNull()
+    com.usend.utils.DateTimeUtil.DateTimeUnits dateDiff) {
+        return 0;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getCurrentTimeStamp() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final java.lang.String getTimesAgoString(@org.jetbrains.annotations.NotNull()
+    android.content.Context context, @org.jetbrains.annotations.NotNull()
+    java.util.Date nowDate, @org.jetbrains.annotations.NotNull()
+    java.util.Date oldDate) {
+        return null;
+    }
+    
+    @kotlin.Metadata(mv = {1, 6, 0}, k = 1, d1 = {"\u0000\f\n\u0002\u0018\u0002\n\u0002\u0010\u0010\n\u0002\b\u0007\b\u0086\u0001\u0018\u00002\b\u0012\u0004\u0012\u00020\u00000\u0001B\u0007\b\u0002\u00a2\u0006\u0002\u0010\u0002j\u0002\b\u0003j\u0002\b\u0004j\u0002\b\u0005j\u0002\b\u0006j\u0002\b\u0007\u00a8\u0006\b"}, d2 = {"Lcom/usend/utils/DateTimeUtil$DateTimeUnits;", "", "(Ljava/lang/String;I)V", "DAYS", "SECONDS", "MINUTES", "HOURS", "MILLISECONDS", "app_debug"})
+    public static enum DateTimeUnits {
+        /*public static final*/ DAYS /* = new DAYS() */,
+        /*public static final*/ SECONDS /* = new SECONDS() */,
+        /*public static final*/ MINUTES /* = new MINUTES() */,
+        /*public static final*/ HOURS /* = new HOURS() */,
+        /*public static final*/ MILLISECONDS /* = new MILLISECONDS() */;
+        
+        DateTimeUnits() {
+        }
+    }
+}

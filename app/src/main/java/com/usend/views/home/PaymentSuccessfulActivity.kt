@@ -1,0 +1,55 @@
+package com.usend.views.home
+
+import android.content.Context
+import android.content.Intent
+import com.usend.R
+import com.usend.base.BaseViewModel
+import com.usend.base.ViewModelActivity
+import com.usend.databinding.ActivityPaymentSuccessfulBinding
+import com.usend.utils.FROM
+import com.usend.utils.FROM_CONCIERGE_PURCHASE
+import com.usend.utils.FROM_PAYMENT
+import com.usend.views.MainActivity
+import kotlin.reflect.KClass
+
+class PaymentSuccessfulActivity(
+    override val modelClass: KClass<BaseViewModel> = BaseViewModel::class,
+    override val layoutId: Int = R.layout.activity_payment_successful
+) : ViewModelActivity<ActivityPaymentSuccessfulBinding, BaseViewModel>() {
+    var from = FROM_PAYMENT
+
+
+
+    override fun initControls() {
+        super.initControls()
+        if (intent.hasExtra(FROM)) {
+            from = intent?.getStringExtra(FROM) ?: FROM_PAYMENT
+            if (from == FROM_CONCIERGE_PURCHASE) {
+                binding.txtPaymentSuccessDesc.text =
+                    getString(R.string.lbl_suceess_message_concierge_tab)
+            }
+        }
+        binding.btnOkay.setOnClickListener {
+            MainActivity.newIntent(
+                this, Intent(this, MainActivity::class.java)
+                    .putExtra(FROM, from)
+                    .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                    .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
+                    .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+                    .addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP)
+            )
+            finish()
+        }
+    }
+
+    companion object {
+        fun newIntent(context: Context, intent: Intent) {
+            context.startActivity(intent)
+        }
+    }
+
+    override fun onBackPressed() {
+
+        binding.btnOkay.performClick()
+    }
+}

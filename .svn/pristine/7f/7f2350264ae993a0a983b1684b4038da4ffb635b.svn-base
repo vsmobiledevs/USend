@@ -1,0 +1,47 @@
+#########################################################################################
+#                   HOW TO BaseRecyclerViewAdapter                           #
+#########################################################################################
+
+
+
+
+Getting started
+-----------------------------------------------------------------------------------------
+
+class YourAdapter(private val listItems: ArrayList<Model>, private val planClick: (position: Int) -> Unit) : BaseRecyclerViewAdapter(listItems) {
+
+// bind your item layout here
+override fun getRowLayout(): Int {
+        return R.layout.row_subscription_plan
+    }
+
+
+    override fun getItemCount(): Int {
+        return listItems.size
+    }
+
+    override fun onBindViewHolder(viewHolder: RecyclerView.ViewHolder, position: Int) {
+        when (getMyItemViewType(position)) {
+            VIEW_TYPE_ITEM -> {
+
+                val holder = viewHolder as ItemViewHolder
+                holder.itemView.let {
+                    val binding = DataBindingUtil.bind<RowSubscriptionPlanBinding>(it)
+                    justTry {
+
+                        binding?.root?.setOnClickListener {
+                            planClick.invoke(holder.adapterPosition)
+                        }
+
+                        val currentItem = listItems[holder.adapterPosition]
+                        binding?.planData = currentItem
+                        binding?.isSelected = selectedPosition == holder.adapterPosition
+                        binding?.isDiscountVisible = currentItem.savingPercentage != null
+
+                    }
+                }
+            }
+        }
+    }   
+    
+ }

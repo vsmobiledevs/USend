@@ -1,0 +1,85 @@
+package com.usend.views.userauth
+
+import android.content.Context
+import android.content.Intent
+import androidx.lifecycle.Observer
+import com.base.network.model.SuccessModel
+import com.usend.R
+import com.usend.comman.Resource
+import com.usend.base.ViewModelActivity
+import com.usend.databinding.ActivityForgotPasswordBinding
+import com.usend.extensions.nullSafe
+import com.usend.extensions.showToast
+import com.usend.utils.CommonUtils
+import com.usend.utils.JLog
+import com.usend.viewmodels.ForgotPassViewModel
+import kotlinx.android.synthetic.main.app_toolbar.*
+import kotlin.reflect.KClass
+
+class ForgotPasswordActivity(
+    override val modelClass: KClass<ForgotPassViewModel> = ForgotPassViewModel::class,
+    override val layoutId: Int = R.layout.activity_forgot_password
+) : ViewModelActivity<ActivityForgotPasswordBinding,ForgotPassViewModel>() {
+
+    private val TAG = ForgotPasswordActivity::class.java.simpleName
+
+    override fun initView() {
+        super.initView()
+
+        initToolbar(toolbar = toolbar)
+        binding.viewModel = viewModel
+        binding.activity = this
+    }
+
+
+    fun onSubmitClick()
+    {
+        viewModel.onSubmit()
+    }
+
+    override fun addObserver() {
+        viewModel.status.observe(this, mObserver)
+    }
+
+    private val mObserver = Observer<Any> { response ->
+        when (response) {
+            is Resource.Error<*> -> {
+
+                JLog.e(TAG, "Message: ${response.data}")
+                showToast(response.message.toString())
+            }
+            is Resource.Success<*> -> {
+
+                response.data as SuccessModel
+
+                CommonUtils.showOkCallBackDialog(this, message = response.data.responseMessage){
+                    finish()
+                }
+            }
+            is Resource.Loading<*> -> {
+
+                response.isLoadingShow.let {
+                    if (it as Boolean) {
+                        showProgressDialog(this)
+                    } else {
+                        hideProgressDialog()
+                    }
+                }
+            }
+            is Resource.NoInternetError<*> -> {
+                // use if you wanna show dialog or snackbar
+                CommonUtils.showOkDialog(this, message = resources.getString(response.id!!))
+            }
+            is Resource.ValidationError<*> -> {
+                showToast(resources.getString(response.id.nullSafe()))
+            }
+        }
+    }
+
+    companion object {
+        fun newIntent(context: Context, intent: Intent) {
+            context.startActivity(intent)
+        }
+    }
+
+}

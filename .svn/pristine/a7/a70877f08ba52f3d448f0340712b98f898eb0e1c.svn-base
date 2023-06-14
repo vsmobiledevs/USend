@@ -1,0 +1,745 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.usend"
+4    android:versionCode="2"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:6:5-67
+11-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:6:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:7:5-79
+12-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:7:22-76
+13    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+13-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:8:5-80
+13-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:8:22-77
+14    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+14-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:9:5-81
+14-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:9:22-78
+15    <uses-permission android:name="android.permission.CAMERA" />
+15-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:10:5-65
+15-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:10:22-62
+16
+17    <uses-feature
+17-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:12:5-14:36
+18        android:name="android.hardware.camera.any"
+18-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:13:9-51
+19        android:required="false" />
+19-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:14:9-33
+20    <uses-feature
+20-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:15:5-17:36
+21        android:name="android.hardware.camera.autofocus"
+21-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:16:9-57
+22        android:required="false" />
+22-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:17:9-33
+23
+24    <uses-permission android:name="com.android.vending.BILLING" />
+24-->[com.android.billingclient:billing:3.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\1763c0724b87ccc5cadc1fa229265983\jetified-billing-3.0.0\AndroidManifest.xml:10:5-67
+24-->[com.android.billingclient:billing:3.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\1763c0724b87ccc5cadc1fa229265983\jetified-billing-3.0.0\AndroidManifest.xml:10:22-64
+25    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+25-->[com.google.android.gms:play-services-measurement-api:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\185ce515d4399f4429a64fea82cea46c\jetified-play-services-measurement-api-17.2.1\AndroidManifest.xml:24:5-68
+25-->[com.google.android.gms:play-services-measurement-api:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\185ce515d4399f4429a64fea82cea46c\jetified-play-services-measurement-api-17.2.1\AndroidManifest.xml:24:22-65
+26    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+26-->[com.google.firebase:firebase-iid:20.0.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\47faad9f4b1e38182205f8435278da11\jetified-firebase-iid-20.0.2\AndroidManifest.xml:26:5-82
+26-->[com.google.firebase:firebase-iid:20.0.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\47faad9f4b1e38182205f8435278da11\jetified-firebase-iid-20.0.2\AndroidManifest.xml:26:22-79
+27    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+27-->[com.google.android.gms:play-services-measurement:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a88c6c5fdd9ac6e6bcec3436bebe2ac1\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:26:5-110
+27-->[com.google.android.gms:play-services-measurement:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a88c6c5fdd9ac6e6bcec3436bebe2ac1\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:26:22-107
+28
+29    <application
+29-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:19:5-209:19
+30        android:name="com.usend.base.MyBaseApp"
+30-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:20:9-39
+31        android:allowBackup="false"
+31-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:21:9-36
+32        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+32-->[androidx.core:core:1.6.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\e6c3ff4530a4a21acac22781d35858b5\core-1.6.0\AndroidManifest.xml:24:18-86
+33        android:debuggable="true"
+34        android:icon="@mipmap/app_icon"
+34-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:22:9-40
+35        android:label="@string/app_name"
+35-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:23:9-41
+36        android:networkSecurityConfig="@xml/network_security_config"
+36-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:24:9-69
+37        android:requestLegacyExternalStorage="true"
+37-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:25:9-52
+38        android:roundIcon="@mipmap/app_icon_round"
+38-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:26:9-51
+39        android:supportsRtl="true"
+39-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:27:9-35
+40        android:testOnly="true"
+41        android:theme="@style/AppTheme" >
+41-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:28:9-40
+42        <activity android:name="com.usend.views.ConciergeForGuestActivity" />
+42-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:30:9-78
+42-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:30:19-66
+43        <activity android:name="com.usend.views.home.SelectSavedCardActivity" />
+43-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:31:9-72
+43-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:31:19-69
+44        <activity android:name="com.usend.views.home.AutoShipMethodsActivity" />
+44-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:32:9-72
+44-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:32:19-69
+45        <activity android:name="com.usend.views.home.AutoShipActivity" />
+45-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:33:9-65
+45-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:33:19-62
+46        <activity
+46-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:34:9-37:55
+47            android:name="com.usend.views.home.ShippingCostActivity"
+47-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:35:13-60
+48            android:screenOrientation="user"
+48-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:36:13-45
+49            android:windowSoftInputMode="adjustPan" />
+49-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:37:13-52
+50        <activity
+50-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:38:9-41:55
+51            android:name="com.usend.views.userauth.OtpVerificationActivity"
+51-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:39:13-67
+52            android:screenOrientation="user"
+52-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:40:13-45
+53            android:windowSoftInputMode="adjustPan" />
+53-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:41:13-52
+54        <activity
+54-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:42:9-45:55
+55            android:name="com.usend.views.home.ChangePasswordActivity"
+55-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:43:13-62
+56            android:screenOrientation="user"
+56-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:44:13-45
+57            android:windowSoftInputMode="adjustPan" />
+57-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:45:13-52
+58        <activity
+58-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:46:9-49:55
+59            android:name="com.usend.views.home.NotificationActivity"
+59-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:47:13-60
+60            android:screenOrientation="user"
+60-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:48:13-45
+61            android:windowSoftInputMode="adjustPan" />
+61-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:49:13-52
+62        <activity
+62-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:50:9-53:55
+63            android:name="com.usend.views.home.WebViewActivity"
+63-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:51:13-55
+64            android:screenOrientation="user"
+64-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:52:13-45
+65            android:windowSoftInputMode="adjustPan" />
+65-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:53:13-52
+66        <activity
+66-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:54:9-57:55
+67            android:name="com.usend.views.home.SavedCardsActivity"
+67-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:55:13-58
+68            android:screenOrientation="user"
+68-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:56:13-45
+69            android:windowSoftInputMode="adjustPan" />
+69-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:57:13-52
+70        <activity
+70-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:58:9-61:55
+71            android:name="com.usend.views.home.ShippingAddressActivity"
+71-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:59:13-63
+72            android:screenOrientation="user"
+72-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:60:13-45
+73            android:windowSoftInputMode="adjustPan" />
+73-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:61:13-52
+74        <activity
+74-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:62:9-65:55
+75            android:name="com.usend.views.home.VerificationStatusActivity"
+75-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:63:13-66
+76            android:screenOrientation="user"
+76-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:64:13-45
+77            android:windowSoftInputMode="adjustPan" />
+77-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:65:13-52
+78        <activity
+78-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:66:9-69:55
+79            android:name="com.usend.views.home.USPSVerificationActivity"
+79-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:67:13-64
+80            android:screenOrientation="user"
+80-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:68:13-45
+81            android:windowSoftInputMode="adjustPan" />
+81-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:69:13-52
+82        <activity
+82-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:70:9-73:55
+83            android:name="com.usend.views.home.ProhibitedItemsActivity"
+83-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:71:13-63
+84            android:screenOrientation="user"
+84-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:72:13-45
+85            android:windowSoftInputMode="adjustPan" />
+85-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:73:13-52
+86        <activity
+86-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:74:9-77:55
+87            android:name="com.usend.views.home.ContactUsActivity"
+87-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:75:13-57
+88            android:screenOrientation="user"
+88-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:76:13-45
+89            android:windowSoftInputMode="adjustPan" />
+89-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:77:13-52
+90        <activity
+90-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:78:9-81:55
+91            android:name="com.usend.views.home.EditProfileActivity"
+91-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:79:13-59
+92            android:screenOrientation="user"
+92-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:80:13-45
+93            android:windowSoftInputMode="adjustPan" />
+93-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:81:13-52
+94        <activity
+94-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:82:9-85:55
+95            android:name="com.usend.views.home.CreateNewReqActivity"
+95-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:83:13-60
+96            android:screenOrientation="user"
+96-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:84:13-45
+97            android:windowSoftInputMode="adjustPan" />
+97-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:85:13-52
+98        <activity
+98-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:86:9-89:55
+99            android:name="com.usend.views.home.ConciergeItemDetailActivity"
+99-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:87:13-67
+100            android:screenOrientation="user"
+100-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:88:13-45
+101            android:windowSoftInputMode="adjustPan" />
+101-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:89:13-52
+102        <activity
+102-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:90:9-93:55
+103            android:name="com.usend.views.home.OrderDetailsActivity"
+103-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:91:13-60
+104            android:screenOrientation="user"
+104-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:92:13-45
+105            android:windowSoftInputMode="adjustPan" />
+105-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:93:13-52
+106        <activity
+106-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:94:9-97:55
+107            android:name="com.usend.views.home.PaymentSuccessfulActivity"
+107-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:95:13-65
+108            android:screenOrientation="user"
+108-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:96:13-45
+109            android:windowSoftInputMode="adjustPan" />
+109-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:97:13-52
+110        <activity
+110-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:98:9-101:55
+111            android:name="com.usend.views.home.SavedPaymentMethodsActivity"
+111-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:99:13-67
+112            android:screenOrientation="user"
+112-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:100:13-45
+113            android:windowSoftInputMode="adjustPan" />
+113-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:101:13-52
+114        <activity
+114-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:102:9-105:55
+115            android:name="com.usend.views.home.AddCardActivity"
+115-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:103:13-55
+116            android:screenOrientation="user"
+116-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:104:13-45
+117            android:windowSoftInputMode="adjustPan" />
+117-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:105:13-52
+118        <activity
+118-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:106:9-109:55
+119            android:name="com.usend.views.home.PaymentMethodActivity"
+119-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:107:13-61
+120            android:screenOrientation="user"
+120-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:108:13-45
+121            android:windowSoftInputMode="adjustPan" />
+121-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:109:13-52
+122        <activity
+122-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:110:9-113:55
+123            android:name="com.usend.views.home.ShippingDetailsActivity"
+123-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:111:13-63
+124            android:screenOrientation="user"
+124-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:112:13-45
+125            android:windowSoftInputMode="adjustPan" />
+125-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:113:13-52
+126        <activity
+126-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:114:9-117:55
+127            android:name="com.usend.views.home.ShippingMethodActivity"
+127-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:115:13-62
+128            android:screenOrientation="user"
+128-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:116:13-45
+129            android:windowSoftInputMode="adjustPan" />
+129-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:117:13-52
+130        <activity
+130-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:118:9-121:55
+131            android:name="com.usend.views.home.AddNewAddressActivity"
+131-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:119:13-61
+132            android:screenOrientation="user"
+132-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:120:13-45
+133            android:windowSoftInputMode="adjustPan" />
+133-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:121:13-52
+134        <activity
+134-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:122:9-125:55
+135            android:name="com.usend.views.home.ShipToAddressActivity"
+135-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:123:13-61
+136            android:screenOrientation="user"
+136-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:124:13-45
+137            android:windowSoftInputMode="adjustPan" />
+137-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:125:13-52
+138        <activity
+138-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:126:9-129:55
+139            android:name="com.usend.views.home.PackageDetailActivity"
+139-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:127:13-61
+140            android:screenOrientation="user"
+140-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:128:13-45
+141            android:windowSoftInputMode="adjustPan" />
+141-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:129:13-52
+142        <activity
+142-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:130:9-133:55
+143            android:name="com.usend.views.userauth.ForgotPasswordActivity"
+143-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:131:13-66
+144            android:screenOrientation="user"
+144-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:132:13-45
+145            android:windowSoftInputMode="adjustPan" />
+145-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:133:13-52
+146        <activity
+146-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:134:9-137:55
+147            android:name="com.usend.views.userauth.RegionSelectionActivity"
+147-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:135:13-67
+148            android:screenOrientation="user"
+148-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:136:13-45
+149            android:windowSoftInputMode="adjustPan" />
+149-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:137:13-52
+150        <activity
+150-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:138:9-141:55
+151            android:name="com.usend.views.userauth.PaymentInfoActivity"
+151-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:139:13-63
+152            android:screenOrientation="user"
+152-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:140:13-45
+153            android:windowSoftInputMode="adjustPan" />
+153-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:141:13-52
+154        <activity
+154-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:142:9-145:55
+155            android:name="com.usend.views.userauth.BillingAddressActivity"
+155-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:143:13-66
+156            android:screenOrientation="user"
+156-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:144:13-45
+157            android:windowSoftInputMode="adjustPan" />
+157-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:145:13-52
+158        <activity
+158-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:146:9-149:58
+159            android:name="com.usend.views.userauth.SignUpActivity"
+159-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:147:13-58
+160            android:screenOrientation="user"
+160-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:148:13-45
+161            android:windowSoftInputMode="adjustResize" />
+161-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:149:13-55
+162        <activity
+162-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:150:9-153:55
+163            android:name="com.usend.views.userauth.SignInActivity"
+163-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:151:13-58
+164            android:screenOrientation="user"
+164-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:152:13-45
+165            android:windowSoftInputMode="adjustPan" />
+165-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:153:13-52
+166        <activity
+166-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:154:9-157:55
+167            android:name="com.usend.views.MainActivity"
+167-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:155:13-47
+168            android:screenOrientation="user"
+168-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:156:13-45
+169            android:windowSoftInputMode="adjustPan" />
+169-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:157:13-52
+170        <activity
+170-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:158:9-161:55
+171            android:name="com.usend.views.userauth.IntroActivity"
+171-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:159:13-57
+172            android:screenOrientation="user"
+172-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:160:13-45
+173            android:windowSoftInputMode="adjustPan" />
+173-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:161:13-52
+174        <activity
+174-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:162:9-171:20
+175            android:name="com.usend.views.SplashActivity"
+175-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:163:13-49
+176            android:screenOrientation="user"
+176-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:164:13-45
+177            android:windowSoftInputMode="stateAlwaysHidden" >
+177-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:165:13-60
+178            <intent-filter>
+178-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:166:13-170:29
+179                <action android:name="android.intent.action.MAIN" />
+179-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:167:17-69
+179-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:167:25-66
+180
+181                <category android:name="android.intent.category.LAUNCHER" />
+181-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:169:17-77
+181-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:169:27-74
+182            </intent-filter>
+183        </activity> <!-- Firbase Messaging service to get token -->
+184        <service
+184-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:172:9-178:19
+185            android:name="com.usend.fcm.MyFirebaseMessagingService"
+185-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:173:13-59
+186            android:exported="false" >
+186-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:174:13-37
+187            <intent-filter>
+187-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:175:13-177:29
+188                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+188-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:176:17-78
+188-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:176:25-75
+189            </intent-filter>
+190        </service>
+191
+192        <provider
+192-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:180:9-188:20
+193            android:name="androidx.core.content.FileProvider"
+193-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:181:13-62
+194            android:authorities="com.usend.file_provider"
+194-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:182:13-58
+195            android:exported="false"
+195-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:183:13-37
+196            android:grantUriPermissions="true" >
+196-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:184:13-47
+197            <meta-data
+197-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:185:13-187:63
+198                android:name="android.support.FILE_PROVIDER_PATHS"
+198-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:186:17-67
+199                android:resource="@xml/file_provider_paths" />
+199-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:187:17-60
+200        </provider>
+201        <!--
+202        Set custom default icon. This is used when no icon is set for incoming notification messages.
+203        See README(https://goo.gl/l4GJaQ) for more.
+204        -->
+205        <meta-data
+205-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:193:9-195:68
+206            android:name="com.google.firebase.messaging.default_notification_icon"
+206-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:194:13-83
+207            android:resource="@drawable/ic_stat_ic_notification" />
+207-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:195:13-65
+208        <!--
+209        Set color used with incoming notification messages. This is used when no color is set for the incoming
+210        notification message. See README(https://goo.gl/6BKBk7) for more.
+211        -->
+212        <meta-data
+212-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:200:9-202:69
+213            android:name="com.google.android.gms.version"
+213-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:201:13-58
+214            android:value="@integer/google_play_services_version" />
+214-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:202:13-66
+215        <meta-data
+215-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:203:9-205:53
+216            android:name="com.google.firebase.messaging.default_notification_color"
+216-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:204:13-84
+217            android:resource="@color/colorAccent" />
+217-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:205:13-50
+218        <meta-data
+218-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:206:9-208:69
+219            android:name="sqip.SQUARE_APPLICATION_ID"
+219-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:207:13-54
+220            android:value="sandbox-sq0idb-niGkEg1l3LzJM6CuiaN8yg" />
+220-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:208:13-66
+221
+222        <activity
+222-->[com.stripe:stripe-android:16.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\10f75e484cf5071c5368cdbd4e57d4fc\jetified-stripe-android-16.0.1\AndroidManifest.xml:12:9-14:57
+223            android:name="com.stripe.android.view.AddPaymentMethodActivity"
+223-->[com.stripe:stripe-android:16.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\10f75e484cf5071c5368cdbd4e57d4fc\jetified-stripe-android-16.0.1\AndroidManifest.xml:13:13-76
+224            android:theme="@style/StripeDefaultTheme" />
+224-->[com.stripe:stripe-android:16.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\10f75e484cf5071c5368cdbd4e57d4fc\jetified-stripe-android-16.0.1\AndroidManifest.xml:14:13-54
+225        <activity
+225-->[com.stripe:stripe-android:16.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\10f75e484cf5071c5368cdbd4e57d4fc\jetified-stripe-android-16.0.1\AndroidManifest.xml:15:9-17:57
+226            android:name="com.stripe.android.view.PaymentMethodsActivity"
+226-->[com.stripe:stripe-android:16.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\10f75e484cf5071c5368cdbd4e57d4fc\jetified-stripe-android-16.0.1\AndroidManifest.xml:16:13-74
+227            android:theme="@style/StripeDefaultTheme" />
+227-->[com.stripe:stripe-android:16.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\10f75e484cf5071c5368cdbd4e57d4fc\jetified-stripe-android-16.0.1\AndroidManifest.xml:17:13-54
+228        <activity
+228-->[com.stripe:stripe-android:16.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\10f75e484cf5071c5368cdbd4e57d4fc\jetified-stripe-android-16.0.1\AndroidManifest.xml:18:9-20:57
+229            android:name="com.stripe.android.view.PaymentFlowActivity"
+229-->[com.stripe:stripe-android:16.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\10f75e484cf5071c5368cdbd4e57d4fc\jetified-stripe-android-16.0.1\AndroidManifest.xml:19:13-71
+230            android:theme="@style/StripeDefaultTheme" />
+230-->[com.stripe:stripe-android:16.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\10f75e484cf5071c5368cdbd4e57d4fc\jetified-stripe-android-16.0.1\AndroidManifest.xml:20:13-54
+231        <activity
+231-->[com.stripe:stripe-android:16.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\10f75e484cf5071c5368cdbd4e57d4fc\jetified-stripe-android-16.0.1\AndroidManifest.xml:21:9-24:58
+232            android:name="com.stripe.android.view.PaymentAuthWebViewActivity"
+232-->[com.stripe:stripe-android:16.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\10f75e484cf5071c5368cdbd4e57d4fc\jetified-stripe-android-16.0.1\AndroidManifest.xml:22:13-78
+233            android:theme="@style/StripeDefaultTheme"
+233-->[com.stripe:stripe-android:16.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\10f75e484cf5071c5368cdbd4e57d4fc\jetified-stripe-android-16.0.1\AndroidManifest.xml:23:13-54
+234            android:windowSoftInputMode="adjustResize" />
+234-->[com.stripe:stripe-android:16.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\10f75e484cf5071c5368cdbd4e57d4fc\jetified-stripe-android-16.0.1\AndroidManifest.xml:24:13-55
+235        <activity
+235-->[com.stripe:stripe-android:16.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\10f75e484cf5071c5368cdbd4e57d4fc\jetified-stripe-android-16.0.1\AndroidManifest.xml:25:9-27:57
+236            android:name="com.stripe.android.view.PaymentRelayActivity"
+236-->[com.stripe:stripe-android:16.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\10f75e484cf5071c5368cdbd4e57d4fc\jetified-stripe-android-16.0.1\AndroidManifest.xml:26:13-72
+237            android:theme="@style/StripeDefaultTheme" />
+237-->[com.stripe:stripe-android:16.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\10f75e484cf5071c5368cdbd4e57d4fc\jetified-stripe-android-16.0.1\AndroidManifest.xml:27:13-54
+238        <activity
+238-->[com.stripe:stripe-android:16.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\10f75e484cf5071c5368cdbd4e57d4fc\jetified-stripe-android-16.0.1\AndroidManifest.xml:28:9-30:57
+239            android:name="com.stripe.android.view.Stripe3ds2CompletionActivity"
+239-->[com.stripe:stripe-android:16.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\10f75e484cf5071c5368cdbd4e57d4fc\jetified-stripe-android-16.0.1\AndroidManifest.xml:29:13-80
+240            android:theme="@style/StripeDefaultTheme" />
+240-->[com.stripe:stripe-android:16.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\10f75e484cf5071c5368cdbd4e57d4fc\jetified-stripe-android-16.0.1\AndroidManifest.xml:30:13-54
+241        <activity
+241-->[com.stripe:stripe-android:16.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\10f75e484cf5071c5368cdbd4e57d4fc\jetified-stripe-android-16.0.1\AndroidManifest.xml:31:9-33:69
+242            android:name="com.stripe.android.paymentsheet.PaymentSheetActivity"
+242-->[com.stripe:stripe-android:16.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\10f75e484cf5071c5368cdbd4e57d4fc\jetified-stripe-android-16.0.1\AndroidManifest.xml:32:13-80
+243            android:theme="@style/StripePaymentSheetDefaultTheme" />
+243-->[com.stripe:stripe-android:16.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\10f75e484cf5071c5368cdbd4e57d4fc\jetified-stripe-android-16.0.1\AndroidManifest.xml:33:13-66
+244        <activity
+244-->[com.squareup.sdk.in-app-payments:card-entry:1.4.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\d0574490c239a26bbbe5ca4cc9fe539b\jetified-card-entry-1.4.0\AndroidManifest.xml:10:9-14:20
+245            android:name="sqip.internal.CardEntryActivity"
+245-->[com.squareup.sdk.in-app-payments:card-entry:1.4.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\d0574490c239a26bbbe5ca4cc9fe539b\jetified-card-entry-1.4.0\AndroidManifest.xml:11:13-59
+246            android:theme="@style/sqip.Theme.CardEntry"
+246-->[com.squareup.sdk.in-app-payments:card-entry:1.4.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\d0574490c239a26bbbe5ca4cc9fe539b\jetified-card-entry-1.4.0\AndroidManifest.xml:12:13-56
+247            android:windowSoftInputMode="adjustResize" >
+247-->[com.squareup.sdk.in-app-payments:card-entry:1.4.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\d0574490c239a26bbbe5ca4cc9fe539b\jetified-card-entry-1.4.0\AndroidManifest.xml:13:13-55
+248        </activity>
+249        <activity
+249-->[com.stripe:stripe-3ds2-android:4.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\b32bc685bf2195e8a0acbecc29ebdb36\jetified-stripe-3ds2-android-4.1.0\AndroidManifest.xml:12:9-14:54
+250            android:name="com.stripe.android.stripe3ds2.views.ChallengeActivity"
+250-->[com.stripe:stripe-3ds2-android:4.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\b32bc685bf2195e8a0acbecc29ebdb36\jetified-stripe-3ds2-android-4.1.0\AndroidManifest.xml:13:13-81
+251            android:theme="@style/Stripe3DS2Theme" />
+251-->[com.stripe:stripe-3ds2-android:4.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\b32bc685bf2195e8a0acbecc29ebdb36\jetified-stripe-3ds2-android-4.1.0\AndroidManifest.xml:14:13-51
+252        <activity
+252-->[com.stripe:stripe-3ds2-android:4.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\b32bc685bf2195e8a0acbecc29ebdb36\jetified-stripe-3ds2-android-4.1.0\AndroidManifest.xml:15:9-17:54
+253            android:name="com.stripe.android.stripe3ds2.views.ChallengeProgressActivity"
+253-->[com.stripe:stripe-3ds2-android:4.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\b32bc685bf2195e8a0acbecc29ebdb36\jetified-stripe-3ds2-android-4.1.0\AndroidManifest.xml:16:13-89
+254            android:theme="@style/Stripe3DS2Theme" />
+254-->[com.stripe:stripe-3ds2-android:4.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\b32bc685bf2195e8a0acbecc29ebdb36\jetified-stripe-3ds2-android-4.1.0\AndroidManifest.xml:17:13-51
+255
+256        <service
+256-->[com.amplifyframework:aws-storage-s3:1.1.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\9c22076d7384b9c3df017af75dd99d89\jetified-aws-storage-s3-1.1.2\AndroidManifest.xml:28:9-30:38
+257            android:name="com.amazonaws.mobileconnectors.s3.transferutility.TransferService"
+257-->[com.amplifyframework:aws-storage-s3:1.1.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\9c22076d7384b9c3df017af75dd99d89\jetified-aws-storage-s3-1.1.2\AndroidManifest.xml:29:13-93
+258            android:enabled="true" />
+258-->[com.amplifyframework:aws-storage-s3:1.1.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\9c22076d7384b9c3df017af75dd99d89\jetified-aws-storage-s3-1.1.2\AndroidManifest.xml:30:13-35
+259
+260        <activity
+260-->[com.github.miguelbcr:RxPaparazzo:0.6.1-2.x] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\8a85a8b473f5fb5f030bddc3b3614eb6\jetified-RxPaparazzo-0.6.1-2.x\AndroidManifest.xml:18:9-20:72
+261            android:name="com.yalantis.ucrop.UCropActivity"
+261-->[com.github.miguelbcr:RxPaparazzo:0.6.1-2.x] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\8a85a8b473f5fb5f030bddc3b3614eb6\jetified-RxPaparazzo-0.6.1-2.x\AndroidManifest.xml:19:13-60
+262            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+262-->[com.github.miguelbcr:RxPaparazzo:0.6.1-2.x] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\8a85a8b473f5fb5f030bddc3b3614eb6\jetified-RxPaparazzo-0.6.1-2.x\AndroidManifest.xml:20:13-69
+263
+264        <service
+264-->[androidx.room:room-runtime:2.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\3b8661e80ac00fa02651ff2d590a2c41\room-runtime-2.1.0\AndroidManifest.xml:25:9-27:40
+265            android:name="androidx.room.MultiInstanceInvalidationService"
+265-->[androidx.room:room-runtime:2.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\3b8661e80ac00fa02651ff2d590a2c41\room-runtime-2.1.0\AndroidManifest.xml:26:13-74
+266            android:exported="false" />
+266-->[androidx.room:room-runtime:2.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\3b8661e80ac00fa02651ff2d590a2c41\room-runtime-2.1.0\AndroidManifest.xml:27:13-37
+267
+268        <provider
+268-->[com.squareup.sdk.in-app-payments:nonce-api:1.4.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\18aa88d8747583c54f4d113f480581b2\jetified-nonce-api-1.4.0\AndroidManifest.xml:10:9-13:40
+269            android:name="sqip.internal.ContextCaptureContentProvider"
+269-->[com.squareup.sdk.in-app-payments:nonce-api:1.4.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\18aa88d8747583c54f4d113f480581b2\jetified-nonce-api-1.4.0\AndroidManifest.xml:11:13-71
+270            android:authorities="com.usend.sqip"
+270-->[com.squareup.sdk.in-app-payments:nonce-api:1.4.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\18aa88d8747583c54f4d113f480581b2\jetified-nonce-api-1.4.0\AndroidManifest.xml:12:13-56
+271            android:exported="false" />
+271-->[com.squareup.sdk.in-app-payments:nonce-api:1.4.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\18aa88d8747583c54f4d113f480581b2\jetified-nonce-api-1.4.0\AndroidManifest.xml:13:13-37
+272
+273        <service
+273-->[com.google.firebase:firebase-crashlytics:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\cd305015f91c1871f4d8cb469b75f636\jetified-firebase-crashlytics-17.2.1\AndroidManifest.xml:13:9-19:19
+274            android:name="com.google.firebase.components.ComponentDiscoveryService"
+274-->[com.google.firebase:firebase-crashlytics:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\cd305015f91c1871f4d8cb469b75f636\jetified-firebase-crashlytics-17.2.1\AndroidManifest.xml:14:13-84
+275            android:directBootAware="true"
+275-->[com.google.firebase:firebase-common:19.3.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\402777615872cf18c011a1d56bb6182c\jetified-firebase-common-19.3.1\AndroidManifest.xml:35:13-43
+276            android:exported="false" >
+276-->[com.google.firebase:firebase-crashlytics:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\cd305015f91c1871f4d8cb469b75f636\jetified-firebase-crashlytics-17.2.1\AndroidManifest.xml:15:13-37
+277            <meta-data
+277-->[com.google.firebase:firebase-crashlytics:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\cd305015f91c1871f4d8cb469b75f636\jetified-firebase-crashlytics-17.2.1\AndroidManifest.xml:16:13-18:85
+278                android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
+278-->[com.google.firebase:firebase-crashlytics:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\cd305015f91c1871f4d8cb469b75f636\jetified-firebase-crashlytics-17.2.1\AndroidManifest.xml:17:17-115
+279                android:value="com.google.firebase.components.ComponentRegistrar" />
+279-->[com.google.firebase:firebase-crashlytics:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\cd305015f91c1871f4d8cb469b75f636\jetified-firebase-crashlytics-17.2.1\AndroidManifest.xml:18:17-82
+280            <meta-data
+280-->[com.google.firebase:firebase-messaging:20.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\9c2e5193f157eba746a44a86e45e9b46\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:38:13-40:85
+281                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+281-->[com.google.firebase:firebase-messaging:20.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\9c2e5193f157eba746a44a86e45e9b46\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:39:17-119
+282                android:value="com.google.firebase.components.ComponentRegistrar" />
+282-->[com.google.firebase:firebase-messaging:20.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\9c2e5193f157eba746a44a86e45e9b46\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:40:17-82
+283            <meta-data
+283-->[com.google.android.gms:play-services-measurement-api:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\185ce515d4399f4429a64fea82cea46c\jetified-play-services-measurement-api-17.2.1\AndroidManifest.xml:30:13-32:85
+284                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+284-->[com.google.android.gms:play-services-measurement-api:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\185ce515d4399f4429a64fea82cea46c\jetified-play-services-measurement-api-17.2.1\AndroidManifest.xml:31:17-139
+285                android:value="com.google.firebase.components.ComponentRegistrar" />
+285-->[com.google.android.gms:play-services-measurement-api:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\185ce515d4399f4429a64fea82cea46c\jetified-play-services-measurement-api-17.2.1\AndroidManifest.xml:32:17-82
+286            <meta-data
+286-->[com.google.firebase:firebase-iid:20.0.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\47faad9f4b1e38182205f8435278da11\jetified-firebase-iid-20.0.2\AndroidManifest.xml:32:13-34:85
+287                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+287-->[com.google.firebase:firebase-iid:20.0.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\47faad9f4b1e38182205f8435278da11\jetified-firebase-iid-20.0.2\AndroidManifest.xml:33:17-96
+288                android:value="com.google.firebase.components.ComponentRegistrar" />
+288-->[com.google.firebase:firebase-iid:20.0.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\47faad9f4b1e38182205f8435278da11\jetified-firebase-iid-20.0.2\AndroidManifest.xml:34:17-82
+289            <meta-data
+289-->[com.google.firebase:firebase-datatransport:17.0.3] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\7f976b827edf218a7633b3332c1d72a9\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:28:13-30:85
+290                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+290-->[com.google.firebase:firebase-datatransport:17.0.3] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\7f976b827edf218a7633b3332c1d72a9\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:29:17-115
+291                android:value="com.google.firebase.components.ComponentRegistrar" />
+291-->[com.google.firebase:firebase-datatransport:17.0.3] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\7f976b827edf218a7633b3332c1d72a9\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:30:17-82
+292            <meta-data
+292-->[com.google.firebase:firebase-installations:16.3.3] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\6bed7ebe779270d974dbb05a5a3d2b0d\jetified-firebase-installations-16.3.3\AndroidManifest.xml:17:13-19:85
+293                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+293-->[com.google.firebase:firebase-installations:16.3.3] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\6bed7ebe779270d974dbb05a5a3d2b0d\jetified-firebase-installations-16.3.3\AndroidManifest.xml:18:17-127
+294                android:value="com.google.firebase.components.ComponentRegistrar" />
+294-->[com.google.firebase:firebase-installations:16.3.3] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\6bed7ebe779270d974dbb05a5a3d2b0d\jetified-firebase-installations-16.3.3\AndroidManifest.xml:19:17-82
+295        </service>
+296        <!--
+297             FirebaseMessagingService performs security checks at runtime,
+298             but set to not exported to explicitly avoid allowing another app to call it.
+299        -->
+300        <service
+300-->[com.google.firebase:firebase-messaging:20.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\9c2e5193f157eba746a44a86e45e9b46\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:28:9-34:19
+301            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+301-->[com.google.firebase:firebase-messaging:20.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\9c2e5193f157eba746a44a86e45e9b46\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:29:13-82
+302            android:exported="false" >
+302-->[com.google.firebase:firebase-messaging:20.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\9c2e5193f157eba746a44a86e45e9b46\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:30:13-37
+303            <intent-filter android:priority="-500" >
+303-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:175:13-177:29
+304                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+304-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:176:17-78
+304-->C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:176:25-75
+305            </intent-filter>
+306        </service>
+307
+308        <uses-library
+308-->[com.amazonaws:aws-android-sdk-core:2.17.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a9e05bf129798151776e908fae6c0401\jetified-aws-android-sdk-core-2.17.1\AndroidManifest.xml:12:9-14:40
+309            android:name="org.apache.http.legacy"
+309-->[com.amazonaws:aws-android-sdk-core:2.17.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a9e05bf129798151776e908fae6c0401\jetified-aws-android-sdk-core-2.17.1\AndroidManifest.xml:13:13-50
+310            android:required="false" />
+310-->[com.amazonaws:aws-android-sdk-core:2.17.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a9e05bf129798151776e908fae6c0401\jetified-aws-android-sdk-core-2.17.1\AndroidManifest.xml:14:13-37
+311
+312        <meta-data
+312-->[com.android.billingclient:billing:3.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\1763c0724b87ccc5cadc1fa229265983\jetified-billing-3.0.0\AndroidManifest.xml:13:9-15:37
+313            android:name="com.google.android.play.billingclient.version"
+313-->[com.android.billingclient:billing:3.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\1763c0724b87ccc5cadc1fa229265983\jetified-billing-3.0.0\AndroidManifest.xml:14:13-73
+314            android:value="3.0.0" />
+314-->[com.android.billingclient:billing:3.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\1763c0724b87ccc5cadc1fa229265983\jetified-billing-3.0.0\AndroidManifest.xml:15:13-34
+315
+316        <activity
+316-->[com.android.billingclient:billing:3.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\1763c0724b87ccc5cadc1fa229265983\jetified-billing-3.0.0\AndroidManifest.xml:17:9-20:75
+317            android:name="com.android.billingclient.api.ProxyBillingActivity"
+317-->[com.android.billingclient:billing:3.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\1763c0724b87ccc5cadc1fa229265983\jetified-billing-3.0.0\AndroidManifest.xml:18:13-78
+318            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+318-->[com.android.billingclient:billing:3.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\1763c0724b87ccc5cadc1fa229265983\jetified-billing-3.0.0\AndroidManifest.xml:19:13-96
+319            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+319-->[com.android.billingclient:billing:3.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\1763c0724b87ccc5cadc1fa229265983\jetified-billing-3.0.0\AndroidManifest.xml:20:13-72
+320
+321        <receiver
+321-->[com.google.firebase:firebase-iid:20.0.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\47faad9f4b1e38182205f8435278da11\jetified-firebase-iid-20.0.2\AndroidManifest.xml:37:9-44:20
+322            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+322-->[com.google.firebase:firebase-iid:20.0.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\47faad9f4b1e38182205f8435278da11\jetified-firebase-iid-20.0.2\AndroidManifest.xml:38:13-78
+323            android:exported="true"
+323-->[com.google.firebase:firebase-iid:20.0.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\47faad9f4b1e38182205f8435278da11\jetified-firebase-iid-20.0.2\AndroidManifest.xml:39:13-36
+324            android:permission="com.google.android.c2dm.permission.SEND" >
+324-->[com.google.firebase:firebase-iid:20.0.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\47faad9f4b1e38182205f8435278da11\jetified-firebase-iid-20.0.2\AndroidManifest.xml:40:13-73
+325            <intent-filter>
+325-->[com.google.firebase:firebase-iid:20.0.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\47faad9f4b1e38182205f8435278da11\jetified-firebase-iid-20.0.2\AndroidManifest.xml:41:13-43:29
+326                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+326-->[com.google.firebase:firebase-iid:20.0.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\47faad9f4b1e38182205f8435278da11\jetified-firebase-iid-20.0.2\AndroidManifest.xml:42:17-81
+326-->[com.google.firebase:firebase-iid:20.0.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\47faad9f4b1e38182205f8435278da11\jetified-firebase-iid-20.0.2\AndroidManifest.xml:42:25-78
+327            </intent-filter>
+328        </receiver>
+329        <receiver
+329-->[com.google.android.gms:play-services-measurement:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a88c6c5fdd9ac6e6bcec3436bebe2ac1\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:29:9-33:20
+330            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+330-->[com.google.android.gms:play-services-measurement:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a88c6c5fdd9ac6e6bcec3436bebe2ac1\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:30:13-85
+331            android:enabled="true"
+331-->[com.google.android.gms:play-services-measurement:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a88c6c5fdd9ac6e6bcec3436bebe2ac1\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:31:13-35
+332            android:exported="false" >
+332-->[com.google.android.gms:play-services-measurement:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a88c6c5fdd9ac6e6bcec3436bebe2ac1\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:32:13-37
+333        </receiver>
+334        <receiver
+334-->[com.google.android.gms:play-services-measurement:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a88c6c5fdd9ac6e6bcec3436bebe2ac1\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:34:9-42:20
+335            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+335-->[com.google.android.gms:play-services-measurement:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a88c6c5fdd9ac6e6bcec3436bebe2ac1\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:35:13-100
+336            android:enabled="true"
+336-->[com.google.android.gms:play-services-measurement:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a88c6c5fdd9ac6e6bcec3436bebe2ac1\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:36:13-35
+337            android:exported="true"
+337-->[com.google.android.gms:play-services-measurement:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a88c6c5fdd9ac6e6bcec3436bebe2ac1\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:37:13-36
+338            android:permission="android.permission.INSTALL_PACKAGES" >
+338-->[com.google.android.gms:play-services-measurement:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a88c6c5fdd9ac6e6bcec3436bebe2ac1\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:38:13-69
+339            <intent-filter>
+339-->[com.google.android.gms:play-services-measurement:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a88c6c5fdd9ac6e6bcec3436bebe2ac1\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:39:13-41:29
+340                <action android:name="com.android.vending.INSTALL_REFERRER" />
+340-->[com.google.android.gms:play-services-measurement:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a88c6c5fdd9ac6e6bcec3436bebe2ac1\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:40:17-79
+340-->[com.google.android.gms:play-services-measurement:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a88c6c5fdd9ac6e6bcec3436bebe2ac1\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:40:25-76
+341            </intent-filter>
+342        </receiver>
+343
+344        <service
+344-->[com.google.android.gms:play-services-measurement:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a88c6c5fdd9ac6e6bcec3436bebe2ac1\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:44:9-47:40
+345            android:name="com.google.android.gms.measurement.AppMeasurementService"
+345-->[com.google.android.gms:play-services-measurement:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a88c6c5fdd9ac6e6bcec3436bebe2ac1\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:45:13-84
+346            android:enabled="true"
+346-->[com.google.android.gms:play-services-measurement:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a88c6c5fdd9ac6e6bcec3436bebe2ac1\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:46:13-35
+347            android:exported="false" />
+347-->[com.google.android.gms:play-services-measurement:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a88c6c5fdd9ac6e6bcec3436bebe2ac1\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:47:13-37
+348        <service
+348-->[com.google.android.gms:play-services-measurement:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a88c6c5fdd9ac6e6bcec3436bebe2ac1\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:48:9-52:72
+349            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+349-->[com.google.android.gms:play-services-measurement:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a88c6c5fdd9ac6e6bcec3436bebe2ac1\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:49:13-87
+350            android:enabled="true"
+350-->[com.google.android.gms:play-services-measurement:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a88c6c5fdd9ac6e6bcec3436bebe2ac1\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:50:13-35
+351            android:exported="false"
+351-->[com.google.android.gms:play-services-measurement:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a88c6c5fdd9ac6e6bcec3436bebe2ac1\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:51:13-37
+352            android:permission="android.permission.BIND_JOB_SERVICE" />
+352-->[com.google.android.gms:play-services-measurement:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a88c6c5fdd9ac6e6bcec3436bebe2ac1\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:52:13-69
+353
+354        <provider
+354-->[com.google.firebase:firebase-common:19.3.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\402777615872cf18c011a1d56bb6182c\jetified-firebase-common-19.3.1\AndroidManifest.xml:26:9-31:39
+355            android:name="com.google.firebase.provider.FirebaseInitProvider"
+355-->[com.google.firebase:firebase-common:19.3.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\402777615872cf18c011a1d56bb6182c\jetified-firebase-common-19.3.1\AndroidManifest.xml:27:13-77
+356            android:authorities="com.usend.firebaseinitprovider"
+356-->[com.google.firebase:firebase-common:19.3.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\402777615872cf18c011a1d56bb6182c\jetified-firebase-common-19.3.1\AndroidManifest.xml:28:13-72
+357            android:directBootAware="true"
+357-->[com.google.firebase:firebase-common:19.3.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\402777615872cf18c011a1d56bb6182c\jetified-firebase-common-19.3.1\AndroidManifest.xml:29:13-43
+358            android:exported="false"
+358-->[com.google.firebase:firebase-common:19.3.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\402777615872cf18c011a1d56bb6182c\jetified-firebase-common-19.3.1\AndroidManifest.xml:30:13-37
+359            android:initOrder="100" />
+359-->[com.google.firebase:firebase-common:19.3.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\402777615872cf18c011a1d56bb6182c\jetified-firebase-common-19.3.1\AndroidManifest.xml:31:13-36
+360
+361        <activity
+361-->[com.google.android.gms:play-services-base:17.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f4bcafeb375c9eb538b5c5b718c151dd\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+362            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+362-->[com.google.android.gms:play-services-base:17.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f4bcafeb375c9eb538b5c5b718c151dd\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+363            android:exported="false"
+363-->[com.google.android.gms:play-services-base:17.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f4bcafeb375c9eb538b5c5b718c151dd\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+364            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+364-->[com.google.android.gms:play-services-base:17.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f4bcafeb375c9eb538b5c5b718c151dd\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+365        <activity
+365-->[com.github.VictorAlbertos:RxActivityResult:0.4.5-2.x] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\686b5ce3d6eb559b051f27120882c548\jetified-RxActivityResult-0.4.5-2.x\AndroidManifest.xml:12:9-15:56
+366            android:name="rx_activity_result2.HolderActivity"
+366-->[com.github.VictorAlbertos:RxActivityResult:0.4.5-2.x] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\686b5ce3d6eb559b051f27120882c548\jetified-RxActivityResult-0.4.5-2.x\AndroidManifest.xml:13:13-62
+367            android:configChanges="orientation|keyboardHidden|screenSize"
+367-->[com.github.VictorAlbertos:RxActivityResult:0.4.5-2.x] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\686b5ce3d6eb559b051f27120882c548\jetified-RxActivityResult-0.4.5-2.x\AndroidManifest.xml:14:13-74
+368            android:theme="@style/Theme.Transparent" />
+368-->[com.github.VictorAlbertos:RxActivityResult:0.4.5-2.x] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\686b5ce3d6eb559b051f27120882c548\jetified-RxActivityResult-0.4.5-2.x\AndroidManifest.xml:15:13-53
+369
+370        <provider
+370-->[androidx.lifecycle:lifecycle-process:2.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f096fc35f12dcb8ea90816dcbd8ed6f5\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:23:9-27:43
+371            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+371-->[androidx.lifecycle:lifecycle-process:2.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f096fc35f12dcb8ea90816dcbd8ed6f5\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:24:13-79
+372            android:authorities="com.usend.lifecycle-process"
+372-->[androidx.lifecycle:lifecycle-process:2.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f096fc35f12dcb8ea90816dcbd8ed6f5\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:25:13-69
+373            android:exported="false"
+373-->[androidx.lifecycle:lifecycle-process:2.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f096fc35f12dcb8ea90816dcbd8ed6f5\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:26:13-37
+374            android:multiprocess="true" />
+374-->[androidx.lifecycle:lifecycle-process:2.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f096fc35f12dcb8ea90816dcbd8ed6f5\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:27:13-40
+375
+376        <service
+376-->[com.google.android.datatransport:transport-backend-cct:2.3.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\d4f5333032268a6dc892cc1bb0a0f019\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:29:9-35:19
+377            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+377-->[com.google.android.datatransport:transport-backend-cct:2.3.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\d4f5333032268a6dc892cc1bb0a0f019\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:30:13-103
+378            android:exported="false" >
+378-->[com.google.android.datatransport:transport-backend-cct:2.3.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\d4f5333032268a6dc892cc1bb0a0f019\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:31:13-37
+379            <meta-data
+379-->[com.google.android.datatransport:transport-backend-cct:2.3.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\d4f5333032268a6dc892cc1bb0a0f019\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:32:13-34:39
+380                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+380-->[com.google.android.datatransport:transport-backend-cct:2.3.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\d4f5333032268a6dc892cc1bb0a0f019\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:33:17-94
+381                android:value="cct" />
+381-->[com.google.android.datatransport:transport-backend-cct:2.3.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\d4f5333032268a6dc892cc1bb0a0f019\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:34:17-36
+382        </service>
+383        <service
+383-->[com.google.android.datatransport:transport-runtime:2.2.4] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f0f0dd3fec26aab3078b4ee9f7e9686d\jetified-transport-runtime-2.2.4\AndroidManifest.xml:26:9-30:19
+384            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+384-->[com.google.android.datatransport:transport-runtime:2.2.4] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f0f0dd3fec26aab3078b4ee9f7e9686d\jetified-transport-runtime-2.2.4\AndroidManifest.xml:27:13-117
+385            android:exported="false"
+385-->[com.google.android.datatransport:transport-runtime:2.2.4] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f0f0dd3fec26aab3078b4ee9f7e9686d\jetified-transport-runtime-2.2.4\AndroidManifest.xml:28:13-37
+386            android:permission="android.permission.BIND_JOB_SERVICE" >
+386-->[com.google.android.datatransport:transport-runtime:2.2.4] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f0f0dd3fec26aab3078b4ee9f7e9686d\jetified-transport-runtime-2.2.4\AndroidManifest.xml:29:13-69
+387        </service>
+388
+389        <receiver
+389-->[com.google.android.datatransport:transport-runtime:2.2.4] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f0f0dd3fec26aab3078b4ee9f7e9686d\jetified-transport-runtime-2.2.4\AndroidManifest.xml:32:9-34:40
+390            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+390-->[com.google.android.datatransport:transport-runtime:2.2.4] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f0f0dd3fec26aab3078b4ee9f7e9686d\jetified-transport-runtime-2.2.4\AndroidManifest.xml:33:13-132
+391            android:exported="false" />
+391-->[com.google.android.datatransport:transport-runtime:2.2.4] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f0f0dd3fec26aab3078b4ee9f7e9686d\jetified-transport-runtime-2.2.4\AndroidManifest.xml:34:13-37
+392    </application>
+393
+394</manifest>

@@ -1,0 +1,47 @@
+package com.usend.views.userauth;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 4, 0}, bv = {1, 0, 3}, k = 1, d1 = {"\u00004\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\b\t\n\u0002\u0010\u0002\n\u0002\b\u0003\u0018\u00002\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00030\u0001B\u001f\u0012\u000e\b\u0002\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00030\u0005\u0012\b\b\u0002\u0010\u0006\u001a\u00020\u0007\u00a2\u0006\u0002\u0010\bJ\b\u0010\u0014\u001a\u00020\u0015H\u0014J\b\u0010\u0016\u001a\u00020\u0015H\u0014J\b\u0010\u0017\u001a\u00020\u0015H\u0014R\u0014\u0010\t\u001a\b\u0012\u0004\u0012\u00020\u000b0\nX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0012\u0010\f\u001a\u0004\u0018\u00010\u0007X\u0082\u000e\u00a2\u0006\u0004\n\u0002\u0010\rR\u0014\u0010\u0006\u001a\u00020\u0007X\u0094\u0004\u00a2\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\u000fR\u001a\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00030\u0005X\u0096\u0004\u00a2\u0006\b\n\u0000\u001a\u0004\b\u0010\u0010\u0011R\u0014\u0010\u0012\u001a\b\u0012\u0004\u0012\u00020\u000b0\nX\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u0013\u001a\u0004\u0018\u00010\u000bX\u0082\u000e\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u0018"}, d2 = {"Lcom/usend/views/userauth/RegionSelectionActivity;", "Lcom/usend/base/ViewModelActivity;", "Lcom/usend/databinding/ActivityRegionSelectionBinding;", "Lcom/usend/viewmodels/RegionSelectionViewModel;", "modelClass", "Lkotlin/reflect/KClass;", "layoutId", "", "(Lkotlin/reflect/KClass;I)V", "arrayList", "Ljava/util/ArrayList;", "", "code", "Ljava/lang/Integer;", "getLayoutId", "()I", "getModelClass", "()Lkotlin/reflect/KClass;", "tempList", "title", "getDataFromIntent", "", "initControls", "initView", "app_debug"})
+public final class RegionSelectionActivity extends com.usend.base.ViewModelActivity<com.usend.databinding.ActivityRegionSelectionBinding, com.usend.viewmodels.RegionSelectionViewModel> {
+    private java.lang.Integer code;
+    private java.lang.String title;
+    private java.util.ArrayList<java.lang.String> arrayList;
+    private java.util.ArrayList<java.lang.String> tempList;
+    @org.jetbrains.annotations.NotNull()
+    private final kotlin.reflect.KClass<com.usend.viewmodels.RegionSelectionViewModel> modelClass = null;
+    private final int layoutId = 0;
+    private java.util.HashMap _$_findViewCache;
+    
+    @java.lang.Override()
+    protected void getDataFromIntent() {
+    }
+    
+    @java.lang.Override()
+    protected void initView() {
+    }
+    
+    @java.lang.Override()
+    protected void initControls() {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    @java.lang.Override()
+    public kotlin.reflect.KClass<com.usend.viewmodels.RegionSelectionViewModel> getModelClass() {
+        return null;
+    }
+    
+    @java.lang.Override()
+    protected int getLayoutId() {
+        return 0;
+    }
+    
+    public RegionSelectionActivity(@org.jetbrains.annotations.NotNull()
+    kotlin.reflect.KClass<com.usend.viewmodels.RegionSelectionViewModel> modelClass, int layoutId) {
+        super();
+    }
+    
+    public RegionSelectionActivity() {
+        super();
+    }
+}

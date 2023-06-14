@@ -1,0 +1,1323 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:2:1-218:12
+INJECTED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:2:1-218:12
+INJECTED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:2:1-218:12
+INJECTED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:2:1-218:12
+MERGED from [androidx.databinding:databinding-adapters:7.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\06a51d46afc7bf31d6f3c1910a31f8c8\transformed\databinding-adapters-7.1.2\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.databinding:databinding-ktx:7.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\25cd6d2bbe99f933dc2a607f82c0449b\transformed\jetified-databinding-ktx-7.1.2\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.databinding:databinding-runtime:7.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\ba0390927ae57613cf9b7ed94732e1d2\transformed\databinding-runtime-7.1.2\AndroidManifest.xml:17:1-24:12
+MERGED from [:network] D:\EliteUSAFashion-SCMS-UpdatedCode\network\build\intermediates\merged_manifest\debug\AndroidManifest.xml:3:1-10:12
+MERGED from [com.stripe:stripe-android:16.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f3806ba53c5e4df8e0e7f0fbfde275ee\transformed\jetified-stripe-android-16.0.1\AndroidManifest.xml:2:1-36:12
+MERGED from [com.squareup.sdk.in-app-payments:card-entry:1.4.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\979b44967fcb4549ffa1b210c3737091\transformed\jetified-card-entry-1.4.0\AndroidManifest.xml:2:1-17:12
+MERGED from [com.squareup.sdk.in-app-payments:in-app-payments:1.4.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\9694499406274ee6b34ccd5272ad2e10\transformed\jetified-in-app-payments-1.4.0\AndroidManifest.xml:2:1-12:12
+MERGED from [com.stripe:stripe-3ds2-android:4.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\d7de162a1bf1b0b5aa355543f07c0c5f\transformed\jetified-stripe-3ds2-android-4.1.0\AndroidManifest.xml:2:1-20:12
+MERGED from [com.google.android.material:material:1.5.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f466b20e46050bd7c1985c0533ac4e5a\transformed\material-1.5.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\cbfacd264607d76419721363e70f7434\transformed\constraintlayout-2.1.3\AndroidManifest.xml:2:1-11:12
+MERGED from [com.amplifyframework:aws-auth-cognito:1.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\976cf09cdb25c336c8e41728a77ca0f9\transformed\jetified-aws-auth-cognito-1.1.2\AndroidManifest.xml:16:1-25:12
+MERGED from [com.amplifyframework:aws-storage-s3:1.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\94a1a3284ada9fd0fafc1da8ad815c31\transformed\jetified-aws-storage-s3-1.1.2\AndroidManifest.xml:16:1-33:12
+MERGED from [com.tbuonomo.andrui:viewpagerdotsindicator:3.0.3] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f7f6fc303f57198755ed71cc92f80bf8\transformed\jetified-viewpagerdotsindicator-3.0.3\AndroidManifest.xml:2:1-13:12
+MERGED from [com.hbb20:ccp:2.3.5] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\d3efb621136d186dbfd39285999f0c64\transformed\jetified-ccp-2.3.5\AndroidManifest.xml:2:1-16:12
+MERGED from [androidx.preference:preference-ktx:1.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\00a99b39ebc0a9b1365a85a2a8067669\transformed\jetified-preference-ktx-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.preference:preference:1.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\a42e7b86f1a30e112e23e969b6f8bbb2\transformed\preference-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.github.miguelbcr:RxPaparazzo:0.6.1-2.x] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\07f925e258fd0138b967b2a602cb6b5b\transformed\jetified-RxPaparazzo-0.6.1-2.x\AndroidManifest.xml:2:1-23:12
+MERGED from [com.github.yalantis:ucrop:2.2.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\1d843c52a1f817bc96b618f8f45693c1\transformed\jetified-ucrop-2.2.2\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.4.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\680047c22fad7c16a8eea6a0e571fb1f\transformed\appcompat-1.4.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment-ktx:1.2.5] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\60fbd8f9a36a3d925074d0a9ad49192c\transformed\jetified-fragment-ktx-1.2.5\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity-ktx:1.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f9b2374361620cdbedfdbb19a99501e9\transformed\jetified-activity-ktx-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core-ktx:1.7.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\814cc14bc7b8db5de7ed35dca6586237\transformed\jetified-core-ktx-1.7.0\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\8cadebd6d71b1603e948a60a260c3d5a\transformed\lifecycle-extensions-2.2.0\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.2.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\221996dae93db390f3c194c2faace93e\transformed\jetified-lifecycle-runtime-ktx-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\eb3b822013edf93a6a7b67d12bf5f5a0\transformed\jetified-lifecycle-viewmodel-ktx-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.room:room-runtime:2.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f844f564f64dda59c52ee833fe089957\transformed\room-runtime-2.1.0\AndroidManifest.xml:17:1-30:12
+MERGED from [com.chauthai.swipereveallayout:swipe-reveal-layout:1.4.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\3c285f4ec1a0735def6ca263c25b8cb9\transformed\jetified-swipe-reveal-layout-1.4.1\AndroidManifest.xml:2:1-14:12
+MERGED from [com.amplifyframework:core:1.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\9236bf894856b18371b4628c09246dda\transformed\jetified-core-1.1.2\AndroidManifest.xml:16:1-27:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\e6b7ba10f237a0981288f624782205cb\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.2.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\78e3f80c586647386a0fb4a177284965\transformed\jetified-lifecycle-livedata-ktx-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.squareup.sdk.in-app-payments:nonce-api:1.4.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\d440eb4c452a752e19f6eb576be33180\transformed\jetified-nonce-api-1.4.0\AndroidManifest.xml:2:1-16:12
+MERGED from [com.itkacher.okhttpprofiler:okhttpprofiler:1.0.7] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\bd3e1fbad962edc47fdeafcece457d5f\transformed\jetified-okhttpprofiler-1.0.7\AndroidManifest.xml:2:1-13:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.2.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\fe985445fd1f5f9db541d9468977fefc\transformed\jetified-lifecycle-livedata-core-ktx-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.4.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\b222b8cf7d35749a50c676b9b6f23543\transformed\jetified-appcompat-resources-1.4.1\AndroidManifest.xml:17:1-24:12
+MERGED from [com.github.bumptech.glide:glide:4.10.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\64de7e5a952d8e2be19431877f1ded77\transformed\jetified-glide-4.10.0\AndroidManifest.xml:2:1-12:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\4ecca0c5cadc78d66b6cd104339a18c5\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\fbaf3d587b7a16e910b4a2c1101bdf7e\transformed\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [io.reactivex.rxjava2:rxandroid:2.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\d41d19704fb4525a9ea9eb57bd00335f\transformed\jetified-rxandroid-2.1.0\AndroidManifest.xml:15:1-20:12
+MERGED from [com.google.firebase:firebase-messaging:20.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\1fa9a4264af207cdaf123d3dd881289b\transformed\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:17:1-44:12
+MERGED from [androidx.multidex:multidex:2.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\e346634f872b4efa4e5350ba3c2331dd\transformed\multidex-2.0.1\AndroidManifest.xml:17:1-22:12
+MERGED from [:customprogressdialog-1.0.2] D:\EliteUSAFashion-SCMS-UpdatedCode\customprogressdialog-1.0.2\build\.transforms\28550222beabbf1e09f84c1e4c463d01\transformed\jetified-customprogressdialog-1.0.2\AndroidManifest.xml:2:1-11:12
+MERGED from [:imagepickerviewkt-1.0.3] D:\EliteUSAFashion-SCMS-UpdatedCode\imagepickerviewkt-1.0.3\build\.transforms\9223105df6f76ca73627259285df0e09\transformed\jetified-imagepickerviewkt-1.0.3\AndroidManifest.xml:2:1-11:12
+MERGED from [com.amazonaws:aws-android-sdk-cognitoauth:2.17.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\fc22af491c29825b386c1f982d0bcf3b\transformed\jetified-aws-android-sdk-cognitoauth-2.17.1\AndroidManifest.xml:2:1-12:12
+MERGED from [com.amazonaws:aws-android-sdk-s3:2.17.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\c002037a926a0f431aa79afae03abe67\transformed\jetified-aws-android-sdk-s3-2.17.1\AndroidManifest.xml:2:1-13:12
+MERGED from [com.amazonaws:aws-android-sdk-mobile-client:2.17.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\40974a9efad4882ad620444432541047\transformed\jetified-aws-android-sdk-mobile-client-2.17.1\AndroidManifest.xml:2:1-21:12
+MERGED from [com.amazonaws:aws-android-sdk-auth-core:2.17.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f7761bf1107e92e7c1e000f0b0e0a6b5\transformed\jetified-aws-android-sdk-auth-core-2.17.1\AndroidManifest.xml:2:1-11:12
+MERGED from [com.amazonaws:aws-android-sdk-cognitoidentityprovider:2.17.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\1e7abe1b5ce3b28f41c04ea2358ec17c\transformed\jetified-aws-android-sdk-cognitoidentityprovider-2.17.1\AndroidManifest.xml:2:1-11:12
+MERGED from [com.amazonaws:aws-android-sdk-kms:2.17.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\1b03d42da8b0f9fc22cbfdfc6e7c464a\transformed\jetified-aws-android-sdk-kms-2.17.1\AndroidManifest.xml:2:1-11:12
+MERGED from [com.amazonaws:aws-android-sdk-core:2.17.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\bc07fc5e9ed6a8a25a861fa8fbcb3fa0\transformed\jetified-aws-android-sdk-core-2.17.1\AndroidManifest.xml:2:1-17:12
+MERGED from [com.github.mukeshsolanki:android-otpview-pinview:2.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f855d06037118bcdb18edf5841db8e5b\transformed\jetified-android-otpview-pinview-2.0.0\AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.firebase:firebase-core:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\0da354e958d1b6d87fd24c4c628a0638\transformed\jetified-firebase-core-20.1.1\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-crashlytics:18.2.9] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\b1b0d58c971f281f4385f0c2f2db85c0\transformed\jetified-firebase-crashlytics-18.2.9\AndroidManifest.xml:2:1-24:12
+MERGED from [com.android.billingclient:billing:3.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\ce3c015ea2c54c9a93588023cddb3157\transformed\jetified-billing-3.0.0\AndroidManifest.xml:2:1-23:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\1f614825c8d1edfd4e1ec11d665e5864\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.github.VictorAlbertos:RxActivityResult:0.4.5-2.x] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\12aeae6015e4f0871d609561c1bf37bf\transformed\jetified-RxActivityResult-0.4.5-2.x\AndroidManifest.xml:2:1-18:12
+MERGED from [com.github.tbruyelle:rxpermissions:0.10.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\d0220c794b18d3bc668533a35a6d5088\transformed\jetified-rxpermissions-0.10.2\AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.firebase:firebase-iid:20.0.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\c8523ce5abfb46664a8b5c076e67d2a2\transformed\jetified-firebase-iid-20.0.2\AndroidManifest.xml:17:1-47:12
+MERGED from [com.google.firebase:firebase-datatransport:17.0.3] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\fcb56d3992183e4db803751b5ef15a4b\transformed\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:15:1-34:12
+MERGED from [com.google.firebase:firebase-analytics:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\fb07043754f2f0d8624c80cab38fb90c\transformed\jetified-firebase-analytics-20.1.1\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-measurement-api:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\a9beb7abc78fd1dd2b3d64f87011ded0\transformed\jetified-play-services-measurement-api-20.1.1\AndroidManifest.xml:17:1-37:12
+MERGED from [com.google.firebase:firebase-installations:17.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\7e85c68396c4dec5933c571e677e4b3a\transformed\jetified-firebase-installations-17.0.1\AndroidManifest.xml:2:1-24:12
+MERGED from [com.google.firebase:firebase-common:20.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\1204bbffb2ce2b471fd28f9a00d72835\transformed\jetified-firebase-common-20.1.0\AndroidManifest.xml:15:1-40:12
+MERGED from [com.google.firebase:firebase-installations-interop:17.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\ddc408bc5a196ce9c0f9096086a70f18\transformed\jetified-firebase-installations-interop-17.0.1\AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\3b5f4d7eb6e1849f7bf6005dc4912da2\transformed\jetified-firebase-iid-interop-17.0.0\AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\426be32c99678b453b96dfd5f51d5a4c\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\a63b97201b3bfd750d6690007875f06c\transformed\jetified-play-services-tasks-18.0.1\AndroidManifest.xml:2:1-6:12
+MERGED from [com.google.android.gms:play-services-measurement:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\37a5283cf89f58af88783ad373f71705\transformed\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:17:1-46:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\03660850179d3b08563ece694a90bc0c\transformed\jetified-play-services-measurement-sdk-20.1.1\AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\4e0f7466019473c3a92ba3c5c3692499\transformed\jetified-play-services-measurement-impl-20.1.1\AndroidManifest.xml:17:1-32:12
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\dc179e663f1251fe8f5d8426a4d6425b\transformed\jetified-play-services-stats-17.0.2\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\5f53f3c3a61c75d37ec8df7858b7ad1d\transformed\jetified-play-services-ads-identifier-18.0.0\AndroidManifest.xml:17:1-27:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\ba711dac3433f0d813133a1e6c3d96c7\transformed\jetified-play-services-measurement-sdk-api-20.1.1\AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.android.gms:play-services-measurement-base:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\cb6f71f864ef61b71512eb43a9af7c4f\transformed\jetified-play-services-measurement-base-20.1.1\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\006eb6b7dafd64235ab4a2599cad70eb\transformed\jetified-firebase-measurement-connector-19.0.0\AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\b1a1b3a8752155d740f1090c8026cdc6\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:16:1-26:12
+MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\5de7997c43e8d03834ed306d4ec47950\transformed\fragment-1.3.6\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.2.4] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\8269cce71433e0efbe2f726b03235ae4\transformed\jetified-activity-1.2.4\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\6283188479877f2d93a73b22b1e3e439\transformed\jetified-emoji2-views-helper-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.emoji2:emoji2:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\3ba251be7074ff7289811e8b60079fa7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:17:1-37:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\c5e9068a7efefc5b4a851a5b1d7b5a75\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\b8013bbc5573fb50f80ec532fafba32d\transformed\drawerlayout-1.1.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\446094c26a51ac6704254a2e43552ca3\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\9836c6d1ae1c302ee4c8b9ab23cc5f93\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\6a6a2fea8a02cfcffb17f0794d9674e2\transformed\transition-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.media:media:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\d5af37a523396eda766484fd1e52f5aa\transformed\media-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\dc1c5ac8fbb8e1bf58260dbf2eb6901f\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\58c3c593ba8ff3d90019e7f5ac8f3600\transformed\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\5f0588f39a6079b431201173ab99cd30\transformed\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\2c454802a6b6a6883facb85d550fbf92\transformed\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\846edd73950e331783ab4e944af14e04\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\afb1ec9f4ce67826360ef85abd2f1658\transformed\customview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\99f7a2765135ac8ee7579972c04c9645\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\c49f354212178c1329fec8a20aeb3d71\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.browser:browser:1.2.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\7ae4109493f3ab8d433ebf30181fa4c9\transformed\browser-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.7.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\9c4e22e42005bcb3e83637a8ddcdd4ea\transformed\core-1.7.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\bd6f8a5f422760813be4e9ce705ac51f\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.databinding:viewbinding:7.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\6798c0dce130bd4becb2e61451c0b382\transformed\jetified-viewbinding-7.1.2\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\2f54f697c64db1d3a46d732cd1e27738\transformed\jetified-lifecycle-service-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\638236642757fd8cec76cc5b44636eb4\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:17:1-37:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\598f0211625c7c43149339dae7b8eb85\transformed\lifecycle-runtime-2.4.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\fd2dd980974d5991624b4924bf23779a\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\00c8972e88c9f9fba66757649ee78e62\transformed\jetified-lifecycle-viewmodel-savedstate-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\ed7e99736133f337c7109681b9eea7ac\transformed\jetified-savedstate-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\48c603a24ec54e1043df53a2ef99d7f2\transformed\lifecycle-viewmodel-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\d2dc4a02db0f9f39a8f6d2a8ed43441a\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite-framework:2.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f3848af058e9dc8711c64a511099d483\transformed\sqlite-framework-2.0.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite:2.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\38587e339248b63d2ccf9a3710402351\transformed\sqlite-2.0.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\593585899625b1d53630b867d5862da7\transformed\exifinterface-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.10.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\2df8ba6adcb6eb891eee3f5cc5b2d2b2\transformed\jetified-gifdecoder-4.10.0\AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\0a1f3b0bb48de590daaf1d19fded9112\transformed\jetified-transport-backend-cct-3.1.2\AndroidManifest.xml:15:1-38:12
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\8b0abcac592c8d3efd2db3e8774d2ad7\transformed\jetified-transport-runtime-3.1.2\AndroidManifest.xml:15:1-41:12
+MERGED from [com.google.android.datatransport:transport-api:3.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\54f1429e5876bc2264bc555e6dae0b8a\transformed\jetified-transport-api-3.0.0\AndroidManifest.xml:15:1-22:12
+MERGED from [com.google.firebase:firebase-components:17.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\de89c01b301fed2c07d5f90b2b1ccf91\transformed\jetified-firebase-components-17.0.0\AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\c008a987361416458c2ec5ca9ec40b5c\transformed\jetified-firebase-encoders-json-18.0.0\AndroidManifest.xml:15:1-23:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\2491a285123c03b2bd4c1c385096d6c7\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\519f688a915a75489908a58d734f562f\transformed\lifecycle-livedata-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\20d60bfea890a8ef6bce66798e9c17f2\transformed\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\e6f5d87926e5f81f2ab032c89bca31f6\transformed\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\a41bc89f13aa54124ad37e68550c599e\transformed\jetified-startup-runtime-1.0.0\AndroidManifest.xml:17:1-33:12
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\3f70d9c46383d121ebee5cffd79060ba\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\4b0ce48cc953f7e8de78e73c901caa1d\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\3dd8cee83650db95deccf65c5b0db5f9\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\34d9bf25df189ccc2b75d883ea09f964\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\6e757a5386791df1d9cb83a1e617aafb\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.futuremind.recyclerfastscroll:fastscroll:0.2.5] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\903784a601bcd5abc1bb349ab243cb4e\transformed\jetified-fastscroll-0.2.5\AndroidManifest.xml:2:1-13:12
+MERGED from [io.michaelrocks:libphonenumber-android:8.10.14] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\d258edb55311f80ee2db09f45d4d1617\transformed\jetified-libphonenumber-android-8.10.14\AndroidManifest.xml:2:1-11:12
+MERGED from [com.squareup.android:truststore:1.7.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\fe8f40f6ba7d0b2aaa176bd0dc58ad91\transformed\jetified-truststore-1.7.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.squareup.android:socket-factory:1.7.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\a6bf22736a8e413716e9c2256aa702c3\transformed\jetified-socket-factory-1.7.0\AndroidManifest.xml:2:1-9:12
+INJECTED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:2:1-218:12
+INJECTED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:2:1-218:12
+INJECTED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:2:1-218:12
+	package
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:4:5-24
+		INJECTED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml
+		INJECTED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:2:1-218:12
+		INJECTED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:2:1-218:12
+		INJECTED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:6:5-67
+MERGED from [com.squareup.sdk.in-app-payments:in-app-payments:1.4.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\9694499406274ee6b34ccd5272ad2e10\transformed\jetified-in-app-payments-1.4.0\AndroidManifest.xml:10:5-67
+MERGED from [com.squareup.sdk.in-app-payments:in-app-payments:1.4.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\9694499406274ee6b34ccd5272ad2e10\transformed\jetified-in-app-payments-1.4.0\AndroidManifest.xml:10:5-67
+MERGED from [com.github.miguelbcr:RxPaparazzo:0.6.1-2.x] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\07f925e258fd0138b967b2a602cb6b5b\transformed\jetified-RxPaparazzo-0.6.1-2.x\AndroidManifest.xml:13:5-67
+MERGED from [com.github.miguelbcr:RxPaparazzo:0.6.1-2.x] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\07f925e258fd0138b967b2a602cb6b5b\transformed\jetified-RxPaparazzo-0.6.1-2.x\AndroidManifest.xml:13:5-67
+MERGED from [com.amplifyframework:core:1.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\9236bf894856b18371b4628c09246dda\transformed\jetified-core-1.1.2\AndroidManifest.xml:25:5-67
+MERGED from [com.amplifyframework:core:1.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\9236bf894856b18371b4628c09246dda\transformed\jetified-core-1.1.2\AndroidManifest.xml:25:5-67
+MERGED from [com.itkacher.okhttpprofiler:okhttpprofiler:1.0.7] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\bd3e1fbad962edc47fdeafcece457d5f\transformed\jetified-okhttpprofiler-1.0.7\AndroidManifest.xml:11:5-67
+MERGED from [com.itkacher.okhttpprofiler:okhttpprofiler:1.0.7] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\bd3e1fbad962edc47fdeafcece457d5f\transformed\jetified-okhttpprofiler-1.0.7\AndroidManifest.xml:11:5-67
+MERGED from [com.amazonaws:aws-android-sdk-mobile-client:2.17.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\40974a9efad4882ad620444432541047\transformed\jetified-aws-android-sdk-mobile-client-2.17.1\AndroidManifest.xml:18:5-67
+MERGED from [com.amazonaws:aws-android-sdk-mobile-client:2.17.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\40974a9efad4882ad620444432541047\transformed\jetified-aws-android-sdk-mobile-client-2.17.1\AndroidManifest.xml:18:5-67
+MERGED from [com.google.firebase:firebase-crashlytics:18.2.9] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\b1b0d58c971f281f4385f0c2f2db85c0\transformed\jetified-firebase-crashlytics-18.2.9\AndroidManifest.xml:10:5-67
+MERGED from [com.google.firebase:firebase-crashlytics:18.2.9] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\b1b0d58c971f281f4385f0c2f2db85c0\transformed\jetified-firebase-crashlytics-18.2.9\AndroidManifest.xml:10:5-67
+MERGED from [com.google.firebase:firebase-iid:20.0.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\c8523ce5abfb46664a8b5c076e67d2a2\transformed\jetified-firebase-iid-20.0.2\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:20.0.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\c8523ce5abfb46664a8b5c076e67d2a2\transformed\jetified-firebase-iid-20.0.2\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\a9beb7abc78fd1dd2b3d64f87011ded0\transformed\jetified-play-services-measurement-api-20.1.1\AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\a9beb7abc78fd1dd2b3d64f87011ded0\transformed\jetified-play-services-measurement-api-20.1.1\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-installations:17.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\7e85c68396c4dec5933c571e677e4b3a\transformed\jetified-firebase-installations-17.0.1\AndroidManifest.xml:11:5-67
+MERGED from [com.google.firebase:firebase-installations:17.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\7e85c68396c4dec5933c571e677e4b3a\transformed\jetified-firebase-installations-17.0.1\AndroidManifest.xml:11:5-67
+MERGED from [com.google.android.gms:play-services-measurement:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\37a5283cf89f58af88783ad373f71705\transformed\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\37a5283cf89f58af88783ad373f71705\transformed\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\4e0f7466019473c3a92ba3c5c3692499\transformed\jetified-play-services-measurement-impl-20.1.1\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\4e0f7466019473c3a92ba3c5c3692499\transformed\jetified-play-services-measurement-impl-20.1.1\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\ba711dac3433f0d813133a1e6c3d96c7\transformed\jetified-play-services-measurement-sdk-api-20.1.1\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\ba711dac3433f0d813133a1e6c3d96c7\transformed\jetified-play-services-measurement-sdk-api-20.1.1\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\0a1f3b0bb48de590daaf1d19fded9112\transformed\jetified-transport-backend-cct-3.1.2\AndroidManifest.xml:26:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\0a1f3b0bb48de590daaf1d19fded9112\transformed\jetified-transport-backend-cct-3.1.2\AndroidManifest.xml:26:5-67
+	android:name
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:6:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:7:5-79
+MERGED from [com.squareup.sdk.in-app-payments:in-app-payments:1.4.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\9694499406274ee6b34ccd5272ad2e10\transformed\jetified-in-app-payments-1.4.0\AndroidManifest.xml:9:5-79
+MERGED from [com.squareup.sdk.in-app-payments:in-app-payments:1.4.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\9694499406274ee6b34ccd5272ad2e10\transformed\jetified-in-app-payments-1.4.0\AndroidManifest.xml:9:5-79
+MERGED from [com.amazonaws:aws-android-sdk-s3:2.17.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\c002037a926a0f431aa79afae03abe67\transformed\jetified-aws-android-sdk-s3-2.17.1\AndroidManifest.xml:11:5-79
+MERGED from [com.amazonaws:aws-android-sdk-s3:2.17.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\c002037a926a0f431aa79afae03abe67\transformed\jetified-aws-android-sdk-s3-2.17.1\AndroidManifest.xml:11:5-79
+MERGED from [com.amazonaws:aws-android-sdk-mobile-client:2.17.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\40974a9efad4882ad620444432541047\transformed\jetified-aws-android-sdk-mobile-client-2.17.1\AndroidManifest.xml:19:5-79
+MERGED from [com.amazonaws:aws-android-sdk-mobile-client:2.17.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\40974a9efad4882ad620444432541047\transformed\jetified-aws-android-sdk-mobile-client-2.17.1\AndroidManifest.xml:19:5-79
+MERGED from [com.google.firebase:firebase-iid:20.0.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\c8523ce5abfb46664a8b5c076e67d2a2\transformed\jetified-firebase-iid-20.0.2\AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:20.0.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\c8523ce5abfb46664a8b5c076e67d2a2\transformed\jetified-firebase-iid-20.0.2\AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\a9beb7abc78fd1dd2b3d64f87011ded0\transformed\jetified-play-services-measurement-api-20.1.1\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\a9beb7abc78fd1dd2b3d64f87011ded0\transformed\jetified-play-services-measurement-api-20.1.1\AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-installations:17.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\7e85c68396c4dec5933c571e677e4b3a\transformed\jetified-firebase-installations-17.0.1\AndroidManifest.xml:10:5-79
+MERGED from [com.google.firebase:firebase-installations:17.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\7e85c68396c4dec5933c571e677e4b3a\transformed\jetified-firebase-installations-17.0.1\AndroidManifest.xml:10:5-79
+MERGED from [com.google.android.gms:play-services-measurement:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\37a5283cf89f58af88783ad373f71705\transformed\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\37a5283cf89f58af88783ad373f71705\transformed\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\4e0f7466019473c3a92ba3c5c3692499\transformed\jetified-play-services-measurement-impl-20.1.1\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\4e0f7466019473c3a92ba3c5c3692499\transformed\jetified-play-services-measurement-impl-20.1.1\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\ba711dac3433f0d813133a1e6c3d96c7\transformed\jetified-play-services-measurement-sdk-api-20.1.1\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\ba711dac3433f0d813133a1e6c3d96c7\transformed\jetified-play-services-measurement-sdk-api-20.1.1\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\0a1f3b0bb48de590daaf1d19fded9112\transformed\jetified-transport-backend-cct-3.1.2\AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\0a1f3b0bb48de590daaf1d19fded9112\transformed\jetified-transport-backend-cct-3.1.2\AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\8b0abcac592c8d3efd2db3e8774d2ad7\transformed\jetified-transport-runtime-3.1.2\AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\8b0abcac592c8d3efd2db3e8774d2ad7\transformed\jetified-transport-runtime-3.1.2\AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:7:22-76
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:8:5-80
+MERGED from [com.github.miguelbcr:RxPaparazzo:0.6.1-2.x] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\07f925e258fd0138b967b2a602cb6b5b\transformed\jetified-RxPaparazzo-0.6.1-2.x\AndroidManifest.xml:11:5-80
+MERGED from [com.github.miguelbcr:RxPaparazzo:0.6.1-2.x] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\07f925e258fd0138b967b2a602cb6b5b\transformed\jetified-RxPaparazzo-0.6.1-2.x\AndroidManifest.xml:11:5-80
+	android:name
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:8:22-77
+uses-permission#android.permission.READ_PRIVILEGED_PHONE_STATE
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:9:5-86
+	android:name
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:9:22-83
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:10:5-12:40
+MERGED from [com.amplifyframework:aws-storage-s3:1.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\94a1a3284ada9fd0fafc1da8ad815c31\transformed\jetified-aws-storage-s3-1.1.2\AndroidManifest.xml:25:5-81
+MERGED from [com.amplifyframework:aws-storage-s3:1.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\94a1a3284ada9fd0fafc1da8ad815c31\transformed\jetified-aws-storage-s3-1.1.2\AndroidManifest.xml:25:5-81
+MERGED from [com.github.miguelbcr:RxPaparazzo:0.6.1-2.x] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\07f925e258fd0138b967b2a602cb6b5b\transformed\jetified-RxPaparazzo-0.6.1-2.x\AndroidManifest.xml:12:5-81
+MERGED from [com.github.miguelbcr:RxPaparazzo:0.6.1-2.x] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\07f925e258fd0138b967b2a602cb6b5b\transformed\jetified-RxPaparazzo-0.6.1-2.x\AndroidManifest.xml:12:5-81
+	tools:ignore
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:12:9-37
+	android:name
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:11:9-65
+uses-permission#android.permission.CAMERA
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:13:5-65
+	android:name
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:13:22-62
+uses-feature#android.hardware.camera.any
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:15:5-17:36
+	android:required
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:17:9-33
+	android:name
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:16:9-51
+uses-feature#android.hardware.camera.autofocus
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:18:5-20:36
+	android:required
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:20:9-33
+	android:name
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:19:9-57
+application
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:22:5-216:19
+MERGED from [com.stripe:stripe-android:16.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f3806ba53c5e4df8e0e7f0fbfde275ee\transformed\jetified-stripe-android-16.0.1\AndroidManifest.xml:11:5-34:19
+MERGED from [com.stripe:stripe-android:16.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f3806ba53c5e4df8e0e7f0fbfde275ee\transformed\jetified-stripe-android-16.0.1\AndroidManifest.xml:11:5-34:19
+MERGED from [com.squareup.sdk.in-app-payments:card-entry:1.4.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\979b44967fcb4549ffa1b210c3737091\transformed\jetified-card-entry-1.4.0\AndroidManifest.xml:9:5-15:19
+MERGED from [com.squareup.sdk.in-app-payments:card-entry:1.4.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\979b44967fcb4549ffa1b210c3737091\transformed\jetified-card-entry-1.4.0\AndroidManifest.xml:9:5-15:19
+MERGED from [com.stripe:stripe-3ds2-android:4.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\d7de162a1bf1b0b5aa355543f07c0c5f\transformed\jetified-stripe-3ds2-android-4.1.0\AndroidManifest.xml:11:5-18:19
+MERGED from [com.stripe:stripe-3ds2-android:4.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\d7de162a1bf1b0b5aa355543f07c0c5f\transformed\jetified-stripe-3ds2-android-4.1.0\AndroidManifest.xml:11:5-18:19
+MERGED from [com.google.android.material:material:1.5.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f466b20e46050bd7c1985c0533ac4e5a\transformed\material-1.5.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.5.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f466b20e46050bd7c1985c0533ac4e5a\transformed\material-1.5.0\AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\cbfacd264607d76419721363e70f7434\transformed\constraintlayout-2.1.3\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\cbfacd264607d76419721363e70f7434\transformed\constraintlayout-2.1.3\AndroidManifest.xml:9:5-20
+MERGED from [com.amplifyframework:aws-storage-s3:1.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\94a1a3284ada9fd0fafc1da8ad815c31\transformed\jetified-aws-storage-s3-1.1.2\AndroidManifest.xml:27:5-31:19
+MERGED from [com.amplifyframework:aws-storage-s3:1.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\94a1a3284ada9fd0fafc1da8ad815c31\transformed\jetified-aws-storage-s3-1.1.2\AndroidManifest.xml:27:5-31:19
+MERGED from [com.tbuonomo.andrui:viewpagerdotsindicator:3.0.3] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f7f6fc303f57198755ed71cc92f80bf8\transformed\jetified-viewpagerdotsindicator-3.0.3\AndroidManifest.xml:11:5-20
+MERGED from [com.tbuonomo.andrui:viewpagerdotsindicator:3.0.3] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f7f6fc303f57198755ed71cc92f80bf8\transformed\jetified-viewpagerdotsindicator-3.0.3\AndroidManifest.xml:11:5-20
+MERGED from [com.hbb20:ccp:2.3.5] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\d3efb621136d186dbfd39285999f0c64\transformed\jetified-ccp-2.3.5\AndroidManifest.xml:11:5-14:19
+MERGED from [com.hbb20:ccp:2.3.5] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\d3efb621136d186dbfd39285999f0c64\transformed\jetified-ccp-2.3.5\AndroidManifest.xml:11:5-14:19
+MERGED from [com.github.miguelbcr:RxPaparazzo:0.6.1-2.x] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\07f925e258fd0138b967b2a602cb6b5b\transformed\jetified-RxPaparazzo-0.6.1-2.x\AndroidManifest.xml:15:5-21:19
+MERGED from [com.github.miguelbcr:RxPaparazzo:0.6.1-2.x] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\07f925e258fd0138b967b2a602cb6b5b\transformed\jetified-RxPaparazzo-0.6.1-2.x\AndroidManifest.xml:15:5-21:19
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\8cadebd6d71b1603e948a60a260c3d5a\transformed\lifecycle-extensions-2.2.0\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\8cadebd6d71b1603e948a60a260c3d5a\transformed\lifecycle-extensions-2.2.0\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.room:room-runtime:2.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f844f564f64dda59c52ee833fe089957\transformed\room-runtime-2.1.0\AndroidManifest.xml:24:5-28:19
+MERGED from [androidx.room:room-runtime:2.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f844f564f64dda59c52ee833fe089957\transformed\room-runtime-2.1.0\AndroidManifest.xml:24:5-28:19
+MERGED from [com.chauthai.swipereveallayout:swipe-reveal-layout:1.4.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\3c285f4ec1a0735def6ca263c25b8cb9\transformed\jetified-swipe-reveal-layout-1.4.1\AndroidManifest.xml:12:5-20
+MERGED from [com.chauthai.swipereveallayout:swipe-reveal-layout:1.4.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\3c285f4ec1a0735def6ca263c25b8cb9\transformed\jetified-swipe-reveal-layout-1.4.1\AndroidManifest.xml:12:5-20
+MERGED from [com.squareup.sdk.in-app-payments:nonce-api:1.4.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\d440eb4c452a752e19f6eb576be33180\transformed\jetified-nonce-api-1.4.0\AndroidManifest.xml:9:5-14:19
+MERGED from [com.squareup.sdk.in-app-payments:nonce-api:1.4.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\d440eb4c452a752e19f6eb576be33180\transformed\jetified-nonce-api-1.4.0\AndroidManifest.xml:9:5-14:19
+MERGED from [com.github.bumptech.glide:glide:4.10.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\64de7e5a952d8e2be19431877f1ded77\transformed\jetified-glide-4.10.0\AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.10.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\64de7e5a952d8e2be19431877f1ded77\transformed\jetified-glide-4.10.0\AndroidManifest.xml:10:5-20
+MERGED from [com.google.firebase:firebase-messaging:20.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\1fa9a4264af207cdaf123d3dd881289b\transformed\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:22:5-42:19
+MERGED from [com.google.firebase:firebase-messaging:20.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\1fa9a4264af207cdaf123d3dd881289b\transformed\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:22:5-42:19
+MERGED from [com.amazonaws:aws-android-sdk-core:2.17.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\bc07fc5e9ed6a8a25a861fa8fbcb3fa0\transformed\jetified-aws-android-sdk-core-2.17.1\AndroidManifest.xml:11:5-15:19
+MERGED from [com.amazonaws:aws-android-sdk-core:2.17.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\bc07fc5e9ed6a8a25a861fa8fbcb3fa0\transformed\jetified-aws-android-sdk-core-2.17.1\AndroidManifest.xml:11:5-15:19
+MERGED from [com.google.firebase:firebase-core:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\0da354e958d1b6d87fd24c4c628a0638\transformed\jetified-firebase-core-20.1.1\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-core:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\0da354e958d1b6d87fd24c4c628a0638\transformed\jetified-firebase-core-20.1.1\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-crashlytics:18.2.9] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\b1b0d58c971f281f4385f0c2f2db85c0\transformed\jetified-firebase-crashlytics-18.2.9\AndroidManifest.xml:14:5-22:19
+MERGED from [com.google.firebase:firebase-crashlytics:18.2.9] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\b1b0d58c971f281f4385f0c2f2db85c0\transformed\jetified-firebase-crashlytics-18.2.9\AndroidManifest.xml:14:5-22:19
+MERGED from [com.android.billingclient:billing:3.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\ce3c015ea2c54c9a93588023cddb3157\transformed\jetified-billing-3.0.0\AndroidManifest.xml:12:5-21:19
+MERGED from [com.android.billingclient:billing:3.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\ce3c015ea2c54c9a93588023cddb3157\transformed\jetified-billing-3.0.0\AndroidManifest.xml:12:5-21:19
+MERGED from [com.github.VictorAlbertos:RxActivityResult:0.4.5-2.x] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\12aeae6015e4f0871d609561c1bf37bf\transformed\jetified-RxActivityResult-0.4.5-2.x\AndroidManifest.xml:11:5-16:19
+MERGED from [com.github.VictorAlbertos:RxActivityResult:0.4.5-2.x] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\12aeae6015e4f0871d609561c1bf37bf\transformed\jetified-RxActivityResult-0.4.5-2.x\AndroidManifest.xml:11:5-16:19
+MERGED from [com.github.tbruyelle:rxpermissions:0.10.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\d0220c794b18d3bc668533a35a6d5088\transformed\jetified-rxpermissions-0.10.2\AndroidManifest.xml:9:5-20
+MERGED from [com.github.tbruyelle:rxpermissions:0.10.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\d0220c794b18d3bc668533a35a6d5088\transformed\jetified-rxpermissions-0.10.2\AndroidManifest.xml:9:5-20
+MERGED from [com.google.firebase:firebase-iid:20.0.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\c8523ce5abfb46664a8b5c076e67d2a2\transformed\jetified-firebase-iid-20.0.2\AndroidManifest.xml:28:5-45:19
+MERGED from [com.google.firebase:firebase-iid:20.0.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\c8523ce5abfb46664a8b5c076e67d2a2\transformed\jetified-firebase-iid-20.0.2\AndroidManifest.xml:28:5-45:19
+MERGED from [com.google.firebase:firebase-datatransport:17.0.3] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\fcb56d3992183e4db803751b5ef15a4b\transformed\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:24:5-32:19
+MERGED from [com.google.firebase:firebase-datatransport:17.0.3] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\fcb56d3992183e4db803751b5ef15a4b\transformed\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:24:5-32:19
+MERGED from [com.google.firebase:firebase-analytics:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\fb07043754f2f0d8624c80cab38fb90c\transformed\jetified-firebase-analytics-20.1.1\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-analytics:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\fb07043754f2f0d8624c80cab38fb90c\transformed\jetified-firebase-analytics-20.1.1\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-api:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\a9beb7abc78fd1dd2b3d64f87011ded0\transformed\jetified-play-services-measurement-api-20.1.1\AndroidManifest.xml:27:5-35:19
+MERGED from [com.google.android.gms:play-services-measurement-api:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\a9beb7abc78fd1dd2b3d64f87011ded0\transformed\jetified-play-services-measurement-api-20.1.1\AndroidManifest.xml:27:5-35:19
+MERGED from [com.google.firebase:firebase-installations:17.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\7e85c68396c4dec5933c571e677e4b3a\transformed\jetified-firebase-installations-17.0.1\AndroidManifest.xml:14:5-22:19
+MERGED from [com.google.firebase:firebase-installations:17.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\7e85c68396c4dec5933c571e677e4b3a\transformed\jetified-firebase-installations-17.0.1\AndroidManifest.xml:14:5-22:19
+MERGED from [com.google.firebase:firebase-common:20.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\1204bbffb2ce2b471fd28f9a00d72835\transformed\jetified-firebase-common-20.1.0\AndroidManifest.xml:25:5-38:19
+MERGED from [com.google.firebase:firebase-common:20.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\1204bbffb2ce2b471fd28f9a00d72835\transformed\jetified-firebase-common-20.1.0\AndroidManifest.xml:25:5-38:19
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\3b5f4d7eb6e1849f7bf6005dc4912da2\transformed\jetified-firebase-iid-interop-17.0.0\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\3b5f4d7eb6e1849f7bf6005dc4912da2\transformed\jetified-firebase-iid-interop-17.0.0\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\426be32c99678b453b96dfd5f51d5a4c\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\426be32c99678b453b96dfd5f51d5a4c\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\a63b97201b3bfd750d6690007875f06c\transformed\jetified-play-services-tasks-18.0.1\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\a63b97201b3bfd750d6690007875f06c\transformed\jetified-play-services-tasks-18.0.1\AndroidManifest.xml:5:5-20
+MERGED from [com.google.android.gms:play-services-measurement:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\37a5283cf89f58af88783ad373f71705\transformed\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:28:5-44:19
+MERGED from [com.google.android.gms:play-services-measurement:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\37a5283cf89f58af88783ad373f71705\transformed\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:28:5-44:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\03660850179d3b08563ece694a90bc0c\transformed\jetified-play-services-measurement-sdk-20.1.1\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\03660850179d3b08563ece694a90bc0c\transformed\jetified-play-services-measurement-sdk-20.1.1\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\4e0f7466019473c3a92ba3c5c3692499\transformed\jetified-play-services-measurement-impl-20.1.1\AndroidManifest.xml:29:5-30:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\4e0f7466019473c3a92ba3c5c3692499\transformed\jetified-play-services-measurement-impl-20.1.1\AndroidManifest.xml:29:5-30:19
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\dc179e663f1251fe8f5d8426a4d6425b\transformed\jetified-play-services-stats-17.0.2\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\dc179e663f1251fe8f5d8426a4d6425b\transformed\jetified-play-services-stats-17.0.2\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\5f53f3c3a61c75d37ec8df7858b7ad1d\transformed\jetified-play-services-ads-identifier-18.0.0\AndroidManifest.xml:25:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\5f53f3c3a61c75d37ec8df7858b7ad1d\transformed\jetified-play-services-ads-identifier-18.0.0\AndroidManifest.xml:25:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\cb6f71f864ef61b71512eb43a9af7c4f\transformed\jetified-play-services-measurement-base-20.1.1\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\cb6f71f864ef61b71512eb43a9af7c4f\transformed\jetified-play-services-measurement-base-20.1.1\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\006eb6b7dafd64235ab4a2599cad70eb\transformed\jetified-firebase-measurement-connector-19.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\006eb6b7dafd64235ab4a2599cad70eb\transformed\jetified-firebase-measurement-connector-19.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\b1a1b3a8752155d740f1090c8026cdc6\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:20:5-24:19
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\b1a1b3a8752155d740f1090c8026cdc6\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:20:5-24:19
+MERGED from [androidx.emoji2:emoji2:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\3ba251be7074ff7289811e8b60079fa7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.emoji2:emoji2:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\3ba251be7074ff7289811e8b60079fa7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.core:core:1.7.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\9c4e22e42005bcb3e83637a8ddcdd4ea\transformed\core-1.7.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.7.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\9c4e22e42005bcb3e83637a8ddcdd4ea\transformed\core-1.7.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\bd6f8a5f422760813be4e9ce705ac51f\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\bd6f8a5f422760813be4e9ce705ac51f\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\638236642757fd8cec76cc5b44636eb4\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:25:5-35:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\638236642757fd8cec76cc5b44636eb4\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:25:5-35:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.10.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\2df8ba6adcb6eb891eee3f5cc5b2d2b2\transformed\jetified-gifdecoder-4.10.0\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.10.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\2df8ba6adcb6eb891eee3f5cc5b2d2b2\transformed\jetified-gifdecoder-4.10.0\AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\0a1f3b0bb48de590daaf1d19fded9112\transformed\jetified-transport-backend-cct-3.1.2\AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\0a1f3b0bb48de590daaf1d19fded9112\transformed\jetified-transport-backend-cct-3.1.2\AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\8b0abcac592c8d3efd2db3e8774d2ad7\transformed\jetified-transport-runtime-3.1.2\AndroidManifest.xml:25:5-39:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\8b0abcac592c8d3efd2db3e8774d2ad7\transformed\jetified-transport-runtime-3.1.2\AndroidManifest.xml:25:5-39:19
+MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\a41bc89f13aa54124ad37e68550c599e\transformed\jetified-startup-runtime-1.0.0\AndroidManifest.xml:25:5-31:19
+MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\a41bc89f13aa54124ad37e68550c599e\transformed\jetified-startup-runtime-1.0.0\AndroidManifest.xml:25:5-31:19
+MERGED from [com.futuremind.recyclerfastscroll:fastscroll:0.2.5] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\903784a601bcd5abc1bb349ab243cb4e\transformed\jetified-fastscroll-0.2.5\AndroidManifest.xml:11:5-20
+MERGED from [com.futuremind.recyclerfastscroll:fastscroll:0.2.5] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\903784a601bcd5abc1bb349ab243cb4e\transformed\jetified-fastscroll-0.2.5\AndroidManifest.xml:11:5-20
+MERGED from [com.squareup.android:truststore:1.7.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\fe8f40f6ba7d0b2aaa176bd0dc58ad91\transformed\jetified-truststore-1.7.0\AndroidManifest.xml:7:5-20
+MERGED from [com.squareup.android:truststore:1.7.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\fe8f40f6ba7d0b2aaa176bd0dc58ad91\transformed\jetified-truststore-1.7.0\AndroidManifest.xml:7:5-20
+MERGED from [com.squareup.android:socket-factory:1.7.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\a6bf22736a8e413716e9c2256aa702c3\transformed\jetified-socket-factory-1.7.0\AndroidManifest.xml:7:5-20
+MERGED from [com.squareup.android:socket-factory:1.7.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\a6bf22736a8e413716e9c2256aa702c3\transformed\jetified-socket-factory-1.7.0\AndroidManifest.xml:7:5-20
+	android:requestLegacyExternalStorage
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:28:9-52
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.7.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\9c4e22e42005bcb3e83637a8ddcdd4ea\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:30:9-35
+	android:label
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:26:9-41
+	tools:ignore
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:32:9-39
+	android:roundIcon
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:29:9-51
+	android:icon
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:25:9-40
+	android:allowBackup
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:24:9-36
+	android:theme
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:31:9-40
+	android:networkSecurityConfig
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:27:9-69
+	android:name
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:23:9-39
+activity#com.usend.views.home.SquareUpActivity
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:33:9-35:40
+	android:exported
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:35:13-37
+	android:name
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:34:13-56
+activity#com.usend.views.ConciergeForGuestActivity
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:36:9-69
+	android:name
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:36:19-66
+activity#com.usend.views.home.SelectSavedCardActivity
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:37:9-72
+	android:name
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:37:19-69
+activity#com.usend.views.home.AutoShipMethodsActivity
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:38:9-72
+	android:name
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:38:19-69
+activity#com.usend.views.home.AutoShipActivity
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:39:9-65
+	android:name
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:39:19-62
+activity#com.usend.views.home.ShippingCostActivity
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:40:9-43:55
+	android:screenOrientation
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:42:13-45
+	android:windowSoftInputMode
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:43:13-52
+	android:name
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:41:13-60
+activity#com.usend.views.userauth.OtpVerificationActivity
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:44:9-47:55
+	android:screenOrientation
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:46:13-45
+	android:windowSoftInputMode
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:47:13-52
+	android:name
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:45:13-67
+activity#com.usend.views.home.ChangePasswordActivity
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:48:9-51:55
+	android:screenOrientation
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:50:13-45
+	android:windowSoftInputMode
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:51:13-52
+	android:name
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:49:13-62
+activity#com.usend.views.home.NotificationActivity
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:52:9-55:55
+	android:screenOrientation
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:54:13-45
+	android:windowSoftInputMode
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:55:13-52
+	android:name
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:53:13-60
+activity#com.usend.views.home.WebViewActivity
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:56:9-59:55
+	android:screenOrientation
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:58:13-45
+	android:windowSoftInputMode
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:59:13-52
+	android:name
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:57:13-55
+activity#com.usend.views.home.SavedCardsActivity
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:60:9-63:55
+	android:screenOrientation
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:62:13-45
+	android:windowSoftInputMode
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:63:13-52
+	android:name
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:61:13-58
+activity#com.usend.views.home.ShippingAddressActivity
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:64:9-67:55
+	android:screenOrientation
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:66:13-45
+	android:windowSoftInputMode
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:67:13-52
+	android:name
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:65:13-63
+activity#com.usend.views.home.VerificationStatusActivity
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:68:9-71:55
+	android:screenOrientation
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:70:13-45
+	android:windowSoftInputMode
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:71:13-52
+	android:name
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:69:13-66
+activity#com.usend.views.home.USPSVerificationActivity
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:72:9-75:55
+	android:screenOrientation
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:74:13-45
+	android:windowSoftInputMode
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:75:13-52
+	android:name
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:73:13-64
+activity#com.usend.views.home.ProhibitedItemsActivity
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:76:9-79:55
+	android:screenOrientation
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:78:13-45
+	android:windowSoftInputMode
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:79:13-52
+	android:name
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:77:13-63
+activity#com.usend.views.home.ContactUsActivity
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:80:9-83:55
+	android:screenOrientation
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:82:13-45
+	android:windowSoftInputMode
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:83:13-52
+	android:name
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:81:13-57
+activity#com.usend.views.home.EditProfileActivity
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:84:9-87:55
+	android:screenOrientation
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:86:13-45
+	android:windowSoftInputMode
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:87:13-52
+	android:name
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:85:13-59
+activity#com.usend.views.home.CreateNewReqActivity
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:88:9-91:55
+	android:screenOrientation
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:90:13-45
+	android:windowSoftInputMode
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:91:13-52
+	android:name
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:89:13-60
+activity#com.usend.views.home.ConciergeItemDetailActivity
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:92:9-95:55
+	android:screenOrientation
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:94:13-45
+	android:windowSoftInputMode
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:95:13-52
+	android:name
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:93:13-67
+activity#com.usend.views.home.OrderDetailsActivity
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:96:9-99:55
+	android:screenOrientation
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:98:13-45
+	android:windowSoftInputMode
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:99:13-52
+	android:name
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:97:13-60
+activity#com.usend.views.home.PaymentSuccessfulActivity
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:100:9-103:55
+	android:screenOrientation
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:102:13-45
+	android:windowSoftInputMode
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:103:13-52
+	android:name
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:101:13-65
+activity#com.usend.views.home.SavedPaymentMethodsActivity
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:104:9-107:55
+	android:screenOrientation
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:106:13-45
+	android:windowSoftInputMode
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:107:13-52
+	android:name
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:105:13-67
+activity#com.usend.views.home.AddCardActivity
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:108:9-111:55
+	android:screenOrientation
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:110:13-45
+	android:windowSoftInputMode
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:111:13-52
+	android:name
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:109:13-55
+activity#com.usend.views.home.PaymentMethodActivity
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:112:9-115:55
+	android:screenOrientation
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:114:13-45
+	android:windowSoftInputMode
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:115:13-52
+	android:name
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:113:13-61
+activity#com.usend.views.home.ShippingDetailsActivity
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:116:9-119:55
+	android:screenOrientation
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:118:13-45
+	android:windowSoftInputMode
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:119:13-52
+	android:name
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:117:13-63
+activity#com.usend.views.home.ShippingMethodActivity
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:120:9-123:55
+	android:screenOrientation
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:122:13-45
+	android:windowSoftInputMode
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:123:13-52
+	android:name
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:121:13-62
+activity#com.usend.views.home.AddNewAddressActivity
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:124:9-127:55
+	android:screenOrientation
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:126:13-45
+	android:windowSoftInputMode
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:127:13-52
+	android:name
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:125:13-61
+activity#com.usend.views.home.ShipToAddressActivity
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:128:9-131:55
+	android:screenOrientation
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:130:13-45
+	android:windowSoftInputMode
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:131:13-52
+	android:name
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:129:13-61
+activity#com.usend.views.home.PackageDetailActivity
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:132:9-135:55
+	android:screenOrientation
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:134:13-45
+	android:windowSoftInputMode
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:135:13-52
+	android:name
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:133:13-61
+activity#com.usend.views.userauth.ForgotPasswordActivity
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:136:9-139:55
+	android:screenOrientation
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:138:13-45
+	android:windowSoftInputMode
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:139:13-52
+	android:name
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:137:13-66
+activity#com.usend.views.userauth.RegionSelectionActivity
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:140:9-143:55
+	android:screenOrientation
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:142:13-45
+	android:windowSoftInputMode
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:143:13-52
+	android:name
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:141:13-67
+activity#com.usend.views.userauth.PaymentInfoActivity
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:144:9-147:55
+	android:screenOrientation
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:146:13-45
+	android:windowSoftInputMode
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:147:13-52
+	android:name
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:145:13-63
+activity#com.usend.views.userauth.BillingAddressActivity
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:148:9-151:55
+	android:screenOrientation
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:150:13-45
+	android:windowSoftInputMode
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:151:13-52
+	android:name
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:149:13-66
+activity#com.usend.views.userauth.SignUpActivity
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:152:9-155:58
+	android:screenOrientation
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:154:13-45
+	android:windowSoftInputMode
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:155:13-55
+	android:name
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:153:13-58
+activity#com.usend.views.userauth.SignInActivity
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:156:9-159:55
+	android:screenOrientation
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:158:13-45
+	android:windowSoftInputMode
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:159:13-52
+	android:name
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:157:13-58
+activity#com.usend.views.MainActivity
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:160:9-163:55
+	android:screenOrientation
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:162:13-45
+	android:windowSoftInputMode
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:163:13-52
+	android:name
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:161:13-47
+activity#com.usend.views.userauth.IntroActivity
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:164:9-167:55
+	android:screenOrientation
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:166:13-45
+	android:windowSoftInputMode
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:167:13-52
+	android:name
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:165:13-57
+activity#com.usend.views.SplashActivity
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:168:9-178:20
+	android:screenOrientation
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:171:13-45
+	android:windowSoftInputMode
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:172:13-60
+	android:exported
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:170:13-36
+	android:name
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:169:13-49
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:173:13-177:29
+action#android.intent.action.MAIN
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:174:17-69
+	android:name
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:174:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:176:17-77
+	android:name
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:176:27-74
+service#com.usend.fcm.MyFirebaseMessagingService
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:179:9-185:19
+	android:exported
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:181:13-37
+	android:name
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:180:13-59
+intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:182:13-184:29
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:183:17-78
+	android:name
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:183:25-75
+provider#androidx.core.content.FileProvider
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:187:9-195:20
+	android:grantUriPermissions
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:191:13-47
+	android:authorities
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:189:13-58
+	android:exported
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:190:13-37
+	android:name
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:188:13-62
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:192:13-194:63
+	android:resource
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:194:17-60
+	android:name
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:193:17-67
+meta-data#com.google.firebase.messaging.default_notification_icon
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:200:9-202:68
+	android:resource
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:202:13-65
+	android:name
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:201:13-83
+meta-data#sqip.SQUARE_APPLICATION_ID
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:207:9-209:69
+	android:value
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:209:13-66
+	android:name
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:208:13-54
+meta-data#com.google.android.gms.version
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:210:9-212:69
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\b1a1b3a8752155d740f1090c8026cdc6\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\b1a1b3a8752155d740f1090c8026cdc6\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:21:9-23:69
+	android:value
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:212:13-66
+	android:name
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:211:13-58
+meta-data#com.google.firebase.messaging.default_notification_color
+ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:213:9-215:53
+	android:resource
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:215:13-50
+	android:name
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml:214:13-84
+uses-sdk
+INJECTED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml
+INJECTED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml
+MERGED from [androidx.databinding:databinding-adapters:7.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\06a51d46afc7bf31d6f3c1910a31f8c8\transformed\databinding-adapters-7.1.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.databinding:databinding-adapters:7.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\06a51d46afc7bf31d6f3c1910a31f8c8\transformed\databinding-adapters-7.1.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.databinding:databinding-ktx:7.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\25cd6d2bbe99f933dc2a607f82c0449b\transformed\jetified-databinding-ktx-7.1.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.databinding:databinding-ktx:7.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\25cd6d2bbe99f933dc2a607f82c0449b\transformed\jetified-databinding-ktx-7.1.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.databinding:databinding-runtime:7.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\ba0390927ae57613cf9b7ed94732e1d2\transformed\databinding-runtime-7.1.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.databinding:databinding-runtime:7.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\ba0390927ae57613cf9b7ed94732e1d2\transformed\databinding-runtime-7.1.2\AndroidManifest.xml:20:5-22:41
+MERGED from [:network] D:\EliteUSAFashion-SCMS-UpdatedCode\network\build\intermediates\merged_manifest\debug\AndroidManifest.xml:6:5-8:41
+MERGED from [:network] D:\EliteUSAFashion-SCMS-UpdatedCode\network\build\intermediates\merged_manifest\debug\AndroidManifest.xml:6:5-8:41
+MERGED from [com.stripe:stripe-android:16.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f3806ba53c5e4df8e0e7f0fbfde275ee\transformed\jetified-stripe-android-16.0.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.stripe:stripe-android:16.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f3806ba53c5e4df8e0e7f0fbfde275ee\transformed\jetified-stripe-android-16.0.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.squareup.sdk.in-app-payments:card-entry:1.4.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\979b44967fcb4549ffa1b210c3737091\transformed\jetified-card-entry-1.4.0\AndroidManifest.xml:7:5-44
+MERGED from [com.squareup.sdk.in-app-payments:card-entry:1.4.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\979b44967fcb4549ffa1b210c3737091\transformed\jetified-card-entry-1.4.0\AndroidManifest.xml:7:5-44
+MERGED from [com.squareup.sdk.in-app-payments:in-app-payments:1.4.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\9694499406274ee6b34ccd5272ad2e10\transformed\jetified-in-app-payments-1.4.0\AndroidManifest.xml:7:5-44
+MERGED from [com.squareup.sdk.in-app-payments:in-app-payments:1.4.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\9694499406274ee6b34ccd5272ad2e10\transformed\jetified-in-app-payments-1.4.0\AndroidManifest.xml:7:5-44
+MERGED from [com.stripe:stripe-3ds2-android:4.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\d7de162a1bf1b0b5aa355543f07c0c5f\transformed\jetified-stripe-3ds2-android-4.1.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.stripe:stripe-3ds2-android:4.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\d7de162a1bf1b0b5aa355543f07c0c5f\transformed\jetified-stripe-3ds2-android-4.1.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.material:material:1.5.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f466b20e46050bd7c1985c0533ac4e5a\transformed\material-1.5.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.5.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f466b20e46050bd7c1985c0533ac4e5a\transformed\material-1.5.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\cbfacd264607d76419721363e70f7434\transformed\constraintlayout-2.1.3\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.1.3] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\cbfacd264607d76419721363e70f7434\transformed\constraintlayout-2.1.3\AndroidManifest.xml:5:5-7:41
+MERGED from [com.amplifyframework:aws-auth-cognito:1.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\976cf09cdb25c336c8e41728a77ca0f9\transformed\jetified-aws-auth-cognito-1.1.2\AndroidManifest.xml:21:5-23:41
+MERGED from [com.amplifyframework:aws-auth-cognito:1.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\976cf09cdb25c336c8e41728a77ca0f9\transformed\jetified-aws-auth-cognito-1.1.2\AndroidManifest.xml:21:5-23:41
+MERGED from [com.amplifyframework:aws-storage-s3:1.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\94a1a3284ada9fd0fafc1da8ad815c31\transformed\jetified-aws-storage-s3-1.1.2\AndroidManifest.xml:21:5-23:41
+MERGED from [com.amplifyframework:aws-storage-s3:1.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\94a1a3284ada9fd0fafc1da8ad815c31\transformed\jetified-aws-storage-s3-1.1.2\AndroidManifest.xml:21:5-23:41
+MERGED from [com.tbuonomo.andrui:viewpagerdotsindicator:3.0.3] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f7f6fc303f57198755ed71cc92f80bf8\transformed\jetified-viewpagerdotsindicator-3.0.3\AndroidManifest.xml:7:5-9:41
+MERGED from [com.tbuonomo.andrui:viewpagerdotsindicator:3.0.3] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f7f6fc303f57198755ed71cc92f80bf8\transformed\jetified-viewpagerdotsindicator-3.0.3\AndroidManifest.xml:7:5-9:41
+MERGED from [com.hbb20:ccp:2.3.5] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\d3efb621136d186dbfd39285999f0c64\transformed\jetified-ccp-2.3.5\AndroidManifest.xml:7:5-9:41
+MERGED from [com.hbb20:ccp:2.3.5] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\d3efb621136d186dbfd39285999f0c64\transformed\jetified-ccp-2.3.5\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.preference:preference-ktx:1.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\00a99b39ebc0a9b1365a85a2a8067669\transformed\jetified-preference-ktx-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.preference:preference-ktx:1.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\00a99b39ebc0a9b1365a85a2a8067669\transformed\jetified-preference-ktx-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.preference:preference:1.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\a42e7b86f1a30e112e23e969b6f8bbb2\transformed\preference-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.preference:preference:1.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\a42e7b86f1a30e112e23e969b6f8bbb2\transformed\preference-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.miguelbcr:RxPaparazzo:0.6.1-2.x] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\07f925e258fd0138b967b2a602cb6b5b\transformed\jetified-RxPaparazzo-0.6.1-2.x\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.miguelbcr:RxPaparazzo:0.6.1-2.x] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\07f925e258fd0138b967b2a602cb6b5b\transformed\jetified-RxPaparazzo-0.6.1-2.x\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.yalantis:ucrop:2.2.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\1d843c52a1f817bc96b618f8f45693c1\transformed\jetified-ucrop-2.2.2\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.yalantis:ucrop:2.2.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\1d843c52a1f817bc96b618f8f45693c1\transformed\jetified-ucrop-2.2.2\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.appcompat:appcompat:1.4.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\680047c22fad7c16a8eea6a0e571fb1f\transformed\appcompat-1.4.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.4.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\680047c22fad7c16a8eea6a0e571fb1f\transformed\appcompat-1.4.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment-ktx:1.2.5] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\60fbd8f9a36a3d925074d0a9ad49192c\transformed\jetified-fragment-ktx-1.2.5\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment-ktx:1.2.5] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\60fbd8f9a36a3d925074d0a9ad49192c\transformed\jetified-fragment-ktx-1.2.5\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-ktx:1.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f9b2374361620cdbedfdbb19a99501e9\transformed\jetified-activity-ktx-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-ktx:1.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f9b2374361620cdbedfdbb19a99501e9\transformed\jetified-activity-ktx-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-ktx:1.7.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\814cc14bc7b8db5de7ed35dca6586237\transformed\jetified-core-ktx-1.7.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.7.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\814cc14bc7b8db5de7ed35dca6586237\transformed\jetified-core-ktx-1.7.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\8cadebd6d71b1603e948a60a260c3d5a\transformed\lifecycle-extensions-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\8cadebd6d71b1603e948a60a260c3d5a\transformed\lifecycle-extensions-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.2.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\221996dae93db390f3c194c2faace93e\transformed\jetified-lifecycle-runtime-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.2.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\221996dae93db390f3c194c2faace93e\transformed\jetified-lifecycle-runtime-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\eb3b822013edf93a6a7b67d12bf5f5a0\transformed\jetified-lifecycle-viewmodel-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\eb3b822013edf93a6a7b67d12bf5f5a0\transformed\jetified-lifecycle-viewmodel-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-runtime:2.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f844f564f64dda59c52ee833fe089957\transformed\room-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-runtime:2.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f844f564f64dda59c52ee833fe089957\transformed\room-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.chauthai.swipereveallayout:swipe-reveal-layout:1.4.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\3c285f4ec1a0735def6ca263c25b8cb9\transformed\jetified-swipe-reveal-layout-1.4.1\AndroidManifest.xml:8:5-10:41
+MERGED from [com.chauthai.swipereveallayout:swipe-reveal-layout:1.4.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\3c285f4ec1a0735def6ca263c25b8cb9\transformed\jetified-swipe-reveal-layout-1.4.1\AndroidManifest.xml:8:5-10:41
+MERGED from [com.amplifyframework:core:1.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\9236bf894856b18371b4628c09246dda\transformed\jetified-core-1.1.2\AndroidManifest.xml:21:5-23:41
+MERGED from [com.amplifyframework:core:1.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\9236bf894856b18371b4628c09246dda\transformed\jetified-core-1.1.2\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\e6b7ba10f237a0981288f624782205cb\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\e6b7ba10f237a0981288f624782205cb\transformed\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.2.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\78e3f80c586647386a0fb4a177284965\transformed\jetified-lifecycle-livedata-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.2.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\78e3f80c586647386a0fb4a177284965\transformed\jetified-lifecycle-livedata-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.squareup.sdk.in-app-payments:nonce-api:1.4.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\d440eb4c452a752e19f6eb576be33180\transformed\jetified-nonce-api-1.4.0\AndroidManifest.xml:7:5-44
+MERGED from [com.squareup.sdk.in-app-payments:nonce-api:1.4.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\d440eb4c452a752e19f6eb576be33180\transformed\jetified-nonce-api-1.4.0\AndroidManifest.xml:7:5-44
+MERGED from [com.itkacher.okhttpprofiler:okhttpprofiler:1.0.7] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\bd3e1fbad962edc47fdeafcece457d5f\transformed\jetified-okhttpprofiler-1.0.7\AndroidManifest.xml:7:5-9:41
+MERGED from [com.itkacher.okhttpprofiler:okhttpprofiler:1.0.7] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\bd3e1fbad962edc47fdeafcece457d5f\transformed\jetified-okhttpprofiler-1.0.7\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.2.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\fe985445fd1f5f9db541d9468977fefc\transformed\jetified-lifecycle-livedata-core-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.2.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\fe985445fd1f5f9db541d9468977fefc\transformed\jetified-lifecycle-livedata-core-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.4.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\b222b8cf7d35749a50c676b9b6f23543\transformed\jetified-appcompat-resources-1.4.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.4.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\b222b8cf7d35749a50c676b9b6f23543\transformed\jetified-appcompat-resources-1.4.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.bumptech.glide:glide:4.10.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\64de7e5a952d8e2be19431877f1ded77\transformed\jetified-glide-4.10.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.10.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\64de7e5a952d8e2be19431877f1ded77\transformed\jetified-glide-4.10.0\AndroidManifest.xml:6:5-8:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\4ecca0c5cadc78d66b6cd104339a18c5\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\4ecca0c5cadc78d66b6cd104339a18c5\transformed\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\fbaf3d587b7a16e910b4a2c1101bdf7e\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\fbaf3d587b7a16e910b4a2c1101bdf7e\transformed\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [io.reactivex.rxjava2:rxandroid:2.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\d41d19704fb4525a9ea9eb57bd00335f\transformed\jetified-rxandroid-2.1.0\AndroidManifest.xml:18:5-43
+MERGED from [io.reactivex.rxjava2:rxandroid:2.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\d41d19704fb4525a9ea9eb57bd00335f\transformed\jetified-rxandroid-2.1.0\AndroidManifest.xml:18:5-43
+MERGED from [com.google.firebase:firebase-messaging:20.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\1fa9a4264af207cdaf123d3dd881289b\transformed\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:20.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\1fa9a4264af207cdaf123d3dd881289b\transformed\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.multidex:multidex:2.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\e346634f872b4efa4e5350ba3c2331dd\transformed\multidex-2.0.1\AndroidManifest.xml:20:5-43
+MERGED from [androidx.multidex:multidex:2.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\e346634f872b4efa4e5350ba3c2331dd\transformed\multidex-2.0.1\AndroidManifest.xml:20:5-43
+MERGED from [:customprogressdialog-1.0.2] D:\EliteUSAFashion-SCMS-UpdatedCode\customprogressdialog-1.0.2\build\.transforms\28550222beabbf1e09f84c1e4c463d01\transformed\jetified-customprogressdialog-1.0.2\AndroidManifest.xml:7:5-9:41
+MERGED from [:customprogressdialog-1.0.2] D:\EliteUSAFashion-SCMS-UpdatedCode\customprogressdialog-1.0.2\build\.transforms\28550222beabbf1e09f84c1e4c463d01\transformed\jetified-customprogressdialog-1.0.2\AndroidManifest.xml:7:5-9:41
+MERGED from [:imagepickerviewkt-1.0.3] D:\EliteUSAFashion-SCMS-UpdatedCode\imagepickerviewkt-1.0.3\build\.transforms\9223105df6f76ca73627259285df0e09\transformed\jetified-imagepickerviewkt-1.0.3\AndroidManifest.xml:7:5-9:41
+MERGED from [:imagepickerviewkt-1.0.3] D:\EliteUSAFashion-SCMS-UpdatedCode\imagepickerviewkt-1.0.3\build\.transforms\9223105df6f76ca73627259285df0e09\transformed\jetified-imagepickerviewkt-1.0.3\AndroidManifest.xml:7:5-9:41
+MERGED from [com.amazonaws:aws-android-sdk-cognitoauth:2.17.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\fc22af491c29825b386c1f982d0bcf3b\transformed\jetified-aws-android-sdk-cognitoauth-2.17.1\AndroidManifest.xml:8:5-10:41
+MERGED from [com.amazonaws:aws-android-sdk-cognitoauth:2.17.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\fc22af491c29825b386c1f982d0bcf3b\transformed\jetified-aws-android-sdk-cognitoauth-2.17.1\AndroidManifest.xml:8:5-10:41
+MERGED from [com.amazonaws:aws-android-sdk-s3:2.17.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\c002037a926a0f431aa79afae03abe67\transformed\jetified-aws-android-sdk-s3-2.17.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.amazonaws:aws-android-sdk-s3:2.17.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\c002037a926a0f431aa79afae03abe67\transformed\jetified-aws-android-sdk-s3-2.17.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.amazonaws:aws-android-sdk-mobile-client:2.17.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\40974a9efad4882ad620444432541047\transformed\jetified-aws-android-sdk-mobile-client-2.17.1\AndroidManifest.xml:13:5-16:96
+MERGED from [com.amazonaws:aws-android-sdk-mobile-client:2.17.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\40974a9efad4882ad620444432541047\transformed\jetified-aws-android-sdk-mobile-client-2.17.1\AndroidManifest.xml:13:5-16:96
+MERGED from [com.amazonaws:aws-android-sdk-auth-core:2.17.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f7761bf1107e92e7c1e000f0b0e0a6b5\transformed\jetified-aws-android-sdk-auth-core-2.17.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.amazonaws:aws-android-sdk-auth-core:2.17.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f7761bf1107e92e7c1e000f0b0e0a6b5\transformed\jetified-aws-android-sdk-auth-core-2.17.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.amazonaws:aws-android-sdk-cognitoidentityprovider:2.17.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\1e7abe1b5ce3b28f41c04ea2358ec17c\transformed\jetified-aws-android-sdk-cognitoidentityprovider-2.17.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.amazonaws:aws-android-sdk-cognitoidentityprovider:2.17.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\1e7abe1b5ce3b28f41c04ea2358ec17c\transformed\jetified-aws-android-sdk-cognitoidentityprovider-2.17.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.amazonaws:aws-android-sdk-kms:2.17.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\1b03d42da8b0f9fc22cbfdfc6e7c464a\transformed\jetified-aws-android-sdk-kms-2.17.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.amazonaws:aws-android-sdk-kms:2.17.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\1b03d42da8b0f9fc22cbfdfc6e7c464a\transformed\jetified-aws-android-sdk-kms-2.17.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.amazonaws:aws-android-sdk-core:2.17.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\bc07fc5e9ed6a8a25a861fa8fbcb3fa0\transformed\jetified-aws-android-sdk-core-2.17.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.amazonaws:aws-android-sdk-core:2.17.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\bc07fc5e9ed6a8a25a861fa8fbcb3fa0\transformed\jetified-aws-android-sdk-core-2.17.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.mukeshsolanki:android-otpview-pinview:2.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f855d06037118bcdb18edf5841db8e5b\transformed\jetified-android-otpview-pinview-2.0.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.mukeshsolanki:android-otpview-pinview:2.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f855d06037118bcdb18edf5841db8e5b\transformed\jetified-android-otpview-pinview-2.0.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:firebase-core:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\0da354e958d1b6d87fd24c4c628a0638\transformed\jetified-firebase-core-20.1.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-core:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\0da354e958d1b6d87fd24c4c628a0638\transformed\jetified-firebase-core-20.1.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-crashlytics:18.2.9] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\b1b0d58c971f281f4385f0c2f2db85c0\transformed\jetified-firebase-crashlytics-18.2.9\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-crashlytics:18.2.9] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\b1b0d58c971f281f4385f0c2f2db85c0\transformed\jetified-firebase-crashlytics-18.2.9\AndroidManifest.xml:6:5-8:41
+MERGED from [com.android.billingclient:billing:3.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\ce3c015ea2c54c9a93588023cddb3157\transformed\jetified-billing-3.0.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.android.billingclient:billing:3.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\ce3c015ea2c54c9a93588023cddb3157\transformed\jetified-billing-3.0.0\AndroidManifest.xml:6:5-8:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\1f614825c8d1edfd4e1ec11d665e5864\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\1f614825c8d1edfd4e1ec11d665e5864\transformed\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.VictorAlbertos:RxActivityResult:0.4.5-2.x] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\12aeae6015e4f0871d609561c1bf37bf\transformed\jetified-RxActivityResult-0.4.5-2.x\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.VictorAlbertos:RxActivityResult:0.4.5-2.x] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\12aeae6015e4f0871d609561c1bf37bf\transformed\jetified-RxActivityResult-0.4.5-2.x\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.tbruyelle:rxpermissions:0.10.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\d0220c794b18d3bc668533a35a6d5088\transformed\jetified-rxpermissions-0.10.2\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.tbruyelle:rxpermissions:0.10.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\d0220c794b18d3bc668533a35a6d5088\transformed\jetified-rxpermissions-0.10.2\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-iid:20.0.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\c8523ce5abfb46664a8b5c076e67d2a2\transformed\jetified-firebase-iid-20.0.2\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:20.0.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\c8523ce5abfb46664a8b5c076e67d2a2\transformed\jetified-firebase-iid-20.0.2\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-datatransport:17.0.3] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\fcb56d3992183e4db803751b5ef15a4b\transformed\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-datatransport:17.0.3] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\fcb56d3992183e4db803751b5ef15a4b\transformed\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-analytics:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\fb07043754f2f0d8624c80cab38fb90c\transformed\jetified-firebase-analytics-20.1.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-analytics:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\fb07043754f2f0d8624c80cab38fb90c\transformed\jetified-firebase-analytics-20.1.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\a9beb7abc78fd1dd2b3d64f87011ded0\transformed\jetified-play-services-measurement-api-20.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\a9beb7abc78fd1dd2b3d64f87011ded0\transformed\jetified-play-services-measurement-api-20.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-installations:17.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\7e85c68396c4dec5933c571e677e4b3a\transformed\jetified-firebase-installations-17.0.1\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-installations:17.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\7e85c68396c4dec5933c571e677e4b3a\transformed\jetified-firebase-installations-17.0.1\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-common:20.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\1204bbffb2ce2b471fd28f9a00d72835\transformed\jetified-firebase-common-20.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-common:20.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\1204bbffb2ce2b471fd28f9a00d72835\transformed\jetified-firebase-common-20.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-installations-interop:17.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\ddc408bc5a196ce9c0f9096086a70f18\transformed\jetified-firebase-installations-interop-17.0.1\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-installations-interop:17.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\ddc408bc5a196ce9c0f9096086a70f18\transformed\jetified-firebase-installations-interop-17.0.1\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\3b5f4d7eb6e1849f7bf6005dc4912da2\transformed\jetified-firebase-iid-interop-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\3b5f4d7eb6e1849f7bf6005dc4912da2\transformed\jetified-firebase-iid-interop-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\426be32c99678b453b96dfd5f51d5a4c\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\426be32c99678b453b96dfd5f51d5a4c\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\a63b97201b3bfd750d6690007875f06c\transformed\jetified-play-services-tasks-18.0.1\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-tasks:18.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\a63b97201b3bfd750d6690007875f06c\transformed\jetified-play-services-tasks-18.0.1\AndroidManifest.xml:4:5-43
+MERGED from [com.google.android.gms:play-services-measurement:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\37a5283cf89f58af88783ad373f71705\transformed\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\37a5283cf89f58af88783ad373f71705\transformed\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\03660850179d3b08563ece694a90bc0c\transformed\jetified-play-services-measurement-sdk-20.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\03660850179d3b08563ece694a90bc0c\transformed\jetified-play-services-measurement-sdk-20.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\4e0f7466019473c3a92ba3c5c3692499\transformed\jetified-play-services-measurement-impl-20.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\4e0f7466019473c3a92ba3c5c3692499\transformed\jetified-play-services-measurement-impl-20.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\dc179e663f1251fe8f5d8426a4d6425b\transformed\jetified-play-services-stats-17.0.2\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\dc179e663f1251fe8f5d8426a4d6425b\transformed\jetified-play-services-stats-17.0.2\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\5f53f3c3a61c75d37ec8df7858b7ad1d\transformed\jetified-play-services-ads-identifier-18.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\5f53f3c3a61c75d37ec8df7858b7ad1d\transformed\jetified-play-services-ads-identifier-18.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\ba711dac3433f0d813133a1e6c3d96c7\transformed\jetified-play-services-measurement-sdk-api-20.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\ba711dac3433f0d813133a1e6c3d96c7\transformed\jetified-play-services-measurement-sdk-api-20.1.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\cb6f71f864ef61b71512eb43a9af7c4f\transformed\jetified-play-services-measurement-base-20.1.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\cb6f71f864ef61b71512eb43a9af7c4f\transformed\jetified-play-services-measurement-base-20.1.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\006eb6b7dafd64235ab4a2599cad70eb\transformed\jetified-firebase-measurement-connector-19.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:19.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\006eb6b7dafd64235ab4a2599cad70eb\transformed\jetified-firebase-measurement-connector-19.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\b1a1b3a8752155d740f1090c8026cdc6\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:18:5-43
+MERGED from [com.google.android.gms:play-services-basement:18.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\b1a1b3a8752155d740f1090c8026cdc6\transformed\jetified-play-services-basement-18.0.0\AndroidManifest.xml:18:5-43
+MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\5de7997c43e8d03834ed306d4ec47950\transformed\fragment-1.3.6\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.3.6] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\5de7997c43e8d03834ed306d4ec47950\transformed\fragment-1.3.6\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.4] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\8269cce71433e0efbe2f726b03235ae4\transformed\jetified-activity-1.2.4\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.2.4] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\8269cce71433e0efbe2f726b03235ae4\transformed\jetified-activity-1.2.4\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\6283188479877f2d93a73b22b1e3e439\transformed\jetified-emoji2-views-helper-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.emoji2:emoji2-views-helper:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\6283188479877f2d93a73b22b1e3e439\transformed\jetified-emoji2-views-helper-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.emoji2:emoji2:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\3ba251be7074ff7289811e8b60079fa7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.emoji2:emoji2:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\3ba251be7074ff7289811e8b60079fa7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\c5e9068a7efefc5b4a851a5b1d7b5a75\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\c5e9068a7efefc5b4a851a5b1d7b5a75\transformed\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\b8013bbc5573fb50f80ec532fafba32d\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\b8013bbc5573fb50f80ec532fafba32d\transformed\drawerlayout-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\446094c26a51ac6704254a2e43552ca3\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\446094c26a51ac6704254a2e43552ca3\transformed\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\9836c6d1ae1c302ee4c8b9ab23cc5f93\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\9836c6d1ae1c302ee4c8b9ab23cc5f93\transformed\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\6a6a2fea8a02cfcffb17f0794d9674e2\transformed\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\6a6a2fea8a02cfcffb17f0794d9674e2\transformed\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.media:media:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\d5af37a523396eda766484fd1e52f5aa\transformed\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\d5af37a523396eda766484fd1e52f5aa\transformed\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\dc1c5ac8fbb8e1bf58260dbf2eb6901f\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\dc1c5ac8fbb8e1bf58260dbf2eb6901f\transformed\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\58c3c593ba8ff3d90019e7f5ac8f3600\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\58c3c593ba8ff3d90019e7f5ac8f3600\transformed\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\5f0588f39a6079b431201173ab99cd30\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\5f0588f39a6079b431201173ab99cd30\transformed\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\2c454802a6b6a6883facb85d550fbf92\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\2c454802a6b6a6883facb85d550fbf92\transformed\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\846edd73950e331783ab4e944af14e04\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\846edd73950e331783ab4e944af14e04\transformed\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\afb1ec9f4ce67826360ef85abd2f1658\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\afb1ec9f4ce67826360ef85abd2f1658\transformed\customview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\99f7a2765135ac8ee7579972c04c9645\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\99f7a2765135ac8ee7579972c04c9645\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\c49f354212178c1329fec8a20aeb3d71\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\c49f354212178c1329fec8a20aeb3d71\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.browser:browser:1.2.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\7ae4109493f3ab8d433ebf30181fa4c9\transformed\browser-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.browser:browser:1.2.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\7ae4109493f3ab8d433ebf30181fa4c9\transformed\browser-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.7.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\9c4e22e42005bcb3e83637a8ddcdd4ea\transformed\core-1.7.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.7.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\9c4e22e42005bcb3e83637a8ddcdd4ea\transformed\core-1.7.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\bd6f8a5f422760813be4e9ce705ac51f\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\bd6f8a5f422760813be4e9ce705ac51f\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.databinding:viewbinding:7.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\6798c0dce130bd4becb2e61451c0b382\transformed\jetified-viewbinding-7.1.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.databinding:viewbinding:7.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\6798c0dce130bd4becb2e61451c0b382\transformed\jetified-viewbinding-7.1.2\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\2f54f697c64db1d3a46d732cd1e27738\transformed\jetified-lifecycle-service-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-service:2.2.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\2f54f697c64db1d3a46d732cd1e27738\transformed\jetified-lifecycle-service-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\638236642757fd8cec76cc5b44636eb4\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\638236642757fd8cec76cc5b44636eb4\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\598f0211625c7c43149339dae7b8eb85\transformed\lifecycle-runtime-2.4.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.4.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\598f0211625c7c43149339dae7b8eb85\transformed\lifecycle-runtime-2.4.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\fd2dd980974d5991624b4924bf23779a\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\fd2dd980974d5991624b4924bf23779a\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\00c8972e88c9f9fba66757649ee78e62\transformed\jetified-lifecycle-viewmodel-savedstate-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.3.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\00c8972e88c9f9fba66757649ee78e62\transformed\jetified-lifecycle-viewmodel-savedstate-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\ed7e99736133f337c7109681b9eea7ac\transformed\jetified-savedstate-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\ed7e99736133f337c7109681b9eea7ac\transformed\jetified-savedstate-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\48c603a24ec54e1043df53a2ef99d7f2\transformed\lifecycle-viewmodel-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.3.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\48c603a24ec54e1043df53a2ef99d7f2\transformed\lifecycle-viewmodel-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\d2dc4a02db0f9f39a8f6d2a8ed43441a\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\d2dc4a02db0f9f39a8f6d2a8ed43441a\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f3848af058e9dc8711c64a511099d483\transformed\sqlite-framework-2.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f3848af058e9dc8711c64a511099d483\transformed\sqlite-framework-2.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\38587e339248b63d2ccf9a3710402351\transformed\sqlite-2.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\38587e339248b63d2ccf9a3710402351\transformed\sqlite-2.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\593585899625b1d53630b867d5862da7\transformed\exifinterface-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\593585899625b1d53630b867d5862da7\transformed\exifinterface-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.10.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\2df8ba6adcb6eb891eee3f5cc5b2d2b2\transformed\jetified-gifdecoder-4.10.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.10.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\2df8ba6adcb6eb891eee3f5cc5b2d2b2\transformed\jetified-gifdecoder-4.10.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\0a1f3b0bb48de590daaf1d19fded9112\transformed\jetified-transport-backend-cct-3.1.2\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:3.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\0a1f3b0bb48de590daaf1d19fded9112\transformed\jetified-transport-backend-cct-3.1.2\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\8b0abcac592c8d3efd2db3e8774d2ad7\transformed\jetified-transport-runtime-3.1.2\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\8b0abcac592c8d3efd2db3e8774d2ad7\transformed\jetified-transport-runtime-3.1.2\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-api:3.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\54f1429e5876bc2264bc555e6dae0b8a\transformed\jetified-transport-api-3.0.0\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-api:3.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\54f1429e5876bc2264bc555e6dae0b8a\transformed\jetified-transport-api-3.0.0\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-components:17.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\de89c01b301fed2c07d5f90b2b1ccf91\transformed\jetified-firebase-components-17.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-components:17.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\de89c01b301fed2c07d5f90b2b1ccf91\transformed\jetified-firebase-components-17.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\c008a987361416458c2ec5ca9ec40b5c\transformed\jetified-firebase-encoders-json-18.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-encoders-json:18.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\c008a987361416458c2ec5ca9ec40b5c\transformed\jetified-firebase-encoders-json-18.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\2491a285123c03b2bd4c1c385096d6c7\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\2491a285123c03b2bd4c1c385096d6c7\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\519f688a915a75489908a58d734f562f\transformed\lifecycle-livedata-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\519f688a915a75489908a58d734f562f\transformed\lifecycle-livedata-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\20d60bfea890a8ef6bce66798e9c17f2\transformed\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.3.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\20d60bfea890a8ef6bce66798e9c17f2\transformed\lifecycle-livedata-core-2.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\e6f5d87926e5f81f2ab032c89bca31f6\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\e6f5d87926e5f81f2ab032c89bca31f6\transformed\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\a41bc89f13aa54124ad37e68550c599e\transformed\jetified-startup-runtime-1.0.0\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\a41bc89f13aa54124ad37e68550c599e\transformed\jetified-startup-runtime-1.0.0\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\3f70d9c46383d121ebee5cffd79060ba\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\3f70d9c46383d121ebee5cffd79060ba\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\4b0ce48cc953f7e8de78e73c901caa1d\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\4b0ce48cc953f7e8de78e73c901caa1d\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\3dd8cee83650db95deccf65c5b0db5f9\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\3dd8cee83650db95deccf65c5b0db5f9\transformed\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\34d9bf25df189ccc2b75d883ea09f964\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\34d9bf25df189ccc2b75d883ea09f964\transformed\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\6e757a5386791df1d9cb83a1e617aafb\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\6e757a5386791df1d9cb83a1e617aafb\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.futuremind.recyclerfastscroll:fastscroll:0.2.5] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\903784a601bcd5abc1bb349ab243cb4e\transformed\jetified-fastscroll-0.2.5\AndroidManifest.xml:7:5-9:41
+MERGED from [com.futuremind.recyclerfastscroll:fastscroll:0.2.5] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\903784a601bcd5abc1bb349ab243cb4e\transformed\jetified-fastscroll-0.2.5\AndroidManifest.xml:7:5-9:41
+MERGED from [io.michaelrocks:libphonenumber-android:8.10.14] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\d258edb55311f80ee2db09f45d4d1617\transformed\jetified-libphonenumber-android-8.10.14\AndroidManifest.xml:7:5-9:41
+MERGED from [io.michaelrocks:libphonenumber-android:8.10.14] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\d258edb55311f80ee2db09f45d4d1617\transformed\jetified-libphonenumber-android-8.10.14\AndroidManifest.xml:7:5-9:41
+MERGED from [com.squareup.android:truststore:1.7.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\fe8f40f6ba7d0b2aaa176bd0dc58ad91\transformed\jetified-truststore-1.7.0\AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.android:truststore:1.7.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\fe8f40f6ba7d0b2aaa176bd0dc58ad91\transformed\jetified-truststore-1.7.0\AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.android:socket-factory:1.7.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\a6bf22736a8e413716e9c2256aa702c3\transformed\jetified-socket-factory-1.7.0\AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.android:socket-factory:1.7.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\a6bf22736a8e413716e9c2256aa702c3\transformed\jetified-socket-factory-1.7.0\AndroidManifest.xml:5:5-44
+INJECTED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml
+INJECTED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.amazonaws:aws-android-sdk-mobile-client:2.17.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\40974a9efad4882ad620444432541047\transformed\jetified-aws-android-sdk-mobile-client-2.17.1\AndroidManifest.xml:16:9-93
+	android:targetSdkVersion
+		INJECTED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml
+		INJECTED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml
+		ADDED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml
+		INJECTED from D:\EliteUSAFashion-SCMS-UpdatedCode\app\src\main\AndroidManifest.xml
+activity#com.stripe.android.view.AddPaymentMethodActivity
+ADDED from [com.stripe:stripe-android:16.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f3806ba53c5e4df8e0e7f0fbfde275ee\transformed\jetified-stripe-android-16.0.1\AndroidManifest.xml:12:9-14:57
+	android:theme
+		ADDED from [com.stripe:stripe-android:16.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f3806ba53c5e4df8e0e7f0fbfde275ee\transformed\jetified-stripe-android-16.0.1\AndroidManifest.xml:14:13-54
+	android:name
+		ADDED from [com.stripe:stripe-android:16.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f3806ba53c5e4df8e0e7f0fbfde275ee\transformed\jetified-stripe-android-16.0.1\AndroidManifest.xml:13:13-76
+activity#com.stripe.android.view.PaymentMethodsActivity
+ADDED from [com.stripe:stripe-android:16.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f3806ba53c5e4df8e0e7f0fbfde275ee\transformed\jetified-stripe-android-16.0.1\AndroidManifest.xml:15:9-17:57
+	android:theme
+		ADDED from [com.stripe:stripe-android:16.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f3806ba53c5e4df8e0e7f0fbfde275ee\transformed\jetified-stripe-android-16.0.1\AndroidManifest.xml:17:13-54
+	android:name
+		ADDED from [com.stripe:stripe-android:16.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f3806ba53c5e4df8e0e7f0fbfde275ee\transformed\jetified-stripe-android-16.0.1\AndroidManifest.xml:16:13-74
+activity#com.stripe.android.view.PaymentFlowActivity
+ADDED from [com.stripe:stripe-android:16.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f3806ba53c5e4df8e0e7f0fbfde275ee\transformed\jetified-stripe-android-16.0.1\AndroidManifest.xml:18:9-20:57
+	android:theme
+		ADDED from [com.stripe:stripe-android:16.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f3806ba53c5e4df8e0e7f0fbfde275ee\transformed\jetified-stripe-android-16.0.1\AndroidManifest.xml:20:13-54
+	android:name
+		ADDED from [com.stripe:stripe-android:16.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f3806ba53c5e4df8e0e7f0fbfde275ee\transformed\jetified-stripe-android-16.0.1\AndroidManifest.xml:19:13-71
+activity#com.stripe.android.view.PaymentAuthWebViewActivity
+ADDED from [com.stripe:stripe-android:16.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f3806ba53c5e4df8e0e7f0fbfde275ee\transformed\jetified-stripe-android-16.0.1\AndroidManifest.xml:21:9-24:58
+	android:windowSoftInputMode
+		ADDED from [com.stripe:stripe-android:16.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f3806ba53c5e4df8e0e7f0fbfde275ee\transformed\jetified-stripe-android-16.0.1\AndroidManifest.xml:24:13-55
+	android:theme
+		ADDED from [com.stripe:stripe-android:16.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f3806ba53c5e4df8e0e7f0fbfde275ee\transformed\jetified-stripe-android-16.0.1\AndroidManifest.xml:23:13-54
+	android:name
+		ADDED from [com.stripe:stripe-android:16.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f3806ba53c5e4df8e0e7f0fbfde275ee\transformed\jetified-stripe-android-16.0.1\AndroidManifest.xml:22:13-78
+activity#com.stripe.android.view.PaymentRelayActivity
+ADDED from [com.stripe:stripe-android:16.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f3806ba53c5e4df8e0e7f0fbfde275ee\transformed\jetified-stripe-android-16.0.1\AndroidManifest.xml:25:9-27:57
+	android:theme
+		ADDED from [com.stripe:stripe-android:16.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f3806ba53c5e4df8e0e7f0fbfde275ee\transformed\jetified-stripe-android-16.0.1\AndroidManifest.xml:27:13-54
+	android:name
+		ADDED from [com.stripe:stripe-android:16.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f3806ba53c5e4df8e0e7f0fbfde275ee\transformed\jetified-stripe-android-16.0.1\AndroidManifest.xml:26:13-72
+activity#com.stripe.android.view.Stripe3ds2CompletionActivity
+ADDED from [com.stripe:stripe-android:16.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f3806ba53c5e4df8e0e7f0fbfde275ee\transformed\jetified-stripe-android-16.0.1\AndroidManifest.xml:28:9-30:57
+	android:theme
+		ADDED from [com.stripe:stripe-android:16.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f3806ba53c5e4df8e0e7f0fbfde275ee\transformed\jetified-stripe-android-16.0.1\AndroidManifest.xml:30:13-54
+	android:name
+		ADDED from [com.stripe:stripe-android:16.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f3806ba53c5e4df8e0e7f0fbfde275ee\transformed\jetified-stripe-android-16.0.1\AndroidManifest.xml:29:13-80
+activity#com.stripe.android.paymentsheet.PaymentSheetActivity
+ADDED from [com.stripe:stripe-android:16.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f3806ba53c5e4df8e0e7f0fbfde275ee\transformed\jetified-stripe-android-16.0.1\AndroidManifest.xml:31:9-33:69
+	android:theme
+		ADDED from [com.stripe:stripe-android:16.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f3806ba53c5e4df8e0e7f0fbfde275ee\transformed\jetified-stripe-android-16.0.1\AndroidManifest.xml:33:13-66
+	android:name
+		ADDED from [com.stripe:stripe-android:16.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f3806ba53c5e4df8e0e7f0fbfde275ee\transformed\jetified-stripe-android-16.0.1\AndroidManifest.xml:32:13-80
+activity#sqip.internal.CardEntryActivity
+ADDED from [com.squareup.sdk.in-app-payments:card-entry:1.4.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\979b44967fcb4549ffa1b210c3737091\transformed\jetified-card-entry-1.4.0\AndroidManifest.xml:10:9-14:20
+	android:windowSoftInputMode
+		ADDED from [com.squareup.sdk.in-app-payments:card-entry:1.4.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\979b44967fcb4549ffa1b210c3737091\transformed\jetified-card-entry-1.4.0\AndroidManifest.xml:13:13-55
+	android:theme
+		ADDED from [com.squareup.sdk.in-app-payments:card-entry:1.4.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\979b44967fcb4549ffa1b210c3737091\transformed\jetified-card-entry-1.4.0\AndroidManifest.xml:12:13-56
+	android:name
+		ADDED from [com.squareup.sdk.in-app-payments:card-entry:1.4.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\979b44967fcb4549ffa1b210c3737091\transformed\jetified-card-entry-1.4.0\AndroidManifest.xml:11:13-59
+activity#com.stripe.android.stripe3ds2.views.ChallengeActivity
+ADDED from [com.stripe:stripe-3ds2-android:4.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\d7de162a1bf1b0b5aa355543f07c0c5f\transformed\jetified-stripe-3ds2-android-4.1.0\AndroidManifest.xml:12:9-14:54
+	android:theme
+		ADDED from [com.stripe:stripe-3ds2-android:4.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\d7de162a1bf1b0b5aa355543f07c0c5f\transformed\jetified-stripe-3ds2-android-4.1.0\AndroidManifest.xml:14:13-51
+	android:name
+		ADDED from [com.stripe:stripe-3ds2-android:4.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\d7de162a1bf1b0b5aa355543f07c0c5f\transformed\jetified-stripe-3ds2-android-4.1.0\AndroidManifest.xml:13:13-81
+activity#com.stripe.android.stripe3ds2.views.ChallengeProgressActivity
+ADDED from [com.stripe:stripe-3ds2-android:4.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\d7de162a1bf1b0b5aa355543f07c0c5f\transformed\jetified-stripe-3ds2-android-4.1.0\AndroidManifest.xml:15:9-17:54
+	android:theme
+		ADDED from [com.stripe:stripe-3ds2-android:4.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\d7de162a1bf1b0b5aa355543f07c0c5f\transformed\jetified-stripe-3ds2-android-4.1.0\AndroidManifest.xml:17:13-51
+	android:name
+		ADDED from [com.stripe:stripe-3ds2-android:4.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\d7de162a1bf1b0b5aa355543f07c0c5f\transformed\jetified-stripe-3ds2-android-4.1.0\AndroidManifest.xml:16:13-89
+service#com.amazonaws.mobileconnectors.s3.transferutility.TransferService
+ADDED from [com.amplifyframework:aws-storage-s3:1.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\94a1a3284ada9fd0fafc1da8ad815c31\transformed\jetified-aws-storage-s3-1.1.2\AndroidManifest.xml:28:9-30:38
+	android:enabled
+		ADDED from [com.amplifyframework:aws-storage-s3:1.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\94a1a3284ada9fd0fafc1da8ad815c31\transformed\jetified-aws-storage-s3-1.1.2\AndroidManifest.xml:30:13-35
+	android:name
+		ADDED from [com.amplifyframework:aws-storage-s3:1.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\94a1a3284ada9fd0fafc1da8ad815c31\transformed\jetified-aws-storage-s3-1.1.2\AndroidManifest.xml:29:13-93
+activity#com.yalantis.ucrop.UCropActivity
+ADDED from [com.github.miguelbcr:RxPaparazzo:0.6.1-2.x] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\07f925e258fd0138b967b2a602cb6b5b\transformed\jetified-RxPaparazzo-0.6.1-2.x\AndroidManifest.xml:18:9-20:72
+	android:theme
+		ADDED from [com.github.miguelbcr:RxPaparazzo:0.6.1-2.x] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\07f925e258fd0138b967b2a602cb6b5b\transformed\jetified-RxPaparazzo-0.6.1-2.x\AndroidManifest.xml:20:13-69
+	android:name
+		ADDED from [com.github.miguelbcr:RxPaparazzo:0.6.1-2.x] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\07f925e258fd0138b967b2a602cb6b5b\transformed\jetified-RxPaparazzo-0.6.1-2.x\AndroidManifest.xml:19:13-60
+service#androidx.room.MultiInstanceInvalidationService
+ADDED from [androidx.room:room-runtime:2.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f844f564f64dda59c52ee833fe089957\transformed\room-runtime-2.1.0\AndroidManifest.xml:25:9-27:40
+	android:exported
+		ADDED from [androidx.room:room-runtime:2.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f844f564f64dda59c52ee833fe089957\transformed\room-runtime-2.1.0\AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.room:room-runtime:2.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\f844f564f64dda59c52ee833fe089957\transformed\room-runtime-2.1.0\AndroidManifest.xml:26:13-74
+provider#sqip.internal.ContextCaptureContentProvider
+ADDED from [com.squareup.sdk.in-app-payments:nonce-api:1.4.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\d440eb4c452a752e19f6eb576be33180\transformed\jetified-nonce-api-1.4.0\AndroidManifest.xml:10:9-13:40
+	android:authorities
+		ADDED from [com.squareup.sdk.in-app-payments:nonce-api:1.4.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\d440eb4c452a752e19f6eb576be33180\transformed\jetified-nonce-api-1.4.0\AndroidManifest.xml:12:13-56
+	android:exported
+		ADDED from [com.squareup.sdk.in-app-payments:nonce-api:1.4.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\d440eb4c452a752e19f6eb576be33180\transformed\jetified-nonce-api-1.4.0\AndroidManifest.xml:13:13-37
+	android:name
+		ADDED from [com.squareup.sdk.in-app-payments:nonce-api:1.4.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\d440eb4c452a752e19f6eb576be33180\transformed\jetified-nonce-api-1.4.0\AndroidManifest.xml:11:13-71
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:20.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\1fa9a4264af207cdaf123d3dd881289b\transformed\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:28:9-34:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:20.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\1fa9a4264af207cdaf123d3dd881289b\transformed\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:20.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\1fa9a4264af207cdaf123d3dd881289b\transformed\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:29:13-82
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [com.google.firebase:firebase-messaging:20.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\1fa9a4264af207cdaf123d3dd881289b\transformed\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:35:9-41:19
+MERGED from [com.google.firebase:firebase-crashlytics:18.2.9] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\b1b0d58c971f281f4385f0c2f2db85c0\transformed\jetified-firebase-crashlytics-18.2.9\AndroidManifest.xml:15:9-21:19
+MERGED from [com.google.firebase:firebase-crashlytics:18.2.9] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\b1b0d58c971f281f4385f0c2f2db85c0\transformed\jetified-firebase-crashlytics-18.2.9\AndroidManifest.xml:15:9-21:19
+MERGED from [com.google.firebase:firebase-iid:20.0.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\c8523ce5abfb46664a8b5c076e67d2a2\transformed\jetified-firebase-iid-20.0.2\AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-iid:20.0.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\c8523ce5abfb46664a8b5c076e67d2a2\transformed\jetified-firebase-iid-20.0.2\AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-datatransport:17.0.3] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\fcb56d3992183e4db803751b5ef15a4b\transformed\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:25:9-31:19
+MERGED from [com.google.firebase:firebase-datatransport:17.0.3] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\fcb56d3992183e4db803751b5ef15a4b\transformed\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:25:9-31:19
+MERGED from [com.google.android.gms:play-services-measurement-api:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\a9beb7abc78fd1dd2b3d64f87011ded0\transformed\jetified-play-services-measurement-api-20.1.1\AndroidManifest.xml:28:9-34:19
+MERGED from [com.google.android.gms:play-services-measurement-api:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\a9beb7abc78fd1dd2b3d64f87011ded0\transformed\jetified-play-services-measurement-api-20.1.1\AndroidManifest.xml:28:9-34:19
+MERGED from [com.google.firebase:firebase-installations:17.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\7e85c68396c4dec5933c571e677e4b3a\transformed\jetified-firebase-installations-17.0.1\AndroidManifest.xml:15:9-21:19
+MERGED from [com.google.firebase:firebase-installations:17.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\7e85c68396c4dec5933c571e677e4b3a\transformed\jetified-firebase-installations-17.0.1\AndroidManifest.xml:15:9-21:19
+MERGED from [com.google.firebase:firebase-common:20.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\1204bbffb2ce2b471fd28f9a00d72835\transformed\jetified-firebase-common-20.1.0\AndroidManifest.xml:33:9-37:35
+MERGED from [com.google.firebase:firebase-common:20.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\1204bbffb2ce2b471fd28f9a00d72835\transformed\jetified-firebase-common-20.1.0\AndroidManifest.xml:33:9-37:35
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:20.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\1fa9a4264af207cdaf123d3dd881289b\transformed\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:37:13-37
+	tools:targetApi
+		ADDED from [com.google.firebase:firebase-common:20.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\1204bbffb2ce2b471fd28f9a00d72835\transformed\jetified-firebase-common-20.1.0\AndroidManifest.xml:37:13-32
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:20.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\1204bbffb2ce2b471fd28f9a00d72835\transformed\jetified-firebase-common-20.1.0\AndroidManifest.xml:35:13-43
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:20.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\1fa9a4264af207cdaf123d3dd881289b\transformed\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:36:13-84
+meta-data#com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar
+ADDED from [com.google.firebase:firebase-messaging:20.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\1fa9a4264af207cdaf123d3dd881289b\transformed\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:38:13-40:85
+	android:value
+		ADDED from [com.google.firebase:firebase-messaging:20.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\1fa9a4264af207cdaf123d3dd881289b\transformed\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:40:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:20.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\1fa9a4264af207cdaf123d3dd881289b\transformed\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:39:17-119
+uses-library#org.apache.http.legacy
+ADDED from [com.amazonaws:aws-android-sdk-core:2.17.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\bc07fc5e9ed6a8a25a861fa8fbcb3fa0\transformed\jetified-aws-android-sdk-core-2.17.1\AndroidManifest.xml:12:9-14:40
+	android:required
+		ADDED from [com.amazonaws:aws-android-sdk-core:2.17.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\bc07fc5e9ed6a8a25a861fa8fbcb3fa0\transformed\jetified-aws-android-sdk-core-2.17.1\AndroidManifest.xml:14:13-37
+	android:name
+		ADDED from [com.amazonaws:aws-android-sdk-core:2.17.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\bc07fc5e9ed6a8a25a861fa8fbcb3fa0\transformed\jetified-aws-android-sdk-core-2.17.1\AndroidManifest.xml:13:13-50
+meta-data#com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar
+ADDED from [com.google.firebase:firebase-crashlytics:18.2.9] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\b1b0d58c971f281f4385f0c2f2db85c0\transformed\jetified-firebase-crashlytics-18.2.9\AndroidManifest.xml:18:13-20:85
+	android:value
+		ADDED from [com.google.firebase:firebase-crashlytics:18.2.9] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\b1b0d58c971f281f4385f0c2f2db85c0\transformed\jetified-firebase-crashlytics-18.2.9\AndroidManifest.xml:20:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-crashlytics:18.2.9] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\b1b0d58c971f281f4385f0c2f2db85c0\transformed\jetified-firebase-crashlytics-18.2.9\AndroidManifest.xml:19:17-115
+uses-permission#com.android.vending.BILLING
+ADDED from [com.android.billingclient:billing:3.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\ce3c015ea2c54c9a93588023cddb3157\transformed\jetified-billing-3.0.0\AndroidManifest.xml:10:5-67
+	android:name
+		ADDED from [com.android.billingclient:billing:3.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\ce3c015ea2c54c9a93588023cddb3157\transformed\jetified-billing-3.0.0\AndroidManifest.xml:10:22-64
+meta-data#com.google.android.play.billingclient.version
+ADDED from [com.android.billingclient:billing:3.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\ce3c015ea2c54c9a93588023cddb3157\transformed\jetified-billing-3.0.0\AndroidManifest.xml:13:9-15:37
+	android:value
+		ADDED from [com.android.billingclient:billing:3.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\ce3c015ea2c54c9a93588023cddb3157\transformed\jetified-billing-3.0.0\AndroidManifest.xml:15:13-34
+	android:name
+		ADDED from [com.android.billingclient:billing:3.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\ce3c015ea2c54c9a93588023cddb3157\transformed\jetified-billing-3.0.0\AndroidManifest.xml:14:13-73
+activity#com.android.billingclient.api.ProxyBillingActivity
+ADDED from [com.android.billingclient:billing:3.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\ce3c015ea2c54c9a93588023cddb3157\transformed\jetified-billing-3.0.0\AndroidManifest.xml:17:9-20:75
+	android:configChanges
+		ADDED from [com.android.billingclient:billing:3.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\ce3c015ea2c54c9a93588023cddb3157\transformed\jetified-billing-3.0.0\AndroidManifest.xml:19:13-96
+	android:theme
+		ADDED from [com.android.billingclient:billing:3.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\ce3c015ea2c54c9a93588023cddb3157\transformed\jetified-billing-3.0.0\AndroidManifest.xml:20:13-72
+	android:name
+		ADDED from [com.android.billingclient:billing:3.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\ce3c015ea2c54c9a93588023cddb3157\transformed\jetified-billing-3.0.0\AndroidManifest.xml:18:13-78
+activity#rx_activity_result2.HolderActivity
+ADDED from [com.github.VictorAlbertos:RxActivityResult:0.4.5-2.x] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\12aeae6015e4f0871d609561c1bf37bf\transformed\jetified-RxActivityResult-0.4.5-2.x\AndroidManifest.xml:12:9-15:56
+	android:configChanges
+		ADDED from [com.github.VictorAlbertos:RxActivityResult:0.4.5-2.x] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\12aeae6015e4f0871d609561c1bf37bf\transformed\jetified-RxActivityResult-0.4.5-2.x\AndroidManifest.xml:14:13-74
+	android:theme
+		ADDED from [com.github.VictorAlbertos:RxActivityResult:0.4.5-2.x] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\12aeae6015e4f0871d609561c1bf37bf\transformed\jetified-RxActivityResult-0.4.5-2.x\AndroidManifest.xml:15:13-53
+	android:name
+		ADDED from [com.github.VictorAlbertos:RxActivityResult:0.4.5-2.x] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\12aeae6015e4f0871d609561c1bf37bf\transformed\jetified-RxActivityResult-0.4.5-2.x\AndroidManifest.xml:13:13-62
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.firebase:firebase-iid:20.0.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\c8523ce5abfb46664a8b5c076e67d2a2\transformed\jetified-firebase-iid-20.0.2\AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-measurement-api:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\a9beb7abc78fd1dd2b3d64f87011ded0\transformed\jetified-play-services-measurement-api-20.1.1\AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-measurement-api:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\a9beb7abc78fd1dd2b3d64f87011ded0\transformed\jetified-play-services-measurement-api-20.1.1\AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-measurement:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\37a5283cf89f58af88783ad373f71705\transformed\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\37a5283cf89f58af88783ad373f71705\transformed\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\4e0f7466019473c3a92ba3c5c3692499\transformed\jetified-play-services-measurement-impl-20.1.1\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\4e0f7466019473c3a92ba3c5c3692499\transformed\jetified-play-services-measurement-impl-20.1.1\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\ba711dac3433f0d813133a1e6c3d96c7\transformed\jetified-play-services-measurement-sdk-api-20.1.1\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\ba711dac3433f0d813133a1e6c3d96c7\transformed\jetified-play-services-measurement-sdk-api-20.1.1\AndroidManifest.xml:25:5-68
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:20.0.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\c8523ce5abfb46664a8b5c076e67d2a2\transformed\jetified-firebase-iid-20.0.2\AndroidManifest.xml:24:22-65
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:20.0.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\c8523ce5abfb46664a8b5c076e67d2a2\transformed\jetified-firebase-iid-20.0.2\AndroidManifest.xml:26:5-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:20.0.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\c8523ce5abfb46664a8b5c076e67d2a2\transformed\jetified-firebase-iid-20.0.2\AndroidManifest.xml:26:22-79
+meta-data#com.google.firebase.components:com.google.firebase.iid.Registrar
+ADDED from [com.google.firebase:firebase-iid:20.0.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\c8523ce5abfb46664a8b5c076e67d2a2\transformed\jetified-firebase-iid-20.0.2\AndroidManifest.xml:32:13-34:85
+	android:value
+		ADDED from [com.google.firebase:firebase-iid:20.0.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\c8523ce5abfb46664a8b5c076e67d2a2\transformed\jetified-firebase-iid-20.0.2\AndroidManifest.xml:34:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:20.0.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\c8523ce5abfb46664a8b5c076e67d2a2\transformed\jetified-firebase-iid-20.0.2\AndroidManifest.xml:33:17-96
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:20.0.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\c8523ce5abfb46664a8b5c076e67d2a2\transformed\jetified-firebase-iid-20.0.2\AndroidManifest.xml:37:9-44:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:20.0.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\c8523ce5abfb46664a8b5c076e67d2a2\transformed\jetified-firebase-iid-20.0.2\AndroidManifest.xml:39:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:20.0.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\c8523ce5abfb46664a8b5c076e67d2a2\transformed\jetified-firebase-iid-20.0.2\AndroidManifest.xml:40:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:20.0.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\c8523ce5abfb46664a8b5c076e67d2a2\transformed\jetified-firebase-iid-20.0.2\AndroidManifest.xml:38:13-78
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:20.0.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\c8523ce5abfb46664a8b5c076e67d2a2\transformed\jetified-firebase-iid-20.0.2\AndroidManifest.xml:41:13-43:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:20.0.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\c8523ce5abfb46664a8b5c076e67d2a2\transformed\jetified-firebase-iid-20.0.2\AndroidManifest.xml:42:17-81
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:20.0.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\c8523ce5abfb46664a8b5c076e67d2a2\transformed\jetified-firebase-iid-20.0.2\AndroidManifest.xml:42:25-78
+meta-data#com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar
+ADDED from [com.google.firebase:firebase-datatransport:17.0.3] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\fcb56d3992183e4db803751b5ef15a4b\transformed\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:28:13-30:85
+	android:value
+		ADDED from [com.google.firebase:firebase-datatransport:17.0.3] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\fcb56d3992183e4db803751b5ef15a4b\transformed\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:30:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-datatransport:17.0.3] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\fcb56d3992183e4db803751b5ef15a4b\transformed\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:29:17-115
+uses-permission#com.google.android.gms.permission.AD_ID
+ADDED from [com.google.android.gms:play-services-measurement-api:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\a9beb7abc78fd1dd2b3d64f87011ded0\transformed\jetified-play-services-measurement-api-20.1.1\AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\4e0f7466019473c3a92ba3c5c3692499\transformed\jetified-play-services-measurement-impl-20.1.1\AndroidManifest.xml:27:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\4e0f7466019473c3a92ba3c5c3692499\transformed\jetified-play-services-measurement-impl-20.1.1\AndroidManifest.xml:27:5-79
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\5f53f3c3a61c75d37ec8df7858b7ad1d\transformed\jetified-play-services-ads-identifier-18.0.0\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-ads-identifier:18.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\5f53f3c3a61c75d37ec8df7858b7ad1d\transformed\jetified-play-services-ads-identifier-18.0.0\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\ba711dac3433f0d813133a1e6c3d96c7\transformed\jetified-play-services-measurement-sdk-api-20.1.1\AndroidManifest.xml:26:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\ba711dac3433f0d813133a1e6c3d96c7\transformed\jetified-play-services-measurement-sdk-api-20.1.1\AndroidManifest.xml:26:5-79
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\a9beb7abc78fd1dd2b3d64f87011ded0\transformed\jetified-play-services-measurement-api-20.1.1\AndroidManifest.xml:25:22-76
+meta-data#com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar
+ADDED from [com.google.android.gms:play-services-measurement-api:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\a9beb7abc78fd1dd2b3d64f87011ded0\transformed\jetified-play-services-measurement-api-20.1.1\AndroidManifest.xml:31:13-33:85
+	android:value
+		ADDED from [com.google.android.gms:play-services-measurement-api:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\a9beb7abc78fd1dd2b3d64f87011ded0\transformed\jetified-play-services-measurement-api-20.1.1\AndroidManifest.xml:33:17-82
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\a9beb7abc78fd1dd2b3d64f87011ded0\transformed\jetified-play-services-measurement-api-20.1.1\AndroidManifest.xml:32:17-139
+meta-data#com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar
+ADDED from [com.google.firebase:firebase-installations:17.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\7e85c68396c4dec5933c571e677e4b3a\transformed\jetified-firebase-installations-17.0.1\AndroidManifest.xml:18:13-20:85
+	android:value
+		ADDED from [com.google.firebase:firebase-installations:17.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\7e85c68396c4dec5933c571e677e4b3a\transformed\jetified-firebase-installations-17.0.1\AndroidManifest.xml:20:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-installations:17.0.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\7e85c68396c4dec5933c571e677e4b3a\transformed\jetified-firebase-installations-17.0.1\AndroidManifest.xml:19:17-127
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:20.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\1204bbffb2ce2b471fd28f9a00d72835\transformed\jetified-firebase-common-20.1.0\AndroidManifest.xml:26:9-31:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:20.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\1204bbffb2ce2b471fd28f9a00d72835\transformed\jetified-firebase-common-20.1.0\AndroidManifest.xml:28:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:20.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\1204bbffb2ce2b471fd28f9a00d72835\transformed\jetified-firebase-common-20.1.0\AndroidManifest.xml:30:13-37
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:20.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\1204bbffb2ce2b471fd28f9a00d72835\transformed\jetified-firebase-common-20.1.0\AndroidManifest.xml:29:13-43
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:20.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\1204bbffb2ce2b471fd28f9a00d72835\transformed\jetified-firebase-common-20.1.0\AndroidManifest.xml:31:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:20.1.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\1204bbffb2ce2b471fd28f9a00d72835\transformed\jetified-firebase-common-20.1.0\AndroidManifest.xml:27:13-77
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\426be32c99678b453b96dfd5f51d5a4c\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\426be32c99678b453b96dfd5f51d5a4c\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\426be32c99678b453b96dfd5f51d5a4c\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\426be32c99678b453b96dfd5f51d5a4c\transformed\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+ADDED from [com.google.android.gms:play-services-measurement:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\37a5283cf89f58af88783ad373f71705\transformed\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\4e0f7466019473c3a92ba3c5c3692499\transformed\jetified-play-services-measurement-impl-20.1.1\AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\4e0f7466019473c3a92ba3c5c3692499\transformed\jetified-play-services-measurement-impl-20.1.1\AndroidManifest.xml:26:5-110
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\37a5283cf89f58af88783ad373f71705\transformed\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:26:22-107
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.android.gms:play-services-measurement:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\37a5283cf89f58af88783ad373f71705\transformed\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:29:9-33:20
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\37a5283cf89f58af88783ad373f71705\transformed\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:31:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\37a5283cf89f58af88783ad373f71705\transformed\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\37a5283cf89f58af88783ad373f71705\transformed\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:30:13-85
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.android.gms:play-services-measurement:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\37a5283cf89f58af88783ad373f71705\transformed\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:35:9-38:40
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\37a5283cf89f58af88783ad373f71705\transformed\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:37:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\37a5283cf89f58af88783ad373f71705\transformed\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:38:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\37a5283cf89f58af88783ad373f71705\transformed\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:36:13-84
+service#com.google.android.gms.measurement.AppMeasurementJobService
+ADDED from [com.google.android.gms:play-services-measurement:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\37a5283cf89f58af88783ad373f71705\transformed\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:39:9-43:72
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\37a5283cf89f58af88783ad373f71705\transformed\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:41:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\37a5283cf89f58af88783ad373f71705\transformed\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:42:13-37
+	android:permission
+		ADDED from [com.google.android.gms:play-services-measurement:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\37a5283cf89f58af88783ad373f71705\transformed\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:43:13-69
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:20.1.1] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\37a5283cf89f58af88783ad373f71705\transformed\jetified-play-services-measurement-20.1.1\AndroidManifest.xml:40:13-87
+provider#androidx.startup.InitializationProvider
+ADDED from [androidx.emoji2:emoji2:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\3ba251be7074ff7289811e8b60079fa7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\638236642757fd8cec76cc5b44636eb4\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\638236642757fd8cec76cc5b44636eb4\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:26:9-34:20
+MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\a41bc89f13aa54124ad37e68550c599e\transformed\jetified-startup-runtime-1.0.0\AndroidManifest.xml:26:9-30:34
+MERGED from [androidx.startup:startup-runtime:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\a41bc89f13aa54124ad37e68550c599e\transformed\jetified-startup-runtime-1.0.0\AndroidManifest.xml:26:9-30:34
+	tools:node
+		ADDED from [androidx.emoji2:emoji2:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\3ba251be7074ff7289811e8b60079fa7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:30:13-31
+	android:authorities
+		ADDED from [androidx.emoji2:emoji2:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\3ba251be7074ff7289811e8b60079fa7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+	android:exported
+		ADDED from [androidx.emoji2:emoji2:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\3ba251be7074ff7289811e8b60079fa7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\3ba251be7074ff7289811e8b60079fa7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+meta-data#androidx.emoji2.text.EmojiCompatInitializer
+ADDED from [androidx.emoji2:emoji2:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\3ba251be7074ff7289811e8b60079fa7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+	android:value
+		ADDED from [androidx.emoji2:emoji2:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\3ba251be7074ff7289811e8b60079fa7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+	android:name
+		ADDED from [androidx.emoji2:emoji2:1.0.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\3ba251be7074ff7289811e8b60079fa7\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+meta-data#androidx.lifecycle.ProcessLifecycleInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\638236642757fd8cec76cc5b44636eb4\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+	android:value
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\638236642757fd8cec76cc5b44636eb4\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\638236642757fd8cec76cc5b44636eb4\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+service#com.google.android.datatransport.runtime.backends.TransportBackendDiscovery
+ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\0a1f3b0bb48de590daaf1d19fded9112\transformed\jetified-transport-backend-cct-3.1.2\AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\8b0abcac592c8d3efd2db3e8774d2ad7\transformed\jetified-transport-runtime-3.1.2\AndroidManifest.xml:36:9-38:40
+MERGED from [com.google.android.datatransport:transport-runtime:3.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\8b0abcac592c8d3efd2db3e8774d2ad7\transformed\jetified-transport-runtime-3.1.2\AndroidManifest.xml:36:9-38:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\0a1f3b0bb48de590daaf1d19fded9112\transformed\jetified-transport-backend-cct-3.1.2\AndroidManifest.xml:31:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\0a1f3b0bb48de590daaf1d19fded9112\transformed\jetified-transport-backend-cct-3.1.2\AndroidManifest.xml:30:13-103
+meta-data#backend:com.google.android.datatransport.cct.CctBackendFactory
+ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\0a1f3b0bb48de590daaf1d19fded9112\transformed\jetified-transport-backend-cct-3.1.2\AndroidManifest.xml:32:13-34:39
+	android:value
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\0a1f3b0bb48de590daaf1d19fded9112\transformed\jetified-transport-backend-cct-3.1.2\AndroidManifest.xml:34:17-36
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:3.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\0a1f3b0bb48de590daaf1d19fded9112\transformed\jetified-transport-backend-cct-3.1.2\AndroidManifest.xml:33:17-94
+service#com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+ADDED from [com.google.android.datatransport:transport-runtime:3.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\8b0abcac592c8d3efd2db3e8774d2ad7\transformed\jetified-transport-runtime-3.1.2\AndroidManifest.xml:26:9-30:19
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:3.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\8b0abcac592c8d3efd2db3e8774d2ad7\transformed\jetified-transport-runtime-3.1.2\AndroidManifest.xml:28:13-37
+	android:permission
+		ADDED from [com.google.android.datatransport:transport-runtime:3.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\8b0abcac592c8d3efd2db3e8774d2ad7\transformed\jetified-transport-runtime-3.1.2\AndroidManifest.xml:29:13-69
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:3.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\8b0abcac592c8d3efd2db3e8774d2ad7\transformed\jetified-transport-runtime-3.1.2\AndroidManifest.xml:27:13-117
+receiver#com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver
+ADDED from [com.google.android.datatransport:transport-runtime:3.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\8b0abcac592c8d3efd2db3e8774d2ad7\transformed\jetified-transport-runtime-3.1.2\AndroidManifest.xml:32:9-34:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:3.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\8b0abcac592c8d3efd2db3e8774d2ad7\transformed\jetified-transport-runtime-3.1.2\AndroidManifest.xml:34:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:3.1.2] C:\Users\seemap\Dependency\TestingProject\caches\transforms-3\8b0abcac592c8d3efd2db3e8774d2ad7\transformed\jetified-transport-runtime-3.1.2\AndroidManifest.xml:33:13-132

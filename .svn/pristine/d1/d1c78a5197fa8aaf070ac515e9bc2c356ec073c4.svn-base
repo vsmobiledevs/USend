@@ -1,0 +1,170 @@
+package com.usend.databinding;
+import com.usend.R;
+import com.usend.BR;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import android.view.View;
+@SuppressWarnings("unchecked")
+public class ActivityAutoShipMethodsBindingImpl extends ActivityAutoShipMethodsBinding  {
+
+    @Nullable
+    private static final androidx.databinding.ViewDataBinding.IncludedLayouts sIncludes;
+    @Nullable
+    private static final android.util.SparseIntArray sViewsWithIds;
+    static {
+        sIncludes = null;
+        sViewsWithIds = new android.util.SparseIntArray();
+        sViewsWithIds.put(R.id.toolbarShippingMethod, 4);
+        sViewsWithIds.put(R.id.btnNext, 5);
+    }
+    // views
+    @NonNull
+    private final android.widget.RelativeLayout mboundView0;
+    @NonNull
+    private final android.widget.LinearLayout mboundView1;
+    @NonNull
+    private final android.widget.LinearLayout mboundView3;
+    // variables
+    // values
+    // listeners
+    // Inverse Binding Event Handlers
+
+    public ActivityAutoShipMethodsBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 6, sIncludes, sViewsWithIds));
+    }
+    private ActivityAutoShipMethodsBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
+        super(bindingComponent, root, 0
+            , (com.google.android.material.button.MaterialButton) bindings[5]
+            , (androidx.recyclerview.widget.RecyclerView) bindings[2]
+            , (android.view.View) bindings[4]
+            );
+        this.mboundView0 = (android.widget.RelativeLayout) bindings[0];
+        this.mboundView0.setTag(null);
+        this.mboundView1 = (android.widget.LinearLayout) bindings[1];
+        this.mboundView1.setTag(null);
+        this.mboundView3 = (android.widget.LinearLayout) bindings[3];
+        this.mboundView3.setTag(null);
+        this.rvShippingMethod.setTag(null);
+        setRootTag(root);
+        // listeners
+        invalidateAll();
+    }
+
+    @Override
+    public void invalidateAll() {
+        synchronized(this) {
+                mDirtyFlags = 0x8L;
+        }
+        requestRebind();
+    }
+
+    @Override
+    public boolean hasPendingBindings() {
+        synchronized(this) {
+            if (mDirtyFlags != 0) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    @Override
+    public boolean setVariable(int variableId, @Nullable Object variable)  {
+        boolean variableSet = true;
+        if (BR.isEmpty == variableId) {
+            setIsEmpty((java.lang.Boolean) variable);
+        }
+        else if (BR.adapter == variableId) {
+            setAdapter((com.usend.adapter.AutoShippingMethodItemAdapter) variable);
+        }
+        else if (BR.activity == variableId) {
+            setActivity((com.usend.views.home.AutoShipMethodsActivity) variable);
+        }
+        else {
+            variableSet = false;
+        }
+            return variableSet;
+    }
+
+    public void setIsEmpty(@Nullable java.lang.Boolean IsEmpty) {
+        this.mIsEmpty = IsEmpty;
+        synchronized(this) {
+            mDirtyFlags |= 0x1L;
+        }
+        notifyPropertyChanged(BR.isEmpty);
+        super.requestRebind();
+    }
+    public void setAdapter(@Nullable com.usend.adapter.AutoShippingMethodItemAdapter Adapter) {
+        this.mAdapter = Adapter;
+        synchronized(this) {
+            mDirtyFlags |= 0x2L;
+        }
+        notifyPropertyChanged(BR.adapter);
+        super.requestRebind();
+    }
+    public void setActivity(@Nullable com.usend.views.home.AutoShipMethodsActivity Activity) {
+        this.mActivity = Activity;
+    }
+
+    @Override
+    protected boolean onFieldChange(int localFieldId, Object object, int fieldId) {
+        switch (localFieldId) {
+        }
+        return false;
+    }
+
+    @Override
+    protected void executeBindings() {
+        long dirtyFlags = 0;
+        synchronized(this) {
+            dirtyFlags = mDirtyFlags;
+            mDirtyFlags = 0;
+        }
+        boolean isEmpty = false;
+        java.lang.Boolean IsEmpty1 = mIsEmpty;
+        com.usend.adapter.AutoShippingMethodItemAdapter adapter = mAdapter;
+        boolean androidxDatabindingViewDataBindingSafeUnboxIsEmpty = false;
+        boolean AndroidxDatabindingViewDataBindingSafeUnboxIsEmpty1 = false;
+
+        if ((dirtyFlags & 0x9L) != 0) {
+
+
+
+                // read androidx.databinding.ViewDataBinding.safeUnbox(isEmpty)
+                androidxDatabindingViewDataBindingSafeUnboxIsEmpty = androidx.databinding.ViewDataBinding.safeUnbox(IsEmpty1);
+
+
+                // read !androidx.databinding.ViewDataBinding.safeUnbox(isEmpty)
+                isEmpty = !androidxDatabindingViewDataBindingSafeUnboxIsEmpty;
+
+
+                // read androidx.databinding.ViewDataBinding.safeUnbox(!androidx.databinding.ViewDataBinding.safeUnbox(isEmpty))
+                AndroidxDatabindingViewDataBindingSafeUnboxIsEmpty1 = androidx.databinding.ViewDataBinding.safeUnbox(isEmpty);
+        }
+        if ((dirtyFlags & 0xaL) != 0) {
+        }
+        // batch finished
+        if ((dirtyFlags & 0x9L) != 0) {
+            // api target 1
+
+            com.usend.binder.CommanBinderKt.visibility(this.mboundView3, androidxDatabindingViewDataBindingSafeUnboxIsEmpty);
+            com.usend.binder.CommanBinderKt.visibility(this.rvShippingMethod, AndroidxDatabindingViewDataBindingSafeUnboxIsEmpty1);
+        }
+        if ((dirtyFlags & 0xaL) != 0) {
+            // api target 1
+
+            this.rvShippingMethod.setAdapter(adapter);
+        }
+    }
+    // Listener Stub Implementations
+    // callback impls
+    // dirty flag
+    private  long mDirtyFlags = 0xffffffffffffffffL;
+    /* flag mapping
+        flag 0 (0x1L): isEmpty
+        flag 1 (0x2L): adapter
+        flag 2 (0x3L): activity
+        flag 3 (0x4L): null
+    flag mapping end*/
+    //end
+}

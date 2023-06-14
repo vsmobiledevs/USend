@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                   
+
+    
+
+                 
+                                
+                             
+
+           
+
+    <LinearLayout
+        style="@style/match"
+        android:orientation="vertical"
+        tools:context=".views.home.PaymentMethodActivity" android:tag="layout/activity_payment_method_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+
+        <include
+            android:id="@+id/toolbarPaymentMethod"
+            layout="@layout/app_toolbar" />
+
+        <ScrollView
+            style="@style/styleScrollbar"
+            android:background="@color/colorWhite">
+
+            <RelativeLayout style="@style/match">
+
+                <LinearLayout
+                    android:id="@+id/llTop"
+                    style="@style/matchWrap"
+                    android:layout_above="@+id/btnNext"
+                    android:layout_alignParentTop="true"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cvCreditCard"
+                        style="@style/MaterialCardStyle"
+                        android:layout_marginStart="@dimen/dimen_20dp"
+                        android:layout_marginTop="@dimen/dimen_15dp"
+                        android:layout_marginEnd="@dimen/dimen_20dp">
+
+                        <RelativeLayout
+                            style="@style/match"
+                            android:padding="@dimen/dimen_15dp">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/imgPaymentMethod"
+                                android:layout_width="@dimen/dimen_60dp"
+                                android:layout_height="@dimen/dimen_40dp"
+                                android:layout_alignParentStart="true"
+                                android:src="@drawable/ic_credit_card" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                style="@style/CommonText.Style.16sp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/dimen_25dp"
+                                android:layout_toEndOf="@id/imgPaymentMethod"
+                                android:text="@string/lbl_credit_card"
+                                android:textColor="@color/color2D2D2D" />
+
+                            <androidx.appcompat.widget.AppCompatRadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:tag="binding_1"                               
+                                android:focusable="false"
+                                android:button="@drawable/radio_address_button_selector" />
+
+                        </RelativeLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cvApplePay"
+                        style="@style/MaterialCardStyle"
+                        android:layout_marginStart="@dimen/dimen_20dp"
+                        android:layout_marginTop="@dimen/dimen_20dp"
+                        android:layout_marginEnd="@dimen/dimen_20dp">
+
+                        <RelativeLayout
+                            style="@style/match"
+                            android:padding="@dimen/dimen_15dp">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/imgApplePay"
+                                android:layout_width="@dimen/dimen_60dp"
+                                android:layout_height="@dimen/dimen_40dp"
+                                android:layout_alignParentStart="true"
+                                android:src="@drawable/ic_apple_pay" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                style="@style/CommonText.Style.16sp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/dimen_25dp"
+                                android:layout_toEndOf="@id/imgApplePay"
+                                android:text="@string/lbl_apple_pay"
+                                android:textColor="@color/color2D2D2D" />
+
+                            <androidx.appcompat.widget.AppCompatRadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:tag="binding_2"                               
+                                android:focusable="false"
+                                android:button="@drawable/radio_address_button_selector" />
+
+                        </RelativeLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cvGooglePay"
+                        style="@style/MaterialCardStyle"
+                        android:layout_marginStart="@dimen/dimen_20dp"
+                        android:layout_marginTop="@dimen/dimen_20dp"
+                        android:layout_marginEnd="@dimen/dimen_20dp">
+
+                        <RelativeLayout
+                            style="@style/match"
+                            android:padding="@dimen/dimen_15dp">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/imgGoolgePay"
+                                android:layout_width="@dimen/dimen_60dp"
+                                android:layout_height="@dimen/dimen_40dp"
+                                android:layout_alignParentStart="true"
+                                android:src="@drawable/ic_google_pay" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                style="@style/CommonText.Style.16sp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/dimen_25dp"
+                                android:layout_toEndOf="@id/imgGoolgePay"
+                                android:text="@string/lbl_google_pay"
+                                android:textColor="@color/color2D2D2D" />
+
+                            <androidx.appcompat.widget.AppCompatRadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:tag="binding_3"                               
+                                android:focusable="false"
+                                android:button="@drawable/radio_address_button_selector" />
+
+                        </RelativeLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:id="@+id/cvPaypal"
+                        style="@style/MaterialCardStyle"
+                        android:layout_marginStart="@dimen/dimen_20dp"
+                        android:layout_marginTop="@dimen/dimen_20dp"
+                        android:layout_marginEnd="@dimen/dimen_20dp"
+                        android:layout_marginBottom="@dimen/dimen_20dp">
+
+                        <RelativeLayout
+                            style="@style/match"
+                            android:padding="@dimen/dimen_15dp">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/imgPaypal"
+                                android:layout_width="@dimen/dimen_60dp"
+                                android:layout_height="@dimen/dimen_40dp"
+                                android:layout_alignParentStart="true"
+                                android:src="@drawable/ic_paypal" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                style="@style/CommonText.Style.16sp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginStart="@dimen/dimen_25dp"
+                                android:layout_toEndOf="@id/imgPaypal"
+                                android:text="@string/lbl_paypal"
+                                android:textColor="@color/color2D2D2D" />
+
+                            <androidx.appcompat.widget.AppCompatRadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:tag="binding_4"                               
+                                android:focusable="false"
+                                android:button="@drawable/radio_address_button_selector" />
+
+                        </RelativeLayout>
+
+                    </com.google.android.material.card.MaterialCardView>
+
+                </LinearLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnNext"
+                    style="@style/MaterialButton.CornerRadius"
+                    android:layout_width="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:layout_marginBottom="@dimen/dimen_20dp"
+                    android:text="@string/lbl_next" />
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+         

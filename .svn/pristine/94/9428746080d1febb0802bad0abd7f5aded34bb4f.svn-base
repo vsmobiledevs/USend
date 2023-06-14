@@ -1,0 +1,285 @@
+package com.usend.viewmodels
+
+import android.app.Application
+import android.content.Context
+import android.util.Log
+import androidx.lifecycle.MediatorLiveData
+import com.base.network.BuildConfig
+import com.base.network.model.CreateCard
+import com.usend.R
+import com.usend.base.BaseViewModel
+import com.usend.comman.Resource
+import com.usend.extensions.callApi
+import com.usend.extensions.checkInternetConnected
+import com.usend.repository.ApiServices
+import com.usend.repository.UserRepository
+import com.usend.utils.PreferenceHelper
+import com.usend.utils.SQUARE_UP_TOKEN
+import java.math.BigDecimal
+
+class SavedCardsViewModel(
+    var myApplication: Application,
+    private var repository: UserRepository
+) :
+    BaseViewModel(myApplication) {
+
+    val mContext: Context = myApplication.applicationContext
+
+    val status: MediatorLiveData<Any> by lazy {
+        MediatorLiveData<Any>()
+    }
+
+    fun getStripeCardsApi() {
+        when {
+            !mContext.checkInternetConnected() -> status.value =
+                Resource.NoInternetError<Int>(R.string.default_internet_message)
+            else -> {
+                status.addSource(
+                    repository.getStripeCardsListApi(authKey = getAuthKey())
+                ) {
+
+                    if (it is Resource.Success<*>) {
+
+                    }
+                    status.value = it
+                }
+            }
+        }
+    }
+    fun addCardApiS(sqaureupToken: String, createCard: CreateCard, add: String) {
+        when {
+            !mContext.checkInternetConnected() -> status.value =
+                Resource.NoInternetError<Int>(R.string.default_internet_message)
+            else -> {
+                status.addSource(
+                    repository.addSqureupCard(
+                        sqaureupToken,createCard,add)
+                ) {
+                    Log.d("result",it.toString())
+
+                    if (it is Resource.AddUsendCard<*>) {
+
+                    }
+                    status.value = it
+                }
+            }
+        }
+    }
+    fun ListCardApiS(sqaureupToken: String,customerId: String) {
+        when {
+            !mContext.checkInternetConnected() -> status.value =
+                Resource.NoInternetError<Int>(R.string.default_internet_message)
+            else -> {
+                status.addSource(
+                    repository.listSquareupCard(
+                        sqaureupToken,customerId
+                    )
+                ) {
+                    Log.d("result",it.toString())
+                    if (it is Resource.AddSquareupCard<*>) {
+                        //can save for further use
+
+                    }
+                    status.value = it
+                }
+            }
+        }
+    }
+
+    fun createOrder(
+        address_id: Int,
+        package_ids: String,
+        amount_paid: String,
+        additional_fee: String,
+        shipping_amount: String,
+        request_shipping_service: String,
+        carrier_code: String,
+        service_code: String,
+        card_id: String,
+        additionalChargeId: String,
+        notes: String,
+        declared_value: String,
+        content_of_package: String,
+        consolidatedFees: BigDecimal
+    ) {
+        when {
+            !mContext.checkInternetConnected() -> status.value =
+                Resource.NoInternetError<Int>(R.string.default_internet_message)
+
+            else -> {
+                status.addSource(
+                    repository.createOrder(
+                        getAuthKey(), address_id = address_id, packageId = package_ids,
+                        amountPaid = amount_paid, shippingAmount = shipping_amount,
+                        additional_fee = additional_fee,
+                        requesteShippingService = request_shipping_service,
+                        carrierCode = carrier_code,
+                        serviceCode = service_code,
+                        card_id = card_id,
+                        additionalChargeId = additionalChargeId,
+                        notes = notes,
+                        packageContent = content_of_package,
+                        declaredValue = declared_value,
+                        consolidatedFees=consolidatedFees
+                    )
+                ) {
+
+                    if (it is Resource.Success<*>) {
+                        //can save for further use
+
+                    }
+
+                    status.value = it
+                }
+            }
+        }
+    }
+
+    fun setOrderStatus(
+        orderId: String,
+        paymentId: String,
+        paymentStatus: String,
+        stripePaymentId: String,
+    ) {
+        when {
+            !mContext.checkInternetConnected() -> status.value =
+                Resource.NoInternetError<Int>(R.string.default_internet_message)
+
+            else -> {
+                status.addSource(
+                    repository.updateOrderAndPayment(
+                        authKey = getAuthKey(),
+                        orderId = orderId,
+                        payment_id = paymentId,
+                        stripe_payment_id = stripePaymentId,
+                        payment_status = paymentStatus
+                    )
+                ) {
+
+                    if (it is Resource.UpdateOrderSuccess<*>) {
+                        //can save for further use
+
+                    }
+
+                    status.value = it
+                }
+            }
+        }
+    }
+
+    fun payConciergeAmount(card_id: String, amount_to_pay: Float, id: Int) {
+
+        when {
+            !mContext.checkInternetConnected() -> status.value =
+                Resource.NoInternetError<Int>(R.string.default_internet_message)
+            else -> {
+                status.addSource(
+                    repository.payConcierge(card_id, amount_to_pay, id, authToken = getAuthKey())
+                ) {
+                    if (it is Resource.ConciergePayment<*>) {
+                        //can save for further use
+                    }
+                    status.value = it
+                }
+            }
+        }
+    }
+
+    fun updateConciergeReq(id: Int, payment_id: String) {
+
+        when {
+            !mContext.checkInternetConnected() -> status.value =
+                Resource.NoInternetError<Int>(R.string.default_internet_message)
+            else -> {
+                status.addSource(
+                    repository.updateConciergeReq(
+                        id = id,
+                        payment_id = payment_id,
+                        authToken = getAuthKey()
+                    )
+                ) {
+                    if (it is Resource.UpdateConciergeReqSuccess<*>) {
+                        //can save for further use
+                    }
+                    status.value = it
+                }
+            }
+        }
+    }
+    fun getSquareupCards() {
+        val squareUpToken:String
+        if (BuildConfig.DEBUG) {
+            squareUpToken = SQUARE_UP_TOKEN
+        }else{
+            squareUpToken= SQUARE_UP_TOKEN
+        }
+        val customerId= PreferenceHelper.getUserObject().customerId
+        myApplication.callApi(
+            ApiServices.getSquareupCardApiService().listSquareUpCard(squareUpToken, customerId!!
+                ), liveData = status,
+            showLoading = true
+        )
+    }
+
+    fun getStripeCards() {
+        myApplication.callApi(
+            ApiServices.getStripeCardApiService().stripeCardList(
+                authorization = getAuthKey()
+            ), liveData = status,
+            showLoading = true
+        )
+    }
+
+    fun newAutoShipment(addressId: Int, autoShipmentServiceId: Int, paymentDetailId: String) {
+        myApplication.callApi(
+            ApiServices.getAutoShipmentApiService().newAutoShipment(
+                authorization = getAuthKey(),
+                addressId = addressId,
+                autoShipmentServiceId = autoShipmentServiceId,
+                paymentDetailId = paymentDetailId
+            ), liveData = status,
+            showLoading = true
+        )
+    }
+
+    fun check3dCard(cardId:String) {
+        myApplication.callApi(
+            ApiServices.getAutoShipmentApiService().check3dCard(
+                authorization = getAuthKey(),
+                cardId = cardId
+            ), liveData = status,
+            showLoading = true
+        )
+    }
+    fun delete(card_id: String) {
+
+        when {
+            !mContext.checkInternetConnected() -> status.value =
+                Resource.NoInternetError<Int>(R.string.default_internet_message)
+            else -> {
+                status.addSource(
+                    repository.deleteStripeCard(SQUARE_UP_TOKEN, card_id)
+                ) {
+
+                    if (it is Resource.DeleteStripeCard<*>) {
+
+                    }
+                    status.value = it
+                }
+            }
+        }
+    }
+
+    /*fun updateAutoShipment(paymentDetailId: Int?=null) {
+        myApplication.callApi(
+            ApiServices.getAutoShipmentApiService().updateAutoShipment(
+                authorization = getAuthKey(),
+                addressId = null,
+                autoShipmentServiceId = null,
+                paymentDetailId = paymentDetailId
+            ), liveData = status,
+            showLoading = true,
+            model = 111
+        )
+    }*/
+}

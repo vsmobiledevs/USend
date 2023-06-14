@@ -1,0 +1,554 @@
+<resources>
+    <string name="app_name">Usend</string>
+
+    <!-- extra string -->
+    <string name="lbl_OK">OK</string>
+    <string name="lbl_okay">Okay</string>
+    <string name="lbl_no">No</string>
+    <string name="paymentstatus">COMPLETED</string>
+    <string name="card_message">Card add successfully ,please click on back arrow to refresh card list</string>
+    <string name="msg_no_records">No Records Found</string>
+    <string name="default_loading_message">Loading…</string>
+    <string name="default_internet_message">No internet connection.</string>
+    <string name="lbl_tap_to_exit">Tap again to exit</string>
+    <string name="msg_profile_update_successfully">Profile updated successfully</string>
+    <string name="lbl_lorem_ipsum">What is Lorem Ipsum is simply dummy text of the printing and typesetting industry Lorem Ipsum has been the industry\'s standard.</string>
+    <string name="lbl_session_expired_msg">Your session has been expired, please login again to continue.</string>
+    <string name="lbl_session_expired">Session Expired.</string>
+
+
+    <!-- Intro Activity -->
+    <string name="lbl_skip">Skip</string>
+    <string name="lbl_next">Next</string>
+    <string name="lbl_get_started">Get Started</string>
+    <string name="lbl_intro_title1">Coverage around the world</string>
+    <string name="lbl_intro_title2">Free shipping calculator</string>
+    <string name="lbl_intro_title3">Realtime on Tracking</string>
+    <string name="lbl_intro_title4">Fast Delivery Service</string>
+
+    <!--Authentication Activity-->
+    <string name="lbl_sign_in">Sign In</string>
+    <string name="lbl_card_delete_msg"> This card is used for auto shipment so can not delete it</string>
+    <string name="lbl_card_update_msg"> This card is used for auto shipment so can not update it</string>
+    <string name="lbl_sign_up">Sign Up</string>
+    <string name="lbl_auth_desc">Sign In/Sign Up to find\ncourier details you received</string>
+
+    <!-- Main Activity-->
+    <string name="lbl_mailbox">Mailbox</string>
+    <string name="lbl_calculator">Calculator</string>
+    <string name="lbl_order_history">Order History</string>
+    <string name="lbl_concierge">Concierge</string>
+    <string name="lbl_concierge_req">Concierge Requests</string>
+    <string name="lbl_profile">Profile</string>
+
+    <!-- SignIn Activity-->
+    <string name="lbl_wel_come">Welcome Back!</string>
+    <string name="lbl_email">Email</string>
+    <string name="lbl_password">Password</string>
+    <string name="lbl_enter_your_email">Enter your email</string>
+    <string name="lbl_enter_your_password">Enter password</string>
+    <string name="lbl_forgot_password">Forgot Password?</string>
+    <string name="lbl_dont_have_account">Don\'t have an account?\u0020</string>
+    <string name="lbl_dont_have_account_signup">Don\'t have an account? Sign Up</string>
+    <string name="msg_please_enter_email">Please enter email address!</string>
+    <string name="msg_valid_email">Please enter valid email address!</string>
+    <string name="msg_please_enter_valid_email">Please enter valid email address</string>
+    <string name="msg_please_enter_password">Please enter password!</string>
+    <string name="msg_too_small_password">Password must be of 6 characters long!</string>
+
+    <!-- SignUp Activity-->
+    <string name="lbl_name">Name</string>
+    <string name="lbl_first_name">First Name</string>
+    <string name="lbl_last_name">Last Name</string>
+    <string name="lbl_enter_your_first_name">Enter first name</string>
+    <string name="lbl_enter_your_last_name">Enter last name</string>
+    <string name="lbl_re_password">Re-Password</string>
+    <string name="lbl_i_agree_to_T_and_c">I agree to U-SEND Terms &amp; Conditions and Privacy Policy</string>
+    <string name="lbl_i_agree">I agree to U-SEND\u0020</string>
+    <string name="lbl_t_and_c">Terms &amp; Conditions\u0020</string>
+    <string name="lbl_and">&amp;\u0020</string>
+    <string name="lbl_subscription_cancelresponse">Subscription canceled successfully!</string>
+    <string name="lbl_privacy_policy">Privacy Policy</string>
+    <string name="lbl_already_have_an_account_sign_in">Already have an account? Sign In</string>
+    <string name="lbl_already_have_an_account">Already have an account?\u0020</string>
+    <string name="msg_first_name_can_not_be_blank">Please enter first name</string>
+    <string name="msg_last_name_can_not_be_blank">Please enter last name</string>
+    <string name="msg_password_does_not_match">Password and Re-Password must be same</string>
+    <string name="msg_current_and_new_passwords_same">Current password and new password can\'t be same.</string>
+    <string name="msg_password_strength">Password should be more than 8 characters long and contains at least one digit, upper case &amp; lower case letter.</string>
+    <string name="msg_accept_terms_policy">Please accept Terms &amp; Conditions and Privacy Policy</string>
+    <string name="msg_continue_accept_terms_policy">I agree to Autoship </string>
+
+    <!-- Billing Address Activity-->
+    <string name="lbl_billing_address">Billing Address</string>
+    <string name="lbl_address">Address</string>
+    <string name="lbl_address_line_1">Address line 1</string>
+    <string name="lbl_address_line_2">Address line 2</string>
+    <string name="lbl_country">Country</string>
+    <string name="lbl_zipcode">Zip Code</string>
+    <string name="lbl_select">Select</string>
+    <string name="lbl_select_country_">Select Country</string>
+    <string name="lbl_enter_zipcode">Enter Zip Code</string>
+    <string name="lbl_enter_city">Enter city</string>
+    <string name="lbl_enter_state">Enter state</string>
+    <string name="lbl_city">City</string>
+    <string name="lbl_state">State</string>
+    <string name="lbl_phone_number">Phone Number</string>
+    <string name="lbl_enter_phone_number">Enter Phone Number</string>
+    <string name="lbl_enter_address_line1">Please enter address line 1</string>
+    <string name="lbl_enter_address_line2">Please enter address line 2</string>
+    <string name="lbl_select_country">Please select country</string>
+    <string name="msg_plz_enter_label_address">Please enter label of address</string>
+    <string name="msg_plz_enter_receiver_name">Please enter receiver name</string>
+    <string name="lbl_select_city">Please select city</string>
+    <string name="lbl_select_state">Please select state</string>
+    <string name="msg_plz_enter_zipcode">Please enter zipcode</string>
+    <string name="lbl_select_country_code">Please select country code</string>
+    <string name="lbl_please_enter_phone_number">Please enter phone number</string>
+    <string name="lbl_please_enter_valid_phone_number">Please enter valid phone number</string>
+    <string name="msg_valid_zipcode">Use 00000 if Zip Code is not available in your country</string>
+
+    <!-- Payment Info Activity-->
+    <string name="lbl_payment">Payment</string>
+    <string name="lbl_card_number">Card Number</string>
+    <string name="lbl__enter_card_holder_name">Enter card holder name</string>
+    <string name="lbl_card_holder_name">Card Holder Name</string>
+    <string name="lbl_enter_CVV">Enter CVV Number</string>
+    <string name="lbl_month">Month</string>
+    <string name="lbl_year">Year</string>
+    <string name="lbl_cvv">CVV</string>
+    <string name="lbl_submit">Submit</string>
+    <string name="msg_card_number_can_be_blank">Please enter card number!</string>
+    <string name="msg_please_enter_valid_card_number">Please enter valid card number</string>
+    <string name="msg_card_name_can_not_be_blank">Please enter card name!</string>
+    <string name="msg_select_valid_month">Please enter valid month</string>
+    <string name="msg_select_valid_year">Please enter valid year</string>
+    <string name="msg_enter_valid_month_year">Please enter valid month and year</string>
+    <string name="msg_cvv_can_not_be_blank">Please enter CVV number</string>
+    <string name="msg_enter_valid_cvv_number">Please enter valid CVV Number</string>
+
+    <!--OtpVerification Activity-->
+
+    <string name="lbl_otp_desc">We have sent you a 4 digit verification code on the mobile number associated with your email address</string>
+    <string name="msg_please_wait">Please wait…</string>
+    <string name="msg_enter_otp">Please enter OTP</string>
+    <string name="msg_enter_valid_otp">Please enter valid OTP</string>
+    <string name="lbl_resend_code">Resend Code</string>
+    <string name="msg_otp_send_success">OTP sent to mobile number : %s</string>
+    <string name="lbl_enter_phone_number_here">Enter your phone number here</string>
+    <string name="msg_please_enter_new_number">Please enter new phone number</string>
+
+    <!-- Region Selection Activity-->
+    <string name="lbl_search_here">Search here</string>
+    <string name="lbl_no_relusst_found">No result found</string>
+
+    <!-- Forgotpassword Activity-->
+    <string name="lbl_forgot_password_">Forgot Password</string>
+    <string name="lbl_send_password">We will send you a temporary password to your registered email address</string>
+    <string name="msg_password_sent">We have sent a new password on the email address, please use that password while login.</string>
+
+    <!-- Mailbox Fragment-->
+    <string name="lbl_packages_in_mailbox">Packages in mailbox</string>
+    <string name="lbl_packages">Packages</string>
+    <string name="lbl_package_number">Package Number :</string>
+    <string name="lbl_package_number_">Package Number</string>
+    <string name="lbl_received_date">Received Date</string>
+    <string name="lbl_days_remaining">Days Remaining</string>
+    <string name="lbl_days">Days</string>
+    <string name="lbl_dimensions">Dimensions</string>
+    <string name="lbl_dimensions_colon">Dimensions:</string>
+    <string name="lbl_weight">Weight</string>
+    <string name="lbl_weight_colon">Weight:</string>
+    <string name="lbl_select_all">Select All</string>
+    <string name="lbl_create_shipment">Create Shipment</string>
+    <string name="lbl_trash_shipment">Trash</string>
+    <string name="lbl_confirm_trash">Are you sure you want to trash this package?</string>
+    <string name="lbl_no_packages_found">No Packages found!</string>
+    <string name="lbl_deselect_all">Deselect all </string>
+    <string name="lbl_split_processing">Split Processing</string>
+    <string name="msg_split_processing">This Package is under spilt processing</string>
+    <string name="msg_plz_select_package">Please select a package to create shipment.</string>
+    <string name="msg_plz_select_package_trash">Please select a package to trash.</string>
+
+    <!--Package Detail Activity-->
+    <string name="lbl_package_details">Package Details</string>
+    <string name="lbl_package_details_colon">Package Details:</string>
+    <string name="lbl_package_num">Package Number</string>
+    <string name="lbl_package_type">Package Type</string>
+    <string name="lbl_from">From</string>
+    <string name="lbl_do_you_want_to_split_package">Do you want to split the package?</string>
+    <string name="lbl_split_package_into">Split package into</string>
+    <string name="lbl_split_packages">Split Packages</string>
+    <string name="lbl_do_you_want_to_split_packages">Do you want to split package?</string>
+    <string name="lbl_split_charges">Split Package might have\nadditional charges.</string>
+    <string name="lbl_accept">Accept</string>
+    <string name="lbl_cancel">Cancel</string>
+    <string name="alret">Alert</string>
+
+    <!--Ship To Address Activity-->
+    <string name="lbl_add_new_address">Add New Address</string>
+    <string name="lbl_ship_to_address">Ship to Address</string>
+    <string name="msg_are_you_sure_">Are you sure you want to delete this Address?</string>
+    <string name="msg_plz_shipping_address">Please add a shipping address</string>
+    <string name="msg_plz_shipping_method">Please select shipping method</string>
+
+    <!--Shipping Method Activity-->
+    <string name="lbl_shipping_method">Shipping Method</string>
+    <string name="lbl_sort_by">Sort by</string>
+    <string name="lbl_price">Price</string>
+    <string name="lbl_high_to_low">High to Low</string>
+    <string name="lbl_low_to_high">Low to High</string>
+    <string name="lbl_no_shipping_method_found">No Shipping Method Found!</string>
+    <string name="lbl_all">All</string>
+
+
+    <!--Shipping Details Activity-->
+    <string name="lbl_shipping_address">Shipping Address</string>
+    <string name="lbl_change">Change</string>
+    <string name="lbl_service">Service</string>
+    <string name="lbl_special_notes">Special notes/instructions</string>
+    <string name="lbl_special_notes_colon">Special notes/instructions:</string>
+    <string name="msg_enter_notes">Type your notes...</string>
+    <string name="msg_type_here">Type here...</string>
+    <string name="lbl_declared_values">Declared value in USD</string>
+    <string name="lbl_declared_values_colon">Declared value in USD:</string>
+    <string name="lbl_desc_of_item">Description of item</string>
+    <string name="lbl_desc_of_item_colon">Description of item:</string>
+    <string name="lbl_extra_charges">Extra Charges</string>
+    <string name="lbl_invoice_details">Invoice Details:</string>
+    <string name="lbl_carrier_fees">Carrier Fees</string>
+    <string name="lbl_carrier_fees_colon">Carrier Fees:</string>
+    <string name="lbl_process_fees">Process Fees</string>
+    <string name="lbl_additional_fees">Additional Fees</string>
+    <string name="lbl_additional_fees_colon">Additional Fees:</string>
+    <string name="lbl_consolidated_fees_colon">Package consolidation:</string>
+    <string name="lbl_total_charges">Total Charges</string>
+    <string name="lbl_total_charges_colon">Total Charges:</string>
+    <string name="lbl_remove_all_invoices">Remove all invoices</string>
+    <string name="lbl_remove_price_tag">Remove price tag</string>
+    <string name="lbl_repackage_into_smaller_box">Repackage into smaller box</string>
+    <string name="lbl_add_gift_note">Add gift note</string>
+    <string name="lbl_shipping_details">Shipping Details</string>
+    <string name="msg_please_enter_declared_value">Please enter declared value of item in USD</string>
+    <string name="msg_please_enter_desc_of_item">Please enter description of item</string>
+    <string name="msg_enter_desc_of_item">Enter description of item</string>
+    <string name="msg_enter_item_value">Enter item value in USD</string>
+    <string name="msg_enter_special_notes">Enter special notes/instructions</string>
+
+    <!--Payment Method Activity-->
+    <string name="lbl_payment_method">Payment method</string>
+    <string name="lbl_credit_card">Credit Card</string>
+    <string name="lbl_apple_pay">Apple Pay</string>
+    <string name="lbl_google_pay">Google Pay</string>
+    <string name="lbl_paypal">Paypal</string>
+    <string name="lbl_save_changes">Save Changes</string>
+    <string name="lbl_add_card">Add Card</string>
+    <string name="lbl_saved_payment_methods">Saved Payment Methods</string>
+    <string name="lbl_payment_methods">Payment Methods</string>
+    <string name="lbl_add_new_card">Add New Card</string>
+    <string name="lbl_edit_card">Edit Card</string>
+    <string name="msg_card_added_sucessfully">Card added successfully</string>
+    <string name="msg_membership_sucessfully">Your membership premimuim successfully</string>
+    <string name="msg_card_updated_sucessfully">Card updated successfully</string>
+    <string name="auto_shipment_on_msg">Are you sure you wish to turn ON the Auto Shipment service ?</string>
+    <string name="auto_shipment_off_msg">Are you sure you wish to turn OFF the Auto Shipment service ?</string>
+
+    <string name="msg_card_deleted_sucessfully">Card deleted successfully</string>
+    <string name="lbl_expires">Expires</string>
+
+    <string name="msg_are_you_sure_to_delete_card">Are you sure you want to delete this card?</string>
+
+
+    <!--Payment Successful Activity-->
+    <string name="lbl_payment_successful">Payment Successful</string>
+
+    <!--Add New Address Activity-->
+    <string name="lbl_add">Add</string>
+    <string name="lbl_yearly_premimum_msg">You are currently subscribed to yearly premimum subscription.</string>
+    <string name="lbl_monthly_premimum_msg">You are currently subscribed to monthly premimum subscription.</string>
+
+    <string name="lbl_premimum_click">Click here to upgrade</string>
+    <string name="lbl_premimum_cancel">If You want to cancel this plan</string>
+    <string name="lbl_premimum_upgrade">If You upgrade yearly plan we will save 17% monthly</string>
+    <string name="lbl_please_click">Please Click here</string>
+    <string name="lbl_premimum_month_start">Your plan started from</string>
+    <string name="lbl_premimum_billing">You are being billed monthly for $14.99</string>
+    <string name="lbl_premimum_billing_yearly">You are being billed annually for $150.</string>
+    <string name="lbl_upgrade_here">to upgrade back to premium</string>
+    <string name="lbl_expired_y_subscription">Your yearly subscription expires on</string>
+    <string name="lbl_expired_subscription">Your monthly subscription expires on</string>
+    <string name="lbl_back_upgrade">to upgrade back to premium.</string>
+    <string name="lbl_delete">Delete</string>
+    <string name="lbl_updates">Update</string>
+    <string name="lbl_pay">Pay</string>
+      <string name="sqip_card_entry_save_button_text">Save</string>
+    <string name="square_error_message">An error occured while processing,please see the details below and share us via contact-us</string>-->
+
+    <!--Calculator Frag-->
+    <string name="lbl_shipping_calculator">Shipping Calculator</string>
+    <string name="lbl_shipping_country">Shipping Country</string>
+    <string name="lbl_ship_to_country">Ship to Country</string>
+    <string name="lbl_length">Length</string>
+    <string name="lbl_width">Width</string>
+    <string name="lbl_height">Height</string>
+    <string name="lbl_inch">inch</string>
+    <string name="lbl_cm">cm</string>
+    <string name="lbl_lbs">lbs</string>
+    <string name="lbl_kg">kg</string>
+    <string name="lbl_get_quote">Get Quote</string>
+    <string name="lbl_shipping_cost">Shipping Cost</string>
+    <string name="lbl_shipping_cost_colon">Shipping Cost:</string>
+    <string name="msg_please_select_shipping_country">Please select shipping country</string>
+    <string name="msg_please_select_shipping_city">Please enter shipping city</string>
+    <string name="msg_please_enter_weight">Please enter weight</string>
+    <string name="msg_please_enter_length">Please enter length</string>
+    <string name="msg_please_enter_width">Please enter width</string>
+    <string name="msg_please_enter_height">Please enter height</string>
+
+    <!-- Order History Frag -->
+    <string name="lbl_orders_processed">Orders in process</string>
+    <string name="lbl_order_number_">Order Number:</string>
+    <string name="lbl_order_number">Order Number</string>
+    <string name="lbl_carrier_used">Carrier Used</string>
+    <string name="lbl_carrier_used_colon">Carrier Used:</string>
+    <string name="lbl_service_type">Service Type</string>
+    <string name="lbl_service_type_colon">Service Type:</string>
+    <string name="lbl_processed_on">Processed On</string>
+    <string name="lbl_processed_on_colon">Processed On:</string>
+    <string name="lbl_total_cost">Total Cost</string>
+    <string name="lbl_tracking_number">Tracking Number</string>
+    <string name="lbl_tracking_number_colon">Tracking Number:</string>
+    <string name="lbl_no_order_history">No Order History Found!</string>
+
+    <!-- Order Details Activity -->
+    <string name="lbl_status">Status</string>
+    <string name="lbl_status_colon">Status:</string>
+    <string name="lbl_est_delivery_date">Estimated Delivery Date</string>
+    <string name="lbl_delivery_address">Delivery Address:</string>
+    <string name="lbl_invoice_details_">Invoice Details</string>
+    <string name="lbl_order_details">Order Details</string>
+    <string name="lbl_shipped">Shipped</string>
+
+    <!-- Concierge Frag -->
+    <string name="lbl_upgrade_to_premium">UPGRADE TO PREMIUM</string>
+    <string name="lbl_upgrade">Upgrade</string>
+    <string name="lbl_recommended">Recommended</string>
+    <string name="lbl_recommended_click">Please to click here to upgrade</string>
+
+    <string name="lbl_subscription_message">Sorry you don’t have premium membership to access concierge services,</string>
+    <string name="lbl_package_consolidation">Package Consolidation</string>
+    <string name="lbl_additional_photos">Additional Photos</string>
+    <string name="lbl_personal_shopper_service">Personal Shopper Service</string>
+    <string name="lbl_receive_usps_mail">Receive USPS Mail</string>
+    <string name="lbl_one_month_">$14.99/month</string>
+    <string name="lbl_cal_value">0.0</string>
+    <string name="lbl_one_year">$150/year</string>
+    <string name="lbl_off">Save 17%</string>
+    <string name="lbl_all_requests">Requests</string>
+    <string name="lbl_create">Create</string>
+    <string name="lbl_submitted">Submitted</string>
+    <string name="lbl_processing">Processing</string>
+    <string name="lbl_purchased">Purchased</string>
+    <string name="lbl_not_available">Not available</string>
+    <string name="lbl_product_name">Product Name</string>
+    <string name="lbl_product_name_colon">Product Name:</string>
+    <string name="lbl_website_link">Website Link</string>
+    <string name="lbl_website_link_colon">Website Link:</string>
+    <string name="lbl_req_on">Requested On:</string>
+    <string name="lbl_cost">Cost</string>
+    <string name="lbl_product_cost">Product Cost:</string>
+    <string name="lbl_paid_amount">Payable Amount:</string>
+    <string name="lbl_transaction_date">Transaction Date:</string>
+    <string name="lbl_details">Details</string>
+    <string name="lbl_no_concierge_req_found">No concierge request found!</string>
+    <string name="lbl_desc_size">Description/ Size</string>
+    <string name="lbl_desc_size_colon">Description/ Size:</string>
+    <string name="msg_concierge_req_payment_done">The payment of concierge request done successfully.</string>
+    <string name="msg_concierge_upgrade">Subscriptions will be charged to your credit card through your Google Play account. Your subscription will automatically renew for the same package length at the same price unless canceled at least 24 hours before the end of your current subscription in the settings in the Play store.</string>
+    <string name="lbl_desc">consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</string>
+
+    <!-- Create New Req -->
+    <string name="lbl_create_new_req">Create New Request</string>
+    <string name="lbl_product_image">Product Image</string>
+    <string name="lbl_enter_item_name">Enter item name</string>
+    <string name="lbl_enter_website_link">Enter website link</string>
+    <string name="lbl_added_additional_fees">Added 5% of cost value as fees.</string>
+    <string name="lbl_enter_cost">Enter cost</string>
+    <string name="lbl_enter_your_text">Enter your text...</string>
+    <string name="lbl_i_authorize">I authorize USEND LLC to charge my credit card for the above amount.</string>
+    <string name="msg_plz_select_product_image">Please select product image</string>
+    <string name="msg_enter_product_name">Please enter product name!</string>
+    <string name="msg_enter_website_link">Please enter website link!</string>
+    <string name="msg_enter_cost">Please enter product cost!</string>
+    <string name="msg_enter_desc">Please enter description!</string>
+    <string name="msg_autho_charge">Please authorize to USEND LLC to charge your credit card.</string>
+    <string name="msg_your_req_submitted">Your request has been submitted successfully.\nOur team will contact you shortly.</string>
+
+    <!--My Profile Frag -->
+    <string name="lbl_prohibited_item">Prohibited Items</string>
+    <string name="lbl_my_profile">My Profile</string>
+    <string name="lbl_t_and_c_">Terms &amp; Conditions</string>
+    <string name="lbl_premium">Premium</string>
+    <string name="lbl_membership">Membership</string>
+    <string name="lbl_inactive">Inactive</string>
+    <string name="lbl_active">Active</string>
+    <string name="lbl_account_status">Account Status</string>
+    <string name="lbl_usps_verification">USPS Verification</string>
+    <string name="lbl_edit_profile">Edit Profile</string>
+    <string name="lbl_auto_shipment">Auto Shipment</string>
+    <string name="lbl_change_password">Change Password</string>
+    <string name="lbl_payment_method_">Payment Method</string>
+    <string name="lbl_unit_system">Unit System</string>
+    <string name="lbl_contact_us">Contact Us</string>
+    <string name="lbl_logout">Logout</string>
+    <string name="msg_logout">Are you sure you want to logout?</string>
+    <string name="msg_cancel_plan">Are you sure you want to cancel?</string>
+    <string name="lbl_yes">Yes</string>
+    <string name="lbl_proceed">Proceed</string>
+    <string name="lbl_kg_cm">kg/cm</string>
+    <string name="lbl_lbs_inch">lbs/inch</string>
+    <string name="lbl_free">Free</string>
+
+    <!--AutoShip Activity-->
+    <string name="lbl_preferred_address">Preferred Address</string>
+    <string name="lbl_preferred_payment_method">Preferred Payment Method</string>
+    <string name="lbl_preferred_shipping_method">Preferred Shipping Method</string>
+    <string name="lbl_auto_ship_settings">Auto Ship Settings</string>
+
+
+    <!--Edit Profile Activity-->
+    <string name="lbl_full_name">Full Name</string>
+    <string name="lbl_reason">Reason</string>
+    <string name="lbl_message">Message</string>
+    <string name="lbl_type_your_message">Type your message...</string>
+    <string name="lbl_deduct_for_verificaion">We will deduct $1.0 from your card to verify the payment method. $1.0 will be refunded after the verification.</string>
+
+    <!--Contact Us Activity-->
+    <string name="msg_please_select_reason">Please select reason</string>
+    <string name="msg_please_write_message">Please write your message</string>
+    <string name="msg_thank_you">Thank you for contacting us, our team will communicate with you ASAP.</string>
+
+    <!--Change Password Activity-->
+    <string name="lbl_current_password">Current Password</string>
+    <string name="lbl_enter_current_password">Enter your current password</string>
+    <string name="lbl_enter_new_password">Enter a new password</string>
+    <string name="lbl_enter_confirm_password">Enter confirm password</string>
+    <string name="lbl_new_password">New Password</string>
+    <string name="lbl_confirm_password">Confirm Password</string>
+    <string name="msg_please_enter_current_password">Please enter current password</string>
+    <string name="msg_please_enter_new_password">Please enter new password</string>
+    <string name="msg_please_enter_condfirm_password">Please enter confirm password</string>
+    <string name="msg_password_and_confirm_password_does_not_match">New password and confirm password does not match.</string>
+    <string name="msg_password_updated_successfully">Password updated successfully</string>
+
+    <!--Prohibited Items Activity-->
+    <string name="lbl_alcohol">Alcohol</string>
+    <string name="lbl_animals">Animals</string>
+    <string name="lbl_biohazard">Biohazard</string>
+    <string name="lbl_cbd">CBD</string>
+    <string name="lbl_chemicals">Chemicals</string>
+    <string name="lbl_illegal_substance">Illegal substance</string>
+    <string name="lbl_explosives">Explosives</string>
+    <string name="lbl_fertilizers_pesticidess">Fertilizers &amp; Pesticides</string>
+    <string name="lbl_fire_arms">Fire arms</string>
+    <string name="lbl_radioactive_material">Radioactive material</string>
+    <string name="lbl_hazardous_materials">Hazardous materials</string>
+    <string name="lbl_ivory">Ivory</string>
+    <string name="lbl_poison">Poison</string>
+    <string name="lbl_pornography">Pornography</string>
+    <string name="lbl_cash">Cash</string>
+    <string name="lbl_lead_acid_battery">Lead acid battery</string>
+    <string name="lbl_pressurized_cans">Pressurized cans</string>
+    <string name="lbl_tobacco">Tobacco</string>
+
+    <!-- USPS Verification Activity-->
+    <string name="lbl_usps_desc">USPS form 1583 is a written authorization that allows us to receive packages from USPS on the customer’s behalf. This form is not needed if you will only be receiving FedEx and DHL packages.</string>
+    <string name="lbl_passport_image">Passport Image</string>
+    <string name="lbl_driving_license">Driving License</string>
+    <string name="lbl_1583_form">1583 Form</string>
+    <string name="lbl_dont_have_1583_form">Don\'t have 1583 form?</string>
+    <string name="lbl_download">Download</string>
+    <string name="msg_upload_passport_image">Please upload passport image</string>
+    <string name="msg_upload_driving_license_image">Please upload driving license image</string>
+    <string name="msg_upload_1583_form_image">Please upload 1583 form image</string>
+    <string name="mssg_usps_verification_submitted">USPS verification submitted successfully.</string>
+    <string name="lbl_verification_pending">Verification Pending</string>
+    <string name="lbl_please_wait_for_verification">Please wait for profile verification</string>
+    <string name="lbl_contact_admin">Contact Admin</string>
+    <string name="lbl_update_document">Update Document</string>
+    <string name="lbl_verification">Verification</string>
+    <string name="lbl_verification_completed">Verification Completed</string>
+    <string name="lbl_enjoy_your_service">Enjoy our service!</string>
+    <string name="lbl_verification_rejected">Verification Rejected</string>
+    <string name="lbl_please_update_documents">Please update documents</string>
+
+    <!--Add New Address Activity-->
+    <string name="lbl_label">Label</string>
+    <string name="lbl_enter_label">Enter label name</string>
+    <string name="lbl_receiver_name">Receiver Name</string>
+    <string name="lbl_enter_receiver_name">Enter receiver name</string>
+    <string name="lbl_same_as_billing_address">Same as billing address</string>
+    <string name="msg_address_added_sucessfully">Address added successfully</string>
+    <string name="msg_address_updated_sucessfully">Address updated successfully</string>
+    <string name="msg_address_deleted_sucessfully">Address deleted successfully</string>
+    <string name="msg_are_you_sure">Are you sure you want to delete this address?</string>
+    <string name="lbl_update">Update</string>
+    <string name="lbl_edit_address">Edit Address</string>
+    <string name="msg_are_you_sure_billing_address">Are you sure you want to add address data same as billing address?</string>
+
+    <!-- Notifications Activity-->
+    <string name="lbl_notification">Notification</string>
+    <string name="lbl_no_notification_found">No Notification Found!</string>
+    <string name="lbl_seconds_ago">seconds ago</string>
+    <string name="lbl_minute_ago">minute ago</string>
+    <string name="lbl_minutes_ago">minutes ago</string>
+    <string name="lbl_hours_ago">hours ago</string>
+    <string name="lbl_hour_ago">hour ago</string>
+    <string name="lbl_day_ago">day ago</string>
+    <string name="lbl_days_ago">days ago</string>
+
+    <!-- values for DownloadUtils -->
+    <string name="txt_pause_for_network">PAUSED_WAITING_FOR_NETWORK</string>
+    <string name="txt_wait_for_retry">PAUSED_WAITING_TO_RETRY</string>
+    <string name="txt_paused_unknown">PAUSED_UNKNOWN</string>
+    <string name="txt_queued_for_wifi">PAUSED_QUEUED_FOR_WIFI</string>
+
+    <string name="txt_status_paused">STATUS_PAUSED</string>
+    <string name="txt_status_pending">STATUS_PENDING</string>
+    <string name="txt_status_running">STATUS_RUNNING</string>
+    <string name="txt_status_successful">STATUS_SUCCESSFUL</string>
+    <string name="txt_status_failed">STATUS_FAILED</string>
+
+    <string name="txt_error_cannot_resume">ERROR_CANNOT_RESUME</string>
+    <string name="txt_error_unknown">ERROR_UNKNOWN</string>
+    <string name="txt_device_not_found">ERROR_DEVICE_NOT_FOUND</string>
+    <string name="txt_error_file_exists">ERROR_FILE_ALREADY_EXISTS</string>
+    <string name="txt_error_file_error">ERROR_FILE_ERROR</string>
+    <string name="txt_error_http_data_error">ERROR_HTTP_DATA_ERROR</string>
+    <string name="txt_error_no_space">ERROR_INSUFFICIENT_SPACE</string>
+    <string name="txt_error_too_many_redirect">ERROR_TOO_MANY_REDIRECTS</string>
+    <string name="txt_error_unhandled_http_code">ERROR_UNHANDLED_HTTP_CODE</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="lbl_try_again">Try Again</string>
+    <string name="lbl_suceess_message">Thank you for submitting your order, we will process your order ASAP, and you can see the latest update in order history tab</string>
+    <string name="lbl_suceess_message_concierge_tab">Thank you for submitting your order, we will process your order ASAP, and you can see the latest update in concierge tab</string>
+    <string name="lbl_note">Note</string>
+    <string name="lbl_note_colon">Note:</string>
+    <string name="lbl_receive_your_tax">Receive your tax free shipping address just by signing up</string>
+    <string name="lbl_free_ship">Calculate what it will cost to ship a package before trying our service</string>
+    <string name="lbl_consolidate">Consolidate, manage, split, and track your shipments</string>
+    <string name="lbl_autoship_1">Autoship functionality</string>
+    <string name="lbl_free_package_2">Free package consolidation</string>
+    <string name="lbl_concierge_service">Concierge service</string>
+    <string name="lbl_4_receive_usps_mail">Receive USPS mail</string>
+    <string name="lbl_split_order">Split Order</string>
+    <string name="lbl_free_storage_5">45 days free storage</string>
+    <string name="lbl_shipped_orders">Shipped orders</string>
+    <string name="lbl_premium_membership">Premium membership</string>
+    <string name="lbl_premium_membership_choose">Choose the plan that right for You</string>
+    <string name="lbl_manage_membership">Manage Subscription</string>
+    <string name="lbl_select_card">Please select card</string>
+    <string name="lbl_usa_shipment_error">EXPRESS WORLDWIDE and FedEx International Priority® not available in USA, Kindly change your shipping method.</string>
+    <string name="lbl_shipping_method_not_supported">Shipping method not applicable in this country, kindly change shipping method</string>
+
+</resources>

@@ -1,0 +1,140 @@
+@file:Suppress("DEPRECATION")
+
+package com.usend.views.home
+
+import android.annotation.SuppressLint
+import android.app.Activity
+import android.content.Intent
+import androidx.lifecycle.Observer
+import com.base.network.model.ConciergeRequestResponseData
+import com.base.network.model.ListConciergeRequestResponse
+import com.usend.R
+import com.usend.adapter.ConciergeItemAdapter
+import com.usend.comman.Resource
+import com.usend.base.ViewModelFragment
+import com.usend.databinding.FragmentConciergeBinding
+import com.usend.extensions.nullSafe
+import com.usend.extensions.showToast
+import com.usend.utils.*
+import com.usend.viewmodels.ConciergeViewModel
+
+
+
+
+class ConciergeFragment(
+    override val modelClass: Class<ConciergeViewModel> = ConciergeViewModel::class.java,
+    override val layoutId: Int = R.layout.fragment_concierge
+) : ViewModelFragment<FragmentConciergeBinding, ConciergeViewModel>() {
+
+    private var arrayList = arrayListOf<ConciergeRequestResponseData>()
+    private var paymentPos : Int = -1
+
+    override fun initControls() {
+
+        viewModel.getConciergeList()
+
+        binding.adapter = ConciergeItemAdapter(arrayList){ it, type ->
+
+            if(type == NORMAL)
+            {
+                val intent  = Intent(requireActivity(), ConciergeItemDetailActivity::class.java)
+                intent.putExtra(EXTRA_DATA, arrayList[it])
+                startActivityForResult (intent, CREATE_CONCIERGE)
+            }
+            else if(type == PAY)
+            {
+                paymentPos = it
+                SavedPaymentMethodsActivity.newIntent(requireActivity(), Intent(requireActivity(), SavedPaymentMethodsActivity::class.java)
+                    .putExtra(FROM, FROM_CONCIERGE)
+                    .putExtra(EXTRA_DATA, arrayList[it]))
+            }
+        }
+
+        binding.txtCreate.setOnClickListener {
+
+            val intent  = Intent(requireActivity(), CreateNewReqActivity::class.java)
+            startActivityForResult (intent, CREATE_CONCIERGE)
+        }
+
+        binding.swipeConcierge.setOnRefreshListener {
+            binding.swipeConcierge.isRefreshing = false
+            viewModel.getConciergeList()
+        }
+    }
+
+    override fun addObserver() {
+        viewModel.status.observe(this, mObserver)
+    }
+
+    @SuppressLint("NotifyDataSetChanged")
+    private val mObserver = Observer<Any> { response ->
+        when (response) {
+            is Resource.Error<*> -> {
+
+                JLog.e(TAG, "Message: ${response.data}")
+                showToast(requireActivity(),response.message.toString())
+            }
+            is Resource.ItemsNotFound<*> -> {
+                binding.isEmpty = true
+            }
+            is Resource.Success<*> -> {
+
+                response.data as ListConciergeRequestResponse
+
+                arrayList.clear()
+
+                arrayList.addAll(response.data.responseData!!)
+
+                binding.adapter?.notifyDataSetChanged()
+
+                binding.isEmpty = arrayList.size == 0
+            }
+            is Resource.ConciergePayment<*> -> {
+
+                CommonUtils.showOkCallBackDialog(requireActivity(), message = requireActivity().resources.getString(R.string.msg_concierge_req_payment_done)){
+                    viewModel.getConciergeList()
+                }
+            }
+            is Resource.Loading<*> -> {
+
+                response.isLoadingShow.let {
+                    if (it as Boolean) {
+                        showProgressDialog(requireActivity())
+                    } else {
+                        hideProgressDialog()
+                    }
+                }
+            }
+            is Resource.NoInternetError<*> -> {
+                CommonUtils.showOkDialog(requireActivity(), message = resources.getString(response.id!!))
+            }
+            is Resource.ValidationError<*> -> {
+                showToast(requireActivity(),resources.getString(response.id.nullSafe()))
+            }
+            is Resource.UnAuthorisedRequest<*> -> {
+                showTokenExpiredDialog(resources.getString(R.string.lbl_session_expired_msg))
+            }
+        }
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+
+        JLog.e("onActivityResult", "$resultCode $requestCode")
+
+        if (resultCode == Activity.RESULT_OK) {
+            when (requestCode) {
+                CREATE_CONCIERGE -> {
+
+                    viewModel.getConciergeList()
+
+                }
+
+            }
+        }
+    }
+
+    companion object {
+        private val TAG = ConciergeFragment::class.java.simpleName
+    }
+}

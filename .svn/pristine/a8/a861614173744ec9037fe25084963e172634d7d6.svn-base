@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                        
+
+    
+
+                 
+                             
+                             
+
+           
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/dimen_15dp"
+        android:paddingEnd="@dimen/dimen_15dp"
+        android:paddingBottom="@dimen/dimen_10dp"
+        android:focusable="true" android:tag="layout/row_extra_services_item_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/cbServices"
+            android:layout_width="@dimen/dimen_25dp"
+            android:layout_height="25dp"
+            android:tag="binding_1"        
+            android:focusable="false"
+            android:clickable="false"
+            android:gravity="center_vertical"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:button="@drawable/checkbox_selector"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtServiceTitle"
+            style="@style/CommonText.Style.14sp"
+            android:layout_width="@dimen/dimen_0dp"
+            android:textColor="@color/color2D2D2D"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:text="Remove all invoices"
+            android:singleLine="false"
+            android:includeFontPadding="false"
+            app:layout_constraintEnd_toStartOf="@id/txtServicePrice"
+            app:layout_constraintStart_toEndOf="@id/cbServices"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="@dimen/dimen_10dp"
+            app:layout_constraintBottom_toBottomOf="@id/cbServices"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtServicePrice"
+            style="@style/CommonText.Style.16sp"
+            android:textColor="@color/color2D2D2D"
+            android:text="$2"
+            app:layout_constraintVertical_bias="0"
+            app:layout_constraintStart_toEndOf="@id/txtServiceTitle"
+            app:layout_constraintTop_toTopOf="@id/txtServiceTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginStart="@dimen/dimen_10dp" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+         

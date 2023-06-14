@@ -1,0 +1,99 @@
+package com.usend.adapter
+
+import android.os.Bundle
+import com.base.network.model.CardXX
+import com.chauthai.swipereveallayout.SwipeRevealLayout
+import com.chauthai.swipereveallayout.ViewBinderHelper
+import com.usend.R
+import com.usend.base.BaseListAdapter
+import com.usend.databinding.ItemAddNewAddressBinding
+import com.usend.databinding.RowSavedCardItemBinding
+import com.usend.utils.ADD
+import com.usend.utils.CommonUtils.showAffirmationDialog
+import com.usend.utils.DELETE
+import com.usend.utils.DateTimeUtil
+import com.usend.utils.EDIT
+
+
+class SavedCardsItemAdapter(
+    private val items: ArrayList<CardXX>,
+    val callback: (Int, String) -> Unit
+) : BaseListAdapter(items) {
+
+    private var viewBindHelper = ViewBinderHelper()
+
+    override fun getItemViewType(position: Int): Int {
+
+        return if (position == 0)
+            R.layout.item_add_new_address
+        else {
+            R.layout.row_saved_card_item
+        }
+    }
+
+    override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
+
+        if (holder.binding is RowSavedCardItemBinding) {
+
+           // viewBindHelper.bind(holder.binding.swipe, position.toString())
+            viewBindHelper.setOpenOnlyOne(true)
+          //viewBindHelper.setOpenOnlyOne
+
+
+            viewBindHelper.lockSwipe(position.toString())
+
+            // first time binding.
+
+
+            /* when (items[position].mType) {
+                 "Mastercard" -> {
+                     holder.binding.imgCardType.setImageResource(R.drawable.ic_master_card)
+                 }
+                 "Visa" -> {
+                     holder.binding.imgCardType.setImageResource(R.drawable.ic_visa_card)
+                 }
+                 else -> {
+                     holder.binding.imgCardType.setImageResource(R.drawable.ic_credit_card)
+                 }
+             }
+ */
+            holder.binding.txtCardNumber.text = "**** **** **** " + items[position].last_4
+            holder.binding.txtTitle.text = items[position].card_brand
+            holder.binding.txtExpDate.text = holder.itemView.context.resources.getString(R.string.lbl_expires) + " " +
+                    DateTimeUtil.getConvertedTime(DateTimeUtil.MM, DateTimeUtil.MMM, items[position].exp_month.toString()) + " " + items[position].exp_year.toString()
+            //holder.binding.imgCardType.loadImageUrl(holder.itemView.context, imageUrl = items[position].)
+
+                    holder.binding.imgDelete.setOnClickListener {
+
+                        holder.itemView.context.showAffirmationDialog(title = holder.itemView.context.resources.getString(R.string.msg_are_you_sure_to_delete_card),
+                            btnText = holder.itemView.context.resources.getString(R.string.lbl_yes),
+                            btnNegativeText = holder.itemView.context.resources.getString(R.string.lbl_no))
+                        {
+                            callback(holder.adapterPosition, DELETE)
+                        }
+                    }
+
+            holder.binding.imgEdit.setOnClickListener {
+                callback(holder.adapterPosition, EDIT)
+            }
+
+            holder.binding.flFront.setOnClickListener {
+              //  callback(holder.adapterPosition, EDIT)
+            }
+
+        } else if (holder.binding is ItemAddNewAddressBinding) {
+
+            holder.binding.txtAddress.text =
+                holder.itemView.context.resources.getString(R.string.lbl_add_new_card)
+            holder.itemView.setOnClickListener {
+              //
+                //  viewBindHelper.unlockSwipe(position.toString())
+                callback(holder.adapterPosition, ADD)
+            }
+        }
+
+    }
+    fun restoreStates(inState: Bundle?) {
+        viewBindHelper.restoreStates(inState)
+    }
+}

@@ -1,0 +1,4 @@
+package com.usend;
+
+@androidx.databinding.BindingBuildInfo
+public class DataBindingTriggerClass {}

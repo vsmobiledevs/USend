@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                  
+                                                        
+
+    
+
+           
+
+    <LinearLayout
+        style="@style/match"
+        android:orientation="vertical" android:tag="layout/activity_prohibited_items_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <include android:id="@+id/toolbarProhibitedItem"
+            layout="@layout/app_toolbar"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            style="@style/match"
+            android:background="@color/colorWhite"
+            tools:context=".views.home.ProhibitedItemsActivity">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvProhibitedItems"
+                style="@style/styleRecyclerView"
+                android:layout_height="@dimen/dimen_0dp"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                android:layout_marginStart="@dimen/dimen_10dp"
+                android:layout_marginEnd="@dimen/dimen_10dp"
+                tools:listitem="@layout/row_prohibited_item"
+                tools:itemCount="10"
+                app:spanCount="3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+         

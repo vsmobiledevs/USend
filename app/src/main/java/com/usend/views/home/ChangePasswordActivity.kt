@@ -1,0 +1,114 @@
+package com.usend.views.home
+
+import android.content.Context
+import android.content.Intent
+import androidx.lifecycle.Observer
+import com.base.network.model.SuccessModel
+import com.usend.R
+import com.usend.comman.Resource
+import com.usend.base.ViewModelActivity
+import com.usend.databinding.ActivityChangePasswordBinding
+import com.usend.extensions.afterTextChanged
+import com.usend.extensions.nullSafe
+import com.usend.extensions.showToast
+import com.usend.utils.CommonUtils
+import com.usend.utils.CommonUtils.showAffirmationDialog
+import com.usend.viewmodels.ChangePasswordViewModel
+import kotlinx.android.synthetic.main.app_toolbar.*
+import kotlin.reflect.KClass
+
+class ChangePasswordActivity(
+    override val modelClass: KClass<ChangePasswordViewModel> = ChangePasswordViewModel::class,
+    override val layoutId: Int = R.layout.activity_change_password
+) : ViewModelActivity<ActivityChangePasswordBinding, ChangePasswordViewModel>() {
+
+    override fun initView() {
+        super.initView()
+
+        initToolbar(toolbar = toolbar, title = resources.getString(R.string.lbl_change_password))
+        binding.viewModel = viewModel
+    }
+
+    override fun initControls() {
+        super.initControls()
+
+        binding.btnChange.setOnClickListener {
+            viewModel.change()
+        }
+
+        binding.edtPassword.afterTextChanged {
+            if (it.last().toString() == " ") {
+                binding.edtPassword.setText(binding.edtPassword.text.toString().replace(" ", ""))
+                binding.edtPassword.setSelection(binding.edtPassword.text!!.length)
+            }
+        }
+
+        binding.edtNewPassword.afterTextChanged {
+            if (it.last().toString() == " ") {
+                binding.edtNewPassword.setText(binding.edtNewPassword.text.toString().replace(" ", ""))
+                binding.edtNewPassword.setSelection(binding.edtNewPassword.text!!.length)
+            }
+        }
+
+        binding.edtConfirmPassword.afterTextChanged {
+            if (it.last().toString() == " ") {
+                binding.edtConfirmPassword.setText(binding.edtConfirmPassword.text.toString().replace(" ", ""))
+                binding.edtConfirmPassword.setSelection(binding.edtConfirmPassword.text!!.length)
+            }
+        }
+    }
+
+    override fun addObserver() {
+        viewModel.status.observe(this, mObserver)
+    }
+
+    private val mObserver = Observer<Any> { response ->
+        when (response) {
+            is Resource.Error<*> -> {
+                showToast(response.message.toString())
+            }
+            is Resource.Success<*> -> {
+
+                response.data as SuccessModel
+
+                CommonUtils.showOkCallBackDialog(this, message = response.data.responseMessage){
+                    finish()
+                }
+            }
+            is Int -> {
+                showAffirmationDialog(
+                    title = resources.getString(R.string.msg_password_updated_successfully),
+                    btnText = resources.getString(R.string.lbl_okay)
+                )
+                {
+                    onBackPressed()
+                }
+            }
+            is Resource.Loading<*> -> {
+
+                response.isLoadingShow.let {
+                    if (it as Boolean) {
+                        showProgressDialog(this)
+                    } else {
+                        hideProgressDialog()
+                    }
+                }
+            }
+            is Resource.NoInternetError<*> -> {
+                CommonUtils.showOkDialog(this, message = resources.getString(response.id!!))
+            }
+            is Resource.ValidationError<*> -> {
+                showToast(resources.getString(response.id.nullSafe()))
+            }
+            is Resource.UnAuthorisedRequest<*> -> {
+                showTokenExpiredDialog(resources.getString(R.string.lbl_session_expired_msg))
+            }
+        }
+    }
+
+    companion object {
+        fun newIntent(context: Context, intent: Intent) {
+            context.startActivity(intent)
+        }
+    }
+}

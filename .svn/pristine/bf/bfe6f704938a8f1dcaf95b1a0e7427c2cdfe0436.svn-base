@@ -1,0 +1,159 @@
+package com.usend.databinding;
+import com.usend.R;
+import com.usend.BR;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import android.view.View;
+@SuppressWarnings("unchecked")
+public class FragmentConciergeBindingImpl extends FragmentConciergeBinding  {
+
+    @Nullable
+    private static final androidx.databinding.ViewDataBinding.IncludedLayouts sIncludes;
+    @Nullable
+    private static final android.util.SparseIntArray sViewsWithIds;
+    static {
+        sIncludes = null;
+        sViewsWithIds = new android.util.SparseIntArray();
+        sViewsWithIds.put(R.id.txtCreate, 3);
+        sViewsWithIds.put(R.id.swipeConcierge, 4);
+    }
+    // views
+    @NonNull
+    private final android.widget.LinearLayout mboundView0;
+    @NonNull
+    private final android.widget.LinearLayout mboundView2;
+    // variables
+    // values
+    // listeners
+    // Inverse Binding Event Handlers
+
+    public FragmentConciergeBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 5, sIncludes, sViewsWithIds));
+    }
+    private FragmentConciergeBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
+        super(bindingComponent, root, 0
+            , (androidx.recyclerview.widget.RecyclerView) bindings[1]
+            , (androidx.swiperefreshlayout.widget.SwipeRefreshLayout) bindings[4]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[3]
+            );
+        this.mboundView0 = (android.widget.LinearLayout) bindings[0];
+        this.mboundView0.setTag(null);
+        this.mboundView2 = (android.widget.LinearLayout) bindings[2];
+        this.mboundView2.setTag(null);
+        this.rvConcierge.setTag(null);
+        setRootTag(root);
+        // listeners
+        invalidateAll();
+    }
+
+    @Override
+    public void invalidateAll() {
+        synchronized(this) {
+                mDirtyFlags = 0x4L;
+        }
+        requestRebind();
+    }
+
+    @Override
+    public boolean hasPendingBindings() {
+        synchronized(this) {
+            if (mDirtyFlags != 0) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    @Override
+    public boolean setVariable(int variableId, @Nullable Object variable)  {
+        boolean variableSet = true;
+        if (BR.isEmpty == variableId) {
+            setIsEmpty((java.lang.Boolean) variable);
+        }
+        else if (BR.adapter == variableId) {
+            setAdapter((com.usend.adapter.ConciergeItemAdapter) variable);
+        }
+        else {
+            variableSet = false;
+        }
+            return variableSet;
+    }
+
+    public void setIsEmpty(@Nullable java.lang.Boolean IsEmpty) {
+        this.mIsEmpty = IsEmpty;
+        synchronized(this) {
+            mDirtyFlags |= 0x1L;
+        }
+        notifyPropertyChanged(BR.isEmpty);
+        super.requestRebind();
+    }
+    public void setAdapter(@Nullable com.usend.adapter.ConciergeItemAdapter Adapter) {
+        this.mAdapter = Adapter;
+        synchronized(this) {
+            mDirtyFlags |= 0x2L;
+        }
+        notifyPropertyChanged(BR.adapter);
+        super.requestRebind();
+    }
+
+    @Override
+    protected boolean onFieldChange(int localFieldId, Object object, int fieldId) {
+        switch (localFieldId) {
+        }
+        return false;
+    }
+
+    @Override
+    protected void executeBindings() {
+        long dirtyFlags = 0;
+        synchronized(this) {
+            dirtyFlags = mDirtyFlags;
+            mDirtyFlags = 0;
+        }
+        boolean isEmpty = false;
+        java.lang.Boolean IsEmpty1 = mIsEmpty;
+        com.usend.adapter.ConciergeItemAdapter adapter = mAdapter;
+        boolean androidxDatabindingViewDataBindingSafeUnboxIsEmpty = false;
+        boolean AndroidxDatabindingViewDataBindingSafeUnboxIsEmpty1 = false;
+
+        if ((dirtyFlags & 0x5L) != 0) {
+
+
+
+                // read androidx.databinding.ViewDataBinding.safeUnbox(isEmpty)
+                androidxDatabindingViewDataBindingSafeUnboxIsEmpty = androidx.databinding.ViewDataBinding.safeUnbox(IsEmpty1);
+
+
+                // read !androidx.databinding.ViewDataBinding.safeUnbox(isEmpty)
+                isEmpty = !androidxDatabindingViewDataBindingSafeUnboxIsEmpty;
+
+
+                // read androidx.databinding.ViewDataBinding.safeUnbox(!androidx.databinding.ViewDataBinding.safeUnbox(isEmpty))
+                AndroidxDatabindingViewDataBindingSafeUnboxIsEmpty1 = androidx.databinding.ViewDataBinding.safeUnbox(isEmpty);
+        }
+        if ((dirtyFlags & 0x6L) != 0) {
+        }
+        // batch finished
+        if ((dirtyFlags & 0x5L) != 0) {
+            // api target 1
+
+            com.usend.binder.CommanBinderKt.visibility(this.mboundView2, androidxDatabindingViewDataBindingSafeUnboxIsEmpty);
+            com.usend.binder.CommanBinderKt.visibility(this.rvConcierge, AndroidxDatabindingViewDataBindingSafeUnboxIsEmpty1);
+        }
+        if ((dirtyFlags & 0x6L) != 0) {
+            // api target 1
+
+            this.rvConcierge.setAdapter(adapter);
+        }
+    }
+    // Listener Stub Implementations
+    // callback impls
+    // dirty flag
+    private  long mDirtyFlags = 0xffffffffffffffffL;
+    /* flag mapping
+        flag 0 (0x1L): isEmpty
+        flag 1 (0x2L): adapter
+        flag 2 (0x3L): null
+    flag mapping end*/
+    //end
+}

@@ -1,0 +1,27 @@
+package com.usend.utils
+
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentActivity
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.ViewModelProviders
+import com.usend.comman.ViewModelProviderFactory
+
+
+/**
+ * Created by Pritesh Vadhiya on 27/2/19.
+ * Spaceo Technologies
+ * priteshv.spaceo@gmail.com
+ */
+
+/** comment by pritesh
+ *   It will bind our view model with factory
+ * */
+
+fun <T : ViewModel> FragmentActivity.getViewModel(modelClass: Class<T>): T {
+    return ViewModelProviders.of(this, ViewModelProviderFactory(this.application))[modelClass]
+}
+
+fun <T : ViewModel> Fragment.getViewModel(modelClass: Class<T>): T {
+    return ViewModelProviders.of(this, ViewModelProviderFactory(requireActivity().application))[modelClass]
+}
+

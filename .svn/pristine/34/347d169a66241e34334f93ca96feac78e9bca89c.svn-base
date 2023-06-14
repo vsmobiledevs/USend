@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                        
+
+    
+
+           
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:tag="layout/activity_splash_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imgSplashImage"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_0dp"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="@dimen/dimen_70dp"
+            android:layout_marginStart="@dimen/dimen_20dp"
+            android:layout_marginEnd="@dimen/dimen_20dp"
+            android:src="@drawable/ic_splash_image"
+            android:scaleType="fitXY" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/dimen_280dp"
+            android:layout_height="@dimen/dimen_0dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/imgSplashImage"
+            android:layout_marginTop="@dimen/dimen_40dp"
+            android:layout_marginStart="@dimen/dimen_20dp"
+            android:layout_marginEnd="@dimen/dimen_20dp"
+            android:src="@drawable/icn_splash_logo"
+            android:scaleType="fitXY" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+         

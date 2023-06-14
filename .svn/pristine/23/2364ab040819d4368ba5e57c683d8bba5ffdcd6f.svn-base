@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.usend">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"
+        tools:ignore="ProtectedPermissions" />
+  <!--  <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />-->
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera.any"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <application
+        android:name=".base.MyBaseApp"
+        android:allowBackup="false"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/app_icon_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="UnusedAttribute">
+        <activity
+            android:name=".views.home.SquareUpActivity"
+            android:exported="false" />
+        <activity android:name=".views.ConciergeForGuestActivity" />
+        <activity android:name=".views.home.SelectSavedCardActivity" />
+        <activity android:name=".views.home.AutoShipMethodsActivity" />
+        <activity android:name=".views.home.AutoShipActivity" />
+        <activity
+            android:name=".views.home.ShippingCostActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".views.userauth.OtpVerificationActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".views.home.ChangePasswordActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".views.home.NotificationActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".views.home.WebViewActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".views.home.SavedCardsActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".views.home.ShippingAddressActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".views.home.VerificationStatusActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".views.home.USPSVerificationActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".views.home.ProhibitedItemsActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".views.home.ContactUsActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".views.home.EditProfileActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".views.home.CreateNewReqActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".views.home.ConciergeItemDetailActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".views.home.OrderDetailsActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".views.home.PaymentSuccessfulActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".views.home.SavedPaymentMethodsActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".views.home.AddCardActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".views.home.PaymentMethodActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".views.home.ShippingDetailsActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".views.home.ShippingMethodActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".views.home.AddNewAddressActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".views.home.ShipToAddressActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".views.home.PackageDetailActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".views.userauth.ForgotPasswordActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".views.userauth.RegionSelectionActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".views.userauth.PaymentInfoActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".views.userauth.BillingAddressActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".views.userauth.SignUpActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".views.userauth.SignInActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".views.MainActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".views.userauth.IntroActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".views.SplashActivity"
+            android:exported="true"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Firbase Messaging service to get token -->
+        <service
+            android:name=".fcm.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.usend.file_provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider_paths" />
+        </provider>
+        <!--
+        Set custom default icon. This is used when no icon is set for incoming notification messages.
+        See README(https://goo.gl/l4GJaQ) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_stat_ic_notification" />
+        <!--
+        Set color used with incoming notification messages. This is used when no color is set for the incoming
+        notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="sqip.SQUARE_APPLICATION_ID"
+            android:value="sandbox-sq0idb-xHVlRlfCe7O16bxA5bP-bg" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+    </application>
+
+</manifest>

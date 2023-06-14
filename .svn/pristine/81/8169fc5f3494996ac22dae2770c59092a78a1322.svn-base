@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        style="@style/match"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvMain"
+            style="@style/MaterialCardStyle"
+            android:layout_width="match_parent"
+            android:padding="@dimen/dimen_10dp"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_50dp">
+
+            <LinearLayout
+                style="@style/matchWrapShip"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppins_medium"
+                    android:includeFontPadding="false"
+                    android:padding="@dimen/dimen_0_5dp"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/dimen_10dp"
+                    android:paddingTop="@dimen/dimen_5dp"
+                    android:layout_margin="@dimen/dimen_0_5dp"
+                    android:paddingEnd="@dimen/dimen_10dp"
+                    android:paddingBottom="@dimen/dimen_5dp"
+                    android:text="@string/lbl_subscription_message"
+                    android:textColor="@color/color509238"
+                    android:textSize="@dimen/dimen_14sp" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtClick"
+                    android:text="@string/lbl_recommended_click"
+                    android:textColor="@color/color154A99"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="@dimen/dimen_14sp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:includeFontPadding="false"
+                    android:padding="@dimen/dimen_0_5dp"
+                    android:paddingStart="@dimen/dimen_10dp"
+                    android:paddingTop="@dimen/dimen_10dp"
+                    android:layout_margin="@dimen/dimen_0_5dp"
+                    android:paddingEnd="@dimen/dimen_10dp"
+                    android:paddingBottom="@dimen/dimen_5dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"/>
+
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvCancel"
+            style="@style/MaterialCardStyle"
+            android:layout_width="match_parent"
+            android:padding="@dimen/dimen_10dp"
+            android:visibility="gone"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_50dp">
+
+            <LinearLayout
+                style="@style/matchWrapShip"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppins_medium"
+                    android:includeFontPadding="false"
+                    android:padding="@dimen/dimen_0_5dp"
+                    android:gravity="center"
+                    android:id="@+id/txt_back_msg"
+                    android:paddingStart="@dimen/dimen_10dp"
+                    android:paddingTop="@dimen/dimen_5dp"
+                    android:layout_margin="@dimen/dimen_0_5dp"
+                    android:paddingEnd="@dimen/dimen_10dp"
+                    android:paddingBottom="@dimen/dimen_5dp"
+                    android:text="@string/lbl_subscription_message"
+                    android:textColor="@color/color509238"
+                    android:textSize="@dimen/dimen_14sp" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtClickBack"
+                    android:text="@string/lbl_please_click"
+                    android:textColor="@color/color154A99"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="@dimen/dimen_14sp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:includeFontPadding="false"
+                    android:padding="@dimen/dimen_0_5dp"
+                    android:paddingStart="@dimen/dimen_10dp"
+                    android:paddingTop="@dimen/dimen_10dp"
+                    android:layout_margin="@dimen/dimen_0_5dp"
+                    android:paddingEnd="@dimen/dimen_10dp"
+                    android:paddingBottom="@dimen/dimen_5dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"/>
+
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cvRetrive"
+            style="@style/MaterialCardStyle"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:padding="@dimen/dimen_10dp"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:layout_marginBottom="@dimen/dimen_50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dimen_50dp">
+
+            <LinearLayout
+                style="@style/matchWrap"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/dimen_50dp"
+                android:layout_marginBottom="@dimen/dimen_50dp"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppins_medium"
+                    android:includeFontPadding="false"
+                    android:padding="@dimen/dimen_0_5dp"
+                    android:gravity="center"
+                    android:id="@+id/txtmonthly"
+                    android:paddingStart="@dimen/dimen_10dp"
+                    android:paddingTop="@dimen/dimen_5dp"
+                    android:layout_margin="@dimen/dimen_0_5dp"
+                    android:paddingEnd="@dimen/dimen_10dp"
+                    android:paddingBottom="@dimen/dimen_5dp"
+                    android:text="@string/lbl_monthly_premimum_msg"
+                    android:textColor="@color/color509238"
+                    android:textSize="@dimen/dimen_14sp" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppins_medium"
+                    android:includeFontPadding="false"
+                    android:padding="@dimen/dimen_0_5dp"
+                    android:gravity="center"
+                    android:id="@+id/txtmonth_start"
+                    android:paddingStart="@dimen/dimen_10dp"
+                    android:paddingTop="@dimen/dimen_10dp"
+                    android:layout_margin="@dimen/dimen_0_5dp"
+                    android:paddingEnd="@dimen/dimen_10dp"
+                    android:paddingBottom="@dimen/dimen_5dp"
+                    android:text="@string/lbl_premimum_month_start"
+                    android:textColor="@color/color509238"
+                    android:textSize="@dimen/dimen_14sp" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppins_medium"
+                    android:includeFontPadding="false"
+                    android:padding="@dimen/dimen_0_5dp"
+                    android:gravity="center"
+                    android:id="@+id/txtmonth_price"
+                    android:paddingStart="@dimen/dimen_10dp"
+                    android:paddingTop="@dimen/dimen_10dp"
+                    android:layout_margin="@dimen/dimen_0_5dp"
+                    android:paddingEnd="@dimen/dimen_10dp"
+                    android:paddingBottom="@dimen/dimen_5dp"
+                    android:text="@string/lbl_premimum_billing"
+                    android:textColor="@color/color509238"
+                    android:textSize="@dimen/dimen_14sp" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppins_medium"
+                    android:includeFontPadding="false"
+                    android:padding="@dimen/dimen_0_5dp"
+                    android:id="@+id/txt_upgrade_msg"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/dimen_10dp"
+                    android:paddingTop="@dimen/dimen_10dp"
+                    android:layout_margin="@dimen/dimen_0_5dp"
+                    android:paddingEnd="@dimen/dimen_10dp"
+                    android:paddingBottom="@dimen/dimen_5dp"
+                    android:text="@string/lbl_premimum_upgrade"
+                    android:textColor="@color/color509238"
+                    android:textSize="@dimen/dimen_14sp" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_upgrade_plan"
+                    android:text="@string/lbl_recommended_click"
+                    android:textColor="@color/color154A99"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="@dimen/dimen_14sp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:includeFontPadding="false"
+                    android:padding="@dimen/dimen_0_5dp"
+                    android:paddingStart="@dimen/dimen_10dp"
+                    android:paddingTop="@dimen/dimen_10dp"
+                    android:layout_margin="@dimen/dimen_0_5dp"
+                    android:paddingEnd="@dimen/dimen_10dp"
+                    android:paddingBottom="@dimen/dimen_5dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"/>
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/poppins_medium"
+                    android:includeFontPadding="false"
+                    android:padding="@dimen/dimen_0_5dp"
+                    android:gravity="center"
+                    android:paddingStart="@dimen/dimen_10dp"
+                    android:paddingTop="@dimen/dimen_10dp"
+                    android:layout_margin="@dimen/dimen_0_5dp"
+                    android:paddingEnd="@dimen/dimen_10dp"
+                    android:paddingBottom="@dimen/dimen_5dp"
+                    android:text="@string/lbl_premimum_cancel"
+                    android:textColor="@color/color509238"
+                    android:textSize="@dimen/dimen_14sp" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtcancel"
+                    android:text="@string/lbl_please_click"
+                    android:textColor="@color/color154A99"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:textSize="@dimen/dimen_14sp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:includeFontPadding="false"
+                    android:padding="@dimen/dimen_0_5dp"
+                    android:paddingStart="@dimen/dimen_10dp"
+                    android:paddingTop="@dimen/dimen_10dp"
+                    android:layout_margin="@dimen/dimen_0_5dp"
+                    android:paddingEnd="@dimen/dimen_10dp"
+                    android:paddingBottom="@dimen/dimen_5dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"/>
+
+
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</layout>

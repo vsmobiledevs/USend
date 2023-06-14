@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">imagePickerView</string>
+    <string name="default_lbl_alert_cancel">Cancel</string>
+    <string name="default_lbl_camera">Camera</string>
+    <string name="default_lbl_gallery">Gallery</string>
+    <string name="default_lbl_picker_title">Set Avatar</string>
+    <string name="default_lbl_remove">Remove Photo</string>
+    <string name="lbl_alert_title">Required</string>
+    <string name="lbl_permission_message">Both Permissions are require to select image.</string>
+    <string name="lbl_permission_storage_message">Storage permission is require to select image.</string>
+    <string name="lbl_settings">Settings</string>
+    <style name="alert_item_style">
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:drawablePadding">10dp</item>
+        <item name="android:background">?android:selectableItemBackground</item>
+
+    </style>
+    <style name="bottom_sheet_style">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_height">120dp</item>
+        <item name="android:layout_width">120dp</item>
+        <item name="android:background">?android:selectableItemBackground</item>
+
+    </style>
+</resources>

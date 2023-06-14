@@ -1,0 +1,653 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+                 
+                          
+                                                              
+
+           
+
+    <LinearLayout
+        style="@style/match"
+        android:orientation="vertical" android:tag="layout/activity_order_details_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <include
+            android:id="@+id/toolbarOrderDetail"
+            layout="@layout/app_toolbar" />
+
+        <ScrollView style="@style/styleScrollbar">
+
+            <LinearLayout
+                style="@style/match"
+                android:background="@color/colorWhite"
+                android:orientation="vertical"
+                tools:context=".views.home.OrderDetailsActivity">
+
+                <RelativeLayout
+                    style="@style/matchWrap"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_15dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtOrderNumberTitle"
+                        style="@style/CommonText.Style.SemiBold.16sp"
+                        android:layout_alignParentStart="true"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="@string/lbl_order_number_" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtTrackingNumberTitle"
+                        style="@style/CommonText.Style.SemiBold.16sp"
+                        android:layout_alignParentEnd="true"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="@string/lbl_tracking_number_colon" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    style="@style/matchWrap"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtOrderNumber"
+                        style="@style/CommonText.Style.SemiBold.16sp"
+                        android:layout_alignParentStart="true"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="-"
+                        android:textColor="@color/color2D2D2D" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtTrackingNumber"
+                        style="@style/CommonText.Style.SemiBold.16sp"
+                        android:layout_alignParentEnd="true"
+                        android:fontFamily="@font/poppins_bold"
+                        android:text="-"
+                        android:textColor="@color/color154A99" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1dp"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_15dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:background="@color/color1A2D2D2D" />
+
+                <RelativeLayout
+                    style="@style/matchWrap"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_15dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtStatusTitle"
+                        style="@style/CommonText.Style.14sp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/lbl_status_colon" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtStatus"
+                        style="@style/CommonText.Style.SemiBold.16sp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/dimen_10dp"
+                        android:layout_toEndOf="@+id/txtStatusTitle"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppins_bold"
+                        android:gravity="end"
+                        android:text="-"
+                        android:textColor="@color/color5A9E41" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    style="@style/matchWrap"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtProcessedOnTitle"
+                        style="@style/CommonText.Style.14sp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/lbl_processed_on_colon"
+                        android:textColor="@color/color802D2D2D" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtProcessedOn"
+                        style="@style/CommonText.Style.SemiBold.16sp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/dimen_10dp"
+                        android:layout_toEndOf="@+id/txtProcessedOnTitle"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="end"
+                        android:text="-"
+                        android:textColor="@color/color2D2D2D" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    style="@style/matchWrap"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtShippingCostTitle"
+                        style="@style/CommonText.Style.14sp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/lbl_shipping_cost_colon"
+                        android:textColor="@color/color802D2D2D" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtShippingCost"
+                        style="@style/CommonText.Style.SemiBold.16sp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/dimen_10dp"
+                        android:layout_toEndOf="@+id/txtShippingCostTitle"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="end"
+                        android:text="-"
+                        android:textColor="@color/color2D2D2D" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    style="@style/matchWrap"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtCarrierUsedTitle"
+                        style="@style/CommonText.Style.14sp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/lbl_carrier_used_colon"
+                        android:textColor="@color/color802D2D2D" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtCarrierUsed"
+                        style="@style/CommonText.Style.SemiBold.16sp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/dimen_10dp"
+                        android:layout_toEndOf="@+id/txtCarrierUsedTitle"
+                        android:ellipsize="end"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="end"
+                        android:text="-"
+                        android:textColor="@color/color2D2D2D" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    style="@style/matchWrap"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:visibility="gone">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtDimensionsTitle"
+                        style="@style/CommonText.Style.14sp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/lbl_dimensions_colon"
+                        android:textColor="@color/color802D2D2D" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtDimensions"
+                        style="@style/CommonText.Style.SemiBold.16sp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="00"
+                        android:textColor="@color/color2D2D2D" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    style="@style/matchWrap"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:visibility="gone">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtWeightTitle"
+                        style="@style/CommonText.Style.14sp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/lbl_weight_colon"
+                        android:textColor="@color/color802D2D2D" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtWeight"
+                        style="@style/CommonText.Style.SemiBold.16sp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="00 Kg"
+                        android:textColor="@color/color2D2D2D" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    style="@style/matchWrap"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtServiceTypeTitle"
+                        style="@style/CommonText.Style.14sp"
+                        android:layout_alignParentStart="true"
+                        android:text="@string/lbl_service_type_colon"
+                        android:textColor="@color/color802D2D2D" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtServiceType"
+                        style="@style/CommonText.Style.SemiBold.16sp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/dimen_10dp"
+                        android:layout_toEndOf="@+id/txtServiceTypeTitle"
+                        android:fontFamily="@font/poppins_medium"
+                        android:gravity="end"
+                        android:singleLine="false"
+                        android:text="-"
+                        android:textColor="@color/color2D2D2D" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    style="@style/matchWrap"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:visibility="gone">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtEstDeliveryDateTitle"
+                        style="@style/CommonText.Style.14sp"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:text="@string/lbl_est_delivery_date"
+                        android:textColor="@color/color802D2D2D" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtEstDeliveryDate"
+                        style="@style/CommonText.Style.SemiBold.16sp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="-"
+                        android:textColor="@color/color2D2D2D" />
+
+                </RelativeLayout>
+
+                <!-- <View
+                     android:layout_width="match_parent"
+                     android:layout_height="@dimen/dimen_1dp"
+                     android:layout_marginStart="@dimen/dimen_20dp"
+                     android:layout_marginTop="@dimen/dimen_25dp"
+                     android:layout_marginEnd="@dimen/dimen_20dp"
+                     android:background="@color/color1A2D2D2D" />-->
+
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/MaterialCardStyle"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_25dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    app:cardElevation="@dimen/dimen_10dp">
+
+                    <LinearLayout
+                        style="@style/matchWrap"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtInvoiceDetailsTitle"
+                            style="@style/CommonText.Style.SemiBold.16sp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/dimen_15dp"
+                            android:layout_marginTop="@dimen/dimen_10dp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="@string/lbl_invoice_details"
+                            android:textColor="@color/color802D2D2D" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dimen_15dp"
+                            android:layout_marginTop="@dimen/dimen_20dp"
+                            android:layout_marginEnd="@dimen/dimen_15dp">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtCarrierFeesTitle"
+                                style="@style/CommonText.Style.16sp"
+                                android:layout_width="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/poppins_medium"
+                                android:text="@string/lbl_carrier_fees_colon"
+                                android:textSize="@dimen/dimen_14sp" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtCarrierFees"
+                                style="@style/CommonText.Style.16sp"
+                                android:layout_width="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/poppins_medium"
+                                android:text="$0.0"
+                                android:textColor="@color/color2D2D2D" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dimen_15dp"
+                            android:layout_marginTop="@dimen/dimen_20dp"
+                            android:layout_marginEnd="@dimen/dimen_15dp"
+                            android:visibility="gone">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtProcessFessTitle"
+                                style="@style/CommonText.Style.16sp"
+                                android:layout_width="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/poppins_medium"
+                                android:text="@string/lbl_process_fees"
+                                android:textSize="@dimen/dimen_14sp" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtProcessFees"
+                                style="@style/CommonText.Style.16sp"
+                                android:layout_width="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/poppins_medium"
+                                android:text="$0.0"
+                                android:textColor="@color/color2D2D2D" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dimen_15dp"
+                            android:layout_marginTop="@dimen/dimen_20dp"
+                            android:layout_marginEnd="@dimen/dimen_15dp">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtAdditionalFeesTitle"
+                                style="@style/CommonText.Style.16sp"
+                                android:layout_width="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/poppins_medium"
+                                android:text="@string/lbl_additional_fees_colon"
+                                android:textSize="@dimen/dimen_14sp" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtAdditionalFees"
+                                style="@style/CommonText.Style.16sp"
+                                android:layout_width="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/poppins_medium"
+                                android:text="$0.0"
+                                android:textColor="@color/color2D2D2D" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen_1dp"
+                            android:layout_marginStart="@dimen/dimen_20dp"
+                            android:layout_marginTop="@dimen/dimen_20dp"
+                            android:layout_marginEnd="@dimen/dimen_20dp"
+                            android:background="@color/color1A2D2D2D" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dimen_15dp"
+                            android:layout_marginTop="@dimen/dimen_20dp"
+                            android:layout_marginEnd="@dimen/dimen_15dp"
+                            android:layout_marginBottom="@dimen/dimen_20dp">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtTotalChargesTitle"
+                                style="@style/CommonText.Style.16sp"
+                                android:layout_width="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/poppins_medium"
+                                android:text="@string/lbl_total_charges_colon"
+                                android:textSize="@dimen/dimen_14sp" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtTotalCharges"
+                                style="@style/CommonText.Style.16sp"
+                                android:layout_width="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/poppins_medium"
+                                android:text="$0.0"
+                                android:textColor="@color/color2D2D2D" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- <View
+                     android:layout_width="match_parent"
+                     android:layout_height="@dimen/dimen_1dp"
+                     android:layout_marginStart="@dimen/dimen_20dp"
+                     android:layout_marginTop="@dimen/dimen_25dp"
+                     android:layout_marginEnd="@dimen/dimen_20dp"
+                     android:background="@color/color1A2D2D2D" />-->
+
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/MaterialCardStyle"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_25dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    app:cardElevation="@dimen/dimen_10dp">
+
+                    <LinearLayout
+                        style="@style/matchWrap"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtDeliveryAddressTitle"
+                            style="@style/CommonText.Style.SemiBold.16sp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/dimen_20dp"
+                            android:layout_marginTop="@dimen/dimen_10dp"
+                            android:fontFamily="@font/poppins_bold"
+                            android:text="@string/lbl_delivery_address"
+                            android:textColor="@color/color802D2D2D" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtDeliveryAddress"
+                            style="@style/CommonText.Style.SemiBold.16sp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/dimen_20dp"
+                            android:layout_marginTop="@dimen/dimen_10dp"
+                            android:layout_marginEnd="@dimen/dimen_20dp"
+                            android:layout_marginBottom="@dimen/dimen_10dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:singleLine="false"
+                            android:text="-"
+                            android:textColor="@color/color2D2D2D" />
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <!-- <View
+                     android:layout_width="match_parent"
+                     android:layout_height="@dimen/dimen_1dp"
+                     android:layout_marginStart="@dimen/dimen_20dp"
+                     android:layout_marginTop="@dimen/dimen_25dp"
+                     android:layout_marginEnd="@dimen/dimen_20dp"
+                     android:background="@color/color1A2D2D2D" />-->
+
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/MaterialCardStyle"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_25dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    app:cardElevation="@dimen/dimen_10dp">
+
+                    <LinearLayout
+                        style="@style/matchWrap"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/llCustoms"
+                            style="@style/matchWrap"
+                            android:orientation="vertical"
+                            android:visibility="gone">
+
+                            <LinearLayout
+                                android:id="@+id/ll_declared_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/dimen_20dp"
+                                android:layout_marginTop="@dimen/dimen_25dp"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/txtDeclaredValuesTitle"
+                                    style="@style/CommonText.Style.14sp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_centerVertical="true"
+                                    android:text="@string/lbl_declared_values_colon"
+                                    android:textColor="@color/color802D2D2D" />
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/txtDeclaredValues"
+                                    style="@style/CommonText.Style.SemiBold.16sp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginStart="@dimen/dimen_5dp"
+                                    android:layout_marginEnd="@dimen/dimen_20dp"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:singleLine="false"
+                                    android:text="-"
+                                    android:textColor="@color/color2D2D2D" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/ll_desc_of_item"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="@dimen/dimen_20dp"
+                                android:layout_marginTop="@dimen/dimen_25dp"
+                                android:orientation="horizontal">
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/txtDescOfItem"
+                                    style="@style/CommonText.Style.14sp"
+                                    android:layout_alignParentStart="true"
+                                    android:layout_centerVertical="true"
+                                    android:text="@string/lbl_desc_of_item_colon"
+                                    android:textColor="@color/color802D2D2D" />
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/txtContentofPackage"
+                                    style="@style/CommonText.Style.SemiBold.16sp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginStart="@dimen/dimen_5dp"
+                                    android:layout_marginEnd="@dimen/dimen_20dp"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:singleLine="false"
+                                    android:text="-"
+                                    android:textColor="@color/color2D2D2D" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtNotesTitle"
+                            style="@style/CommonText.Style.14sp"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/dimen_20dp"
+                            android:layout_marginTop="@dimen/dimen_25dp"
+                            android:text="@string/lbl_special_notes_colon"
+                            android:textColor="@color/color802D2D2D" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtSpecialNotes"
+                            style="@style/CommonText.Style.SemiBold.16sp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="@dimen/dimen_20dp"
+                            android:layout_marginTop="@dimen/dimen_10dp"
+                            android:layout_marginEnd="@dimen/dimen_20dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:singleLine="false"
+                            android:text="-"
+                            android:layout_marginBottom="@dimen/dimen_10dp"
+                            android:textColor="@color/color2D2D2D" />
+
+                        <!-- <View
+                             android:layout_width="match_parent"
+                             android:layout_height="@dimen/dimen_1dp"
+                             android:layout_marginStart="@dimen/dimen_20dp"
+                             android:layout_marginTop="@dimen/dimen_25dp"
+                             android:layout_marginEnd="@dimen/dimen_20dp"
+                             android:background="@color/color1A2D2D2D" />-->
+
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtPackageDetails"
+                    style="@style/CommonText.Style.SemiBold.16sp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_25dp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:text="@string/lbl_package_details_colon"
+                    android:textColor="@color/color802D2D2D" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvPackageDetails"
+                    style="@style/styleRecyclerView"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:layout_marginBottom="@dimen/dimen_20dp"
+                    android:nestedScrollingEnabled="false"
+                    android:tag="binding_1"  />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+         

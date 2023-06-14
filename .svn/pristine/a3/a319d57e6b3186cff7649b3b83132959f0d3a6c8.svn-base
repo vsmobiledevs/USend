@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <LinearLayout
+        android:id="@+id/llMain"
+        style="@style/matchWrap"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginStart="@dimen/dimen_20dp"
+        android:layout_marginEnd="@dimen/dimen_20dp"
+        android:background="@drawable/bg_10_radius_white_back"
+        android:paddingStart="@dimen/dimen_30dp"
+        android:paddingEnd="@dimen/dimen_30dp"
+        android:paddingTop="@dimen/dimen_10dp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtTitle"
+            style="@style/CommonText.Style.16sp"
+            android:gravity="center"
+            android:textColor="@color/color2D2D2D"
+            android:fontFamily="@font/poppins_medium"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtMsg"
+            style="@style/CommonText.Style.16sp"
+            android:textSize="@dimen/dimen_14sp"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/dimen_5dp"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/dimen_40dp"
+            android:layout_marginBottom="@dimen/dimen_20dp"
+            android:layout_gravity="center_horizontal"
+            android:weightSum="2"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPositive"
+            android:layout_weight="1"
+            android:layout_width="@dimen/dimen_0dp"
+            style="@style/MaterialButton.CornerRadius"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/lbl_okay"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnNegative"
+            android:layout_weight="1"
+            android:layout_width="@dimen/dimen_0dp"
+            style="@style/MaterialButton.CornerRadius"
+            android:layout_marginStart="@dimen/dimen_15dp"
+            android:layout_gravity="center_horizontal"
+            android:visibility="visible"
+            android:text="@string/lbl_no"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

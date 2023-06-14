@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.firebase:firebase-datatransport:17.0.3@aar">
+    <CLASSES>
+      <root url="file://E:/Sonu g3/SDK/caches/transforms-2/files-2.1/e231ea88d8609fb2d6831a1c211efe5c/jetified-firebase-datatransport-17.0.3/res" />
+      <root url="file://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/7f976b827edf218a7633b3332c1d72a9/jetified-firebase-datatransport-17.0.3/AndroidManifest.xml" />
+      <root url="file://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/7f976b827edf218a7633b3332c1d72a9/jetified-firebase-datatransport-17.0.3/res" />
+      <root url="jar://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/7f976b827edf218a7633b3332c1d72a9/jetified-firebase-datatransport-17.0.3/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://E:/Sonu g3/SDK/caches/modules-2/files-2.1/com.google.firebase/firebase-datatransport/17.0.3/8c8c8d5417add6218ebf9f99cbf6ae6d4a3b827/firebase-datatransport-17.0.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://E:/Sonu g3/SDK/caches/modules-2/files-2.1/com.google.firebase/firebase-datatransport/17.0.3/dd750c76ef9997c99218a81515edd4fffe1e33e1/firebase-datatransport-17.0.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,162 @@
+package com.usend.databinding;
+import com.usend.R;
+import com.usend.BR;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import android.view.View;
+@SuppressWarnings("unchecked")
+public class FragmentAuthBindingImpl extends FragmentAuthBinding implements com.usend.generated.callback.OnClickListener.Listener {
+
+    @Nullable
+    private static final androidx.databinding.ViewDataBinding.IncludedLayouts sIncludes;
+    @Nullable
+    private static final android.util.SparseIntArray sViewsWithIds;
+    static {
+        sIncludes = null;
+        sViewsWithIds = new android.util.SparseIntArray();
+        sViewsWithIds.put(R.id.authImage, 3);
+        sViewsWithIds.put(R.id.txtIntroDesc, 4);
+    }
+    // views
+    @NonNull
+    private final android.widget.ScrollView mboundView0;
+    // variables
+    @Nullable
+    private final android.view.View.OnClickListener mCallback3;
+    @Nullable
+    private final android.view.View.OnClickListener mCallback2;
+    // values
+    // listeners
+    // Inverse Binding Event Handlers
+
+    public FragmentAuthBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 5, sIncludes, sViewsWithIds));
+    }
+    private FragmentAuthBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
+        super(bindingComponent, root, 0
+            , (androidx.appcompat.widget.AppCompatImageView) bindings[3]
+            , (com.google.android.material.button.MaterialButton) bindings[1]
+            , (com.google.android.material.button.MaterialButton) bindings[2]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[4]
+            );
+        this.btnSignIn.setTag(null);
+        this.btnSignUp.setTag(null);
+        this.mboundView0 = (android.widget.ScrollView) bindings[0];
+        this.mboundView0.setTag(null);
+        setRootTag(root);
+        // listeners
+        mCallback3 = new com.usend.generated.callback.OnClickListener(this, 2);
+        mCallback2 = new com.usend.generated.callback.OnClickListener(this, 1);
+        invalidateAll();
+    }
+
+    @Override
+    public void invalidateAll() {
+        synchronized(this) {
+                mDirtyFlags = 0x2L;
+        }
+        requestRebind();
+    }
+
+    @Override
+    public boolean hasPendingBindings() {
+        synchronized(this) {
+            if (mDirtyFlags != 0) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    @Override
+    public boolean setVariable(int variableId, @Nullable Object variable)  {
+        boolean variableSet = true;
+        if (BR.authFrag == variableId) {
+            setAuthFrag((com.usend.views.userauth.AuthFragment) variable);
+        }
+        else {
+            variableSet = false;
+        }
+            return variableSet;
+    }
+
+    public void setAuthFrag(@Nullable com.usend.views.userauth.AuthFragment AuthFrag) {
+        this.mAuthFrag = AuthFrag;
+        synchronized(this) {
+            mDirtyFlags |= 0x1L;
+        }
+        notifyPropertyChanged(BR.authFrag);
+        super.requestRebind();
+    }
+
+    @Override
+    protected boolean onFieldChange(int localFieldId, Object object, int fieldId) {
+        switch (localFieldId) {
+        }
+        return false;
+    }
+
+    @Override
+    protected void executeBindings() {
+        long dirtyFlags = 0;
+        synchronized(this) {
+            dirtyFlags = mDirtyFlags;
+            mDirtyFlags = 0;
+        }
+        com.usend.views.userauth.AuthFragment authFrag = mAuthFrag;
+        // batch finished
+        if ((dirtyFlags & 0x2L) != 0) {
+            // api target 1
+
+            this.btnSignIn.setOnClickListener(mCallback2);
+            this.btnSignUp.setOnClickListener(mCallback3);
+        }
+    }
+    // Listener Stub Implementations
+    // callback impls
+    public final void _internalCallbackOnClick(int sourceId , android.view.View callbackArg_0) {
+        switch(sourceId) {
+            case 2: {
+                // localize variables for thread safety
+                // authFrag
+                com.usend.views.userauth.AuthFragment authFrag = mAuthFrag;
+                // authFrag != null
+                boolean authFragJavaLangObjectNull = false;
+
+
+
+                authFragJavaLangObjectNull = (authFrag) != (null);
+                if (authFragJavaLangObjectNull) {
+
+
+                    authFrag.onSignUpClick();
+                }
+                break;
+            }
+            case 1: {
+                // localize variables for thread safety
+                // authFrag
+                com.usend.views.userauth.AuthFragment authFrag = mAuthFrag;
+                // authFrag != null
+                boolean authFragJavaLangObjectNull = false;
+
+
+
+                authFragJavaLangObjectNull = (authFrag) != (null);
+                if (authFragJavaLangObjectNull) {
+
+
+                    authFrag.onSignInClick();
+                }
+                break;
+            }
+        }
+    }
+    // dirty flag
+    private  long mDirtyFlags = 0xffffffffffffffffL;
+    /* flag mapping
+        flag 0 (0x1L): authFrag
+        flag 1 (0x2L): null
+    flag mapping end*/
+    //end
+}

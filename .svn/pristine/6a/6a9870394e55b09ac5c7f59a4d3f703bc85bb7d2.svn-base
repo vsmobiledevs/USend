@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.firebase:firebase-common:19.3.1@aar">
+    <CLASSES>
+      <root url="file://E:/Sonu g3/SDK/caches/transforms-2/files-2.1/48d5a6bea1ffd5a8b1306023ef819a73/jetified-firebase-common-19.3.1/res" />
+      <root url="file://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/402777615872cf18c011a1d56bb6182c/jetified-firebase-common-19.3.1/AndroidManifest.xml" />
+      <root url="jar://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/402777615872cf18c011a1d56bb6182c/jetified-firebase-common-19.3.1/jars/classes.jar!/" />
+      <root url="file://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/402777615872cf18c011a1d56bb6182c/jetified-firebase-common-19.3.1/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://E:/Sonu g3/SDK/caches/modules-2/files-2.1/com.google.firebase/firebase-common/19.3.1/673b70e6ad72ed1124321f2c092461689fe8d41a/firebase-common-19.3.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://E:/Sonu g3/SDK/caches/modules-2/files-2.1/com.google.firebase/firebase-common/19.3.1/b4a08fdff05502da113831b9794d9536d198d88/firebase-common-19.3.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

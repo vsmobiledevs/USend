@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.view.View"/>
+
+        <variable
+            name="paymentActivity"
+            type="com.usend.views.userauth.PaymentInfoActivity" />
+
+        <variable
+            name="viewModel"
+            type="com.usend.viewmodels.PaymentInfoViewModel" />
+
+    </data>
+
+    <LinearLayout
+        style="@style/match"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbarBillingAddress"
+            layout="@layout/app_toolbar" />
+
+        <ScrollView style="@style/styleScrollbar">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                style="@style/match"
+                android:background="@color/colorWhite"
+                tools:context=".views.userauth.PaymentInfoActivity">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtPaymentInfoTitle"
+                    style="@style/Activity.Title.Text.32sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:text="@string/lbl_payment" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    app:layout_constraintBottom_toBottomOf="@id/txtPaymentInfoTitle"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="1"
+                    app:layout_constraintStart_toEndOf="@id/txtPaymentInfoTitle"
+                    app:layout_constraintTop_toTopOf="@id/txtPaymentInfoTitle"
+                    android:layout_width="@dimen/dimen_54dp"
+                    android:layout_height="@dimen/dimen_54dp"
+                    android:layout_marginEnd="@dimen/dimen_10dp"
+                    android:src="@drawable/ic_sign_up_progress_3" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtCardNumberTitle"
+                    style="@style/inputField.Title.14sp"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_25dp"
+                    android:text="@string/lbl_card_number"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txtPaymentInfoTitle" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtCardNumber"
+                    style="@style/inputField.16sp"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:hint="@string/lbl_1234_5678_1234_5678"
+                    android:inputType="phone"
+                    android:maxLength="19"
+                    android:imeOptions="actionNext"
+                    android:text="@={viewModel.cardNumber}"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txtCardNumberTitle" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtCardName"
+                    style="@style/inputField.Title.14sp"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_15dp"
+                    android:text="@string/lbl_card_holder_name"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/edtCardNumber" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtCardName"
+                    style="@style/inputField.16sp"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:hint="@string/lbl_card_holder_name"
+                    android:inputType="text"
+                    android:imeOptions="actionNext"
+                    android:text="@={viewModel.cardName}"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txtCardName" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtMonthTitle"
+                    style="@style/inputField.Title.14sp"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_15dp"
+                    android:text="@string/lbl_month"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/edtCardName" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtMonth"
+                    style="@style/inputField.16sp"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:hint="@string/lbl_00"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:imeOptions="actionNext"
+                    android:text="@={viewModel.month}"
+                    app:layout_constraintEnd_toStartOf="@id/edtYear"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txtMonthTitle" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtYearTitle"
+                    style="@style/inputField.Title.14sp"
+                    android:layout_marginTop="@dimen/dimen_15dp"
+                    android:text="@string/lbl_year"
+                    app:layout_constraintStart_toStartOf="@id/edtYear"
+                    app:layout_constraintTop_toBottomOf="@id/edtCardName" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtYear"
+                    style="@style/inputField.16sp"
+                    android:layout_width="@dimen/dimen_0dp"
+                    android:layout_marginStart="@dimen/dimen_15dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:hint="@string/lbl_2020"
+                    android:imeOptions="actionNext"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    android:text="@={viewModel.year}"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_chainStyle="packed"
+                    app:layout_constraintStart_toEndOf="@+id/edtMonth"
+                    app:layout_constraintTop_toBottomOf="@id/txtYearTitle" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtCVVTitle"
+                    style="@style/inputField.Title.14sp"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_15dp"
+                    android:text="@string/lbl_cvv"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/edtMonth" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtCVV"
+                    style="@style/inputField.16sp"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:hint="@string/lbl_enter_CVV"
+                    android:inputType="number"
+                    android:maxLength="3"
+                    android:imeOptions="actionDone"
+                    android:text="@={viewModel.cvv}"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/txtCVVTitle" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnSubmit"
+                    style="@style/MaterialButton.CornerRadius"
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_30dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:layout_marginBottom="@dimen/dimen_30dp"
+                    android:onClick="@{(view)-> paymentActivity.onSubmitClick()}"
+                    android:text="@string/lbl_submit"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/edtCVV"
+                    app:layout_constraintVertical_bias="1" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</layout>

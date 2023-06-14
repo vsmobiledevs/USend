@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.usend"
+    android:versionCode="11"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="21"
+        android:targetSdkVersion="31" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera.any"
+        android:required="false" />
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+
+    <application
+        android:name="com.usend.base.MyBaseApp"
+        android:allowBackup="false"
+        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+        android:debuggable="true"
+        android:icon="@mipmap/app_icon"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/app_icon_round"
+        android:supportsRtl="true"
+        android:testOnly="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.usend.views.home.SquareUpActivity"
+            android:exported="false" />
+        <activity android:name="com.usend.views.ConciergeForGuestActivity" />
+        <activity android:name="com.usend.views.home.SelectSavedCardActivity" />
+        <activity android:name="com.usend.views.home.AutoShipMethodsActivity" />
+        <activity android:name="com.usend.views.home.AutoShipActivity" />
+        <activity
+            android:name="com.usend.views.home.ShippingCostActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.usend.views.userauth.OtpVerificationActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.usend.views.home.ChangePasswordActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.usend.views.home.NotificationActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.usend.views.home.WebViewActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.usend.views.home.SavedCardsActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.usend.views.home.ShippingAddressActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.usend.views.home.VerificationStatusActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.usend.views.home.USPSVerificationActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.usend.views.home.ProhibitedItemsActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.usend.views.home.ContactUsActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.usend.views.home.EditProfileActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.usend.views.home.CreateNewReqActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.usend.views.home.ConciergeItemDetailActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.usend.views.home.OrderDetailsActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.usend.views.home.PaymentSuccessfulActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.usend.views.home.SavedPaymentMethodsActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.usend.views.home.AddCardActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.usend.views.home.PaymentMethodActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.usend.views.home.ShippingDetailsActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.usend.views.home.ShippingMethodActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.usend.views.home.AddNewAddressActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.usend.views.home.ShipToAddressActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.usend.views.home.PackageDetailActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.usend.views.userauth.ForgotPasswordActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.usend.views.userauth.RegionSelectionActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.usend.views.userauth.PaymentInfoActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.usend.views.userauth.BillingAddressActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.usend.views.userauth.SignUpActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.usend.views.userauth.SignInActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.usend.views.MainActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.usend.views.userauth.IntroActivity"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.usend.views.SplashActivity"
+            android:exported="true"
+            android:screenOrientation="user"
+            android:windowSoftInputMode="stateAlwaysHidden" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- Firbase Messaging service to get token -->
+        <service
+            android:name="com.usend.fcm.MyFirebaseMessagingService"
+            android:exported="false" >
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.usend.file_provider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_provider_paths" />
+        </provider>
+        <!--
+        Set custom default icon. This is used when no icon is set for incoming notification messages.
+        See README(https://goo.gl/l4GJaQ) for more.
+        -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/ic_stat_ic_notification" />
+        <!--
+        Set color used with incoming notification messages. This is used when no color is set for the incoming
+        notification message. See README(https://goo.gl/6BKBk7) for more.
+        -->
+        <meta-data
+            android:name="sqip.SQUARE_APPLICATION_ID"
+            android:value="sandbox-sq0idb-xHVlRlfCe7O16bxA5bP-bg" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorAccent" />
+
+        <activity
+            android:name="com.stripe.android.view.AddPaymentMethodActivity"
+            android:theme="@style/StripeDefaultTheme" />
+        <activity
+            android:name="com.stripe.android.view.PaymentMethodsActivity"
+            android:theme="@style/StripeDefaultTheme" />
+        <activity
+            android:name="com.stripe.android.view.PaymentFlowActivity"
+            android:theme="@style/StripeDefaultTheme" />
+        <activity
+            android:name="com.stripe.android.view.PaymentAuthWebViewActivity"
+            android:theme="@style/StripeDefaultTheme"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.stripe.android.view.PaymentRelayActivity"
+            android:theme="@style/StripeDefaultTheme" />
+        <activity
+            android:name="com.stripe.android.view.Stripe3ds2CompletionActivity"
+            android:theme="@style/StripeDefaultTheme" />
+        <activity
+            android:name="com.stripe.android.paymentsheet.PaymentSheetActivity"
+            android:theme="@style/StripePaymentSheetDefaultTheme" />
+        <activity
+            android:name="sqip.internal.CardEntryActivity"
+            android:theme="@style/sqip.Theme.CardEntry"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name="com.stripe.android.stripe3ds2.views.ChallengeActivity"
+            android:theme="@style/Stripe3DS2Theme" />
+        <activity
+            android:name="com.stripe.android.stripe3ds2.views.ChallengeProgressActivity"
+            android:theme="@style/Stripe3DS2Theme" />
+
+        <service
+            android:name="com.amazonaws.mobileconnectors.s3.transferutility.TransferService"
+            android:enabled="true" />
+
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:exported="false" />
+
+        <provider
+            android:name="sqip.internal.ContextCaptureContentProvider"
+            android:authorities="com.usend.sqip"
+            android:exported="false" />
+        <!--
+             FirebaseMessagingService performs security checks at runtime,
+             but set to not exported to explicitly avoid allowing another app to call it.
+        -->
+        <service
+            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+            android:exported="false" >
+            <intent-filter android:priority="-500" >
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.google.firebase.components.ComponentDiscoveryService"
+            android:directBootAware="true"
+            android:exported="false" >
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+            <meta-data
+                android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar"
+                android:value="com.google.firebase.components.ComponentRegistrar" />
+        </service>
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <meta-data
+            android:name="com.google.android.play.billingclient.version"
+            android:value="3.0.0" />
+
+        <activity
+            android:name="com.android.billingclient.api.ProxyBillingActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="rx_activity_result2.HolderActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@style/Theme.Transparent" />
+
+        <receiver
+            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+            android:exported="true"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name="com.google.firebase.provider.FirebaseInitProvider"
+            android:authorities="com.usend.firebaseinitprovider"
+            android:directBootAware="true"
+            android:exported="false"
+            android:initOrder="100" />
+
+        <activity
+            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <receiver
+            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+            android:enabled="true"
+            android:exported="false" >
+        </receiver>
+
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementService"
+            android:enabled="true"
+            android:exported="false" />
+        <service
+            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+            android:enabled="true"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" />
+
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="com.usend.androidx-startup"
+            android:exported="false" >
+            <meta-data
+                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+                android:value="androidx.startup" />
+            <meta-data
+                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+                android:value="androidx.startup" />
+        </provider>
+
+        <service
+            android:name="com.google.android.datatransport.runtime.backends.TransportBackendDiscovery"
+            android:exported="false" >
+            <meta-data
+                android:name="backend:com.google.android.datatransport.cct.CctBackendFactory"
+                android:value="cct" />
+        </service>
+        <service
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService"
+            android:exported="false"
+            android:permission="android.permission.BIND_JOB_SERVICE" >
+        </service>
+
+        <receiver
+            android:name="com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver"
+            android:exported="false" />
+    </application>
+
+</manifest>

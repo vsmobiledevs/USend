@@ -1,0 +1,52 @@
+
+
+package com.usend.views.home
+
+import android.content.Context
+import android.content.Intent
+import com.usend.R
+import com.usend.base.BaseViewModel
+import com.usend.base.ViewModelActivity
+import com.usend.databinding.ActivityPaymentMethodBinding
+import kotlinx.android.synthetic.main.app_toolbar.*
+import kotlin.reflect.KClass
+
+class PaymentMethodActivity(
+    override val modelClass: KClass<BaseViewModel> = BaseViewModel::class,
+    override val layoutId: Int = R.layout.activity_payment_method
+) : ViewModelActivity<ActivityPaymentMethodBinding, BaseViewModel>() {
+
+    override fun initView() {
+        super.initView()
+
+        initToolbar(toolbar = toolbar, title = resources.getString(R.string.lbl_payment_method))
+    }
+
+    override fun initControls() {
+        super.initControls()
+
+        binding.btnNext.setOnClickListener {
+
+            SavedPaymentMethodsActivity.newIntent(this, Intent(this, SavedPaymentMethodsActivity::class.java))
+        }
+
+        binding.cvCreditCard.setOnClickListener {
+            binding.selectedValue = 0
+        }
+        binding.cvApplePay.setOnClickListener {
+            binding.selectedValue = 1
+        }
+        binding.cvGooglePay.setOnClickListener {
+            binding.selectedValue = 2
+        }
+        binding.cvPaypal.setOnClickListener {
+            binding.selectedValue = 3
+        }
+    }
+
+    companion object {
+        fun newIntent(context: Context, intent: Intent) {
+            context.startActivity(intent)
+        }
+    }
+}

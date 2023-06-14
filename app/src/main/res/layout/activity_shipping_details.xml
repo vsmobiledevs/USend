@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="adapter"
+            type="com.usend.adapter.ExtraServicesItemAdapter" />
+
+        <variable
+            name="activity"
+            type="com.usend.views.home.ShippingDetailsActivity" />
+
+    </data>
+
+    <LinearLayout
+        style="@style/match"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbarShippingDetails"
+            layout="@layout/app_toolbar" />
+
+        <androidx.core.widget.NestedScrollView
+            style="@style/styleScrollbar"
+            android:background="@color/colorWhite">
+
+            <LinearLayout
+                style="@style/match"
+                android:orientation="vertical"
+                tools:context=".views.home.ShippingDetailsActivity">
+
+                <RelativeLayout
+                    style="@style/matchWrap"
+                    android:layout_marginTop="@dimen/dimen_5dp">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtShippingAddress"
+                        style="@style/CommonText.Style.16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/dimen_20dp"
+                        android:layout_marginEnd="@dimen/dimen_15dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="@string/lbl_shipping_address"
+                        android:textSize="@dimen/dimen_14sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtChangeShippingAddress"
+                        style="@style/CommonText.Style.16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/dimen_20dp"
+                        android:layout_marginEnd="@dimen/dimen_20dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:onClick="@{(view)-> activity.onShippingAddressChangeClick()}"
+                        android:paddingStart="@dimen/dimen_5dp"
+                        android:paddingTop="@dimen/dimen_10dp"
+                        android:paddingEnd="@dimen/dimen_5dp"
+                        android:paddingBottom="@dimen/dimen_10dp"
+                        android:text="@string/lbl_change"
+                        android:textColor="@color/color154A99"
+                        android:textSize="@dimen/dimen_14sp"
+                        android:visibility="gone" />
+
+                </RelativeLayout>
+
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/MaterialCardStyle"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_15dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:elevation="@dimen/dimen_10dp">
+
+                    <RelativeLayout
+                        style="@style/matchWrap"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="@dimen/dimen_15dp"
+                        android:layout_marginTop="@dimen/dimen_15dp"
+                        android:layout_marginEnd="@dimen/dimen_15dp"
+                        android:layout_marginBottom="@dimen/dimen_15dp">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtAddress"
+                            style="@style/CommonText.Style.16sp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="@string/lbl_address"
+                            android:textColor="@color/color2D2D2D" />
+
+                    </RelativeLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1dp"
+                    android:layout_marginTop="@dimen/dimen_25dp"
+                    android:layout_marginBottom="@dimen/dimen_15dp"
+                    android:background="@color/color1A2D2D2D" />
+
+                <RelativeLayout style="@style/matchWrap">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtShippingMethod"
+                        style="@style/CommonText.Style.16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/dimen_20dp"
+                        android:layout_marginEnd="@dimen/dimen_15dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="@string/lbl_shipping_method"
+                        android:textSize="@dimen/dimen_14sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtChangeShippingMethod"
+                        style="@style/CommonText.Style.16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/dimen_20dp"
+                        android:layout_marginEnd="@dimen/dimen_20dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:onClick="@{(view)-> activity.onShippingMethodChangeClick()}"
+                        android:paddingStart="@dimen/dimen_5dp"
+                        android:paddingTop="@dimen/dimen_10dp"
+                        android:paddingEnd="@dimen/dimen_5dp"
+                        android:paddingBottom="@dimen/dimen_10dp"
+                        android:text="@string/lbl_change"
+                        android:textColor="@color/color154A99"
+                        android:textSize="@dimen/dimen_14sp" />
+
+                </RelativeLayout>
+
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/MaterialCardStyle"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_5dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        style="@style/matchWrap"
+                        android:padding="@dimen/dimen_15dp">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/imgShipping"
+                            android:layout_width="@dimen/dimen_70dp"
+                            android:layout_height="@dimen/dimen_70dp"
+                            android:background="@drawable/bg_curve_border_10_radius"
+                            android:paddingStart="@dimen/dimen_7dp"
+                            android:paddingEnd="@dimen/dimen_7dp"
+                            android:src="@drawable/ic_fed_ex"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtShippingMethodName"
+                            style="@style/inputField.Title.14sp"
+                            android:layout_width="@dimen/dimen_0dp"
+                            android:layout_marginStart="@dimen/dimen_10dp"
+                            android:ellipsize="marquee"
+                            android:text="@string/lbl_fedex"
+                            app:layout_constraintBottom_toTopOf="@id/txtTimeToShipped"
+                            app:layout_constraintEnd_toStartOf="@id/txtShippingCharges"
+                            app:layout_constraintHorizontal_bias="0"
+                            app:layout_constraintStart_toEndOf="@id/imgShipping"
+                            app:layout_constraintTop_toTopOf="@id/imgShipping"
+                            app:layout_constraintVertical_chainStyle="spread_inside" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtTimeToShipped"
+                            style="@style/inputField.Title.14sp"
+                            android:layout_marginStart="@dimen/dimen_10dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="@string/lbl_bussiness"
+                            android:textSize="@dimen/dimen_12sp"
+                            app:layout_constraintBottom_toTopOf="@id/txtAvailability"
+                            app:layout_constraintStart_toEndOf="@id/imgShipping"
+                            app:layout_constraintTop_toBottomOf="@id/txtShippingMethodName"
+                            app:layout_constraintVertical_chainStyle="spread_inside" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtAvailability"
+                            style="@style/inputField.Title.14sp"
+                            android:layout_marginStart="@dimen/dimen_10dp"
+                            android:drawableStart="@drawable/ic_map_pin"
+                            android:drawablePadding="@dimen/dimen_6dp"
+                            android:fontFamily="@font/poppins_medium"
+                            android:text="@string/lbl_not_available"
+                            android:textColor="@color/color802D2D2D"
+                            android:textSize="@dimen/dimen_12sp"
+                            app:layout_constraintBottom_toBottomOf="@id/imgShipping"
+                            app:layout_constraintStart_toEndOf="@id/imgShipping"
+                            app:layout_constraintTop_toBottomOf="@id/txtTimeToShipped"
+                            app:layout_constraintVertical_chainStyle="spread_inside" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtShippingCharges"
+                            style="@style/inputField.Title.14sp"
+                            android:text="@string/lbl_0"
+                            android:textColor="@color/color154A99"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="1"
+                            app:layout_constraintStart_toEndOf="@id/txtShippingMethodName"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1dp"
+                    android:layout_marginTop="@dimen/dimen_25dp"
+                    android:layout_marginBottom="@dimen/dimen_15dp"
+                    android:background="@color/color1A2D2D2D" />
+
+                <LinearLayout
+                    android:id="@+id/llCustoms"
+                    style="@style/matchWrap"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtDeclaredValuesTitle"
+                        style="@style/CommonText.Style.14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/dimen_20dp"
+                        android:layout_marginEnd="@dimen/dimen_5dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="@string/lbl_declared_values" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edtDeclaredValues"
+                        style="@style/inputField.16sp"
+                        android:layout_marginStart="@dimen/dimen_20dp"
+                        android:layout_marginTop="@dimen/dimen_10dp"
+                        android:layout_marginEnd="@dimen/dimen_20dp"
+                        android:gravity="start"
+                        android:inputType="numberDecimal"
+                        android:hint="@string/msg_enter_item_value"
+                        android:maxLength="30"
+                        android:maxLines="1"
+                        android:singleLine="false"
+                        android:text="" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtContentofPackage"
+                        style="@style/CommonText.Style.14sp"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/dimen_20dp"
+                        android:layout_marginTop="@dimen/dimen_10dp"
+                        android:layout_marginEnd="@dimen/dimen_5dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="@string/lbl_desc_of_item" />
+
+                    <androidx.appcompat.widget.AppCompatEditText
+                        android:id="@+id/edtContentOfPackage"
+                        style="@style/inputField.16sp"
+                        android:layout_marginStart="@dimen/dimen_20dp"
+                        android:layout_marginTop="@dimen/dimen_10dp"
+                        android:layout_marginEnd="@dimen/dimen_20dp"
+                        android:layout_marginBottom="@dimen/dimen_10dp"
+                        android:gravity="start"
+                        android:hint="@string/msg_enter_desc_of_item"
+                        android:maxLength="300"
+                        android:minLines="2"
+                        android:singleLine="false"
+                        android:text="" />
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtNotesTitle"
+                    style="@style/CommonText.Style.14sp"
+                    android:layout_width="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginEnd="@dimen/dimen_5dp"
+                    android:fontFamily="@font/poppins_medium"
+                    android:text="@string/lbl_special_notes" />
+
+                <androidx.appcompat.widget.AppCompatEditText
+                    android:id="@+id/edtNotes"
+                    style="@style/inputField.16sp"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:gravity="start"
+                    android:hint="@string/msg_enter_special_notes"
+                    android:maxLength="500"
+                    android:minLines="4"
+                    android:singleLine="false"
+                    android:text="" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1dp"
+                    android:layout_marginTop="@dimen/dimen_25dp"
+                    android:layout_marginBottom="@dimen/dimen_15dp"
+                    android:background="@color/color1A2D2D2D" />
+
+                <RelativeLayout style="@style/matchWrap">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtServiceTitle"
+                        style="@style/CommonText.Style.16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/dimen_20dp"
+                        android:layout_marginEnd="@dimen/dimen_15dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="@string/lbl_service"
+                        android:textSize="@dimen/dimen_14sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtExtraCharges"
+                        style="@style/CommonText.Style.16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/dimen_20dp"
+                        android:layout_marginEnd="@dimen/dimen_20dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="@string/lbl_extra_charges"
+                        android:textSize="@dimen/dimen_14sp" />
+
+                </RelativeLayout>
+
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/MaterialCardStyle"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_15dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp">
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/rvExtraServices"
+                        style="@style/styleRecyclerView"
+                        android:nestedScrollingEnabled="false"
+                        app:adapter="@{adapter}" />
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_1dp"
+                    android:layout_marginTop="@dimen/dimen_25dp"
+                    android:layout_marginBottom="@dimen/dimen_15dp"
+                    android:background="@color/color1A2D2D2D" />
+
+                <RelativeLayout style="@style/matchWrap">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtInvoiceDetails"
+                        style="@style/CommonText.Style.16sp"
+                        android:layout_width="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/dimen_20dp"
+                        android:layout_marginEnd="@dimen/dimen_15dp"
+                        android:fontFamily="@font/poppins_medium"
+                        android:text="@string/lbl_invoice_details"
+                        android:textSize="@dimen/dimen_14sp" />
+
+                </RelativeLayout>
+
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/MaterialCardStyle"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_15dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp">
+
+                    <LinearLayout
+                        style="@style/matchWrap"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dimen_15dp"
+                            android:layout_marginTop="@dimen/dimen_20dp"
+                            android:layout_marginEnd="@dimen/dimen_15dp">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtCarrierFeesTitle"
+                                style="@style/CommonText.Style.16sp"
+                                android:layout_width="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/poppins_medium"
+                                android:text="@string/lbl_carrier_fees"
+                                android:textSize="@dimen/dimen_14sp" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtCarrierFees"
+                                style="@style/CommonText.Style.16sp"
+                                android:layout_width="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/poppins_medium"
+                                android:text="$0.0"
+                                android:textColor="@color/color2D2D2D" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dimen_15dp"
+                            android:layout_marginTop="@dimen/dimen_20dp"
+                            android:layout_marginEnd="@dimen/dimen_15dp"
+                            android:visibility="gone">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtProcessFessTitle"
+                                style="@style/CommonText.Style.16sp"
+                                android:layout_width="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/poppins_medium"
+                                android:text="@string/lbl_process_fees"
+                                android:textSize="@dimen/dimen_14sp" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtProcessFees"
+                                style="@style/CommonText.Style.16sp"
+                                android:layout_width="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/poppins_medium"
+                                android:text="$0"
+                                android:textColor="@color/color2D2D2D" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dimen_15dp"
+                            android:layout_marginTop="@dimen/dimen_20dp"
+                            android:layout_marginEnd="@dimen/dimen_15dp">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtConsolidatedFeesTitle"
+                                style="@style/CommonText.Style.16sp"
+                                android:layout_width="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/poppins_medium"
+                                android:text="@string/lbl_consolidated_fees_colon"
+                                android:textSize="@dimen/dimen_14sp" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtConsolidatedFees"
+                                style="@style/CommonText.Style.16sp"
+                                android:layout_width="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/poppins_medium"
+                                android:text="$0"
+                                android:textColor="@color/color2D2D2D" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dimen_15dp"
+                            android:layout_marginTop="@dimen/dimen_20dp"
+                            android:layout_marginEnd="@dimen/dimen_15dp">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtAdditionalFeesTitle"
+                                style="@style/CommonText.Style.16sp"
+                                android:layout_width="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/poppins_medium"
+                                android:text="@string/lbl_additional_fees"
+                                android:textSize="@dimen/dimen_14sp" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtAdditionalFees"
+                                style="@style/CommonText.Style.16sp"
+                                android:layout_width="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/poppins_medium"
+                                android:text="$0"
+                                android:textColor="@color/color2D2D2D" />
+
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen_1dp"
+                            android:layout_marginStart="@dimen/dimen_20dp"
+                            android:layout_marginTop="@dimen/dimen_20dp"
+                            android:layout_marginEnd="@dimen/dimen_20dp"
+                            android:background="@color/color1A2D2D2D" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/dimen_15dp"
+                            android:layout_marginTop="@dimen/dimen_20dp"
+                            android:layout_marginEnd="@dimen/dimen_15dp"
+                            android:layout_marginBottom="@dimen/dimen_20dp">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtTotalChargesTitle"
+                                style="@style/CommonText.Style.16sp"
+                                android:layout_width="wrap_content"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/poppins_medium"
+                                android:text="@string/lbl_total_charges"
+                                android:textSize="@dimen/dimen_14sp" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/txtTotalCharges"
+                                style="@style/CommonText.Style.16sp"
+                                android:layout_width="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:fontFamily="@font/poppins_medium"
+                                android:text="$0.0"
+                                android:textColor="@color/color2D2D2D" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnNext"
+                    style="@style/MaterialButton.CornerRadius"
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_30dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:layout_marginBottom="@dimen/dimen_20dp"
+                    android:text="@string/lbl_next" />
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </LinearLayout>
+
+</layout>

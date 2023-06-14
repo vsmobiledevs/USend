@@ -1,0 +1,128 @@
+{
+    "logs": [
+        {
+            "outputFile": "C:\\Users\\sonug3\\Downloads\\mewazz-usend-android-f71169d2854d\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-sl\\values-sl.xml",
+            "map": [
+                {
+                    "source": "E:\\Sonu g3\\SDK1\\caches\\transforms-2\\files-2.1\\e2424ffeabdd59305e7424b3aa12e968\\browser-1.2.0\\res\\values-sl\\values-sl.xml",
+                    "from": {
+                        "startLines": "2,3,4,5",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,161,265,377",
+                        "endColumns": "105,103,111,100",
+                        "endOffsets": "156,260,372,473"
+                    },
+                    "to": {
+                        "startLines": "48,50,51,52",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "5635,5827,5931,6043",
+                        "endColumns": "105,103,111,100",
+                        "endOffsets": "5736,5926,6038,6139"
+                    }
+                },
+                {
+                    "source": "E:\\Sonu g3\\SDK1\\caches\\transforms-2\\files-2.1\\a1af1202e32a658cab72e26d726c7875\\appcompat-1.2.0\\res\\values-sl\\values-sl.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,217,319,427,514,617,736,817,895,987,1081,1176,1270,1365,1459,1555,1655,1747,1839,1923,2031,2139,2239,2352,2460,2568,2751,2851",
+                        "endColumns": "111,101,107,86,102,118,80,77,91,93,94,93,94,93,95,99,91,91,83,107,107,99,112,107,107,182,99,83",
+                        "endOffsets": "212,314,422,509,612,731,812,890,982,1076,1171,1265,1360,1454,1550,1650,1742,1834,1918,2026,2134,2234,2347,2455,2563,2746,2846,2930"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,56",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "105,217,319,427,514,617,736,817,895,987,1081,1176,1270,1365,1459,1555,1655,1747,1839,1923,2031,2139,2239,2352,2460,2568,2751,6469",
+                        "endColumns": "111,101,107,86,102,118,80,77,91,93,94,93,94,93,95,99,91,91,83,107,107,99,112,107,107,182,99,83",
+                        "endOffsets": "212,314,422,509,612,731,812,890,982,1076,1171,1265,1360,1454,1550,1650,1742,1834,1918,2026,2134,2234,2347,2455,2563,2746,2846,6548"
+                    }
+                },
+                {
+                    "source": "E:\\Sonu g3\\SDK1\\caches\\transforms-2\\files-2.1\\f4bcafeb375c9eb538b5c5b718c151dd\\jetified-play-services-base-17.0.0\\res\\values-sl\\values.xml",
+                    "from": {
+                        "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
+                        "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
+                        "startOffsets": "245,349,546,673,778,984,1112,1252,1381,1598,1703,1901,2029,2240,2418,2514,2602",
+                        "endColumns": "103,196,126,104,205,127,139,128,216,104,197,127,210,177,95,87,108",
+                        "endOffsets": "348,545,672,777,983,1111,1251,1380,1597,1702,1900,2028,2239,2417,2513,2601,2710"
+                    },
+                    "to": {
+                        "startLines": "29,30,31,32,33,34,35,36,38,39,40,41,42,43,44,45,46",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "2851,2959,3156,3287,3396,3602,3734,3878,4210,4427,4536,4734,4866,5077,5259,5359,5451",
+                        "endColumns": "107,196,130,108,205,131,143,132,216,108,197,131,210,181,99,91,112",
+                        "endOffsets": "2954,3151,3282,3391,3597,3729,3873,4006,4422,4531,4729,4861,5072,5254,5354,5446,5559"
+                    }
+                },
+                {
+                    "source": "E:\\Sonu g3\\SDK1\\caches\\transforms-2\\files-2.1\\821329fc3dc7a82759669629365297a3\\jetified-play-services-basement-17.0.0\\res\\values-sl\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "198",
+                        "endOffsets": "445"
+                    },
+                    "to": {
+                        "startLines": "37",
+                        "startColumns": "4",
+                        "startOffsets": "4011",
+                        "endColumns": "198",
+                        "endOffsets": "4205"
+                    }
+                },
+                {
+                    "source": "E:\\Sonu g3\\SDK1\\caches\\transforms-2\\files-2.1\\9c2e5193f157eba746a44a86e45e9b46\\jetified-firebase-messaging-20.1.0\\res\\values-sl\\values.xml",
+                    "from": {
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "207",
+                        "endColumns": "99",
+                        "endOffsets": "306"
+                    },
+                    "to": {
+                        "startLines": "53",
+                        "startColumns": "4",
+                        "startOffsets": "6144",
+                        "endColumns": "103",
+                        "endOffsets": "6243"
+                    }
+                },
+                {
+                    "source": "E:\\Sonu g3\\SDK1\\caches\\transforms-2\\files-2.1\\24b90158576005086bd153cc04994f7b\\preference-1.1.0\\res\\values-sl\\values-sl.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6,7,8",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "105,176,262,342,483,652,740",
+                        "endColumns": "70,85,79,140,168,87,83",
+                        "endOffsets": "171,257,337,478,647,735,819"
+                    },
+                    "to": {
+                        "startLines": "47,49,54,55,58,59,60",
+                        "startColumns": "4,4,4,4,4,4,4",
+                        "startOffsets": "5564,5741,6248,6328,6654,6823,6911",
+                        "endColumns": "70,85,79,140,168,87,83",
+                        "endOffsets": "5630,5822,6323,6464,6818,6906,6990"
+                    }
+                },
+                {
+                    "source": "E:\\Sonu g3\\SDK1\\caches\\transforms-2\\files-2.1\\e6c3ff4530a4a21acac22781d35858b5\\core-1.6.0\\res\\values-sl\\values-sl.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "57",
+                        "startColumns": "4",
+                        "startOffsets": "6553",
+                        "endColumns": "100",
+                        "endOffsets": "6649"
+                    }
+                }
+            ]
+        }
+    ]
+}

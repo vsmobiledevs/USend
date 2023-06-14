@@ -1,0 +1,16 @@
+<component name="libraryTable">
+  <library name="Gradle: com.google.firebase:firebase-encoders-json:16.1.0@aar">
+    <CLASSES>
+      <root url="file://E:/Sonu g3/SDK/caches/transforms-2/files-2.1/6ae61f90d4ed6ccebc8660c0b54d8713/jetified-firebase-encoders-json-16.1.0/res" />
+      <root url="file://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/1ac4fcaccf32add5aa1f0251b1a96e92/jetified-firebase-encoders-json-16.1.0/AndroidManifest.xml" />
+      <root url="file://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/1ac4fcaccf32add5aa1f0251b1a96e92/jetified-firebase-encoders-json-16.1.0/res" />
+      <root url="jar://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/1ac4fcaccf32add5aa1f0251b1a96e92/jetified-firebase-encoders-json-16.1.0/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://E:/Sonu g3/SDK/caches/modules-2/files-2.1/com.google.firebase/firebase-encoders-json/16.1.0/6cbb5bf5ec756a55604fe68deba386bda9edcb9c/firebase-encoders-json-16.1.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://E:/Sonu g3/SDK/caches/modules-2/files-2.1/com.google.firebase/firebase-encoders-json/16.1.0/13e469b445e762c1bc00f695e93b4a6ced10883f/firebase-encoders-json-16.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="isSelected"
+            type="Boolean" />
+
+        <variable
+            name="adapter"
+            type="com.usend.adapter.SelectSavedCardsItemAdapter" />
+
+    </data>
+
+    <RelativeLayout
+        style="@style/match"
+        android:background="@color/colorWhite"
+        tools:context=".views.home.AutoShipMethodsActivity">
+
+
+        <LinearLayout
+            style="@style/match"
+            android:background="@color/colorWhite"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/toolbarSavedCards"
+                layout="@layout/app_toolbar" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout style="@style/match">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvSavedCards"
+                    style="@style/styleRecyclerView"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="@dimen/dimen_150dp"
+                    app:adapter="@{adapter}"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:listitem="@layout/row_select_saved_card_item" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_bottom_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:background="@android:color/white"
+            android:orientation="vertical"
+            android:paddingTop="@dimen/dimen_10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0">
+
+                <androidx.appcompat.widget.AppCompatCheckBox
+                    android:id="@+id/cbTerms"
+                    android:layout_width="@dimen/dimen_25dp"
+                    android:layout_height="25dp"
+                    android:button="@drawable/checkbox_selector"
+                    android:gravity="center_vertical" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtPrivacyDetails"
+                    style="@style/CommonText.Style.SemiBold.16sp"
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/msg_continue_accept_terms_policy"
+                    android:textColor="@color/color802D2D2D"
+                    android:textSize="@dimen/dimen_14sp" />
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnNext"
+                style="@style/MaterialButton.CornerRadius"
+                android:layout_width="match_parent"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                android:layout_marginBottom="@dimen/dimen_20dp"
+                android:text="@string/lbl_next" />
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+                                           
+
+                 
+                           
+                                                           
+
+           
+
+    <ScrollView style="@style/styleScrollbar"
+        android:background="@color/colorWhite" android:tag="layout/fragment_auth_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".views.userauth.AuthFragment">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/authImage"
+                android:layout_width="@dimen/dimen_280dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/dimen_70dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_auth_image"
+                app:layout_constraintDimensionRatio="5:4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtIntroDesc"
+                style="@style/CommonText.Style.16sp"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_30dp"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                android:fontFamily="@font/poppins_regular"
+                android:gravity="center"
+                android:lineSpacingMultiplier="1.3"
+                android:text="@string/lbl_auth_desc"
+                android:textColor="@color/color94A2AB"
+                app:layout_constraintBottom_toTopOf="@id/btnSignIn"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/authImage"
+                app:layout_constraintVertical_bias="0" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSignIn"
+                style="@style/MaterialButton.CornerRadius"
+                android:layout_width="match_parent"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                android:layout_marginBottom="@dimen/dimen_20dp"
+                android:tag="binding_1"                                
+                android:text="@string/lbl_sign_in"
+                app:layout_constraintBottom_toTopOf="@id/btnSignUp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSignUp"
+                style="@style/MaterialButton.Round.Border"
+                android:layout_width="match_parent"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                android:layout_marginBottom="@dimen/dimen_20dp"
+                android:tag="binding_2"                                
+                android:text="@string/lbl_sign_up"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+         

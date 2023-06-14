@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="adapter"
+            type="com.usend.adapter.ShippingAddressItemAdapter" />
+
+    </data>
+
+    <LinearLayout
+        style="@style/match"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbarShippingAddress"
+            layout="@layout/app_toolbar" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvShipAddresses"
+            android:layout_height="match_parent"
+            style="@style/styleRecyclerView"
+            app:adapter="@{adapter}"
+            tools:listitem="@layout/row_shipping_address_item"/>
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,111 @@
+package com.usend.viewmodels;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 6, 0}, k = 1, d1 = {"\u0000L\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\u0010\u000e\n\u0002\b\u0011\n\u0002\u0010\b\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\t\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\b\n\u0002\u0010\u0002\n\u0002\b\u0003\u0018\u00002\u00020\u0001B\u0015\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0002\u0010\u0006J\u0006\u00105\u001a\u000206J\u0006\u00107\u001a\u000206J\u0006\u00108\u001a\u000206R!\u0010\u0007\u001a\b\u0012\u0004\u0012\u00020\t0\b8FX\u0086\u0084\u0002\u00a2\u0006\f\n\u0004\b\f\u0010\r\u001a\u0004\b\n\u0010\u000bR!\u0010\u000e\u001a\b\u0012\u0004\u0012\u00020\t0\b8FX\u0086\u0084\u0002\u00a2\u0006\f\n\u0004\b\u0010\u0010\r\u001a\u0004\b\u000f\u0010\u000bR!\u0010\u0011\u001a\b\u0012\u0004\u0012\u00020\t0\b8FX\u0086\u0084\u0002\u00a2\u0006\f\n\u0004\b\u0013\u0010\r\u001a\u0004\b\u0012\u0010\u000bR!\u0010\u0014\u001a\b\u0012\u0004\u0012\u00020\t0\b8FX\u0086\u0084\u0002\u00a2\u0006\f\n\u0004\b\u0016\u0010\r\u001a\u0004\b\u0015\u0010\u000bR!\u0010\u0017\u001a\b\u0012\u0004\u0012\u00020\t0\b8FX\u0086\u0084\u0002\u00a2\u0006\f\n\u0004\b\u0019\u0010\r\u001a\u0004\b\u0018\u0010\u000bR!\u0010\u001a\u001a\b\u0012\u0004\u0012\u00020\u001b0\b8FX\u0086\u0084\u0002\u00a2\u0006\f\n\u0004\b\u001d\u0010\r\u001a\u0004\b\u001c\u0010\u000bR\u0011\u0010\u001e\u001a\u00020\u001f\u00a2\u0006\b\n\u0000\u001a\u0004\b \u0010!R!\u0010\"\u001a\b\u0012\u0004\u0012\u00020\t0\b8FX\u0086\u0084\u0002\u00a2\u0006\f\n\u0004\b$\u0010\r\u001a\u0004\b#\u0010\u000bR\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u000e\u00a2\u0006\u0002\n\u0000R!\u0010%\u001a\b\u0012\u0004\u0012\u00020\t0\b8FX\u0086\u0084\u0002\u00a2\u0006\f\n\u0004\b\'\u0010\r\u001a\u0004\b&\u0010\u000bR!\u0010(\u001a\b\u0012\u0004\u0012\u00020)0\b8FX\u0086\u0084\u0002\u00a2\u0006\f\n\u0004\b+\u0010\r\u001a\u0004\b*\u0010\u000bR\u001a\u0010,\u001a\u00020-X\u0086\u000e\u00a2\u0006\u000e\n\u0000\u001a\u0004\b.\u0010/\"\u0004\b0\u00101R!\u00102\u001a\b\u0012\u0004\u0012\u00020\t0\b8FX\u0086\u0084\u0002\u00a2\u0006\f\n\u0004\b4\u0010\r\u001a\u0004\b3\u0010\u000b\u00a8\u00069"}, d2 = {"Lcom/usend/viewmodels/BillingAddressViewModel;", "Lcom/usend/base/BaseViewModel;", "application", "Landroid/app/Application;", "repository", "Lcom/usend/repository/AuthenticationRepository;", "(Landroid/app/Application;Lcom/usend/repository/AuthenticationRepository;)V", "addressLine1", "Landroidx/lifecycle/MediatorLiveData;", "", "getAddressLine1", "()Landroidx/lifecycle/MediatorLiveData;", "addressLine1$delegate", "Lkotlin/Lazy;", "addressLine2", "getAddressLine2", "addressLine2$delegate", "city", "getCity", "city$delegate", "country", "getCountry", "country$delegate", "countryCode", "getCountryCode", "countryCode$delegate", "countryCodeId", "", "getCountryCodeId", "countryCodeId$delegate", "mContext", "Landroid/content/Context;", "getMContext", "()Landroid/content/Context;", "phoneNumber", "getPhoneNumber", "phoneNumber$delegate", "state", "getState", "state$delegate", "status", "", "getStatus", "status$delegate", "user", "Lcom/usend/models/UserModel;", "getUser", "()Lcom/usend/models/UserModel;", "setUser", "(Lcom/usend/models/UserModel;)V", "zipcode", "getZipcode", "zipcode$delegate", "getCountryList", "", "getStateList", "next", "app_debug"})
+public final class BillingAddressViewModel extends com.usend.base.BaseViewModel {
+    private com.usend.repository.AuthenticationRepository repository;
+    @org.jetbrains.annotations.NotNull()
+    private final android.content.Context mContext = null;
+    @org.jetbrains.annotations.NotNull()
+    private final kotlin.Lazy status$delegate = null;
+    @org.jetbrains.annotations.NotNull()
+    private final kotlin.Lazy addressLine1$delegate = null;
+    @org.jetbrains.annotations.NotNull()
+    private final kotlin.Lazy addressLine2$delegate = null;
+    @org.jetbrains.annotations.NotNull()
+    private final kotlin.Lazy country$delegate = null;
+    @org.jetbrains.annotations.NotNull()
+    private final kotlin.Lazy zipcode$delegate = null;
+    @org.jetbrains.annotations.NotNull()
+    private final kotlin.Lazy city$delegate = null;
+    @org.jetbrains.annotations.NotNull()
+    private final kotlin.Lazy state$delegate = null;
+    @org.jetbrains.annotations.NotNull()
+    private final kotlin.Lazy countryCode$delegate = null;
+    @org.jetbrains.annotations.NotNull()
+    private final kotlin.Lazy phoneNumber$delegate = null;
+    @org.jetbrains.annotations.NotNull()
+    private final kotlin.Lazy countryCodeId$delegate = null;
+    @org.jetbrains.annotations.NotNull()
+    private com.usend.models.UserModel user;
+    
+    public BillingAddressViewModel(@org.jetbrains.annotations.NotNull()
+    android.app.Application application, @org.jetbrains.annotations.NotNull()
+    com.usend.repository.AuthenticationRepository repository) {
+        super(null);
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final android.content.Context getMContext() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final androidx.lifecycle.MediatorLiveData<java.lang.Object> getStatus() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final androidx.lifecycle.MediatorLiveData<java.lang.String> getAddressLine1() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final androidx.lifecycle.MediatorLiveData<java.lang.String> getAddressLine2() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final androidx.lifecycle.MediatorLiveData<java.lang.String> getCountry() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final androidx.lifecycle.MediatorLiveData<java.lang.String> getZipcode() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final androidx.lifecycle.MediatorLiveData<java.lang.String> getCity() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final androidx.lifecycle.MediatorLiveData<java.lang.String> getState() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final androidx.lifecycle.MediatorLiveData<java.lang.String> getCountryCode() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final androidx.lifecycle.MediatorLiveData<java.lang.String> getPhoneNumber() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final androidx.lifecycle.MediatorLiveData<java.lang.Integer> getCountryCodeId() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final com.usend.models.UserModel getUser() {
+        return null;
+    }
+    
+    public final void setUser(@org.jetbrains.annotations.NotNull()
+    com.usend.models.UserModel p0) {
+    }
+    
+    public final void next() {
+    }
+    
+    public final void getCountryList() {
+    }
+    
+    public final void getStateList() {
+    }
+}

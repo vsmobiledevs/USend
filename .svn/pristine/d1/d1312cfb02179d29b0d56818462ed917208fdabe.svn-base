@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+
+    </data>
+
+    <com.google.android.material.card.MaterialCardView style="@style/MaterialCardStyle"
+        android:layout_marginStart="@dimen/dimen_20dp"
+        android:layout_marginEnd="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/dimen_3dp"
+        android:layout_marginBottom="@dimen/dimen_12dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            style="@style/matchWrap"
+            android:paddingStart="@dimen/dimen_15dp"
+            android:paddingEnd="@dimen/dimen_15dp"
+            android:paddingTop="@dimen/dimen_10dp"
+            android:paddingBottom="@dimen/dimen_10dp">
+            
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imgConciergeItem"
+                android:layout_width="@dimen/dimen_60dp"
+                android:layout_height="@dimen/dimen_60dp"
+                android:src="@drawable/ic_package_place_holder"
+                android:scaleType="fitXY"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtProductName"
+                style="@style/CommonText.Style.14sp"
+                android:layout_marginStart="@dimen/dimen_10dp"
+                android:text="@string/lbl_product_name"
+                android:textColor="@color/color2D2D2D"
+                app:layout_constraintVertical_chainStyle="spread_inside"
+                app:layout_constraintStart_toEndOf="@id/imgConciergeItem"
+                app:layout_constraintTop_toTopOf="@id/imgConciergeItem"
+                app:layout_constraintBottom_toTopOf="@id/txtDate"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtDate"
+                style="@style/CommonText.Style.14sp"
+                android:textSize="@dimen/dimen_12sp"
+                android:layout_marginStart="@dimen/dimen_10dp"
+                android:fontFamily="@font/poppins_medium"
+                android:text="@string/lbl_date_18_03_2020"
+                app:layout_constraintVertical_chainStyle="spread_inside"
+                app:layout_constraintStart_toEndOf="@id/imgConciergeItem"
+                app:layout_constraintTop_toBottomOf="@id/txtProductName"
+                app:layout_constraintBottom_toTopOf="@id/txtPrice"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtPrice"
+                style="@style/CommonText.Style.14sp"
+                android:textSize="@dimen/dimen_12sp"
+                android:layout_marginStart="@dimen/dimen_10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="@string/lbl_amount"
+                android:textColor="@color/color802D2D2D"
+                app:layout_constraintVertical_chainStyle="spread_inside"
+                app:layout_constraintStart_toEndOf="@id/imgConciergeItem"
+                app:layout_constraintTop_toBottomOf="@id/txtDate"
+                app:layout_constraintBottom_toBottomOf="@id/imgConciergeItem"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txtStatus"
+                style="@style/CommonText.Style.14sp"
+                android:text="@string/lbl_processing"
+                android:textSize="@dimen/dimen_12sp"
+                android:textColor="@color/colorEEBB2E"
+                app:layout_constraintStart_toEndOf="@id/txtProductName"
+                app:layout_constraintHorizontal_bias="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnPay"
+                style="@style/MaterialButton.CornerRadius"
+                android:layout_height="@dimen/dimen_30dp"
+                android:layout_width="wrap_content"
+                android:text="@string/lbl_pay"
+                android:textSize="@dimen/dimen_12sp"
+                android:visibility="gone"
+                android:paddingTop="@dimen/dimen_0dp"
+                android:paddingBottom="@dimen/dimen_0dp"
+                android:minWidth="@dimen/dimen_100dp"
+                app:layout_constraintVertical_bias="1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/txtStatus"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</layout>

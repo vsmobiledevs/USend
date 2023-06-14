@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                  
+                                                        
+
+    
+
+           
+
+    <ScrollView style="@style/styleScrollbar" android:tag="layout/fragment_concierge_for_guest_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <LinearLayout
+            style="@style/match"
+            android:background="@color/colorWhite"
+            android:orientation="vertical"
+            tools:context=".views.home.ConciergeFragmentForGuest">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/dimen_140dp"
+                android:layout_height="@dimen/dimen_140dp"
+                android:visibility="gone"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen_15dp"
+                android:src="@drawable/ic_usend_icon" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/dimen_180dp"
+                android:layout_height="@dimen/dimen_30dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_30dp"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/icn_splash_logo" />
+
+            <LinearLayout style="@style/wrap"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_30dp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/CommonText.Style.16sp"
+                    android:layout_gravity="start"
+                    android:drawableStart="@drawable/ic_check_premium"
+                    android:drawablePadding="@dimen/dimen_15dp"
+                    android:text="@string/lbl_autoship_1"
+                    android:textColor="@color/color616161" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/CommonText.Style.16sp"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:drawableStart="@drawable/ic_check_premium"
+                    android:drawablePadding="@dimen/dimen_15dp"
+                    android:text="@string/lbl_free_package_2"
+                    android:textColor="@color/color616161" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/CommonText.Style.16sp"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:drawableStart="@drawable/ic_check_premium"
+                    android:drawablePadding="@dimen/dimen_15dp"
+                    android:text="@string/lbl_concierge_service"
+                    android:textColor="@color/color616161" />
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/CommonText.Style.16sp"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:drawableStart="@drawable/ic_check_premium"
+                    android:drawablePadding="@dimen/dimen_15dp"
+                    android:text="@string/lbl_split_order"
+                    android:textColor="@color/color616161" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/CommonText.Style.16sp"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:drawableStart="@drawable/ic_check_premium"
+                    android:drawablePadding="@dimen/dimen_15dp"
+                    android:text="@string/lbl_4_receive_usps_mail"
+                    android:textColor="@color/color616161" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/CommonText.Style.16sp"
+                    android:layout_gravity="start"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:drawableStart="@drawable/ic_check_premium"
+                    android:drawablePadding="@dimen/dimen_15dp"
+                    android:text="@string/lbl_free_storage_5"
+                    android:textColor="@color/color616161" />
+
+            </LinearLayout>
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnMonthly"
+                style="@style/MaterialButton.CornerRadius"
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                android:layout_marginBottom="@dimen/dimen_10dp"
+                android:layout_marginTop="@dimen/dimen_30dp"
+                android:text="@string/lbl_one_month_" />
+
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnYearly"
+                style="@style/MaterialButton.CornerRadius"
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                android:layout_marginBottom="@dimen/dimen_10dp"
+                android:layout_marginTop="@dimen/dimen_30dp"
+                android:text="@string/lbl_one_year" />
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/CommonText.Style.16sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:text="@string/lbl_off"
+                android:textColor="@color/colorE82D2D" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/CommonText.Style.16sp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:gravity="center"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                android:layout_marginBottom="@dimen/dimen_20dp"
+                android:text="@string/msg_concierge_upgrade"
+                android:textColor="@color/color80000000" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cvMain"
+                style="@style/MaterialCardStyle"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen_50dp"
+                android:visibility="gone"
+                android:background="@drawable/bg_curve_border_10_radius_upgrade_to_premium">
+
+                <LinearLayout
+                    style="@style/matchWrap"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:background="@drawable/bg_left_bottom_right_top_curve_back"
+                        android:fontFamily="@font/poppins_medium"
+                        android:includeFontPadding="false"
+                        android:paddingStart="@dimen/dimen_10dp"
+                        android:paddingTop="@dimen/dimen_5dp"
+                        android:paddingEnd="@dimen/dimen_10dp"
+                        android:paddingBottom="@dimen/dimen_5dp"
+                        android:text="@string/lbl_recommended"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/dimen_8sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/Activity.Title.Text.32sp"
+                        android:layout_marginStart="@dimen/dimen_15dp"
+                        android:layout_marginTop="@dimen/dimen_6dp"
+                        android:layout_marginEnd="@dimen/dimen_15dp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:gravity="center"
+                        android:text="@string/lbl_upgrade_to_premium"
+                        android:textSize="@dimen/dimen_24sp" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        style="@style/CommonText.Style.16sp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginStart="@dimen/dimen_15dp"
+                        android:layout_marginTop="@dimen/dimen_6dp"
+                        android:layout_marginEnd="@dimen/dimen_15dp"
+                        android:layout_marginBottom="@dimen/dimen_15dp"
+                        android:gravity="center"
+                        android:text="@string/lbl_one_month_"
+                        android:textColor="@color/color2D2D2D" />
+
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+         

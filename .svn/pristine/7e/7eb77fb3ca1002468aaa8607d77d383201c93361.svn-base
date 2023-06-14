@@ -1,0 +1,77 @@
+package com.usend.adapter
+
+import android.annotation.SuppressLint
+import androidx.core.content.ContextCompat
+import com.base.network.model.PackageList
+import com.usend.R
+import com.usend.base.BaseListAdapter
+import com.usend.databinding.RowMailboxItemBinding
+import com.usend.extensions.nullSafe
+import com.usend.extensions.showToast
+import com.usend.models.MailboxItemModel
+import com.usend.utils.*
+
+class MailboxPackagesItemAdapter(private val selectionList : ArrayList<MailboxItemModel>,
+                                 private val items: ArrayList<PackageList>,
+                                 var isSelectMode : Boolean, val callback : (Int, String) -> Unit) : BaseListAdapter(items) {
+
+    override fun getItemViewType(position: Int) = R.layout.row_mailbox_item
+
+    @SuppressLint("SetTextI18n")
+    override fun onBindViewHolder(holder: ItemViewHolder, @SuppressLint("RecyclerView") position: Int) {
+
+        if(holder.binding is RowMailboxItemBinding)
+        {
+
+            holder.binding.isSelectMode = selectionList[position].isSelectMode && !items[position].isSplit!!
+            holder.binding.isSelected = selectionList[position].isSelected && !items[position].isSplit!!
+            holder.binding.isSplit = items[position].isSplit
+            holder.binding.txtPackageID.text = items[position].packageNumber
+            holder.binding.txtReceivedDate.text = DateTimeUtil.getConvertedTime(DATEFORMAT_yyyy_MM_dd, DATEFORMAT_dd_MMM_yyyy, items[position].receivedAt.nullSafe())
+            holder.binding.txtDimensions.text = items[position].dimensions + " " + items[position].dimensionsUnit
+            holder.binding.txtDaysRemaining.text = items[position].days.toString()
+            holder.binding.txtWeight.text = items[position].weight.toString() + " " + items[position].weightUnit
+
+            if(items[position].additionalFees!!.toDouble() > 0.0)
+            {
+                holder.binding.txtDaysRemaining.text = items[position].days.toString() + " ($" + String.format("%.2f", items[position].additionalFees?.toDouble()) + ")"
+                holder.binding.txtDaysRemaining.setTextColor(ContextCompat.getColor(holder.itemView.context, R.color.colorRed))
+            }
+
+            holder.itemView.setOnClickListener {
+
+                if(!items[position].isSplit!!)
+                {
+                    if(selectionList[position].isSelectMode) {
+
+                        selectionList[position].isSelected = !selectionList[position].isSelected
+                        holder.binding.isSelected = selectionList[position].isSelected
+                    }
+                    else
+                    {
+                        callback(holder.adapterPosition, SHORT_CLICK)
+                    }
+                }
+                else
+                {
+                    showToast(holder.itemView.context, message = holder.itemView.context.resources.getString(R.string.msg_split_processing))
+                }
+            }
+
+            holder.itemView.setOnLongClickListener {
+                if (!items[position].isSplit!!) {
+
+                    if (!selectionList[position].isSelectMode) {
+                        callback(holder.adapterPosition, LONG_CLICK)
+                    }
+                } else {
+                    showToast(
+                        holder.itemView.context,
+                        message = holder.itemView.context.resources.getString(R.string.msg_split_processing)
+                    )
+                }
+                true
+            }
+        }
+    }
+}

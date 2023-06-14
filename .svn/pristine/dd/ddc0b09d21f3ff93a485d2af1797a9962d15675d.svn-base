@@ -1,0 +1,214 @@
+package com.usend.databinding;
+import com.usend.R;
+import com.usend.BR;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import android.view.View;
+@SuppressWarnings("unchecked")
+public class RowMailboxItemBindingImpl extends RowMailboxItemBinding  {
+
+    @Nullable
+    private static final androidx.databinding.ViewDataBinding.IncludedLayouts sIncludes;
+    @Nullable
+    private static final android.util.SparseIntArray sViewsWithIds;
+    static {
+        sIncludes = null;
+        sViewsWithIds = new android.util.SparseIntArray();
+        sViewsWithIds.put(R.id.txtPackageNumberTitle, 3);
+        sViewsWithIds.put(R.id.txtPackageID, 4);
+        sViewsWithIds.put(R.id.barrier, 5);
+        sViewsWithIds.put(R.id.view, 6);
+        sViewsWithIds.put(R.id.txtReceivedDateTitle, 7);
+        sViewsWithIds.put(R.id.txtReceivedDate, 8);
+        sViewsWithIds.put(R.id.txtDaysRemainingTitle, 9);
+        sViewsWithIds.put(R.id.txtDaysRemaining, 10);
+        sViewsWithIds.put(R.id.txtDimensionsTitle, 11);
+        sViewsWithIds.put(R.id.txtDimensions, 12);
+        sViewsWithIds.put(R.id.txtWeightTitle, 13);
+        sViewsWithIds.put(R.id.txtWeight, 14);
+    }
+    // views
+    @NonNull
+    private final androidx.appcompat.widget.AppCompatRadioButton mboundView1;
+    // variables
+    // values
+    // listeners
+    // Inverse Binding Event Handlers
+
+    public RowMailboxItemBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 15, sIncludes, sViewsWithIds));
+    }
+    private RowMailboxItemBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
+        super(bindingComponent, root, 0
+            , (androidx.constraintlayout.widget.Barrier) bindings[5]
+            , (com.google.android.material.card.MaterialCardView) bindings[0]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[10]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[9]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[12]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[11]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[4]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[3]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[8]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[7]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[2]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[14]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[13]
+            , (android.view.View) bindings[6]
+            );
+        this.cvPackage.setTag(null);
+        this.mboundView1 = (androidx.appcompat.widget.AppCompatRadioButton) bindings[1];
+        this.mboundView1.setTag(null);
+        this.txtSplitStatus.setTag(null);
+        setRootTag(root);
+        // listeners
+        invalidateAll();
+    }
+
+    @Override
+    public void invalidateAll() {
+        synchronized(this) {
+                mDirtyFlags = 0x8L;
+        }
+        requestRebind();
+    }
+
+    @Override
+    public boolean hasPendingBindings() {
+        synchronized(this) {
+            if (mDirtyFlags != 0) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    @Override
+    public boolean setVariable(int variableId, @Nullable Object variable)  {
+        boolean variableSet = true;
+        if (BR.isSelected == variableId) {
+            setIsSelected((java.lang.Boolean) variable);
+        }
+        else if (BR.isSelectMode == variableId) {
+            setIsSelectMode((java.lang.Boolean) variable);
+        }
+        else if (BR.isSplit == variableId) {
+            setIsSplit((java.lang.Boolean) variable);
+        }
+        else {
+            variableSet = false;
+        }
+            return variableSet;
+    }
+
+    public void setIsSelected(@Nullable java.lang.Boolean IsSelected) {
+        this.mIsSelected = IsSelected;
+        synchronized(this) {
+            mDirtyFlags |= 0x1L;
+        }
+        notifyPropertyChanged(BR.isSelected);
+        super.requestRebind();
+    }
+    public void setIsSelectMode(@Nullable java.lang.Boolean IsSelectMode) {
+        this.mIsSelectMode = IsSelectMode;
+        synchronized(this) {
+            mDirtyFlags |= 0x2L;
+        }
+        notifyPropertyChanged(BR.isSelectMode);
+        super.requestRebind();
+    }
+    public void setIsSplit(@Nullable java.lang.Boolean IsSplit) {
+        this.mIsSplit = IsSplit;
+        synchronized(this) {
+            mDirtyFlags |= 0x4L;
+        }
+        notifyPropertyChanged(BR.isSplit);
+        super.requestRebind();
+    }
+
+    @Override
+    protected boolean onFieldChange(int localFieldId, Object object, int fieldId) {
+        switch (localFieldId) {
+        }
+        return false;
+    }
+
+    @Override
+    protected void executeBindings() {
+        long dirtyFlags = 0;
+        synchronized(this) {
+            dirtyFlags = mDirtyFlags;
+            mDirtyFlags = 0;
+        }
+        java.lang.Boolean isSelected = mIsSelected;
+        java.lang.Boolean isSelectMode = mIsSelectMode;
+        boolean androidxDatabindingViewDataBindingSafeUnboxIsSelected = false;
+        android.graphics.drawable.Drawable isSelectedCvPackageAndroidDrawableBgPackageMailboxCurveBorder10RadiusCvPackageAndroidDrawableBg10RadiusWhiteBack = null;
+        boolean androidxDatabindingViewDataBindingSafeUnboxIsSelectMode = false;
+        java.lang.Boolean isSplit = mIsSplit;
+        boolean androidxDatabindingViewDataBindingSafeUnboxIsSplit = false;
+
+        if ((dirtyFlags & 0x9L) != 0) {
+
+
+
+                // read androidx.databinding.ViewDataBinding.safeUnbox(isSelected)
+                androidxDatabindingViewDataBindingSafeUnboxIsSelected = androidx.databinding.ViewDataBinding.safeUnbox(isSelected);
+            if((dirtyFlags & 0x9L) != 0) {
+                if(androidxDatabindingViewDataBindingSafeUnboxIsSelected) {
+                        dirtyFlags |= 0x20L;
+                }
+                else {
+                        dirtyFlags |= 0x10L;
+                }
+            }
+
+
+                // read androidx.databinding.ViewDataBinding.safeUnbox(isSelected) ? @android:drawable/bg_package_mailbox_curve_border_10_radius : @android:drawable/bg_10_radius_white_back
+                isSelectedCvPackageAndroidDrawableBgPackageMailboxCurveBorder10RadiusCvPackageAndroidDrawableBg10RadiusWhiteBack = ((androidxDatabindingViewDataBindingSafeUnboxIsSelected) ? (androidx.appcompat.content.res.AppCompatResources.getDrawable(cvPackage.getContext(), R.drawable.bg_package_mailbox_curve_border_10_radius)) : (androidx.appcompat.content.res.AppCompatResources.getDrawable(cvPackage.getContext(), R.drawable.bg_10_radius_white_back)));
+        }
+        if ((dirtyFlags & 0xaL) != 0) {
+
+
+
+                // read androidx.databinding.ViewDataBinding.safeUnbox(isSelectMode)
+                androidxDatabindingViewDataBindingSafeUnboxIsSelectMode = androidx.databinding.ViewDataBinding.safeUnbox(isSelectMode);
+        }
+        if ((dirtyFlags & 0xcL) != 0) {
+
+
+
+                // read androidx.databinding.ViewDataBinding.safeUnbox(isSplit)
+                androidxDatabindingViewDataBindingSafeUnboxIsSplit = androidx.databinding.ViewDataBinding.safeUnbox(isSplit);
+        }
+        // batch finished
+        if ((dirtyFlags & 0x9L) != 0) {
+            // api target 1
+
+            androidx.databinding.adapters.ViewBindingAdapter.setBackground(this.cvPackage, isSelectedCvPackageAndroidDrawableBgPackageMailboxCurveBorder10RadiusCvPackageAndroidDrawableBg10RadiusWhiteBack);
+            androidx.databinding.adapters.CompoundButtonBindingAdapter.setChecked(this.mboundView1, androidxDatabindingViewDataBindingSafeUnboxIsSelected);
+        }
+        if ((dirtyFlags & 0xaL) != 0) {
+            // api target 1
+
+            com.usend.binder.CommanBinderKt.visibility(this.mboundView1, androidxDatabindingViewDataBindingSafeUnboxIsSelectMode);
+        }
+        if ((dirtyFlags & 0xcL) != 0) {
+            // api target 1
+
+            com.usend.binder.CommanBinderKt.visibility(this.txtSplitStatus, androidxDatabindingViewDataBindingSafeUnboxIsSplit);
+        }
+    }
+    // Listener Stub Implementations
+    // callback impls
+    // dirty flag
+    private  long mDirtyFlags = 0xffffffffffffffffL;
+    /* flag mapping
+        flag 0 (0x1L): isSelected
+        flag 1 (0x2L): isSelectMode
+        flag 2 (0x3L): isSplit
+        flag 3 (0x4L): null
+        flag 4 (0x5L): androidx.databinding.ViewDataBinding.safeUnbox(isSelected) ? @android:drawable/bg_package_mailbox_curve_border_10_radius : @android:drawable/bg_10_radius_white_back
+        flag 5 (0x6L): androidx.databinding.ViewDataBinding.safeUnbox(isSelected) ? @android:drawable/bg_package_mailbox_curve_border_10_radius : @android:drawable/bg_10_radius_white_back
+    flag mapping end*/
+    //end
+}

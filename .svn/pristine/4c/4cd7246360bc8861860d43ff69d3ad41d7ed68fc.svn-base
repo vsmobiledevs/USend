@@ -1,0 +1,558 @@
+package com.usend.databinding;
+import com.usend.R;
+import com.usend.BR;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import android.view.View;
+@SuppressWarnings("unchecked")
+public class ActivityCreateNewReqBindingImpl extends ActivityCreateNewReqBinding implements com.usend.generated.callback.OnClickListener.Listener {
+
+    @Nullable
+    private static final androidx.databinding.ViewDataBinding.IncludedLayouts sIncludes;
+    @Nullable
+    private static final android.util.SparseIntArray sViewsWithIds;
+    static {
+        sIncludes = null;
+        sViewsWithIds = new android.util.SparseIntArray();
+        sViewsWithIds.put(R.id.tootlbarCreateNewReq, 8);
+    }
+    // views
+    @NonNull
+    private final android.widget.LinearLayout mboundView0;
+    @NonNull
+    private final androidx.appcompat.widget.AppCompatEditText mboundView2;
+    @NonNull
+    private final androidx.appcompat.widget.AppCompatEditText mboundView3;
+    @NonNull
+    private final androidx.appcompat.widget.AppCompatEditText mboundView4;
+    @NonNull
+    private final androidx.appcompat.widget.AppCompatEditText mboundView5;
+    @NonNull
+    private final androidx.appcompat.widget.AppCompatCheckBox mboundView6;
+    // variables
+    @Nullable
+    private final android.view.View.OnClickListener mCallback23;
+    @Nullable
+    private final android.view.View.OnClickListener mCallback24;
+    // values
+    // listeners
+    // Inverse Binding Event Handlers
+    private androidx.databinding.InverseBindingListener mboundView2androidTextAttrChanged = new androidx.databinding.InverseBindingListener() {
+        @Override
+        public void onChange() {
+            // Inverse of viewModel.productName.getValue()
+            //         is viewModel.productName.setValue((java.lang.String) callbackArg_0)
+            java.lang.String callbackArg_0 = androidx.databinding.adapters.TextViewBindingAdapter.getTextString(mboundView2);
+            // localize variables for thread safety
+            // viewModel.productName != null
+            boolean viewModelProductNameJavaLangObjectNull = false;
+            // viewModel.productName
+            androidx.lifecycle.MediatorLiveData<java.lang.String> viewModelProductName = null;
+            // viewModel.productName.getValue()
+            java.lang.String viewModelProductNameGetValue = null;
+            // viewModel
+            com.usend.viewmodels.CreateReqViewModel viewModel = mViewModel;
+            // viewModel != null
+            boolean viewModelJavaLangObjectNull = false;
+
+
+
+            viewModelJavaLangObjectNull = (viewModel) != (null);
+            if (viewModelJavaLangObjectNull) {
+
+
+                viewModelProductName = viewModel.getProductName();
+
+                viewModelProductNameJavaLangObjectNull = (viewModelProductName) != (null);
+                if (viewModelProductNameJavaLangObjectNull) {
+
+
+
+
+                    viewModelProductName.setValue(((java.lang.String) (callbackArg_0)));
+                }
+            }
+        }
+    };
+    private androidx.databinding.InverseBindingListener mboundView3androidTextAttrChanged = new androidx.databinding.InverseBindingListener() {
+        @Override
+        public void onChange() {
+            // Inverse of viewModel.websiteLink.getValue()
+            //         is viewModel.websiteLink.setValue((java.lang.String) callbackArg_0)
+            java.lang.String callbackArg_0 = androidx.databinding.adapters.TextViewBindingAdapter.getTextString(mboundView3);
+            // localize variables for thread safety
+            // viewModel.websiteLink != null
+            boolean viewModelWebsiteLinkJavaLangObjectNull = false;
+            // viewModel
+            com.usend.viewmodels.CreateReqViewModel viewModel = mViewModel;
+            // viewModel.websiteLink
+            androidx.lifecycle.MediatorLiveData<java.lang.String> viewModelWebsiteLink = null;
+            // viewModel != null
+            boolean viewModelJavaLangObjectNull = false;
+            // viewModel.websiteLink.getValue()
+            java.lang.String viewModelWebsiteLinkGetValue = null;
+
+
+
+            viewModelJavaLangObjectNull = (viewModel) != (null);
+            if (viewModelJavaLangObjectNull) {
+
+
+                viewModelWebsiteLink = viewModel.getWebsiteLink();
+
+                viewModelWebsiteLinkJavaLangObjectNull = (viewModelWebsiteLink) != (null);
+                if (viewModelWebsiteLinkJavaLangObjectNull) {
+
+
+
+
+                    viewModelWebsiteLink.setValue(((java.lang.String) (callbackArg_0)));
+                }
+            }
+        }
+    };
+    private androidx.databinding.InverseBindingListener mboundView4androidTextAttrChanged = new androidx.databinding.InverseBindingListener() {
+        @Override
+        public void onChange() {
+            // Inverse of viewModel.cost.getValue()
+            //         is viewModel.cost.setValue((java.lang.String) callbackArg_0)
+            java.lang.String callbackArg_0 = androidx.databinding.adapters.TextViewBindingAdapter.getTextString(mboundView4);
+            // localize variables for thread safety
+            // viewModel.cost
+            androidx.lifecycle.MediatorLiveData<java.lang.String> viewModelCost = null;
+            // viewModel.cost != null
+            boolean viewModelCostJavaLangObjectNull = false;
+            // viewModel
+            com.usend.viewmodels.CreateReqViewModel viewModel = mViewModel;
+            // viewModel != null
+            boolean viewModelJavaLangObjectNull = false;
+            // viewModel.cost.getValue()
+            java.lang.String viewModelCostGetValue = null;
+
+
+
+            viewModelJavaLangObjectNull = (viewModel) != (null);
+            if (viewModelJavaLangObjectNull) {
+
+
+                viewModelCost = viewModel.getCost();
+
+                viewModelCostJavaLangObjectNull = (viewModelCost) != (null);
+                if (viewModelCostJavaLangObjectNull) {
+
+
+
+
+                    viewModelCost.setValue(((java.lang.String) (callbackArg_0)));
+                }
+            }
+        }
+    };
+    private androidx.databinding.InverseBindingListener mboundView5androidTextAttrChanged = new androidx.databinding.InverseBindingListener() {
+        @Override
+        public void onChange() {
+            // Inverse of viewModel.desc.getValue()
+            //         is viewModel.desc.setValue((java.lang.String) callbackArg_0)
+            java.lang.String callbackArg_0 = androidx.databinding.adapters.TextViewBindingAdapter.getTextString(mboundView5);
+            // localize variables for thread safety
+            // viewModel.desc.getValue()
+            java.lang.String viewModelDescGetValue = null;
+            // viewModel
+            com.usend.viewmodels.CreateReqViewModel viewModel = mViewModel;
+            // viewModel != null
+            boolean viewModelJavaLangObjectNull = false;
+            // viewModel.desc != null
+            boolean viewModelDescJavaLangObjectNull = false;
+            // viewModel.desc
+            androidx.lifecycle.MediatorLiveData<java.lang.String> viewModelDesc = null;
+
+
+
+            viewModelJavaLangObjectNull = (viewModel) != (null);
+            if (viewModelJavaLangObjectNull) {
+
+
+                viewModelDesc = viewModel.getDesc();
+
+                viewModelDescJavaLangObjectNull = (viewModelDesc) != (null);
+                if (viewModelDescJavaLangObjectNull) {
+
+
+
+
+                    viewModelDesc.setValue(((java.lang.String) (callbackArg_0)));
+                }
+            }
+        }
+    };
+    private androidx.databinding.InverseBindingListener mboundView6androidCheckedAttrChanged = new androidx.databinding.InverseBindingListener() {
+        @Override
+        public void onChange() {
+            // Inverse of viewModel.cbTerms.getValue()
+            //         is viewModel.cbTerms.setValue((java.lang.Boolean) callbackArg_0)
+            boolean callbackArg_0 = mboundView6.isChecked();
+            // localize variables for thread safety
+            // viewModel.cbTerms
+            androidx.lifecycle.MediatorLiveData<java.lang.Boolean> viewModelCbTerms = null;
+            // viewModel.cbTerms != null
+            boolean viewModelCbTermsJavaLangObjectNull = false;
+            // viewModel
+            com.usend.viewmodels.CreateReqViewModel viewModel = mViewModel;
+            // viewModel.cbTerms.getValue()
+            java.lang.Boolean viewModelCbTermsGetValue = null;
+            // viewModel != null
+            boolean viewModelJavaLangObjectNull = false;
+
+
+
+            viewModelJavaLangObjectNull = (viewModel) != (null);
+            if (viewModelJavaLangObjectNull) {
+
+
+                viewModelCbTerms = viewModel.getCbTerms();
+
+                viewModelCbTermsJavaLangObjectNull = (viewModelCbTerms) != (null);
+                if (viewModelCbTermsJavaLangObjectNull) {
+
+
+
+
+                    viewModelCbTerms.setValue(((java.lang.Boolean) (callbackArg_0)));
+                }
+            }
+        }
+    };
+
+    public ActivityCreateNewReqBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 9, sIncludes, sViewsWithIds));
+    }
+    private ActivityCreateNewReqBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
+        super(bindingComponent, root, 5
+            , (com.google.android.material.button.MaterialButton) bindings[7]
+            , (androidx.appcompat.widget.AppCompatImageView) bindings[1]
+            , (android.view.View) bindings[8]
+            );
+        this.btnSubmit.setTag(null);
+        this.imgProductImage.setTag(null);
+        this.mboundView0 = (android.widget.LinearLayout) bindings[0];
+        this.mboundView0.setTag(null);
+        this.mboundView2 = (androidx.appcompat.widget.AppCompatEditText) bindings[2];
+        this.mboundView2.setTag(null);
+        this.mboundView3 = (androidx.appcompat.widget.AppCompatEditText) bindings[3];
+        this.mboundView3.setTag(null);
+        this.mboundView4 = (androidx.appcompat.widget.AppCompatEditText) bindings[4];
+        this.mboundView4.setTag(null);
+        this.mboundView5 = (androidx.appcompat.widget.AppCompatEditText) bindings[5];
+        this.mboundView5.setTag(null);
+        this.mboundView6 = (androidx.appcompat.widget.AppCompatCheckBox) bindings[6];
+        this.mboundView6.setTag(null);
+        setRootTag(root);
+        // listeners
+        mCallback23 = new com.usend.generated.callback.OnClickListener(this, 1);
+        mCallback24 = new com.usend.generated.callback.OnClickListener(this, 2);
+        invalidateAll();
+    }
+
+    @Override
+    public void invalidateAll() {
+        synchronized(this) {
+                mDirtyFlags = 0x80L;
+        }
+        requestRebind();
+    }
+
+    @Override
+    public boolean hasPendingBindings() {
+        synchronized(this) {
+            if (mDirtyFlags != 0) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    @Override
+    public boolean setVariable(int variableId, @Nullable Object variable)  {
+        boolean variableSet = true;
+        if (BR.activity == variableId) {
+            setActivity((com.usend.views.home.CreateNewReqActivity) variable);
+        }
+        else if (BR.viewModel == variableId) {
+            setViewModel((com.usend.viewmodels.CreateReqViewModel) variable);
+        }
+        else {
+            variableSet = false;
+        }
+            return variableSet;
+    }
+
+    public void setActivity(@Nullable com.usend.views.home.CreateNewReqActivity Activity) {
+        this.mActivity = Activity;
+        synchronized(this) {
+            mDirtyFlags |= 0x20L;
+        }
+        notifyPropertyChanged(BR.activity);
+        super.requestRebind();
+    }
+    public void setViewModel(@Nullable com.usend.viewmodels.CreateReqViewModel ViewModel) {
+        this.mViewModel = ViewModel;
+        synchronized(this) {
+            mDirtyFlags |= 0x40L;
+        }
+        notifyPropertyChanged(BR.viewModel);
+        super.requestRebind();
+    }
+
+    @Override
+    protected boolean onFieldChange(int localFieldId, Object object, int fieldId) {
+        switch (localFieldId) {
+            case 0 :
+                return onChangeViewModelCbTerms((androidx.lifecycle.MediatorLiveData<java.lang.Boolean>) object, fieldId);
+            case 1 :
+                return onChangeViewModelProductName((androidx.lifecycle.MediatorLiveData<java.lang.String>) object, fieldId);
+            case 2 :
+                return onChangeViewModelWebsiteLink((androidx.lifecycle.MediatorLiveData<java.lang.String>) object, fieldId);
+            case 3 :
+                return onChangeViewModelDesc((androidx.lifecycle.MediatorLiveData<java.lang.String>) object, fieldId);
+            case 4 :
+                return onChangeViewModelCost((androidx.lifecycle.MediatorLiveData<java.lang.String>) object, fieldId);
+        }
+        return false;
+    }
+    private boolean onChangeViewModelCbTerms(androidx.lifecycle.MediatorLiveData<java.lang.Boolean> ViewModelCbTerms, int fieldId) {
+        if (fieldId == BR._all) {
+            synchronized(this) {
+                    mDirtyFlags |= 0x1L;
+            }
+            return true;
+        }
+        return false;
+    }
+    private boolean onChangeViewModelProductName(androidx.lifecycle.MediatorLiveData<java.lang.String> ViewModelProductName, int fieldId) {
+        if (fieldId == BR._all) {
+            synchronized(this) {
+                    mDirtyFlags |= 0x2L;
+            }
+            return true;
+        }
+        return false;
+    }
+    private boolean onChangeViewModelWebsiteLink(androidx.lifecycle.MediatorLiveData<java.lang.String> ViewModelWebsiteLink, int fieldId) {
+        if (fieldId == BR._all) {
+            synchronized(this) {
+                    mDirtyFlags |= 0x4L;
+            }
+            return true;
+        }
+        return false;
+    }
+    private boolean onChangeViewModelDesc(androidx.lifecycle.MediatorLiveData<java.lang.String> ViewModelDesc, int fieldId) {
+        if (fieldId == BR._all) {
+            synchronized(this) {
+                    mDirtyFlags |= 0x8L;
+            }
+            return true;
+        }
+        return false;
+    }
+    private boolean onChangeViewModelCost(androidx.lifecycle.MediatorLiveData<java.lang.String> ViewModelCost, int fieldId) {
+        if (fieldId == BR._all) {
+            synchronized(this) {
+                    mDirtyFlags |= 0x10L;
+            }
+            return true;
+        }
+        return false;
+    }
+
+    @Override
+    protected void executeBindings() {
+        long dirtyFlags = 0;
+        synchronized(this) {
+            dirtyFlags = mDirtyFlags;
+            mDirtyFlags = 0;
+        }
+        androidx.lifecycle.MediatorLiveData<java.lang.Boolean> viewModelCbTerms = null;
+        java.lang.String viewModelCostGetValue = null;
+        java.lang.String viewModelDescGetValue = null;
+        androidx.lifecycle.MediatorLiveData<java.lang.String> viewModelProductName = null;
+        java.lang.String viewModelWebsiteLinkGetValue = null;
+        androidx.lifecycle.MediatorLiveData<java.lang.String> viewModelWebsiteLink = null;
+        androidx.lifecycle.MediatorLiveData<java.lang.String> viewModelDesc = null;
+        java.lang.String viewModelProductNameGetValue = null;
+        androidx.lifecycle.MediatorLiveData<java.lang.String> viewModelCost = null;
+        boolean androidxDatabindingViewDataBindingSafeUnboxViewModelCbTermsGetValue = false;
+        com.usend.views.home.CreateNewReqActivity activity = mActivity;
+        com.usend.viewmodels.CreateReqViewModel viewModel = mViewModel;
+        java.lang.Boolean viewModelCbTermsGetValue = null;
+
+        if ((dirtyFlags & 0xdfL) != 0) {
+
+
+            if ((dirtyFlags & 0xc1L) != 0) {
+
+                    if (viewModel != null) {
+                        // read viewModel.cbTerms
+                        viewModelCbTerms = viewModel.getCbTerms();
+                    }
+                    updateLiveDataRegistration(0, viewModelCbTerms);
+
+
+                    if (viewModelCbTerms != null) {
+                        // read viewModel.cbTerms.getValue()
+                        viewModelCbTermsGetValue = viewModelCbTerms.getValue();
+                    }
+
+
+                    // read androidx.databinding.ViewDataBinding.safeUnbox(viewModel.cbTerms.getValue())
+                    androidxDatabindingViewDataBindingSafeUnboxViewModelCbTermsGetValue = androidx.databinding.ViewDataBinding.safeUnbox(viewModelCbTermsGetValue);
+            }
+            if ((dirtyFlags & 0xc2L) != 0) {
+
+                    if (viewModel != null) {
+                        // read viewModel.productName
+                        viewModelProductName = viewModel.getProductName();
+                    }
+                    updateLiveDataRegistration(1, viewModelProductName);
+
+
+                    if (viewModelProductName != null) {
+                        // read viewModel.productName.getValue()
+                        viewModelProductNameGetValue = viewModelProductName.getValue();
+                    }
+            }
+            if ((dirtyFlags & 0xc4L) != 0) {
+
+                    if (viewModel != null) {
+                        // read viewModel.websiteLink
+                        viewModelWebsiteLink = viewModel.getWebsiteLink();
+                    }
+                    updateLiveDataRegistration(2, viewModelWebsiteLink);
+
+
+                    if (viewModelWebsiteLink != null) {
+                        // read viewModel.websiteLink.getValue()
+                        viewModelWebsiteLinkGetValue = viewModelWebsiteLink.getValue();
+                    }
+            }
+            if ((dirtyFlags & 0xc8L) != 0) {
+
+                    if (viewModel != null) {
+                        // read viewModel.desc
+                        viewModelDesc = viewModel.getDesc();
+                    }
+                    updateLiveDataRegistration(3, viewModelDesc);
+
+
+                    if (viewModelDesc != null) {
+                        // read viewModel.desc.getValue()
+                        viewModelDescGetValue = viewModelDesc.getValue();
+                    }
+            }
+            if ((dirtyFlags & 0xd0L) != 0) {
+
+                    if (viewModel != null) {
+                        // read viewModel.cost
+                        viewModelCost = viewModel.getCost();
+                    }
+                    updateLiveDataRegistration(4, viewModelCost);
+
+
+                    if (viewModelCost != null) {
+                        // read viewModel.cost.getValue()
+                        viewModelCostGetValue = viewModelCost.getValue();
+                    }
+            }
+        }
+        // batch finished
+        if ((dirtyFlags & 0x80L) != 0) {
+            // api target 1
+
+            this.btnSubmit.setOnClickListener(mCallback24);
+            this.imgProductImage.setOnClickListener(mCallback23);
+            androidx.databinding.adapters.TextViewBindingAdapter.setTextWatcher(this.mboundView2, (androidx.databinding.adapters.TextViewBindingAdapter.BeforeTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.OnTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.AfterTextChanged)null, mboundView2androidTextAttrChanged);
+            androidx.databinding.adapters.TextViewBindingAdapter.setTextWatcher(this.mboundView3, (androidx.databinding.adapters.TextViewBindingAdapter.BeforeTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.OnTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.AfterTextChanged)null, mboundView3androidTextAttrChanged);
+            androidx.databinding.adapters.TextViewBindingAdapter.setTextWatcher(this.mboundView4, (androidx.databinding.adapters.TextViewBindingAdapter.BeforeTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.OnTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.AfterTextChanged)null, mboundView4androidTextAttrChanged);
+            androidx.databinding.adapters.TextViewBindingAdapter.setTextWatcher(this.mboundView5, (androidx.databinding.adapters.TextViewBindingAdapter.BeforeTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.OnTextChanged)null, (androidx.databinding.adapters.TextViewBindingAdapter.AfterTextChanged)null, mboundView5androidTextAttrChanged);
+            androidx.databinding.adapters.CompoundButtonBindingAdapter.setListeners(this.mboundView6, (android.widget.CompoundButton.OnCheckedChangeListener)null, mboundView6androidCheckedAttrChanged);
+        }
+        if ((dirtyFlags & 0xc2L) != 0) {
+            // api target 1
+
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.mboundView2, viewModelProductNameGetValue);
+        }
+        if ((dirtyFlags & 0xc4L) != 0) {
+            // api target 1
+
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.mboundView3, viewModelWebsiteLinkGetValue);
+        }
+        if ((dirtyFlags & 0xd0L) != 0) {
+            // api target 1
+
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.mboundView4, viewModelCostGetValue);
+        }
+        if ((dirtyFlags & 0xc8L) != 0) {
+            // api target 1
+
+            androidx.databinding.adapters.TextViewBindingAdapter.setText(this.mboundView5, viewModelDescGetValue);
+        }
+        if ((dirtyFlags & 0xc1L) != 0) {
+            // api target 1
+
+            androidx.databinding.adapters.CompoundButtonBindingAdapter.setChecked(this.mboundView6, androidxDatabindingViewDataBindingSafeUnboxViewModelCbTermsGetValue);
+        }
+    }
+    // Listener Stub Implementations
+    // callback impls
+    public final void _internalCallbackOnClick(int sourceId , android.view.View callbackArg_0) {
+        switch(sourceId) {
+            case 1: {
+                // localize variables for thread safety
+                // activity != null
+                boolean activityJavaLangObjectNull = false;
+                // activity
+                com.usend.views.home.CreateNewReqActivity activity = mActivity;
+
+
+
+                activityJavaLangObjectNull = (activity) != (null);
+                if (activityJavaLangObjectNull) {
+
+
+                    activity.uploadProductImage();
+                }
+                break;
+            }
+            case 2: {
+                // localize variables for thread safety
+                // activity != null
+                boolean activityJavaLangObjectNull = false;
+                // activity
+                com.usend.views.home.CreateNewReqActivity activity = mActivity;
+
+
+
+                activityJavaLangObjectNull = (activity) != (null);
+                if (activityJavaLangObjectNull) {
+
+
+                    activity.onSubmitClick();
+                }
+                break;
+            }
+        }
+    }
+    // dirty flag
+    private  long mDirtyFlags = 0xffffffffffffffffL;
+    /* flag mapping
+        flag 0 (0x1L): viewModel.cbTerms
+        flag 1 (0x2L): viewModel.productName
+        flag 2 (0x3L): viewModel.websiteLink
+        flag 3 (0x4L): viewModel.desc
+        flag 4 (0x5L): viewModel.cost
+        flag 5 (0x6L): activity
+        flag 6 (0x7L): viewModel
+        flag 7 (0x8L): null
+    flag mapping end*/
+    //end
+}

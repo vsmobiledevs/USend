@@ -1,0 +1,109 @@
+package com.base.network.api
+
+import retrofit2.Call
+import retrofit2.http.*
+
+
+import com.base.network.model.AutoShipmentResponse
+import com.base.network.model.GetAutoshipmentServiceList
+import com.base.network.model.SignUpReponse
+import com.base.network.model.SuccessModel
+
+
+//Amit Changed : 23 Oct 2018
+//Do not change, If any issue ask Amit
+
+interface AutoShipmentApi {
+        /**
+        * Auto Shipment Services
+        * 
+            * @param authorization User Auth Token (optional)
+        * @return Call&lt;GetAutoshipmentServiceList&gt;
+        */
+                    @Headers(
+                    "Content-Type:application/x-www-form-urlencoded"
+                    )
+    @GET("auto_shipment_services/get_auto_shipment_services")
+    fun autoShipServices(
+        @retrofit2.http.Header("Authorization") authorization:String?=null
+        ):Call<GetAutoshipmentServiceList>
+
+        /**
+        * Auto Shipment Details
+        * Auto Shipment Details
+            * @param authorization User Auth Token (optional)
+        * @return Call&lt;AutoShipmentResponse&gt;
+        */
+                    @Headers(
+                    "Content-Type:application/x-www-form-urlencoded"
+                    )
+    @GET("auto_shipment_details/auto_ship_details")
+    fun autoShipmentDetails(
+        @retrofit2.http.Header("Authorization") authorization:String?=null
+        ):Call<AutoShipmentResponse>
+
+        /**
+        * Check 3D card
+        * Check 3D card
+            * @param cardId Stripe Card Id (required)
+            * @param authorization User Auth Token (optional)
+        * @return Call&lt;SuccessModel&gt;
+        */
+    @retrofit2.http.FormUrlEncoded
+    @POST("auto_shipment_details/check_three_d_card")
+    fun check3dCard(
+        @retrofit2.http.Field("card_id") cardId:String,
+        @retrofit2.http.Header("Authorization") authorization:String?=null
+        ):Call<SuccessModel>
+
+        /**
+        * New Auto Shipment Details
+        * New Auto Shipment Details
+            * @param addressId Address id (required)
+            * @param autoShipmentServiceId Service ID (required)
+            * @param paymentDetailId Payment Detail Id - For card information (required)
+            * @param authorization User Auth Token (optional)
+        * @return Call&lt;AutoShipmentResponse&gt;
+        */
+    @retrofit2.http.FormUrlEncoded
+    @POST("auto_shipment_details")
+    fun newAutoShipment(
+            @Field("address_id") addressId:Int,
+            @Field("auto_shipment_service_id") autoShipmentServiceId:Int,
+            @Field("payment_detail_id") paymentDetailId: String,
+            @Header("Authorization") authorization:String?=null
+        ):Call<AutoShipmentResponse>
+
+        /**
+        * Update auto ship toggle
+        * Update auto ship toggle
+            * @param isAutoShip Is auto ship flag (required)
+            * @param authorization User Auth Token (optional)
+        * @return Call&lt;SignUpReponse&gt;
+        */
+    @retrofit2.http.FormUrlEncoded
+    @PUT("auto_shipment_details/is_auto_ship_toggle")
+    fun updateAutoShipToggle(
+        @retrofit2.http.Field("is_auto_ship") isAutoShip:Boolean,
+        @retrofit2.http.Header("Authorization") authorization:String?=null
+        ):Call<SignUpReponse>
+
+        /**
+        * Update auto shipment details
+        * Update auto shipment details
+            * @param authorization User Auth Token (optional)
+            * @param addressId Address id (optional)
+            * @param autoShipmentServiceId Service ID (optional)
+            * @param paymentDetailId Payment Detail Id - For card information (optional)
+        * @return Call&lt;AutoShipmentResponse&gt;
+        */
+    @retrofit2.http.FormUrlEncoded
+    @PUT("auto_shipment_details/update_auto_shipment")
+    fun updateAutoShipment(
+        @retrofit2.http.Header("Authorization") authorization:String?=null,
+        @retrofit2.http.Field("address_id") addressId:Int?,
+        @retrofit2.http.Field("auto_shipment_service_id") autoShipmentServiceId:Int?,
+        @retrofit2.http.Field("payment_detail_id") paymentDetailId:String?
+        ):Call<AutoShipmentResponse>
+
+}

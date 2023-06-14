@@ -1,0 +1,41 @@
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MaterialCardStyle"
+    android:layout_height="@dimen/dimen_40dp"
+    android:layout_marginTop="@dimen/dimen_5dp"
+    android:backgroundTint="@color/colorGreen"
+    tools:ignore="TouchTargetSizeCheck">
+
+    <LinearLayout
+        android:id="@+id/custom_toast_layout"
+        style="@style/matchWrap"
+        android:layout_gravity="center_vertical"
+        android:layout_marginStart="@dimen/dimen_5dp"
+        android:layout_marginTop="@dimen/dimen_5dp"
+        android:layout_marginEnd="@dimen/dimen_5dp"
+        android:layout_marginBottom="@dimen/dimen_5dp"
+        android:gravity="center_vertical"
+
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="@dimen/dimen_30dp"
+            android:layout_height="@dimen/dimen_20dp"
+            android:src="@drawable/ic_baseline_done_24"
+            android:background="@drawable/circle_shape"
+            tools:ignore="ImageContrastCheck" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtmsg"
+            style="@style/CommonText.Style.16sp"
+            android:layout_marginStart="@dimen/dimen_15dp"
+            android:padding="@dimen/dimen_0_5dp"
+            android:fontFamily="@font/poppins_medium"
+            android:text="@string/lbl_add_new_address"
+            android:textColor="@color/colorWhite" />
+
+
+    </LinearLayout>
+
+
+</com.google.android.material.card.MaterialCardView>

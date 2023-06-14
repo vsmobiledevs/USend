@@ -1,0 +1,42 @@
+package com.usend.comman
+
+// A generic class that contains data and status about loading this data.
+sealed class Resource<T>(
+    val data: T? = null,
+    val message: String? = null,
+    val isLoadingShow: Boolean? = null,
+    val id: Int? = null,
+    val model: Any? = null
+) {
+    class Success<T>(data: T) : Resource<T>(data = data)
+    class SuccessWithData<T>(data: T, model: Any? = null) : Resource<T>(data = data, model = model)
+    class NotiListSuccess<T>(data: T) : Resource<T>(data = data)
+    class ReadNotificationSuccess<T>(data: T) : Resource<T>(data = data)
+    class DeleteNotificationSuccess<T>(data: T) : Resource<T>(data = data)
+    class GetReasonsSuccess<T>(data: T) : Resource<T>(data = data)
+    class ChangeUnitSuccess<T>(data: T) : Resource<T>(data = data)
+    class LogoutSuccess<T>(data: T) : Resource<T>(data = data)
+    class SplitSuccess<T>(data: T) : Resource<T>(data = data)
+    class DeleteAddressSuccess<T>(data: T) : Resource<T>(data = data)
+    class EditAddressSuccess<T>(data: T) : Resource<T>(data = data)
+    class AdditionalServicesSucess<T>(data: T) : Resource<T>(data = data)
+    class ConciergePayment<T>(data: T) : Resource<T>(data = data)
+    class UpdateConciergeReqSuccess<T>(data: T) : Resource<T>(data = data)
+    class CreateOrderSucess<T>(data: T) : Resource<T>(data = data)
+    class GetCountryListSucess<T>(data: T) : Resource<T>(data = data)
+    class GetStateListSucess<T>(data: T) : Resource<T>(data = data)
+    class VerifyOTPSuccess<T>(data: T) : Resource<T>(data = data)
+    class UpdateMobileSuccess<T>(data: T) : Resource<T>(data = data)
+    class UpdateOrderSuccess<T>(data: T) : Resource<T>(data = data)
+    class AddStripeCard<T>(data: T) : Resource<T>(data = data)
+    class AddSquareupCard<T>(data: T) : Resource<T>(data = data)
+    class UpdateStripeCard<T>(data: T) : Resource<T>(data = data)
+    class DeleteStripeCard<T>(data: T) : Resource<T>(data = data)
+    class Loading<T>(isLoadingShow: Boolean) : Resource<T>(isLoadingShow = isLoadingShow)
+    class Error<T>(message: String) : Resource<T>(message = message)
+    class NoInternetError<T>(strId: Int) : Resource<T>(id = strId)
+    class ValidationError<T>(strId: Int) : Resource<T>(id = strId)
+    class UnAuthorisedRequest<T>(message: String) : Resource<T>(message = message)
+    class ItemsNotFound<T>(message: String) : Resource<T>(message = message)
+
+}

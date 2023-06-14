@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="adapter"
+            type="com.usend.adapter.NotificationItemAdapter" />
+
+        <variable
+            name="isEmpty"
+            type="Boolean" />
+
+    </data>
+
+    <LinearLayout
+        style="@style/match"
+        android:background="@color/colorWhite"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/toolbarNoti"
+            layout="@layout/app_toolbar" />
+
+        <ScrollView
+            style="@style/styleScrollbar"
+            android:visibility="@{!isEmpty}"
+            android:background="@color/colorWhite">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvNoti"
+                app:adapter="@{adapter}"
+                style="@style/styleRecyclerView"/>
+
+        </ScrollView>
+
+        <LinearLayout
+            style="@style/match"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:visibility="@{isEmpty}">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/dimen_100dp"
+                android:layout_height="@dimen/dimen_100dp"
+                android:src="@drawable/ic_no_hostory_image"/>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/CommonText.Style.SemiBold.16sp"
+                android:fontFamily="@font/poppins_regular"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:text="@string/lbl_no_notification_found"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</layout>

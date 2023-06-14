@@ -1,0 +1,167 @@
+package com.usend.utils.loadmore
+
+import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.RecyclerView
+
+class LoadMore(recyclerView: RecyclerView, val list: ArrayList<Any?>) {
+
+    private var PAGE_INDEX_START_WITH = 0
+    private val VISIBLE_THRESH_HOLD = 1
+    private var loading = false
+    private var isCompleteLoading = false
+    private var lastVisibleItem = 0
+    private var totalItemCount = 0
+    private var index = PAGE_INDEX_START_WITH
+    private var totalPages = 1
+    private var recyclerView: RecyclerView = recyclerView
+    private var mLoadMoreListener: OnLoadMoreListener? = null
+
+
+    init {
+        initLodeMoreAdapter()
+    }
+
+    interface OnLoadMoreListener {
+        fun onLoad(index: Int)
+
+        fun onLoadFinish()
+
+    }
+
+//    fun LoadMore(recyclerView: RecyclerView) {
+//        this.recyclerView = recyclerView
+//        initLodeMoreAdapter()
+//    }
+
+
+    fun setOnLoadMoreListener(onLoadMoreListener: OnLoadMoreListener) {
+        this.mLoadMoreListener = onLoadMoreListener
+    }
+
+    private fun initLodeMoreAdapter() {
+
+        if (recyclerView.layoutManager is LinearLayoutManager) {
+            val linearLayoutManager = recyclerView.layoutManager as LinearLayoutManager
+            recyclerView.addOnScrollListener(object : RecyclerView.OnScrollListener() {
+                override fun onScrolled(recyclerView: RecyclerView, dx: Int, dy: Int) {
+                    super.onScrolled(recyclerView, dx, dy)
+                    totalItemCount = linearLayoutManager.itemCount
+                    lastVisibleItem = linearLayoutManager.findLastVisibleItemPosition()
+                    if (index <= totalPages && !isCompleteLoading && !loading && totalItemCount <= lastVisibleItem + VISIBLE_THRESH_HOLD) {
+                        startLoading()
+                    }
+//                    else{
+//                        lastVisibleItem= lastVisibleItem - 1
+//                    }
+                }
+            })
+
+        }
+    }
+
+
+    fun startLoading() {
+        loading = true
+        showLoading()
+        if (mLoadMoreListener != null)
+            mLoadMoreListener!!.onLoad(index)
+
+    }
+
+    /**
+     * Get Current page index
+     *
+     * @return
+     */
+    fun getIndex(): Int {
+        return index
+    }
+
+    /**
+     * Get Current page index
+     *
+     * @return
+     */
+    fun updateIndex(index: Int) {
+        this.index = index
+    }
+
+
+    fun setTotalPage(totalPage: Int) {
+        totalPages = totalPage
+        removeLoading()
+
+    }
+
+    /**
+     * Reset all data
+     */
+    fun resetLoading() {
+        index = PAGE_INDEX_START_WITH
+        totalPages = 1
+        loading = false
+        isCompleteLoading = false
+    }
+
+
+    /**
+     * When any page complete
+     */
+    fun complete() {
+
+        val currentPage = if (PAGE_INDEX_START_WITH == 0) index + 1 else index
+        isCompleteLoading = currentPage >= totalPages
+
+        index++
+        loading = false
+        if (mLoadMoreListener != null)
+            mLoadMoreListener!!.onLoadFinish()
+    }
+
+    /**
+     * When any error occur during pag loading
+     */
+    fun error() {
+        removeLoading()
+        loading = false
+        if (mLoadMoreListener != null)
+            mLoadMoreListener!!.onLoadFinish()
+    }
+
+    /**
+     * No more loading for remain pages
+     */
+    fun finish() {
+        index = PAGE_INDEX_START_WITH
+        loading = false
+        isCompleteLoading = true
+        if (mLoadMoreListener != null)
+            mLoadMoreListener!!.onLoadFinish()
+    }
+
+
+    /**
+     * Check is all pages loading are Finished or not
+     */
+    fun isFinish(): Boolean {
+        return isCompleteLoading
+    }
+
+    fun isLoading() = loading
+
+    private fun showLoading() {
+        if (list.size > 1) {
+            list.add(null)
+            recyclerView.adapter?.notifyItemInserted(list.size - 1)
+        }
+    }
+
+    private fun removeLoading() {
+        if (list.size > 1) {
+            list.removeAt(list.size - 1)
+            recyclerView.adapter?.notifyItemRemoved(list.size)
+        }
+    }
+
+
+}

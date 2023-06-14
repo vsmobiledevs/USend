@@ -1,0 +1,107 @@
+package com.base.network.api
+
+import com.base.network.model.*
+import okhttp3.Response
+import retrofit2.Call
+import retrofit2.http.*
+
+
+//Amit Changed : 23 Oct 2018
+//Do not change, If any issue ask Amit
+
+interface StripeCardApi {
+        /**
+        * Add Card
+        * Add Card
+            * @param stripeSourceToken Stripe Source Token (required)
+            * @param authorization User Auth Token (optional)
+        * @return Call&lt;AddStripeCardResponse&gt;
+        */
+    @retrofit2.http.FormUrlEncoded
+    @POST("payment_details/add_card")
+    fun addStripeCard(
+        @retrofit2.http.Field("stripe_source_token") stripeSourceToken:String,
+        @retrofit2.http.Header("Authorization") authorization:String?=null,
+        ):Call<AddStripeCardResponse>
+
+    /**
+     * Add Card  USend api
+     * Add Card
+     * @param stripeSourceToken Square up Source Token (required)
+     * @param authorization User Auth Token (required)
+     *  @param content-Type  (required)
+     * @return Call&lt;AddSqaureup cardResponse&gt;
+     */
+
+    @POST("auto_shipment_details/create_auto_shipment")
+    @Headers(
+        "Content-Type: application/json"
+    )
+    fun addUsendCard(
+        @Header("Authorization") authorization:String?=null,
+        @Body addCardUsendList: AddCardUsend
+    ):Call<UsendAddResponse>
+
+
+    /**
+     * Stripe Card Delete
+     * Stripe Card Delete
+     * @param cardId Stripe Card Id (required)
+     * @param authorization User Auth Token (optional)
+     * @return Call&lt;StripeCardDeleteResponse&gt;
+     */
+    @retrofit2.http.FormUrlEncoded
+    @POST("payment_details/delete_stripe_card")
+    fun stripeCardDelete(
+        @retrofit2.http.Field("card_id") cardId:String,
+        @retrofit2.http.Header("Authorization") authorization:String?=null
+    ):Call<StripeCardDeleteResponse>
+
+        /**
+        * Stripe Card Details
+        * Stripe Card Details
+            * @param cardId Stripe Card Id (required)
+            * @param authorization User Auth Token (optional)
+        * @return Call&lt;StripeCardDetailsResponse&gt;
+        */
+    @retrofit2.http.FormUrlEncoded
+    @POST("payment_details/get_stripe_card")
+    fun stripeCardDetails(
+        @retrofit2.http.Field("card_id") cardId:String,
+        @retrofit2.http.Header("Authorization") authorization:String?=null
+        ):Call<StripeCardDetailsResponse>
+
+        /**
+        * Stripe Card List
+        * Stripe Card List
+            * @param authorization User Auth Token (optional)
+        * @return Call&lt;StripeCardListResponse&gt;
+        */
+                    @Headers(
+                    "Content-Type:application/x-www-form-urlencoded"
+                    )
+    @GET("payment_details/card_list")
+    fun stripeCardList(
+        @retrofit2.http.Header("Authorization") authorization:String?=null):Call<StripeCardListResponse>
+
+        /**
+        * Stripe Card Update
+        * Stripe Card Update
+            * @param cardId Stripe Card Id (required)
+            * @param name Card holder name (required)
+            * @param expMonth Stripe Card Expiry Month (required)
+            * @param expYear Stripe Card Expiry Year (required)
+            * @param authorization User Auth Token (optional)
+        * @return Call&lt;StripeCardUpdateResponse&gt;
+        */
+    @retrofit2.http.FormUrlEncoded
+    @POST("payment_details/update_stripe_card")
+    fun stripeCardUpdate(
+        @retrofit2.http.Field("card_id") cardId:String,
+        @retrofit2.http.Field("name") name:String,
+        @retrofit2.http.Field("exp_month") expMonth:String,
+        @retrofit2.http.Field("exp_year") expYear:String,
+        @retrofit2.http.Header("Authorization") authorization:String?=null
+        ):Call<StripeCardUpdateResponse>
+
+}

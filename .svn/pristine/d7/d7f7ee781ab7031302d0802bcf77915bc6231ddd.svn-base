@@ -1,0 +1,141 @@
+package com.usend.viewmodels
+
+import android.app.Application
+import android.content.Context
+import androidx.lifecycle.MediatorLiveData
+import androidx.lifecycle.MutableLiveData
+import com.amplifyframework.core.Amplify
+import com.usend.R
+import com.usend.base.BaseViewModel
+import com.usend.comman.Resource
+import com.usend.extensions.checkInternetConnected
+import com.usend.extensions.showToast
+import com.usend.fcm.UploadImageModel
+import com.usend.repository.UserRepository
+import com.usend.utils.JLog
+import com.usend.utils.PUBLIC
+import com.usend.utils.USPS_VERIFICATION
+
+class USPSVerificationViewModel(
+    application: Application,
+    private var repository: UserRepository
+) :
+    BaseViewModel(application) {
+
+    val mContext: Context = application.applicationContext
+
+    val status: MediatorLiveData<Any> by lazy {
+        MediatorLiveData<Any>()
+    }
+
+    val passportImage by lazy { MediatorLiveData<String>() }
+    val drivingLicenseImage by lazy { MediatorLiveData<String>() }
+    val form1583 by lazy { MediatorLiveData<String>() }
+    val listUpload by lazy { MutableLiveData<ArrayList<UploadImageModel>>() }
+
+    fun submit() {
+
+        when {
+            !mContext.checkInternetConnected() -> status.value =
+                Resource.NoInternetError<Int>(R.string.default_internet_message)
+            passportImage.value.isNullOrEmpty() -> status.value =
+                Resource.ValidationError<Int>(R.string.msg_upload_passport_image)
+            drivingLicenseImage.value.isNullOrEmpty() -> status.value =
+                Resource.ValidationError<Int>(R.string.msg_upload_driving_license_image)
+            form1583.value.isNullOrEmpty() -> status.value =
+                Resource.ValidationError<Int>(R.string.msg_upload_1583_form_image)
+            else -> {
+
+                uploadToAmazone()
+            }
+        }
+    }
+
+    private var index = 0
+    private fun uploadToAmazone() {
+
+        status.value = Resource.Loading<Boolean>(true)
+        index = 0
+        if (listUpload.value!!.size > 2) {
+            uploadfile(listUpload.value!![index])
+        }
+    }
+
+    private fun uploadfile(item: UploadImageModel) {
+        if (item.mFile != null) {
+            if (!item.isUploaded) {
+
+                if (item.preUploadedImageName.isNotEmpty()) {
+                    Amplify.Storage.remove("$USPS_VERIFICATION${getAuthKey() + "/"}${item.preUploadedImageName}",
+                        { success ->
+                            JLog.e("AWS Delete success", item.mTitle)
+                        },
+                        { error ->
+
+                        })
+                }
+
+                Amplify.Storage.uploadFile("$USPS_VERIFICATION${item.mUploadName}",
+                    item.mFile!!,
+                    { _ ->
+
+                        JLog.e("AWS Upload success", item.mTitle)
+
+                        item.preUploadedImageName = item.mUploadName
+                        item.isUploaded = true
+                        listUpload.value!![index] = item
+                        index++
+                        if (index != listUpload.value!!.size) {
+
+                            uploadfile(listUpload.value!![index])
+                        } else {
+                            status.value = Resource.Loading<Boolean>(false)
+
+                            status.addSource(
+                                repository.uspsVerification(
+                                    authKey = getAuthKey(),
+                                    driving_image = PUBLIC + USPS_VERIFICATION + drivingLicenseImage.value!!,
+                                    passport_image = PUBLIC + USPS_VERIFICATION + passportImage.value!!,
+                                    file_name = PUBLIC + USPS_VERIFICATION + form1583.value!!
+                                )
+                            ) {
+                                if (it is Resource.Success<*>) {
+                                    //can save for further use
+
+                                }
+                                status.value = it
+                            }
+                        }
+                    },
+                    { error ->
+                        status.value = Resource.Loading<Boolean>(false)
+                        JLog.e("AWS Upload Error", "$error")
+                        showToast(mContext, "Uploading of ${item.mTitle} failed, please try again.")
+                    })
+            } else {
+                index++
+                if (index != listUpload.value!!.size) {
+
+                    uploadfile(listUpload.value!![index])
+                } else {
+                    status.value = Resource.Loading<Boolean>(false)
+
+                    status.addSource(
+                        repository.uspsVerification(
+                            authKey = getAuthKey(),
+                            driving_image = PUBLIC + USPS_VERIFICATION + drivingLicenseImage.value!!,
+                            passport_image = PUBLIC + USPS_VERIFICATION + passportImage.value!!,
+                            file_name = PUBLIC + USPS_VERIFICATION + form1583.value!!
+                        )
+                    ) {
+                        if (it is Resource.LogoutSuccess<*>) {
+                            //can save for further use
+
+                        }
+                        status.value = it
+                    }
+                }
+            }
+        }
+    }
+}

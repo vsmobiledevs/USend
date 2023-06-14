@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                       
+                                                   
+
+    
+
+           
+
+    <LinearLayout
+        style="@style/match"
+        android:orientation="vertical"
+        tools:context=".views.MainActivity" android:tag="layout/activity_main_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools">
+
+        <include android:id="@+id/toolbarMain"
+            layout="@layout/app_toolbar"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            style="@style/match"
+            android:background="@color/colorWhite"
+            android:layout_marginBottom="-20dp"
+            tools:context=".views.MainActivity">
+
+            <FrameLayout
+                android:id="@+id/main_frame"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_0dp"
+                app:layout_constraintBottom_toTopOf="@+id/materialCard"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_60dp"
+                android:layout_marginBottom="@dimen/dimen_60dp"
+                android:background="@drawable/shadow"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/materialCard"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_100dp"
+                android:elevation="@dimen/dimen_10dp"
+                app:cardCornerRadius="@dimen/dimen_20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <com.google.android.material.tabs.TabLayout
+                    android:id="@+id/bottomTab"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_80dp"
+                    android:layout_marginStart="@dimen/dimen_10dp"
+                    android:layout_marginEnd="@dimen/dimen_10dp"
+                    android:background="@android:color/white"
+                    app:tabIndicatorHeight="@dimen/dimen_0dp"
+                    app:tabMode="fixed"
+                    android:layout_gravity="center_horizontal"
+                    app:tabPaddingBottom="@dimen/dimen_0dp"
+                    app:tabPaddingStart="@dimen/dimen_0dp"
+                    app:tabPaddingEnd="@dimen/dimen_0dp"
+                    app:tabPaddingTop="@dimen/dimen_0dp"
+                    app:tabRippleColor="@color/colorPrimary"
+                    app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+         

@@ -1,0 +1,22 @@
+package com.usend.database;
+
+import java.lang.System;
+
+/**
+ * Created by Viren Purohit Space-O Technologies on 30/4/18.
+ */
+@androidx.room.Dao()
+@kotlin.Metadata(mv = {1, 4, 0}, bv = {1, 0, 3}, k = 1, d1 = {"\u0000 \n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\u0010 \n\u0000\b\'\u0018\u00002\b\u0012\u0004\u0012\u00020\u00020\u0001B\u0005\u00a2\u0006\u0002\u0010\u0003J\b\u0010\u0004\u001a\u00020\u0005H\'J\u0014\u0010\u0006\u001a\u000e\u0012\n\u0012\b\u0012\u0004\u0012\u00020\u00020\b0\u0007H\'\u00a8\u0006\t"}, d2 = {"Lcom/usend/database/AppDao;", "Lcom/usend/database/GenericDao;", "Lcom/usend/database/UserBean;", "()V", "deleteAllBeans", "", "getAllBeans", "Landroidx/lifecycle/LiveData;", "", "app_debug"})
+public abstract class AppDao extends com.usend.database.GenericDao<com.usend.database.UserBean> {
+    
+    @androidx.room.Query(value = "DELETE FROM user_beans")
+    public abstract void deleteAllBeans();
+    
+    @org.jetbrains.annotations.NotNull()
+    @androidx.room.Query(value = "SELECT * FROM user_beans")
+    public abstract androidx.lifecycle.LiveData<java.util.List<com.usend.database.UserBean>> getAllBeans();
+    
+    public AppDao() {
+        super(null);
+    }
+}

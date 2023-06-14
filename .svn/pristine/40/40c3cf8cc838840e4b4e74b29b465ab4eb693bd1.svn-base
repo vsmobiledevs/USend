@@ -1,0 +1,30 @@
+package com.usend.viewmodels;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 4, 0}, bv = {1, 0, 3}, k = 1, d1 = {"\u00008\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0005\n\u0002\u0010\u0002\n\u0000\n\u0002\u0010\u000e\n\u0000\u0018\u00002\u00020\u0001B\u0015\u0012\u0006\u0010\u0002\u001a\u00020\u0003\u0012\u0006\u0010\u0004\u001a\u00020\u0005\u00a2\u0006\u0002\u0010\u0006J\u000e\u0010\u0013\u001a\u00020\u00142\u0006\u0010\u0015\u001a\u00020\u0016R\u0019\u0010\u0007\u001a\n \t*\u0004\u0018\u00010\b0\b\u00a2\u0006\b\n\u0000\u001a\u0004\b\n\u0010\u000bR\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u0004\u00a2\u0006\u0002\n\u0000R!\u0010\f\u001a\b\u0012\u0004\u0012\u00020\u000e0\r8FX\u0086\u0084\u0002\u00a2\u0006\f\n\u0004\b\u0011\u0010\u0012\u001a\u0004\b\u000f\u0010\u0010\u00a8\u0006\u0017"}, d2 = {"Lcom/usend/viewmodels/ContentPageViewModel;", "Lcom/usend/base/BaseViewModel;", "application", "Landroid/app/Application;", "repository", "Lcom/usend/repository/UserRepository;", "(Landroid/app/Application;Lcom/usend/repository/UserRepository;)V", "mContext", "Landroid/content/Context;", "kotlin.jvm.PlatformType", "getMContext", "()Landroid/content/Context;", "status", "Landroidx/lifecycle/MediatorLiveData;", "", "getStatus", "()Landroidx/lifecycle/MediatorLiveData;", "status$delegate", "Lkotlin/Lazy;", "getContentPage", "", "slug", "", "app_debug"})
+public final class ContentPageViewModel extends com.usend.base.BaseViewModel {
+    private final android.content.Context mContext = null;
+    private final com.usend.repository.UserRepository repository = null;
+    @org.jetbrains.annotations.NotNull()
+    private final kotlin.Lazy status$delegate = null;
+    
+    public final android.content.Context getMContext() {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final androidx.lifecycle.MediatorLiveData<java.lang.Object> getStatus() {
+        return null;
+    }
+    
+    public final void getContentPage(@org.jetbrains.annotations.NotNull()
+    java.lang.String slug) {
+    }
+    
+    public ContentPageViewModel(@org.jetbrains.annotations.NotNull()
+    android.app.Application application, @org.jetbrains.annotations.NotNull()
+    com.usend.repository.UserRepository repository) {
+        super(null);
+    }
+}

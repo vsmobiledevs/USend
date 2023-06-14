@@ -1,0 +1,237 @@
+package com.usend.databinding;
+import com.usend.R;
+import com.usend.BR;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import android.view.View;
+@SuppressWarnings("unchecked")
+public class ActivityShippingDetailsBindingImpl extends ActivityShippingDetailsBinding implements com.usend.generated.callback.OnClickListener.Listener {
+
+    @Nullable
+    private static final androidx.databinding.ViewDataBinding.IncludedLayouts sIncludes;
+    @Nullable
+    private static final android.util.SparseIntArray sViewsWithIds;
+    static {
+        sIncludes = null;
+        sViewsWithIds = new android.util.SparseIntArray();
+        sViewsWithIds.put(R.id.toolbarShippingDetails, 4);
+        sViewsWithIds.put(R.id.txtShippingAddress, 5);
+        sViewsWithIds.put(R.id.txtAddress, 6);
+        sViewsWithIds.put(R.id.txtShippingMethod, 7);
+        sViewsWithIds.put(R.id.imgShipping, 8);
+        sViewsWithIds.put(R.id.txtShippingMethodName, 9);
+        sViewsWithIds.put(R.id.txtTimeToShipped, 10);
+        sViewsWithIds.put(R.id.txtAvailability, 11);
+        sViewsWithIds.put(R.id.txtShippingCharges, 12);
+        sViewsWithIds.put(R.id.llCustoms, 13);
+        sViewsWithIds.put(R.id.txtDeclaredValuesTitle, 14);
+        sViewsWithIds.put(R.id.edtDeclaredValues, 15);
+        sViewsWithIds.put(R.id.txtContentofPackage, 16);
+        sViewsWithIds.put(R.id.edtContentOfPackage, 17);
+        sViewsWithIds.put(R.id.txtNotesTitle, 18);
+        sViewsWithIds.put(R.id.edtNotes, 19);
+        sViewsWithIds.put(R.id.txtServiceTitle, 20);
+        sViewsWithIds.put(R.id.txtExtraCharges, 21);
+        sViewsWithIds.put(R.id.txtInvoiceDetails, 22);
+        sViewsWithIds.put(R.id.txtCarrierFeesTitle, 23);
+        sViewsWithIds.put(R.id.txtCarrierFees, 24);
+        sViewsWithIds.put(R.id.txtProcessFessTitle, 25);
+        sViewsWithIds.put(R.id.txtProcessFees, 26);
+        sViewsWithIds.put(R.id.txtAdditionalFeesTitle, 27);
+        sViewsWithIds.put(R.id.txtAdditionalFees, 28);
+        sViewsWithIds.put(R.id.txtTotalChargesTitle, 29);
+        sViewsWithIds.put(R.id.txtTotalCharges, 30);
+        sViewsWithIds.put(R.id.btnNext, 31);
+    }
+    // views
+    @NonNull
+    private final android.widget.LinearLayout mboundView0;
+    // variables
+    @Nullable
+    private final android.view.View.OnClickListener mCallback13;
+    @Nullable
+    private final android.view.View.OnClickListener mCallback12;
+    // values
+    // listeners
+    // Inverse Binding Event Handlers
+
+    public ActivityShippingDetailsBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 32, sIncludes, sViewsWithIds));
+    }
+    private ActivityShippingDetailsBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
+        super(bindingComponent, root, 0
+            , (com.google.android.material.button.MaterialButton) bindings[31]
+            , (androidx.appcompat.widget.AppCompatEditText) bindings[17]
+            , (androidx.appcompat.widget.AppCompatEditText) bindings[15]
+            , (androidx.appcompat.widget.AppCompatEditText) bindings[19]
+            , (androidx.appcompat.widget.AppCompatImageView) bindings[8]
+            , (android.widget.LinearLayout) bindings[13]
+            , (androidx.recyclerview.widget.RecyclerView) bindings[3]
+            , (android.view.View) bindings[4]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[28]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[27]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[6]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[11]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[24]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[23]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[1]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[2]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[16]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[14]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[21]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[22]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[18]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[26]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[25]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[20]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[5]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[12]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[7]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[9]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[10]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[30]
+            , (androidx.appcompat.widget.AppCompatTextView) bindings[29]
+            );
+        this.mboundView0 = (android.widget.LinearLayout) bindings[0];
+        this.mboundView0.setTag(null);
+        this.rvExtraServices.setTag(null);
+        this.txtChangeShippingAddress.setTag(null);
+        this.txtChangeShippingMethod.setTag(null);
+        setRootTag(root);
+        // listeners
+        mCallback13 = new com.usend.generated.callback.OnClickListener(this, 2);
+        mCallback12 = new com.usend.generated.callback.OnClickListener(this, 1);
+        invalidateAll();
+    }
+
+    @Override
+    public void invalidateAll() {
+        synchronized(this) {
+                mDirtyFlags = 0x4L;
+        }
+        requestRebind();
+    }
+
+    @Override
+    public boolean hasPendingBindings() {
+        synchronized(this) {
+            if (mDirtyFlags != 0) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    @Override
+    public boolean setVariable(int variableId, @Nullable Object variable)  {
+        boolean variableSet = true;
+        if (BR.adapter == variableId) {
+            setAdapter((com.usend.adapter.ExtraServicesItemAdapter) variable);
+        }
+        else if (BR.activity == variableId) {
+            setActivity((com.usend.views.home.ShippingDetailsActivity) variable);
+        }
+        else {
+            variableSet = false;
+        }
+            return variableSet;
+    }
+
+    public void setAdapter(@Nullable com.usend.adapter.ExtraServicesItemAdapter Adapter) {
+        this.mAdapter = Adapter;
+        synchronized(this) {
+            mDirtyFlags |= 0x1L;
+        }
+        notifyPropertyChanged(BR.adapter);
+        super.requestRebind();
+    }
+    public void setActivity(@Nullable com.usend.views.home.ShippingDetailsActivity Activity) {
+        this.mActivity = Activity;
+        synchronized(this) {
+            mDirtyFlags |= 0x2L;
+        }
+        notifyPropertyChanged(BR.activity);
+        super.requestRebind();
+    }
+
+    @Override
+    protected boolean onFieldChange(int localFieldId, Object object, int fieldId) {
+        switch (localFieldId) {
+        }
+        return false;
+    }
+
+    @Override
+    protected void executeBindings() {
+        long dirtyFlags = 0;
+        synchronized(this) {
+            dirtyFlags = mDirtyFlags;
+            mDirtyFlags = 0;
+        }
+        com.usend.adapter.ExtraServicesItemAdapter adapter = mAdapter;
+        com.usend.views.home.ShippingDetailsActivity activity = mActivity;
+
+        if ((dirtyFlags & 0x5L) != 0) {
+        }
+        // batch finished
+        if ((dirtyFlags & 0x5L) != 0) {
+            // api target 1
+
+            this.rvExtraServices.setAdapter(adapter);
+        }
+        if ((dirtyFlags & 0x4L) != 0) {
+            // api target 1
+
+            this.txtChangeShippingAddress.setOnClickListener(mCallback12);
+            this.txtChangeShippingMethod.setOnClickListener(mCallback13);
+        }
+    }
+    // Listener Stub Implementations
+    // callback impls
+    public final void _internalCallbackOnClick(int sourceId , android.view.View callbackArg_0) {
+        switch(sourceId) {
+            case 2: {
+                // localize variables for thread safety
+                // activity != null
+                boolean activityJavaLangObjectNull = false;
+                // activity
+                com.usend.views.home.ShippingDetailsActivity activity = mActivity;
+
+
+
+                activityJavaLangObjectNull = (activity) != (null);
+                if (activityJavaLangObjectNull) {
+
+
+                    activity.onShippingMethodChangeClick();
+                }
+                break;
+            }
+            case 1: {
+                // localize variables for thread safety
+                // activity != null
+                boolean activityJavaLangObjectNull = false;
+                // activity
+                com.usend.views.home.ShippingDetailsActivity activity = mActivity;
+
+
+
+                activityJavaLangObjectNull = (activity) != (null);
+                if (activityJavaLangObjectNull) {
+
+
+                    activity.onShippingAddressChangeClick();
+                }
+                break;
+            }
+        }
+    }
+    // dirty flag
+    private  long mDirtyFlags = 0xffffffffffffffffL;
+    /* flag mapping
+        flag 0 (0x1L): adapter
+        flag 1 (0x2L): activity
+        flag 2 (0x3L): null
+    flag mapping end*/
+    //end
+}

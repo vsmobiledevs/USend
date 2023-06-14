@@ -1,0 +1,6 @@
+package com.base.network.model
+
+data class Carrier(
+    val code: String,
+    val name: String
+)

@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.tbuonomo.andrui:viewpagerdotsindicator:3.0.3@aar">
+    <CLASSES>
+      <root url="file://C:/Dependency/caches/transforms-2/files-2.1/c5db1b69163272e05dda19ca1981e835/jetified-viewpagerdotsindicator-3.0.3/AndroidManifest.xml" />
+      <root url="jar://C:/Dependency/caches/transforms-2/files-2.1/c5db1b69163272e05dda19ca1981e835/jetified-viewpagerdotsindicator-3.0.3/jars/classes.jar!/" />
+      <root url="file://C:/Dependency/caches/transforms-2/files-2.1/c5db1b69163272e05dda19ca1981e835/jetified-viewpagerdotsindicator-3.0.3/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://C:/Dependency/caches/modules-2/files-2.1/com.tbuonomo.andrui/viewpagerdotsindicator/3.0.3/1b500d80aa19932fec03365ca257a95617396e8/viewpagerdotsindicator-3.0.3-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://C:/Dependency/caches/modules-2/files-2.1/com.tbuonomo.andrui/viewpagerdotsindicator/3.0.3/7f4b9344802d0c2617ce713d82c6aee1fa89d52a/viewpagerdotsindicator-3.0.3-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

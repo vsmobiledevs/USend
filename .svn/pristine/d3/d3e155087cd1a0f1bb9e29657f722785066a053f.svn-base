@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                        
+
+    
+
+           
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        style="@style/matchWrap" android:tag="layout/row_item_region_selection_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/txtItem"
+            style="@style/CommonText.Style.16sp"
+            android:layout_width="match_parent"
+            android:text="India"
+            android:textColor="@color/color2D2D2D"
+            android:layout_marginStart="@dimen/dimen_20dp"
+            android:paddingTop="@dimen/dimen_10dp"
+            android:gravity="start"
+            android:textAlignment="viewStart"
+            android:paddingBottom="@dimen/dimen_10dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+         

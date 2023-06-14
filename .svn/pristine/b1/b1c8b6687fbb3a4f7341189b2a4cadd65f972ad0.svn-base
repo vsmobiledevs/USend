@@ -1,0 +1,297 @@
+package com.usend.extensions;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 6, 0}, k = 2, d1 = {"\u0000\u00c6\u0001\n\u0000\n\u0002\u0010\u000e\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u000b\n\u0002\b\u0007\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0006\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0010\u0006\n\u0000\n\u0002\u0010\u0007\n\u0002\b\u0002\n\u0002\u0010\t\n\u0002\b\u0002\n\u0002\u0010!\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u000b\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0003\u001a\u001a\u0010\u0005\u001a\u00020\u00062\f\u0010\u0007\u001a\b\u0012\u0004\u0012\u00020\u00060\bH\u0086\b\u00f8\u0001\u0000\u001a\"\u0010\t\u001a\u0004\u0018\u00010\u0002\"\u0004\b\u0000\u0010\n2\f\u0010\u0007\u001a\b\u0012\u0004\u0012\u0002H\n0\bH\u0086\b\u00f8\u0001\u0000\u001a\u001d\u0010\u000b\u001a\u00020\f\"\n\b\u0000\u0010\n\u0018\u0001*\u00020\u00022\u0006\u0010\r\u001a\u00020\u000eH\u0086\b\u001a\u001a\u0010\u000f\u001a\u00020\u00062\f\u0010\u0007\u001a\b\u0012\u0004\u0012\u00020\u00060\bH\u0086\b\u00f8\u0001\u0000\u001a\u0018\u0010\u0010\u001a\u00020\u0006*\u00020\u00112\f\u0010\u0012\u001a\b\u0012\u0004\u0012\u00020\u00060\b\u001a\u0018\u0010\u0010\u001a\u00020\u0006*\u00020\u00132\f\u0010\u0012\u001a\b\u0012\u0004\u0012\u00020\u00060\b\u001a&\u0010\u0014\u001a\u00020\u0006*\u00020\u00112\u0014\b\u0004\u0010\u0015\u001a\u000e\u0012\u0004\u0012\u00020\u0001\u0012\u0004\u0012\u00020\u00060\u0016H\u0086\b\u00f8\u0001\u0000\u001a\u0019\u0010\u0017\u001a\u0002H\n\"\b\b\u0000\u0010\n*\u00020\u0002*\u0002H\n\u00a2\u0006\u0002\u0010\u0018\u001a\'\u0010\u0017\u001a\u0002H\n\"\b\b\u0000\u0010\n*\u00020\u0002*\u0002H\n2\f\u0010\u0019\u001a\b\u0012\u0004\u0012\u00020\u00020\b\u00a2\u0006\u0002\u0010\u001a\u001a\u0014\u0010\u001b\u001a\u00020\u0001*\u00020\u001c2\b\b\u0002\u0010\u0019\u001a\u00020\u0002\u001a\n\u0010\u001d\u001a\u00020\u0001*\u00020\u001c\u001a\n\u0010\u001e\u001a\u00020\u0001*\u00020\u0002\u001a\n\u0010\u001f\u001a\u00020\u0001*\u00020\u0011\u001a\n\u0010 \u001a\u00020\u0006*\u00020!\u001a\u0012\u0010\"\u001a\u00020\u0006*\u00020#2\u0006\u0010$\u001a\u00020%\u001a\u0019\u0010&\u001a\u0002H\n\"\b\b\u0000\u0010\n*\u00020\u0002*\u0002H\n\u00a2\u0006\u0002\u0010\u0018\u001a\'\u0010&\u001a\u0002H\n\"\b\b\u0000\u0010\n*\u00020\u0002*\u0002H\n2\f\u0010\u0019\u001a\b\u0012\u0004\u0012\u00020\u00020\b\u00a2\u0006\u0002\u0010\u001a\u001a\n\u0010\'\u001a\u00020\u0006*\u00020!\u001a\f\u0010(\u001a\u00020%*\u0004\u0018\u00010\u0002\u001a\f\u0010)\u001a\u00020%*\u00020\u0001H\u0007\u001a\f\u0010*\u001a\u00020%*\u00020\u0001H\u0007\u001a\n\u0010+\u001a\u00020%*\u00020!\u001aU\u0010,\u001a\u00020\u0006*\u00020-2\u0006\u0010\r\u001a\u00020\u000e2\u0006\u0010.\u001a\u00020/2\b\b\u0002\u00100\u001a\u00020/2\n\b\u0003\u00101\u001a\u0004\u0018\u00010/2\n\b\u0003\u00102\u001a\u0004\u0018\u00010/2\u0012\u0010\u0012\u001a\u000e\u0012\u0004\u0012\u00020/\u0012\u0004\u0012\u00020\u00060\u0016\u00a2\u0006\u0002\u00103\u001aU\u0010,\u001a\u00020\u0006*\u00020-2\u0006\u0010\r\u001a\u00020\u000e2\u0006\u0010.\u001a\u00020\u00012\b\b\u0002\u00100\u001a\u00020/2\n\b\u0003\u00101\u001a\u0004\u0018\u00010/2\n\b\u0003\u00102\u001a\u0004\u0018\u00010/2\u0012\u0010\u0012\u001a\u000e\u0012\u0004\u0012\u00020/\u0012\u0004\u0012\u00020\u00060\u0016\u00a2\u0006\u0002\u00104\u001a\f\u00105\u001a\u00020\u0001*\u0004\u0018\u000106\u001a\n\u00107\u001a\u00020\u0006*\u00020!\u001a\f\u00108\u001a\u00020%*\u0004\u0018\u00010\u0002\u001a\u001b\u00109\u001a\u00020%*\u0004\u0018\u00010%2\b\b\u0002\u0010:\u001a\u00020%\u00a2\u0006\u0002\u0010;\u001a\u001b\u00109\u001a\u00020<*\u0004\u0018\u00010<2\b\b\u0002\u0010:\u001a\u00020<\u00a2\u0006\u0002\u0010=\u001a\u001b\u00109\u001a\u00020>*\u0004\u0018\u00010>2\b\b\u0002\u0010:\u001a\u00020>\u00a2\u0006\u0002\u0010?\u001a\u001b\u00109\u001a\u00020/*\u0004\u0018\u00010/2\b\b\u0002\u0010:\u001a\u00020/\u00a2\u0006\u0002\u0010@\u001a\u001b\u00109\u001a\u00020A*\u0004\u0018\u00010A2\b\b\u0002\u0010:\u001a\u00020A\u00a2\u0006\u0002\u0010B\u001a\u0016\u00109\u001a\u00020\u0001*\u0004\u0018\u00010\u00012\b\b\u0002\u0010:\u001a\u00020\u0001\u001a\u001f\u0010C\u001a\u0004\u0018\u00010\u0006\"\u0004\b\u0000\u0010\n*\n\u0012\u0004\u0012\u0002H\n\u0018\u00010D\u00a2\u0006\u0002\u0010E\u001a\n\u0010F\u001a\u00020\u0001*\u00020>\u001al\u0010G\u001a\u00020\u0006*\u00020H2\u0006\u0010I\u001a\u00020/2\u0006\u0010J\u001a\u00020/2\b\b\u0001\u0010K\u001a\u00020/2\u0006\u0010L\u001a\u00020M2\b\b\u0002\u0010N\u001a\u00020%2\n\b\u0002\u0010O\u001a\u0004\u0018\u00010/2#\u0010\u0007\u001a\u001f\u0012\u0015\u0012\u0013\u0018\u00010!\u00a2\u0006\f\bP\u0012\b\bQ\u0012\u0004\b\b(R\u0012\u0004\u0012\u00020\u00060\u0016\u00a2\u0006\u0002\u0010S\u001a,\u0010T\u001a\n V*\u0004\u0018\u00010U0U*\u00020\u00022\u0006\u0010\r\u001a\u00020W2\u0006\u0010X\u001a\u00020\u00012\b\b\u0002\u0010Y\u001a\u00020/\u001a\u001c\u0010Z\u001a\u00020\u0006*\u00020\u00022\u0006\u0010[\u001a\u00020\u00012\b\b\u0002\u0010\\\u001a\u00020\u0001\u001a\u001c\u0010]\u001a\u00020\u0006*\u00020\u00022\u0006\u0010[\u001a\u00020\u00012\b\b\u0002\u0010\\\u001a\u00020\u0001\u001a\u001c\u0010^\u001a\u00020\u0006*\u00020\u00022\u0006\u0010[\u001a\u00020\u00012\b\b\u0002\u0010\\\u001a\u00020\u0001\u001a,\u0010_\u001a\n V*\u0004\u0018\u00010U0U*\u00020\u00022\u0006\u0010\r\u001a\u00020\u000e2\u0006\u0010X\u001a\u00020\u00012\b\b\u0002\u0010Y\u001a\u00020/\u001a\u001c\u0010`\u001a\u00020\u0006*\u00020\u00022\u0006\u0010[\u001a\u00020\u00012\b\b\u0002\u0010\\\u001a\u00020\u0001\u001a\u001c\u0010a\u001a\u00020\u0006*\u00020\u00022\u0006\u0010[\u001a\u00020\u00012\b\b\u0002\u0010\\\u001a\u00020\u0001\u001a\f\u0010b\u001a\u0004\u0018\u00010c*\u00020\u0002\u001a\f\u0010d\u001a\u0004\u0018\u00010\u0001*\u00020\u0002\u001a\u001c\u0010e\u001a\u0004\u0018\u0001H\n\"\u0006\b\u0000\u0010\n\u0018\u0001*\u00020fH\u0086\b\u00a2\u0006\u0002\u0010g\u001a\u001c\u0010e\u001a\u0004\u0018\u0001H\n\"\u0006\b\u0000\u0010\n\u0018\u0001*\u00020\u0001H\u0086\b\u00a2\u0006\u0002\u0010h\"\u0015\u0010\u0000\u001a\u00020\u0001*\u00020\u00028F\u00a2\u0006\u0006\u001a\u0004\b\u0003\u0010\u0004\u0082\u0002\u0007\n\u0005\b\u009920\u0001\u00a8\u0006i"}, d2 = {"tagName", "", "", "getTagName", "(Ljava/lang/Object;)Ljava/lang/String;", "debugMode", "", "block", "Lkotlin/Function0;", "justTry", "T", "newIntent", "Landroid/content/Intent;", "context", "Landroid/content/Context;", "notDebugMode", "addDrawableEndListener", "Landroid/widget/EditText;", "callback", "Landroid/widget/TextView;", "afterTextChanged", "listener", "Lkotlin/Function1;", "error", "(Ljava/lang/Object;)Ljava/lang/Object;", "msg", "(Ljava/lang/Object;Lkotlin/jvm/functions/Function0;)Ljava/lang/Object;", "generateMessage", "Ljava/lang/StackTraceElement;", "generateTag", "getClassName", "getTrimText", "gone", "Landroid/view/View;", "hidePassword", "Landroidx/appcompat/widget/AppCompatEditText;", "isHide", "", "info", "invisible", "isNull", "isValidEmail", "isValidPhoneNumber", "isVisible", "loadImageUrl", "Landroid/widget/ImageView;", "imageUrl", "", "cornerRadius", "placeholder", "errorPlaceholder", "(Landroid/widget/ImageView;Landroid/content/Context;IILjava/lang/Integer;Ljava/lang/Integer;Lkotlin/jvm/functions/Function1;)V", "(Landroid/widget/ImageView;Landroid/content/Context;Ljava/lang/String;ILjava/lang/Integer;Ljava/lang/Integer;Lkotlin/jvm/functions/Function1;)V", "localDateToString", "Lorg/threeten/bp/LocalDate;", "makeVisible", "notNull", "nullSafe", "defaultValue", "(Ljava/lang/Boolean;Z)Z", "", "(Ljava/lang/Double;D)D", "", "(Ljava/lang/Float;F)F", "(Ljava/lang/Integer;I)I", "", "(Ljava/lang/Long;J)J", "reset", "", "(Ljava/util/List;)Lkotlin/Unit;", "roundOffValue", "setClickableSpan", "Landroid/text/SpannableString;", "start", "end", "color", "typeFace", "Landroid/graphics/Typeface;", "isUnderLine", "underLineColor", "Lkotlin/ParameterName;", "name", "view", "(Landroid/text/SpannableString;IIILandroid/graphics/Typeface;ZLjava/lang/Integer;Lkotlin/jvm/functions/Function1;)V", "showAppToast", "Landroid/widget/Toast;", "kotlin.jvm.PlatformType", "Landroid/app/Application;", "message", "duration", "showDLog", "log", "tag", "showELog", "showILog", "showToast", "showVLog", "showWLog", "toJSONObject", "Lorg/json/JSONObject;", "toJson", "toObject", "Ljava/io/Reader;", "(Ljava/io/Reader;)Ljava/lang/Object;", "(Ljava/lang/String;)Ljava/lang/Object;", "app_debug"})
+public final class CommonExtensionsKt {
+    
+    @org.jetbrains.annotations.Nullable()
+    public static final <T extends java.lang.Object>java.lang.Object justTry(@org.jetbrains.annotations.NotNull()
+    kotlin.jvm.functions.Function0<? extends T> block) {
+        return null;
+    }
+    
+    public static final void debugMode(@org.jetbrains.annotations.NotNull()
+    kotlin.jvm.functions.Function0<kotlin.Unit> block) {
+    }
+    
+    public static final void notDebugMode(@org.jetbrains.annotations.NotNull()
+    kotlin.jvm.functions.Function0<kotlin.Unit> block) {
+    }
+    
+    /**
+     * Convert any object to [JSONObject]
+     */
+    @org.jetbrains.annotations.Nullable()
+    public static final org.json.JSONObject toJSONObject(@org.jetbrains.annotations.NotNull()
+    java.lang.Object $this$toJSONObject) {
+        return null;
+    }
+    
+    /**
+     * Convert Model to String
+     */
+    @org.jetbrains.annotations.Nullable()
+    public static final java.lang.String toJson(@org.jetbrains.annotations.NotNull()
+    java.lang.Object $this$toJson) {
+        return null;
+    }
+    
+    /**
+     * Set drawable end listener
+     */
+    public static final void addDrawableEndListener(@org.jetbrains.annotations.NotNull()
+    android.widget.TextView $this$addDrawableEndListener, @org.jetbrains.annotations.NotNull()
+    kotlin.jvm.functions.Function0<kotlin.Unit> callback) {
+    }
+    
+    public static final void addDrawableEndListener(@org.jetbrains.annotations.NotNull()
+    android.widget.EditText $this$addDrawableEndListener, @org.jetbrains.annotations.NotNull()
+    kotlin.jvm.functions.Function0<kotlin.Unit> callback) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public static final java.lang.String roundOffValue(float $this$roundOffValue) {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.Nullable()
+    public static final <T extends java.lang.Object>kotlin.Unit reset(@org.jetbrains.annotations.Nullable()
+    java.util.List<T> $this$reset) {
+        return null;
+    }
+    
+    /**
+     * Check if value is null
+     */
+    public static final boolean isNull(@org.jetbrains.annotations.Nullable()
+    java.lang.Object $this$isNull) {
+        return false;
+    }
+    
+    public static final boolean notNull(@org.jetbrains.annotations.Nullable()
+    java.lang.Object $this$notNull) {
+        return false;
+    }
+    
+    /**
+     * Return simple class name
+     */
+    @org.jetbrains.annotations.NotNull()
+    public static final java.lang.String getClassName(@org.jetbrains.annotations.NotNull()
+    java.lang.Object $this$getClassName) {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public static final java.lang.String getTagName(@org.jetbrains.annotations.NotNull()
+    java.lang.Object $this$tagName) {
+        return null;
+    }
+    
+    @androidx.annotation.VisibleForTesting()
+    public static final boolean isValidEmail(@org.jetbrains.annotations.NotNull()
+    java.lang.String $this$isValidEmail) {
+        return false;
+    }
+    
+    @androidx.annotation.VisibleForTesting()
+    public static final boolean isValidPhoneNumber(@org.jetbrains.annotations.NotNull()
+    java.lang.String $this$isValidPhoneNumber) {
+        return false;
+    }
+    
+    public static final void showVLog(@org.jetbrains.annotations.NotNull()
+    java.lang.Object $this$showVLog, @org.jetbrains.annotations.NotNull()
+    java.lang.String log, @org.jetbrains.annotations.NotNull()
+    java.lang.String tag) {
+    }
+    
+    public static final void showELog(@org.jetbrains.annotations.NotNull()
+    java.lang.Object $this$showELog, @org.jetbrains.annotations.NotNull()
+    java.lang.String log, @org.jetbrains.annotations.NotNull()
+    java.lang.String tag) {
+    }
+    
+    public static final void showDLog(@org.jetbrains.annotations.NotNull()
+    java.lang.Object $this$showDLog, @org.jetbrains.annotations.NotNull()
+    java.lang.String log, @org.jetbrains.annotations.NotNull()
+    java.lang.String tag) {
+    }
+    
+    public static final void showILog(@org.jetbrains.annotations.NotNull()
+    java.lang.Object $this$showILog, @org.jetbrains.annotations.NotNull()
+    java.lang.String log, @org.jetbrains.annotations.NotNull()
+    java.lang.String tag) {
+    }
+    
+    public static final void showWLog(@org.jetbrains.annotations.NotNull()
+    java.lang.Object $this$showWLog, @org.jetbrains.annotations.NotNull()
+    java.lang.String log, @org.jetbrains.annotations.NotNull()
+    java.lang.String tag) {
+    }
+    
+    public static final android.widget.Toast showToast(@org.jetbrains.annotations.NotNull()
+    java.lang.Object $this$showToast, @org.jetbrains.annotations.NotNull()
+    android.content.Context context, @org.jetbrains.annotations.NotNull()
+    java.lang.String message, int duration) {
+        return null;
+    }
+    
+    public static final boolean isVisible(@org.jetbrains.annotations.NotNull()
+    android.view.View $this$isVisible) {
+        return false;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public static final java.lang.String nullSafe(@org.jetbrains.annotations.Nullable()
+    java.lang.String $this$nullSafe, @org.jetbrains.annotations.NotNull()
+    java.lang.String defaultValue) {
+        return null;
+    }
+    
+    public static final int nullSafe(@org.jetbrains.annotations.Nullable()
+    java.lang.Integer $this$nullSafe, int defaultValue) {
+        return 0;
+    }
+    
+    public static final long nullSafe(@org.jetbrains.annotations.Nullable()
+    java.lang.Long $this$nullSafe, long defaultValue) {
+        return 0L;
+    }
+    
+    public static final boolean nullSafe(@org.jetbrains.annotations.Nullable()
+    java.lang.Boolean $this$nullSafe, boolean defaultValue) {
+        return false;
+    }
+    
+    public static final float nullSafe(@org.jetbrains.annotations.Nullable()
+    java.lang.Float $this$nullSafe, float defaultValue) {
+        return 0.0F;
+    }
+    
+    public static final double nullSafe(@org.jetbrains.annotations.Nullable()
+    java.lang.Double $this$nullSafe, double defaultValue) {
+        return 0.0;
+    }
+    
+    public static final void hidePassword(@org.jetbrains.annotations.NotNull()
+    androidx.appcompat.widget.AppCompatEditText $this$hidePassword, boolean isHide) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public static final java.lang.String getTrimText(@org.jetbrains.annotations.NotNull()
+    android.widget.EditText $this$getTrimText) {
+        return null;
+    }
+    
+    public static final void setClickableSpan(@org.jetbrains.annotations.NotNull()
+    android.text.SpannableString $this$setClickableSpan, int start, int end, @androidx.annotation.ColorInt()
+    int color, @org.jetbrains.annotations.NotNull()
+    android.graphics.Typeface typeFace, boolean isUnderLine, @org.jetbrains.annotations.Nullable()
+    java.lang.Integer underLineColor, @org.jetbrains.annotations.NotNull()
+    kotlin.jvm.functions.Function1<? super android.view.View, kotlin.Unit> block) {
+    }
+    
+    public static final void afterTextChanged(@org.jetbrains.annotations.NotNull()
+    android.widget.EditText $this$afterTextChanged, @org.jetbrains.annotations.NotNull()
+    kotlin.jvm.functions.Function1<? super java.lang.String, kotlin.Unit> listener) {
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public static final java.lang.String localDateToString(@org.jetbrains.annotations.Nullable()
+    org.threeten.bp.LocalDate $this$localDateToString) {
+        return null;
+    }
+    
+    public static final void invisible(@org.jetbrains.annotations.NotNull()
+    android.view.View $this$invisible) {
+    }
+    
+    public static final void makeVisible(@org.jetbrains.annotations.NotNull()
+    android.view.View $this$makeVisible) {
+    }
+    
+    public static final void gone(@org.jetbrains.annotations.NotNull()
+    android.view.View $this$gone) {
+    }
+    
+    public static final void loadImageUrl(@org.jetbrains.annotations.NotNull()
+    android.widget.ImageView $this$loadImageUrl, @org.jetbrains.annotations.NotNull()
+    android.content.Context context, @org.jetbrains.annotations.NotNull()
+    java.lang.String imageUrl, int cornerRadius, @org.jetbrains.annotations.Nullable()
+    @androidx.annotation.DrawableRes()
+    java.lang.Integer placeholder, @org.jetbrains.annotations.Nullable()
+    @androidx.annotation.DrawableRes()
+    java.lang.Integer errorPlaceholder, @org.jetbrains.annotations.NotNull()
+    kotlin.jvm.functions.Function1<? super java.lang.Integer, kotlin.Unit> callback) {
+    }
+    
+    public static final void loadImageUrl(@org.jetbrains.annotations.NotNull()
+    android.widget.ImageView $this$loadImageUrl, @org.jetbrains.annotations.NotNull()
+    android.content.Context context, int imageUrl, int cornerRadius, @org.jetbrains.annotations.Nullable()
+    @androidx.annotation.DrawableRes()
+    java.lang.Integer placeholder, @org.jetbrains.annotations.Nullable()
+    @androidx.annotation.DrawableRes()
+    java.lang.Integer errorPlaceholder, @org.jetbrains.annotations.NotNull()
+    kotlin.jvm.functions.Function1<? super java.lang.Integer, kotlin.Unit> callback) {
+    }
+    
+    /**
+     * Log.i(className,"methodName() Line : this")
+     */
+    @org.jetbrains.annotations.NotNull()
+    public static final <T extends java.lang.Object>T info(@org.jetbrains.annotations.NotNull()
+    T $this$info) {
+        return null;
+    }
+    
+    /**
+     * Log.i(className,"methodName() Line : msg")
+     */
+    @org.jetbrains.annotations.NotNull()
+    public static final <T extends java.lang.Object>T info(@org.jetbrains.annotations.NotNull()
+    T $this$info, @org.jetbrains.annotations.NotNull()
+    kotlin.jvm.functions.Function0<? extends java.lang.Object> msg) {
+        return null;
+    }
+    
+    /**
+     * Log.i(className,"methodName() Line : this")
+     */
+    @org.jetbrains.annotations.NotNull()
+    public static final <T extends java.lang.Object>T error(@org.jetbrains.annotations.NotNull()
+    T $this$error) {
+        return null;
+    }
+    
+    /**
+     * Log.i(className,"methodName() Line : msg")
+     */
+    @org.jetbrains.annotations.NotNull()
+    public static final <T extends java.lang.Object>T error(@org.jetbrains.annotations.NotNull()
+    T $this$error, @org.jetbrains.annotations.NotNull()
+    kotlin.jvm.functions.Function0<? extends java.lang.Object> msg) {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public static final java.lang.String generateTag(@org.jetbrains.annotations.NotNull()
+    java.lang.StackTraceElement $this$generateTag) {
+        return null;
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public static final java.lang.String generateMessage(@org.jetbrains.annotations.NotNull()
+    java.lang.StackTraceElement $this$generateMessage, @org.jetbrains.annotations.NotNull()
+    java.lang.Object msg) {
+        return null;
+    }
+    
+    public static final android.widget.Toast showAppToast(@org.jetbrains.annotations.NotNull()
+    java.lang.Object $this$showAppToast, @org.jetbrains.annotations.NotNull()
+    android.app.Application context, @org.jetbrains.annotations.NotNull()
+    java.lang.String message, int duration) {
+        return null;
+    }
+}

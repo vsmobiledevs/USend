@@ -1,0 +1,42 @@
+package com.usend.views.home;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 6, 0}, k = 1, d1 = {"\u0000:\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\b\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\u0010\u0000\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0002\u0018\u00002\u000e\u0012\u0004\u0012\u00020\u0002\u0012\u0004\u0012\u00020\u00030\u0001B\u001f\u0012\u000e\b\u0002\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00030\u0005\u0012\b\b\u0002\u0010\u0006\u001a\u00020\u0007\u00a2\u0006\u0002\u0010\bJ\b\u0010\u0012\u001a\u00020\u0013H\u0016J\b\u0010\u0014\u001a\u00020\u0013H\u0014R\u0014\u0010\u0006\u001a\u00020\u0007X\u0094\u0004\u00a2\u0006\b\n\u0000\u001a\u0004\b\t\u0010\nR\u0016\u0010\u000b\u001a\b\u0012\u0004\u0012\u00020\r0\f8\u0002X\u0083\u0004\u00a2\u0006\u0002\n\u0000R\u001a\u0010\u0004\u001a\b\u0012\u0004\u0012\u00020\u00030\u0005X\u0096\u0004\u00a2\u0006\b\n\u0000\u001a\u0004\b\u000e\u0010\u000fR\u0010\u0010\u0010\u001a\u0004\u0018\u00010\u0011X\u0082\u000e\u00a2\u0006\u0002\n\u0000\u00a8\u0006\u0015"}, d2 = {"Lcom/usend/views/home/ConciergeFragmentForSubscription;", "Lcom/usend/base/ViewModelFragment;", "Lcom/usend/databinding/FragmentConciergeForSubscriptionBinding;", "Lcom/usend/viewmodels/ConciergeViewModel;", "modelClass", "Ljava/lang/Class;", "layoutId", "", "(Ljava/lang/Class;I)V", "getLayoutId", "()I", "mObserver", "Landroidx/lifecycle/Observer;", "", "getModelClass", "()Ljava/lang/Class;", "webID", "", "addObserver", "", "initControls", "app_debug"})
+public final class ConciergeFragmentForSubscription extends com.usend.base.ViewModelFragment<com.usend.databinding.FragmentConciergeForSubscriptionBinding, com.usend.viewmodels.ConciergeViewModel> {
+    @org.jetbrains.annotations.NotNull()
+    private final java.lang.Class<com.usend.viewmodels.ConciergeViewModel> modelClass = null;
+    private final int layoutId = 0;
+    private java.lang.String webID;
+    @android.annotation.SuppressLint(value = {"SetTextI18n"})
+    private final androidx.lifecycle.Observer<java.lang.Object> mObserver = null;
+    private java.util.HashMap _$_findViewCache;
+    
+    public ConciergeFragmentForSubscription() {
+        super();
+    }
+    
+    public ConciergeFragmentForSubscription(@org.jetbrains.annotations.NotNull()
+    java.lang.Class<com.usend.viewmodels.ConciergeViewModel> modelClass, int layoutId) {
+        super();
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    @java.lang.Override()
+    public java.lang.Class<com.usend.viewmodels.ConciergeViewModel> getModelClass() {
+        return null;
+    }
+    
+    @java.lang.Override()
+    protected int getLayoutId() {
+        return 0;
+    }
+    
+    @java.lang.Override()
+    protected void initControls() {
+    }
+    
+    @java.lang.Override()
+    public void addObserver() {
+    }
+}

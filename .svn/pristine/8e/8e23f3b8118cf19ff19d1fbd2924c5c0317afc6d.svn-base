@@ -1,0 +1,89 @@
+package com.usend.viewmodels
+
+import android.app.Application
+import android.content.Context
+import androidx.lifecycle.MediatorLiveData
+import androidx.lifecycle.MutableLiveData
+import com.base.network.model.CarrierList
+import com.usend.R
+import com.usend.base.BaseViewModel
+import com.usend.comman.Resource
+import com.usend.extensions.callApi
+import com.usend.extensions.checkInternetConnected
+import com.usend.repository.ApiServices
+import com.usend.repository.UserRepository
+
+class ShippingMethodViewModel(
+    var myApplication: Application,
+    private var repository: UserRepository
+) :
+    BaseViewModel(myApplication) {
+
+    val mContext: Context = myApplication.applicationContext
+
+    val status: MediatorLiveData<Any> by lazy {
+        MediatorLiveData<Any>()
+    }
+
+    val selectedPriceFilter: MutableLiveData<String> by lazy {
+        MutableLiveData<String>(mContext.resources.getString(R.string.lbl_high_to_low))
+    }
+
+    fun getShippingMethods(
+        address_id: Int,
+        package_ids: String,
+        zip_code: String,
+        carrier_code: String,
+        profile_filter: String,
+        carrierList: List<CarrierList>
+    ) {
+        when {
+            !mContext.checkInternetConnected() -> status.value =
+                Resource.NoInternetError<Int>(R.string.default_internet_message)
+            else -> {
+                status.addSource(
+                    repository.getShippingMethods(
+                        getAuthKey(),
+                        address_id = address_id,
+                        package_ids = package_ids,
+                        carrier_code = carrier_code,
+                        profile_filter = profile_filter,
+                        carrierList = carrierList,
+                        observer = status,
+                    )
+                ) {
+
+                    if (it is Resource.Success<*>) {
+                        //can save for further use
+
+                    }
+
+                  //  status.value = it
+                }
+            }
+        }
+    }
+
+
+    fun autoShipServices() {
+
+        myApplication.callApi(
+            ApiServices.getAutoShipmentApiService().autoShipServices(
+                authorization = getAuthKey()
+            ), liveData = status,
+            showLoading = true
+        )
+    }
+
+    fun updateAutoShipment(autoShipmentServiceId: Int? = null) {
+        myApplication.callApi(
+            ApiServices.getAutoShipmentApiService().updateAutoShipment(
+                authorization = getAuthKey(),
+                addressId = null,
+                autoShipmentServiceId = autoShipmentServiceId,
+                paymentDetailId = null
+            ), liveData = status,
+            showLoading = true
+        )
+    }
+}

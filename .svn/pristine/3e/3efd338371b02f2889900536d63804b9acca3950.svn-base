@@ -1,0 +1,94 @@
+package com.usend.base;
+
+import java.lang.System;
+
+@kotlin.Metadata(mv = {1, 6, 0}, k = 1, d1 = {"\u0000\u0086\u0001\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0010\u000b\n\u0000\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0002\u0010\b\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0010\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0010\u000e\n\u0002\b\n\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0000\n\u0002\u0018\u0002\n\u0002\b\u0002\n\u0002\u0018\u0002\n\u0002\b\u0004\n\u0002\u0018\u0002\n\u0002\b\u0003\n\u0002\u0018\u0002\n\u0002\b\u0005\n\u0002\u0018\u0002\n\u0000\b&\u0018\u00002\u00020\u00012\u00020\u0002B\u0005\u00a2\u0006\u0002\u0010\u0003J\u0006\u0010\u0017\u001a\u00020\u0016J\u0006\u0010\u0018\u001a\u00020\u0016Jh\u0010\u0019\u001a\u00020\u00162\u0006\u0010\u001a\u001a\u00020\u001b2\b\b\u0002\u0010\u001c\u001a\u00020\u00052\b\b\u0002\u0010\u001d\u001a\u00020\u00052\b\b\u0002\u0010\u001e\u001a\u00020\u001f2\b\b\u0002\u0010 \u001a\u00020\u00052\b\b\u0002\u0010!\u001a\u00020\u001f2\b\b\u0002\u0010\"\u001a\u00020\u00052\b\b\u0003\u0010#\u001a\u00020\u00102\b\b\u0002\u0010$\u001a\u00020\u00102\b\b\u0002\u0010%\u001a\u00020\u0005J\"\u0010&\u001a\u00020\u00162\u0006\u0010\'\u001a\u00020\u00102\u0006\u0010\u0013\u001a\u00020\u00102\b\u0010\u0015\u001a\u0004\u0018\u00010\u0014H\u0014J\u0012\u0010(\u001a\u00020\u00162\b\u0010)\u001a\u0004\u0018\u00010*H\u0016J\u001c\u0010+\u001a\u00020\u00162\b\u0010,\u001a\u0004\u0018\u00010-2\b\u0010.\u001a\u0004\u0018\u00010/H\u0016J\u0010\u00100\u001a\u00020\u00052\u0006\u00101\u001a\u000202H\u0016J\u0016\u00103\u001a\u00020\u00162\u0006\u00104\u001a\u00020\u00102\u0006\u0010\u001a\u001a\u00020\u001bJ\u000e\u00105\u001a\u00020\u00162\u0006\u00106\u001a\u000207J\u0016\u00108\u001a\u00020\u00162\u0006\u0010\u001a\u001a\u00020\u001b2\u0006\u0010!\u001a\u00020\u001fJ\"\u00109\u001a\u00020\u00162\u0006\u0010:\u001a\u00020;2\b\b\u0002\u0010!\u001a\u00020\u001f2\b\b\u0002\u0010<\u001a\u00020\u001fJ\u000e\u0010=\u001a\u00020\u00162\u0006\u0010<\u001a\u00020\u001fJ3\u0010>\u001a\u00020\u00162\u0006\u0010?\u001a\u00020\u00142#\u0010@\u001a\u001f\u0012\u0015\u0012\u0013\u0018\u00010\u0014\u00a2\u0006\f\b\u0011\u0012\b\b\u0012\u0012\u0004\b\b(\u0015\u0012\u0004\u0012\u00020\u00160AJH\u0010>\u001a\u00020\u00162\u0006\u0010?\u001a\u00020\u001428\u0010@\u001a4\u0012\u0013\u0012\u00110\u0010\u00a2\u0006\f\b\u0011\u0012\b\b\u0012\u0012\u0004\b\b(\u0013\u0012\u0015\u0012\u0013\u0018\u00010\u0014\u00a2\u0006\f\b\u0011\u0012\b\b\u0012\u0012\u0004\b\b(\u0015\u0012\u0004\u0012\u00020\u00160\u000fR\u000e\u0010\u0004\u001a\u00020\u0005X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u0010\u0010\u0006\u001a\u0004\u0018\u00010\u0007X\u0082\u000e\u00a2\u0006\u0002\n\u0000R\u001b\u0010\b\u001a\u00020\t8FX\u0086\u0084\u0002\u00a2\u0006\f\n\u0004\b\f\u0010\r\u001a\u0004\b\n\u0010\u000bR@\u0010\u000e\u001a4\u0012\u0013\u0012\u00110\u0010\u00a2\u0006\f\b\u0011\u0012\b\b\u0012\u0012\u0004\b\b(\u0013\u0012\u0015\u0012\u0013\u0018\u00010\u0014\u00a2\u0006\f\b\u0011\u0012\b\b\u0012\u0012\u0004\b\b(\u0015\u0012\u0004\u0012\u00020\u00160\u000fX\u0082.\u00a2\u0006\u0002\n\u0000\u00a8\u0006B"}, d2 = {"Lcom/usend/base/BaseActivity;", "Landroidx/appcompat/app/AppCompatActivity;", "Landroid/view/View$OnClickListener;", "()V", "homeEnabled", "", "mProgressDialog", "Lcom/spaceo/basecode/CustomProgressDialog;", "prefs", "Landroid/content/SharedPreferences;", "getPrefs", "()Landroid/content/SharedPreferences;", "prefs$delegate", "Lkotlin/Lazy;", "resultCallback", "Lkotlin/Function2;", "", "Lkotlin/ParameterName;", "name", "resultCode", "Landroid/content/Intent;", "data", "", "clearDataAndLogout", "hideProgressDialog", "initToolbar", "toolbar", "Landroidx/appcompat/widget/Toolbar;", "isVisible", "isRightTextVisible", "rightButtonText", "", "isBackVisible", "title", "showHomeAsUp", "leftIcon", "backColor", "isNoti", "onActivityResult", "requestCode", "onClick", "v", "Landroid/view/View;", "onCreate", "savedInstanceState", "Landroid/os/Bundle;", "persistentState", "Landroid/os/PersistableBundle;", "onOptionsItemSelected", "item", "Landroid/view/MenuItem;", "setNotificationIcon", "count", "setStatusBarFlag", "window", "Landroid/view/Window;", "setToolbarTitle", "showProgressDialog", "mContext", "Landroid/content/Context;", "message", "showTokenExpiredDialog", "startActivityForResult", "intent", "callback", "Lkotlin/Function1;", "app_debug"})
+public abstract class BaseActivity extends androidx.appcompat.app.AppCompatActivity implements android.view.View.OnClickListener {
+    @org.jetbrains.annotations.NotNull()
+    private final kotlin.Lazy prefs$delegate = null;
+    private com.spaceo.basecode.CustomProgressDialog mProgressDialog;
+    
+    /**
+     * Set activity [Toolbar]
+     */
+    private boolean homeEnabled = false;
+    private kotlin.jvm.functions.Function2<? super java.lang.Integer, ? super android.content.Intent, kotlin.Unit> resultCallback;
+    private java.util.HashMap _$_findViewCache;
+    
+    public BaseActivity() {
+        super();
+    }
+    
+    @org.jetbrains.annotations.NotNull()
+    public final android.content.SharedPreferences getPrefs() {
+        return null;
+    }
+    
+    @java.lang.Override()
+    public void onClick(@org.jetbrains.annotations.Nullable()
+    android.view.View v) {
+    }
+    
+    @java.lang.Override()
+    public void onCreate(@org.jetbrains.annotations.Nullable()
+    android.os.Bundle savedInstanceState, @org.jetbrains.annotations.Nullable()
+    android.os.PersistableBundle persistentState) {
+    }
+    
+    @java.lang.Override()
+    public boolean onOptionsItemSelected(@org.jetbrains.annotations.NotNull()
+    android.view.MenuItem item) {
+        return false;
+    }
+    
+    public final void setStatusBarFlag(@org.jetbrains.annotations.NotNull()
+    android.view.Window window) {
+    }
+    
+    public final void initToolbar(@org.jetbrains.annotations.NotNull()
+    androidx.appcompat.widget.Toolbar toolbar, boolean isVisible, boolean isRightTextVisible, @org.jetbrains.annotations.NotNull()
+    java.lang.String rightButtonText, boolean isBackVisible, @org.jetbrains.annotations.NotNull()
+    java.lang.String title, boolean showHomeAsUp, @androidx.annotation.DrawableRes()
+    int leftIcon, int backColor, boolean isNoti) {
+    }
+    
+    public final void setToolbarTitle(@org.jetbrains.annotations.NotNull()
+    androidx.appcompat.widget.Toolbar toolbar, @org.jetbrains.annotations.NotNull()
+    java.lang.String title) {
+    }
+    
+    public final void showProgressDialog(@org.jetbrains.annotations.NotNull()
+    android.content.Context mContext, @org.jetbrains.annotations.NotNull()
+    java.lang.String title, @org.jetbrains.annotations.NotNull()
+    java.lang.String message) {
+    }
+    
+    public final void hideProgressDialog() {
+    }
+    
+    public final void startActivityForResult(@org.jetbrains.annotations.NotNull()
+    android.content.Intent intent, @org.jetbrains.annotations.NotNull()
+    kotlin.jvm.functions.Function1<? super android.content.Intent, kotlin.Unit> callback) {
+    }
+    
+    public final void startActivityForResult(@org.jetbrains.annotations.NotNull()
+    android.content.Intent intent, @org.jetbrains.annotations.NotNull()
+    kotlin.jvm.functions.Function2<? super java.lang.Integer, ? super android.content.Intent, kotlin.Unit> callback) {
+    }
+    
+    @java.lang.Override()
+    protected void onActivityResult(int requestCode, int resultCode, @org.jetbrains.annotations.Nullable()
+    android.content.Intent data) {
+    }
+    
+    public final void showTokenExpiredDialog(@org.jetbrains.annotations.NotNull()
+    java.lang.String message) {
+    }
+    
+    public final void clearDataAndLogout() {
+    }
+    
+    public final void setNotificationIcon(int count, @org.jetbrains.annotations.NotNull()
+    androidx.appcompat.widget.Toolbar toolbar) {
+    }
+}

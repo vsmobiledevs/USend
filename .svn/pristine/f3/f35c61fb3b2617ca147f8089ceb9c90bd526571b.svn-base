@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.amplifyframework:core:1.1.2@aar">
+    <CLASSES>
+      <root url="file://E:/Sonu g3/SDK/caches/transforms-2/files-2.1/3d43e0b077f9c908310be94cf95a6f1f/jetified-core-1.1.2/res" />
+      <root url="jar://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/a7aa93576ef09cef27765cb2c2ed3567/jetified-core-1.1.2/jars/classes.jar!/" />
+      <root url="file://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/a7aa93576ef09cef27765cb2c2ed3567/jetified-core-1.1.2/AndroidManifest.xml" />
+      <root url="file://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/a7aa93576ef09cef27765cb2c2ed3567/jetified-core-1.1.2/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://E:/Sonu g3/SDK/caches/modules-2/files-2.1/com.amplifyframework/core/1.1.2/a083fd147ba29f9d9a8e52f778244d347b634a60/core-1.1.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,109 @@
+package com.usend.views.userauth
+
+import android.annotation.SuppressLint
+import android.app.Activity
+import android.content.Intent
+import androidx.core.content.ContextCompat
+import com.usend.R
+import com.usend.adapter.RegionSelectionItemAdapter
+import com.usend.base.ViewModelActivity
+import com.usend.databinding.ActivityRegionSelectionBinding
+import com.usend.extensions.*
+import com.usend.utils.*
+import com.usend.viewmodels.RegionSelectionViewModel
+import kotlinx.android.synthetic.main.app_toolbar.*
+import java.util.*
+import kotlin.collections.ArrayList
+import kotlin.reflect.KClass
+
+class RegionSelectionActivity(
+    override val modelClass: KClass<RegionSelectionViewModel> = RegionSelectionViewModel::class,
+    override val layoutId: Int = R.layout.activity_region_selection
+) : ViewModelActivity<ActivityRegionSelectionBinding, RegionSelectionViewModel>() {
+
+    private var code: Int? = null
+    private var title: String? = null
+    private var arrayList = arrayListOf<String>()
+    private var tempList = arrayListOf<String>()
+
+    override fun getDataFromIntent() {
+        super.getDataFromIntent()
+
+        if (intent.hasExtra(EXTRA_DATA)) {
+            code = intent.getIntExtra(EXTRA_DATA, 0)
+            title = intent.getStringExtra(TITLE)
+        }
+
+        if(intent.hasExtra(LIST))
+        {
+            arrayList = intent.getStringArrayListExtra(LIST)!!
+        }
+    }
+
+    override fun initView() {
+        super.initView()
+        initToolbar(toolbar = toolbar, title = title.nullSafe())
+
+        /*when (code) {
+            CODE_COUNTRY -> {
+                //arrayList.addAll(resources.getStringArray(R.array.countries_array).toList())
+            }
+            CODE_STATE -> {
+                arrayList.addAll(resources.getStringArray(R.array.state_array).toList())
+            }
+            CODE_CITY -> {
+                arrayList.addAll(resources.getStringArray(R.array.city_array).toList())
+            }
+        }*/
+
+        tempList.addAll(arrayList)
+        binding.adapter = RegionSelectionItemAdapter(tempList) {
+            val intent = Intent()
+            intent.putExtra(SELECTED_DATA, tempList[it])
+            setResult(Activity.RESULT_OK, intent)
+            finish()
+        }
+
+    }
+
+    @SuppressLint("NotifyDataSetChanged")
+    override fun initControls() {
+        super.initControls()
+
+        binding.edtSearch.addDrawableEndListener{
+
+            binding.edtSearch.setText("")
+        }
+
+        binding.edtSearch.afterTextChanged { searchString ->
+
+            if (searchString.isNotEmpty()) {
+                tempList.clear()
+                tempList.addAll(arrayList.filter { it.lowercase(Locale.getDefault()).contains(
+                    searchString.lowercase(Locale.getDefault())
+                ) } as ArrayList<String>)
+                binding.adapter?.notifyDataSetChanged()
+                binding.edtSearch.setCompoundDrawablesWithIntrinsicBounds(ContextCompat.getDrawable(this,R.drawable.ic_baseline_search),
+                    null, ContextCompat.getDrawable(this,R.drawable.ic_baseline_cancel), null)
+
+            } else {
+                tempList.clear()
+                tempList.addAll(arrayList)
+                binding.adapter?.notifyDataSetChanged()
+                binding.edtSearch.setCompoundDrawablesWithIntrinsicBounds(ContextCompat.getDrawable(this,R.drawable.ic_baseline_search), null, null, null)
+
+            }
+
+            if(tempList.isEmpty())
+            {
+                binding.rvItems.gone()
+                binding.txtNorResultFound.makeVisible()
+            }
+            else{
+                binding.rvItems.makeVisible()
+                binding.txtNorResultFound.gone()
+            }
+
+        }
+    }
+}

@@ -1,0 +1,6 @@
+package com.base.network.model
+
+data class SquareUpCardList(
+    val cards: List<CardXX>,
+    val cursor: String
+)

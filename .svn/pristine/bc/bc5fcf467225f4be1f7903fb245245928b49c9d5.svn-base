@@ -1,0 +1,36 @@
+package com.usend.database
+import androidx.room.*
+import androidx.sqlite.db.SimpleSQLiteQuery
+import androidx.sqlite.db.SupportSQLiteQuery
+
+
+abstract class GenericDao<T>(val tableName: String) {
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    abstract fun insertData(entity: T): Long
+
+    @Transaction
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    abstract fun insertData(entity: List<T>)
+
+    @Update
+    abstract fun updateData(entity: T)
+
+    @Delete
+    abstract fun deleteData(entity: T)
+
+    @Delete
+    abstract fun deleteData(entity: List<T>)
+
+
+    /* get un sync data from local database */
+    fun getAll(): List<T> {
+        val query = SimpleSQLiteQuery("SELECT * FROM $tableName")
+        return getAllData(query)
+    }
+
+    @RawQuery
+    abstract fun getAllData(query: SupportSQLiteQuery): List<T>
+
+}
+

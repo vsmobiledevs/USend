@@ -1,0 +1,1282 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:2:1-211:12
+INJECTED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:2:1-211:12
+INJECTED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:2:1-211:12
+INJECTED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:2:1-211:12
+MERGED from [androidx.databinding:databinding-adapters:4.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\618f6df5f78c150607017d2ddb119c18\databinding-adapters-4.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.databinding:databinding-runtime:4.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\cc2deb72fd15ab008f503df69a1f9e4c\databinding-runtime-4.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [:network] C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\network\build\intermediates\library_manifest\debug\AndroidManifest.xml:3:1-12:12
+MERGED from [com.stripe:stripe-android:16.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\10f75e484cf5071c5368cdbd4e57d4fc\jetified-stripe-android-16.0.1\AndroidManifest.xml:2:1-36:12
+MERGED from [com.squareup.sdk.in-app-payments:card-entry:1.4.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\d0574490c239a26bbbe5ca4cc9fe539b\jetified-card-entry-1.4.0\AndroidManifest.xml:2:1-17:12
+MERGED from [com.squareup.sdk.in-app-payments:in-app-payments:1.4.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\d4ab9fd41643a7883787f221d09a5dcc\jetified-in-app-payments-1.4.0\AndroidManifest.xml:2:1-12:12
+MERGED from [com.stripe:stripe-3ds2-android:4.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\b32bc685bf2195e8a0acbecc29ebdb36\jetified-stripe-3ds2-android-4.1.0\AndroidManifest.xml:2:1-20:12
+MERGED from [com.amplifyframework:aws-auth-cognito:1.1.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\c3f2c84cf5adcaafbb0bea62d5526fe2\jetified-aws-auth-cognito-1.1.2\AndroidManifest.xml:16:1-25:12
+MERGED from [com.amplifyframework:aws-storage-s3:1.1.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\9c22076d7384b9c3df017af75dd99d89\jetified-aws-storage-s3-1.1.2\AndroidManifest.xml:16:1-33:12
+MERGED from [com.tbuonomo.andrui:viewpagerdotsindicator:3.0.3] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\810a29acc55d342cb4ed9fbc81dc7a4f\jetified-viewpagerdotsindicator-3.0.3\AndroidManifest.xml:2:1-13:12
+MERGED from [com.hbb20:ccp:2.3.5] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\219a188d8625122220ef050478df47b8\jetified-ccp-2.3.5\AndroidManifest.xml:2:1-16:12
+MERGED from [androidx.preference:preference-ktx:1.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\6bde79e6f89ce1a0b6493e0dba0e24f2\jetified-preference-ktx-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.preference:preference:1.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\24b90158576005086bd153cc04994f7b\preference-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.github.miguelbcr:RxPaparazzo:0.6.1-2.x] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\8a85a8b473f5fb5f030bddc3b3614eb6\jetified-RxPaparazzo-0.6.1-2.x\AndroidManifest.xml:2:1-23:12
+MERGED from [com.github.yalantis:ucrop:2.2.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\c91635d585302f68ce7281b71e6160cc\jetified-ucrop-2.2.2\AndroidManifest.xml:2:1-11:12
+MERGED from [com.futuremind.recyclerfastscroll:fastscroll:0.2.5] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\ab053c3021706b487ef172fa652f6c09\jetified-fastscroll-0.2.5\AndroidManifest.xml:2:1-13:12
+MERGED from [com.google.android.material:material:1.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\843065f883b4aab3155847b227b91918\material-1.2.1\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\b6ad5dcf2c011e93d68e65f843169671\constraintlayout-2.0.1\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.2.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a1af1202e32a658cab72e26d726c7875\appcompat-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.fragment:fragment-ktx:1.2.5] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\b75e42240934b5685e71797ae2be990f\jetified-fragment-ktx-1.2.5\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity-ktx:1.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\75c93317d57208dd65288ff43eca3980\jetified-activity-ktx-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core-ktx:1.6.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\bea9125dd5f4dab1110576667ff65fb4\jetified-core-ktx-1.6.0\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a9d6fb741b003ba2b19050e53fbe4f1b\lifecycle-extensions-2.1.0\AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\b5759a178e1339ebec3f76b030414bf9\jetified-lifecycle-viewmodel-ktx-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.2.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\724fa618d89467e464674185ef3ebc04\jetified-lifecycle-runtime-ktx-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.room:room-runtime:2.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\3b8661e80ac00fa02651ff2d590a2c41\room-runtime-2.1.0\AndroidManifest.xml:17:1-30:12
+MERGED from [com.chauthai.swipereveallayout:swipe-reveal-layout:1.4.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\d61b3d5e7004d0bfd7a00cd0132cfd2b\jetified-swipe-reveal-layout-1.4.1\AndroidManifest.xml:2:1-14:12
+MERGED from [com.amplifyframework:core:1.1.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a7aa93576ef09cef27765cb2c2ed3567\jetified-core-1.1.2\AndroidManifest.xml:16:1-27:12
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\eece2c2d403080322b78653778d2915d\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.squareup.sdk.in-app-payments:nonce-api:1.4.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\18aa88d8747583c54f4d113f480581b2\jetified-nonce-api-1.4.0\AndroidManifest.xml:2:1-16:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.2.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\55b5336fa41c981d5c91984deae91060\jetified-lifecycle-livedata-ktx-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:firebase-crashlytics:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\cd305015f91c1871f4d8cb469b75f636\jetified-firebase-crashlytics-17.2.1\AndroidManifest.xml:2:1-22:12
+MERGED from [com.itkacher.okhttpprofiler:okhttpprofiler:1.0.7] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\1dc4d97045ec296937741ee408d7ea9d\jetified-okhttpprofiler-1.0.7\AndroidManifest.xml:2:1-13:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.2.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f549a59cd4379fb5fd4ffabeaf829ae6\jetified-lifecycle-livedata-core-ktx-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\c27d0620f443752832258af2fcc1de24\jetified-appcompat-resources-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.github.bumptech.glide:glide:4.10.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\fd7714c1bb02aa68c45b7f7f8503a452\jetified-glide-4.10.0\AndroidManifest.xml:2:1-12:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\443608c6f8be082cf08798fb505490a5\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\123b3626bef7dcda16cdd7f96aca94f9\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [io.reactivex.rxjava2:rxandroid:2.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\4e8c2d43b365550c54ff0503ebf3e4b6\jetified-rxandroid-2.1.0\AndroidManifest.xml:15:1-20:12
+MERGED from [com.google.firebase:firebase-messaging:20.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\9c2e5193f157eba746a44a86e45e9b46\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:17:1-44:12
+MERGED from [androidx.multidex:multidex:2.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\6c16559df7ff39bcb6abe3b561df6d4b\multidex-2.0.1\AndroidManifest.xml:17:1-22:12
+MERGED from [:customprogressdialog-1.0.2] C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\customprogressdialog-1.0.2\build\.transforms\5926534dc788d15578f64f6220c44e23\jetified-customprogressdialog-1.0.2\AndroidManifest.xml:2:1-11:12
+MERGED from [:imagepickerviewkt-1.0.3] C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\imagepickerviewkt-1.0.3\build\.transforms\9d2ec1bdb67324e44476a67715f02144\jetified-imagepickerviewkt-1.0.3\AndroidManifest.xml:2:1-11:12
+MERGED from [com.amazonaws:aws-android-sdk-cognitoauth:2.17.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\c105b1d29e33b3d3261815e967d6a787\jetified-aws-android-sdk-cognitoauth-2.17.1\AndroidManifest.xml:2:1-12:12
+MERGED from [com.amazonaws:aws-android-sdk-s3:2.17.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\65ab542c3711e67d4a969c16e3ec0756\jetified-aws-android-sdk-s3-2.17.1\AndroidManifest.xml:2:1-13:12
+MERGED from [com.amazonaws:aws-android-sdk-mobile-client:2.17.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\b1494c2213eafa85197a832ab43b8d87\jetified-aws-android-sdk-mobile-client-2.17.1\AndroidManifest.xml:2:1-21:12
+MERGED from [com.amazonaws:aws-android-sdk-auth-core:2.17.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\2c957540be3f172c65df42e2799883b1\jetified-aws-android-sdk-auth-core-2.17.1\AndroidManifest.xml:2:1-11:12
+MERGED from [com.amazonaws:aws-android-sdk-cognitoidentityprovider:2.17.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\435144c59db011e22c6f1e745b7259ca\jetified-aws-android-sdk-cognitoidentityprovider-2.17.1\AndroidManifest.xml:2:1-11:12
+MERGED from [com.amazonaws:aws-android-sdk-kms:2.17.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\e46b7ee808e31b5e9885ebbbc75ab356\jetified-aws-android-sdk-kms-2.17.1\AndroidManifest.xml:2:1-11:12
+MERGED from [com.amazonaws:aws-android-sdk-core:2.17.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a9e05bf129798151776e908fae6c0401\jetified-aws-android-sdk-core-2.17.1\AndroidManifest.xml:2:1-17:12
+MERGED from [com.github.mukeshsolanki:android-otpview-pinview:2.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\d987eafc12acd91b293768158398d3dd\jetified-android-otpview-pinview-2.0.0\AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.firebase:firebase-core:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\7e5e9f07173a6743796e915b9d7d5b71\jetified-firebase-core-17.2.1\AndroidManifest.xml:2:1-9:12
+MERGED from [com.android.billingclient:billing:3.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\1763c0724b87ccc5cadc1fa229265983\jetified-billing-3.0.0\AndroidManifest.xml:2:1-23:12
+MERGED from [androidx.databinding:viewbinding:4.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\865bd8415cb407ddf957d1899cd4d515\jetified-viewbinding-4.0.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\4fa12f67a926b0da121646e791576899\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-analytics:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\dd7c180941d170d2586c7e7ad95ccdcb\jetified-firebase-analytics-17.2.1\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\185ce515d4399f4429a64fea82cea46c\jetified-play-services-measurement-api-17.2.1\AndroidManifest.xml:17:1-36:12
+MERGED from [com.google.firebase:firebase-iid:20.0.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\47faad9f4b1e38182205f8435278da11\jetified-firebase-iid-20.0.2\AndroidManifest.xml:17:1-47:12
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\92c211675a6f282c2a833993ce1d34e0\dynamicanimation-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-measurement:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a88c6c5fdd9ac6e6bcec3436bebe2ac1\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:17:1-55:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\9259eb14d7fac7e2e92585879563bed7\jetified-play-services-measurement-sdk-17.2.1\AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\61c2f893561e22a877f49eebfd079189\jetified-play-services-measurement-impl-17.2.1\AndroidManifest.xml:17:1-40:12
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\ef55f09b1c825e5dfdde6b85df086f4d\jetified-play-services-stats-17.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\2f814f73ac2c37978b888aedcdfeb41e\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.media:media:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\e38d4936e7d47a19813b098b50c62259\media-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.firebase:firebase-datatransport:17.0.3] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\7f976b827edf218a7633b3332c1d72a9\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:15:1-34:12
+MERGED from [com.google.firebase:firebase-installations:16.3.3] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\6bed7ebe779270d974dbb05a5a3d2b0d\jetified-firebase-installations-16.3.3\AndroidManifest.xml:2:1-23:12
+MERGED from [com.google.firebase:firebase-common:19.3.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\402777615872cf18c011a1d56bb6182c\jetified-firebase-common-19.3.1\AndroidManifest.xml:15:1-40:12
+MERGED from [com.google.firebase:firebase-installations-interop:16.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\5016df85ae07e3120aebd4a751898eb3\jetified-firebase-installations-interop-16.0.0\AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\c4475655972e825236de87e7d26f85e2\jetified-firebase-iid-interop-17.0.0\AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-base:17.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f4bcafeb375c9eb538b5c5b718c151dd\jetified-play-services-base-17.0.0\AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\6c64363856c5f5563dd3f1c7e6df6b8b\jetified-play-services-tasks-17.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\1c55626b1ecfe6121de372b28de8ad92\jetified-firebase-measurement-connector-18.0.0\AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\b7b80f017356a65254757b40cc695e83\jetified-play-services-measurement-sdk-api-17.2.1\AndroidManifest.xml:17:1-27:12
+MERGED from [com.google.android.gms:play-services-measurement-base:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\cf78f046d99ee30bb5b5b914793c66bb\jetified-play-services-measurement-base-17.2.1\AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\c91caf737c9d2dc94b2f8aee55f9186c\jetified-play-services-ads-identifier-17.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\821329fc3dc7a82759669629365297a3\jetified-play-services-basement-17.0.0\AndroidManifest.xml:17:1-28:12
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\46c9e2a38b7cbb7ee4f21c9a18ed2836\jetified-viewpager2-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a4330e3c8fc931ab89dedf0bd62ad5ff\recyclerview-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.github.VictorAlbertos:RxActivityResult:0.4.5-2.x] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\686b5ce3d6eb559b051f27120882c548\jetified-RxActivityResult-0.4.5-2.x\AndroidManifest.xml:2:1-18:12
+MERGED from [com.github.tbruyelle:rxpermissions:0.10.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\3d1262d361f6b5503f65ba0563bf87bd\jetified-rxpermissions-0.10.2\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.fragment:fragment:1.2.5] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\291a6c02a7aa455ad70aaeed62fdd662\fragment-1.2.5\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\66e13c4e46ff33e07147b6084e94c223\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f8764e04382857834e28a907133c50b9\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\7c0005362951ab190df672c66e8781fb\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\036dbafd9ff2a2c5895130b8f64fc835\coordinatorlayout-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.customview:customview:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f2e2a16487ccd4beb83d57e3539258a4\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\771f9efdcd27e5d07b891c1908e32306\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\87d87da9ca39cc0cd25079741747bae2\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\cd9489364c2db6b6653ee391a07ec38c\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.browser:browser:1.2.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\e2424ffeabdd59305e7424b3aa12e968\browser-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.transition:transition:1.2.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\db73f2b080a32b61cfb4a24fcacb5ef5\transition-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.activity:activity:1.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\630322024cca616eb970a771c41de516\jetified-activity-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.core:core:1.6.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\e6c3ff4530a4a21acac22781d35858b5\core-1.6.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f096fc35f12dcb8ea90816dcbd8ed6f5\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:17:1-30:12
+MERGED from [androidx.lifecycle:lifecycle-service:2.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\71e0fe174b462bf02780ef07ac5743aa\jetified-lifecycle-service-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\37904b6e3a4ed597be859a9f1b0f1653\lifecycle-runtime-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\41dbcb7a6a1b49c9e8f26a35f3570046\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\3a014ef8068e93241ba3ba41f28ded19\lifecycle-livedata-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\ee546668e245f731ab55a56e7eef2ccd\jetified-lifecycle-viewmodel-savedstate-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\ca667c22ef6bbffe94159b5a7adfd459\lifecycle-livedata-core-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.arch.core:core-runtime:2.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\58bd34b90cf3a6acb6b67409e2286092\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\9c016d4a31bdc1c5c4d685e9916908e5\jetified-savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.sqlite:sqlite-framework:2.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\2d4e9f0274e4df850d5e5822674fa698\sqlite-framework-2.0.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite:2.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\24ea7fa7fb027ba454d228182bb3c47f\sqlite-2.0.1\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\315db5c14c6e4141ecd4116ebba1e485\exifinterface-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.10.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\4b467dfe7ae2965fc2a90059c950eb7c\jetified-gifdecoder-4.10.0\AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.firebase:firebase-components:16.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\077cf14f352b74bc419410cf3bbef2d4\jetified-firebase-components-16.0.0\AndroidManifest.xml:15:1-23:12
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\d4f5333032268a6dc892cc1bb0a0f019\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:15:1-38:12
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.4] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f0f0dd3fec26aab3078b4ee9f7e9686d\jetified-transport-runtime-2.2.4\AndroidManifest.xml:15:1-41:12
+MERGED from [com.google.android.datatransport:transport-api:2.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\3fd0081c58ed5cdc15e4f5fd9f2d3dd0\jetified-transport-api-2.2.1\AndroidManifest.xml:15:1-22:12
+MERGED from [com.google.firebase:firebase-encoders-json:16.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\1ac4fcaccf32add5aa1f0251b1a96e92\jetified-firebase-encoders-json-16.1.0\AndroidManifest.xml:15:1-23:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\1480f3f960693b13db2ebd9433941b12\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\574b9454e6931e2f2bcd6d06f8526376\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\c6b277164205175d5b7f775d99aa0e51\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\36431aaf7781e9bf5ec14fedabe17d33\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\e0dc6054f789b1715cededa9218dbc41\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\887d6017a0d3131e2b655cada83e7ad6\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\1988eb3a1daab45e2733920ef4369dcd\lifecycle-viewmodel-2.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [io.michaelrocks:libphonenumber-android:8.10.14] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\18475e00ac0f5c63cfa2aae362245206\jetified-libphonenumber-android-8.10.14\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\5bff0bcc2d02f44f55b28b4867f1691a\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [com.squareup.android:truststore:1.7.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\143ceedc0ac6ee5e58ca4686e23a3e20\jetified-truststore-1.7.0\AndroidManifest.xml:2:1-9:12
+MERGED from [com.squareup.android:socket-factory:1.7.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\fb6689ef20f0264145816c51f1be9135\jetified-socket-factory-1.7.0\AndroidManifest.xml:2:1-9:12
+INJECTED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:2:1-211:12
+INJECTED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:2:1-211:12
+INJECTED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:2:1-211:12
+	package
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:4:5-24
+		INJECTED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:2:1-211:12
+		INJECTED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:3:5-51
+	android:versionCode
+		INJECTED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:2:1-211:12
+		INJECTED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:6:5-67
+MERGED from [com.squareup.sdk.in-app-payments:in-app-payments:1.4.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\d4ab9fd41643a7883787f221d09a5dcc\jetified-in-app-payments-1.4.0\AndroidManifest.xml:10:5-67
+MERGED from [com.squareup.sdk.in-app-payments:in-app-payments:1.4.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\d4ab9fd41643a7883787f221d09a5dcc\jetified-in-app-payments-1.4.0\AndroidManifest.xml:10:5-67
+MERGED from [com.github.miguelbcr:RxPaparazzo:0.6.1-2.x] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\8a85a8b473f5fb5f030bddc3b3614eb6\jetified-RxPaparazzo-0.6.1-2.x\AndroidManifest.xml:13:5-67
+MERGED from [com.github.miguelbcr:RxPaparazzo:0.6.1-2.x] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\8a85a8b473f5fb5f030bddc3b3614eb6\jetified-RxPaparazzo-0.6.1-2.x\AndroidManifest.xml:13:5-67
+MERGED from [com.amplifyframework:core:1.1.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a7aa93576ef09cef27765cb2c2ed3567\jetified-core-1.1.2\AndroidManifest.xml:25:5-67
+MERGED from [com.amplifyframework:core:1.1.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a7aa93576ef09cef27765cb2c2ed3567\jetified-core-1.1.2\AndroidManifest.xml:25:5-67
+MERGED from [com.google.firebase:firebase-crashlytics:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\cd305015f91c1871f4d8cb469b75f636\jetified-firebase-crashlytics-17.2.1\AndroidManifest.xml:10:5-67
+MERGED from [com.google.firebase:firebase-crashlytics:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\cd305015f91c1871f4d8cb469b75f636\jetified-firebase-crashlytics-17.2.1\AndroidManifest.xml:10:5-67
+MERGED from [com.itkacher.okhttpprofiler:okhttpprofiler:1.0.7] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\1dc4d97045ec296937741ee408d7ea9d\jetified-okhttpprofiler-1.0.7\AndroidManifest.xml:11:5-67
+MERGED from [com.itkacher.okhttpprofiler:okhttpprofiler:1.0.7] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\1dc4d97045ec296937741ee408d7ea9d\jetified-okhttpprofiler-1.0.7\AndroidManifest.xml:11:5-67
+MERGED from [com.amazonaws:aws-android-sdk-mobile-client:2.17.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\b1494c2213eafa85197a832ab43b8d87\jetified-aws-android-sdk-mobile-client-2.17.1\AndroidManifest.xml:18:5-67
+MERGED from [com.amazonaws:aws-android-sdk-mobile-client:2.17.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\b1494c2213eafa85197a832ab43b8d87\jetified-aws-android-sdk-mobile-client-2.17.1\AndroidManifest.xml:18:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\185ce515d4399f4429a64fea82cea46c\jetified-play-services-measurement-api-17.2.1\AndroidManifest.xml:22:5-67
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\185ce515d4399f4429a64fea82cea46c\jetified-play-services-measurement-api-17.2.1\AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-iid:20.0.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\47faad9f4b1e38182205f8435278da11\jetified-firebase-iid-20.0.2\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:20.0.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\47faad9f4b1e38182205f8435278da11\jetified-firebase-iid-20.0.2\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a88c6c5fdd9ac6e6bcec3436bebe2ac1\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a88c6c5fdd9ac6e6bcec3436bebe2ac1\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\61c2f893561e22a877f49eebfd079189\jetified-play-services-measurement-impl-17.2.1\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\61c2f893561e22a877f49eebfd079189\jetified-play-services-measurement-impl-17.2.1\AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-installations:16.3.3] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\6bed7ebe779270d974dbb05a5a3d2b0d\jetified-firebase-installations-16.3.3\AndroidManifest.xml:11:5-67
+MERGED from [com.google.firebase:firebase-installations:16.3.3] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\6bed7ebe779270d974dbb05a5a3d2b0d\jetified-firebase-installations-16.3.3\AndroidManifest.xml:11:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\b7b80f017356a65254757b40cc695e83\jetified-play-services-measurement-sdk-api-17.2.1\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\b7b80f017356a65254757b40cc695e83\jetified-play-services-measurement-sdk-api-17.2.1\AndroidManifest.xml:23:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\d4f5333032268a6dc892cc1bb0a0f019\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:26:5-67
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\d4f5333032268a6dc892cc1bb0a0f019\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:26:5-67
+	android:name
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:6:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:7:5-79
+MERGED from [com.squareup.sdk.in-app-payments:in-app-payments:1.4.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\d4ab9fd41643a7883787f221d09a5dcc\jetified-in-app-payments-1.4.0\AndroidManifest.xml:9:5-79
+MERGED from [com.squareup.sdk.in-app-payments:in-app-payments:1.4.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\d4ab9fd41643a7883787f221d09a5dcc\jetified-in-app-payments-1.4.0\AndroidManifest.xml:9:5-79
+MERGED from [com.amazonaws:aws-android-sdk-s3:2.17.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\65ab542c3711e67d4a969c16e3ec0756\jetified-aws-android-sdk-s3-2.17.1\AndroidManifest.xml:11:5-79
+MERGED from [com.amazonaws:aws-android-sdk-s3:2.17.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\65ab542c3711e67d4a969c16e3ec0756\jetified-aws-android-sdk-s3-2.17.1\AndroidManifest.xml:11:5-79
+MERGED from [com.amazonaws:aws-android-sdk-mobile-client:2.17.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\b1494c2213eafa85197a832ab43b8d87\jetified-aws-android-sdk-mobile-client-2.17.1\AndroidManifest.xml:19:5-79
+MERGED from [com.amazonaws:aws-android-sdk-mobile-client:2.17.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\b1494c2213eafa85197a832ab43b8d87\jetified-aws-android-sdk-mobile-client-2.17.1\AndroidManifest.xml:19:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\185ce515d4399f4429a64fea82cea46c\jetified-play-services-measurement-api-17.2.1\AndroidManifest.xml:23:5-79
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\185ce515d4399f4429a64fea82cea46c\jetified-play-services-measurement-api-17.2.1\AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-iid:20.0.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\47faad9f4b1e38182205f8435278da11\jetified-firebase-iid-20.0.2\AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:20.0.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\47faad9f4b1e38182205f8435278da11\jetified-firebase-iid-20.0.2\AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.gms:play-services-measurement:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a88c6c5fdd9ac6e6bcec3436bebe2ac1\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a88c6c5fdd9ac6e6bcec3436bebe2ac1\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\61c2f893561e22a877f49eebfd079189\jetified-play-services-measurement-impl-17.2.1\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\61c2f893561e22a877f49eebfd079189\jetified-play-services-measurement-impl-17.2.1\AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-installations:16.3.3] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\6bed7ebe779270d974dbb05a5a3d2b0d\jetified-firebase-installations-16.3.3\AndroidManifest.xml:10:5-79
+MERGED from [com.google.firebase:firebase-installations:16.3.3] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\6bed7ebe779270d974dbb05a5a3d2b0d\jetified-firebase-installations-16.3.3\AndroidManifest.xml:10:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\b7b80f017356a65254757b40cc695e83\jetified-play-services-measurement-sdk-api-17.2.1\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\b7b80f017356a65254757b40cc695e83\jetified-play-services-measurement-sdk-api-17.2.1\AndroidManifest.xml:24:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\d4f5333032268a6dc892cc1bb0a0f019\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\d4f5333032268a6dc892cc1bb0a0f019\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:25:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.4] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f0f0dd3fec26aab3078b4ee9f7e9686d\jetified-transport-runtime-2.2.4\AndroidManifest.xml:22:5-79
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.4] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f0f0dd3fec26aab3078b4ee9f7e9686d\jetified-transport-runtime-2.2.4\AndroidManifest.xml:22:5-79
+	android:name
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:7:22-76
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:8:5-80
+MERGED from [com.github.miguelbcr:RxPaparazzo:0.6.1-2.x] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\8a85a8b473f5fb5f030bddc3b3614eb6\jetified-RxPaparazzo-0.6.1-2.x\AndroidManifest.xml:11:5-80
+MERGED from [com.github.miguelbcr:RxPaparazzo:0.6.1-2.x] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\8a85a8b473f5fb5f030bddc3b3614eb6\jetified-RxPaparazzo-0.6.1-2.x\AndroidManifest.xml:11:5-80
+	android:name
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:8:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:9:5-81
+MERGED from [com.amplifyframework:aws-storage-s3:1.1.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\9c22076d7384b9c3df017af75dd99d89\jetified-aws-storage-s3-1.1.2\AndroidManifest.xml:25:5-81
+MERGED from [com.amplifyframework:aws-storage-s3:1.1.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\9c22076d7384b9c3df017af75dd99d89\jetified-aws-storage-s3-1.1.2\AndroidManifest.xml:25:5-81
+MERGED from [com.github.miguelbcr:RxPaparazzo:0.6.1-2.x] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\8a85a8b473f5fb5f030bddc3b3614eb6\jetified-RxPaparazzo-0.6.1-2.x\AndroidManifest.xml:12:5-81
+MERGED from [com.github.miguelbcr:RxPaparazzo:0.6.1-2.x] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\8a85a8b473f5fb5f030bddc3b3614eb6\jetified-RxPaparazzo-0.6.1-2.x\AndroidManifest.xml:12:5-81
+	android:name
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:9:22-78
+uses-permission#android.permission.CAMERA
+ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:10:5-65
+	android:name
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:10:22-62
+uses-feature#android.hardware.camera.any
+ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:12:5-14:36
+	android:required
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:14:9-33
+	android:name
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:13:9-51
+uses-feature#android.hardware.camera.autofocus
+ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:15:5-17:36
+	android:required
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:17:9-33
+	android:name
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:16:9-57
+application
+ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:19:5-209:19
+MERGED from [com.stripe:stripe-android:16.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\10f75e484cf5071c5368cdbd4e57d4fc\jetified-stripe-android-16.0.1\AndroidManifest.xml:11:5-34:19
+MERGED from [com.stripe:stripe-android:16.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\10f75e484cf5071c5368cdbd4e57d4fc\jetified-stripe-android-16.0.1\AndroidManifest.xml:11:5-34:19
+MERGED from [com.squareup.sdk.in-app-payments:card-entry:1.4.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\d0574490c239a26bbbe5ca4cc9fe539b\jetified-card-entry-1.4.0\AndroidManifest.xml:9:5-15:19
+MERGED from [com.squareup.sdk.in-app-payments:card-entry:1.4.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\d0574490c239a26bbbe5ca4cc9fe539b\jetified-card-entry-1.4.0\AndroidManifest.xml:9:5-15:19
+MERGED from [com.stripe:stripe-3ds2-android:4.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\b32bc685bf2195e8a0acbecc29ebdb36\jetified-stripe-3ds2-android-4.1.0\AndroidManifest.xml:11:5-18:19
+MERGED from [com.stripe:stripe-3ds2-android:4.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\b32bc685bf2195e8a0acbecc29ebdb36\jetified-stripe-3ds2-android-4.1.0\AndroidManifest.xml:11:5-18:19
+MERGED from [com.amplifyframework:aws-storage-s3:1.1.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\9c22076d7384b9c3df017af75dd99d89\jetified-aws-storage-s3-1.1.2\AndroidManifest.xml:27:5-31:19
+MERGED from [com.amplifyframework:aws-storage-s3:1.1.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\9c22076d7384b9c3df017af75dd99d89\jetified-aws-storage-s3-1.1.2\AndroidManifest.xml:27:5-31:19
+MERGED from [com.tbuonomo.andrui:viewpagerdotsindicator:3.0.3] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\810a29acc55d342cb4ed9fbc81dc7a4f\jetified-viewpagerdotsindicator-3.0.3\AndroidManifest.xml:11:5-20
+MERGED from [com.tbuonomo.andrui:viewpagerdotsindicator:3.0.3] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\810a29acc55d342cb4ed9fbc81dc7a4f\jetified-viewpagerdotsindicator-3.0.3\AndroidManifest.xml:11:5-20
+MERGED from [com.hbb20:ccp:2.3.5] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\219a188d8625122220ef050478df47b8\jetified-ccp-2.3.5\AndroidManifest.xml:11:5-14:19
+MERGED from [com.hbb20:ccp:2.3.5] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\219a188d8625122220ef050478df47b8\jetified-ccp-2.3.5\AndroidManifest.xml:11:5-14:19
+MERGED from [com.github.miguelbcr:RxPaparazzo:0.6.1-2.x] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\8a85a8b473f5fb5f030bddc3b3614eb6\jetified-RxPaparazzo-0.6.1-2.x\AndroidManifest.xml:15:5-21:19
+MERGED from [com.github.miguelbcr:RxPaparazzo:0.6.1-2.x] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\8a85a8b473f5fb5f030bddc3b3614eb6\jetified-RxPaparazzo-0.6.1-2.x\AndroidManifest.xml:15:5-21:19
+MERGED from [com.futuremind.recyclerfastscroll:fastscroll:0.2.5] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\ab053c3021706b487ef172fa652f6c09\jetified-fastscroll-0.2.5\AndroidManifest.xml:11:5-20
+MERGED from [com.futuremind.recyclerfastscroll:fastscroll:0.2.5] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\ab053c3021706b487ef172fa652f6c09\jetified-fastscroll-0.2.5\AndroidManifest.xml:11:5-20
+MERGED from [com.google.android.material:material:1.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\843065f883b4aab3155847b227b91918\material-1.2.1\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\843065f883b4aab3155847b227b91918\material-1.2.1\AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\b6ad5dcf2c011e93d68e65f843169671\constraintlayout-2.0.1\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\b6ad5dcf2c011e93d68e65f843169671\constraintlayout-2.0.1\AndroidManifest.xml:9:5-20
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a9d6fb741b003ba2b19050e53fbe4f1b\lifecycle-extensions-2.1.0\AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a9d6fb741b003ba2b19050e53fbe4f1b\lifecycle-extensions-2.1.0\AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.room:room-runtime:2.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\3b8661e80ac00fa02651ff2d590a2c41\room-runtime-2.1.0\AndroidManifest.xml:24:5-28:19
+MERGED from [androidx.room:room-runtime:2.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\3b8661e80ac00fa02651ff2d590a2c41\room-runtime-2.1.0\AndroidManifest.xml:24:5-28:19
+MERGED from [com.chauthai.swipereveallayout:swipe-reveal-layout:1.4.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\d61b3d5e7004d0bfd7a00cd0132cfd2b\jetified-swipe-reveal-layout-1.4.1\AndroidManifest.xml:12:5-20
+MERGED from [com.chauthai.swipereveallayout:swipe-reveal-layout:1.4.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\d61b3d5e7004d0bfd7a00cd0132cfd2b\jetified-swipe-reveal-layout-1.4.1\AndroidManifest.xml:12:5-20
+MERGED from [com.squareup.sdk.in-app-payments:nonce-api:1.4.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\18aa88d8747583c54f4d113f480581b2\jetified-nonce-api-1.4.0\AndroidManifest.xml:9:5-14:19
+MERGED from [com.squareup.sdk.in-app-payments:nonce-api:1.4.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\18aa88d8747583c54f4d113f480581b2\jetified-nonce-api-1.4.0\AndroidManifest.xml:9:5-14:19
+MERGED from [com.google.firebase:firebase-crashlytics:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\cd305015f91c1871f4d8cb469b75f636\jetified-firebase-crashlytics-17.2.1\AndroidManifest.xml:12:5-20:19
+MERGED from [com.google.firebase:firebase-crashlytics:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\cd305015f91c1871f4d8cb469b75f636\jetified-firebase-crashlytics-17.2.1\AndroidManifest.xml:12:5-20:19
+MERGED from [com.github.bumptech.glide:glide:4.10.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\fd7714c1bb02aa68c45b7f7f8503a452\jetified-glide-4.10.0\AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.10.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\fd7714c1bb02aa68c45b7f7f8503a452\jetified-glide-4.10.0\AndroidManifest.xml:10:5-20
+MERGED from [com.google.firebase:firebase-messaging:20.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\9c2e5193f157eba746a44a86e45e9b46\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:22:5-42:19
+MERGED from [com.google.firebase:firebase-messaging:20.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\9c2e5193f157eba746a44a86e45e9b46\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:22:5-42:19
+MERGED from [com.amazonaws:aws-android-sdk-core:2.17.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a9e05bf129798151776e908fae6c0401\jetified-aws-android-sdk-core-2.17.1\AndroidManifest.xml:11:5-15:19
+MERGED from [com.amazonaws:aws-android-sdk-core:2.17.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a9e05bf129798151776e908fae6c0401\jetified-aws-android-sdk-core-2.17.1\AndroidManifest.xml:11:5-15:19
+MERGED from [com.google.firebase:firebase-core:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\7e5e9f07173a6743796e915b9d7d5b71\jetified-firebase-core-17.2.1\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-core:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\7e5e9f07173a6743796e915b9d7d5b71\jetified-firebase-core-17.2.1\AndroidManifest.xml:7:5-20
+MERGED from [com.android.billingclient:billing:3.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\1763c0724b87ccc5cadc1fa229265983\jetified-billing-3.0.0\AndroidManifest.xml:12:5-21:19
+MERGED from [com.android.billingclient:billing:3.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\1763c0724b87ccc5cadc1fa229265983\jetified-billing-3.0.0\AndroidManifest.xml:12:5-21:19
+MERGED from [com.google.firebase:firebase-analytics:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\dd7c180941d170d2586c7e7ad95ccdcb\jetified-firebase-analytics-17.2.1\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-analytics:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\dd7c180941d170d2586c7e7ad95ccdcb\jetified-firebase-analytics-17.2.1\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\185ce515d4399f4429a64fea82cea46c\jetified-play-services-measurement-api-17.2.1\AndroidManifest.xml:26:5-34:19
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\185ce515d4399f4429a64fea82cea46c\jetified-play-services-measurement-api-17.2.1\AndroidManifest.xml:26:5-34:19
+MERGED from [com.google.firebase:firebase-iid:20.0.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\47faad9f4b1e38182205f8435278da11\jetified-firebase-iid-20.0.2\AndroidManifest.xml:28:5-45:19
+MERGED from [com.google.firebase:firebase-iid:20.0.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\47faad9f4b1e38182205f8435278da11\jetified-firebase-iid-20.0.2\AndroidManifest.xml:28:5-45:19
+MERGED from [com.google.android.gms:play-services-measurement:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a88c6c5fdd9ac6e6bcec3436bebe2ac1\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:28:5-53:19
+MERGED from [com.google.android.gms:play-services-measurement:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a88c6c5fdd9ac6e6bcec3436bebe2ac1\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:28:5-53:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\9259eb14d7fac7e2e92585879563bed7\jetified-play-services-measurement-sdk-17.2.1\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-sdk:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\9259eb14d7fac7e2e92585879563bed7\jetified-play-services-measurement-sdk-17.2.1\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\61c2f893561e22a877f49eebfd079189\jetified-play-services-measurement-impl-17.2.1\AndroidManifest.xml:28:5-38:19
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\61c2f893561e22a877f49eebfd079189\jetified-play-services-measurement-impl-17.2.1\AndroidManifest.xml:28:5-38:19
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\ef55f09b1c825e5dfdde6b85df086f4d\jetified-play-services-stats-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\ef55f09b1c825e5dfdde6b85df086f4d\jetified-play-services-stats-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-datatransport:17.0.3] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\7f976b827edf218a7633b3332c1d72a9\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:24:5-32:19
+MERGED from [com.google.firebase:firebase-datatransport:17.0.3] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\7f976b827edf218a7633b3332c1d72a9\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:24:5-32:19
+MERGED from [com.google.firebase:firebase-installations:16.3.3] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\6bed7ebe779270d974dbb05a5a3d2b0d\jetified-firebase-installations-16.3.3\AndroidManifest.xml:13:5-21:19
+MERGED from [com.google.firebase:firebase-installations:16.3.3] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\6bed7ebe779270d974dbb05a5a3d2b0d\jetified-firebase-installations-16.3.3\AndroidManifest.xml:13:5-21:19
+MERGED from [com.google.firebase:firebase-common:19.3.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\402777615872cf18c011a1d56bb6182c\jetified-firebase-common-19.3.1\AndroidManifest.xml:25:5-38:19
+MERGED from [com.google.firebase:firebase-common:19.3.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\402777615872cf18c011a1d56bb6182c\jetified-firebase-common-19.3.1\AndroidManifest.xml:25:5-38:19
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\c4475655972e825236de87e7d26f85e2\jetified-firebase-iid-interop-17.0.0\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\c4475655972e825236de87e7d26f85e2\jetified-firebase-iid-interop-17.0.0\AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-base:17.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f4bcafeb375c9eb538b5c5b718c151dd\jetified-play-services-base-17.0.0\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:17.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f4bcafeb375c9eb538b5c5b718c151dd\jetified-play-services-base-17.0.0\AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\6c64363856c5f5563dd3f1c7e6df6b8b\jetified-play-services-tasks-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\6c64363856c5f5563dd3f1c7e6df6b8b\jetified-play-services-tasks-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\1c55626b1ecfe6121de372b28de8ad92\jetified-firebase-measurement-connector-18.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\1c55626b1ecfe6121de372b28de8ad92\jetified-firebase-measurement-connector-18.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-base:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\cf78f046d99ee30bb5b5b914793c66bb\jetified-play-services-measurement-base-17.2.1\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\cf78f046d99ee30bb5b5b914793c66bb\jetified-play-services-measurement-base-17.2.1\AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\c91caf737c9d2dc94b2f8aee55f9186c\jetified-play-services-ads-identifier-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\c91caf737c9d2dc94b2f8aee55f9186c\jetified-play-services-ads-identifier-17.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\821329fc3dc7a82759669629365297a3\jetified-play-services-basement-17.0.0\AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\821329fc3dc7a82759669629365297a3\jetified-play-services-basement-17.0.0\AndroidManifest.xml:22:5-26:19
+MERGED from [com.github.VictorAlbertos:RxActivityResult:0.4.5-2.x] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\686b5ce3d6eb559b051f27120882c548\jetified-RxActivityResult-0.4.5-2.x\AndroidManifest.xml:11:5-16:19
+MERGED from [com.github.VictorAlbertos:RxActivityResult:0.4.5-2.x] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\686b5ce3d6eb559b051f27120882c548\jetified-RxActivityResult-0.4.5-2.x\AndroidManifest.xml:11:5-16:19
+MERGED from [com.github.tbruyelle:rxpermissions:0.10.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\3d1262d361f6b5503f65ba0563bf87bd\jetified-rxpermissions-0.10.2\AndroidManifest.xml:9:5-20
+MERGED from [com.github.tbruyelle:rxpermissions:0.10.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\3d1262d361f6b5503f65ba0563bf87bd\jetified-rxpermissions-0.10.2\AndroidManifest.xml:9:5-20
+MERGED from [androidx.core:core:1.6.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\e6c3ff4530a4a21acac22781d35858b5\core-1.6.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.6.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\e6c3ff4530a4a21acac22781d35858b5\core-1.6.0\AndroidManifest.xml:24:5-89
+MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f096fc35f12dcb8ea90816dcbd8ed6f5\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:22:5-28:19
+MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f096fc35f12dcb8ea90816dcbd8ed6f5\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:22:5-28:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\41dbcb7a6a1b49c9e8f26a35f3570046\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\41dbcb7a6a1b49c9e8f26a35f3570046\versionedparcelable-1.1.1\AndroidManifest.xml:24:5-25:19
+MERGED from [com.github.bumptech.glide:gifdecoder:4.10.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\4b467dfe7ae2965fc2a90059c950eb7c\jetified-gifdecoder-4.10.0\AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.10.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\4b467dfe7ae2965fc2a90059c950eb7c\jetified-gifdecoder-4.10.0\AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\d4f5333032268a6dc892cc1bb0a0f019\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\d4f5333032268a6dc892cc1bb0a0f019\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:28:5-36:19
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.4] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f0f0dd3fec26aab3078b4ee9f7e9686d\jetified-transport-runtime-2.2.4\AndroidManifest.xml:25:5-39:19
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.4] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f0f0dd3fec26aab3078b4ee9f7e9686d\jetified-transport-runtime-2.2.4\AndroidManifest.xml:25:5-39:19
+MERGED from [com.squareup.android:truststore:1.7.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\143ceedc0ac6ee5e58ca4686e23a3e20\jetified-truststore-1.7.0\AndroidManifest.xml:7:5-20
+MERGED from [com.squareup.android:truststore:1.7.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\143ceedc0ac6ee5e58ca4686e23a3e20\jetified-truststore-1.7.0\AndroidManifest.xml:7:5-20
+MERGED from [com.squareup.android:socket-factory:1.7.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\fb6689ef20f0264145816c51f1be9135\jetified-socket-factory-1.7.0\AndroidManifest.xml:7:5-20
+MERGED from [com.squareup.android:socket-factory:1.7.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\fb6689ef20f0264145816c51f1be9135\jetified-socket-factory-1.7.0\AndroidManifest.xml:7:5-20
+	android:requestLegacyExternalStorage
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:25:9-52
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.6.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\e6c3ff4530a4a21acac22781d35858b5\core-1.6.0\AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:27:9-35
+	android:label
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:23:9-41
+	tools:ignore
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:29:9-39
+	android:roundIcon
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:26:9-51
+	android:icon
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:22:9-40
+	android:allowBackup
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:21:9-36
+	android:theme
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:28:9-40
+	android:networkSecurityConfig
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:24:9-69
+	android:name
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:20:9-39
+activity#com.usend.views.ConciergeForGuestActivity
+ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:30:9-78
+	android:name
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:30:19-66
+activity#com.usend.views.home.SelectSavedCardActivity
+ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:31:9-72
+	android:name
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:31:19-69
+activity#com.usend.views.home.AutoShipMethodsActivity
+ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:32:9-72
+	android:name
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:32:19-69
+activity#com.usend.views.home.AutoShipActivity
+ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:33:9-65
+	android:name
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:33:19-62
+activity#com.usend.views.home.ShippingCostActivity
+ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:34:9-37:55
+	android:screenOrientation
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:36:13-45
+	android:windowSoftInputMode
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:37:13-52
+	android:name
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:35:13-60
+activity#com.usend.views.userauth.OtpVerificationActivity
+ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:38:9-41:55
+	android:screenOrientation
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:40:13-45
+	android:windowSoftInputMode
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:41:13-52
+	android:name
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:39:13-67
+activity#com.usend.views.home.ChangePasswordActivity
+ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:42:9-45:55
+	android:screenOrientation
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:44:13-45
+	android:windowSoftInputMode
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:45:13-52
+	android:name
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:43:13-62
+activity#com.usend.views.home.NotificationActivity
+ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:46:9-49:55
+	android:screenOrientation
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:48:13-45
+	android:windowSoftInputMode
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:49:13-52
+	android:name
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:47:13-60
+activity#com.usend.views.home.WebViewActivity
+ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:50:9-53:55
+	android:screenOrientation
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:52:13-45
+	android:windowSoftInputMode
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:53:13-52
+	android:name
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:51:13-55
+activity#com.usend.views.home.SavedCardsActivity
+ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:54:9-57:55
+	android:screenOrientation
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:56:13-45
+	android:windowSoftInputMode
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:57:13-52
+	android:name
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:55:13-58
+activity#com.usend.views.home.ShippingAddressActivity
+ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:58:9-61:55
+	android:screenOrientation
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:60:13-45
+	android:windowSoftInputMode
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:61:13-52
+	android:name
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:59:13-63
+activity#com.usend.views.home.VerificationStatusActivity
+ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:62:9-65:55
+	android:screenOrientation
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:64:13-45
+	android:windowSoftInputMode
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:65:13-52
+	android:name
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:63:13-66
+activity#com.usend.views.home.USPSVerificationActivity
+ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:66:9-69:55
+	android:screenOrientation
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:68:13-45
+	android:windowSoftInputMode
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:69:13-52
+	android:name
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:67:13-64
+activity#com.usend.views.home.ProhibitedItemsActivity
+ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:70:9-73:55
+	android:screenOrientation
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:72:13-45
+	android:windowSoftInputMode
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:73:13-52
+	android:name
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:71:13-63
+activity#com.usend.views.home.ContactUsActivity
+ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:74:9-77:55
+	android:screenOrientation
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:76:13-45
+	android:windowSoftInputMode
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:77:13-52
+	android:name
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:75:13-57
+activity#com.usend.views.home.EditProfileActivity
+ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:78:9-81:55
+	android:screenOrientation
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:80:13-45
+	android:windowSoftInputMode
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:81:13-52
+	android:name
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:79:13-59
+activity#com.usend.views.home.CreateNewReqActivity
+ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:82:9-85:55
+	android:screenOrientation
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:84:13-45
+	android:windowSoftInputMode
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:85:13-52
+	android:name
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:83:13-60
+activity#com.usend.views.home.ConciergeItemDetailActivity
+ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:86:9-89:55
+	android:screenOrientation
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:88:13-45
+	android:windowSoftInputMode
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:89:13-52
+	android:name
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:87:13-67
+activity#com.usend.views.home.OrderDetailsActivity
+ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:90:9-93:55
+	android:screenOrientation
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:92:13-45
+	android:windowSoftInputMode
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:93:13-52
+	android:name
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:91:13-60
+activity#com.usend.views.home.PaymentSuccessfulActivity
+ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:94:9-97:55
+	android:screenOrientation
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:96:13-45
+	android:windowSoftInputMode
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:97:13-52
+	android:name
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:95:13-65
+activity#com.usend.views.home.SavedPaymentMethodsActivity
+ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:98:9-101:55
+	android:screenOrientation
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:100:13-45
+	android:windowSoftInputMode
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:101:13-52
+	android:name
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:99:13-67
+activity#com.usend.views.home.AddCardActivity
+ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:102:9-105:55
+	android:screenOrientation
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:104:13-45
+	android:windowSoftInputMode
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:105:13-52
+	android:name
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:103:13-55
+activity#com.usend.views.home.PaymentMethodActivity
+ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:106:9-109:55
+	android:screenOrientation
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:108:13-45
+	android:windowSoftInputMode
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:109:13-52
+	android:name
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:107:13-61
+activity#com.usend.views.home.ShippingDetailsActivity
+ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:110:9-113:55
+	android:screenOrientation
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:112:13-45
+	android:windowSoftInputMode
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:113:13-52
+	android:name
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:111:13-63
+activity#com.usend.views.home.ShippingMethodActivity
+ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:114:9-117:55
+	android:screenOrientation
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:116:13-45
+	android:windowSoftInputMode
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:117:13-52
+	android:name
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:115:13-62
+activity#com.usend.views.home.AddNewAddressActivity
+ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:118:9-121:55
+	android:screenOrientation
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:120:13-45
+	android:windowSoftInputMode
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:121:13-52
+	android:name
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:119:13-61
+activity#com.usend.views.home.ShipToAddressActivity
+ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:122:9-125:55
+	android:screenOrientation
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:124:13-45
+	android:windowSoftInputMode
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:125:13-52
+	android:name
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:123:13-61
+activity#com.usend.views.home.PackageDetailActivity
+ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:126:9-129:55
+	android:screenOrientation
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:128:13-45
+	android:windowSoftInputMode
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:129:13-52
+	android:name
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:127:13-61
+activity#com.usend.views.userauth.ForgotPasswordActivity
+ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:130:9-133:55
+	android:screenOrientation
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:132:13-45
+	android:windowSoftInputMode
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:133:13-52
+	android:name
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:131:13-66
+activity#com.usend.views.userauth.RegionSelectionActivity
+ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:134:9-137:55
+	android:screenOrientation
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:136:13-45
+	android:windowSoftInputMode
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:137:13-52
+	android:name
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:135:13-67
+activity#com.usend.views.userauth.PaymentInfoActivity
+ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:138:9-141:55
+	android:screenOrientation
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:140:13-45
+	android:windowSoftInputMode
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:141:13-52
+	android:name
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:139:13-63
+activity#com.usend.views.userauth.BillingAddressActivity
+ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:142:9-145:55
+	android:screenOrientation
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:144:13-45
+	android:windowSoftInputMode
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:145:13-52
+	android:name
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:143:13-66
+activity#com.usend.views.userauth.SignUpActivity
+ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:146:9-149:58
+	android:screenOrientation
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:148:13-45
+	android:windowSoftInputMode
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:149:13-55
+	android:name
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:147:13-58
+activity#com.usend.views.userauth.SignInActivity
+ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:150:9-153:55
+	android:screenOrientation
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:152:13-45
+	android:windowSoftInputMode
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:153:13-52
+	android:name
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:151:13-58
+activity#com.usend.views.MainActivity
+ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:154:9-157:55
+	android:screenOrientation
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:156:13-45
+	android:windowSoftInputMode
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:157:13-52
+	android:name
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:155:13-47
+activity#com.usend.views.userauth.IntroActivity
+ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:158:9-161:55
+	android:screenOrientation
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:160:13-45
+	android:windowSoftInputMode
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:161:13-52
+	android:name
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:159:13-57
+activity#com.usend.views.SplashActivity
+ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:162:9-171:20
+	android:screenOrientation
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:164:13-45
+	android:windowSoftInputMode
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:165:13-60
+	android:name
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:163:13-49
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:166:13-170:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:167:17-69
+	android:name
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:167:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:169:17-77
+	android:name
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:169:27-74
+service#com.usend.fcm.MyFirebaseMessagingService
+ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:172:9-178:19
+	android:exported
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:174:13-37
+	android:name
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:173:13-59
+intent-filter#action:name:com.google.firebase.MESSAGING_EVENT
+ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:175:13-177:29
+action#com.google.firebase.MESSAGING_EVENT
+ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:176:17-78
+	android:name
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:176:25-75
+provider#androidx.core.content.FileProvider
+ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:180:9-188:20
+	android:grantUriPermissions
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:184:13-47
+	android:authorities
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:182:13-58
+	android:exported
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:183:13-37
+	android:name
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:181:13-62
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:185:13-187:63
+	android:resource
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:187:17-60
+	android:name
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:186:17-67
+meta-data#com.google.firebase.messaging.default_notification_icon
+ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:193:9-195:68
+	android:resource
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:195:13-65
+	android:name
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:194:13-83
+meta-data#com.google.android.gms.version
+ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:200:9-202:69
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\821329fc3dc7a82759669629365297a3\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\821329fc3dc7a82759669629365297a3\jetified-play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:202:13-66
+	android:name
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:201:13-58
+meta-data#com.google.firebase.messaging.default_notification_color
+ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:203:9-205:53
+	android:resource
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:205:13-50
+	android:name
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:204:13-84
+meta-data#sqip.SQUARE_APPLICATION_ID
+ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:206:9-208:69
+	android:value
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:208:13-66
+	android:name
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml:207:13-54
+uses-sdk
+INJECTED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml
+MERGED from [androidx.databinding:databinding-adapters:4.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\618f6df5f78c150607017d2ddb119c18\databinding-adapters-4.0.0\AndroidManifest.xml:22:5-44
+MERGED from [androidx.databinding:databinding-adapters:4.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\618f6df5f78c150607017d2ddb119c18\databinding-adapters-4.0.0\AndroidManifest.xml:22:5-44
+MERGED from [androidx.databinding:databinding-runtime:4.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\cc2deb72fd15ab008f503df69a1f9e4c\databinding-runtime-4.0.0\AndroidManifest.xml:22:5-44
+MERGED from [androidx.databinding:databinding-runtime:4.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\cc2deb72fd15ab008f503df69a1f9e4c\databinding-runtime-4.0.0\AndroidManifest.xml:22:5-44
+MERGED from [:network] C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\network\build\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-10:41
+MERGED from [:network] C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\network\build\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-10:41
+MERGED from [com.stripe:stripe-android:16.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\10f75e484cf5071c5368cdbd4e57d4fc\jetified-stripe-android-16.0.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.stripe:stripe-android:16.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\10f75e484cf5071c5368cdbd4e57d4fc\jetified-stripe-android-16.0.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.squareup.sdk.in-app-payments:card-entry:1.4.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\d0574490c239a26bbbe5ca4cc9fe539b\jetified-card-entry-1.4.0\AndroidManifest.xml:7:5-44
+MERGED from [com.squareup.sdk.in-app-payments:card-entry:1.4.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\d0574490c239a26bbbe5ca4cc9fe539b\jetified-card-entry-1.4.0\AndroidManifest.xml:7:5-44
+MERGED from [com.squareup.sdk.in-app-payments:in-app-payments:1.4.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\d4ab9fd41643a7883787f221d09a5dcc\jetified-in-app-payments-1.4.0\AndroidManifest.xml:7:5-44
+MERGED from [com.squareup.sdk.in-app-payments:in-app-payments:1.4.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\d4ab9fd41643a7883787f221d09a5dcc\jetified-in-app-payments-1.4.0\AndroidManifest.xml:7:5-44
+MERGED from [com.stripe:stripe-3ds2-android:4.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\b32bc685bf2195e8a0acbecc29ebdb36\jetified-stripe-3ds2-android-4.1.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.stripe:stripe-3ds2-android:4.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\b32bc685bf2195e8a0acbecc29ebdb36\jetified-stripe-3ds2-android-4.1.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.amplifyframework:aws-auth-cognito:1.1.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\c3f2c84cf5adcaafbb0bea62d5526fe2\jetified-aws-auth-cognito-1.1.2\AndroidManifest.xml:21:5-23:41
+MERGED from [com.amplifyframework:aws-auth-cognito:1.1.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\c3f2c84cf5adcaafbb0bea62d5526fe2\jetified-aws-auth-cognito-1.1.2\AndroidManifest.xml:21:5-23:41
+MERGED from [com.amplifyframework:aws-storage-s3:1.1.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\9c22076d7384b9c3df017af75dd99d89\jetified-aws-storage-s3-1.1.2\AndroidManifest.xml:21:5-23:41
+MERGED from [com.amplifyframework:aws-storage-s3:1.1.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\9c22076d7384b9c3df017af75dd99d89\jetified-aws-storage-s3-1.1.2\AndroidManifest.xml:21:5-23:41
+MERGED from [com.tbuonomo.andrui:viewpagerdotsindicator:3.0.3] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\810a29acc55d342cb4ed9fbc81dc7a4f\jetified-viewpagerdotsindicator-3.0.3\AndroidManifest.xml:7:5-9:41
+MERGED from [com.tbuonomo.andrui:viewpagerdotsindicator:3.0.3] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\810a29acc55d342cb4ed9fbc81dc7a4f\jetified-viewpagerdotsindicator-3.0.3\AndroidManifest.xml:7:5-9:41
+MERGED from [com.hbb20:ccp:2.3.5] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\219a188d8625122220ef050478df47b8\jetified-ccp-2.3.5\AndroidManifest.xml:7:5-9:41
+MERGED from [com.hbb20:ccp:2.3.5] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\219a188d8625122220ef050478df47b8\jetified-ccp-2.3.5\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.preference:preference-ktx:1.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\6bde79e6f89ce1a0b6493e0dba0e24f2\jetified-preference-ktx-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.preference:preference-ktx:1.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\6bde79e6f89ce1a0b6493e0dba0e24f2\jetified-preference-ktx-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.preference:preference:1.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\24b90158576005086bd153cc04994f7b\preference-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.preference:preference:1.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\24b90158576005086bd153cc04994f7b\preference-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.miguelbcr:RxPaparazzo:0.6.1-2.x] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\8a85a8b473f5fb5f030bddc3b3614eb6\jetified-RxPaparazzo-0.6.1-2.x\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.miguelbcr:RxPaparazzo:0.6.1-2.x] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\8a85a8b473f5fb5f030bddc3b3614eb6\jetified-RxPaparazzo-0.6.1-2.x\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.yalantis:ucrop:2.2.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\c91635d585302f68ce7281b71e6160cc\jetified-ucrop-2.2.2\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.yalantis:ucrop:2.2.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\c91635d585302f68ce7281b71e6160cc\jetified-ucrop-2.2.2\AndroidManifest.xml:7:5-9:41
+MERGED from [com.futuremind.recyclerfastscroll:fastscroll:0.2.5] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\ab053c3021706b487ef172fa652f6c09\jetified-fastscroll-0.2.5\AndroidManifest.xml:7:5-9:41
+MERGED from [com.futuremind.recyclerfastscroll:fastscroll:0.2.5] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\ab053c3021706b487ef172fa652f6c09\jetified-fastscroll-0.2.5\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.material:material:1.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\843065f883b4aab3155847b227b91918\material-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\843065f883b4aab3155847b227b91918\material-1.2.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\b6ad5dcf2c011e93d68e65f843169671\constraintlayout-2.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\b6ad5dcf2c011e93d68e65f843169671\constraintlayout-2.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a1af1202e32a658cab72e26d726c7875\appcompat-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a1af1202e32a658cab72e26d726c7875\appcompat-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment-ktx:1.2.5] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\b75e42240934b5685e71797ae2be990f\jetified-fragment-ktx-1.2.5\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment-ktx:1.2.5] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\b75e42240934b5685e71797ae2be990f\jetified-fragment-ktx-1.2.5\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-ktx:1.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\75c93317d57208dd65288ff43eca3980\jetified-activity-ktx-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity-ktx:1.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\75c93317d57208dd65288ff43eca3980\jetified-activity-ktx-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core-ktx:1.6.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\bea9125dd5f4dab1110576667ff65fb4\jetified-core-ktx-1.6.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.core:core-ktx:1.6.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\bea9125dd5f4dab1110576667ff65fb4\jetified-core-ktx-1.6.0\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a9d6fb741b003ba2b19050e53fbe4f1b\lifecycle-extensions-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-extensions:2.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a9d6fb741b003ba2b19050e53fbe4f1b\lifecycle-extensions-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\b5759a178e1339ebec3f76b030414bf9\jetified-lifecycle-viewmodel-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\b5759a178e1339ebec3f76b030414bf9\jetified-lifecycle-viewmodel-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.2.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\724fa618d89467e464674185ef3ebc04\jetified-lifecycle-runtime-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime-ktx:2.2.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\724fa618d89467e464674185ef3ebc04\jetified-lifecycle-runtime-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-runtime:2.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\3b8661e80ac00fa02651ff2d590a2c41\room-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-runtime:2.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\3b8661e80ac00fa02651ff2d590a2c41\room-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.chauthai.swipereveallayout:swipe-reveal-layout:1.4.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\d61b3d5e7004d0bfd7a00cd0132cfd2b\jetified-swipe-reveal-layout-1.4.1\AndroidManifest.xml:8:5-10:41
+MERGED from [com.chauthai.swipereveallayout:swipe-reveal-layout:1.4.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\d61b3d5e7004d0bfd7a00cd0132cfd2b\jetified-swipe-reveal-layout-1.4.1\AndroidManifest.xml:8:5-10:41
+MERGED from [com.amplifyframework:core:1.1.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a7aa93576ef09cef27765cb2c2ed3567\jetified-core-1.1.2\AndroidManifest.xml:21:5-23:41
+MERGED from [com.amplifyframework:core:1.1.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a7aa93576ef09cef27765cb2c2ed3567\jetified-core-1.1.2\AndroidManifest.xml:21:5-23:41
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\eece2c2d403080322b78653778d2915d\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-v4:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\eece2c2d403080322b78653778d2915d\legacy-support-v4-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.squareup.sdk.in-app-payments:nonce-api:1.4.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\18aa88d8747583c54f4d113f480581b2\jetified-nonce-api-1.4.0\AndroidManifest.xml:7:5-44
+MERGED from [com.squareup.sdk.in-app-payments:nonce-api:1.4.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\18aa88d8747583c54f4d113f480581b2\jetified-nonce-api-1.4.0\AndroidManifest.xml:7:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.2.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\55b5336fa41c981d5c91984deae91060\jetified-lifecycle-livedata-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-ktx:2.2.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\55b5336fa41c981d5c91984deae91060\jetified-lifecycle-livedata-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-crashlytics:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\cd305015f91c1871f4d8cb469b75f636\jetified-firebase-crashlytics-17.2.1\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-crashlytics:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\cd305015f91c1871f4d8cb469b75f636\jetified-firebase-crashlytics-17.2.1\AndroidManifest.xml:6:5-8:41
+MERGED from [com.itkacher.okhttpprofiler:okhttpprofiler:1.0.7] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\1dc4d97045ec296937741ee408d7ea9d\jetified-okhttpprofiler-1.0.7\AndroidManifest.xml:7:5-9:41
+MERGED from [com.itkacher.okhttpprofiler:okhttpprofiler:1.0.7] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\1dc4d97045ec296937741ee408d7ea9d\jetified-okhttpprofiler-1.0.7\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.2.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f549a59cd4379fb5fd4ffabeaf829ae6\jetified-lifecycle-livedata-core-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core-ktx:2.2.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f549a59cd4379fb5fd4ffabeaf829ae6\jetified-lifecycle-livedata-core-ktx-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\c27d0620f443752832258af2fcc1de24\jetified-appcompat-resources-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\c27d0620f443752832258af2fcc1de24\jetified-appcompat-resources-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.bumptech.glide:glide:4.10.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\fd7714c1bb02aa68c45b7f7f8503a452\jetified-glide-4.10.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.10.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\fd7714c1bb02aa68c45b7f7f8503a452\jetified-glide-4.10.0\AndroidManifest.xml:6:5-8:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\443608c6f8be082cf08798fb505490a5\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\443608c6f8be082cf08798fb505490a5\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\123b3626bef7dcda16cdd7f96aca94f9\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\123b3626bef7dcda16cdd7f96aca94f9\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [io.reactivex.rxjava2:rxandroid:2.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\4e8c2d43b365550c54ff0503ebf3e4b6\jetified-rxandroid-2.1.0\AndroidManifest.xml:18:5-43
+MERGED from [io.reactivex.rxjava2:rxandroid:2.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\4e8c2d43b365550c54ff0503ebf3e4b6\jetified-rxandroid-2.1.0\AndroidManifest.xml:18:5-43
+MERGED from [com.google.firebase:firebase-messaging:20.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\9c2e5193f157eba746a44a86e45e9b46\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-messaging:20.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\9c2e5193f157eba746a44a86e45e9b46\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.multidex:multidex:2.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\6c16559df7ff39bcb6abe3b561df6d4b\multidex-2.0.1\AndroidManifest.xml:20:5-43
+MERGED from [androidx.multidex:multidex:2.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\6c16559df7ff39bcb6abe3b561df6d4b\multidex-2.0.1\AndroidManifest.xml:20:5-43
+MERGED from [:customprogressdialog-1.0.2] C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\customprogressdialog-1.0.2\build\.transforms\5926534dc788d15578f64f6220c44e23\jetified-customprogressdialog-1.0.2\AndroidManifest.xml:7:5-9:41
+MERGED from [:customprogressdialog-1.0.2] C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\customprogressdialog-1.0.2\build\.transforms\5926534dc788d15578f64f6220c44e23\jetified-customprogressdialog-1.0.2\AndroidManifest.xml:7:5-9:41
+MERGED from [:imagepickerviewkt-1.0.3] C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\imagepickerviewkt-1.0.3\build\.transforms\9d2ec1bdb67324e44476a67715f02144\jetified-imagepickerviewkt-1.0.3\AndroidManifest.xml:7:5-9:41
+MERGED from [:imagepickerviewkt-1.0.3] C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\imagepickerviewkt-1.0.3\build\.transforms\9d2ec1bdb67324e44476a67715f02144\jetified-imagepickerviewkt-1.0.3\AndroidManifest.xml:7:5-9:41
+MERGED from [com.amazonaws:aws-android-sdk-cognitoauth:2.17.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\c105b1d29e33b3d3261815e967d6a787\jetified-aws-android-sdk-cognitoauth-2.17.1\AndroidManifest.xml:8:5-10:41
+MERGED from [com.amazonaws:aws-android-sdk-cognitoauth:2.17.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\c105b1d29e33b3d3261815e967d6a787\jetified-aws-android-sdk-cognitoauth-2.17.1\AndroidManifest.xml:8:5-10:41
+MERGED from [com.amazonaws:aws-android-sdk-s3:2.17.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\65ab542c3711e67d4a969c16e3ec0756\jetified-aws-android-sdk-s3-2.17.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.amazonaws:aws-android-sdk-s3:2.17.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\65ab542c3711e67d4a969c16e3ec0756\jetified-aws-android-sdk-s3-2.17.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.amazonaws:aws-android-sdk-mobile-client:2.17.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\b1494c2213eafa85197a832ab43b8d87\jetified-aws-android-sdk-mobile-client-2.17.1\AndroidManifest.xml:13:5-16:96
+MERGED from [com.amazonaws:aws-android-sdk-mobile-client:2.17.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\b1494c2213eafa85197a832ab43b8d87\jetified-aws-android-sdk-mobile-client-2.17.1\AndroidManifest.xml:13:5-16:96
+MERGED from [com.amazonaws:aws-android-sdk-auth-core:2.17.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\2c957540be3f172c65df42e2799883b1\jetified-aws-android-sdk-auth-core-2.17.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.amazonaws:aws-android-sdk-auth-core:2.17.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\2c957540be3f172c65df42e2799883b1\jetified-aws-android-sdk-auth-core-2.17.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.amazonaws:aws-android-sdk-cognitoidentityprovider:2.17.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\435144c59db011e22c6f1e745b7259ca\jetified-aws-android-sdk-cognitoidentityprovider-2.17.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.amazonaws:aws-android-sdk-cognitoidentityprovider:2.17.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\435144c59db011e22c6f1e745b7259ca\jetified-aws-android-sdk-cognitoidentityprovider-2.17.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.amazonaws:aws-android-sdk-kms:2.17.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\e46b7ee808e31b5e9885ebbbc75ab356\jetified-aws-android-sdk-kms-2.17.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.amazonaws:aws-android-sdk-kms:2.17.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\e46b7ee808e31b5e9885ebbbc75ab356\jetified-aws-android-sdk-kms-2.17.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.amazonaws:aws-android-sdk-core:2.17.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a9e05bf129798151776e908fae6c0401\jetified-aws-android-sdk-core-2.17.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.amazonaws:aws-android-sdk-core:2.17.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a9e05bf129798151776e908fae6c0401\jetified-aws-android-sdk-core-2.17.1\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.mukeshsolanki:android-otpview-pinview:2.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\d987eafc12acd91b293768158398d3dd\jetified-android-otpview-pinview-2.0.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.mukeshsolanki:android-otpview-pinview:2.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\d987eafc12acd91b293768158398d3dd\jetified-android-otpview-pinview-2.0.0\AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:firebase-core:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\7e5e9f07173a6743796e915b9d7d5b71\jetified-firebase-core-17.2.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-core:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\7e5e9f07173a6743796e915b9d7d5b71\jetified-firebase-core-17.2.1\AndroidManifest.xml:5:5-44
+MERGED from [com.android.billingclient:billing:3.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\1763c0724b87ccc5cadc1fa229265983\jetified-billing-3.0.0\AndroidManifest.xml:6:5-8:41
+MERGED from [com.android.billingclient:billing:3.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\1763c0724b87ccc5cadc1fa229265983\jetified-billing-3.0.0\AndroidManifest.xml:6:5-8:41
+MERGED from [androidx.databinding:viewbinding:4.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\865bd8415cb407ddf957d1899cd4d515\jetified-viewbinding-4.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.databinding:viewbinding:4.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\865bd8415cb407ddf957d1899cd4d515\jetified-viewbinding-4.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\4fa12f67a926b0da121646e791576899\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\4fa12f67a926b0da121646e791576899\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\dd7c180941d170d2586c7e7ad95ccdcb\jetified-firebase-analytics-17.2.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-analytics:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\dd7c180941d170d2586c7e7ad95ccdcb\jetified-firebase-analytics-17.2.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\185ce515d4399f4429a64fea82cea46c\jetified-play-services-measurement-api-17.2.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\185ce515d4399f4429a64fea82cea46c\jetified-play-services-measurement-api-17.2.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:20.0.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\47faad9f4b1e38182205f8435278da11\jetified-firebase-iid-20.0.2\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:20.0.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\47faad9f4b1e38182205f8435278da11\jetified-firebase-iid-20.0.2\AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\92c211675a6f282c2a833993ce1d34e0\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\92c211675a6f282c2a833993ce1d34e0\dynamicanimation-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a88c6c5fdd9ac6e6bcec3436bebe2ac1\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a88c6c5fdd9ac6e6bcec3436bebe2ac1\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\9259eb14d7fac7e2e92585879563bed7\jetified-play-services-measurement-sdk-17.2.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\9259eb14d7fac7e2e92585879563bed7\jetified-play-services-measurement-sdk-17.2.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\61c2f893561e22a877f49eebfd079189\jetified-play-services-measurement-impl-17.2.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\61c2f893561e22a877f49eebfd079189\jetified-play-services-measurement-impl-17.2.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\ef55f09b1c825e5dfdde6b85df086f4d\jetified-play-services-stats-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:17.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\ef55f09b1c825e5dfdde6b85df086f4d\jetified-play-services-stats-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\2f814f73ac2c37978b888aedcdfeb41e\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\2f814f73ac2c37978b888aedcdfeb41e\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\e38d4936e7d47a19813b098b50c62259\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.media:media:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\e38d4936e7d47a19813b098b50c62259\media-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-datatransport:17.0.3] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\7f976b827edf218a7633b3332c1d72a9\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-datatransport:17.0.3] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\7f976b827edf218a7633b3332c1d72a9\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-installations:16.3.3] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\6bed7ebe779270d974dbb05a5a3d2b0d\jetified-firebase-installations-16.3.3\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-installations:16.3.3] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\6bed7ebe779270d974dbb05a5a3d2b0d\jetified-firebase-installations-16.3.3\AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-common:19.3.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\402777615872cf18c011a1d56bb6182c\jetified-firebase-common-19.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-common:19.3.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\402777615872cf18c011a1d56bb6182c\jetified-firebase-common-19.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [com.google.firebase:firebase-installations-interop:16.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\5016df85ae07e3120aebd4a751898eb3\jetified-firebase-installations-interop-16.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-installations-interop:16.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\5016df85ae07e3120aebd4a751898eb3\jetified-firebase-installations-interop-16.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\c4475655972e825236de87e7d26f85e2\jetified-firebase-iid-interop-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:17.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\c4475655972e825236de87e7d26f85e2\jetified-firebase-iid-interop-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f4bcafeb375c9eb538b5c5b718c151dd\jetified-play-services-base-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f4bcafeb375c9eb538b5c5b718c151dd\jetified-play-services-base-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\6c64363856c5f5563dd3f1c7e6df6b8b\jetified-play-services-tasks-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\6c64363856c5f5563dd3f1c7e6df6b8b\jetified-play-services-tasks-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\1c55626b1ecfe6121de372b28de8ad92\jetified-firebase-measurement-connector-18.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\1c55626b1ecfe6121de372b28de8ad92\jetified-firebase-measurement-connector-18.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\b7b80f017356a65254757b40cc695e83\jetified-play-services-measurement-sdk-api-17.2.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\b7b80f017356a65254757b40cc695e83\jetified-play-services-measurement-sdk-api-17.2.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\cf78f046d99ee30bb5b5b914793c66bb\jetified-play-services-measurement-base-17.2.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\cf78f046d99ee30bb5b5b914793c66bb\jetified-play-services-measurement-base-17.2.1\AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\c91caf737c9d2dc94b2f8aee55f9186c\jetified-play-services-ads-identifier-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:17.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\c91caf737c9d2dc94b2f8aee55f9186c\jetified-play-services-ads-identifier-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\821329fc3dc7a82759669629365297a3\jetified-play-services-basement-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\821329fc3dc7a82759669629365297a3\jetified-play-services-basement-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\46c9e2a38b7cbb7ee4f21c9a18ed2836\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager2:viewpager2:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\46c9e2a38b7cbb7ee4f21c9a18ed2836\jetified-viewpager2-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a4330e3c8fc931ab89dedf0bd62ad5ff\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a4330e3c8fc931ab89dedf0bd62ad5ff\recyclerview-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.github.VictorAlbertos:RxActivityResult:0.4.5-2.x] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\686b5ce3d6eb559b051f27120882c548\jetified-RxActivityResult-0.4.5-2.x\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.VictorAlbertos:RxActivityResult:0.4.5-2.x] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\686b5ce3d6eb559b051f27120882c548\jetified-RxActivityResult-0.4.5-2.x\AndroidManifest.xml:7:5-9:41
+MERGED from [com.github.tbruyelle:rxpermissions:0.10.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\3d1262d361f6b5503f65ba0563bf87bd\jetified-rxpermissions-0.10.2\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.tbruyelle:rxpermissions:0.10.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\3d1262d361f6b5503f65ba0563bf87bd\jetified-rxpermissions-0.10.2\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.fragment:fragment:1.2.5] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\291a6c02a7aa455ad70aaeed62fdd662\fragment-1.2.5\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.2.5] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\291a6c02a7aa455ad70aaeed62fdd662\fragment-1.2.5\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.viewpager:viewpager:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\66e13c4e46ff33e07147b6084e94c223\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\66e13c4e46ff33e07147b6084e94c223\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f8764e04382857834e28a907133c50b9\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f8764e04382857834e28a907133c50b9\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\7c0005362951ab190df672c66e8781fb\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\7c0005362951ab190df672c66e8781fb\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\036dbafd9ff2a2c5895130b8f64fc835\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\036dbafd9ff2a2c5895130b8f64fc835\coordinatorlayout-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.customview:customview:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f2e2a16487ccd4beb83d57e3539258a4\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f2e2a16487ccd4beb83d57e3539258a4\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\771f9efdcd27e5d07b891c1908e32306\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\771f9efdcd27e5d07b891c1908e32306\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\87d87da9ca39cc0cd25079741747bae2\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\87d87da9ca39cc0cd25079741747bae2\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\cd9489364c2db6b6653ee391a07ec38c\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\cd9489364c2db6b6653ee391a07ec38c\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.browser:browser:1.2.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\e2424ffeabdd59305e7424b3aa12e968\browser-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.browser:browser:1.2.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\e2424ffeabdd59305e7424b3aa12e968\browser-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\db73f2b080a32b61cfb4a24fcacb5ef5\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.transition:transition:1.2.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\db73f2b080a32b61cfb4a24fcacb5ef5\transition-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\630322024cca616eb970a771c41de516\jetified-activity-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\630322024cca616eb970a771c41de516\jetified-activity-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.6.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\e6c3ff4530a4a21acac22781d35858b5\core-1.6.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.6.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\e6c3ff4530a4a21acac22781d35858b5\core-1.6.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f096fc35f12dcb8ea90816dcbd8ed6f5\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-process:2.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f096fc35f12dcb8ea90816dcbd8ed6f5\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-service:2.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\71e0fe174b462bf02780ef07ac5743aa\jetified-lifecycle-service-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-service:2.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\71e0fe174b462bf02780ef07ac5743aa\jetified-lifecycle-service-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\37904b6e3a4ed597be859a9f1b0f1653\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.2.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\37904b6e3a4ed597be859a9f1b0f1653\lifecycle-runtime-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\41dbcb7a6a1b49c9e8f26a35f3570046\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\41dbcb7a6a1b49c9e8f26a35f3570046\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\3a014ef8068e93241ba3ba41f28ded19\lifecycle-livedata-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.2.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\3a014ef8068e93241ba3ba41f28ded19\lifecycle-livedata-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\ee546668e245f731ab55a56e7eef2ccd\jetified-lifecycle-viewmodel-savedstate-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.2.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\ee546668e245f731ab55a56e7eef2ccd\jetified-lifecycle-viewmodel-savedstate-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\ca667c22ef6bbffe94159b5a7adfd459\lifecycle-livedata-core-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.2.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\ca667c22ef6bbffe94159b5a7adfd459\lifecycle-livedata-core-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\58bd34b90cf3a6acb6b67409e2286092\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.arch.core:core-runtime:2.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\58bd34b90cf3a6acb6b67409e2286092\core-runtime-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\9c016d4a31bdc1c5c4d685e9916908e5\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\9c016d4a31bdc1c5c4d685e9916908e5\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite-framework:2.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\2d4e9f0274e4df850d5e5822674fa698\sqlite-framework-2.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\2d4e9f0274e4df850d5e5822674fa698\sqlite-framework-2.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\24ea7fa7fb027ba454d228182bb3c47f\sqlite-2.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\24ea7fa7fb027ba454d228182bb3c47f\sqlite-2.0.1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\315db5c14c6e4141ecd4116ebba1e485\exifinterface-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.exifinterface:exifinterface:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\315db5c14c6e4141ecd4116ebba1e485\exifinterface-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.10.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\4b467dfe7ae2965fc2a90059c950eb7c\jetified-gifdecoder-4.10.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.10.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\4b467dfe7ae2965fc2a90059c950eb7c\jetified-gifdecoder-4.10.0\AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-components:16.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\077cf14f352b74bc419410cf3bbef2d4\jetified-firebase-components-16.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-components:16.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\077cf14f352b74bc419410cf3bbef2d4\jetified-firebase-components-16.0.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\d4f5333032268a6dc892cc1bb0a0f019\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\d4f5333032268a6dc892cc1bb0a0f019\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.4] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f0f0dd3fec26aab3078b4ee9f7e9686d\jetified-transport-runtime-2.2.4\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.4] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f0f0dd3fec26aab3078b4ee9f7e9686d\jetified-transport-runtime-2.2.4\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-api:2.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\3fd0081c58ed5cdc15e4f5fd9f2d3dd0\jetified-transport-api-2.2.1\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.android.datatransport:transport-api:2.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\3fd0081c58ed5cdc15e4f5fd9f2d3dd0\jetified-transport-api-2.2.1\AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-encoders-json:16.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\1ac4fcaccf32add5aa1f0251b1a96e92\jetified-firebase-encoders-json-16.1.0\AndroidManifest.xml:19:5-21:41
+MERGED from [com.google.firebase:firebase-encoders-json:16.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\1ac4fcaccf32add5aa1f0251b1a96e92\jetified-firebase-encoders-json-16.1.0\AndroidManifest.xml:19:5-21:41
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\1480f3f960693b13db2ebd9433941b12\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\1480f3f960693b13db2ebd9433941b12\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\574b9454e6931e2f2bcd6d06f8526376\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\574b9454e6931e2f2bcd6d06f8526376\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\c6b277164205175d5b7f775d99aa0e51\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\c6b277164205175d5b7f775d99aa0e51\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\36431aaf7781e9bf5ec14fedabe17d33\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\36431aaf7781e9bf5ec14fedabe17d33\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\e0dc6054f789b1715cededa9218dbc41\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\e0dc6054f789b1715cededa9218dbc41\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\887d6017a0d3131e2b655cada83e7ad6\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\887d6017a0d3131e2b655cada83e7ad6\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\1988eb3a1daab45e2733920ef4369dcd\lifecycle-viewmodel-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.2.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\1988eb3a1daab45e2733920ef4369dcd\lifecycle-viewmodel-2.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [io.michaelrocks:libphonenumber-android:8.10.14] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\18475e00ac0f5c63cfa2aae362245206\jetified-libphonenumber-android-8.10.14\AndroidManifest.xml:7:5-9:41
+MERGED from [io.michaelrocks:libphonenumber-android:8.10.14] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\18475e00ac0f5c63cfa2aae362245206\jetified-libphonenumber-android-8.10.14\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\5bff0bcc2d02f44f55b28b4867f1691a\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.annotation:annotation-experimental:1.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\5bff0bcc2d02f44f55b28b4867f1691a\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [com.squareup.android:truststore:1.7.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\143ceedc0ac6ee5e58ca4686e23a3e20\jetified-truststore-1.7.0\AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.android:truststore:1.7.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\143ceedc0ac6ee5e58ca4686e23a3e20\jetified-truststore-1.7.0\AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.android:socket-factory:1.7.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\fb6689ef20f0264145816c51f1be9135\jetified-socket-factory-1.7.0\AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.android:socket-factory:1.7.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\fb6689ef20f0264145816c51f1be9135\jetified-socket-factory-1.7.0\AndroidManifest.xml:5:5-44
+INJECTED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml
+	tools:overrideLibrary
+		ADDED from [com.amazonaws:aws-android-sdk-mobile-client:2.17.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\b1494c2213eafa85197a832ab43b8d87\jetified-aws-android-sdk-mobile-client-2.17.1\AndroidManifest.xml:16:9-93
+	android:targetSdkVersion
+		INJECTED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\sonug3\Downloads\mewazz-usend-android-f71169d2854d\app\src\main\AndroidManifest.xml
+activity#com.stripe.android.view.AddPaymentMethodActivity
+ADDED from [com.stripe:stripe-android:16.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\10f75e484cf5071c5368cdbd4e57d4fc\jetified-stripe-android-16.0.1\AndroidManifest.xml:12:9-14:57
+	android:theme
+		ADDED from [com.stripe:stripe-android:16.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\10f75e484cf5071c5368cdbd4e57d4fc\jetified-stripe-android-16.0.1\AndroidManifest.xml:14:13-54
+	android:name
+		ADDED from [com.stripe:stripe-android:16.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\10f75e484cf5071c5368cdbd4e57d4fc\jetified-stripe-android-16.0.1\AndroidManifest.xml:13:13-76
+activity#com.stripe.android.view.PaymentMethodsActivity
+ADDED from [com.stripe:stripe-android:16.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\10f75e484cf5071c5368cdbd4e57d4fc\jetified-stripe-android-16.0.1\AndroidManifest.xml:15:9-17:57
+	android:theme
+		ADDED from [com.stripe:stripe-android:16.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\10f75e484cf5071c5368cdbd4e57d4fc\jetified-stripe-android-16.0.1\AndroidManifest.xml:17:13-54
+	android:name
+		ADDED from [com.stripe:stripe-android:16.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\10f75e484cf5071c5368cdbd4e57d4fc\jetified-stripe-android-16.0.1\AndroidManifest.xml:16:13-74
+activity#com.stripe.android.view.PaymentFlowActivity
+ADDED from [com.stripe:stripe-android:16.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\10f75e484cf5071c5368cdbd4e57d4fc\jetified-stripe-android-16.0.1\AndroidManifest.xml:18:9-20:57
+	android:theme
+		ADDED from [com.stripe:stripe-android:16.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\10f75e484cf5071c5368cdbd4e57d4fc\jetified-stripe-android-16.0.1\AndroidManifest.xml:20:13-54
+	android:name
+		ADDED from [com.stripe:stripe-android:16.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\10f75e484cf5071c5368cdbd4e57d4fc\jetified-stripe-android-16.0.1\AndroidManifest.xml:19:13-71
+activity#com.stripe.android.view.PaymentAuthWebViewActivity
+ADDED from [com.stripe:stripe-android:16.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\10f75e484cf5071c5368cdbd4e57d4fc\jetified-stripe-android-16.0.1\AndroidManifest.xml:21:9-24:58
+	android:windowSoftInputMode
+		ADDED from [com.stripe:stripe-android:16.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\10f75e484cf5071c5368cdbd4e57d4fc\jetified-stripe-android-16.0.1\AndroidManifest.xml:24:13-55
+	android:theme
+		ADDED from [com.stripe:stripe-android:16.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\10f75e484cf5071c5368cdbd4e57d4fc\jetified-stripe-android-16.0.1\AndroidManifest.xml:23:13-54
+	android:name
+		ADDED from [com.stripe:stripe-android:16.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\10f75e484cf5071c5368cdbd4e57d4fc\jetified-stripe-android-16.0.1\AndroidManifest.xml:22:13-78
+activity#com.stripe.android.view.PaymentRelayActivity
+ADDED from [com.stripe:stripe-android:16.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\10f75e484cf5071c5368cdbd4e57d4fc\jetified-stripe-android-16.0.1\AndroidManifest.xml:25:9-27:57
+	android:theme
+		ADDED from [com.stripe:stripe-android:16.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\10f75e484cf5071c5368cdbd4e57d4fc\jetified-stripe-android-16.0.1\AndroidManifest.xml:27:13-54
+	android:name
+		ADDED from [com.stripe:stripe-android:16.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\10f75e484cf5071c5368cdbd4e57d4fc\jetified-stripe-android-16.0.1\AndroidManifest.xml:26:13-72
+activity#com.stripe.android.view.Stripe3ds2CompletionActivity
+ADDED from [com.stripe:stripe-android:16.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\10f75e484cf5071c5368cdbd4e57d4fc\jetified-stripe-android-16.0.1\AndroidManifest.xml:28:9-30:57
+	android:theme
+		ADDED from [com.stripe:stripe-android:16.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\10f75e484cf5071c5368cdbd4e57d4fc\jetified-stripe-android-16.0.1\AndroidManifest.xml:30:13-54
+	android:name
+		ADDED from [com.stripe:stripe-android:16.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\10f75e484cf5071c5368cdbd4e57d4fc\jetified-stripe-android-16.0.1\AndroidManifest.xml:29:13-80
+activity#com.stripe.android.paymentsheet.PaymentSheetActivity
+ADDED from [com.stripe:stripe-android:16.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\10f75e484cf5071c5368cdbd4e57d4fc\jetified-stripe-android-16.0.1\AndroidManifest.xml:31:9-33:69
+	android:theme
+		ADDED from [com.stripe:stripe-android:16.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\10f75e484cf5071c5368cdbd4e57d4fc\jetified-stripe-android-16.0.1\AndroidManifest.xml:33:13-66
+	android:name
+		ADDED from [com.stripe:stripe-android:16.0.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\10f75e484cf5071c5368cdbd4e57d4fc\jetified-stripe-android-16.0.1\AndroidManifest.xml:32:13-80
+activity#sqip.internal.CardEntryActivity
+ADDED from [com.squareup.sdk.in-app-payments:card-entry:1.4.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\d0574490c239a26bbbe5ca4cc9fe539b\jetified-card-entry-1.4.0\AndroidManifest.xml:10:9-14:20
+	android:windowSoftInputMode
+		ADDED from [com.squareup.sdk.in-app-payments:card-entry:1.4.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\d0574490c239a26bbbe5ca4cc9fe539b\jetified-card-entry-1.4.0\AndroidManifest.xml:13:13-55
+	android:theme
+		ADDED from [com.squareup.sdk.in-app-payments:card-entry:1.4.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\d0574490c239a26bbbe5ca4cc9fe539b\jetified-card-entry-1.4.0\AndroidManifest.xml:12:13-56
+	android:name
+		ADDED from [com.squareup.sdk.in-app-payments:card-entry:1.4.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\d0574490c239a26bbbe5ca4cc9fe539b\jetified-card-entry-1.4.0\AndroidManifest.xml:11:13-59
+activity#com.stripe.android.stripe3ds2.views.ChallengeActivity
+ADDED from [com.stripe:stripe-3ds2-android:4.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\b32bc685bf2195e8a0acbecc29ebdb36\jetified-stripe-3ds2-android-4.1.0\AndroidManifest.xml:12:9-14:54
+	android:theme
+		ADDED from [com.stripe:stripe-3ds2-android:4.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\b32bc685bf2195e8a0acbecc29ebdb36\jetified-stripe-3ds2-android-4.1.0\AndroidManifest.xml:14:13-51
+	android:name
+		ADDED from [com.stripe:stripe-3ds2-android:4.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\b32bc685bf2195e8a0acbecc29ebdb36\jetified-stripe-3ds2-android-4.1.0\AndroidManifest.xml:13:13-81
+activity#com.stripe.android.stripe3ds2.views.ChallengeProgressActivity
+ADDED from [com.stripe:stripe-3ds2-android:4.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\b32bc685bf2195e8a0acbecc29ebdb36\jetified-stripe-3ds2-android-4.1.0\AndroidManifest.xml:15:9-17:54
+	android:theme
+		ADDED from [com.stripe:stripe-3ds2-android:4.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\b32bc685bf2195e8a0acbecc29ebdb36\jetified-stripe-3ds2-android-4.1.0\AndroidManifest.xml:17:13-51
+	android:name
+		ADDED from [com.stripe:stripe-3ds2-android:4.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\b32bc685bf2195e8a0acbecc29ebdb36\jetified-stripe-3ds2-android-4.1.0\AndroidManifest.xml:16:13-89
+service#com.amazonaws.mobileconnectors.s3.transferutility.TransferService
+ADDED from [com.amplifyframework:aws-storage-s3:1.1.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\9c22076d7384b9c3df017af75dd99d89\jetified-aws-storage-s3-1.1.2\AndroidManifest.xml:28:9-30:38
+	android:enabled
+		ADDED from [com.amplifyframework:aws-storage-s3:1.1.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\9c22076d7384b9c3df017af75dd99d89\jetified-aws-storage-s3-1.1.2\AndroidManifest.xml:30:13-35
+	android:name
+		ADDED from [com.amplifyframework:aws-storage-s3:1.1.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\9c22076d7384b9c3df017af75dd99d89\jetified-aws-storage-s3-1.1.2\AndroidManifest.xml:29:13-93
+activity#com.yalantis.ucrop.UCropActivity
+ADDED from [com.github.miguelbcr:RxPaparazzo:0.6.1-2.x] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\8a85a8b473f5fb5f030bddc3b3614eb6\jetified-RxPaparazzo-0.6.1-2.x\AndroidManifest.xml:18:9-20:72
+	android:theme
+		ADDED from [com.github.miguelbcr:RxPaparazzo:0.6.1-2.x] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\8a85a8b473f5fb5f030bddc3b3614eb6\jetified-RxPaparazzo-0.6.1-2.x\AndroidManifest.xml:20:13-69
+	android:name
+		ADDED from [com.github.miguelbcr:RxPaparazzo:0.6.1-2.x] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\8a85a8b473f5fb5f030bddc3b3614eb6\jetified-RxPaparazzo-0.6.1-2.x\AndroidManifest.xml:19:13-60
+service#androidx.room.MultiInstanceInvalidationService
+ADDED from [androidx.room:room-runtime:2.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\3b8661e80ac00fa02651ff2d590a2c41\room-runtime-2.1.0\AndroidManifest.xml:25:9-27:40
+	android:exported
+		ADDED from [androidx.room:room-runtime:2.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\3b8661e80ac00fa02651ff2d590a2c41\room-runtime-2.1.0\AndroidManifest.xml:27:13-37
+	android:name
+		ADDED from [androidx.room:room-runtime:2.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\3b8661e80ac00fa02651ff2d590a2c41\room-runtime-2.1.0\AndroidManifest.xml:26:13-74
+provider#sqip.internal.ContextCaptureContentProvider
+ADDED from [com.squareup.sdk.in-app-payments:nonce-api:1.4.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\18aa88d8747583c54f4d113f480581b2\jetified-nonce-api-1.4.0\AndroidManifest.xml:10:9-13:40
+	android:authorities
+		ADDED from [com.squareup.sdk.in-app-payments:nonce-api:1.4.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\18aa88d8747583c54f4d113f480581b2\jetified-nonce-api-1.4.0\AndroidManifest.xml:12:13-56
+	android:exported
+		ADDED from [com.squareup.sdk.in-app-payments:nonce-api:1.4.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\18aa88d8747583c54f4d113f480581b2\jetified-nonce-api-1.4.0\AndroidManifest.xml:13:13-37
+	android:name
+		ADDED from [com.squareup.sdk.in-app-payments:nonce-api:1.4.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\18aa88d8747583c54f4d113f480581b2\jetified-nonce-api-1.4.0\AndroidManifest.xml:11:13-71
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [com.google.firebase:firebase-crashlytics:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\cd305015f91c1871f4d8cb469b75f636\jetified-firebase-crashlytics-17.2.1\AndroidManifest.xml:13:9-19:19
+MERGED from [com.google.firebase:firebase-messaging:20.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\9c2e5193f157eba746a44a86e45e9b46\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:35:9-41:19
+MERGED from [com.google.firebase:firebase-messaging:20.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\9c2e5193f157eba746a44a86e45e9b46\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:35:9-41:19
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\185ce515d4399f4429a64fea82cea46c\jetified-play-services-measurement-api-17.2.1\AndroidManifest.xml:27:9-33:19
+MERGED from [com.google.android.gms:play-services-measurement-api:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\185ce515d4399f4429a64fea82cea46c\jetified-play-services-measurement-api-17.2.1\AndroidManifest.xml:27:9-33:19
+MERGED from [com.google.firebase:firebase-iid:20.0.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\47faad9f4b1e38182205f8435278da11\jetified-firebase-iid-20.0.2\AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-iid:20.0.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\47faad9f4b1e38182205f8435278da11\jetified-firebase-iid-20.0.2\AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-datatransport:17.0.3] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\7f976b827edf218a7633b3332c1d72a9\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:25:9-31:19
+MERGED from [com.google.firebase:firebase-datatransport:17.0.3] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\7f976b827edf218a7633b3332c1d72a9\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:25:9-31:19
+MERGED from [com.google.firebase:firebase-installations:16.3.3] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\6bed7ebe779270d974dbb05a5a3d2b0d\jetified-firebase-installations-16.3.3\AndroidManifest.xml:14:9-20:19
+MERGED from [com.google.firebase:firebase-installations:16.3.3] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\6bed7ebe779270d974dbb05a5a3d2b0d\jetified-firebase-installations-16.3.3\AndroidManifest.xml:14:9-20:19
+MERGED from [com.google.firebase:firebase-common:19.3.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\402777615872cf18c011a1d56bb6182c\jetified-firebase-common-19.3.1\AndroidManifest.xml:33:9-37:35
+MERGED from [com.google.firebase:firebase-common:19.3.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\402777615872cf18c011a1d56bb6182c\jetified-firebase-common-19.3.1\AndroidManifest.xml:33:9-37:35
+	android:exported
+		ADDED from [com.google.firebase:firebase-crashlytics:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\cd305015f91c1871f4d8cb469b75f636\jetified-firebase-crashlytics-17.2.1\AndroidManifest.xml:15:13-37
+	tools:targetApi
+		ADDED from [com.google.firebase:firebase-common:19.3.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\402777615872cf18c011a1d56bb6182c\jetified-firebase-common-19.3.1\AndroidManifest.xml:37:13-32
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:19.3.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\402777615872cf18c011a1d56bb6182c\jetified-firebase-common-19.3.1\AndroidManifest.xml:35:13-43
+	android:name
+		ADDED from [com.google.firebase:firebase-crashlytics:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\cd305015f91c1871f4d8cb469b75f636\jetified-firebase-crashlytics-17.2.1\AndroidManifest.xml:14:13-84
+meta-data#com.google.firebase.components:com.google.firebase.crashlytics.CrashlyticsRegistrar
+ADDED from [com.google.firebase:firebase-crashlytics:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\cd305015f91c1871f4d8cb469b75f636\jetified-firebase-crashlytics-17.2.1\AndroidManifest.xml:16:13-18:85
+	android:value
+		ADDED from [com.google.firebase:firebase-crashlytics:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\cd305015f91c1871f4d8cb469b75f636\jetified-firebase-crashlytics-17.2.1\AndroidManifest.xml:18:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-crashlytics:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\cd305015f91c1871f4d8cb469b75f636\jetified-firebase-crashlytics-17.2.1\AndroidManifest.xml:17:17-115
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:20.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\9c2e5193f157eba746a44a86e45e9b46\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:28:9-34:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:20.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\9c2e5193f157eba746a44a86e45e9b46\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:20.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\9c2e5193f157eba746a44a86e45e9b46\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:29:13-82
+meta-data#com.google.firebase.components:com.google.firebase.messaging.FirebaseMessagingRegistrar
+ADDED from [com.google.firebase:firebase-messaging:20.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\9c2e5193f157eba746a44a86e45e9b46\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:38:13-40:85
+	android:value
+		ADDED from [com.google.firebase:firebase-messaging:20.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\9c2e5193f157eba746a44a86e45e9b46\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:40:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:20.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\9c2e5193f157eba746a44a86e45e9b46\jetified-firebase-messaging-20.1.0\AndroidManifest.xml:39:17-119
+uses-library#org.apache.http.legacy
+ADDED from [com.amazonaws:aws-android-sdk-core:2.17.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a9e05bf129798151776e908fae6c0401\jetified-aws-android-sdk-core-2.17.1\AndroidManifest.xml:12:9-14:40
+	android:required
+		ADDED from [com.amazonaws:aws-android-sdk-core:2.17.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a9e05bf129798151776e908fae6c0401\jetified-aws-android-sdk-core-2.17.1\AndroidManifest.xml:14:13-37
+	android:name
+		ADDED from [com.amazonaws:aws-android-sdk-core:2.17.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a9e05bf129798151776e908fae6c0401\jetified-aws-android-sdk-core-2.17.1\AndroidManifest.xml:13:13-50
+uses-permission#com.android.vending.BILLING
+ADDED from [com.android.billingclient:billing:3.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\1763c0724b87ccc5cadc1fa229265983\jetified-billing-3.0.0\AndroidManifest.xml:10:5-67
+	android:name
+		ADDED from [com.android.billingclient:billing:3.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\1763c0724b87ccc5cadc1fa229265983\jetified-billing-3.0.0\AndroidManifest.xml:10:22-64
+meta-data#com.google.android.play.billingclient.version
+ADDED from [com.android.billingclient:billing:3.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\1763c0724b87ccc5cadc1fa229265983\jetified-billing-3.0.0\AndroidManifest.xml:13:9-15:37
+	android:value
+		ADDED from [com.android.billingclient:billing:3.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\1763c0724b87ccc5cadc1fa229265983\jetified-billing-3.0.0\AndroidManifest.xml:15:13-34
+	android:name
+		ADDED from [com.android.billingclient:billing:3.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\1763c0724b87ccc5cadc1fa229265983\jetified-billing-3.0.0\AndroidManifest.xml:14:13-73
+activity#com.android.billingclient.api.ProxyBillingActivity
+ADDED from [com.android.billingclient:billing:3.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\1763c0724b87ccc5cadc1fa229265983\jetified-billing-3.0.0\AndroidManifest.xml:17:9-20:75
+	android:configChanges
+		ADDED from [com.android.billingclient:billing:3.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\1763c0724b87ccc5cadc1fa229265983\jetified-billing-3.0.0\AndroidManifest.xml:19:13-96
+	android:theme
+		ADDED from [com.android.billingclient:billing:3.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\1763c0724b87ccc5cadc1fa229265983\jetified-billing-3.0.0\AndroidManifest.xml:20:13-72
+	android:name
+		ADDED from [com.android.billingclient:billing:3.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\1763c0724b87ccc5cadc1fa229265983\jetified-billing-3.0.0\AndroidManifest.xml:18:13-78
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.android.gms:play-services-measurement-api:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\185ce515d4399f4429a64fea82cea46c\jetified-play-services-measurement-api-17.2.1\AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-iid:20.0.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\47faad9f4b1e38182205f8435278da11\jetified-firebase-iid-20.0.2\AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-iid:20.0.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\47faad9f4b1e38182205f8435278da11\jetified-firebase-iid-20.0.2\AndroidManifest.xml:24:5-68
+MERGED from [com.google.android.gms:play-services-measurement:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a88c6c5fdd9ac6e6bcec3436bebe2ac1\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a88c6c5fdd9ac6e6bcec3436bebe2ac1\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\61c2f893561e22a877f49eebfd079189\jetified-play-services-measurement-impl-17.2.1\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\61c2f893561e22a877f49eebfd079189\jetified-play-services-measurement-impl-17.2.1\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\b7b80f017356a65254757b40cc695e83\jetified-play-services-measurement-sdk-api-17.2.1\AndroidManifest.xml:25:5-68
+MERGED from [com.google.android.gms:play-services-measurement-sdk-api:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\b7b80f017356a65254757b40cc695e83\jetified-play-services-measurement-sdk-api-17.2.1\AndroidManifest.xml:25:5-68
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\185ce515d4399f4429a64fea82cea46c\jetified-play-services-measurement-api-17.2.1\AndroidManifest.xml:24:22-65
+meta-data#com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar
+ADDED from [com.google.android.gms:play-services-measurement-api:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\185ce515d4399f4429a64fea82cea46c\jetified-play-services-measurement-api-17.2.1\AndroidManifest.xml:30:13-32:85
+	android:value
+		ADDED from [com.google.android.gms:play-services-measurement-api:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\185ce515d4399f4429a64fea82cea46c\jetified-play-services-measurement-api-17.2.1\AndroidManifest.xml:32:17-82
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement-api:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\185ce515d4399f4429a64fea82cea46c\jetified-play-services-measurement-api-17.2.1\AndroidManifest.xml:31:17-139
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:20.0.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\47faad9f4b1e38182205f8435278da11\jetified-firebase-iid-20.0.2\AndroidManifest.xml:26:5-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:20.0.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\47faad9f4b1e38182205f8435278da11\jetified-firebase-iid-20.0.2\AndroidManifest.xml:26:22-79
+meta-data#com.google.firebase.components:com.google.firebase.iid.Registrar
+ADDED from [com.google.firebase:firebase-iid:20.0.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\47faad9f4b1e38182205f8435278da11\jetified-firebase-iid-20.0.2\AndroidManifest.xml:32:13-34:85
+	android:value
+		ADDED from [com.google.firebase:firebase-iid:20.0.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\47faad9f4b1e38182205f8435278da11\jetified-firebase-iid-20.0.2\AndroidManifest.xml:34:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:20.0.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\47faad9f4b1e38182205f8435278da11\jetified-firebase-iid-20.0.2\AndroidManifest.xml:33:17-96
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:20.0.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\47faad9f4b1e38182205f8435278da11\jetified-firebase-iid-20.0.2\AndroidManifest.xml:37:9-44:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:20.0.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\47faad9f4b1e38182205f8435278da11\jetified-firebase-iid-20.0.2\AndroidManifest.xml:39:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:20.0.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\47faad9f4b1e38182205f8435278da11\jetified-firebase-iid-20.0.2\AndroidManifest.xml:40:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:20.0.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\47faad9f4b1e38182205f8435278da11\jetified-firebase-iid-20.0.2\AndroidManifest.xml:38:13-78
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:20.0.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\47faad9f4b1e38182205f8435278da11\jetified-firebase-iid-20.0.2\AndroidManifest.xml:41:13-43:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:20.0.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\47faad9f4b1e38182205f8435278da11\jetified-firebase-iid-20.0.2\AndroidManifest.xml:42:17-81
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:20.0.2] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\47faad9f4b1e38182205f8435278da11\jetified-firebase-iid-20.0.2\AndroidManifest.xml:42:25-78
+uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+ADDED from [com.google.android.gms:play-services-measurement:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a88c6c5fdd9ac6e6bcec3436bebe2ac1\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\61c2f893561e22a877f49eebfd079189\jetified-play-services-measurement-impl-17.2.1\AndroidManifest.xml:26:5-110
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\61c2f893561e22a877f49eebfd079189\jetified-play-services-measurement-impl-17.2.1\AndroidManifest.xml:26:5-110
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a88c6c5fdd9ac6e6bcec3436bebe2ac1\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:26:22-107
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.android.gms:play-services-measurement:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a88c6c5fdd9ac6e6bcec3436bebe2ac1\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:29:9-33:20
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a88c6c5fdd9ac6e6bcec3436bebe2ac1\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:31:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a88c6c5fdd9ac6e6bcec3436bebe2ac1\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a88c6c5fdd9ac6e6bcec3436bebe2ac1\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:30:13-85
+receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
+ADDED from [com.google.android.gms:play-services-measurement:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a88c6c5fdd9ac6e6bcec3436bebe2ac1\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:34:9-42:20
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\61c2f893561e22a877f49eebfd079189\jetified-play-services-measurement-impl-17.2.1\AndroidManifest.xml:29:9-37:20
+MERGED from [com.google.android.gms:play-services-measurement-impl:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\61c2f893561e22a877f49eebfd079189\jetified-play-services-measurement-impl-17.2.1\AndroidManifest.xml:29:9-37:20
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a88c6c5fdd9ac6e6bcec3436bebe2ac1\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:36:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a88c6c5fdd9ac6e6bcec3436bebe2ac1\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:37:13-36
+	android:permission
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a88c6c5fdd9ac6e6bcec3436bebe2ac1\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:38:13-69
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a88c6c5fdd9ac6e6bcec3436bebe2ac1\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:35:13-100
+intent-filter#action:name:com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.android.gms:play-services-measurement:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a88c6c5fdd9ac6e6bcec3436bebe2ac1\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:39:13-41:29
+action#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.android.gms:play-services-measurement:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a88c6c5fdd9ac6e6bcec3436bebe2ac1\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:40:17-79
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a88c6c5fdd9ac6e6bcec3436bebe2ac1\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:40:25-76
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.android.gms:play-services-measurement:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a88c6c5fdd9ac6e6bcec3436bebe2ac1\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:44:9-47:40
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a88c6c5fdd9ac6e6bcec3436bebe2ac1\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:46:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a88c6c5fdd9ac6e6bcec3436bebe2ac1\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:47:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a88c6c5fdd9ac6e6bcec3436bebe2ac1\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:45:13-84
+service#com.google.android.gms.measurement.AppMeasurementJobService
+ADDED from [com.google.android.gms:play-services-measurement:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a88c6c5fdd9ac6e6bcec3436bebe2ac1\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:48:9-52:72
+	android:enabled
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a88c6c5fdd9ac6e6bcec3436bebe2ac1\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:50:13-35
+	android:exported
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a88c6c5fdd9ac6e6bcec3436bebe2ac1\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:51:13-37
+	android:permission
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a88c6c5fdd9ac6e6bcec3436bebe2ac1\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:52:13-69
+	android:name
+		ADDED from [com.google.android.gms:play-services-measurement:17.2.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\a88c6c5fdd9ac6e6bcec3436bebe2ac1\jetified-play-services-measurement-17.2.1\AndroidManifest.xml:49:13-87
+meta-data#com.google.firebase.components:com.google.firebase.datatransport.TransportRegistrar
+ADDED from [com.google.firebase:firebase-datatransport:17.0.3] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\7f976b827edf218a7633b3332c1d72a9\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:28:13-30:85
+	android:value
+		ADDED from [com.google.firebase:firebase-datatransport:17.0.3] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\7f976b827edf218a7633b3332c1d72a9\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:30:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-datatransport:17.0.3] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\7f976b827edf218a7633b3332c1d72a9\jetified-firebase-datatransport-17.0.3\AndroidManifest.xml:29:17-115
+meta-data#com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar
+ADDED from [com.google.firebase:firebase-installations:16.3.3] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\6bed7ebe779270d974dbb05a5a3d2b0d\jetified-firebase-installations-16.3.3\AndroidManifest.xml:17:13-19:85
+	android:value
+		ADDED from [com.google.firebase:firebase-installations:16.3.3] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\6bed7ebe779270d974dbb05a5a3d2b0d\jetified-firebase-installations-16.3.3\AndroidManifest.xml:19:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-installations:16.3.3] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\6bed7ebe779270d974dbb05a5a3d2b0d\jetified-firebase-installations-16.3.3\AndroidManifest.xml:18:17-127
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:19.3.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\402777615872cf18c011a1d56bb6182c\jetified-firebase-common-19.3.1\AndroidManifest.xml:26:9-31:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:19.3.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\402777615872cf18c011a1d56bb6182c\jetified-firebase-common-19.3.1\AndroidManifest.xml:28:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:19.3.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\402777615872cf18c011a1d56bb6182c\jetified-firebase-common-19.3.1\AndroidManifest.xml:30:13-37
+	android:directBootAware
+		ADDED from [com.google.firebase:firebase-common:19.3.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\402777615872cf18c011a1d56bb6182c\jetified-firebase-common-19.3.1\AndroidManifest.xml:29:13-43
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:19.3.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\402777615872cf18c011a1d56bb6182c\jetified-firebase-common-19.3.1\AndroidManifest.xml:31:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:19.3.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\402777615872cf18c011a1d56bb6182c\jetified-firebase-common-19.3.1\AndroidManifest.xml:27:13-77
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:17.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f4bcafeb375c9eb538b5c5b718c151dd\jetified-play-services-base-17.0.0\AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f4bcafeb375c9eb538b5c5b718c151dd\jetified-play-services-base-17.0.0\AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f4bcafeb375c9eb538b5c5b718c151dd\jetified-play-services-base-17.0.0\AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f4bcafeb375c9eb538b5c5b718c151dd\jetified-play-services-base-17.0.0\AndroidManifest.xml:24:13-79
+activity#rx_activity_result2.HolderActivity
+ADDED from [com.github.VictorAlbertos:RxActivityResult:0.4.5-2.x] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\686b5ce3d6eb559b051f27120882c548\jetified-RxActivityResult-0.4.5-2.x\AndroidManifest.xml:12:9-15:56
+	android:configChanges
+		ADDED from [com.github.VictorAlbertos:RxActivityResult:0.4.5-2.x] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\686b5ce3d6eb559b051f27120882c548\jetified-RxActivityResult-0.4.5-2.x\AndroidManifest.xml:14:13-74
+	android:theme
+		ADDED from [com.github.VictorAlbertos:RxActivityResult:0.4.5-2.x] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\686b5ce3d6eb559b051f27120882c548\jetified-RxActivityResult-0.4.5-2.x\AndroidManifest.xml:15:13-53
+	android:name
+		ADDED from [com.github.VictorAlbertos:RxActivityResult:0.4.5-2.x] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\686b5ce3d6eb559b051f27120882c548\jetified-RxActivityResult-0.4.5-2.x\AndroidManifest.xml:13:13-62
+provider#androidx.lifecycle.ProcessLifecycleOwnerInitializer
+ADDED from [androidx.lifecycle:lifecycle-process:2.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f096fc35f12dcb8ea90816dcbd8ed6f5\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:23:9-27:43
+	android:authorities
+		ADDED from [androidx.lifecycle:lifecycle-process:2.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f096fc35f12dcb8ea90816dcbd8ed6f5\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:25:13-69
+	android:multiprocess
+		ADDED from [androidx.lifecycle:lifecycle-process:2.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f096fc35f12dcb8ea90816dcbd8ed6f5\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:27:13-40
+	android:exported
+		ADDED from [androidx.lifecycle:lifecycle-process:2.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f096fc35f12dcb8ea90816dcbd8ed6f5\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:26:13-37
+	android:name
+		ADDED from [androidx.lifecycle:lifecycle-process:2.1.0] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f096fc35f12dcb8ea90816dcbd8ed6f5\jetified-lifecycle-process-2.1.0\AndroidManifest.xml:24:13-79
+service#com.google.android.datatransport.runtime.backends.TransportBackendDiscovery
+ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\d4f5333032268a6dc892cc1bb0a0f019\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.4] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f0f0dd3fec26aab3078b4ee9f7e9686d\jetified-transport-runtime-2.2.4\AndroidManifest.xml:36:9-38:40
+MERGED from [com.google.android.datatransport:transport-runtime:2.2.4] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f0f0dd3fec26aab3078b4ee9f7e9686d\jetified-transport-runtime-2.2.4\AndroidManifest.xml:36:9-38:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\d4f5333032268a6dc892cc1bb0a0f019\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:31:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\d4f5333032268a6dc892cc1bb0a0f019\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:30:13-103
+meta-data#backend:com.google.android.datatransport.cct.CctBackendFactory
+ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\d4f5333032268a6dc892cc1bb0a0f019\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:32:13-34:39
+	android:value
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\d4f5333032268a6dc892cc1bb0a0f019\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:34:17-36
+	android:name
+		ADDED from [com.google.android.datatransport:transport-backend-cct:2.3.1] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\d4f5333032268a6dc892cc1bb0a0f019\jetified-transport-backend-cct-2.3.1\AndroidManifest.xml:33:17-94
+service#com.google.android.datatransport.runtime.scheduling.jobscheduling.JobInfoSchedulerService
+ADDED from [com.google.android.datatransport:transport-runtime:2.2.4] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f0f0dd3fec26aab3078b4ee9f7e9686d\jetified-transport-runtime-2.2.4\AndroidManifest.xml:26:9-30:19
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.4] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f0f0dd3fec26aab3078b4ee9f7e9686d\jetified-transport-runtime-2.2.4\AndroidManifest.xml:28:13-37
+	android:permission
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.4] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f0f0dd3fec26aab3078b4ee9f7e9686d\jetified-transport-runtime-2.2.4\AndroidManifest.xml:29:13-69
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.4] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f0f0dd3fec26aab3078b4ee9f7e9686d\jetified-transport-runtime-2.2.4\AndroidManifest.xml:27:13-117
+receiver#com.google.android.datatransport.runtime.scheduling.jobscheduling.AlarmManagerSchedulerBroadcastReceiver
+ADDED from [com.google.android.datatransport:transport-runtime:2.2.4] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f0f0dd3fec26aab3078b4ee9f7e9686d\jetified-transport-runtime-2.2.4\AndroidManifest.xml:32:9-34:40
+	android:exported
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.4] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f0f0dd3fec26aab3078b4ee9f7e9686d\jetified-transport-runtime-2.2.4\AndroidManifest.xml:34:13-37
+	android:name
+		ADDED from [com.google.android.datatransport:transport-runtime:2.2.4] E:\Sonu g3\SDK1\caches\transforms-2\files-2.1\f0f0dd3fec26aab3078b4ee9f7e9686d\jetified-transport-runtime-2.2.4\AndroidManifest.xml:33:13-132

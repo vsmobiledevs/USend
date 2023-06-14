@@ -1,0 +1,444 @@
+package com.usend.views
+
+import android.app.Activity
+import android.content.Context
+import android.content.Intent
+import android.os.Bundle
+import android.os.Handler
+import android.util.Log
+import android.view.View
+import androidx.fragment.app.Fragment
+import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentTransaction
+import androidx.lifecycle.Observer
+import com.base.network.model.NotificationsListReponse
+import com.base.network.model.SignUpReponse
+import com.google.android.material.tabs.TabLayout
+import com.usend.R
+import com.usend.base.ViewModelActivity
+import com.usend.comman.OnDataPass
+import com.usend.comman.Resource
+import com.usend.databinding.ActivityMainBinding
+import com.usend.databinding.CustomBottomTabItemBinding
+import com.usend.extensions.*
+import com.usend.fcm.NewNotificationEvent
+import com.usend.utils.*
+import com.usend.utils.PreferenceHelper.set
+import com.usend.viewmodels.HomeViewModel
+import com.usend.views.home.*
+import com.usend.views.userauth.AuthFragment
+import kotlinx.android.synthetic.main.app_toolbar.*
+import org.greenrobot.eventbus.EventBus
+import org.greenrobot.eventbus.Subscribe
+import org.greenrobot.eventbus.ThreadMode
+import kotlin.reflect.KClass
+
+class MainActivity(
+    override val modelClass: KClass<HomeViewModel> = HomeViewModel::class,
+    override val layoutId: Int = R.layout.activity_main
+) : ViewModelActivity<ActivityMainBinding, HomeViewModel>(),OnDataPass {
+
+    private val TAG = MainActivity::class.java.simpleName
+    private var from: String? = null
+    private var webSubscriptionId: String? = null
+    private var premimuId: String? = null
+
+
+    override fun getDataFromIntent() {
+        super.getDataFromIntent()
+
+        if (intent.hasExtra(FROM)) {
+            from = intent.getStringExtra(FROM)
+        }
+    }
+
+    override fun initView() {
+        super.initView()
+        setUpBottomTab()
+        initToolbar(
+            toolbar = toolbar,
+            title = resources.getString(R.string.lbl_mailbox),
+            isBackVisible = false,
+            isNoti = true
+        )
+
+        if (from == FROM_PAYMENT) {
+            commonFragmentCallWithoutBackStack(OrderHistoryFragment())
+            setToolbarTitle(
+                toolbar = toolbar,
+                title = resources.getString(R.string.lbl_order_history)
+            )
+            binding.bottomTab.getTabAt(1)?.select()
+        } else if (from == FROM_NOTIFICATION) {
+
+            commonFragmentCallWithoutBackStack(MyProfileFragment())
+            setToolbarTitle(
+                toolbar = toolbar,
+                title = resources.getString(R.string.lbl_my_profile)
+            )
+            binding.bottomTab.getTabAt(4)?.select()
+
+        } else if (from == FROM_CONCIERGE) {
+
+            commonFragmentCallWithoutBackStack(ConciergeFragment())
+            setToolbarTitle(
+                toolbar = toolbar,
+                title = resources.getString(R.string.lbl_concierge)
+            )
+            binding.bottomTab.getTabAt(3)?.select()
+
+        } else if (from == FROM_CONCIERGE_PURCHASE) {
+            commonFragmentCallWithoutBackStack(ConciergeFragment())
+            setToolbarTitle(
+                toolbar = toolbar,
+                title = resources.getString(R.string.lbl_concierge)
+            )
+            binding.bottomTab.getTabAt(3)?.select()
+        } else if (from == SUBSCRITION) {
+            commonFragmentCallWithoutBackStack(MyProfileFragment())
+            setToolbarTitle(
+                toolbar = toolbar,
+                title = resources.getString(R.string.lbl_my_profile)
+            )
+            binding.bottomTab.getTabAt(4)?.select()
+
+        } else {
+            if (prefs.getBoolean(IS_LOGIN, false)) {
+                commonFragmentCallWithoutBackStack(MailboxFragment())
+            } else {
+                commonFragmentCallWithoutBackStack(AuthFragment())
+                binding.toolbarMain.gone()
+            }
+        }
+    }
+
+    override fun addObserver() {
+        viewModel.status.observe(this, mObserver)
+    }
+
+    override fun initControls() {
+        super.initControls()
+
+        EventBus.getDefault().register(this)
+
+        if (checkInternetConnected() && prefs.getBoolean(IS_LOGIN, false)) {
+            viewModel.status.addSource(getNotificationCount()) {
+
+                viewModel.status.value = it
+            }
+        }
+
+        binding.bottomTab.addOnTabSelectedListener(object : TabLayout.OnTabSelectedListener {
+            override fun onTabReselected(p0: TabLayout.Tab?) {
+                Log.e("tag",p0.toString())
+            }
+
+            override fun onTabUnselected(p0: TabLayout.Tab?) {
+            }
+
+            override fun onTabSelected(tab: TabLayout.Tab?) {
+                Log.e("tag",tab.toString())
+                when (tab?.tag) {
+                    "0" -> {
+                        if (prefs.getBoolean(IS_LOGIN, false)) {
+                            commonFragmentCallWithoutBackStack(MailboxFragment())
+                            setToolbarTitle(
+                                toolbar = toolbar,
+                                title = resources.getString(R.string.lbl_mailbox)
+                            )
+                            binding.toolbarMain.makeVisible()
+
+                        } else {
+                            commonFragmentCallWithoutBackStack(AuthFragment())
+                            binding.toolbarMain.gone()
+                        }
+                    }
+                    "1" -> {
+
+                        if (prefs.getBoolean(IS_LOGIN, false)) {
+                            commonFragmentCallWithoutBackStack(OrderHistoryFragment())
+                            setToolbarTitle(
+                                toolbar = toolbar,
+                                title = resources.getString(R.string.lbl_order_history)
+                            )
+                            binding.toolbarMain.makeVisible()
+
+                        } else {
+                            commonFragmentCallWithoutBackStack(AuthFragment())
+                            binding.toolbarMain.gone()
+                        }
+                    }
+                    "2" -> {
+                        if (prefs.getBoolean(IS_LOGIN, false)) {
+                            commonFragmentCallWithoutBackStack(ShippingCalculatorFragment())
+                            setToolbarTitle(
+                                toolbar = toolbar,
+                                title = resources.getString(R.string.lbl_shipping_calculator)
+                            )
+                            binding.toolbarMain.makeVisible()
+                        } else {
+                            commonFragmentCallWithoutBackStack(AuthFragment())
+                            binding.toolbarMain.gone()
+
+                        }
+                    }
+                    "3" -> {
+                        if (prefs.getBoolean(IS_LOGIN, false)) {
+                            viewModel.getProfileData()
+                            premimuId=null
+                        } else {
+                            commonFragmentCallWithoutBackStack(AuthFragment())
+                            binding.toolbarMain.gone()
+                        }
+                    }
+                    "4" -> {
+
+                        if (prefs.getBoolean(IS_LOGIN, false)) {
+                            commonFragmentCallWithoutBackStack(MyProfileFragment())
+                            setToolbarTitle(
+                                toolbar = toolbar,
+                                title = resources.getString(R.string.lbl_my_profile)
+                            )
+                            // viewModel.getProfileData()
+                            binding.toolbarMain.makeVisible()
+                        } else {
+                            commonFragmentCallWithoutBackStack(AuthFragment())
+                            binding.toolbarMain.gone()
+                        }
+
+                    }
+                }
+            }
+
+        })
+    }
+
+    private fun setUpBottomTab() {
+
+        binding.bottomTab.addTab(binding.bottomTab.newTab().setTag("0"))
+        binding.bottomTab.addTab(binding.bottomTab.newTab().setTag("1"))
+        binding.bottomTab.addTab(binding.bottomTab.newTab().setTag("2"))
+        binding.bottomTab.addTab(binding.bottomTab.newTab().setTag("3"))
+        binding.bottomTab.addTab(binding.bottomTab.newTab().setTag("4"))
+
+        var tabBinding = CustomBottomTabItemBinding.inflate(layoutInflater)
+        var tabView: View? = null
+
+        tabBinding.imgTab.setImageResource(R.drawable.mailbox_button_selector)
+        tabBinding.txtTabTitle.text = resources.getString(R.string.lbl_mailbox)
+        tabBinding.imgTab.isSelected = true
+        tabBinding.txtTabTitle.isSelected = true
+        tabView = tabBinding.root
+        binding.bottomTab.getTabAt(0)!!.customView = tabView
+
+        tabBinding = CustomBottomTabItemBinding.inflate(layoutInflater)
+        tabBinding.imgTab.setImageResource(R.drawable.order_history_button_selector)
+        tabBinding.txtTabTitle.text = resources.getString(R.string.lbl_order_history)
+        tabView = tabBinding.root
+        binding.bottomTab.getTabAt(1)!!.customView = tabView
+
+        tabBinding = CustomBottomTabItemBinding.inflate(layoutInflater)
+        tabBinding.imgTab.setImageResource(R.drawable.calculator_button_selector)
+        tabBinding.txtTabTitle.text = resources.getString(R.string.lbl_calculator)
+        tabView = tabBinding.root
+        binding.bottomTab.getTabAt(2)!!.customView = tabView
+
+        tabBinding = CustomBottomTabItemBinding.inflate(layoutInflater)
+        tabBinding.imgTab.setImageResource(R.drawable.concierge_button_selector)
+        tabBinding.txtTabTitle.text = resources.getString(R.string.lbl_concierge)
+        tabView = tabBinding.root
+        binding.bottomTab.getTabAt(3)!!.customView = tabView
+
+        tabBinding = CustomBottomTabItemBinding.inflate(layoutInflater)
+        tabBinding.imgTab.setImageResource(R.drawable.my_profile_button_selector)
+        tabBinding.txtTabTitle.text = resources.getString(R.string.lbl_profile)
+        tabView = tabBinding.root
+        binding.bottomTab.getTabAt(4)!!.customView = tabView
+    }
+
+    fun commonFragmentCallWithoutBackStack(fragment: Fragment?) {
+        val cFragment: Fragment? = fragment
+        if (cFragment != null) {
+            val fragmentManager: FragmentManager = supportFragmentManager
+            fragmentManager.popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE)
+            val fragmentTransaction: FragmentTransaction = fragmentManager.beginTransaction()
+            fragmentTransaction.setCustomAnimations(R.anim.fade_in, R.anim.fade_out)
+            fragmentTransaction.replace(R.id.main_frame, cFragment)
+            fragmentTransaction.commit()
+        }
+    }
+
+    private val mObserver = Observer<Any> { response ->
+        when (response) {
+            is Resource.Error<*> -> {
+
+                Log.e(TAG, "Message: ${response.data}")
+
+                showToast(response.message.toString())
+            }
+            is Resource.UnAuthorisedRequest<*> -> {
+                showTokenExpiredDialog(resources.getString(R.string.lbl_session_expired_msg))
+            }
+            is Resource.Success<*> -> {
+
+                response.data as SignUpReponse
+                PreferenceHelper.saveObject(USER_DATA, response.data?.responseData?.user)
+                prefs[IS_SUBSCRIPTION] = (response.data).responseData?.user?.isSubscription
+                webSubscriptionId=response.data?.responseData?.user?.webSubscriptionId
+               if (premimuId==PREMIMUM) {
+                   setToolbarTitle(
+                       toolbar = toolbar,
+                       title = resources.getString(R.string.lbl_manage_membership))
+
+                    val bundle = Bundle()
+                    bundle.putString(IS_SUBSCRIPTION, response.data?.responseData?.user?.webSubscriptionId)
+                    val mFragment = ConciergeFragmentForSubscription()
+                    mFragment.arguments = bundle
+                    val ft : FragmentTransaction = supportFragmentManager.beginTransaction()
+                    ft.replace(R.id.main_frame,mFragment)
+                    ft.commit()
+
+                }
+               else if (prefs.getBoolean(IS_SUBSCRIPTION, false)) {
+                    setToolbarTitle(
+                        toolbar = toolbar,
+                        title = resources.getString(R.string.lbl_concierge))
+                    commonFragmentCallWithoutBackStack(ConciergeFragment())
+                }
+                else {
+                    setToolbarTitle(
+                        toolbar = toolbar,
+                        title = resources.getString(R.string.lbl_manage_membership)
+                    )
+                    commonFragmentCallWithoutBackStack(ConciergeFragmentForSubscription())
+                }
+                binding.toolbarMain.makeVisible()
+
+            }
+
+            is Resource.NotiListSuccess<*> -> {
+
+                response.data as NotificationsListReponse
+
+                setNotificationIcon(
+                    response.data?.responseData?.unreadNotificationsCount!!,
+                    toolbar = toolbar
+                )
+            }
+            is Resource.Loading<*> -> {
+                response.isLoadingShow.let {
+                    if (it as Boolean) {
+                        showProgressDialog(this)
+                    } else {
+                        hideProgressDialog()
+                    }
+                }
+            }
+            is Resource.NoInternetError<*> -> {
+                // use if you wanna show dialog or snackbar
+                CommonUtils.showOkDialog(this, message = resources.getString(response.id!!))
+            }
+            is Resource.ValidationError<*> -> {
+                showToast(resources.getString(response.id.nullSafe()))
+            }
+        }
+    }
+
+    fun commonFragmentCallWithBackStack(fragment: Fragment?, tag: String?) {
+        if (fragment != null) {
+            val fragmentManager: FragmentManager = supportFragmentManager
+            val fragmentTransaction = fragmentManager.beginTransaction()
+            fragmentTransaction.setCustomAnimations(
+                R.anim.slide_in_from_right,
+                R.anim.slide_out_from_left,
+                R.anim.slide_in_from_left,
+                R.anim.slide_out_from_right
+            )
+            fragmentTransaction.add(R.id.main_frame, fragment)
+            fragmentTransaction.addToBackStack(tag)
+            fragmentTransaction.commit()
+        }
+    }
+
+    @Subscribe(threadMode = ThreadMode.MAIN)
+    fun onMessageEvent(item: NewNotificationEvent) {
+
+        if (checkInternetConnected() && prefs.getBoolean(IS_LOGIN, false)) {
+            viewModel.status.addSource(getNotificationCount()) {
+
+                viewModel.status.value = it
+            }
+        }
+    }
+
+    private var isExit: Boolean = false
+
+    override fun onBackPressed() {
+        val currentFragment = supportFragmentManager.findFragmentById(R.id.main_frame)
+        JLog.e("name", currentFragment?.javaClass!!.simpleName)
+
+        if (viewModel.isSelectMode.value!! && currentFragment?.javaClass!!.simpleName == MailboxFragment::class.java.simpleName) {
+            viewModel.isSelectMode.value = false
+        } else {
+            if (isExit) {
+                super.onBackPressed()
+                overridePendingTransition(R.anim.slide_in_from_right, R.anim.slide_out_from_left)
+            } else {
+                isExit = !isExit
+                showToast(resources.getString(R.string.lbl_tap_to_exit))
+                Handler().postDelayed({ isExit = !isExit }, 3000)
+            }
+        }
+
+
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        JLog.e("onActivityResultActivity", "$resultCode $requestCode")
+
+        for (fragment in supportFragmentManager.fragments) {
+            fragment.onActivityResult(requestCode, resultCode, data)
+        }
+
+        if (resultCode == Activity.RESULT_OK) {
+            if (requestCode == REF_NOTIFICATION) {
+                if (checkInternetConnected()) {
+                    viewModel.status.addSource(getNotificationCount()) {
+
+                        viewModel.status.value = it
+                    }
+                }
+            }
+        }
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+
+        EventBus.getDefault()
+            .unregister(this)
+    }
+
+    companion object {
+        fun newIntent(context: Context, intent: Intent) {
+            context.startActivity(intent)
+        }
+    }
+
+    override fun dataPass(data: String?) {
+        Log.e("tag", data!!)
+        premimuId=data!!
+       /* setToolbarTitle(
+            toolbar = toolbar,
+            title = resources.getString(R.string.lbl_concierge))
+        commonFragmentCallWithoutBackStack(ConciergeFragment())
+        val bundle = Bundle()
+        bundle.putString(IS_SUBSCRIPTION, webSubscriptionId)
+        val mFragment = ConciergeFragmentForSubscription()
+        mFragment.arguments = bundle
+        val ft : FragmentTransaction = supportFragmentManager.beginTransaction()
+        ft.replace(R.id.main_frame,mFragment)
+        ft.commit()*/
+    }
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+                                                                   
+
+    
+
+                 
+                            
+                             
+
+           
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtFilterItem"
+        style="@style/wrap"
+        android:text="FeddEx"
+        android:gravity="center"
+        android:layout_marginEnd="@dimen/dimen_15dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="@dimen/dimen_12sp"
+        android:includeFontPadding="false"
+        android:tag="layout/row_shipping_method_filter_item_0"                     
+                                                                                                                    
+        android:paddingStart="@dimen/dimen_20dp"
+        android:paddingEnd="@dimen/dimen_20dp"
+        android:paddingTop="@dimen/dimen_5dp"
+        android:paddingBottom="@dimen/dimen_5dp"  xmlns:android="http://schemas.android.com/apk/res/android"/>
+
+
+         

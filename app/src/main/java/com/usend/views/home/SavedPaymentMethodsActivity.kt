@@ -1,0 +1,415 @@
+package com.usend.views.home
+
+import android.annotation.SuppressLint
+import android.content.Context
+import android.content.Intent
+import android.util.Log
+import androidx.lifecycle.Observer
+import com.base.network.BuildConfig
+import com.base.network.model.*
+
+import com.usend.R
+import com.usend.adapter.SavedPaymentMethodsItemAdapter
+import com.usend.base.ViewModelActivity
+import com.usend.comman.Resource
+import com.usend.databinding.ActivitySavedPaymentMethodsBinding
+import com.usend.extensions.nullSafe
+import com.usend.extensions.showToast
+import com.usend.models.SavedCardsModel
+import com.usend.utils.*
+import com.usend.utils.CommonUtils.showAffirmationDialog
+import com.usend.utils.CommonUtils.showAffirmationErrorDialog
+import com.usend.viewmodels.SavedCardsViewModel
+import com.usend.views.MainActivity
+import kotlinx.android.synthetic.main.app_toolbar.*
+import sqip.Callback
+import sqip.CardEntry
+import sqip.CardEntryActivityResult
+import java.math.BigDecimal
+import java.util.*
+import kotlin.reflect.KClass
+import com.usend.utils.SELETED_SERVICES as SELETED_SERVICES1
+
+class SavedPaymentMethodsActivity(
+    override val modelClass: KClass<SavedCardsViewModel> = SavedCardsViewModel::class,
+    override val layoutId: Int = R.layout.activity_saved_payment_methods
+) : ViewModelActivity<ActivitySavedPaymentMethodsBinding, SavedCardsViewModel>() {
+
+    private var arrayList = arrayListOf<SavedCardsModel>()
+    private var selectedServices = arrayListOf<Int>()
+
+    private var listPackageIds = arrayListOf<String>()
+    private var addressId: Int? = null
+    private var plantype: String? = null
+    private var amount: String? = null
+    private var shippingCost: Double? = null
+    private var amountPaid:Double?=null
+    private var shippingDetails: ShippingDetailsResponse? = null
+    private var additionalcCharges = 0.0
+    private var notes: String? = null
+    private var planID: String? = null
+    private var declaredValue: String? = null
+    private var contentOfPackage: String? = null
+
+    private var orderResponse: OrderResponse? = null
+    private var from: String? = null
+    private var cardId:String?=null
+    private var conciergeRequestResponseData: ConciergeRequestResponseData? = null
+
+    @SuppressLint("SetTextI18n")
+    override fun getDataFromIntent() {
+        super.getDataFromIntent()
+
+        if (intent.hasExtra(FROM)) {
+
+            from = intent.getStringExtra(FROM)
+            when (from) {
+                FROM_SHIPPINGDETAIL -> {
+                    addressId = intent.getIntExtra(ADDRESS_ID, 0)
+                    listPackageIds = intent.getStringArrayListExtra(PACKAGE_IDs)!!
+                    shippingCost = intent.getDoubleExtra(SHIPPING_COST, 0.0)
+                    additionalcCharges=intent.getDoubleExtra(ADDITIONAL_CHARGES,0.0)
+                    shippingDetails = intent.getParcelableExtra(SHIPPING_DETAILS)
+                    selectedServices = intent.getIntegerArrayListExtra(SELETED_SERVICES1)!!
+                    notes = intent.getStringExtra(NOTE)
+                    declaredValue = intent.getStringExtra(DECLARED_VALUES)
+                    contentOfPackage = intent.getStringExtra(CONTENT_OF_PACKAGE)
+                    amountPaid= shippingCost!!.toDouble()+additionalcCharges
+                    binding.btnPay.text=this.resources.getString(R.string.lbl_pay) + " $" + String.format("%.2f",amountPaid!!.toDouble())
+                }
+                FROM_CONCIERGE -> {
+                    conciergeRequestResponseData = intent.getParcelableExtra(EXTRA_DATA)
+                    val amount=conciergeRequestResponseData!!.payableAmount.toString()
+                    binding.btnPay.text=this.resources.getString(R.string.lbl_pay) + " $" + String.format("%.2f", amount.toDouble())
+                }
+                FROM_SUBSCRITION -> {
+                    amount=intent.getStringExtra(AMOUNT)
+                    planID=intent.getStringExtra(PLAN_ID)
+                    plantype=intent.getStringExtra(PLAN_TYPE)
+                    binding.btnPay.text=this.resources.getString(R.string.lbl_pay) + " $" + String.format("%.2f", amount?.toDouble())
+                }
+            }
+        }
+    }
+
+    override fun initView() {
+        super.initView()
+
+        initToolbar(
+            toolbar = toolbar,
+            title = resources.getString(R.string.lbl_saved_payment_methods)
+        )
+
+
+
+        binding.rvSavedPaymentMethods.addItemDecoration(
+            ItemOffsetDecoration(
+                resources.getDimensionPixelOffset(
+                    R.dimen.dimen_10dp
+                ), "top"
+            )
+        )
+
+    }
+
+    @SuppressLint("NotifyDataSetChanged")
+    override fun initControls() {
+        super.initControls()
+
+        arrayList.clear()
+        arrayList.add(SavedCardsModel(card = CardList(), false))
+        binding.adapter = SavedPaymentMethodsItemAdapter(arrayList) { mPosition, type ->
+
+            when (type) {
+                ADD -> {
+                    CardEntry.startCardEntryActivity(
+                        this, true,
+                        CardEntry.DEFAULT_CARD_ENTRY_REQUEST_CODE)
+
+                }
+                SELECTION -> {
+                    arrayList.forEachIndexed { index, _ ->
+
+                        arrayList[index].isSelected = mPosition == index
+                    }
+
+                    binding.adapter?.notifyDataSetChanged()
+                }
+            }
+        }
+        val customerId= PreferenceHelper.getUserObject().customerId
+        if (customerId != null) {
+            viewModel.ListCardApiS(SQUARE_UP_TOKEN,customerId)
+        }
+
+        //viewModel.getStripeCardsApi()
+
+        binding.btnPay.setOnClickListener {
+
+            if (from == FROM_SHIPPINGDETAIL) {
+                if ((arrayList.find { it.isSelected })?.card?.id.nullSafe().isEmpty()) {
+                    showToast(getString(R.string.lbl_select_card))
+                } else {
+                    //  val amount_ship=String.format("%.2f", amount_paid!!.toDouble()).toString()
+                    Log.e("tag", String.format("%.2f", amountPaid!!.toDouble())).toString()
+                    viewModel.createOrder(
+                        address_id = addressId!!,
+                        package_ids = listPackageIds.joinToString(","),
+                        amount_paid = String.format("%.2f", amountPaid!!.toDouble()),
+                        additional_fee = shippingDetails?.responseData?.invoiceDetails?.additionalFees.toString(),
+                        shipping_amount = shippingDetails?.responseData?.shippingMethod?.shipmentCost.toString(),
+                        carrier_code = shippingDetails?.responseData?.shippingMethod?.carrierCode!!,
+                        request_shipping_service = shippingDetails?.responseData?.shippingMethod?.serviceName!!,
+                        service_code = shippingDetails?.responseData?.shippingMethod?.serviceCode!!,
+                        additionalChargeId = selectedServices.joinToString(","),
+                        card_id = (arrayList.find { it.isSelected })?.card?.id.nullSafe(),
+                        notes = notes.nullSafe(),
+                        declared_value = declaredValue.nullSafe(),
+                        content_of_package = contentOfPackage.nullSafe(),
+                        consolidatedFees = shippingDetails?.responseData?.invoiceDetails?.consolidatedFees
+                            ?: BigDecimal.ZERO
+                    )
+                }
+            } else if (from == FROM_CONCIERGE) {
+                viewModel.payConciergeAmount(
+                    card_id = (arrayList.find { it.isSelected })?.card?.id.nullSafe(),
+                    amount_to_pay = conciergeRequestResponseData?.payableAmount!!.toFloat(),
+                    id = conciergeRequestResponseData?.id.nullSafe()
+                )
+            }
+            else if (from == FROM_SUBSCRITION) {
+                val uuid = UUID.randomUUID().toString()
+                val customerId = PreferenceHelper.getUserObject().customerId
+                amount=intent.getStringExtra(AMOUNT)
+                plantype=intent.getStringExtra(PLAN_TYPE)
+                Log.e("tag","plan:-"+plantype.toString())
+                cardId=(arrayList.find { it.isSelected})?.card?.id.nullSafe()
+                val createSubscription= CreateSubscription(customerId!!,LOCATIONID,planID!!,cardId!!,uuid)
+                viewModel.subscriptionSquareUp(createSubscription,cardId!!,plantype!!,amount!!.toFloat())
+            }
+        }
+    }
+
+    override fun addObserver() {
+        viewModel.status.observe(this, mObserver)
+    }
+
+    @SuppressLint("NotifyDataSetChanged")
+    private val mObserver = Observer<Any> { response ->
+        when (response) {
+            is Resource.Error<*> -> {
+                JLog.e(Companion.TAG, "Message: ${response.data}")
+                showToast(response.message.toString())
+            }
+
+            is Resource.AddSquareupCard<*> -> {
+                response.data as SquareUpCardList
+                response.data.cards.forEachIndexed { index, cardList ->
+                    arrayList.add(SavedCardsModel(cardList, index == 0))
+                }
+                binding.adapter?.notifyDataSetChanged()
+            }
+            is Resource.SquareupError<*> ->
+            {
+                response.data as SquareupErrorResponse
+                showAffirmationErrorDialog(
+                    title = resources.getString(R.string.square_error_message)+
+                            "\n\n "+"1.  "+ response.data.errors[0].category+
+                            "\n"+"2.  "+ response.data.errors[0].code
+                            +"\n"+"3.  "+ response.data.errors[0].detail+
+                            "\n"+"4.  "+ response.data.errors[0].field,
+                    btnText = resources.getString(R.string.lbl_okay)
+                )
+                {
+
+                }
+            }
+            is Resource.SquareupFailureError<*> -> {
+                showAffirmationErrorDialog(
+                    title = response.message.toString(),
+                    btnText = resources.getString(R.string.lbl_okay)
+                )
+                {
+
+                }
+                // response.data as Resource.SquareupFailureError
+            }
+            is Resource.AddUsendCard<*> -> {
+                response.data as SquareupCreateResponse
+                arrayList.add(SavedCardsModel(response.data.card,false))
+                Log.e("res", "Message: ${arrayList.size}")
+                binding.adapter?.notifyDataSetChanged()
+                showAffirmationDialog(title = resources.getString(R.string.msg_card_added_sucessfully),
+                    btnText = resources.getString(R.string.lbl_okay))
+                {
+                    val intent = Intent()
+                    intent.putExtra(TYPE, ADD_CARD)
+                    setResult(RESULT_OK, intent)
+                }
+
+            }
+            is Resource.CreateOrderSucess<*> -> {
+
+                response.data as OrderResponse
+
+                orderResponse = response.data
+
+                if (response.data.responseData?.paymentDetails?.status!=null) {
+                    PaymentSuccessfulActivity.newIntent(
+                        this, Intent(
+                            this, PaymentSuccessfulActivity::class.java
+                        )
+                    )
+                    finishAffinity()
+                }
+            }
+            is Resource.Loading<*> -> {
+
+                response.isLoadingShow.let {
+                    if (it as Boolean) {
+                        showProgressDialog(this)
+                    } else {
+                        hideProgressDialog()
+                    }
+                }
+            }
+            is Resource.UpdateOrderSuccess<*> -> {
+
+                PaymentSuccessfulActivity.newIntent(
+                    this, Intent(
+                        this,
+                        PaymentSuccessfulActivity::class.java
+                    )
+                )
+                finishAffinity()
+
+            }
+            is Resource.ConciergePayment<*> -> {
+
+                response.data as CreatePaymentResponse
+
+                if (response.data.responseData?.paymentStatus == resources.getString(R.string.paymentstatus)) {
+                    PaymentSuccessfulActivity.newIntent(
+                        this, Intent(
+                            this,
+                            PaymentSuccessfulActivity::class.java
+                        ).putExtra(FROM, FROM_CONCIERGE_PURCHASE)
+                    )
+                    finishAffinity()
+                }
+            }
+            is Resource.UpdateConciergeReqSuccess<*> -> {
+
+                PaymentSuccessfulActivity.newIntent(
+                    this, Intent(
+                        this,
+                        PaymentSuccessfulActivity::class.java
+                    ).putExtra(FROM, FROM_CONCIERGE_PURCHASE)
+                )
+                finishAffinity()
+
+            }
+            is Resource.Success<*> -> {
+                response.data as SubscriptionResponse
+
+                Log.e("tag", from!!)
+                showAffirmationDialog(
+                    title = resources.getString(R.string.msg_membership_sucessfully),
+                    btnText = resources.getString(R.string.lbl_okay)
+                )
+                {
+                    MainActivity.newIntent(
+                        this, Intent(this, MainActivity::class.java)
+                            .putExtra(FROM, from)
+                            .addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+                            .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TASK)
+                            .addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
+                            .addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP)
+                    )
+                    // finish()
+                }
+
+            }
+            is Resource.NoInternetError<*> -> {
+                CommonUtils.showOkDialog(this, message = resources.getString(response.id!!))
+            }
+            is Resource.ValidationError<*> -> {
+                showToast(resources.getString(response.id.nullSafe()))
+            }
+            is Resource.UnAuthorisedRequest<*> -> {
+                showTokenExpiredDialog(resources.getString(R.string.lbl_session_expired_msg))
+            }
+        }
+    }
+
+    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+        super.onActivityResult(requestCode, resultCode, data)
+        CardEntry.handleActivityResult(
+            data,
+            object : Callback<CardEntryActivityResult> {
+                override fun onResult(result: CardEntryActivityResult) {
+                    val uuid = UUID.randomUUID().toString()
+                    val cardholderName =
+                        PreferenceHelper.getUserObject().firstName + " " + PreferenceHelper.getUserObject().lastName
+                    val customerId = PreferenceHelper.getUserObject().customerId
+                    if (result.isSuccess()) {
+                        val card = result.getSuccessValue()
+                        val cards = CreateCard.Cards(
+                            cardholderName,
+                            customerId,
+                            card.card.expirationMonth,
+                            card.card.expirationYear
+                        )
+                        val createCard = CreateCard(uuid, card.nonce, cards)
+                        val squareUpToken: String = if (BuildConfig.DEBUG) {
+                            SQUARE_UP_TOKEN
+                        } else {
+                            SQUARE_UP_TOKEN
+                        }
+
+                        viewModel.addCardApiS(squareUpToken, createCard, ADD)
+                    } else if (result.isCanceled()) {
+                        showToast("Canceled")
+                    }
+                }
+            })
+        if (resultCode == RESULT_OK) {
+
+
+
+            when (requestCode) {
+
+                ADD_CARD -> {
+
+                    val card: Card? = data?.getParcelableExtra(CARD)
+
+                    arrayList.add(
+                        1, SavedCardsModel(
+                            CardList(
+                                id = card?.cardId,
+                                card_brand = card?.brand,
+                                cardholder_name = card?.cardHolderName,
+                                exp_month = card?.expiryMonth,
+                                exp_year = card?.expiryYear,
+                                last_4 = card?.last4
+                            ), arrayList.size == 1
+                        )
+                    )
+
+                    binding.adapter?.notifyItemInserted(1)
+                }
+
+            }
+        }
+
+    }
+
+    companion object {
+        fun newIntent(context: Context, intent: Intent) {
+            context.startActivity(intent)
+        }
+
+        private val TAG = SavedPaymentMethodsActivity::class.java.simpleName
+    }
+
+}

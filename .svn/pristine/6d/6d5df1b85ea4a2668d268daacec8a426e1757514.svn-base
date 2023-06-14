@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="adapter"
+            type="com.usend.adapter.ShipToAddressItemAdapter" />
+
+        <variable
+            name="activity"
+            type="com.usend.views.home.ShipToAddressActivity" />
+
+    </data>
+
+    <RelativeLayout
+        style="@style/match"
+        android:background="@color/colorWhite"
+        tools:context=".views.home.ShipToAddressActivity">
+
+        <LinearLayout
+            style="@style/match"
+            android:layout_above="@id/btnNext"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/toolbarShipToAddress"
+                layout="@layout/app_toolbar" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvShipAddresses"
+                android:layout_height="match_parent"
+                style="@style/styleRecyclerView"
+                app:adapter="@{adapter}"
+                tools:listitem="@layout/row_ship_to_address_item"/>
+
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnNext"
+            style="@style/MaterialButton.CornerRadius"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_gravity="bottom"
+            android:layout_marginStart="@dimen/dimen_20dp"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:layout_marginEnd="@dimen/dimen_20dp"
+            android:layout_marginBottom="@dimen/dimen_20dp"
+            android:onClick="@{(view)-> activity.onNextClick()}"
+            android:text="@string/lbl_next" />
+
+    </RelativeLayout>
+
+</layout>

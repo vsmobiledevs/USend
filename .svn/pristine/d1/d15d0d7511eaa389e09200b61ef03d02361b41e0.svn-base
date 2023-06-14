@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.VictorAlbertos:RxActivityResult:0.4.5-2.x@aar">
+    <CLASSES>
+      <root url="jar://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/686b5ce3d6eb559b051f27120882c548/jetified-RxActivityResult-0.4.5-2.x/jars/classes.jar!/" />
+      <root url="file://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/686b5ce3d6eb559b051f27120882c548/jetified-RxActivityResult-0.4.5-2.x/res" />
+      <root url="file://E:/Sonu g3/SDK1/caches/transforms-2/files-2.1/686b5ce3d6eb559b051f27120882c548/jetified-RxActivityResult-0.4.5-2.x/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://E:/Sonu g3/SDK/caches/modules-2/files-2.1/com.github.VictorAlbertos/RxActivityResult/0.4.5-2.x/f8e8f108455d8abb3fbe2b15562025ca4b8cb033/RxActivityResult-0.4.5-2.x-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
