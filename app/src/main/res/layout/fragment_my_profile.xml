@@ -590,6 +590,41 @@
 
             </LinearLayout>
 
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_1dp"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                android:background="@color/colorE7EBEE" />
+
+            <LinearLayout
+                android:id="@+id/llDelete_user"
+                style="@style/matchWrap"
+                android:layout_marginStart="@dimen/dimen_20dp"
+                android:layout_marginEnd="@dimen/dimen_20dp"
+                android:background="?attr/selectableItemBackground"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="@dimen/dimen_20dp"
+                    android:layout_height="@dimen/dimen_20dp"
+                    android:layout_gravity="center_vertical"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_contact_us_profile" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    style="@style/CommonText.Style.16sp"
+                    android:layout_width="match_parent"
+                    android:layout_marginStart="@dimen/dimen_20dp"
+                    android:layout_marginEnd="@dimen/dimen_20dp"
+                    android:paddingTop="@dimen/dimen_18dp"
+                    android:paddingBottom="@dimen/dimen_18dp"
+                    android:text="@string/lbl_delete_user"
+                    android:textColor="@color/color2D2D2D" />
+
+            </LinearLayout>
+
             <View
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/dimen_1dp"

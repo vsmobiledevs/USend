@@ -116,7 +116,8 @@ public class ApiClient {
 
 
         // TODO set Live Stripe key when upload to play store
-        String baseUrl = "https://staging.u-send.com/usend/api/v1";
+        // String baseUrl = "https://staging.u-send.com/usend/api/v1";
+        String baseUrl = "https://u-send.com/usend/api/v1";
         String baseUrlSquareup = "https://connect.squareupsandbox.com/";
 
         if (!baseUrl.endsWith("/"))

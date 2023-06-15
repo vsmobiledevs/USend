@@ -67,6 +67,7 @@ class SignInActivity(
     fun onSignInClick()
     {
         viewModel.signIn()
+
     }
 
     fun onSignUpClick()
@@ -94,6 +95,7 @@ class SignInActivity(
                 response.data as SignUpReponse
                 PreferenceHelper.saveObject(USER_DATA, response.data.responseData?.user)
                 prefs[AUTH_KEY] = (response.data).responseData?.user?.authenticationToken
+                prefs[USER_ID] = (response.data).responseData?.user?.id
                 prefs[IS_SUBSCRIPTION] = (response.data).responseData?.user?.isSubscription
 
                 if(response.data.responseData?.user?.isMobileVerified.nullSafe())

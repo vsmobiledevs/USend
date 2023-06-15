@@ -405,8 +405,10 @@
     <string name="lbl_payment_method_">Payment Method</string>
     <string name="lbl_unit_system">Unit System</string>
     <string name="lbl_contact_us">Contact Us</string>
+    <string name="lbl_delete_user">Delete User</string>
     <string name="lbl_logout">Logout</string>
     <string name="msg_logout">Are you sure you want to logout?</string>
+    <string name="msg_del">Are you sure you want to delete you account?</string>
     <string name="msg_cancel_plan">Are you sure you want to cancel?</string>
     <string name="lbl_yes">Yes</string>
     <string name="lbl_proceed">Proceed</string>

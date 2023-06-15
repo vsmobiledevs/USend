@@ -10,6 +10,7 @@ import android.view.Window
 import android.widget.Button
 import android.widget.CompoundButton
 import android.widget.TextView
+import android.widget.Toast
 import androidx.lifecycle.Observer
 import com.base.network.model.SignUpReponse
 import com.base.network.model.User
@@ -29,6 +30,7 @@ import com.usend.views.ConciergeForGuestActivity
 import com.usend.views.MainActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import org.greenrobot.eventbus.EventBus
+
 
 
 @Suppress("DEPRECATION")
@@ -73,6 +75,19 @@ class MyProfileFragment(
                 requireActivity(),
                 Intent(requireActivity(), ContactUsActivity::class.java)
             )
+        }
+
+        binding.llDeleteUser.setOnClickListener {
+
+            requireActivity().showAffirmationDialog(
+                title = resources.getString(R.string.msg_del),
+                btnText = resources.getString(R.string.lbl_yes),
+                btnNegativeText = resources.getString(R.string.lbl_no),
+                isCancelable = true
+            ) {
+               Toast.makeText(context,"test",Toast.LENGTH_SHORT).show()
+                viewModel.deleteUser()
+            }
         }
 
         binding.llProhibitedItems.setOnClickListener {

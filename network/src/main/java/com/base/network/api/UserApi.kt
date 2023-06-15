@@ -178,6 +178,13 @@ interface UserApi {
         @retrofit2.http.Header("Authorization") authorization:String?=null
         ):Call<SuccessModel>
 
+    @retrofit2.http.FormUrlEncoded
+    @POST("users/delete_user")
+    fun deleteUser(
+        @retrofit2.http.Field("user_id") useId:Int,
+        @retrofit2.http.Header("Authorization") authorization:String?=null
+    ):Call<SuccessModel>
+
         /**
         * To resend OTP
         * 

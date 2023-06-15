@@ -2,6 +2,7 @@ package com.usend.viewmodels
 
 import android.app.Application
 import android.content.Context
+import android.util.Log
 import androidx.lifecycle.MediatorLiveData
 import androidx.lifecycle.MutableLiveData
 import com.usend.R
@@ -67,8 +68,24 @@ class MyProfileViewModel(var myApplication: Application, private var repository:
         }
     }
 
-    fun logout() {
+    fun deleteUser() {
 
+        when {
+            !mContext.checkInternetConnected() -> status.value =
+                Resource.NoInternetError<Int>(R.string.default_internet_message)
+            else -> {
+                status.addSource(repository.deleteUser(getAuthKey(),getUserId())) {
+                    if (it is Resource.LogoutSuccess<*>) {
+                        //can save for further use
+
+                    }
+                    status.value = it
+                }
+            }
+        }
+    }
+
+    fun logout() {
         when {
             !mContext.checkInternetConnected() -> status.value =
                 Resource.NoInternetError<Int>(R.string.default_internet_message)
@@ -83,6 +100,8 @@ class MyProfileViewModel(var myApplication: Application, private var repository:
             }
         }
     }
+
+
 
     fun updateAutoShipToggle(isAutoShip: Boolean, model: Any? = null) {
         myApplication.callApi(

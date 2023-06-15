@@ -1,15 +1,12 @@
 package com.usend.base
 
 import android.app.Application
-import com.usend.utils.JLog
-import com.usend.utils.PREF_FCM_TOKEN
 import com.usend.utils.PreferenceHelper.customPrefs
 import com.usend.utils.PreferenceHelper.set
 import com.google.android.gms.tasks.OnCompleteListener
 import com.google.firebase.iid.FirebaseInstanceId
 import com.usend.extensions.nullSafe
-import com.usend.utils.AUTH_KEY
-import com.usend.utils.SQUARE_UP_TOKEN
+import com.usend.utils.*
 
 
 abstract class BaseViewModel(application: Application) : RuntimePermissionViewModel(application) {
@@ -21,6 +18,10 @@ abstract class BaseViewModel(application: Application) : RuntimePermissionViewMo
     fun getAuthKey() : String
     {
         return prefs.getString(AUTH_KEY,"").nullSafe()
+    }
+    fun getUserId() : Int
+    {
+        return prefs.getInt(USER_ID,0).nullSafe()
     }
     fun getAuth():String
     {

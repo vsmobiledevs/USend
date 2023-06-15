@@ -1401,6 +1401,43 @@ object UserRepository {
         return data
     }
 
+    fun deleteUser(authKey: String,userId:Int): MutableLiveData<Any> {
+
+        val data = MutableLiveData<Any>()
+
+        val authClientCall = userClient.deleteUser(authorization = authKey, useId = userId)
+        data.value = Loading<Boolean>(true)
+
+        authClientCall.enqueue(object : retrofit2.Callback<SuccessModel> {
+
+            override fun onResponse(
+                call: Call<SuccessModel>,
+                response: Response<SuccessModel>
+            ) {
+                data.value = Loading<Boolean>(false)
+
+                if (response.isSuccessful) {
+                    val mBean: SuccessModel? = response.body()
+                    if (mBean?.responseCode == SUCCESS) {
+                        data.value = LogoutSuccess(mBean)
+                    } else {
+                        data.value = Resource.Error<String>(mBean?.responseMessage!!)
+                    }
+                } else {
+                    data.value = Resource.Error<String>(SERVER_ERROR)
+                }
+            }
+
+            override fun onFailure(call: Call<SuccessModel>, t: Throwable) {
+                t.printStackTrace()
+                data.value = Loading<Boolean>(false)
+                data.value = Resource.Error<String>(SERVER_ERROR)
+            }
+        })
+        return data
+    }
+
+
     fun uspsVerification(
         authKey: String,
         passport_image: String,
