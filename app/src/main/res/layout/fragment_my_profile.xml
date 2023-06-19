@@ -611,7 +611,7 @@
                     android:layout_height="@dimen/dimen_20dp"
                     android:layout_gravity="center_vertical"
                     android:scaleType="fitCenter"
-                    android:src="@drawable/ic_contact_us_profile" />
+                    android:src="@drawable/ic_user_del" />
 
                 <androidx.appcompat.widget.AppCompatTextView
                     style="@style/CommonText.Style.16sp"
